@@ -1,0 +1,8 @@
+GameProject {
+ ID "BCMMedical"
+ GUID "6AA72CA6DB5B3AA2"
+ TITLE "BCM Medical"
+ Dependencies {
+  "6A8B18C4A9E0F634" "58D0FB3206B6F859"
+ }
+}

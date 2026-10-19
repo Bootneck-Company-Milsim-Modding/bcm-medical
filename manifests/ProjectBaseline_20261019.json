@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-19",
+  "owner": "BCM Medical",
+  "identity": {
+    "ID": "BCMMedical",
+    "GUID": "6AA72CA6DB5B3AA2",
+    "TITLE": "BCM Medical"
+  },
+  "actualProject": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\BCM Medical\\addon.gproj",
+  "addonJunction": "D:\\ATHENA INTERACTIVE\\Assets\\Military Character & Gear\\BCM_Development\\bcm-medical\\Addon",
+  "trackedProjectSha256": "04ea860d6445f983f794edbc91eeff9f786a73864eb125573ecba14147ae6826",
+  "dependencies": [
+    "6A8B18C4A9E0F634",
+    "58D0FB3206B6F859"
+  ],
+  "implementationStatus": "EMPTY PROJECT SCAFFOLD; no scripts, prefabs or functional implementation",
+  "excludedGeneratedIndex": "Addon/resourceDatabase.rdb",
+  "masterAuthority": "D:\\ATHENA INTERACTIVE\\Assets\\Military Character & Gear\\BCM_Development\\bcm-systems\\docs\\BCM \u2014 Master Design & Development Authority.md",
+  "restoration": "A fresh clone has a regular Addon directory. Load only one provider for this GUID. Existing local Addon is a junction to the original owner; never recursively clean/delete it.",
+  "referencePolicy": "Native first; third-party references read-only, no copied code/assets or new runtime dependencies.",
+  "releaseStatus": "Private source preservation only; no gameplay/build/network approval, Workshop publication or live-server changes."
+}
