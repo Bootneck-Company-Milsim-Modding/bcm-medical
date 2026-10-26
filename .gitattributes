@@ -1,3 +1,7 @@
-* -text
-*.json text eol=lf
-Addon/** -text
+* text=auto eol=lf
+*.png binary
+*.edds binary
+*.xob binary
+*.fbx binary
+*.txo binary
+*.rdb binary

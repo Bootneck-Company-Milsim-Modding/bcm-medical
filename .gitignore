@@ -1,4 +1,7 @@
-/Addon/resourceDatabase.rdb
-/verification/
+.checks/
+*.log
+resourceDatabase.rdb
+Tests/Runtime/resourceDatabase.rdb
+verification/
 __pycache__/
 *.pyc

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{20DD2A8FE5974F26}Assets/BodyBags/BCM_FilledBodyBag/Data/BCM_Corpse.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

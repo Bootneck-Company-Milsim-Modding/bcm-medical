@@ -1,0 +1,38 @@
+MetaFileClass {
+ Name "{BED87E33E3534A9D}Assets/BodyBags/BCM_FilledBodyBag/BCM_FilledBodyBag.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{98BC74B370664B68}" {
+     SourceMaterial "bodybag"
+     AssignedMaterial "{60F57EB7414F43B2}Assets/BodyBags/BCM_FilledBodyBag/Data/BCM_BodyBag.emat"
+    }
+    MaterialAssignClass "{8FC8B626A2A845B9}" {
+     SourceMaterial "corpse"
+     AssignedMaterial "{20DD2A8FE5974F26}Assets/BodyBags/BCM_FilledBodyBag/Data/BCM_Corpse.emat"
+    }
+   }
+   MeshParams {
+    MeshParam bodybag {
+    }
+    MeshParam packed_corpse {
+    }
+    MeshParam packed_corpse2 {
+    }
+   }
+   ApplicationVendor "Autodesk"
+   ApplicationName "3ds Max"
+   ApplicationVersion "2013"
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+ }
+}

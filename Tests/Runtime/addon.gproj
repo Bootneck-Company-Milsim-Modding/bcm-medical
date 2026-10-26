@@ -1,0 +1,6 @@
+GameProject {
+ ID "BCM_Medical_DomainChecks"
+ GUID "B6C4ED1CA1260002"
+ TITLE "BCM Medical domain checks"
+ Dependencies { "6AB4B3F3FD215919" }
+}

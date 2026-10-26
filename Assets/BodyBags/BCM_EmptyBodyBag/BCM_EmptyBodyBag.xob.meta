@@ -1,0 +1,30 @@
+MetaFileClass {
+ Name "{977722F41091B866}Assets/BodyBags/BCM_EmptyBodyBag/BCM_EmptyBodyBag.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{688180D0B163A8B0}" {
+     SourceMaterial "bodybag"
+     AssignedMaterial "{60F57EB7414F43B2}Assets/BodyBags/BCM_FilledBodyBag/Data/BCM_BodyBag.emat"
+    }
+   }
+   MeshParams {
+    MeshParam bodybag {
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.12 LTS"
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+ }
+}
