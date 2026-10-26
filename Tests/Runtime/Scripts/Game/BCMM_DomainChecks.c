@@ -33,6 +33,7 @@ class BCMM_DomainChecks
   CheckTransport();
   CheckSettings();
   CheckGMResource();
+  CheckBodyBagResources();
   CheckRestartPhase();
   string runToken;
   System.GetCLIParam("bcmmRunToken", runToken);
@@ -265,4 +266,16 @@ class BCMM_DomainChecks
   }
   BCMM_Settings defaults = new BCMM_Settings();
   Check(medicalAttributes == defaults.Count(), "Every registered setting has a loaded native GM control");
+ } protected void CheckBodyBagResources()
+ {
+  array<ResourceName> bagResources = {
+   "{98555BDCD0BE490A}Assets/BodyBags/BCM_FilledBodyBag/BCM_FilledBodyBag_Collision.xob",
+   "{977722F41091B866}Assets/BodyBags/BCM_EmptyBodyBag/BCM_EmptyBodyBag.xob",
+   "{60F57EB7414F43B2}Assets/BodyBags/BCM_FilledBodyBag/Data/BCM_BodyBag.emat"
+  };
+  foreach (ResourceName path : bagResources)
+  {
+   Resource resource = Resource.Load(path);
+   Check(resource && resource.IsValid(), "Owned body bag resource loads from standalone mod: " + path);
+  }
  }}

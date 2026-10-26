@@ -4,7 +4,7 @@
 
 ## Passed
 
-Workbench script validation succeeded after native resource registration. The dedicated diagnostic server passes 123 normal assertions, including loading the actual native GM attribute resource and checking that every one of the 27 settings has a control.
+Workbench script validation succeeded after native resource registration. The dedicated diagnostic server passes 126 normal assertions, including loading the actual native GM attribute resource and checking that every one of the 27 settings has a control.
 
 Three separate dedicated-server processes passed 125 checks each with a shared profile:
 
@@ -25,3 +25,5 @@ Loaded runtime projects: native core, ArmaReforger, the user's BCM Medical GUID 
 Visual GM menu/controller interaction and save popups have not been tested by a human client. Multiplayer owner/JIP/settings concurrency needs dedicated clients. The resource-load test establishes catalogue presence, not UI usability.
 
 Native injury/consciousness and physiology adapters, treatment durations/inventory/RPC validation, backend life identity, suppression/focus integration, spectator routing, casualty transport physics/animations, body-bag transactions and the original BCM medical interface remain unimplemented or unconnected. No gameplay replacement, Workshop release or live-server deployment is claimed.
+
+The final 126-assertion run also loaded the filled body-bag collision model, empty model and bag material directly from the consolidated addon. Evidence: .checks/20261026-113316-102/logs/logs_2026-10-26_11-33-16/console.log.
