@@ -1,0 +1,39 @@
+MetaFileClass {
+ Name "{9F7A8E6397179496}Assets/Medical/PulseOximeter/BCMM_PulseOximeter.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AB693BBFEE6FA5A}" {
+     SourceMaterial "BCMM_PulseOximeter_M0"
+     AssignedMaterial "{18230E28F2FE5871}Assets/Medical/PulseOximeter/Data/PulseOximeter_0.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_PulseOximeter {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_BCMM_PulseOximeter {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0.1
+     Margin 0.001
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

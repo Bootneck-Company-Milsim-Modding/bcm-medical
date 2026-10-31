@@ -1,0 +1,11 @@
+{
+  "purpose": "Replacement albedo for supplied chest seal with missing source image",
+  "layout": ".checks/chest-seal-uv-guide.png",
+  "versions": [
+    "ChestSeal_Albedo_v1.png",
+    "ChestSeal_Albedo_v2.png"
+  ],
+  "current": "ChestSeal_Albedo_v2.png",
+  "changes": "Pale adhesive face with separate red vent polymer; v2 removes radial dark lines from the adhesive island.",
+  "source_download_unchanged": true
+}

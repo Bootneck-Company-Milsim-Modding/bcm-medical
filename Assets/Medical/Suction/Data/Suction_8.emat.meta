@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{A36D61768ED0E006}Assets/Medical/Suction/Data/Suction_8.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+ }
+}

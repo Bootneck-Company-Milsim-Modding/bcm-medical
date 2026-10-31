@@ -1,0 +1,3 @@
+GenericEntity {
+ components { MeshObject { Object "{9F7A8E6397179496}Assets/Medical/PulseOximeter/BCMM_PulseOximeter.xob" } }
+}

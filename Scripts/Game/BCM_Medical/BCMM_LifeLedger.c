@@ -9,7 +9,6 @@ class BCMM_LifeLedger
  protected int m_Reservation;
  protected int m_CurrentLife;
  protected bool m_Alive;
- protected bool m_DispositionBlocked;
 
  int RemainingDeployments(int totalLives)
  {
@@ -17,15 +16,18 @@ class BCMM_LifeLedger
  }
 
  bool IsAlive() { return m_Alive; }
- bool IsDispositionBlocked() { return m_DispositionBlocked; }
  int CurrentLife() { return m_CurrentLife; }
- void SetDispositionBlocked(bool blocked) { m_DispositionBlocked = blocked; }
 
  // Reserve before native spawning, commit only on successful finalisation.
  // This closes concurrent spawn attempts without charging failed spawns.
+ bool CanReserveDeployment(int totalLives, bool limiterEnabled = true)
+ {
+  if (m_Alive || m_Reservation > 0) return false;
+  return !limiterEnabled || RemainingDeployments(totalLives) > 0;
+ }
  int ReserveDeployment(int totalLives, bool limiterEnabled = true)
  {
-  if (m_Alive || m_Reservation > 0 || m_DispositionBlocked) return 0;
+  if (m_Alive || m_Reservation > 0) return 0;
   if (limiterEnabled && RemainingDeployments(totalLives) <= 0) return 0;
   m_Reservation = ++m_Sequence;
   return m_Reservation;
@@ -57,6 +59,14 @@ class BCMM_LifeLedger
   return true;
  }
 
+ // Explicit authority retirement after an active body is deleted without a
+ // death event. This does not manufacture a death or refund a deployment.
+ bool RetireDeletedDeployment(int life)
+ {
+  if (!m_Alive || life <= 0 || life != m_CurrentLife) return false;
+  m_Alive = false;
+  return true;
+ }
  bool AdjustAllowance(int change)
  {
   if (change != 1 && change != -1) return false;

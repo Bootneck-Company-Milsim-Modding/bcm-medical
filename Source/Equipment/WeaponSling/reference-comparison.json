@@ -1,0 +1,55 @@
+{
+  "reference_dimensions": [
+    600,
+    1000
+  ],
+  "silhouette_iou": 0.9455218039037446,
+  "model_pixels_within_3px_of_reference": 0.9965755645778476,
+  "reference_pixels_within_3px_of_model": 0.9917277024570152,
+  "comparison": "Actual opaque volumetric mesh alpha; no photo alpha cutout or photo texture",
+  "gpu_devices": [
+    "NVIDIA GeForce RTX 5070 Ti"
+  ],
+  "construction": "Flat padded upper webbing, round gathered elastic sleeves",
+  "near_exact_confirmed": false,
+  "model_boundary_p95_distance_px": 8.062257766723633,
+  "reference_boundary_p95_distance_px": 5.0,
+  "model_boundary_within_3px": 0.8768982972848597,
+  "reference_boundary_within_3px": 0.9237207077953132,
+  "reference_mask_threshold": "Max RGB below 0.94; model alpha above 0.5",
+  "detailed_triangles": 202728,
+  "inventory_candidate_triangles": 12000,
+  "armatures": 0,
+  "animation_actions": 0,
+  "hardware_note": "Manufacturer close-up used for separate female shell, sprung male arms, open lower ladder-lock, forged QD wire bail, knurled cylindrical collar/stud, button and detents. Hidden dimensions remain reconstructed.",
+  "hardware_pose_fit": {
+    "buckle": {
+      "translation_pixels": [
+        3.75,
+        -5.25
+      ],
+      "rotation_z_radians": -0.075,
+      "uniform_scale": 1.3800000000000001,
+      "roi_silhouette_iou": 0.8947200510448238,
+      "pivot_pixels": [
+        397,
+        599
+      ]
+    },
+    "QD": {
+      "translation_pixels": [
+        4.5,
+        4.5
+      ],
+      "rotation_z_radians": 0.0,
+      "uniform_scale": 1.28,
+      "roi_silhouette_iou": 0.7134416543574594,
+      "pivot_pixels": [
+        395,
+        805
+      ]
+    }
+  },
+  "silhouette_near_exact": false,
+  "overall_perfect_replica_confirmed": false
+}

@@ -1,0 +1,39 @@
+MetaFileClass {
+ Name "{71ED3A9EA695166A}Assets/Medical/Laryngoscope/BCMM_Laryngoscope.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AB6FC0BD969A681}" {
+     SourceMaterial "BCMM_Laryngoscope_M0"
+     AssignedMaterial "{370C748AB2A414C6}Assets/Medical/Laryngoscope/Data/Laryngoscope_0.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_Laryngoscope {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_BCMM_Laryngoscope {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0.1
+     Margin 0.001
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

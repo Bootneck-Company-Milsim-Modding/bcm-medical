@@ -1,0 +1,47 @@
+MetaFileClass {
+ Name "{ED3A0287659108BC}Assets/Medical/AppliedTourniquet/BCMM_AppliedTourniquet.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AB74597DA5C16BB}" {
+     SourceMaterial "BCMM_AppliedTourniquet_M0"
+     AssignedMaterial "{A38F4CEC484AA162}Assets/Medical/AppliedTourniquet/Data/AppliedTourniquet_0.emat"
+    }
+    MaterialAssignClass "{6AB74597DA5C169B}" {
+     SourceMaterial "BCMM_AppliedTourniquet_M1"
+     AssignedMaterial "{6332DBA3643917EC}Assets/Medical/AppliedTourniquet/Data/AppliedTourniquet_1.emat"
+    }
+    MaterialAssignClass "{6AB74597DA5C16EB}" {
+     SourceMaterial "BCMM_AppliedTourniquet_M2"
+     AssignedMaterial "{D46064882036C3F7}Assets/Medical/AppliedTourniquet/Data/AppliedTourniquet_2.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_AppliedTourniquet {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_BCMM_AppliedTourniquet {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0.1
+     Margin 0.001
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

@@ -1,0 +1,47 @@
+MetaFileClass {
+ Name "{D2CD74C75D2620EE}Assets/Medical/AppliedSplint/BCMM_AppliedSplint.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AB74597DA55D6EA}" {
+     SourceMaterial "BCMM_AppliedSplint_M0"
+     AssignedMaterial "{C7B2D60A060DC9DC}Assets/Medical/AppliedSplint/Data/AppliedSplint_0.emat"
+    }
+    MaterialAssignClass "{6AB74597DA55D6C0}" {
+     SourceMaterial "BCMM_AppliedSplint_M1"
+     AssignedMaterial "{D05039344E6DD62D}Assets/Medical/AppliedSplint/Data/AppliedSplint_1.emat"
+    }
+    MaterialAssignClass "{6AB74597DA55D6D5}" {
+     SourceMaterial "BCMM_AppliedSplint_M2"
+     AssignedMaterial "{62C1A0436263ADFF}Assets/Medical/AppliedSplint/Data/AppliedSplint_2.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_AppliedSplint {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_BCMM_AppliedSplint {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0.1
+     Margin 0.001
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

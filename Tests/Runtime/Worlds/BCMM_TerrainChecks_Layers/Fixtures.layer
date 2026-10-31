@@ -1,0 +1,4 @@
+SCR_MapEntity BCMM_TestMap : "{21C189074DAB7E90}Prefabs/World/DefaultWorld/MapEntity_Default.et" { coords 100 1 100 }
+SCR_AIWorld BCMM_TestAIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" { coords 102 1 100 }
+PerceptionManager BCMM_TestPerception : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" { coords 104 1 100 }
+SCR_GameModeEditor BCMM_TestMode : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_Full.et" { coords 106 1 100 }

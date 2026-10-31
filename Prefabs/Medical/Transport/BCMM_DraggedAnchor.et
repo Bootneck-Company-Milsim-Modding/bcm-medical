@@ -1,0 +1,12 @@
+GenericEntity : "{278E487E19D82680}Prefabs/Vehicles/Core/Vehicle_Cargo_Base.et" {
+ ID "4868E0360E9D4B5C"
+ components {
+ Persistence "{6606C872736C2C61}" { Enabled 0 }
+ SCR_BaseCompartmentManagerComponent "{2CD4A765A7D52986}" { DoorInfoList { CompartmentDoorInfo { FakeDoor 1 EntryPositionInfo PointInfo {} ExitPositionInfo PointInfo {} } } CompartmentSlots { CargoCompartmentSlot BCMPatient { CompartmentAction CompartmentUserAction {} GetOutAction CompartmentUserAction {} JumpOutAction CompartmentUserAction {} SwitchSeatAction CompartmentUserAction {} PassengerPositionInfo EntitySlotInfo {} SeatType 1 ForcedFreeLook 1 DoorInfoList { 0 } CanOccupantEquipGadget 0 } } }
+ SCR_BaseHUDComponent "{59BC55AE2A7F6FE0}" { Enabled 0 }
+ SCR_DamageManagerComponent "{3EBB276D48AFFF41}" { Enabled 0 }
+ SCR_UniversalInventoryStorageComponent "{5E58C207959A9200}" { Enabled 0 }
+ VehicleAnimationComponent "{50B812962B17E60B}" { AnimGraph "{C7FD61D06F644075}Source/Animations/Casualty/BCMM_Dragged.agr" AnimInstance "{F1B909B1FE2943CB}Source/Animations/Casualty/BCMM_Dragged.asi" StartNode "VehicleMasterControl" AnimInjection AnimationAttachmentInfo "{50B812961A339FD2}" { AnimGraph "{C7FD61D06F644075}Source/Animations/Casualty/BCMM_Dragged.agr" AnimInstance "{F1B909B1FE2943CB}Source/Animations/Casualty/BCMM_Dragged.asi" BindingName "Vehicle" } AutoVariablesBind 1 }
+ RplComponent "{63136787FD0BCE14}" { "Rpl State Override" Runtime AutoHierarchy 1 }
+ }
+}

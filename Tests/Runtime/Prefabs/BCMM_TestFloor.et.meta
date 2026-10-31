@@ -1,0 +1,4 @@
+MetaFileClass {
+ Name "{B6C4ED1CA1262000}Prefabs/BCMM_TestFloor.et"
+ Configurations { EntityTemplateResourceClass PC {} EntityTemplateResourceClass HEADLESS : PC {} }
+}

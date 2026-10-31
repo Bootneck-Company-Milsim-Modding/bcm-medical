@@ -1,0 +1,39 @@
+MetaFileClass {
+ Name "{BE81C3A855ACE465}Assets/Medical/Morphine/BCMM_Morphine.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AB693BBFE158A42}" {
+     SourceMaterial "BCMM_Morphine_M0"
+     AssignedMaterial "{6D93D0BCABEA88D7}Assets/Medical/Morphine/Data/Morphine_0.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_Morphine {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_BCMM_Morphine {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0.1
+     Margin 0.001
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

@@ -1,0 +1,6 @@
+Vehicle : "{2D74C39A650A3030}Prefabs/Vehicles/Wheeled/M923A1/M923A1_engineer.et" {
+ ID "6AB4B3F3FD217004"
+ components {
+  BCMM_VehicleCargoComponent "{6AB4B3F3FD21812E}" {}
+ }
+}

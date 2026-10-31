@@ -1,0 +1,39 @@
+MetaFileClass {
+ Name "{DA76AADBBC5559AE}Assets/Medical/Splint/BCMM_Splint.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AB6A94DDF0589A8}" {
+     SourceMaterial "BCMM_Splint_M0"
+     AssignedMaterial "{EF208F78A6B48AF4}Assets/Medical/Splint/Data/Splint.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_Splint {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_BCMM_Splint {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0.1
+     Margin 0.001
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

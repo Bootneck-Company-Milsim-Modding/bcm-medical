@@ -1,0 +1,1 @@
+BaseSource { AnimSetTemplate "{23DF4389D37A8F3B}anims/anm/NPC/workspaces/Officier_Mission01.ast" AnimSetInstances { "{F1B909B1FE2943CB}Source/Animations/Casualty/BCMM_Dragged.asi" } AnimGraph "{C7FD61D06F644075}Source/Animations/Casualty/BCMM_Dragged.agr" }

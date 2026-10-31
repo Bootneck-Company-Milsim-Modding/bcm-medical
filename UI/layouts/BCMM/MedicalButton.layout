@@ -1,0 +1,14 @@
+ButtonWidgetClass : "{75C912A1C89BE6C2}UI/layouts/WidgetLibrary/Buttons/WLib_ButtonText.layout" {
+ Name "BCMMButton"
+ components { SCR_ButtonTextComponent "{5548F0143AE99095}" { m_bCanBeToggled 0 m_bShowBorderOnFocus 1 m_bShowBorderOnHover 1 } }
+ {
+  SizeLayoutWidgetClass "{5548EB41A8E48247}" { Prefab "{5548EB41A8E48247}" {
+   OverlayWidgetClass "{5548EB41A8E48245}" { Prefab "{5548EB41A8E48245}" {
+    TextWidgetClass "{5548F014E72FB9DA}" { Prefab "{5548F014E72FB9DA}"
+     Slot OverlayWidgetSlot { HorizontalAlign 3 VerticalAlign 3 Padding 8 2 8 2 }
+     "Horizontal Alignment" Center "Vertical Alignment" Center "Min Font Size" 12 "Font Size" 16
+    }
+   } }
+  } }
+ }
+}

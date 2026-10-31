@@ -1,0 +1,1 @@
+MetaFileClass { Name "{24585E309EFFA7BD}Prefabs/MedicalVisuals/BCMM_AppliedAEDLower.et" Configurations { EntityTemplateResourceClass PC {} EntityTemplateResourceClass HEADLESS : PC {} } }

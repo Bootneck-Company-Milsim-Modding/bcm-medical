@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{36995CC1646CA2B9}Assets/Medical/GenericInjector/Data/GenericInjector_0_NMO.edds"
+ Configurations {
+  PNGResourceClass PC : "{A968DA7F9A1E3A3E}Configs/System/ResourceTypes/PC/TextureNType.conf" {
+  }
+  PNGResourceClass HEADLESS : PC {
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass XBOX_SERIES : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass PS5 : PC {
+  }
+ }
+}

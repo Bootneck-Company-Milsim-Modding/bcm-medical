@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{B8DC668930EF6B19}Assets/Medical/Splint/Data/Splint_NMO.edds"
+ Configurations {
+  PNGResourceClass PC : "{A968DA7F9A1E3A3E}Configs/System/ResourceTypes/PC/TextureNType.conf" {
+  }
+  PNGResourceClass HEADLESS : PC {
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass XBOX_SERIES : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass PS5 : PC {
+  }
+ }
+}

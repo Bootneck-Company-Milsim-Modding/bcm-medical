@@ -1,0 +1,23 @@
+[
+  {
+    "faction": "US",
+    "removed_native_medical": 5,
+    "medical_items": 29,
+    "native_sha256": "32c603fbea3844c4d2e037e1edbd3a81b085fe9d27da50bff877bd4e7d42a864",
+    "override_sha256": "4ca3e3451b4c842cb4d844cf0ad2cf2c99fbc22bfb1c7b7b946b07dadeba8666"
+  },
+  {
+    "faction": "USSR",
+    "removed_native_medical": 5,
+    "medical_items": 29,
+    "native_sha256": "ec1f283208de56f0d91d81291b46a9331015aba57cf824993f9e22918640a5d7",
+    "override_sha256": "eec9fb4e49fae4f1698b9d60baa55f6ad876d65d8726666534f98424573aeeeb"
+  },
+  {
+    "faction": "FIA",
+    "removed_native_medical": 5,
+    "medical_items": 29,
+    "native_sha256": "4fcb7d6b6c7f4b5ca11eb95ef22eb414a49c6515e2a14ee6fcbaee3f2ebc2b85",
+    "override_sha256": "a509ae3b571d81fde888c0ceb7b28bae4404c2de0f2c9376f56590f897b5c8ef"
+  }
+]

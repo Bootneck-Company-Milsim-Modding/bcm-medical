@@ -1,0 +1,55 @@
+MetaFileClass {
+ Name "{5EA7D2DD12461F05}Assets/Medical/VascularAccess/BCMM_VascularAccess.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AB6FC0BD91146D1}" {
+     SourceMaterial "BCMM_VascularAccess_M0"
+     AssignedMaterial "{6B310EAA5E847601}Assets/Medical/VascularAccess/Data/VascularAccess_0.emat"
+    }
+    MaterialAssignClass "{6AB6FC0BD911453B}" {
+     SourceMaterial "BCMM_VascularAccess_M1"
+     AssignedMaterial "{DAD5C3145CEE8E17}Assets/Medical/VascularAccess/Data/VascularAccess_1.emat"
+    }
+    MaterialAssignClass "{6AB6FC0BD911450C}" {
+     SourceMaterial "BCMM_VascularAccess_M2"
+     AssignedMaterial "{7B2453F165F337B7}Assets/Medical/VascularAccess/Data/VascularAccess_2.emat"
+    }
+    MaterialAssignClass "{6AB6FC0BD9114506}" {
+     SourceMaterial "BCMM_VascularAccess_M3"
+     AssignedMaterial "{D6B3F62CBDBF39F7}Assets/Medical/VascularAccess/Data/VascularAccess_3.emat"
+    }
+    MaterialAssignClass "{6AB6FC0BD911451E}" {
+     SourceMaterial "BCMM_VascularAccess_M4"
+     AssignedMaterial "{F547B8F296A564CD}Assets/Medical/VascularAccess/Data/VascularAccess_4.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_VascularAccess {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_BCMM_VascularAccess {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0.1
+     Margin 0.001
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

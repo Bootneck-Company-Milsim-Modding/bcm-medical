@@ -1,0 +1,1 @@
+MetaFileClass { Name "{6AB4B3F3FD216021}Prefabs/Items/BCMM_NCD.et" Configurations { EntityTemplateResourceClass PC {} EntityTemplateResourceClass HEADLESS : PC {} } }

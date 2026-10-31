@@ -1,0 +1,6 @@
+StaticModelEntity : "{FA5F43973A00A65C}Prefabs/Structures/BuildingParts/Entry/Entry_Base.et" {
+ ID "B6C4ED1CA1262001"
+ components {
+  MeshObject "{547A8804AA50F719}" { Object "{E850374B9D949B13}Assets/Structures/BuildingsParts/Entry/Doorstep_01_3x12m.xob" }
+ }
+}

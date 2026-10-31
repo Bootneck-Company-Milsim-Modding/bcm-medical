@@ -1,0 +1,39 @@
+MetaFileClass {
+ Name "{464FFC4E0E94E6D4}Assets/Medical/ChestSeal/BCMM_ChestSeal.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AB6FE8AF7DDC113}" {
+     SourceMaterial "BCMM_ChestSeal_M0"
+     AssignedMaterial "{C72F8A64B03A3064}Assets/Medical/ChestSeal/Data/ChestSeal.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_ChestSeal {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_BCMM_ChestSeal {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0.1
+     Margin 0.001
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

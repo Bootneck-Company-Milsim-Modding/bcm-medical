@@ -1,0 +1,8 @@
+AnimSetInstanceSource {
+ Template "{23DF4389D37A8F3B}anims/anm/NPC/workspaces/Officier_Mission01.ast"
+ Lines {
+  AnimSetInstanceSource_Line "Speeches.Open.In" { Resource "{D3B46EB6552BB1B0}Source/Animations/BCMM_TabletSelf_enter.anm" }
+  AnimSetInstanceSource_Line "Speeches.Open.Loop1" { Resource "{E46535D7839E12F1}Source/Animations/BCMM_TabletSelf_loop.anm" }
+  AnimSetInstanceSource_Line "Speeches.Open.Out" { Resource "{FC7DC22777605071}Source/Animations/BCMM_TabletSelf_exit.anm" }
+ }
+}

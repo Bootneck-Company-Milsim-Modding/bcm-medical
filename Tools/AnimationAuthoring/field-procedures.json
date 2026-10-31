@@ -1,0 +1,65 @@
+[
+  {
+    "action": "BCMM_Surgery_loop_BLOCKOUT",
+    "stem": "BCMM_Surgery_loop",
+    "frames": 61,
+    "fps": 30,
+    "loop": true
+  },
+  {
+    "action": "BCMM_Surgery_enter_BLOCKOUT",
+    "stem": "BCMM_Surgery_enter",
+    "frames": 31,
+    "fps": 30,
+    "loop": false
+  },
+  {
+    "action": "BCMM_Surgery_exit_BLOCKOUT",
+    "stem": "BCMM_Surgery_exit",
+    "frames": 31,
+    "fps": 30,
+    "loop": false
+  },
+  {
+    "action": "BCMM_Suture_loop_BLOCKOUT",
+    "stem": "BCMM_Suture_loop",
+    "frames": 61,
+    "fps": 30,
+    "loop": true
+  },
+  {
+    "action": "BCMM_Suture_enter_BLOCKOUT",
+    "stem": "BCMM_Suture_enter",
+    "frames": 31,
+    "fps": 30,
+    "loop": false
+  },
+  {
+    "action": "BCMM_Suture_exit_BLOCKOUT",
+    "stem": "BCMM_Suture_exit",
+    "frames": 31,
+    "fps": 30,
+    "loop": false
+  },
+  {
+    "action": "BCMM_Splint_loop_BLOCKOUT",
+    "stem": "BCMM_Splint_loop",
+    "frames": 61,
+    "fps": 30,
+    "loop": true
+  },
+  {
+    "action": "BCMM_Splint_enter_BLOCKOUT",
+    "stem": "BCMM_Splint_enter",
+    "frames": 31,
+    "fps": 30,
+    "loop": false
+  },
+  {
+    "action": "BCMM_Splint_exit_BLOCKOUT",
+    "stem": "BCMM_Splint_exit",
+    "frames": 31,
+    "fps": 30,
+    "loop": false
+  }
+]

@@ -1,0 +1,22 @@
+// Diagnostic framework manager: real faction item catalogues, no vehicle catalogue dependency.
+SCR_FactionManager : "{A242612865F2A48E}Prefabs/MP/Managers/Factions/FactionManager_Base.et" {
+ ID "56B2B4776E6E4499"
+ Factions {
+  SCR_Faction "{C6088D502ACF2201}" { FactionKey "US" UIInfo SCR_FactionUIInfo "{C6088D502ACF2221}" {
+  Name "#AR-Faction_US"
+  Icon "{EB7F65DBC9392557}UI/Textures/Editor/EditableEntities/Factions/EditableEntity_Faction_USA.edds"
+  m_sNameUpper "#AR-Faction_US-UC"
+ } m_aEntityCatalogs { SCR_EntityCatalogMultiList "{C6088D502ACF2211}" : "{5F7EC52FC40A03E2}Configs/EntityCatalog/US/InventoryItems_EntityCatalog_US.conf" {} } }
+  SCR_Faction "{C6088D502ACF2202}" { FactionKey "USSR" UIInfo SCR_FactionUIInfo "{C6088D502ACF2222}" {
+  Name "#AR-Faction_USSR"
+  Icon "{40B12B0DF911B856}UI/Textures/Editor/EditableEntities/Factions/EditableEntity_Faction_USSR.edds"
+  m_sNameUpper "#AR-Faction_USSR-UC"
+ } m_aEntityCatalogs { SCR_EntityCatalogMultiList "{C6088D502ACF2212}" : "{C53421647C3D0D2E}Configs/EntityCatalog/USSR/InventoryItems_EntityCatalog_USSR.conf" {} } }
+  SCR_Faction "{C6088D502ACF2203}" { FactionKey "FIA" UIInfo SCR_FactionUIInfo "{C6088D502ACF2223}" {
+  Name "#AR-Faction_FIA"
+  Icon "{FB266CDD4502D60B}UI/Textures/Editor/EditableEntities/Factions/EditableEntity_Faction_Fia.edds"
+  m_sNameUpper "AR-Faction_FIA-UC"
+ } m_aEntityCatalogs { SCR_EntityCatalogMultiList "{C6088D502ACF2213}" : "{E908001749419691}Configs/EntityCatalog/FIA/InventoryItems_EntityCatalog_FIA.conf" {} } }
+  SCR_FreeForAllFaction "{56B491183BEFD56B}" : "{FD79075CFB4C9161}Configs/Factions/FreeForAll.conf" {}
+ }
+}

@@ -5,4 +5,26 @@ GameProject {
  Dependencies {
   "58D0FB3206B6F859"
  }
+ Configurations {
+  GameProjectConfig PC {
+   WidgetManagerSettings WidgetManagerSettings "{6AB4B3F3FD21F201}" {
+    StringTables {
+     StringTableDefinition "{6AB4B3F3FD21F202}" {
+      StringTableSource "{6AB4B3F3FD21F001}Language/BCMM_Remains.st"
+      Languages {
+       LanguageDefinition "{6AB4B3F3FD21F203}" {
+        Code "en_us"
+        StringTableRuntime "{6AB4B3F3FD21F002}Language/BCMM_Remains.en_us.conf"
+       }
+      }
+     }
+    }
+   }
+  }
+  GameProjectConfig XBOX_ONE : PC {}
+  GameProjectConfig XBOX_SERIES : PC {}
+  GameProjectConfig PS4 : PC {}
+  GameProjectConfig PS5 : PC {}
+  GameProjectConfig HEADLESS : PC {}
+ }
 }

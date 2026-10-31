@@ -1,0 +1,1 @@
+MetaFileClass { Name "{47B2D2C90145E642}Prefabs/Items/BCMM_Saline.et" Configurations { EntityTemplateResourceClass PC {} EntityTemplateResourceClass HEADLESS : PC {} } }

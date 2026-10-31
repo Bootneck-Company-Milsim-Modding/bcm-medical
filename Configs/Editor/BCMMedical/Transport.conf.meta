@@ -1,0 +1,1 @@
+MetaFileClass { Name "{6AB4B3F3FD219109}Configs/Editor/BCMMedical/Transport.conf" Configurations { CONFResourceClass PC {} CONFResourceClass HEADLESS : PC {} } }

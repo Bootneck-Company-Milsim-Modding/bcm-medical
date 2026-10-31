@@ -1,0 +1,1 @@
+MetaFileClass { Name "{5F3E8CA2F93A4D06}Prefabs/Medical/Transport/BCMM_DraggedAnchor.et" Configurations { EntityTemplateResourceClass PC {} EntityTemplateResourceClass HEADLESS : PC {} } }

@@ -1,0 +1,114 @@
+{
+  "status": "Agreed player-focused engineering and private package validation complete; latest carry visual review and human/authenticated Internet player testing remain open.",
+  "date": "2026-10-30",
+  "project": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical",
+  "resume_instructions": "Read Docs/PLAYER-TEST-CANDIDATE-20261030.md and current resumed evidence. Preserve the validated standalone build. Follow user carry-pose feedback; only the two original casualty poses are authorized for new animation work, with existing rescuer locomotion/earlier animation files unchanged. No autonomous medical AI or ACE dependency/copying. Stretcher carry remains shelved. Git/publication remain deferred. Human server testing and documented boundary/art/licence work remain separate.",
+  "accepted": [
+    "Original linked blood-loss, pressure, pulse, ventilation, drug safety and cause-based arrest/recovery model.",
+    "250 saved settings in one BCM Medical GM tab with fifteen inline headings; schema 25 migration and separate-process restart acceptance passed, including mask alignment, tablet toggle, faction availability and oxygen price nondefaults.",
+    "27 native model/material entries; eight applied mesh-only visuals have owner/proxy/late-join functional acceptance; final placement and materials remain separate art work.",
+    "Full native sixty-second saline, plasma and whole-blood procedures with exact finite item consumption and distinct reserve accounting passed.",
+    "Dedicated actual Fluids-tab owner/proxy/late-join gate passed: exact bags, distinct components, replicated numerical vitals, live nondefault fluid settings and FullHeal reset.",
+    "Native stock morphine config reflection restored and its guarded effect tested; complete stock item UI/consumption remains broader acceptance.",
+    "Two-player carrying and grip defaults disabled; old saved values retained. Stationary support remains separate.",
+    "Supplied injector cap colours preserved.",
+    "Finite retained oxygen source, fullest usable source selection, active replicated mask, depleted/source-loss/GM-disable handling and unconscious-wearer continuity.",
+    "Six finite medication kinds: morphine, naloxone, epinephrine, TXA, paracetamol and fentanyl. Original shared opioid/reversal physiology, oral swallowing guard and stronger-opioid route/role/vital guards.",
+    "Native US/USSR/FIA inventory overrides contain 28 distinct medical inventory prefabs each, with BCM Medical native category title, live GM prices/availability/refund policy and server purchase-policy enforcement. Native actual-box/cache tests pass; complete native purchase/refund transaction acceptance remains open.",
+    "Original tablet self-use and standing conscious-patient handover entry/loop/exit clips compiled and observed on owner/proxy/late joiner. Self right palm corrected inward toward mouth. Cancellation retains the finite kit and commits no drug.",
+    "Oxygen mask follows native facial landmarks with seven saved alignment controls. Native close-up placement reviewed; final materials and varied-character contact remain separate art review."
+  ],
+  "evidence": {
+    "assets": "Tools/AssetImport/Verify-MedicalMaterials.py: 27 compiled model/material entries",
+    "procedures": ".checks/20261027-220219-675: 462 assertions, zero failures; native full 30/60/60 second splint/extraction/suture loops, cancellation, exact consumption and clinical commits",
+    "equipment": ".checks/20261027-215425-808: 496 assertions, zero failures; all twelve full-duration native equipment procedures",
+    "carry": ".checks/stretcher-network-20261027-172150-059: 372 assertions, zero failures; full owner/proxy/late-join gate including detached player casualty and nondefault GM settings",
+    "settings": "server-restart: {\"checks\": [[\"538\", \"0\"], [\"555\", \"0\"]], \"paths\": [\"C:\\\\Users\\\\ruanb\\\\Documents\\\\My Games\\\\ArmaReforgerWorkbench\\\\addons\\\\MCB Medical\\\\.checks\\\\persistence-current-20261028-100223-369\\\\logs\\\\logs_2026-10-28_10-02-23\\\\console.log\", \"C:\\\\Users\\\\ruanb\\\\Documents\\\\My Games\\\\ArmaReforgerWorkbench\\\\addons\\\\MCB Medical\\\\.checks\\\\persistence-current-20261028-100223-369\\\\logs\\\\logs_2026-10-28_10-02-29\\\\console.log\", \"C:\\\\Users\\\\ruanb\\\\Documents\\\\My Games\\\\ArmaReforgerWorkbench\\\\addons\\\\MCB Medical\\\\.checks\\\\persistence-current-20261028-100223-369\"]}",
+    "ui": "medical-ui: {\"checks\": [[\"26\", \"0\"]], \"paths\": [\"C:\\\\Users\\\\ruanb\\\\Documents\\\\My Games\\\\ArmaReforgerWorkbench\\\\addons\\\\MCB Medical\\\\.checks\\\\20261028-100236-079\\\\logs\\\\logs_2026-10-28_10-02-36\\\\console.log\"]}",
+    "fluids": ".checks/20261027-212117-817: 479 assertions, zero failures; actual full-duration saline/plasma/whole-blood inventory procedures",
+    "clinical": "clinical-safety: {\"checks\": [[\"557\", \"0\"]], \"paths\": [\"C:\\\\Users\\\\ruanb\\\\Documents\\\\My Games\\\\ArmaReforgerWorkbench\\\\addons\\\\MCB Medical\\\\.checks\\\\20261028-095541-122\\\\logs\\\\logs_2026-10-28_09-55-41\\\\console.log\"]}",
+    "applied": "applied-equipment-network: {\"checks\": [[\"542\", \"0\"]], \"paths\": [\"C:\\\\Users\\\\ruanb\\\\Documents\\\\My Games\\\\ArmaReforgerWorkbench\\\\addons\\\\MCB Medical\\\\.checks\\\\applied-equipment-network-20261028-100120-280\"]}",
+    "fluid_network": "typed-fluid-network: {\"checks\": [[\"552\", \"0\"]], \"paths\": [\"C:\\\\Users\\\\ruanb\\\\Documents\\\\My Games\\\\ArmaReforgerWorkbench\\\\addons\\\\MCB Medical\\\\.checks\\\\fluid-network-20261028-095928-724\"]}",
+    "medical": "native-bleeding: {\"checks\": [[\"568\", \"0\"]], \"paths\": [\"C:\\\\Users\\\\ruanb\\\\Documents\\\\My Games\\\\ArmaReforgerWorkbench\\\\addons\\\\MCB Medical\\\\.checks\\\\20261028-100210-619\\\\logs\\\\logs_2026-10-28_10-02-10\\\\console.log\"]}",
+    "source_freeze": ".checks/clinical-acceptance-20261028-095514-670/source-before.txt and source-after.txt: unchanged through the complete nine-gate run.",
+    "medication": ".checks/20261027-215946-676: 463 assertions, zero failures; real other-patient morphine and self epinephrine, exact consumption and cancellation",
+    "txa": ".checks/20261027-220035-819: 448 assertions, zero failures; full injectable completion/cancellation/onset",
+    "workbench": ".checks/20261028-070956-247: native script/resource validation successful",
+    "oxygen_medication_native": ".checks/20261028-090405-661: 566 assertions, zero failures; full native equipment/drug procedures including original tablet self and other graphs. Before latest self-facing fix and final server purchase guard.",
+    "clinical_acceptance": ".checks/clinical-acceptance-20261028-095514-670/report.json: all nine gates passed, sourceUnchanged true; runtime scripts, tests, prefabs, configs, UI and compiled/authored animation resources included in freeze.",
+    "oxygen_medication_network": "oxygen-medication-network: {\"checks\": [[\"554\", \"0\"]], \"paths\": [\"C:\\\\Users\\\\ruanb\\\\Documents\\\\My Games\\\\ArmaReforgerWorkbench\\\\addons\\\\MCB Medical\\\\.checks\\\\oxygen-medication-network-20261028-095605-182\"]}",
+    "arsenal_native": "native-faction-arsenals: {\"checks\": [[\"558\", \"0\"]], \"paths\": [\"C:\\\\Users\\\\ruanb\\\\Documents\\\\My Games\\\\ArmaReforgerWorkbench\\\\addons\\\\MCB Medical\\\\.checks\\\\20261028-095527-104\\\\logs\\\\logs_2026-10-28_09-55-27\\\\console.log\"]}",
+    "tablet_visual": ".checks/medical-art-review-20261028-090118-260: native owned self tablet graph active; .checks/tablet-self-source.png source pose preview.",
+    "finite_supply_refunds": ".checks/20261029-080048-505: 598/0, native finite supply and personal allocation calculators; actual resource transaction remains open.",
+    "arsenal_owner_network": ".checks/arsenal-network-20261029-082231-072/result.json: Passed=true, SourceUnchanged=true, authority606/0; actual owner request1..4, owner/proxy totals1000->880->925, late join925.",
+    "clinical_current_refunds": ".checks/clinical-acceptance-20261029-082439-133/report.json: all ten passed, sourceUnchanged=true; baseline before subsequent finite persistence changes.",
+    "finite_inventory_world_restart": ".checks/finite-persistence-20261029-084753-382/result.json: actual native SaveGameManager world save, original UUIDs, saline500/375, oxygen300/299.833,AED20/19,595/559zero failures, source unchanged.",
+    "limited_lives_world_restart": ".checks/finite-persistence-20261029-132424-457/result.json:600seed/574verify0failures, source unchanged; native saved-world accounting with diagnostic identities, including missing-body recovery."
+  },
+  "not_implemented": [
+    "Final applied instrument placement/materials, cylinder/pill props and remaining casualty drag art.",
+    "Conscious casualty consent and native vehicle medical care; two-player stretcher carrying remains shelved.",
+    "Broader fluid complications, additional routes/formulary and organ/brain/blast/burn/armour/AI calibration; independent drips, opt-in burden and component recovery now have focused native acceptance.",
+    "Live authenticated reconnect and saved-world owner/proxy/JIP, remaining supply distribution/mixed arsenal transactions, real network/load and release package/provenance acceptance."
+  ],
+  "next_steps": [
+    "Do not restart accepted tablet or arsenal implementation. Continue remaining clinical, persistence and release ledger. Cylinder and final pill/pack props require supplied high-quality assets; keep two-player carrying shelved.",
+    "Complete remaining clinical recovery, injury calibration, native vehicle treatment, supply distribution and patient/world/account persistence from Docs/ROADMAP.md.",
+    "Keep carrying shelved and Git deferred. Update the training draft as mechanics evolve; final release still needs Internet/load acceptance, remaining visuals and provenance."
+  ],
+  "asset_source": "C:\\Users\\ruanb\\Downloads\\Mod Assets",
+  "asset_inventory": "Docs/NEW-MEDICAL-ASSET-INVENTORY.json",
+  "asset_inspection": "Docs/NEW-MEDICAL-MODEL-INSPECTION.json",
+  "shelved": [
+    "Two-player stretcher carry; future hip-height stretcher with ordinary base-game walking, no custom animation work."
+  ],
+  "asset_purchase_brief": "Docs/ASSET-PURCHASE-BRIEF.md",
+  "body_bag_integration": {
+    "status": "Physical recovery integrated; separate respawn/menu removed; legacy add-on retired, empty directory remains held by the app",
+    "current_document": "Docs/BODY-BAG-INTEGRATION.md",
+    "settings_count": 270,
+    "settings_schema": 33,
+    "accepted": [
+      "Removal build compiles: .checks/20261029-061302-278, 336 resources",
+      "Native Limited Lives/model/migration: .checks/20261029-061354-705, 573 assertions, zero failures; surviving corpse does not gate deployment",
+      "170 legacy source/asset/config files preserved and ZIP-content verified; legacy folder remains",
+      "Removal schema-30 restart: 555 seed/574 verify checks; real schema-29 saved profile loads and passes 575 Limited Lives/config/migration checks",
+      "Current physical bagging/US tent return-home: 627 assertions, zero failures, no Limited Lives gating",
+      "Legacy Git history preserved and git bundle verify succeeds: nine refs, complete history, SHA256 63FB8DB980B7B09C8B9395B587C27C2DC3F4D501D875026F6FC7D06E422811D6",
+      "Post-removal clinical-acceptance-20261029-061952-047: all nine gates passed, sourceUnchanged true",
+      "Legacy project source files and Git directory removed after verified preservation; old folder is empty but Windows holds the directory itself open"
+    ],
+    "active": "Physical remains and vehicle world persistence accepted locally, current connected compatibility and remaining release work active.",
+    "remaining": [
+      "Current-build Limited Lives/reconnect, recovery and clinical acceptance",
+      "Remaining full Medical physiology, equipment, art, distribution and persistence requirements",
+      "Human input/accessibility, multiplayer/load, provenance/package and legacy project retirement"
+    ]
+  },
+  "current_medical_work": {
+    "Feature": "Approved sling import, original weapon retention and live casualty transport",
+    "State": "Active development resumed by user on 30 October 2026; recording finished; native tools, runtime testing and packing authorized. Sling imported; retention and living transport in progress.",
+    "Instruction": "Continue the current authorized implementation until complete or user stops. Read Docs/PLAYER-FOCUSED-IMPLEMENTATION.md and Docs/RESUMED-DEVELOPMENT-20261030.md. Preserve original standalone player medical care; no autonomous medical AI, no ACE copied code/assets/dependencies, no animation creation/modification. Keep stretcher carry shelved and Git/publication deferred. Finish original weapon retention, medical-menu consent and living carry/drag, native regression and private packed candidate."
+  },
+  "recording_constraint": "Recording finished; user authorized resumed development and native testing.",
+  "scope_audit": "Docs/SCOPE-AND-READINESS-AUDIT-20261030.md",
+  "required_pending_features": [
+    "Carry living casualties including conscious broken-leg casualties after explicit acceptance; unconscious casualties use authority eligibility without an unanswerable prompt.",
+    "Drag living casualties; define conscious consent consistently.",
+    "Retain original held weapon/attachments/ammunition on unconsciousness without external mod.",
+    "Timer/progress fallback where suitable native animation is unavailable; preserve duration, reservation and cancellation."
+  ],
+  "current_checkpoint": "Docs/PLAYER-FOCUSED-IMPLEMENTATION.md",
+  "recording_hold": [],
+  "currentCheckpoint": {
+    "packedPhases": 12,
+    "schema": 35,
+    "package": ".checks/package-development/candidate-20261030-171720-777/packed",
+    "settings": 279,
+    "report": "Docs/PLAYER-TEST-CANDIDATE-20261030.md",
+    "carryVisualAccepted": false,
+    "validationStages": 51,
+    "packedNetworkChecks": 701
+  },
+  "historicalEvidenceNote": "Earlier accepted/queue entries are historical snapshots; currentCheckpoint and the linked candidate report supersede their older counts and pending implementation status."
+}

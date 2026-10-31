@@ -1,0 +1,39 @@
+MetaFileClass {
+ Name "{F2A5784BEB743BF2}Assets/Medical/AEDPads/BCMM_AEDPads.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AB6FC0BD8CEBF2B}" {
+     SourceMaterial "BCMM_AEDPads_M0"
+     AssignedMaterial "{32BDAAB5C58185F0}Assets/Medical/AEDPads/Data/AEDPads_0.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_AEDPads {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_BCMM_AEDPads {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0.1
+     Margin 0.001
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

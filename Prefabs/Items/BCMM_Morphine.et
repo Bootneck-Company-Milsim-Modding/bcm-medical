@@ -1,0 +1,26 @@
+GenericEntity : "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et" {
+ ID "6AB4B3F3FD217012"
+ components {
+  MeshObject "{59CE87DB17B6B1C5}" { Object "{BE81C3A855ACE465}Assets/Medical/Morphine/BCMM_Morphine.xob" }
+  SCR_ConsumableItemComponent "{59E68C74C5CEE74F}" { m_ConsumableEffect BCMM_InjectionPresentationEffect "{59E68C74C1F3910E}" { m_bDeleteOnUse 0 } m_bAlternativeModelOnAction 0 }
+  BCMM_MedicationItemComponent "{6AB4B3F3FD218312}" { Kind 0 }
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    CustomAttributes { SCR_AlternativeModel "{59E68C742A7C6A5F}" { m_sAlternativeModel "{BE81C3A855ACE465}Assets/Medical/Morphine/BCMM_Morphine.xob" } }
+    ItemDisplayName SCR_InventoryUIInfo "{5222EB4D07D865FA}" {
+     Name "Morphine"
+     Description "BCM medication. Abstract game effect; monitor the casualty after administration."
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 0.4
+     SizeSetupStrategy Manual
+     ItemDimensions 20 10 5
+     ItemVolume 1000
+    }
+    CommonItemType "EQUIPMENT"
+   }
+  }
+
+
+ }
+}

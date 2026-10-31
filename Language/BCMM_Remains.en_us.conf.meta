@@ -1,0 +1,11 @@
+MetaFileClass {
+ Name "{6AB4B3F3FD21F002}Language/BCMM_Remains.en_us.conf"
+ Configurations {
+  CONFResourceClass PC {}
+  CONFResourceClass XBOX_ONE : PC {}
+  CONFResourceClass XBOX_SERIES : PC {}
+  CONFResourceClass PS4 : PC {}
+  CONFResourceClass PS5 : PC {}
+  CONFResourceClass HEADLESS : PC {}
+ }
+}

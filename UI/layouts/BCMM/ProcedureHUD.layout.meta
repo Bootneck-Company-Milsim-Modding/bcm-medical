@@ -1,0 +1,4 @@
+MetaFileClass {
+ Name "{7ED896AAC4412D30}UI/layouts/BCMM/ProcedureHUD.layout"
+ Configurations { LayoutResourceClass PC {} LayoutResourceClass HEADLESS : PC {} }
+}

@@ -1,0 +1,20 @@
+{
+  "original_static_asset": true,
+  "inventory_only": true,
+  "animation_data": false,
+  "mesh_objects": 99,
+  "detail_objects": 506,
+  "inventory_lod_triangles": 26438,
+  "texture_size": 2048,
+  "native_game_validation": false,
+  "reference_photo_embedded": false,
+  "reduced_inventory_triangles": 6500,
+  "exported_fbx": "BCM_Sling_Inventory.fbx",
+  "blend_actions": 0,
+  "armatures": 0,
+  "packed_images": true,
+  "review": "Static geometry and initial renders inspected; corrected cloth reflectance and final studio presentation",
+  "transparent_background": true,
+  "background_geometry": false,
+  "shape_revision": "Asymmetric pointed loop, longer left sleeve, shorter right sleeve, offset compact connector tail"
+}

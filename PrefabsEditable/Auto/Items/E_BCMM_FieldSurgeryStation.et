@@ -1,0 +1,33 @@
+GenericEntity : "{6AB4B3F3FD216011}Prefabs/Items/BCMM_FieldSurgeryStation.et" {
+ ID "6AB4B3F3FD217011"
+ components {
+  SCR_EditableEntityComponent "{6ABB2262F7F01786}" : "{996046FE206C699A}Prefabs/Editor/Components/Default_SCR_EditableEntityComponent.ct" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#BCMM-EditableEntity_BCMM_FieldSurgeryStation_Name"
+    Description "#BCMM-FieldSurgeryStationDescription"
+    m_Image "{6AB4B3F3FD21A101}UI/Textures/EditorPreviews/Auto/Items/E_BCMM_FieldSurgeryStation.edds"
+    m_aAuthoredLabels {
+     TRAIT_MEDICAL
+    }
+    m_aAutoLabels {
+     ENTITYTYPE_OBJECT SIZE_S
+    }
+   }
+  }
+  SCR_PreviewEntityComponent "{6ABB2262F7F00544}" : "{6CADA7A88A6265FD}Prefabs/Editor/Components/PreviewEntityComponentClass.ct" {
+   m_bRuntime 1
+   m_aEntries {
+    SCR_BasePreviewEntry "{6ABB2262F7F00BCD}" {
+     m_iParentID -1
+     m_Mesh "{EF4FAAF6A80E33AF}Assets/Medical/FieldStretcher/BCMM_FieldStretcher.xob"
+     m_Flags EDITABLE
+     m_Shape MESH
+     m_iPivotID ""
+     m_vScale 1 1 1
+     m_vPosition 0 0 0
+     m_vAngles 0 0 0
+    }
+   }
+  }
+ }
+}

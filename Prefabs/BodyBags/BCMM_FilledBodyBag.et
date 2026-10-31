@@ -1,0 +1,41 @@
+GenericEntity {
+ ID "6AB4B3F3FD217001"
+
+ components {
+  Persistence "{6AB4B3F3FD219821}" {}
+  SCR_EditableEntityComponent "{6AB4B3F3FD21E205}" : "{996046FE206C699A}Prefabs/Editor/Components/Default_SCR_EditableEntityComponent.ct" {
+   m_UIInfo SCR_EditableEntityUIInfo { Name "Filled Body Bag" }
+   m_bAutoRegister ALWAYS
+  }
+  MeshObject "{6AB4B3F3FD218002}" { Object "{98555BDCD0BE490A}Assets/BodyBags/BCM_FilledBodyBag/BCM_FilledBodyBag_Collision.xob" }
+  RigidBody "{6AB4B3F3FD218003}" { Mass 85 LinearDamping 0.75 AngularDamping 0.85 ModelGeometry 1 }
+  Hierarchy "{6AB4B3F3FD218004}" {}
+  BCMM_BagStorageComponent "{6AB4B3F3FD218005}" {
+   Attributes SCR_ItemAttributeCollection {
+    ItemDisplayName BCMM_BagUIInfo { Name "Filled Body Bag" }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes { Weight 85 SizeSetupStrategy Manual ItemDimensions 10 10 5 ItemVolume 2500 }
+    CommonItemType "EQUIPMENT"
+   }
+   UseCapacityCoefficient 0
+   MaxCumulativeVolume 2000000
+   MaxItemSize 250 250 250
+   m_fMaxWeight 1000
+  }
+  InventoryStorageManagerComponent "{6AB4B3F3FD218006}" {}
+  ActionsManagerComponent "{6AB4B3F3FD218007}" {
+   ActionContexts { UserActionContext { ContextName "bcmm_bag" Position PointInfo {} Radius 2 Omnidirectional 1 } }
+   additionalActions {
+    BCMM_SendHomeAction "{6AB4B3F3FD218305}" { ParentContextList { "bcmm_bag" } UIInfo SCR_ActionUIInfo { Name "Send body home" } VisibilityRange 4 }
+    BCMM_BuryBagAction "{6AB4B3F3FD218304}" { ParentContextList { "bcmm_bag" } UIInfo SCR_ActionUIInfo { Name "Bury body bag" } VisibilityRange 4 }
+    BCMM_DragBagAction "{6AB4B3F3FD218301}" { ParentContextList { "bcmm_bag" } UIInfo SCR_ActionUIInfo { Name "Drag body bag" } VisibilityRange 2 }
+    BCMM_RopeDragBagAction "{6AB4B3F3FD218302}" { ParentContextList { "bcmm_bag" } UIInfo SCR_ActionUIInfo { Name "Attach drag rope" } VisibilityRange 2 }
+    BCMM_ReleaseBagAction "{6AB4B3F3FD218303}" { ParentContextList { "bcmm_bag" } UIInfo SCR_ActionUIInfo { Name "Release body bag / rope" } VisibilityRange 2 }
+    BCMM_BagNameAction "{6AB4B3F3FD21800A}" { ParentContextList { "bcmm_bag" } UIInfo SCR_ActionUIInfo { Name "Body bag" } VisibilityRange 2 }
+    BCMM_SearchBagAction "{6AB4B3F3FD21800B}" { ParentContextList { "bcmm_bag" } UIInfo SCR_ActionUIInfo { Name "Search body bag" } VisibilityRange 2 }
+    BCMM_LoadBagAction "{6AB4B3F3FD21800C}" { ParentContextList { "bcmm_bag" } UIInfo SCR_ActionUIInfo { Name "Load into nearby cargo" } VisibilityRange 2 }
+   }
+  }
+  BCMM_BodyBagComponent "{6AB4B3F3FD21800D}" {}
+  RplComponent "{6AB4B3F3FD21800E}" { "Rpl State Override" Runtime AutoHierarchy 1 }
+ }
+}

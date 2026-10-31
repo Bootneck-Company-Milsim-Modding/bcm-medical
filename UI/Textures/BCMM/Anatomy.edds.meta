@@ -1,0 +1,21 @@
+MetaFileClass {
+ Name "{6AB4B3F3FD215004}UI/Textures/BCMM/Anatomy.edds"
+ Configurations {
+  PNGResourceClass PC {
+   FormatCompress Best
+   Conversion ColorHQCompression
+   ConversionQuality 0.05
+   ColorSpace ToSRGB
+  }
+  PNGResourceClass HEADLESS : PC {
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass XBOX_SERIES : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass PS5 : PC {
+  }
+ }
+}

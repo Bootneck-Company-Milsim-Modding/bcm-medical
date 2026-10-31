@@ -1,0 +1,38 @@
+GenericEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
+ ID "6AB4B3F3FD217007"
+ components {
+
+  BCMM_DragRopeComponent "{6AB4B3F3FD218304}" {
+  }
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemDisplayName SCR_InventoryUIInfo "{5222EB4D07D865FA}" {
+     Name "Body-bag drag rope"
+     Description "Attach to a filled body bag to tow it while moving and using weapons."
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 0.5
+     SizeSetupStrategy Manual
+     ItemDimensions 15 10 5
+     ItemVolume 500
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{B4C0B4D71A258FEC}" {
+      CameraPreset Top
+      CameraOrbitAngles 0 0 90
+      CameraDistanceToItem 0.65
+      FOV 35
+     }
+    }
+    CommonItemType "EQUIPMENT"
+   }
+  }
+  MeshObject "{A8DDA767AF0E0FA7}" {
+   Object "{E20A38B86EF7369B}Assets/Props/Naval/FishingGear_01/FishingRope_01.xob"
+  }
+  RigidBody "{C83410D6ED3C2D9B}" {
+   Mass 0.5
+  }
+ }
+ scale 0.15
+}

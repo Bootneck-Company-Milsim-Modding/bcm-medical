@@ -1,0 +1,1 @@
+MetaFileClass { Name "{6AB4B3F3FD21B110}Configs/Editor/PlaceableEntities/BCMM_Medical.conf" Configurations { CONFResourceClass PC {} CONFResourceClass HEADLESS : PC {} CONFResourceClass XBOX_ONE : PC {} CONFResourceClass XBOX_SERIES : PC {} CONFResourceClass PS4 : PC {} CONFResourceClass PS5 : PC {} } }

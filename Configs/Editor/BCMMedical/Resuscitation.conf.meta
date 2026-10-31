@@ -1,0 +1,1 @@
+MetaFileClass { Name "{6AB4B3F3FD219104}Configs/Editor/BCMMedical/Resuscitation.conf" Configurations { CONFResourceClass PC {} CONFResourceClass HEADLESS : PC {} } }

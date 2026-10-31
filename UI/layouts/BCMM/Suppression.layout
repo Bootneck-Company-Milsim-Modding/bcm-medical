@@ -1,0 +1,22 @@
+FrameWidgetClass {
+ Name "BCM_SuppressionOverlay"
+ "Ignore Cursor" 1
+ Slot FrameWidgetSlot {
+  Anchor 0 0 1 1
+ }
+ {
+  ImageWidgetClass {
+   Name "BCM_Vignette"
+   "Ignore Cursor" 1
+   Slot FrameWidgetSlot {
+    Anchor 0 0 1 1
+   }
+   Color 0 0 0 1
+   Size 1920 1080
+   Mask "{4825491ACD202C43}UI/Textures/ScreenEffects/Suppression/suppressionVignette_alphaMask200.edds"
+   "Transition width" 1
+   Progress 0.35
+  }
+ }
+}
+

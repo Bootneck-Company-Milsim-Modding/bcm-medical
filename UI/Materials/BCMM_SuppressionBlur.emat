@@ -1,0 +1,8 @@
+GaussFilterEffect {
+ Enabled 0
+ Intensity 0
+ Refs {
+  "Enabled" "BCMM_SuppressionClient.BlurEnabled"
+  "Intensity" "BCMM_SuppressionClient.BlurAmount"
+ }
+}

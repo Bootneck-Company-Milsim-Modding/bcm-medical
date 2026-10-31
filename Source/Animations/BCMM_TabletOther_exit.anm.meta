@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{9BEC614037443EAA}Source/Animations/BCMM_TabletOther_exit.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourcePath "BCMM_Tablets.blend"
+   SourceProfile "101_FullBodyABS"
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+ }
+}

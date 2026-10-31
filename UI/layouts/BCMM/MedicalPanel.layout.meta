@@ -1,0 +1,4 @@
+MetaFileClass {
+ Name "{6AB4B3F3FD215003}UI/layouts/BCMM/MedicalPanel.layout"
+ Configurations { LayoutResourceClass PC {} LayoutResourceClass HEADLESS : PC {} }
+}

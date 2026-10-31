@@ -1,0 +1,176 @@
+[
+  {
+    "stem": "Tourniquet",
+    "resource": "{D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et",
+    "label": "Tourniquet",
+    "cost": 0
+  },
+  {
+    "stem": "Bandage",
+    "resource": "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et",
+    "label": "Bandage",
+    "cost": 0
+  },
+  {
+    "stem": "AED",
+    "resource": "{6AB4B3F3FD216025}Prefabs/Items/BCMM_AED.et",
+    "label": "AED",
+    "cost": 30
+  },
+  {
+    "stem": "AEDPads",
+    "resource": "{6AB4B3F3FD216026}Prefabs/Items/BCMM_AEDPads.et",
+    "label": "AED electrode pads",
+    "cost": 3
+  },
+  {
+    "stem": "AirwayAdjunct",
+    "resource": "{6AB4B3F3FD216022}Prefabs/Items/BCMM_AirwayAdjunct.et",
+    "label": "AirwayAdjunct (placeholder)",
+    "cost": 3
+  },
+  {
+    "stem": "BVM",
+    "resource": "{6AB4B3F3FD216024}Prefabs/Items/BCMM_BVM.et",
+    "label": "Bag valve mask",
+    "cost": 8
+  },
+  {
+    "stem": "ChestDrain",
+    "resource": "{6AB4B3F3FD216027}Prefabs/Items/BCMM_ChestDrain.et",
+    "label": "ChestDrain (placeholder)",
+    "cost": 3
+  },
+  {
+    "stem": "ChestSeal",
+    "resource": "{6AB4B3F3FD216020}Prefabs/Items/BCMM_ChestSeal.et",
+    "label": "Vented chest seal",
+    "cost": 3
+  },
+  {
+    "stem": "DragRope",
+    "resource": "{6AB4B3F3FD216007}Prefabs/Items/BCMM_DragRope.et",
+    "label": "Body-bag drag rope",
+    "cost": 2
+  },
+  {
+    "stem": "EmptyBodyBag",
+    "resource": "{6AB4B3F3FD216006}Prefabs/Items/BCMM_EmptyBodyBag.et",
+    "label": "Body bag (empty)",
+    "cost": 3
+  },
+  {
+    "stem": "Epinephrine",
+    "resource": "{6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et",
+    "label": "Epinephrine",
+    "cost": 3
+  },
+  {
+    "stem": "Fentanyl",
+    "resource": "{D0F8A8C2097AA101}Prefabs/Items/BCMM_Fentanyl.et",
+    "label": "Fentanyl",
+    "cost": 3
+  },
+  {
+    "stem": "FluidBag",
+    "resource": "{6AB4B3F3FD216029}Prefabs/Items/BCMM_FluidBag.et",
+    "label": "Whole blood bag",
+    "cost": 3
+  },
+  {
+    "stem": "Monitor",
+    "resource": "{6AB4B3F3FD216030}Prefabs/Items/BCMM_Monitor.et",
+    "label": "Medical monitor",
+    "cost": 15
+  },
+  {
+    "stem": "Morphine",
+    "resource": "{6AB4B3F3FD216012}Prefabs/Items/BCMM_Morphine.et",
+    "label": "Morphine",
+    "cost": 3
+  },
+  {
+    "stem": "Naloxone",
+    "resource": "{6AB4B3F3FD216013}Prefabs/Items/BCMM_Naloxone.et",
+    "label": "Naloxone",
+    "cost": 3
+  },
+  {
+    "stem": "NCD",
+    "resource": "{6AB4B3F3FD216021}Prefabs/Items/BCMM_NCD.et",
+    "label": "NCD kit",
+    "cost": 3
+  },
+  {
+    "stem": "Oxygen",
+    "resource": "{D0F8A8C2097AA103}Prefabs/Items/BCMM_Oxygen.et",
+    "label": "Portable oxygen kit",
+    "cost": 15
+  },
+  {
+    "stem": "Paracetamol",
+    "resource": "{D0F8A8C2097AA102}Prefabs/Items/BCMM_Paracetamol.et",
+    "label": "Paracetamol tablets",
+    "cost": 3
+  },
+  {
+    "stem": "Plasma",
+    "resource": "{B6D83F6853C68D73}Prefabs/Items/BCMM_Plasma.et",
+    "label": "Plasma bag",
+    "cost": 3
+  },
+  {
+    "stem": "PulseOximeter",
+    "resource": "{6AB4B3F3FD216031}Prefabs/Items/BCMM_PulseOximeter.et",
+    "label": "Pulse oximeter",
+    "cost": 3
+  },
+  {
+    "stem": "Saline",
+    "resource": "{47B2D2C90145E642}Prefabs/Items/BCMM_Saline.et",
+    "label": "Saline bag",
+    "cost": 3
+  },
+  {
+    "stem": "Splint",
+    "resource": "{6AB4B3F3FD216008}Prefabs/Items/BCMM_Splint.et",
+    "label": "Packaged leg splint",
+    "cost": 5
+  },
+  {
+    "stem": "Suction",
+    "resource": "{6AB4B3F3FD216023}Prefabs/Items/BCMM_Suction.et",
+    "label": "Portable medical suction",
+    "cost": 10
+  },
+  {
+    "stem": "SurgeryKit",
+    "resource": "{6AB4B3F3FD216009}Prefabs/Items/BCMM_SurgeryKit.et",
+    "label": "Surgery kit",
+    "cost": 10
+  },
+  {
+    "stem": "SutureKit",
+    "resource": "{6AB4B3F3FD216010}Prefabs/Items/BCMM_SutureKit.et",
+    "label": "Suture kit",
+    "cost": 5
+  },
+  {
+    "stem": "TXA",
+    "resource": "{6AB4B3F3FD216032}Prefabs/Items/BCMM_TXA.et",
+    "label": "TXA",
+    "cost": 3
+  },
+  {
+    "stem": "VascularAccess",
+    "resource": "{6AB4B3F3FD216028}Prefabs/Items/BCMM_VascularAccess.et",
+    "label": "IV cannula kit",
+    "cost": 3
+  },
+  {
+    "stem": "WeaponSling",
+    "resource": "{1AC68034B6B789EF}Prefabs/Items/BCMM_WeaponSling.et",
+    "label": "Weapon sling",
+    "cost": 3
+  }
+]

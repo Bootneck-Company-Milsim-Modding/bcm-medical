@@ -1,0 +1,21 @@
+{
+  "static_inventory_only": true,
+  "photo_texture": false,
+  "watermark": false,
+  "backdrop_geometry": false,
+  "animation_actions": 0,
+  "armatures": 0,
+  "render_devices": [
+    "NVIDIA GeForce RTX 5070 Ti"
+  ],
+  "woven_texture_size": 2048,
+  "native_game_validation": false,
+  "detailed_triangles": 692386,
+  "reduced_export_triangles": 17999,
+  "packed_fabric_images": true,
+  "matching_status": "Artist review; no perfect/exact-match claim",
+  "material_revision": "Coarser matte woven nylon, stronger yarn relief",
+  "approved_shape_preserved": false,
+  "fabric_junction_revision": "Gradual gathered-to-flat cuffs; duplicate piping removed; centre return eased",
+  "overall_layout_retained": true
+}

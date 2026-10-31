@@ -1,0 +1,1 @@
+MetaFileClass { Name "{D0F8A8C2097AA104}Prefabs/MedicalVisuals/BCMM_OxygenMask.et" Configurations { EntityTemplateResourceClass PC {} EntityTemplateResourceClass HEADLESS : PC {} } }

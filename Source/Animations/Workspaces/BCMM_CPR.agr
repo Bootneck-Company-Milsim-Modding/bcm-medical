@@ -1,0 +1,21 @@
+AnimSrcGraph {
+ AnimSetTemplate "{23DF4389D37A8F3B}anims/anm/NPC/workspaces/Officier_Mission01.ast"
+ ControlTemplate AnimSrcGCT "{6AB4B3F3FD216111}" {
+  Variables {
+   AnimSrcGCTVarInt NPC_Speech {
+    MinValue -1
+    MaxValue 1
+   }
+  }
+  Commands {
+   AnimSrcGCTCmd CMD_Gesture_NPC {
+   }
+  }
+ }
+ Debug AnimSrcGD "{6AB56059D4DA0CE8}" {
+ }
+ GraphFilesResourceNames {
+  "{6AB4B3F3FD216102}Source/Animations/Workspaces/BCMM_CPR.agf"
+ }
+ DefaultRunNode "MasterControl"
+}

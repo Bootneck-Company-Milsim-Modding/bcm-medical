@@ -1,0 +1,39 @@
+MetaFileClass {
+ Name "{2B8C74DB74D72FCF}Assets/Medical/Monitor/BCMM_Monitor.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AB6F79BD2B95E6B}" {
+     SourceMaterial "BCMM_Monitor_M0"
+     AssignedMaterial "{1C97A4B3E80C1D27}Assets/Medical/Monitor/Data/Monitor_0.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_Monitor {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_BCMM_Monitor {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0.1
+     Margin 0.001
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

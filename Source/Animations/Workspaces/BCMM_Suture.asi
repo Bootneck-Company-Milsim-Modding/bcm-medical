@@ -1,0 +1,8 @@
+AnimSetInstanceSource {
+ Template "{23DF4389D37A8F3B}anims/anm/NPC/workspaces/Officier_Mission01.ast"
+ Lines {
+  AnimSetInstanceSource_Line "Speeches.Open.In" { Resource "{6AB4B3F3FD216205}Source/Animations/BCMM_Suture_enter.anm" }
+  AnimSetInstanceSource_Line "Speeches.Open.Loop1" { Resource "{6AB4B3F3FD216204}Source/Animations/BCMM_Suture_loop.anm" }
+  AnimSetInstanceSource_Line "Speeches.Open.Out" { Resource "{6AB4B3F3FD216206}Source/Animations/BCMM_Suture_exit.anm" }
+ }
+}

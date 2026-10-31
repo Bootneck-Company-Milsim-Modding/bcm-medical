@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{6AB4B3F3FD219301}Sounds/Medical/BCMM_Pulse.wav"
+ Configurations {
+  WAVResourceClass PC {
+  }
+  WAVResourceClass HEADLESS : PC {
+  }
+  WAVResourceClass XBOX_ONE : PC {
+  }
+  WAVResourceClass XBOX_SERIES : PC {
+  }
+  WAVResourceClass PS4 : PC {
+  }
+  WAVResourceClass PS5 : PC {
+  }
+ }
+}

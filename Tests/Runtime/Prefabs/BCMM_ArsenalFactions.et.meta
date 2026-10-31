@@ -1,0 +1,1 @@
+MetaFileClass { Name "{C6088D502ACF2000}Prefabs/BCMM_ArsenalFactions.et" Configurations { EntityTemplateResourceClass PC {} EntityTemplateResourceClass HEADLESS : PC {} } }

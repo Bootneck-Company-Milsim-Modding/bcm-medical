@@ -1,0 +1,72 @@
+[
+  {
+    "Name": "Vanilla Mi-8",
+    "Prefab": "{DF5CCB7C0FF049F4}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_unarmed_transport.et",
+    "ExtraAddons": [],
+    "Aircraft": true,
+    "AllowKnownSupportStationDiagnostic": false
+  },
+  {
+    "Name": "MRZR D4",
+    "Prefab": "{AC8918B033DB356D}Prefabs/Vehicles/Wheeled/MRZR/Unarmed/MRZR_D4_Unarmed_Camo.et",
+    "ExtraAddons": [
+      "64900A5A31F5DCB5"
+    ],
+    "Aircraft": false,
+    "AllowKnownSupportStationDiagnostic": false
+  },
+  {
+    "Name": "JLTV",
+    "Prefab": "{E62EEF185EC31C54}Prefabs/Vehicles/Wheeled/JLTV/Unarmed/JLTV_Unarmed.et",
+    "ExtraAddons": [
+      "5C721177A220B42F"
+    ],
+    "Aircraft": false,
+    "AllowKnownSupportStationDiagnostic": false
+  },
+  {
+    "Name": "Cougar 4x4",
+    "Prefab": "{1D86460CBEA92CAC}Prefabs/Vehicles/Wheeled/Cougar4x4/Cougar4x4_Olive.et",
+    "ExtraAddons": [
+      "5D5A20A8AE33C21E"
+    ],
+    "Aircraft": false,
+    "AllowKnownSupportStationDiagnostic": false
+  },
+  {
+    "Name": "Medical Little Bird",
+    "Prefab": "{B54777A1574316FD}Prefabs/Vehicles/Helicopters/AH6M/AH6M_Medevac2.et",
+    "ExtraAddons": [
+      "665845C43FB3DA78"
+    ],
+    "Aircraft": true,
+    "AllowKnownSupportStationDiagnostic": false
+  },
+  {
+    "Name": "BCM UH-60",
+    "Prefab": "{AA8A16E764AA2F6E}Prefabs/Vehicles/Helicopters/AUS_MH60/Awenzj_SOAR_UH60.et",
+    "ExtraAddons": [
+      "6992B994D1870DD9"
+    ],
+    "Aircraft": true,
+    "AllowKnownSupportStationDiagnostic": false
+  },
+  {
+    "Name": "BCM HH-60G",
+    "Prefab": "{05BEA1ABB0190245}Prefabs/Vehicles/Helicopters/AUS_MH60/New Variants/Awenzj_HH-60G.et",
+    "ExtraAddons": [
+      "6992B994D1870DD9"
+    ],
+    "Aircraft": true,
+    "AllowKnownSupportStationDiagnostic": true
+  },
+  {
+    "Name": "BCM Chinook",
+    "Prefab": "{BDD5BF2D60C2F5F0}Prefabs/Vehicles/Helicopters/H47/CH47F_MY2.et",
+    "ExtraAddons": [
+      "6992B994D1870DD9"
+    ],
+    "Aircraft": true,
+    "AllowKnownSupportStationDiagnostic": false
+  }
+]

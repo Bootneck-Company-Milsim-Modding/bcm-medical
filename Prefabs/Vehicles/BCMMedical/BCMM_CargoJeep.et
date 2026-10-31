@@ -1,0 +1,6 @@
+Vehicle : "{94DE32169691AC34}Prefabs/Vehicles/Wheeled/M151A2/M151A2_transport_MERDC.et" {
+ ID "6AB4B3F3FD217005"
+ components {
+  BCMM_VehicleCargoComponent "{6AB4B3F3FD218192}" {}
+ }
+}

@@ -1,0 +1,39 @@
+MetaFileClass {
+ Name "{1B49817205B37B1C}Assets/Medical/FluidBag/BCMM_FluidBag.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AB6927341A4F3EE}" {
+     SourceMaterial "BCMM_FluidBag_M0"
+     AssignedMaterial "{118722C39E94A971}Assets/Medical/FluidBag/Data/FluidBag_0.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_FluidBag {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_BCMM_FluidBag {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0.1
+     Margin 0.001
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

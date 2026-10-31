@@ -1,0 +1,1 @@
+MetaFileClass { Name "{28ED24A2516CDDBF}Prefabs/MedicalVisuals/BCMM_PulseOximeter.et" Configurations { EntityTemplateResourceClass PC {} EntityTemplateResourceClass HEADLESS : PC {} } }

@@ -2,7 +2,7 @@
 // game rules, not clinical claims about bullet removal or wound closure.
 enum BCMM_InjuryCause { GUNSHOT, LACERATION, PUNCTURE, ABRASION, BLAST }
 enum BCMM_BodyRegion { HEAD, CHEST, ABDOMEN, LEFT_ARM, RIGHT_ARM, LEFT_LEG, RIGHT_LEG }
-enum BCMM_Activity { RESTING, WALKING, RUNNING }
+enum BCMM_Activity { RESTING, WALKING, RUNNING, CRAWLING }
 enum BCMM_BleedCompartment { SOFT_TISSUE, ABDOMEN, LEFT_PLEURAL, RIGHT_PLEURAL, CRANIAL }
 
 class BCMM_Fracture
@@ -31,7 +31,7 @@ class BCMM_Fracture
  bool AllowsJump() { return !Broken; }
  float MotionBloodLoss(float seconds, BCMM_Activity activity, notnull BCMM_Settings settings)
  {
-  if (!Broken || !(seconds > 0) || activity == BCMM_Activity.RESTING) return 0;
+  if (!Broken || !(seconds > 0) || (activity == BCMM_Activity.RESTING || activity == BCMM_Activity.CRAWLING)) return 0;
   float rate = settings.Get("fractureWalkingBleedMlPerSecond");
   if (activity == BCMM_Activity.RUNNING) rate = settings.Get("fractureRunningBleedMlPerSecond");
   // Unsplinted movement is slower; immobilisation is still beneficial. Both
@@ -48,10 +48,10 @@ class BCMM_InternalBleeding
  float RateMlPerSecond;
  float PooledMl;
  bool Repaired;
- float Advance(float seconds)
+ float Advance(float seconds,float clotSupport=1)
  {
   if (Repaired || !(seconds > 0)) return 0;
-  float loss = Math.Max(0, RateMlPerSecond) * seconds;
+  float loss = Math.Max(0, RateMlPerSecond) * seconds * Math.Clamp(clotSupport,0,3);
   PooledMl += loss;
   return loss;
  }
@@ -90,6 +90,12 @@ modded class BCMM_Patient
  protected int m_NextInternalId;
  protected float m_TotalBloodLostMl;
 
+ int InternalBleedCount() { return m_InternalBleeds.Count(); }
+ BCMM_InternalBleeding InternalBleedAt(int index)
+ {
+  if (!m_InternalBleeds.IsIndexValid(index)) return null;
+  return m_InternalBleeds[index];
+ }
  int RegisterInjury(BCMM_BodyRegion region, BCMM_InjuryCause cause, float flowMlPerSecond, float projectileSample, notnull BCMM_Settings settings)
  {
   if (!(projectileSample >= 0 && projectileSample <= 1)) return 0;
@@ -148,8 +154,21 @@ modded class BCMM_Patient
  {
   if (Terminal || !(seconds > 0)) return 0;
   float loss;
-  foreach (BCMM_Wound wound : m_Wounds) loss += wound.Advance(seconds, activity, settings);
-  foreach (BCMM_InternalBleeding source : m_InternalBleeds) loss += source.Advance(seconds);
+  foreach (BCMM_Wound wound : m_Wounds) loss += wound.Advance(seconds, activity, settings, Medication.ClotWearScale(settings)*Fluids.DressingWearMultiplier(settings));
+  m_TotalBloodLostMl += loss;
+  return loss + AdvanceInternalTrauma(seconds, activity, settings);
+ }
+ float AdvanceInternalTrauma(float seconds, BCMM_Activity activity, notnull BCMM_Settings settings)
+ {
+  if (Terminal || !(seconds > 0)) return 0;
+  float loss;
+  foreach (BCMM_InternalBleeding source : m_InternalBleeds)
+  {
+   float sourceLoss = source.Advance(seconds,(1-Medication.TXAEffect*settings.Get("txaInternalBleedReduction"))*Fluids.BleedingMultiplier(settings));
+   loss += sourceLoss;
+   if (source.Compartment == BCMM_BleedCompartment.LEFT_PLEURAL) LeftChest.PleuralBloodMl += sourceLoss;
+   if (source.Compartment == BCMM_BleedCompartment.RIGHT_PLEURAL) RightChest.PleuralBloodMl += sourceLoss;
+  }
   loss += LeftLeg.MotionBloodLoss(seconds, activity, settings);
   loss += RightLeg.MotionBloodLoss(seconds, activity, settings);
   m_TotalBloodLostMl += loss;

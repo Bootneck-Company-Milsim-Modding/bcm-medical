@@ -1,0 +1,39 @@
+MetaFileClass {
+ Name "{9A127E6131BAF3AE}Assets/Medical/Injector/BCMM_Injector.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AB693BBFE0FA546}" {
+     SourceMaterial "BCMM_Injector_M0"
+     AssignedMaterial "{3FBBA13A23C7BE8C}Assets/Medical/Injector/Data/Injector_0.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_Injector {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_BCMM_Injector {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0.1
+     Margin 0.001
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

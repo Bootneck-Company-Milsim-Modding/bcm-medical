@@ -1,0 +1,8 @@
+AnimSetInstanceSource {
+ Template "{23DF4389D37A8F3B}anims/anm/NPC/workspaces/Officier_Mission01.ast"
+ Lines {
+  AnimSetInstanceSource_Line "Speeches.Open.In" { Resource "{4B90040A4B1D432A}Source/Animations/Casualty/BCMM_Carried_loop.anm" }
+  AnimSetInstanceSource_Line "Speeches.Open.Loop1" { Resource "{4B90040A4B1D432A}Source/Animations/Casualty/BCMM_Carried_loop.anm" }
+  AnimSetInstanceSource_Line "Speeches.Open.Out" { Resource "{4B90040A4B1D432A}Source/Animations/Casualty/BCMM_Carried_loop.anm" }
+ }
+}

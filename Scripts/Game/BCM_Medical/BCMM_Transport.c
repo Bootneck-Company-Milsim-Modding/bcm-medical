@@ -11,10 +11,17 @@ class BCMM_CarryConsent
  protected bool m_Accepted;
  protected bool m_Consumed;
  protected float m_Created;
- bool Request(int request, int carrier, int patient, int life, float now, notnull BCMM_Settings settings)
+ protected BCMM_TransportMode m_Mode;
+ // The native adapter must use authenticated player IDs and bind the grant to
+ // the same original character/life. Never ask an unconscious casualty to answer.
+ static bool NeedsConsent(bool conscious, bool playerControlled) { return conscious && playerControlled; }
+ bool Request(int request, int carrier, int patient, int life, float now, notnull BCMM_Settings settings, BCMM_TransportMode mode = BCMM_TransportMode.CASUALTY_CARRY)
  {
-  if (request <= m_Request || carrier <= 0 || patient <= 0 || carrier == patient || life <= 0 || !(now >= 0)) return false;
+  if (request <= m_Request || carrier <= 0 || patient <= 0 || carrier == patient || life <= 0 || !(now >= 0 && now < float.MAX)) return false;
+  if (!m_Consumed && m_Request > 0 && now >= m_Created && now < m_Expiry) return false;
+  if (mode != BCMM_TransportMode.CASUALTY_CARRY && mode != BCMM_TransportMode.CASUALTY_DRAG) return false;
   m_Request = request; m_Carrier = carrier; m_Patient = patient; m_PatientLife = life;
+  m_Mode = mode;
   m_Expiry = now + settings.Get("carryConsentTimeoutSeconds");
   m_Accepted = false;
   m_Consumed = false; m_Created = now;
@@ -27,11 +34,17 @@ class BCMM_CarryConsent
   if (!accept) m_Expiry = now;
   return true;
  }
- bool Consume(int request, int carrier, int patient, int life, float now)
+ bool Consume(int request, int carrier, int patient, int life, float now, BCMM_TransportMode mode = BCMM_TransportMode.CASUALTY_CARRY)
  {
-  if (!m_Accepted || request != m_Request || carrier != m_Carrier || patient != m_Patient || life != m_PatientLife || !(now >= m_Created && now < m_Expiry)) return false;
+  if (!m_Accepted || mode != m_Mode || request != m_Request || carrier != m_Carrier || patient != m_Patient || life != m_PatientLife || !(now >= m_Created && now < m_Expiry)) return false;
   m_Accepted = false;
   m_Consumed = true;
+  return true;
+ }
+ bool Cancel(int request, int authenticatedPlayer)
+ {
+  if (request <= 0 || authenticatedPlayer <= 0 || m_Consumed || request != m_Request || (authenticatedPlayer != m_Carrier && authenticatedPlayer != m_Patient)) return false;
+  Revoke();
   return true;
  }
  void Revoke() { m_Accepted = false; m_Expiry = 0; }

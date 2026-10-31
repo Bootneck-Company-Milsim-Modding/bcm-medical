@@ -1,0 +1,113 @@
+AnimSrcGraphFile {
+ Sheets {
+  AnimSrcGraphSheet BCMSurgery {
+   Nodes {
+    AnimSrcNodeStateMachine MasterControl {
+     states {
+      AnimSrcNodeState Active {
+       StartCondition "NPC_Speech > 0"
+       Child "SurgeryPhases"
+       IsExit 1
+      }
+     }
+    }
+    AnimSrcNodeStateMachine SurgeryPhases {
+     states {
+      AnimSrcNodeState Entry {
+       StartCondition "true"
+       Tags {
+        "IsLoitering"
+       }
+       Child "EntrySelect"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Work {
+       StartCondition "false"
+       Tags {
+        "IsLoitering"
+       }
+       Child "WorkingSelect"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       StartCondition "false"
+       Child "EntrySelect"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+      AnimSrcNodeState Release {
+       StartCondition "false"
+       Tags {
+        "IsLoitering"
+       }
+       Child "ReleaseSelect"
+       IsExit 1
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{DE7A3369D922C074}" {
+       FromState "Release"
+       ToState "Done"
+       Duration "0.02"
+       Condition "RemainingTimeLess(0.02)"
+       PostEval 1
+      }
+      AnimSrcNodeTransition "{16BB66A77C329664}" {
+       FromState "Entry"
+       ToState "Work"
+       Duration "0.08"
+       Condition "RemainingTimeLess(0.08)"
+       PostEval 1
+      }
+      AnimSrcNodeTransition "{51C32A1410C37287}" {
+       FromState "Work"
+       ToState "Release"
+       Duration "0.08"
+       Condition "NPC_Speech < 0"
+      }
+      AnimSrcNodeTransition "{EDE70C9D62816275}" {
+       FromState "Entry"
+       ToState "Release"
+       Duration "0.08"
+       Condition "NPC_Speech < 0"
+      }
+     }
+    }
+    AnimSrcNodeGroupSelect EntrySelect {
+     Child "EntryClip"
+     Group "Speeches"
+     Column "Open"
+    }
+    AnimSrcNodeGroupSelect WorkingSelect {
+     Child "WorkingRepeat"
+     Group "Speeches"
+     Column "Open"
+    }
+    AnimSrcNodeGroupSelect ReleaseSelect {
+     Child "ReleaseClip"
+     Group "Speeches"
+     Column "Open"
+    }
+    AnimSrcNodeSource EntryClip {
+     Source "Speeches.In"
+    }
+    AnimSrcNodeSource WorkingClip {
+     Source "Speeches.Loop1"
+    }
+    AnimSrcNodeSwitch WorkingRepeat {
+     BlendTime 0
+     SwitchItems {
+      AnimSrcNodeSwitchItem "{FC6213FF5891CB28}" {
+       Child "WorkingClip"
+       NextProbabilities "100"
+      }
+     }
+    }
+    AnimSrcNodeSource ReleaseClip {
+     Source "Speeches.Out"
+    }
+   }
+  }
+ }
+}

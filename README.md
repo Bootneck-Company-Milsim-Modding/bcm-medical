@@ -1,44 +1,41 @@
 # BCM Medical
 
-Standalone BCM Medical development project for Arma Reforger. Workbench project GUID `6AB4B3F3FD215919`; folder currently `MCB Medical`, displayed title `BCM Medical`. Only the base game is a runtime dependency.
+BCM Medical is a standalone Arma Reforger medical and casualty-recovery addon. Its production project depends on the base game only. This repository contains the current source, runtime resources, editable assets, development tools, automated fixtures and player documentation.
 
-## Implemented
+## Current checkpoint 31 October 2026
 
-- Original wound, airway, chest, cardiac-rhythm and CPR session domain state.
-- Retained projectile sampling (40% default), bandage wear (5–10 minutes resting), faster reopening with movement, lower recurrent bleeding and separate extraction/suture rules.
-- Internal bleeding sources and compartment-specific pleural collection/drainage rules.
-- Left/right leg fractures, splints, movement penalties, movement-related blood loss, no jumping and facility-only definitive fracture repair.
-- Consent bound to carrier, conscious patient and patient life; single-use, expiring acceptance.
-- Manual and rope-assisted body-bag drag policy. There is no body-bag carrying mode. Rope drag permits weapons, running and crouching at the policy level; native physics/animation is not implemented yet.
-- Original deployment ledger and BCM reserve-depletion policy.
-- 27 native Game Master controls under BCM Medical, server validation, replicated values and server-profile persistence with verified writes and two-generation recovery. GM save success/failure feedback is owner-targeted.
-- Owned BCM body-bag models, editable FBX, materials and texture sources consolidated under Assets/BodyBags.
+The player-focused implementation has 29 inventory entries and 279 saved GM controls under fifteen BCM Medical headings, with settings schema 35. Autonomous medical AI has been removed; players can still treat NPC casualties.
 
-## Current gameplay boundary
+Implemented systems include external and internal bleeding, dressing wear and closure, projectile extraction, leg fractures and facility repair, airway and side-specific chest treatment, oxygenation and circulation, CPR and AED workflows, pain and six medications, typed finite fluids, independent drips, finite oxygen and retained monitoring devices. Optional redistributed-fluid burden and stable-care blood-component recovery are disabled by default.
 
-The GM settings and persistence adapter runs in the native game mode. Most medical and transport functionality above is tested domain logic, not yet connected to native injury events, item consumption, treatment RPCs, locomotion, carrying/dragging physics or a medical screen. Suppression, focus, life UI/camera and full body-bag gameplay migration remain incomplete. This is not a playable replacement for the old mods yet. No ACE, KAT, NIRE, RespawnLimiter, 420 or Improved Blood Effect implementation is bundled.
+Living carry and crouch-drag preserve the actual casualty and injuries. Conscious players explicitly accept through the medical menu; unconscious patients can be picked up directly. Default unconscious retention requires the inventory-only sling and protects the exact supported held long gun, ammunition and attachments. The current carry pose still needs final human visual acceptance.
 
-The 27 controls include reserved suppression/focus/lives values for the upcoming migrations; those values persist but do not activate those unported features. Every future adjustable gameplay value must be added to the same catalogue and a generated GM control before its feature is accepted.
+Named body bags support exact equipment recovery, searching, manual/rope dragging, fixed vehicle cargo, burial and sending home. Limited Lives is the deployment allowance system. Suppression, additional focus, applied-device presentation, configurable medic roles and supported native persistence are included.
 
-## Server settings
+Two-player stretcher carrying remains shelved and disabled. The GM stationary treatment stretcher is a separate implemented facility/support object. Filled body bags are dragged rather than carried. No ACE code, animation data or addon dependency is imported.
 
-Saved inside the server's persistent profile:
+## Player documents
 
-- `$profile:BCM_Medical/settings-a.json`
-- `$profile:BCM_Medical/settings-b.json`
+- [Medical training guide](Docs/Training/BCM%20Medical%20Player%20Training%20Guide.docx): treatment workflows, equipment, recovery, instructor drills and the complete settings reference.
+- [Player test workbook](Docs/Training/BCM%20Medical%20Player%20Test%20Checklist.docx): 104 human test cases with setup, actions, expected results and result fields, plus all 279 settings.
+- [Test checklist source and worksheet](Docs/Training/BCM%20Medical%20Player%20Test%20Checklist.md): repository-readable version with exact setting keys.
+- [Current source snapshot and validation limits](Docs/SOURCE-SNAPSHOT-20261031.md).
+- [Private test candidate](Docs/PLAYER-TEST-CANDIDATE-20261030.md): package identifier and the previous automated acceptance evidence.
 
-Use the same persistent `-profile` directory after restart. Changing or deleting the profile changes/removes the saved settings. Mount this directory on persistent storage when using a container. These files are server configuration, not mission-header defaults. Newest valid generation wins; a damaged newest file falls back to the previous generation. If neither existing file is valid, both are preserved and edits are locked instead of silently overwriting them.
+Older development notes preserve their original checkpoints. Their earlier counts, AI plans, incomplete-status statements and animation restrictions can be superseded by the current documents. The previous README is preserved in Docs/History.
 
-Schema version 1 requires the current complete catalogue. Catalogue additions need an explicit migration and tests before release; they must not silently invalidate old server configuration. Per-account life balances are a separate future persistence concern; settings persistence alone does not implement a player database.
+## Development and validation
 
-## Development and verification
+Open addon.gproj in Arma Reforger Workbench. The project identity remains MCBMedical with GUID 6AB4B3F3FD215919; its displayed title is BCM Medical. The base-game dependency is 58D0FB3206B6F859.
 
-Open addon.gproj in Workbench to register/import resources after cloning. Do not hand-edit resourceDatabase.rdb. The generated index is excluded from Git.
+Tools/SettingsCatalog.json is the canonical settings catalogue. Generate settings with Tools/Generate-Settings.ps1. Audit owned GUIDs with Tools/Test-ResourceGuids.ps1. Tools/Validate.ps1 and the focused Tools/Validate-*.ps1 scripts run the native compile/runtime/network fixtures; read their parameters before running. Native validation needs the installed game/tools and available Steam platform services. The runtime diagnostic addon under Tests is development tooling, not a production dependency.
 
-- `Tools/Generate-Settings.ps1` regenerates the native GM attributes and catalogue from Tools/SettingsCatalog.json.
-- `Tools/Validate.ps1` runs Workbench script validation.
-- `Tools/Validate.ps1 -ServerRuntime -ServerDirectory '<dedicated server installation>'` runs the separate engine test addon.
+Tools/Build-PlayerTestChecklist.py regenerates the test DOCX and its settings worksheet from the reviewed Markdown and current catalogue, using Python with python-docx. A native DOCX render and page review are separate quality checks.
 
-The test runner can also discover the existing sibling BCM NID AceCompat dedicated-server location pointer on this workstation. That is a development-tool convenience, not a mod dependency.
+The source checkpoint retains the prior 51-stage acceptance, twelve packed smoke phases and packed dedicated-server/three-client transport result. Human Internet/account, input, platform, load, visual and boundary acceptance remain separate. The new human workbook is deliberately unpassed. The 31 October native recheck did not finish because Steam platform initialisation was unavailable; it is not recorded as a new validation pass.
 
-See VALIDATION.md, Docs/BCM-MEDICAL-STANDALONE-AUDIT.md and Docs/MEDICAL-INTERFACE-AND-TRAUMA.md. This repository is source development; no Workshop publication or live-server deployment has been performed.
+## Source and package boundaries
+
+Assets, Prefabs, Configs, Language, Scripts, UI, Sounds and addon.gproj are runtime/source resources. Source retains editable Blender projects and intentionally named revisions; Tests and Tools support development. Automatic Blender recovery copies, resource databases, local profiles, generated packages and logs stay outside Git. The full private package remains in local .checks output; cloning this source repository is not a Workshop release/install.
+
+See [supplied asset provenance](Docs/SUPPLIED-MEDICAL-ASSETS.md), [pose provenance](Docs/CASUALTY-POSE-REFERENCE-20261030.md), [release packaging](Docs/RELEASE-PACKAGING.md) and [roadmap](Docs/ROADMAP.md). Final cylinder/tablet artwork, applied-device polish and outstanding donor licence/receipt review are not made complete by committing this snapshot.

@@ -1,0 +1,21 @@
+GenericEntity {
+ ID "6AB4B3F3FD217011"
+ components {
+  Persistence "{6AB4B3F3FD219823}" {}
+  RplComponent "{6AB4B3F3FD218311}" {}
+  BCMM_MedicalFacilityComponent "{6AB4B3F3FD218312}" {}
+  BCMM_StretcherComponent "{6AB4B3F3FD21A110}" {}
+  MeshObject "{6AB4B3F3FD218313}" { Object "{EF4FAAF6A80E33AF}Assets/Medical/FieldStretcher/BCMM_FieldStretcher.xob" }
+  RigidBody "{6AB4B3F3FD21A111}" { Mass 0 ModelGeometry 1 }
+  ActionsManagerComponent "{6AB4B3F3FD21A112}" {
+   ActionContexts { UserActionContext { ContextName "bcmm_stretcher" Position PointInfo { Offset 0 0.4 0 } Radius 2 Omnidirectional 1 } }
+   additionalActions {
+    BCMM_StretcherFrontGripAction "{6AB4B3F3FD21A131}" { ParentContextList { "bcmm_stretcher" } UIInfo SCR_ActionUIInfo { Name "Take front stretcher handles" } VisibilityRange 2 }
+    BCMM_StretcherRearGripAction "{6AB4B3F3FD21A132}" { ParentContextList { "bcmm_stretcher" } UIInfo SCR_ActionUIInfo { Name "Take rear stretcher handles" } VisibilityRange 2 }
+    BCMM_StretcherReleaseGripAction "{6AB4B3F3FD21A133}" { ParentContextList { "bcmm_stretcher" } UIInfo SCR_ActionUIInfo { Name "Set down / release stretcher" } VisibilityRange 2 }
+    BCMM_PlaceOnStretcherAction "{6AB4B3F3FD21A113}" { ParentContextList { "bcmm_stretcher" } UIInfo SCR_ActionUIInfo { Name "Place casualty on stretcher" } VisibilityRange 2 }
+    BCMM_RemoveFromStretcherAction "{6AB4B3F3FD21A114}" { ParentContextList { "bcmm_stretcher" } UIInfo SCR_ActionUIInfo { Name "Remove casualty from stretcher" } VisibilityRange 2 }
+   }
+  }
+ }
+}

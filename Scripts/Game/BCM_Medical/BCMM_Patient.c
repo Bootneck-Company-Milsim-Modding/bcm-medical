@@ -48,13 +48,14 @@ class BCMM_Wound
   return true;
  }
 
- float Advance(float seconds, BCMM_Activity activity, notnull BCMM_Settings settings)
+ float Advance(float seconds, BCMM_Activity activity, notnull BCMM_Settings settings, float clotWearScale = 1)
  {
   if (!(seconds > 0) || Sutured) return 0;
   if (!Bandaged) return FlowMlPerSecond() * seconds;
   float wear = 1;
-  if (activity == BCMM_Activity.WALKING) wear = settings.Get("walkingWoundWearMultiplier");
+  if (activity == BCMM_Activity.WALKING || activity == BCMM_Activity.CRAWLING) wear = settings.Get("walkingWoundWearMultiplier");
   if (activity == BCMM_Activity.RUNNING) wear = settings.Get("runningWoundWearMultiplier");
+  wear *= Math.Clamp(clotWearScale, 0.05, 3);
   float protectedSeconds = Math.Min(seconds, m_DressingWearRemaining / wear);
   m_DressingWearRemaining = Math.Max(0, m_DressingWearRemaining - seconds * wear);
   if (m_DressingWearRemaining > 0) return 0;
@@ -101,6 +102,9 @@ class BCMM_ChestSide
 
 class BCMM_Patient
 {
+ ref BCMM_FluidBalance Fluids=new BCMM_FluidBalance();
+ ref BCMM_Pharmacology Medication = new BCMM_Pharmacology();
+ ref BCMM_EquipmentState Equipment = new BCMM_EquipmentState();
  protected ref array<ref BCMM_Wound> m_Wounds = {};
  protected int m_NextWoundId;
  protected int m_CompressionSession;
@@ -123,6 +127,12 @@ class BCMM_Patient
   return wound.Id;
  }
 
+ int WoundCount() { return m_Wounds.Count(); }
+ BCMM_Wound WoundAt(int index)
+ {
+  if (!m_Wounds.IsIndexValid(index)) return null;
+  return m_Wounds[index];
+ }
  BCMM_Wound FindWound(int id)
  {
   foreach (BCMM_Wound wound : m_Wounds)
@@ -162,6 +172,7 @@ class BCMM_Patient
   return true;
  }
 
+ bool OwnsCompressions(int actor, int session) { return session > 0 && m_CompressionActor == actor && m_CompressionSession == session; }
  bool HasCompressions() { return m_CompressionSession > 0; }
 
  // Mechanical compressions and a monitor rhythm do not themselves establish ROSC.

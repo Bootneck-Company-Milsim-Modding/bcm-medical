@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{CCBA236691EE6DC5}Assets/Medical/WeaponSling/Data/WeaponSling_4_BCR.edds"
+ Configurations {
+  PNGResourceClass PC : "{EAB5DE3219F9CBA8}Configs/System/ResourceTypes/PC/TextureColorMap.conf" {
+  }
+  PNGResourceClass HEADLESS : PC {
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass XBOX_SERIES : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass PS5 : PC {
+  }
+ }
+}

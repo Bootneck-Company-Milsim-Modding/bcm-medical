@@ -1,0 +1,1 @@
+MetaFileClass { Name "{B6C4ED1CA1262110}Prefabs/BCMM_StretcherTestPlatform.et" Configurations { EntityTemplateResourceClass PC {} EntityTemplateResourceClass HEADLESS : PC {} } }

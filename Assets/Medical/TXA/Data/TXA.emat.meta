@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{381D0BD22D93E809}Assets/Medical/TXA/Data/TXA.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+ }
+}

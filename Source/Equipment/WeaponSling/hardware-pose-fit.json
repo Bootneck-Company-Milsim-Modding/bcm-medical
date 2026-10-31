@@ -1,0 +1,28 @@
+{
+  "buckle": {
+    "translation_pixels": [
+      3.75,
+      -5.25
+    ],
+    "rotation_z_radians": -0.075,
+    "uniform_scale": 1.3800000000000001,
+    "roi_silhouette_iou": 0.8947200510448238,
+    "pivot_pixels": [
+      397,
+      599
+    ]
+  },
+  "QD": {
+    "translation_pixels": [
+      4.5,
+      4.5
+    ],
+    "rotation_z_radians": 0.0,
+    "uniform_scale": 1.28,
+    "roi_silhouette_iou": 0.7134416543574594,
+    "pivot_pixels": [
+      395,
+      805
+    ]
+  }
+}

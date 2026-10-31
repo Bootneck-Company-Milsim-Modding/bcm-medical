@@ -1,0 +1,14 @@
+AnimSetInstanceSource {
+ Template "{23DF4389D37A8F3B}anims/anm/NPC/workspaces/Officier_Mission01.ast"
+ Lines {
+  AnimSetInstanceSource_Line "Speeches.Open.In" {
+   Resource "{73B2086CDF7821F0}Source/Animations/BCMM_CPR_enter.anm"
+  }
+  AnimSetInstanceSource_Line "Speeches.Open.Loop1" {
+   Resource "{3EEEBFA9D3C8AA3C}Source/Animations/BCMM_CPR_loop.anm"
+  }
+  AnimSetInstanceSource_Line "Speeches.Open.Out" {
+   Resource "{B3C8D35C6D365DAF}Source/Animations/BCMM_CPR_exit.anm"
+  }
+ }
+}

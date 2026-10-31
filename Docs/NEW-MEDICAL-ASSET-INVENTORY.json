@@ -1,0 +1,115 @@
+{
+  "files": [
+    {
+      "source": "AED Use Pads Only/AED.fbx",
+      "bytes": 114636,
+      "sha256": "36b3c897079e65471bcb47a0c61d1a76c67b70aaa1969050daa2f61faff3a404"
+    },
+    {
+      "source": "AED Use Pads Only/Textures.rar",
+      "bytes": 10646289,
+      "sha256": "a9d77f4187c9dfe6388cc1522e837303f3af686c95cbd7aa56ca3b7edca1f692"
+    },
+    {
+      "source": "Blood Bag/blood+bag.fbx",
+      "bytes": 28493148,
+      "sha256": "0a9e1f9b69aac2a0f0fdd64f7565881c66f15af9bac387c21f39ad61b8766b6c"
+    },
+    {
+      "source": "BVM/Ambu+bag.fbx",
+      "bytes": 332880,
+      "sha256": "001b933d77166e5be1d98d3662b1e2c67cdb6c14e71815a5f59acb8cfa244db9"
+    },
+    {
+      "source": "BVM/cgtrader_optimized_Ambu+bag.fbx",
+      "bytes": 329248,
+      "sha256": "04aed1cf586545ce5219403361470e8003293a002b94543ba12c1a16b2703586"
+    },
+    {
+      "source": "BVM/Texture.rar",
+      "bytes": 31884923,
+      "sha256": "eb7c31cceab10e386886c4af6d405cc7dfd2e102a2ef39c708eef4444287aca3"
+    },
+    {
+      "source": "Chest Drain/01.rar",
+      "bytes": 1094302,
+      "sha256": "52fa135cdfd8a307bf4b449ac17855353e1e26d57ed17e537241440488982778"
+    },
+    {
+      "source": "Chest Seal/Dressing.blend",
+      "bytes": 709496,
+      "sha256": "4e5fbbe879c5932efd8deb4a201a4645e53c93ab1df846ffaf94b6dafa55656e"
+    },
+    {
+      "source": "Laryngscope/cgtrader_optimized_Laryngoscope.fbx",
+      "bytes": 56940,
+      "sha256": "f162cfc2dfa19934f84d4f7d8403480754d48ef64305bdf2deff442eea68f8d6"
+    },
+    {
+      "source": "Laryngscope/Laryngoscope.fbx",
+      "bytes": 56972,
+      "sha256": "e339f2a3849ccfe8d4da219a76e4d34e268ba83159a1727d9e29d159296265c6"
+    },
+    {
+      "source": "Monitor/Monitor(1).fbx",
+      "bytes": 39468,
+      "sha256": "70f2ce5c5d72c8f71ca36cb3aa4bd2f31af5711d0a897c80cdf67067114bce3b"
+    },
+    {
+      "source": "Monitor/Monitor_PBR.zip",
+      "bytes": 2341073,
+      "sha256": "58ec158146a1af33d2ebed164e88ed4889b5c760de335901ef754928cfb95ece"
+    },
+    {
+      "source": "oral airway - 6515529.zip",
+      "bytes": 759248,
+      "sha256": "20b59ce3362ad462174dfd6823a8801c5b5b5b4aadc4226109a423243400d165"
+    },
+    {
+      "source": "Splint/SM_MedicalSplinter.fbx",
+      "bytes": 28380,
+      "sha256": "fb01797c8666b71843b56f03edcb3481c882277f0487b107605e3255cbc4a4af"
+    },
+    {
+      "source": "Splint/Textures.zip",
+      "bytes": 2447821,
+      "sha256": "18c116e5be936ef9264e81ab8e3e312f2de8490f45562e698d8c301af14b3503"
+    },
+    {
+      "source": "Stretcher/FG+Stretcher+_Stretcher_albedo.jpg.jpg.zip",
+      "bytes": 2335417,
+      "sha256": "33c1e355d2b62416f752d10ec771ce328c14d3f5d7ffb698140b2b383840ed2b"
+    },
+    {
+      "source": "Stretcher/Stretcher.fbx",
+      "bytes": 786220,
+      "sha256": "7e5fb2408f75f6d360849622f48e7826cd3bfec6a6887bb46d0310e26fbb59e8"
+    },
+    {
+      "source": "Suction/TEXTURES.rar",
+      "bytes": 11412067,
+      "sha256": "39f670a37ed1f6e172623292b9b94881d40af14883cec293a123cf6c261b4193"
+    },
+    {
+      "source": "Suction/VAC+Device+model.fbx",
+      "bytes": 1043520,
+      "sha256": "981ba84470c8e67820cc9b540ce1bc23871c8e841d825d9077e5fc4717b94d2d"
+    },
+    {
+      "source": "SurgeryKit/Medical_SurvivalKit.rar",
+      "bytes": 17244047,
+      "sha256": "0ec01529efddfb594b8ad7b953073565fa9555fed71292e6e4f741a275c74fbc"
+    },
+    {
+      "source": "Suture Kit/Medical_MilitaryHealthPouch.rar",
+      "bytes": 20465870,
+      "sha256": "df48b72f1232fe907b4595dca5834bacb3f884b3d1d8f017f5aebdc4f92e6815"
+    },
+    {
+      "source": "VascularAccess/TS_MDL_Cannula_V01_01.fbx",
+      "bytes": 546892,
+      "sha256": "5bfe9e1879c19277c7fe6ef6744ed52a6245d0e85d190ace876caae03edffe72"
+    }
+  ],
+  "errors": []
+}

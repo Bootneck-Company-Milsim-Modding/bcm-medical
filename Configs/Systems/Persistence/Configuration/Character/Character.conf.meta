@@ -1,0 +1,1 @@
+MetaFileClass { Name "{8A02793079069D96}Configs/Systems/Persistence/Configuration/Character/Character.conf" Configurations { CONFResourceClass PC {} CONFResourceClass HEADLESS : PC {} CONFResourceClass XBOX_ONE : PC {} CONFResourceClass XBOX_SERIES : PC {} CONFResourceClass PS4 : PC {} CONFResourceClass PS5 : PC {} } }

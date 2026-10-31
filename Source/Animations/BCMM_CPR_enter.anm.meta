@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{73B2086CDF7821F0}Source/Animations/BCMM_CPR_enter.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourcePath "BCMM_CPR_Blockout.blend"
+   SourceProfile "101_FullBodyABS"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+ }
+}

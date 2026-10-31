@@ -1,0 +1,55 @@
+MetaFileClass {
+ Name "{D667ACC9B83199AD}Assets/Medical/AED/BCMM_AED.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AB6927341D27796}" {
+     SourceMaterial "BCMM_AED_M0"
+     AssignedMaterial "{8D257E7B8E35E05F}Assets/Medical/AED/Data/AED_0.emat"
+    }
+    MaterialAssignClass "{6AB6927341D277C8}" {
+     SourceMaterial "BCMM_AED_M1"
+     AssignedMaterial "{F394E979FAC2D929}Assets/Medical/AED/Data/AED_1.emat"
+    }
+    MaterialAssignClass "{6AB6927341D277C3}" {
+     SourceMaterial "BCMM_AED_M2"
+     AssignedMaterial "{6E49C6CB88CE121F}Assets/Medical/AED/Data/AED_2.emat"
+    }
+    MaterialAssignClass "{6AB6927341D277DB}" {
+     SourceMaterial "BCMM_AED_M3"
+     AssignedMaterial "{1268D75CF0C6D5C0}Assets/Medical/AED/Data/AED_3.emat"
+    }
+    MaterialAssignClass "{6AB6927341D277D3}" {
+     SourceMaterial "BCMM_AED_M4"
+     AssignedMaterial "{AFE8AAB259AE0345}Assets/Medical/AED/Data/AED_4.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_AED {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_BCMM_AED {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0.1
+     Margin 0.001
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

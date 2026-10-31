@@ -1,0 +1,1 @@
+MetaFileClass { Name "{6AB4B3F3FD219101}Configs/Editor/BCMMedical/Bleeding.conf" Configurations { CONFResourceClass PC {} CONFResourceClass HEADLESS : PC {} } }

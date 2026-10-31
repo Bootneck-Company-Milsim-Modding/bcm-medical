@@ -1,0 +1,44 @@
+[
+  {
+    "action": "BCMM_TabletSelf_loop",
+    "stem": "BCMM_TabletSelf_loop",
+    "frames": 121,
+    "fps": 30,
+    "loop": true
+  },
+  {
+    "action": "BCMM_TabletSelf_enter",
+    "stem": "BCMM_TabletSelf_enter",
+    "frames": 31,
+    "fps": 30,
+    "loop": false
+  },
+  {
+    "action": "BCMM_TabletSelf_exit",
+    "stem": "BCMM_TabletSelf_exit",
+    "frames": 31,
+    "fps": 30,
+    "loop": false
+  },
+  {
+    "action": "BCMM_TabletOther_loop",
+    "stem": "BCMM_TabletOther_loop",
+    "frames": 121,
+    "fps": 30,
+    "loop": true
+  },
+  {
+    "action": "BCMM_TabletOther_enter",
+    "stem": "BCMM_TabletOther_enter",
+    "frames": 31,
+    "fps": 30,
+    "loop": false
+  },
+  {
+    "action": "BCMM_TabletOther_exit",
+    "stem": "BCMM_TabletOther_exit",
+    "frames": 31,
+    "fps": 30,
+    "loop": false
+  }
+]

@@ -1,0 +1,8 @@
+SCR_FactionManager : "{A242612865F2A48E}Prefabs/MP/Managers/Factions/FactionManager_Base.et" {
+ ID "C6088D502ACF2001"
+ Factions {
+  SCR_Faction "{C6088D502ACF2002}" : "{5EB46557DF2AA24F}Configs/Factions/US.conf" {}
+  SCR_Faction "{C6088D502ACF2003}" : "{09727032415AC39B}Configs/Factions/USSR.conf" {}
+  SCR_Faction "{C6088D502ACF2004}" : "{8053DB656DD18B14}Configs/Factions/FIA.conf" {}
+ }
+}

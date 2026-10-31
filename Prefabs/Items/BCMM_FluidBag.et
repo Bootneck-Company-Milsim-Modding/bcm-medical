@@ -1,0 +1,25 @@
+GenericEntity : "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" {
+ ID "6AB4B3F3FD217029"
+ components {
+  MeshObject "{51F66EC3C5BC700D}" { Object "{1B49817205B37B1C}Assets/Medical/FluidBag/BCMM_FluidBag.xob" }
+  SCR_ConsumableItemComponent "{5943631460899505}" { m_ConsumableEffect BCMM_ProcedurePresentationEffect "{594363147CC4C6BE}" { m_bDeleteOnUse 0 } m_bAlternativeModelOnAction 0 }
+  BCMM_EquipmentItemComponent "{6AB4B3F3FD218329}" { Kind 9 }
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemDisplayName SCR_InventoryUIInfo "{5222EB4D07D865FA}" {
+     Name "Whole blood bag"
+     Description "Finite universal game blood supply: restores volume, red-cell reserve and clotting support. No blood-type matching is simulated."
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 0.4
+     SizeSetupStrategy Manual
+     ItemDimensions 20 10 5
+     ItemVolume 1000
+    }
+    CommonItemType "EQUIPMENT"
+   }
+  }
+
+
+ }
+}

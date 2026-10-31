@@ -1,0 +1,17 @@
+GenericEntity : "{55A3DA68E58453A1}Prefabs/Structures/Military/Fortifications/DirtCover_01/DirtCover_01_long_v2.et" {
+ ID "6AB4B3F3FD21E101"
+ components {
+  Persistence "{6AB4B3F3FD219822}" {}
+  RplComponent "{6AB4B3F3FD21E201}" { "Rpl State Override" Runtime AutoHierarchy 1 }
+  BCMM_GraveMarkerComponent "{6AB4B3F3FD21E202}" {}
+  SCR_EditableEntityComponent "{6AB4B3F3FD21E203}" : "{996046FE206C699A}Prefabs/Editor/Components/Default_SCR_EditableEntityComponent.ct" {
+   m_UIInfo SCR_EditableEntityUIInfo { Name "Grave" }
+   m_bAutoRegister ALWAYS
+  }
+  ActionsManagerComponent "{6AB4B3F3FD21E204}" {
+   ActionContexts { UserActionContext { ContextName "bcmm_grave" Position PointInfo {} Radius 2 Omnidirectional 1 } }
+   additionalActions { BCMM_InspectGraveAction { ParentContextList { "bcmm_grave" } UIInfo SCR_ActionUIInfo { Name "#BCMM-InspectGrave" } VisibilityRange 3 } }
+  }
+ }
+ scale 0.59
+}

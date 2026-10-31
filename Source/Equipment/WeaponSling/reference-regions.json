@@ -1,0 +1,42 @@
+{
+  "pad": {
+    "IoU": 0.9763855421686747,
+    "missing": 108,
+    "extra": 480
+  },
+  "left sleeve": {
+    "IoU": 0.9652463451433329,
+    "missing": 332,
+    "extra": 336
+  },
+  "right sleeve": {
+    "IoU": 0.9609948355531395,
+    "missing": 125,
+    "extra": 449
+  },
+  "left adjustment": {
+    "IoU": 0.9277223014740846,
+    "missing": 371,
+    "extra": 237
+  },
+  "right adjustment": {
+    "IoU": 0.9183460736622655,
+    "missing": 145,
+    "extra": 325
+  },
+  "buckle": {
+    "IoU": 0.7909672953798235,
+    "missing": 1131,
+    "extra": 77
+  },
+  "tail": {
+    "IoU": 0.9379379379379379,
+    "missing": 9,
+    "extra": 363
+  },
+  "QD": {
+    "IoU": 0.5828308929084123,
+    "missing": 1105,
+    "extra": 348
+  }
+}

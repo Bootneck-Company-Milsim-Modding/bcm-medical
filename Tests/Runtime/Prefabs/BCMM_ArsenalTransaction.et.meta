@@ -1,0 +1,4 @@
+MetaFileClass {
+ Name "{B6C4ED1CA1262410}Prefabs/BCMM_ArsenalTransaction.et"
+ Configurations { EntityTemplateResourceClass PC {} EntityTemplateResourceClass HEADLESS : PC {} }
+}

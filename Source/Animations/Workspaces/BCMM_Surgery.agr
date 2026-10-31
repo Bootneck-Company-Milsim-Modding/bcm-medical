@@ -1,0 +1,21 @@
+AnimSrcGraph {
+ AnimSetTemplate "{23DF4389D37A8F3B}anims/anm/NPC/workspaces/Officier_Mission01.ast"
+ ControlTemplate AnimSrcGCT "{91F9156ADBAD4A56}" {
+  Variables {
+   AnimSrcGCTVarInt NPC_Speech {
+    MinValue -1
+    MaxValue 1
+   }
+  }
+  Commands {
+   AnimSrcGCTCmd CMD_Gesture_NPC {
+   }
+  }
+ }
+ Debug AnimSrcGD "{CAF3A1F7A4E9ED8F}" {
+ }
+ GraphFilesResourceNames {
+  "{6AB4B3F3FD216301}Source/Animations/Workspaces/BCMM_Surgery.agf"
+ }
+ DefaultRunNode "MasterControl"
+}

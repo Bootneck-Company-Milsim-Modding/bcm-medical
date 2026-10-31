@@ -1,0 +1,25 @@
+GenericEntity : "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" {
+ ID "6AB4B3F3FD217009"
+ components {
+  MeshObject "{51F66EC3C5BC700D}" { Object "{4E5432575B777242}Assets/Medical/SurgeryKit/BCMM_SurgeryKit.xob" }
+  SCR_ConsumableItemComponent "{5943631460899505}" { m_ConsumableEffect BCMM_ProcedurePresentationEffect "{594363147CC4C6BE}" { m_bDeleteOnUse 0 } }
+  BCMM_SurgeryKitComponent "{6AB4B3F3FD218309}" {}
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemDisplayName SCR_InventoryUIInfo "{5222EB4D07D865FA}" {
+     Name "Surgery kit"
+     Description "One sterile surgical procedure. Extraction does not close the wound; use a suture kit afterwards."
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 0.4
+     SizeSetupStrategy Manual
+     ItemDimensions 20 10 5
+     ItemVolume 1000
+    }
+    CommonItemType "EQUIPMENT"
+   }
+  }
+
+
+ }
+}

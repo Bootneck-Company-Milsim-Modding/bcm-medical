@@ -1,0 +1,113 @@
+AnimSrcGraphFile {
+ Sheets {
+  AnimSrcGraphSheet BCMCPR {
+   Nodes {
+    AnimSrcNodeStateMachine MasterControl {
+     states {
+      AnimSrcNodeState Active {
+       StartCondition "NPC_Speech > 0"
+       Child "CPRPhases"
+       IsExit 1
+      }
+     }
+    }
+    AnimSrcNodeStateMachine CPRPhases {
+     states {
+      AnimSrcNodeState Entry {
+       StartCondition "true"
+       Tags {
+        "IsLoitering"
+       }
+       Child "EntrySelect"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Compress {
+       StartCondition "false"
+       Tags {
+        "IsLoitering"
+       }
+       Child "CompressionSelect"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       StartCondition "false"
+       Child "EntrySelect"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+      AnimSrcNodeState Release {
+       StartCondition "false"
+       Tags {
+        "IsLoitering"
+       }
+       Child "ReleaseSelect"
+       IsExit 1
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{6AB4B3F3FD216117}" {
+       FromState "Release"
+       ToState "Done"
+       Duration "0.02"
+       Condition "RemainingTimeLess(0.02)"
+       PostEval 1
+      }
+      AnimSrcNodeTransition "{6AB4B3F3FD216112}" {
+       FromState "Entry"
+       ToState "Compress"
+       Duration "0.08"
+       Condition "RemainingTimeLess(0.08)"
+       PostEval 1
+      }
+      AnimSrcNodeTransition "{6AB4B3F3FD216113}" {
+       FromState "Compress"
+       ToState "Release"
+       Duration "0.08"
+       Condition "NPC_Speech < 0"
+      }
+      AnimSrcNodeTransition "{6AB4B3F3FD216114}" {
+       FromState "Entry"
+       ToState "Release"
+       Duration "0.08"
+       Condition "NPC_Speech < 0"
+      }
+     }
+    }
+    AnimSrcNodeGroupSelect EntrySelect {
+     Child "EntryClip"
+     Group "Speeches"
+     Column "Open"
+    }
+    AnimSrcNodeGroupSelect CompressionSelect {
+     Child "CompressionRepeat"
+     Group "Speeches"
+     Column "Open"
+    }
+    AnimSrcNodeGroupSelect ReleaseSelect {
+     Child "ReleaseClip"
+     Group "Speeches"
+     Column "Open"
+    }
+    AnimSrcNodeSource EntryClip {
+     Source "Speeches.In"
+    }
+    AnimSrcNodeSource CompressionClip {
+     Source "Speeches.Loop1"
+    }
+    AnimSrcNodeSwitch CompressionRepeat {
+     BlendTime 0
+     SwitchItems {
+      AnimSrcNodeSwitchItem "{6AB4B3F3FD216115}" {
+       Child "CompressionClip"
+       NextProbabilities "100"
+      }
+     }
+    }
+    AnimSrcNodeSource ReleaseClip {
+     Source "Speeches.Out"
+    }
+   }
+  }
+ }
+}

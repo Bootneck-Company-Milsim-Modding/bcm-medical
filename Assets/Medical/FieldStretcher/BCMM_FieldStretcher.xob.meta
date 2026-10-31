@@ -1,0 +1,46 @@
+MetaFileClass {
+ Name "{EF4FAAF6A80E33AF}Assets/Medical/FieldStretcher/BCMM_FieldStretcher.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AB6FB01F02E832D}" {
+     SourceMaterial "BCMM_FieldStretcher_M0"
+     AssignedMaterial "{C0A8067FB9B61F69}Assets/Medical/FieldStretcher/Data/FieldStretcher_0.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_FieldStretcher {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_BCMM_FieldStretcher {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0.1
+     Margin 0.001
+    }
+    GeometryParam UBX_StretcherCarry {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0.1
+     Margin 0.001
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

@@ -1,0 +1,1 @@
+AnimSrcGraph { AnimSetTemplate "{23DF4389D37A8F3B}anims/anm/NPC/workspaces/Officier_Mission01.ast" ControlTemplate AnimSrcGCT {} GraphFilesResourceNames { "{BEAFD68D4D8440BF}Source/Animations/Casualty/BCMM_Carried.agf" } DefaultRunNode "MasterControl" }

@@ -8,6 +8,9 @@ $code = [Text.StringBuilder]::new()
 [void]$code.AppendLine('class BCMM_SettingsCatalog { static void Build(notnull array<ref BCMM_SettingDefinition> definitions) {')
 $config = [Text.StringBuilder]::new()
 [void]$config.AppendLine('SCR_EditorAttributeList { m_aAttributes {')
+$categoryGroups = @('Bleeding','Airway and breathing','Circulation','Resuscitation','Surgery','Fractures','Medical interactions','Body bags','Transport','Suppression','Lives','Focus','Pain','Medication','Arsenal')
+$categoryReference = '{B6C4ED1CA1260101}Configs/Editor/BCMMedical.conf'
+$sectionLayout = '{6AB4B3F3FD219201}UI/layouts/BCMM/SettingsHeading.layout'
 $keys = @{}
 foreach ($entry in $catalog) {
  if ($keys.ContainsKey($entry.key)) { throw ('Duplicate setting: ' + $entry.key) }
@@ -17,13 +20,21 @@ foreach ($entry in $catalog) {
  $toggle = 'false'
  if ($entry.toggle) { $toggle = 'true' }
  [void]$code.AppendLine(('definitions.Insert(new BCMM_SettingDefinition("{0}", {1}, {2}, {3}, {4}, {5}));' -f $key,(Number $entry.default),(Number $entry.min),(Number $entry.max),(Number $entry.step),$toggle))
+
+}
+foreach ($group in $categoryGroups) {
+ [void]$config.AppendLine(('BCMM_SectionHeadingAttribute {{ m_UIInfo SCR_EditorAttributeUIInfo {{ Name "{0}" }} m_CategoryConfig "{1}" m_Layout "{2}" }}' -f $group,$categoryReference,$sectionLayout))
+ foreach ($entry in @($catalog | Where-Object group -EQ $group)) {
+  if ([string]::IsNullOrWhiteSpace($entry.description)) { throw ("Missing hover description: " + $entry.key) }
+  $key=$entry.key
  $baseClass = 'BCMM_NumberSettingAttribute'
  $nativeLayout = '{680E4985E42137FB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Slider.layout'
  if ($entry.toggle) { $baseClass = 'BCMM_ToggleSettingAttribute'; $nativeLayout = '{D0F3CE0C63A5AEBB}UI/layouts/Editor/Attributes/AttributePrefabs/AttributePrefab_Checkbox.layout' }
  $className = 'BCMM_Setting_' + $key
- [void]$config.AppendLine(('{0} {{ m_Key "{1}" m_UIInfo SCR_EditorAttributeUIInfo {{ Name "{2}" Description "Server-persistent BCM Medical setting. {3}. Features still in development may not yet use this value." }} m_CategoryConfig "{{B6C4ED1CA1260101}}Configs/Editor/BCMMedical.conf" m_Layout "{4}"' -f $className,$key,$entry.label,$entry.group,$nativeLayout))
+ [void]$config.AppendLine(('{0} {{ m_Key "{1}" m_UIInfo SCR_EditorAttributeUIInfo {{ Name "{2}" Description "{3}" }} m_CategoryConfig "{5}" m_Layout "{4}"' -f $className,$key,$entry.label,$entry.description,$nativeLayout,$categoryReference))
  if (!$entry.toggle) { [void]$config.AppendLine(('m_baseValues SCR_EditorAttributeBaseValues {{ m_fMin {0} m_fMax {1} m_fStep {2} m_iDecimals 2 }}' -f (Number $entry.min),(Number $entry.max),(Number $entry.step))) }
  [void]$config.AppendLine('}')
+ }
 }
 [void]$code.AppendLine('} }')
 foreach($entry in $catalog) {

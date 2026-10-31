@@ -1,0 +1,9 @@
+GenericEntity {
+ ID "B6C4ED1CA1262110"
+ components {
+  RplComponent "{B6C4ED1CA1262116}" {}
+  MeshObject "{B6C4ED1CA1262111}" { Object "{B6C4ED1CA1262115}Assets/BCMM_TestDeck.xob" }
+  RigidBody "{B6C4ED1CA1262112}" { Mass 0 ModelGeometry 1 }
+ }
+
+}

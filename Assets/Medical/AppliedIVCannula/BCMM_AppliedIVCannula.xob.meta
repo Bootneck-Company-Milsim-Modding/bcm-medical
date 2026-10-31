@@ -1,0 +1,43 @@
+MetaFileClass {
+ Name "{50BA5CC4A1995D3A}Assets/Medical/AppliedIVCannula/BCMM_AppliedIVCannula.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AB74597DA424356}" {
+     SourceMaterial "BCMM_AppliedIVCannula_M0"
+     AssignedMaterial "{DAD5C3145CEE8E17}Assets/Medical/VascularAccess/Data/VascularAccess_1.emat"
+    }
+    MaterialAssignClass "{6AB74597DA4243BB}" {
+     SourceMaterial "BCMM_AppliedIVCannula_M1"
+     AssignedMaterial "{F547B8F296A564CD}Assets/Medical/VascularAccess/Data/VascularAccess_4.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_AppliedIVCannula {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_BCMM_AppliedIVCannula {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0.1
+     Margin 0.001
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

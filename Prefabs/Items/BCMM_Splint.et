@@ -1,0 +1,25 @@
+GenericEntity : "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" {
+ ID "6AB4B3F3FD217008"
+ components {
+  MeshObject "{51F66EC3C5BC700D}" { Object "{DA76AADBBC5559AE}Assets/Medical/Splint/BCMM_Splint.xob" }
+  SCR_ConsumableItemComponent "{5943631460899505}" { m_ConsumableEffect BCMM_ProcedurePresentationEffect "{594363147CC4C6BE}" { m_bDeleteOnUse 0 } }
+  BCMM_SplintItemComponent "{6AB4B3F3FD218305}" {}
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemDisplayName SCR_InventoryUIInfo "{5222EB4D07D865FA}" {
+     Name "Packaged leg splint"
+     Description "Supports one fractured leg. Does not heal the fracture. Walking can still cause internal bleeding; definitive repair requires a medical facility."
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 0.4
+     SizeSetupStrategy Manual
+     ItemDimensions 20 10 5
+     ItemVolume 1000
+    }
+    CommonItemType "EQUIPMENT"
+   }
+  }
+
+
+ }
+}

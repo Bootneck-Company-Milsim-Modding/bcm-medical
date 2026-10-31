@@ -1,0 +1,6 @@
+Vehicle : "{3B1EB924602C7A07}Prefabs/Vehicles/Wheeled/M998/M997_maxi_ambulance_MERDC.et" {
+ ID "6AB4B3F3FD217002"
+ components {
+  BCMM_VehicleCargoComponent "{6AB4B3F3FD218066}" {}
+ }
+}

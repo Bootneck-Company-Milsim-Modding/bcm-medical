@@ -1,0 +1,26 @@
+GenericEntity : "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et" {
+ ID "D6BD6691000A4586"
+ components {
+  MeshObject "{59CE87DB17B6B1C5}" { Object "{4C8B77F13639E02C}Assets/Medical/GenericInjector/BCMM_GenericInjector.xob" }
+  SCR_ConsumableItemComponent "{59E68C74C5CEE74F}" { m_ConsumableEffect BCMM_InjectionPresentationEffect "{59E68C74C1F3910E}" { m_bDeleteOnUse 0 } m_bAlternativeModelOnAction 0 }
+  BCMM_MedicationItemComponent "{6AB4B3F3FD218312}" { Kind 5 }
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    CustomAttributes { SCR_AlternativeModel "{59E68C742A7C6A5F}" { m_sAlternativeModel "{4C8B77F13639E02C}Assets/Medical/GenericInjector/BCMM_GenericInjector.xob" } }
+    ItemDisplayName SCR_InventoryUIInfo "{5222EB4D07D865FA}" {
+     Name "Fentanyl"
+     Description "Finite injectable opioid game supply. Requires access and medic role by default; reassess ventilation and pressure."
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 0.4
+     SizeSetupStrategy Manual
+     ItemDimensions 20 10 5
+     ItemVolume 1000
+    }
+    CommonItemType "EQUIPMENT"
+   }
+  }
+
+
+ }
+}

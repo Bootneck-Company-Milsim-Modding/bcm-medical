@@ -1,0 +1,1 @@
+MetaFileClass { Name "{A1C54BBE72C5C696}Prefabs/MP/Managers/Factions/FactionManager_FFA.et" Configurations { EntityTemplateResourceClass PC {} EntityTemplateResourceClass HEADLESS : PC {} } }

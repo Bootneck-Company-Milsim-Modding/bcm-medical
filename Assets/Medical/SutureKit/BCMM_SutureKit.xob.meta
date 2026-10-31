@@ -1,0 +1,39 @@
+MetaFileClass {
+ Name "{36D6BF1281F4F241}Assets/Medical/SutureKit/BCMM_SutureKit.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AB6A94DDF1A38DA}" {
+     SourceMaterial "BCMM_SutureKit_M0"
+     AssignedMaterial "{4C1472890D60506E}Assets/Medical/SutureKit/Data/SutureKit.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_SutureKit {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_BCMM_SutureKit {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0.1
+     Margin 0.001
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "action": "BCMM_Carried_loop",
+    "stem": "BCMM_Carried_loop",
+    "frames": 31,
+    "fps": 30,
+    "loop": true
+  },
+  {
+    "action": "BCMM_Dragged_loop",
+    "stem": "BCMM_Dragged_loop",
+    "frames": 31,
+    "fps": 30,
+    "loop": true
+  }
+]

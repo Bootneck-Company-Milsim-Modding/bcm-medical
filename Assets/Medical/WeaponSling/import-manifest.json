@@ -1,0 +1,13 @@
+{
+  "model": "{CA7F21A8CF938319}Assets/Medical/WeaponSling/BCMM_WeaponSling.xob",
+  "prefab": "{1AC68034B6B789EF}Prefabs/Items/BCMM_WeaponSling.et",
+  "materials": 7,
+  "triangles": 17999,
+  "dimensionsMetres": [
+    0.35014185309410095,
+    0.2905053496360779,
+    0.25556689500808716
+  ],
+  "staticInventoryOnly": true,
+  "source": "Source/Equipment/BlackBungeeSling/BCM_Black_TwoHook_BungeeSling.blend"
+}

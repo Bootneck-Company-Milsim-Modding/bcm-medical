@@ -1,0 +1,9 @@
+FrameWidgetClass { Name "BCMMProcedureHUD" "Ignore Cursor" 1 {
+ FrameWidgetClass { Name "ProcedurePanel" "Ignore Cursor" 1 Slot FrameWidgetSlot { Anchor 0.32 0.78 0.68 0.87 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 } {
+  ImageWidgetClass { Name "Background" "Ignore Cursor" 1 Slot FrameWidgetSlot { Anchor 0 0 1 1 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 } Color 0.035 0.052 0.058 0.9 }
+  TextWidgetClass { Name "ProcedureLabel" "Ignore Cursor" 1 Slot FrameWidgetSlot { Anchor 0.04 0.08 0.96 0.49 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 } "Font Size" 16 "Min Font Size" 12 Color 0.84 0.87 0.86 1 FontProperties FontProperties { Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt" } }
+  TextWidgetClass { Name "ProcedureHint" "Ignore Cursor" 1 Slot FrameWidgetSlot { Anchor 0.04 0.5 0.96 0.79 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 } Text "Open the medical interface to cancel treatment" "Font Size" 12 Color 0.62 0.71 0.7 1 FontProperties FontProperties { Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt" } }
+  ImageWidgetClass { Name "ProgressTrack" "Ignore Cursor" 1 Slot FrameWidgetSlot { Anchor 0.04 0.85 0.96 0.91 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 } Color 1 1 1 0.12 }
+  ImageWidgetClass { Name "ProgressFill" "Ignore Cursor" 1 Slot FrameWidgetSlot { Anchor 0.04 0.85 0.04 0.85 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 } Color 0.76 0.63 0.3 1 }
+ } }
+} }

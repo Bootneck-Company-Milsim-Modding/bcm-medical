@@ -1,0 +1,22 @@
+GenericEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
+ ID "578F8E0BB85B04D7"
+ components {
+  MeshObject "{A8DDA767AF0E0FA7}" { Object "{CA7F21A8CF938319}Assets/Medical/WeaponSling/BCMM_WeaponSling.xob" }
+  RigidBody "{C83410D6ED3C2D9B}" { Mass 0.2 }
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemDisplayName SCR_InventoryUIInfo "{5222EB4D07D865FA}" {
+     Name "Weapon sling"
+     Description "Black two-hook bungee sling. Keep in inventory; no equipping required."
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 0.2
+     SizeSetupStrategy Manual
+     ItemDimensions 18 12 4
+     ItemVolume 500
+    }
+    CommonItemType "EQUIPMENT"
+   }
+  }
+ }
+}

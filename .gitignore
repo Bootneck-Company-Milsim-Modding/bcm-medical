@@ -5,3 +5,7 @@ Tests/Runtime/resourceDatabase.rdb
 verification/
 __pycache__/
 *.pyc
+# Blender automatically writes these recovery copies beside the maintained source.
+# Keep editable .blend files and intentionally named source revisions in Git.
+*.blend[0-9]
+*.blend[0-9][0-9]

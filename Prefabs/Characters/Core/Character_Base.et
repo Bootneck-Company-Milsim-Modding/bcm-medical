@@ -1,0 +1,22 @@
+SCR_ChimeraCharacter {
+ ID "520EC961A090B1EE"
+ components {
+  BCMM_CharacterPresentationComponent "{6AB4B3F3FD218F10}" {}
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   additionalActions {
+    BCMM_SplintLeftAction "{6AB4B3F3FD218214}" { ParentContextList { "LowerTorso" } UIInfo SCR_ActionUIInfo { Name "Apply splint to left leg" } VisibilityRange 5 Duration 0 "Sort Priority" 23 }
+    BCMM_SplintRightAction "{6AB4B3F3FD218215}" { ParentContextList { "LowerTorso" } UIInfo SCR_ActionUIInfo { Name "Apply splint to right leg" } VisibilityRange 5 Duration 0 "Sort Priority" 24 }
+    BCMM_ExamineAction "{6AB4B3F3FD218211}" { ParentContextList { "LowerTorso" } UIInfo SCR_ActionUIInfo { Name "Examine casualty" } VisibilityRange 5 Duration 0 "Sort Priority" 20 }
+    BCMM_StartCPRAction "{6AB4B3F3FD218212}" { ParentContextList { "LowerTorso" } UIInfo SCR_ActionUIInfo { Name "Start CPR" } VisibilityRange 5 Duration 0 "Sort Priority" 21 }
+    BCMM_StopCPRAction "{6AB4B3F3FD218213}" { ParentContextList { "LowerTorso" } UIInfo SCR_ActionUIInfo { Name "Stop CPR" } VisibilityRange 5 Duration 0 "Sort Priority" 22 }
+    BCMM_BagCorpseAction "{6AB4B3F3FD218201}" {
+     ParentContextList { "LowerTorso" }
+     UIInfo SCR_ActionUIInfo { Name "Place in body bag" }
+     VisibilityRange 5
+     Duration 0
+     "Sort Priority" 15
+    }
+   }
+  }
+ }
+}

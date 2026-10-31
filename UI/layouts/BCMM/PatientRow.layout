@@ -1,0 +1,5 @@
+ButtonWidgetClass : "{6AB4B3F3FD215006}UI/layouts/BCMM/MedicalButton.layout" {
+ Name "PatientRow"
+ Slot LayoutSlot { HorizontalAlign 3 Padding 0 0 0 5 }
+ { SizeLayoutWidgetClass "{5548EB41A8E48247}" { Prefab "{5548EB41A8E48247}" AllowHeightOverride 1 HeightOverride 34 } }
+}

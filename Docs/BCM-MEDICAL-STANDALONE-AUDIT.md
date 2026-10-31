@@ -1,5 +1,14 @@
 # BCM Medical standalone audit and asset requirements
 
+## Current user scope — 30 October 2026
+
+The controlling decisions and audit are in [SCOPE-AND-READINESS-AUDIT-20261030.md](SCOPE-AND-READINESS-AUDIT-20261030.md). Living casualty carrying (including conscious broken-leg casualties after explicit acceptance), living casualty dragging and BCM-owned unconscious weapon retention are required but unfinished. Body bags use manual/rope dragging only; filled-bag carrying is outside scope. Two-player stretcher carrying remains shelved; if resumed, place the stretcher at hip height and use normal base-game walking.
+
+Reuse suitable base-game animations; otherwise use an on-screen progress bar. Do not create, modify, retarget or rebuild animations. Existing custom assets/integration stay untouched pending separately authorized changes. Any indispensable animation requires a focused user decision first. Autonomous medical AI removal is planned for the separate AI mod, but must wait for the user's go-ahead; preserve player medical care and player treatment of AI casualties. Earlier conflicting animation procurement and AI expansion tasks are superseded.
+
+
+Historical architecture/procurement audit from26 October. Current implementation and remaining work are in [ROADMAP.md](ROADMAP.md); supplied assets and purchasing needs are in [ASSET-PURCHASE-BRIEF.md](ASSET-PURCHASE-BRIEF.md). Later explicit scope removes body-bag respawn waiting/spectator logic and the Body Bag Admin menu, leaves Limited Lives as the sole BCM deployment allowance policy, and shelves two-player carrying. Earlier parity/purchase suggestions below do not reinstate those features or imply that already supplied equipment must be bought again.
+
 26 October 2026. Target: one BCM Medical addon requiring only Arma Reforger. ACE, KAT, RespawnLimiter, Keep Weapons and Improved Blood Effect are not to become dependencies or bundled implementations. Existing BCM functionality is the behavioural specification; new medical and transport implementations must have BCM ownership and provenance.
 
 ## Audit status and evidence

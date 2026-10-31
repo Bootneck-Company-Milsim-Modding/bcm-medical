@@ -1,0 +1,43 @@
+MetaFileClass {
+ Name "{A8EE7E511CCFBB0A}Assets/Medical/Naloxone/BCMM_Naloxone.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AB69C6DF8656D12}" {
+     SourceMaterial "BCMM_Naloxone_M0"
+     AssignedMaterial "{0878EC9CD8CB5DEB}Assets/Medical/GenericInjector/Data/GenericInjector_0.emat"
+    }
+    MaterialAssignClass "{6AB69C6DF8656D77}" {
+     SourceMaterial "BCMM_Naloxone_M1"
+     AssignedMaterial "{83FCBBDC40C170D6}Assets/Medical/Naloxone/Data/Naloxone.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_Naloxone {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_BCMM_Naloxone {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0.1
+     Margin 0.001
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

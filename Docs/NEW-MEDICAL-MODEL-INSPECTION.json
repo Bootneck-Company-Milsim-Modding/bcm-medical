@@ -1,0 +1,1006 @@
+[
+  {
+    "source": "AED Use Pads Only/AED.fbx",
+    "triangles": 2602,
+    "objects": [
+      {
+        "name": "AED_Button_4",
+        "triangles": 96,
+        "materials": [],
+        "uv_layers": 1
+      },
+      {
+        "name": "AED_Button_3",
+        "triangles": 96,
+        "materials": [],
+        "uv_layers": 1
+      },
+      {
+        "name": "AED_Button_2",
+        "triangles": 102,
+        "materials": [],
+        "uv_layers": 1
+      },
+      {
+        "name": "AED_Button",
+        "triangles": 96,
+        "materials": [],
+        "uv_layers": 1
+      },
+      {
+        "name": "AED",
+        "triangles": 978,
+        "materials": [],
+        "uv_layers": 1
+      },
+      {
+        "name": "AED_Electrode_2",
+        "triangles": 876,
+        "materials": [],
+        "uv_layers": 1
+      },
+      {
+        "name": "AED_Button_Button",
+        "triangles": 102,
+        "materials": [],
+        "uv_layers": 1
+      },
+      {
+        "name": "AED_Electrode_1",
+        "triangles": 256,
+        "materials": [],
+        "uv_layers": 1
+      }
+    ],
+    "images": [],
+    "dimensions": [
+      0.6784522384405136,
+      0.169940035790205,
+      0.30904909090168076
+    ]
+  },
+  {
+    "source": "Blood Bag/blood+bag.fbx",
+    "triangles": 50000,
+    "objects": [
+      {
+        "name": "material",
+        "triangles": 50000,
+        "materials": [
+          "Material.004"
+        ],
+        "uv_layers": 1
+      }
+    ],
+    "images": [
+      {
+        "name": "texture_pbr_20250901.png.001",
+        "path": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vendor-medical-wave2\\Blood Bag\\blood bag.fbm\\texture_pbr_20250901.png",
+        "packed": true,
+        "size": [
+          4096,
+          4096
+        ]
+      },
+      {
+        "name": "texture_pbr_20250901_metallic.png.001",
+        "path": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vendor-medical-wave2\\Blood Bag\\blood bag.fbm\\texture_pbr_20250901_metallic.png",
+        "packed": true,
+        "size": [
+          4096,
+          4096
+        ]
+      },
+      {
+        "name": "texture_pbr_20250901_normal.png.001",
+        "path": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vendor-medical-wave2\\Blood Bag\\blood bag.fbm\\texture_pbr_20250901_normal.png",
+        "packed": true,
+        "size": [
+          4096,
+          4096
+        ]
+      },
+      {
+        "name": "texture_pbr_20250901_roughness.png.001",
+        "path": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vendor-medical-wave2\\Blood Bag\\blood bag.fbm\\texture_pbr_20250901_roughness.png",
+        "packed": true,
+        "size": [
+          4096,
+          4096
+        ]
+      }
+    ],
+    "dimensions": [
+      0.6982240080833435,
+      0.1649910882115364,
+      1.1824849906606656
+    ]
+  },
+  {
+    "source": "BVM/Ambu+bag.fbx",
+    "triangles": 10260,
+    "objects": [
+      {
+        "name": "Mask",
+        "triangles": 2288,
+        "materials": [
+          "Plastic",
+          "Transparent_part"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "sweep1",
+        "triangles": 2232,
+        "materials": [
+          "Transparent_part",
+          "Plastic"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "polySurface2",
+        "triangles": 1728,
+        "materials": [
+          "Transparent_part"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "polySurface8",
+        "triangles": 624,
+        "materials": [
+          "Plastic",
+          "Transparent_part"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "pCylinder7",
+        "triangles": 480,
+        "materials": [
+          "Plastic"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "pCylinder6",
+        "triangles": 1208,
+        "materials": [
+          "Plastic"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "pCylinder9",
+        "triangles": 1700,
+        "materials": [
+          "Plastic",
+          "Transparent_part"
+        ],
+        "uv_layers": 1
+      }
+    ],
+    "images": [
+      {
+        "name": "file1",
+        "path": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vendor-medical-wave2\\BVM\\Texture\\Texture\\Transparent_part_Base_color_1002.png",
+        "packed": false,
+        "size": [
+          4096,
+          4096
+        ]
+      },
+      {
+        "name": "file1.001",
+        "path": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vendor-medical-wave2\\BVM\\Texture\\Texture\\Transparent_part_Base_color_1002.png",
+        "packed": false,
+        "size": [
+          4096,
+          4096
+        ]
+      },
+      {
+        "name": "file1.002",
+        "path": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vendor-medical-wave2\\BVM\\Texture\\Texture\\Transparent_part_Base_color_1002.png",
+        "packed": false,
+        "size": [
+          4096,
+          4096
+        ]
+      },
+      {
+        "name": "file2",
+        "path": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vendor-medical-wave2\\BVM\\Texture\\Texture\\Plastic_Base_color_1001.png",
+        "packed": false,
+        "size": [
+          4096,
+          4096
+        ]
+      }
+    ],
+    "dimensions": [
+      0.29168836772441864,
+      0.7078016102313995,
+      0.11018043756484985
+    ]
+  },
+  {
+    "source": "BVM/cgtrader_optimized_Ambu+bag.fbx",
+    "triangles": 10260,
+    "objects": [
+      {
+        "name": "Mask",
+        "triangles": 2288,
+        "materials": [
+          "Plastic",
+          "Transparent_part"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "sweep1",
+        "triangles": 2232,
+        "materials": [
+          "Plastic",
+          "Transparent_part"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "polySurface2",
+        "triangles": 1728,
+        "materials": [
+          "Transparent_part"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "polySurface8",
+        "triangles": 624,
+        "materials": [
+          "Plastic",
+          "Transparent_part"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "pCylinder7",
+        "triangles": 480,
+        "materials": [
+          "Plastic"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "pCylinder6",
+        "triangles": 1208,
+        "materials": [
+          "Plastic"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "pCylinder9",
+        "triangles": 1700,
+        "materials": [
+          "Plastic",
+          "Transparent_part"
+        ],
+        "uv_layers": 1
+      }
+    ],
+    "images": [
+      {
+        "name": "file1",
+        "path": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vendor-medical-wave2\\BVM\\Texture\\Texture\\Transparent_part_Base_color_1002.png",
+        "packed": false,
+        "size": [
+          4096,
+          4096
+        ]
+      },
+      {
+        "name": "file1.001",
+        "path": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vendor-medical-wave2\\BVM\\Texture\\Texture\\Transparent_part_Base_color_1002.png",
+        "packed": false,
+        "size": [
+          4096,
+          4096
+        ]
+      },
+      {
+        "name": "file1.002",
+        "path": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vendor-medical-wave2\\BVM\\Texture\\Texture\\Transparent_part_Base_color_1002.png",
+        "packed": false,
+        "size": [
+          4096,
+          4096
+        ]
+      },
+      {
+        "name": "file2",
+        "path": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vendor-medical-wave2\\BVM\\Texture\\Texture\\Plastic_Base_color_1001.png",
+        "packed": false,
+        "size": [
+          4096,
+          4096
+        ]
+      }
+    ],
+    "dimensions": [
+      0.29168834537267685,
+      0.7078016400337219,
+      0.11018043756484985
+    ]
+  },
+  {
+    "source": "Chest Drain/01/fbx.fbx",
+    "triangles": 36628,
+    "objects": [
+      {
+        "name": "Circle004",
+        "triangles": 704,
+        "materials": [
+          "Materi56757567"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "Cylinder005",
+        "triangles": 616,
+        "materials": [
+          "Material #5"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "Cylinder006",
+        "triangles": 624,
+        "materials": [
+          "Material #5"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "Cylinder010",
+        "triangles": 936,
+        "materials": [
+          "Material #3"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "Line001",
+        "triangles": 11376,
+        "materials": [
+          "Material #4"
+        ],
+        "uv_layers": 0
+      },
+      {
+        "name": "Box001",
+        "triangles": 11296,
+        "materials": [
+          "Material #1"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "Cylinder011",
+        "triangles": 180,
+        "materials": [
+          "Material #4"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "Cylinder012",
+        "triangles": 216,
+        "materials": [
+          "Material #2"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "Plane001",
+        "triangles": 32,
+        "materials": [],
+        "uv_layers": 1
+      },
+      {
+        "name": "Cylinder014",
+        "triangles": 4292,
+        "materials": [
+          "Material #2"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "Object002",
+        "triangles": 60,
+        "materials": [
+          "Material #24"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "Circle005",
+        "triangles": 704,
+        "materials": [
+          "Materi56757567"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "Cylinder015",
+        "triangles": 616,
+        "materials": [
+          "Material #5"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "Cylinder016",
+        "triangles": 624,
+        "materials": [
+          "Material #5"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "Cylinder018",
+        "triangles": 4292,
+        "materials": [
+          "Material #2"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "Object003",
+        "triangles": 60,
+        "materials": [
+          "Material #24"
+        ],
+        "uv_layers": 1
+      }
+    ],
+    "images": [
+      {
+        "name": "Map #2",
+        "path": "F:\\3D Objects\\\u06a9\u06cc\u0633\u0647-\u0627\u062f\u0631\u0627\u0631-NovaBag.png",
+        "packed": false,
+        "size": [
+          0,
+          0
+        ]
+      }
+    ],
+    "dimensions": [
+      16.017288208007812,
+      18.769556045532227,
+      0.03608318231999874
+    ]
+  },
+  {
+    "source": "Laryngscope/cgtrader_optimized_Laryngoscope.fbx",
+    "triangles": 1071,
+    "objects": [
+      {
+        "name": "Laryngoscope",
+        "triangles": 1071,
+        "materials": [
+          "SummitDoppler_Laryngoscope"
+        ],
+        "uv_layers": 2
+      }
+    ],
+    "images": [],
+    "dimensions": [
+      0.08217737451195717,
+      0.0628791288472712,
+      0.013290777336806059
+    ]
+  },
+  {
+    "source": "Laryngscope/Laryngoscope.fbx",
+    "triangles": 1071,
+    "objects": [
+      {
+        "name": "Laryngoscope",
+        "triangles": 1071,
+        "materials": [
+          "SummitDoppler_Laryngoscope"
+        ],
+        "uv_layers": 2
+      }
+    ],
+    "images": [],
+    "dimensions": [
+      0.08217737451195717,
+      0.0628791288472712,
+      0.013290777336806059
+    ]
+  },
+  {
+    "source": "Monitor/Monitor(1).fbx",
+    "triangles": 472,
+    "objects": [
+      {
+        "name": "MonitorKnob",
+        "triangles": 176,
+        "materials": [
+          "Monitor"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "MonitorScreen",
+        "triangles": 296,
+        "materials": [
+          "Monitor"
+        ],
+        "uv_layers": 1
+      }
+    ],
+    "images": [
+      {
+        "name": "Monitor-1_Bake1_PBR_Diffuse.png",
+        "path": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vendor-medical-wave2\\Monitor\\Monitor_PBR\\Monitor_PBR_Diffuse.png",
+        "packed": false,
+        "size": [
+          3072,
+          3072
+        ]
+      },
+      {
+        "name": "Monitor-1_Bake1_PBR_Diffuse.png.001",
+        "path": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vendor-medical-wave2\\Monitor\\Monitor_PBR\\Monitor_PBR_Diffuse.png",
+        "packed": false,
+        "size": [
+          3072,
+          3072
+        ]
+      },
+      {
+        "name": "Monitor-1_Bake1_PBR_Emission.png",
+        "path": "C:\\Users\\openm\\Documents\\Projects_Graphics_ASUS\\Blender_Projects\\Hospital_Scene\\Monitor_1\\Monitor-1_Bake1_PBR_Emission.png",
+        "packed": false,
+        "size": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Monitor-1_Bake1_PBR_Normal.png",
+        "path": "C:\\Users\\openm\\Documents\\Projects_Graphics_ASUS\\Blender_Projects\\Hospital_Scene\\Monitor_1\\Monitor-1_Bake1_PBR_Normal.png",
+        "packed": false,
+        "size": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Monitor-1_Bake1_PBR_Roughness.png",
+        "path": "C:\\Users\\openm\\Documents\\Projects_Graphics_ASUS\\Blender_Projects\\Hospital_Scene\\Monitor_1\\Monitor-1_Bake1_PBR_Roughness.png",
+        "packed": false,
+        "size": [
+          0,
+          0
+        ]
+      }
+    ],
+    "dimensions": [
+      0.458156555891037,
+      0.18749869242310524,
+      0.42703667283058167
+    ]
+  },
+  {
+    "source": "Splint/SM_MedicalSplinter.fbx",
+    "triangles": 288,
+    "objects": [
+      {
+        "name": "SM_MedicalSplinter",
+        "triangles": 288,
+        "materials": [
+          "Mat_UVChecker"
+        ],
+        "uv_layers": 1
+      }
+    ],
+    "images": [
+      {
+        "name": "UVChecker",
+        "path": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vendor-medical-wave2\\Splint\\.",
+        "packed": false,
+        "size": [
+          0,
+          0
+        ]
+      }
+    ],
+    "dimensions": [
+      0.12284685671329498,
+      0.15699023753404617,
+      0.1221693140687421
+    ]
+  },
+  {
+    "source": "Stretcher/Stretcher.fbx",
+    "triangles": 35636,
+    "objects": [
+      {
+        "name": "FG Stretcher.Shape",
+        "triangles": 35636,
+        "materials": [
+          "Stretcher"
+        ],
+        "uv_layers": 1
+      }
+    ],
+    "images": [
+      {
+        "name": "FG Stretcher _Stretcher_albedo.jpg.jpg",
+        "path": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vendor-medical-wave2\\Stretcher\\FG+Stretcher+_Stretcher_albedo.jpg.jpg\\FG Stretcher _Stretcher_albedo.jpg.jpg",
+        "packed": false,
+        "size": [
+          4096,
+          4096
+        ]
+      },
+      {
+        "name": "FG Stretcher _Stretcher_metalness.jpg.jpg",
+        "path": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vendor-medical-wave2\\Stretcher\\Users\\a1990\\Desktop\\Movies\\Exports\\ENV\\ENV0\\ExportTextures\\FG Stretcher _Stretcher_metalness.jpg.jpg",
+        "packed": false,
+        "size": [
+          0,
+          0
+        ]
+      },
+      {
+        "name": "FG Stretcher _Stretcher_roughness.jpg.jpg",
+        "path": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vendor-medical-wave2\\Stretcher\\Users\\a1990\\Desktop\\Movies\\Exports\\ENV\\ENV0\\ExportTextures\\FG Stretcher _Stretcher_roughness.jpg.jpg",
+        "packed": false,
+        "size": [
+          0,
+          0
+        ]
+      }
+    ],
+    "dimensions": [
+      0.714273989200592,
+      2.4085800647735596,
+      0.1528775990009308
+    ]
+  },
+  {
+    "source": "Suction/VAC+Device+model.fbx",
+    "triangles": 39534,
+    "objects": [
+      {
+        "name": "VAC_Device_Model_Silc_Cup01_geo",
+        "triangles": 1152,
+        "materials": [
+          "Slic_Cup_VRayMtl10"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "VAC_Device_Model_Silc_Cup02_geo",
+        "triangles": 1280,
+        "materials": [
+          "Slic_Cup_VRayMtl11"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "VAC_Device_Model_Silc_Cup03_geo",
+        "triangles": 1920,
+        "materials": [
+          "Slic_Cup_VRayMtl10"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "VAC_Device_Model_Silc_Cup04_geo",
+        "triangles": 1536,
+        "materials": [
+          "Slic_Cup_VRayMtl10"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "VAC_Device_Model_Vacuum_Pump01_geo",
+        "triangles": 576,
+        "materials": [
+          "Power_Switch_VRayMtl4"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "VAC_Device_Model_Vacuum_Pump02_geo",
+        "triangles": 256,
+        "materials": [
+          "LED__VRayMtl5"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "VAC_Device_Model_Vacuum_Pump03_geo",
+        "triangles": 1184,
+        "materials": [
+          "Dark_Plastic_VRayMtl9"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "VAC_Device_Model_Vacuum_Pump04_geo",
+        "triangles": 328,
+        "materials": [
+          "VRayMtl7"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "VAC_Device_Model_Vacuum_Pump05_geo",
+        "triangles": 976,
+        "materials": [
+          "VRayBlendMtl1"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "VAC_Device_Model_Vacuum_Pump06_geo",
+        "triangles": 9408,
+        "materials": [
+          "Screen_Frame_VRayMtl2"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "VAC_Device_Model_VAC_Screen",
+        "triangles": 1296,
+        "materials": [
+          "Screen_VRayMtl3"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "VAC_Device_Model_VAC_Screen_Glass",
+        "triangles": 1296,
+        "materials": [
+          "Screen_Glass_VRayMtl10"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "VAC_Device_Model_USB_metal",
+        "triangles": 448,
+        "materials": [
+          "USB_Metal_VRayMtl11"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "VAC_Device_Model_USB_Pins",
+        "triangles": 756,
+        "materials": [
+          "USB_Metal_VRayMtl12"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "VAC_Device_Model_USB_Pin_Tongue",
+        "triangles": 244,
+        "materials": [
+          "USB_BLack_PlasticVRayMtl12"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "VAC_Device_Model_Vacuum_Pump10_geo",
+        "triangles": 4476,
+        "materials": [
+          "Vacuum_PumpVRayMtl1"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "VAC_Device_Model_Vacuum_Pump10_geo1",
+        "triangles": 320,
+        "materials": [
+          "Dark_Plastic_VRayMtl9"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "VAC_Device_Model_Label_Glasses",
+        "triangles": 576,
+        "materials": [
+          "Label_Glasses_VRayMtl6"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "VAC_Device_Model_Vacuum_Pump_Chamber_geo",
+        "triangles": 3250,
+        "materials": [
+          "Pump_Chamber_VRayMtl8"
+        ],
+        "uv_layers": 1
+      },
+      {
+        "name": "VAC_Device_Model_Tube",
+        "triangles": 8256,
+        "materials": [
+          "Dark_Plastic_VRayMtl9"
+        ],
+        "uv_layers": 1
+      }
+    ],
+    "images": [],
+    "dimensions": [
+      0.5571261048316956,
+      0.11841818690299988,
+      0.07975538929167669
+    ]
+  },
+  {
+    "source": "SurgeryKit/Medical_SurvivalKit/SM_SurvivalKit.fbx",
+    "triangles": 3793,
+    "objects": [
+      {
+        "name": "SM_SurvivalKit.001",
+        "triangles": 3793,
+        "materials": [
+          "Mat_UVChecker"
+        ],
+        "uv_layers": 1
+      }
+    ],
+    "images": [
+      {
+        "name": "UVChecker",
+        "path": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vendor-medical-wave2\\SurgeryKit\\Medical_SurvivalKit\\.",
+        "packed": false,
+        "size": [
+          0,
+          0
+        ]
+      }
+    ],
+    "dimensions": [
+      0.7539233863353729,
+      0.3764437437057495,
+      0.15284066792810336
+    ]
+  },
+  {
+    "source": "Suture Kit/Medical_MilitaryHealthPouch/SM_Medical_MilitaryHealthPouch.fbx",
+    "triangles": 1496,
+    "objects": [
+      {
+        "name": "RetopoFlow.003",
+        "triangles": 1496,
+        "materials": [
+          "Mat_UVChecker"
+        ],
+        "uv_layers": 1
+      }
+    ],
+    "images": [
+      {
+        "name": "UVChecker",
+        "path": "D:\\_MP\\UltimateHealthPacks\\FBX\\Final",
+        "packed": false,
+        "size": [
+          0,
+          0
+        ]
+      }
+    ],
+    "dimensions": [
+      0.254203125834465,
+      0.34930722415447235,
+      0.161625110427849
+    ]
+  },
+  {
+    "source": "VascularAccess/TS_MDL_Cannula_V01_01.fbx",
+    "triangles": 14818,
+    "objects": [
+      {
+        "name": "Lock_Plug",
+        "triangles": 5520,
+        "materials": [
+          "Lock_Plug"
+        ],
+        "uv_layers": 2
+      },
+      {
+        "name": "Needle_Grip",
+        "triangles": 494,
+        "materials": [
+          "Injection_Cap"
+        ],
+        "uv_layers": 2
+      },
+      {
+        "name": "Injection_Cap",
+        "triangles": 5552,
+        "materials": [
+          "Injection_Cap"
+        ],
+        "uv_layers": 2
+      },
+      {
+        "name": "Needle",
+        "triangles": 1160,
+        "materials": [
+          "Needle",
+          "Material.002"
+        ],
+        "uv_layers": 2
+      },
+      {
+        "name": "Wings",
+        "triangles": 592,
+        "materials": [
+          "Injection_Cap"
+        ],
+        "uv_layers": 2
+      },
+      {
+        "name": "glass_tube",
+        "triangles": 840,
+        "materials": [
+          "Glass_Tube"
+        ],
+        "uv_layers": 2
+      },
+      {
+        "name": "glass_tube.001",
+        "triangles": 660,
+        "materials": [
+          "Glass_Tube"
+        ],
+        "uv_layers": 2
+      }
+    ],
+    "images": [],
+    "dimensions": [
+      0.008113017305731773,
+      0.03172214888036251,
+      0.0076770736450271215
+    ]
+  },
+  {
+    "source": "Chest Seal/Dressing.blend",
+    "triangles": 992,
+    "objects": [
+      {
+        "name": "Circle.001",
+        "triangles": 992,
+        "materials": [],
+        "uv_layers": 1
+      }
+    ],
+    "images": [
+      {
+        "name": "chest-seal-valve-2.jpg",
+        "path": "C:\\Users\\msi\\Downloads\\chest-seal-valve-2.jpg",
+        "packed": false,
+        "size": [
+          0,
+          0
+        ]
+      }
+    ],
+    "dimensions": [
+      1.7000000476837158,
+      1.7000001072883606,
+      0.11135518975893888
+    ]
+  }
+]

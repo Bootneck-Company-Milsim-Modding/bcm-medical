@@ -1,0 +1,4 @@
+MetaFileClass {
+ Name "{6AB4B3F3FD215001}UI/Materials/BCMM_SuppressionBlur.emat"
+ Configurations { EMATResourceClass PC {} EMATResourceClass HEADLESS : PC {} }
+}

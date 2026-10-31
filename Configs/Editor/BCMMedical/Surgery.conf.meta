@@ -1,0 +1,1 @@
+MetaFileClass { Name "{6AB4B3F3FD219105}Configs/Editor/BCMMedical/Surgery.conf" Configurations { CONFResourceClass PC {} CONFResourceClass HEADLESS : PC {} } }

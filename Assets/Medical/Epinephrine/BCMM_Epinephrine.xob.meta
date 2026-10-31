@@ -1,0 +1,39 @@
+MetaFileClass {
+ Name "{888767258EA25BEE}Assets/Medical/Epinephrine/BCMM_Epinephrine.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AB6927341DECF79}" {
+     SourceMaterial "BCMM_Epinephrine_M0"
+     AssignedMaterial "{164C9411321E5AAC}Assets/Medical/Epinephrine/Data/Epinephrine_0.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_Epinephrine {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_BCMM_Epinephrine {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0.1
+     Margin 0.001
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{3D58C7E10F7742A2}Source/Animations/BCMM_TabletOther_loop.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourcePath "BCMM_Tablets.blend"
+   SourceProfile "101_FullBodyABS"
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+ }
+}

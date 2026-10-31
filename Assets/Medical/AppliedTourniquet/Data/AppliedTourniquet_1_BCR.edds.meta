@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{66C23EAE64D2463A}Assets/Medical/AppliedTourniquet/Data/AppliedTourniquet_1_BCR.edds"
+ Configurations {
+  PNGResourceClass PC : "{EAB5DE3219F9CBA8}Configs/System/ResourceTypes/PC/TextureColorMap.conf" {
+  }
+  PNGResourceClass HEADLESS : PC {
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass XBOX_SERIES : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass PS5 : PC {
+  }
+ }
+}

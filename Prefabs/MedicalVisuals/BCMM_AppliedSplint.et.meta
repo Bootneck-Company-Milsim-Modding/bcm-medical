@@ -1,0 +1,1 @@
+MetaFileClass { Name "{8FE8158B5EF4440E}Prefabs/MedicalVisuals/BCMM_AppliedSplint.et" Configurations { EntityTemplateResourceClass PC {} EntityTemplateResourceClass HEADLESS : PC {} } }

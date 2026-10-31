@@ -1,0 +1,37 @@
+MetaFileClass {
+ Name "{B6C4ED1CA1262115}Assets/BCMM_TestDeck.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AB6A94CF7611387}" {
+     SourceMaterial "DefaultGeneratedMaterial"
+     AssignedMaterial "{24C74A9E7CFC388D}Assets/Data/DefaultGeneratedMaterial.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_TestDeck {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_TestDeck {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

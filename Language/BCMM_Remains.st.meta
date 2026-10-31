@@ -1,0 +1,11 @@
+MetaFileClass {
+ Name "{6AB4B3F3FD21F001}Language/BCMM_Remains.st"
+ Configurations {
+  StringTableResourceClass PC {}
+  StringTableResourceClass XBOX_ONE : PC {}
+  StringTableResourceClass XBOX_SERIES : PC {}
+  StringTableResourceClass PS4 : PC {}
+  StringTableResourceClass PS5 : PC {}
+  StringTableResourceClass HEADLESS : PC {}
+ }
+}

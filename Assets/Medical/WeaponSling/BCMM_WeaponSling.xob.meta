@@ -1,0 +1,63 @@
+MetaFileClass {
+ Name "{CA7F21A8CF938319}Assets/Medical/WeaponSling/BCMM_WeaponSling.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6ABCD577E6787317}" {
+     SourceMaterial "BCMM_WeaponSling_M0"
+     AssignedMaterial "{2F5FF9812B71E31B}Assets/Medical/WeaponSling/Data/WeaponSling_0.emat"
+    }
+    MaterialAssignClass "{6ABCD577E678734A}" {
+     SourceMaterial "BCMM_WeaponSling_M1"
+     AssignedMaterial "{3A027E0023386E5B}Assets/Medical/WeaponSling/Data/WeaponSling_1.emat"
+    }
+    MaterialAssignClass "{6ABCD577E67873E7}" {
+     SourceMaterial "BCMM_WeaponSling_M2"
+     AssignedMaterial "{97D2CC1E76866DDB}Assets/Medical/WeaponSling/Data/WeaponSling_2.emat"
+    }
+    MaterialAssignClass "{6ABCD577E67873F6}" {
+     SourceMaterial "BCMM_WeaponSling_M3"
+     AssignedMaterial "{519A81F6F9B3611E}Assets/Medical/WeaponSling/Data/WeaponSling_3.emat"
+    }
+    MaterialAssignClass "{6ABCD577E67873C9}" {
+     SourceMaterial "BCMM_WeaponSling_M4"
+     AssignedMaterial "{227912C4EE96E95B}Assets/Medical/WeaponSling/Data/WeaponSling_4.emat"
+    }
+    MaterialAssignClass "{6ABCD577E67873DA}" {
+     SourceMaterial "BCMM_WeaponSling_M5"
+     AssignedMaterial "{25AB7BD28BE95B2A}Assets/Medical/WeaponSling/Data/WeaponSling_5.emat"
+    }
+    MaterialAssignClass "{6ABCD577E678722F}" {
+     SourceMaterial "BCMM_WeaponSling_M6"
+     AssignedMaterial "{77C447E249FF07BC}Assets/Medical/WeaponSling/Data/WeaponSling_6.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_WeaponSling {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_BCMM_WeaponSling {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0.2
+     Margin 0.001
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

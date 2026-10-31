@@ -1,0 +1,1204 @@
+[
+  {
+    "name": "Epinephrine",
+    "source": "Better Epinephrine/SurvivalKit_AutoInjectorV1_FBX/SurvivalKit_AutoInjectorV1.fbx",
+    "triangles": 526,
+    "bounds_min": [
+      -0.2078012079000473,
+      -0.00832676887512207,
+      -6.286175469050193e-10
+    ],
+    "bounds_max": [
+      0.00832599401473999,
+      0.008326302282512188,
+      0.12999990582466125
+    ],
+    "dimensions": [
+      0.2161272019147873,
+      0.016653072088956833,
+      0.12999990582466125
+    ],
+    "objects": [
+      {
+        "object": "SurvivalKit_AutoInjectorV1_LOD0",
+        "materials": [
+          "SurvivalKit_AutoInjectorV1"
+        ],
+        "vertices": 162,
+        "bounds_min": [
+          -0.008327007293701172,
+          -0.00832676887512207,
+          -6.286175469050193e-10
+        ],
+        "bounds_max": [
+          0.00832599401473999,
+          0.008326302282512188,
+          0.12999990582466125
+        ]
+      },
+      {
+        "object": "SurvivalKit_AutoInjectorV1_LOD1",
+        "materials": [
+          "SurvivalKit_AutoInjectorV1"
+        ],
+        "vertices": 82,
+        "bounds_min": [
+          -0.1083269938826561,
+          -0.00832676887512207,
+          -6.286175469050193e-10
+        ],
+        "bounds_max": [
+          -0.09167399257421494,
+          0.008326302282512188,
+          0.12999990582466125
+        ]
+      },
+      {
+        "object": "SurvivalKit_AutoInjectorV1_LOD2",
+        "materials": [
+          "SurvivalKit_AutoInjectorV1"
+        ],
+        "vertices": 25,
+        "bounds_min": [
+          -0.2078012079000473,
+          -0.007800652179867029,
+          -5.888968757084001e-10
+        ],
+        "bounds_max": [
+          -0.19219975173473358,
+          0.0078001851215958595,
+          0.12941601872444153
+        ]
+      }
+    ],
+    "desired_longest_metres": 0.14,
+    "materials": [
+      {
+        "source": "SurvivalKit_AutoInjectorV1",
+        "material": "{164C9411321E5AAC}Assets/Medical/Epinephrine/Data/Epinephrine_0.emat",
+        "base_preview": "Assets\\Medical\\Epinephrine\\Data\\Epinephrine_0_BCR.png"
+      }
+    ],
+    "model": "{888767258EA25BEE}Assets/Medical/Epinephrine/BCMM_Epinephrine.xob"
+  },
+  {
+    "name": "Injector",
+    "source": "Better Injector/SurvivalKit_AutoInjectorV2_FBX/SurvivalKit_AutoInjectorV2.fbx",
+    "triangles": 680,
+    "bounds_min": [
+      -0.20756997168064117,
+      -0.008529424667358398,
+      -6.43917641429681e-10
+    ],
+    "bounds_max": [
+      0.008529096841812134,
+      0.008528955280780792,
+      0.10046200454235077
+    ],
+    "dimensions": [
+      0.2160990685224533,
+      0.01705837994813919,
+      0.10046200454235077
+    ],
+    "objects": [
+      {
+        "object": "SurvivalKit_AutoInjectorV2_LOD0",
+        "materials": [
+          "SurvivalKit_AutoInjectorV2"
+        ],
+        "vertices": 210,
+        "bounds_min": [
+          -0.008529901504516602,
+          -0.008529424667358398,
+          -6.43917641429681e-10
+        ],
+        "bounds_max": [
+          0.008529096841812134,
+          0.008528955280780792,
+          0.10046200454235077
+        ]
+      },
+      {
+        "object": "SurvivalKit_AutoInjectorV2_LOD1",
+        "materials": [
+          "SurvivalKit_AutoInjectorV2"
+        ],
+        "vertices": 106,
+        "bounds_min": [
+          -0.10852988809347153,
+          -0.008529424667358398,
+          -6.43917641429681e-10
+        ],
+        "bounds_max": [
+          -0.09147088974714279,
+          0.008528955280780792,
+          0.10046200454235077
+        ]
+      },
+      {
+        "object": "SurvivalKit_AutoInjectorV2_LOD2",
+        "materials": [
+          "SurvivalKit_AutoInjectorV2"
+        ],
+        "vertices": 30,
+        "bounds_min": [
+          -0.20756997168064117,
+          -0.007569560781121254,
+          -5.714499429210207e-10
+        ],
+        "bounds_max": [
+          -0.192430779337883,
+          0.007569091394543648,
+          0.10046200454235077
+        ]
+      }
+    ],
+    "desired_longest_metres": 0.14,
+    "materials": [
+      {
+        "source": "SurvivalKit_AutoInjectorV2",
+        "material": "{3FBBA13A23C7BE8C}Assets/Medical/Injector/Data/Injector_0.emat",
+        "base_preview": "Assets\\Medical\\Injector\\Data\\Injector_0_BCR.png"
+      }
+    ],
+    "model": "{9A127E6131BAF3AE}Assets/Medical/Injector/BCMM_Injector.xob"
+  },
+  {
+    "name": "Morphine",
+    "source": "Better Morphine/SM_MorphineShot.fbx",
+    "triangles": 1604,
+    "bounds_min": [
+      -0.10554450750350952,
+      -0.010810325853526592,
+      3.128023422505066e-07
+    ],
+    "bounds_max": [
+      0.10012111067771912,
+      0.013555345125496387,
+      0.02437181957066059
+    ],
+    "dimensions": [
+      0.20566561818122864,
+      0.02436567097902298,
+      0.02437150664627552
+    ],
+    "objects": [
+      {
+        "object": "SM_MorphineShot",
+        "materials": [
+          "Mat_Morphine"
+        ],
+        "vertices": 512,
+        "bounds_min": [
+          -0.10048186779022217,
+          -0.010810325853526592,
+          3.128023422505066e-07
+        ],
+        "bounds_max": [
+          0.10012111067771912,
+          0.013555345125496387,
+          0.02437181957066059
+        ]
+      },
+      {
+        "object": "SM_MorphineShot_Cap",
+        "materials": [
+          "Mat_Morphine"
+        ],
+        "vertices": 320,
+        "bounds_min": [
+          -0.10554450750350952,
+          -0.010117651894688606,
+          0.000683942053001374
+        ],
+        "bounds_max": [
+          -0.07584448903799057,
+          0.012866578996181488,
+          0.023668183013796806
+        ]
+      }
+    ],
+    "desired_longest_metres": 0.14,
+    "materials": [
+      {
+        "source": "Mat_Morphine",
+        "material": "{6D93D0BCABEA88D7}Assets/Medical/Morphine/Data/Morphine_0.emat",
+        "base_preview": "Assets\\Medical\\Morphine\\Data\\Morphine_0_BCR.png"
+      }
+    ],
+    "model": "{BE81C3A855ACE465}Assets/Medical/Morphine/BCMM_Morphine.xob"
+  },
+  {
+    "name": "PulseOximeter",
+    "source": "Better Pulse Oximiter/Pulse+Oximeter.fbx",
+    "triangles": 4124,
+    "bounds_min": [
+      -0.02512308396399021,
+      -0.03677112236618996,
+      -0.022096749395132065
+    ],
+    "bounds_max": [
+      0.02508563920855522,
+      0.046161726117134094,
+      0.027256455272436142
+    ],
+    "dimensions": [
+      0.05020872503519058,
+      0.08293284475803375,
+      0.04935320466756821
+    ],
+    "objects": [
+      {
+        "object": "Pulse Oximeter",
+        "materials": [
+          "Pulse Oximeter"
+        ],
+        "vertices": 2090,
+        "bounds_min": [
+          -0.02512308396399021,
+          -0.03677112236618996,
+          -0.022096749395132065
+        ],
+        "bounds_max": [
+          0.02508563920855522,
+          0.046161726117134094,
+          0.027256455272436142
+        ]
+      }
+    ],
+    "desired_longest_metres": 0.065,
+    "materials": [
+      {
+        "source": "Pulse Oximeter",
+        "material": "{18230E28F2FE5871}Assets/Medical/PulseOximeter/Data/PulseOximeter_0.emat",
+        "base_preview": "Assets\\Medical\\PulseOximeter\\Data\\PulseOximeter_0_BCR.png"
+      }
+    ],
+    "model": "{9F7A8E6397179496}Assets/Medical/PulseOximeter/BCMM_PulseOximeter.xob"
+  },
+  {
+    "name": "AED",
+    "source": "AED/ipad_sp1_automated_external_defibrillator__aed.glb",
+    "triangles": 4896,
+    "bounds_min": [
+      -2.559999942779541,
+      -0.6938494443893433,
+      -0.01855623722076416
+    ],
+    "bounds_max": [
+      -0.012836843729019165,
+      0.004650380462408066,
+      2.6002447605133057
+    ],
+    "dimensions": [
+      2.5471630096435547,
+      0.6984997987747192,
+      2.6188011169433594
+    ],
+    "objects": [
+      {
+        "object": "Stekker_Grijs plastic_0",
+        "materials": [
+          "Grijs_plastic"
+        ],
+        "vertices": 100,
+        "bounds_min": [
+          -0.5481575727462769,
+          -0.6915124654769897,
+          1.6475670337677002
+        ],
+        "bounds_max": [
+          -0.28895509243011475,
+          -0.6607123017311096,
+          1.9025027751922607
+        ]
+      },
+      {
+        "object": "Stekker_AED Sticker_0",
+        "materials": [
+          "AED_Sticker"
+        ],
+        "vertices": 20,
+        "bounds_min": [
+          -0.5481575727462769,
+          -0.6915124654769897,
+          1.6475670337677002
+        ],
+        "bounds_max": [
+          -0.28895509243011475,
+          -0.691512405872345,
+          1.9025027751922607
+        ]
+      },
+      {
+        "object": "Snoertje_Grijs plastic_0",
+        "materials": [
+          "Grijs_plastic"
+        ],
+        "vertices": 394,
+        "bounds_min": [
+          -0.3046010136604309,
+          -0.6835770010948181,
+          1.7540744543075562
+        ],
+        "bounds_max": [
+          -0.012836843729019165,
+          -0.29069948196411133,
+          1.7952733039855957
+        ]
+      },
+      {
+        "object": "Buttons_AED Sticker_0",
+        "materials": [
+          "AED_Sticker"
+        ],
+        "vertices": 64,
+        "bounds_min": [
+          -0.49712422490119934,
+          -0.6887703537940979,
+          0.6685525178909302
+        ],
+        "bounds_max": [
+          -0.33908969163894653,
+          -0.6887702345848083,
+          1.384592890739441
+        ]
+      },
+      {
+        "object": "Buttons_Groen plastic_0",
+        "materials": [
+          "Groen_plastic"
+        ],
+        "vertices": 311,
+        "bounds_min": [
+          -0.5287209749221802,
+          -0.6887702345848083,
+          1.1938236951828003
+        ],
+        "bounds_max": [
+          -0.307208389043808,
+          -0.6571893692016602,
+          1.41533625125885
+        ]
+      },
+      {
+        "object": "Buttons_Bruin plastic_0",
+        "materials": [
+          "Bruin_plastic"
+        ],
+        "vertices": 311,
+        "bounds_min": [
+          -0.5287209749221802,
+          -0.6887703537940979,
+          0.6358178853988647
+        ],
+        "bounds_max": [
+          -0.307208389043808,
+          -0.6571894288063049,
+          0.8573304414749146
+        ]
+      },
+      {
+        "object": "AED_Wit plastic_0",
+        "materials": [
+          "Wit_plastic"
+        ],
+        "vertices": 3920,
+        "bounds_min": [
+          -2.559999942779541,
+          -0.6938494443893433,
+          -0.01855623722076416
+        ],
+        "bounds_max": [
+          -0.016086697578430176,
+          0.004650380462408066,
+          2.6002447605133057
+        ]
+      },
+      {
+        "object": "AED_AED Sticker_0",
+        "materials": [
+          "AED_Sticker"
+        ],
+        "vertices": 57,
+        "bounds_min": [
+          -2.283606767654419,
+          -0.6865909099578857,
+          0.24037528038024902
+        ],
+        "bounds_max": [
+          -0.3390895128250122,
+          -0.6865904331207275,
+          2.3128392696380615
+        ]
+      }
+    ],
+    "desired_longest_metres": 0.3,
+    "materials": [
+      {
+        "source": "Grijs_plastic",
+        "material": "{8D257E7B8E35E05F}Assets/Medical/AED/Data/AED_0.emat",
+        "base_preview": "Assets\\Medical\\AED\\Data\\AED_0_BCR.png"
+      },
+      {
+        "source": "AED_Sticker",
+        "material": "{F394E979FAC2D929}Assets/Medical/AED/Data/AED_1.emat",
+        "base_preview": "Assets\\Medical\\AED\\Data\\AED_1_BCR.png"
+      },
+      {
+        "source": "Groen_plastic",
+        "material": "{6E49C6CB88CE121F}Assets/Medical/AED/Data/AED_2.emat",
+        "base_preview": "Assets\\Medical\\AED\\Data\\AED_2_BCR.png"
+      },
+      {
+        "source": "Bruin_plastic",
+        "material": "{1268D75CF0C6D5C0}Assets/Medical/AED/Data/AED_3.emat",
+        "base_preview": "Assets\\Medical\\AED\\Data\\AED_3_BCR.png"
+      },
+      {
+        "source": "Wit_plastic",
+        "material": "{AFE8AAB259AE0345}Assets/Medical/AED/Data/AED_4.emat",
+        "base_preview": "Assets\\Medical\\AED\\Data\\AED_4_BCR.png"
+      }
+    ],
+    "model": "{D667ACC9B83199AD}Assets/Medical/AED/BCMM_AED.xob"
+  },
+  {
+    "name": "OxygenMask",
+    "source": "Oxygen/oxygen_mask.glb",
+    "triangles": 5776,
+    "bounds_min": [
+      -4.809898376464844,
+      -9.084936141967773,
+      -0.003882390446960926
+    ],
+    "bounds_max": [
+      4.809898376464844,
+      9.08493709564209,
+      1.5483347177505493
+    ],
+    "dimensions": [
+      9.619796752929688,
+      18.169872283935547,
+      1.5522171258926392
+    ],
+    "objects": [
+      {
+        "object": "breathingmask_combined_mesh_result_oxygenmask_mouthpiece_blinn_",
+        "materials": [
+          "oxygenmask_mouthpiece_blinn"
+        ],
+        "vertices": 2526,
+        "bounds_min": [
+          -2.7726030349731445,
+          1.485620379447937,
+          -0.003882390446960926
+        ],
+        "bounds_max": [
+          2.7726097106933594,
+          9.08493709564209,
+          1.5483347177505493
+        ]
+      },
+      {
+        "object": "breathingmask_combined_mesh_result_oxygenmask_attachment_blinn_",
+        "materials": [
+          "oxygenmask_attachment_blinn"
+        ],
+        "vertices": 225,
+        "bounds_min": [
+          -0.8663742542266846,
+          5.046794414520264,
+          1.0442029237747192
+        ],
+        "bounds_max": [
+          -0.16926443576812744,
+          5.382338523864746,
+          1.3797460794448853
+        ]
+      },
+      {
+        "object": "breathingmask_combined_mesh_result_oxygenmask_bag_blinn_0",
+        "materials": [
+          "oxygenmask_bag_blinn"
+        ],
+        "vertices": 1119,
+        "bounds_min": [
+          -4.809898376464844,
+          -9.084936141967773,
+          0.02339107356965542
+        ],
+        "bounds_max": [
+          4.809898376464844,
+          4.82943868637085,
+          1.4525407552719116
+        ]
+      }
+    ],
+    "desired_longest_metres": 0.22,
+    "materials": [
+      {
+        "source": "oxygenmask_mouthpiece_blinn",
+        "material": "{16BDBD5F7B6206C4}Assets/Medical/OxygenMask/Data/OxygenMask_0.emat",
+        "base_preview": "Assets\\Medical\\OxygenMask\\Data\\OxygenMask_0_BCR.png"
+      },
+      {
+        "source": "oxygenmask_attachment_blinn",
+        "material": "{FFD49E8195F0B6E8}Assets/Medical/OxygenMask/Data/OxygenMask_1.emat",
+        "base_preview": "Assets\\Medical\\OxygenMask\\Data\\OxygenMask_1_BCR.png"
+      },
+      {
+        "source": "oxygenmask_bag_blinn",
+        "material": "{4AAC666FC59711A5}Assets/Medical/OxygenMask/Data/OxygenMask_2.emat",
+        "base_preview": "Assets\\Medical\\OxygenMask\\Data\\OxygenMask_2_BCR.png"
+      }
+    ],
+    "model": "{4D6E2A3677528444}Assets/Medical/OxygenMask/BCMM_OxygenMask.xob"
+  },
+  {
+    "name": "GenericInjector",
+    "source": "AutoInjector1/autoinjector.glb",
+    "triangles": 476,
+    "bounds_min": [
+      -0.016025705263018608,
+      -0.01602574810385704,
+      -0.13528262078762054
+    ],
+    "bounds_max": [
+      0.016025705263018608,
+      0.016025744378566742,
+      0.12006377428770065
+    ],
+    "dimensions": [
+      0.032051410526037216,
+      0.03205149248242378,
+      0.2553463876247406
+    ],
+    "objects": [
+      {
+        "object": "Model_0__0",
+        "materials": [
+          "Scene_-_Root"
+        ],
+        "vertices": 495,
+        "bounds_min": [
+          -0.016025705263018608,
+          -0.01602574810385704,
+          -0.13528262078762054
+        ],
+        "bounds_max": [
+          0.016025705263018608,
+          0.016025744378566742,
+          0.12006377428770065
+        ]
+      }
+    ],
+    "desired_longest_metres": 0.14,
+    "materials": [
+      {
+        "source": "Scene_-_Root",
+        "material": "{0878EC9CD8CB5DEB}Assets/Medical/GenericInjector/Data/GenericInjector_0.emat",
+        "base_preview": "Assets\\Medical\\GenericInjector\\Data\\GenericInjector_0_BCR.png"
+      }
+    ],
+    "model": "{4C8B77F13639E02C}Assets/Medical/GenericInjector/BCMM_GenericInjector.xob"
+  },
+  {
+    "name": "FluidBag",
+    "source": "blood+_bag.fbx",
+    "triangles": 5486,
+    "bounds_min": [
+      2.1414802074432373,
+      0.25119662284851074,
+      -0.7148464322090149
+    ],
+    "bounds_max": [
+      2.966813325881958,
+      2.460559606552124,
+      4.248627662658691
+    ],
+    "dimensions": [
+      0.8253331184387207,
+      2.2093629837036133,
+      4.963474273681641
+    ],
+    "objects": [
+      {
+        "object": "low",
+        "materials": [
+          "Default OBJ.001",
+          "Material.001",
+          "Material.002"
+        ],
+        "vertices": 2771,
+        "bounds_min": [
+          2.1414802074432373,
+          0.25119662284851074,
+          -0.7148464322090149
+        ],
+        "bounds_max": [
+          2.966813325881958,
+          2.460559606552124,
+          4.248627662658691
+        ]
+      }
+    ],
+    "desired_longest_metres": 0.24,
+    "materials": [
+      {
+        "source": "Default OBJ.001",
+        "material": "{118722C39E94A971}Assets/Medical/FluidBag/Data/FluidBag_0.emat",
+        "base_preview": "Assets\\Medical\\FluidBag\\Data\\FluidBag_0_BCR.png"
+      },
+      {
+        "source": "Material.001",
+        "material": "{1959A3E12CB3C062}Assets/Medical/FluidBag/Data/FluidBag_1.emat",
+        "base_preview": "Assets\\Medical\\FluidBag\\Data\\FluidBag_1_BCR.png"
+      },
+      {
+        "source": "Material.002",
+        "material": "{E32465F4C99C5A55}Assets/Medical/FluidBag/Data/FluidBag_2.emat",
+        "base_preview": "Assets\\Medical\\FluidBag\\Data\\FluidBag_2_BCR.png"
+      }
+    ],
+    "model": "{1B49817205B37B1C}Assets/Medical/FluidBag/BCMM_FluidBag.xob"
+  },
+  {
+    "name": "Naloxone",
+    "source": "AutoInjector1/autoinjector.glb",
+    "triangles": 476,
+    "bounds_min": [
+      -0.016025705263018608,
+      -0.01602574810385704,
+      -0.13528262078762054
+    ],
+    "bounds_max": [
+      0.016025705263018608,
+      0.016025744378566742,
+      0.12006377428770065
+    ],
+    "dimensions": [
+      0.032051410526037216,
+      0.03205149248242378,
+      0.2553463876247406
+    ],
+    "objects": [
+      {
+        "object": "Model_0__0",
+        "materials": [
+          "Scene_-_Root"
+        ],
+        "vertices": 495,
+        "bounds_min": [
+          -0.016025705263018608,
+          -0.01602574810385704,
+          -0.13528262078762054
+        ],
+        "bounds_max": [
+          0.016025705263018608,
+          0.016025744378566742,
+          0.12006377428770065
+        ]
+      }
+    ],
+    "desired_longest_metres": 0.14,
+    "materials": [
+      {
+        "source": "Scene_-_Root",
+        "material": "{0878EC9CD8CB5DEB}Assets/Medical/GenericInjector/Data/GenericInjector_0.emat",
+        "base_preview": "Assets\\Medical\\GenericInjector\\Data\\GenericInjector_0_BCR.png"
+      },
+      {
+        "source": "BCMM_CapVariant",
+        "material": "{83FCBBDC40C170D6}Assets/Medical/Naloxone/Data/Naloxone.emat",
+        "base_preview": "Assets/Medical/Naloxone/Data/Naloxone_BCR.png"
+      }
+    ],
+    "model": "{A8EE7E511CCFBB0A}Assets/Medical/Naloxone/BCMM_Naloxone.xob",
+    "accent_albedo": true
+  },
+  {
+    "name": "NCD",
+    "source": "AutoInjector1/autoinjector.glb",
+    "triangles": 476,
+    "bounds_min": [
+      -0.016025705263018608,
+      -0.01602574810385704,
+      -0.13528262078762054
+    ],
+    "bounds_max": [
+      0.016025705263018608,
+      0.016025744378566742,
+      0.12006377428770065
+    ],
+    "dimensions": [
+      0.032051410526037216,
+      0.03205149248242378,
+      0.2553463876247406
+    ],
+    "objects": [
+      {
+        "object": "Model_0__0",
+        "materials": [
+          "Scene_-_Root"
+        ],
+        "vertices": 495,
+        "bounds_min": [
+          -0.016025705263018608,
+          -0.01602574810385704,
+          -0.13528262078762054
+        ],
+        "bounds_max": [
+          0.016025705263018608,
+          0.016025744378566742,
+          0.12006377428770065
+        ]
+      }
+    ],
+    "desired_longest_metres": 0.14,
+    "materials": [
+      {
+        "source": "Scene_-_Root",
+        "material": "{0878EC9CD8CB5DEB}Assets/Medical/GenericInjector/Data/GenericInjector_0.emat",
+        "base_preview": "Assets\\Medical\\GenericInjector\\Data\\GenericInjector_0_BCR.png"
+      },
+      {
+        "source": "BCMM_CapVariant",
+        "material": "{562F323D969638E7}Assets/Medical/NCD/Data/NCD.emat",
+        "base_preview": "Assets/Medical/NCD/Data/NCD_BCR.png"
+      }
+    ],
+    "model": "{AA23AFD2A759EF96}Assets/Medical/NCD/BCMM_NCD.xob",
+    "accent_albedo": true
+  },
+  {
+    "name": "TXA",
+    "source": "AutoInjector1/autoinjector.glb",
+    "triangles": 476,
+    "bounds_min": [
+      -0.016025705263018608,
+      -0.01602574810385704,
+      -0.13528262078762054
+    ],
+    "bounds_max": [
+      0.016025705263018608,
+      0.016025744378566742,
+      0.12006377428770065
+    ],
+    "dimensions": [
+      0.032051410526037216,
+      0.03205149248242378,
+      0.2553463876247406
+    ],
+    "objects": [
+      {
+        "object": "Model_0__0",
+        "materials": [
+          "Scene_-_Root"
+        ],
+        "vertices": 495,
+        "bounds_min": [
+          -0.016025705263018608,
+          -0.01602574810385704,
+          -0.13528262078762054
+        ],
+        "bounds_max": [
+          0.016025705263018608,
+          0.016025744378566742,
+          0.12006377428770065
+        ]
+      }
+    ],
+    "desired_longest_metres": 0.14,
+    "materials": [
+      {
+        "source": "Scene_-_Root",
+        "material": "{0878EC9CD8CB5DEB}Assets/Medical/GenericInjector/Data/GenericInjector_0.emat",
+        "base_preview": "Assets\\Medical\\GenericInjector\\Data\\GenericInjector_0_BCR.png"
+      },
+      {
+        "source": "BCMM_CapVariant",
+        "material": "{381D0BD22D93E809}Assets/Medical/TXA/Data/TXA.emat",
+        "base_preview": "Assets/Medical/TXA/Data/TXA_BCR.png"
+      }
+    ],
+    "model": "{C7F742C0DF1497BF}Assets/Medical/TXA/BCMM_TXA.xob",
+    "accent_albedo": true
+  },
+  {
+    "name": "Splint",
+    "source": "Splint/SM_MedicalSplinter.fbx",
+    "source_root": ".checks/vendor-medical-wave2",
+    "desired_longest_metres": 0.22,
+    "materials": [
+      {
+        "source": "Mat_UVChecker",
+        "material": "{EF208F78A6B48AF4}Assets/Medical/Splint/Data/Splint.emat",
+        "base_preview": "Assets/Medical/Splint/Data/Splint_BCR.png"
+      }
+    ],
+    "model": "{DA76AADBBC5559AE}Assets/Medical/Splint/BCMM_Splint.xob"
+  },
+  {
+    "name": "SurgeryKit",
+    "source": "SurgeryKit/Medical_SurvivalKit/SM_SurvivalKit.fbx",
+    "source_root": ".checks/vendor-medical-wave2",
+    "desired_longest_metres": 0.35,
+    "materials": [
+      {
+        "source": "Mat_UVChecker",
+        "material": "{D5F8A977AB74972D}Assets/Medical/SurgeryKit/Data/SurgeryKit.emat",
+        "base_preview": "Assets/Medical/SurgeryKit/Data/SurgeryKit_BCR.png"
+      }
+    ],
+    "model": "{4E5432575B777242}Assets/Medical/SurgeryKit/BCMM_SurgeryKit.xob"
+  },
+  {
+    "name": "SutureKit",
+    "source": "Suture Kit/Medical_MilitaryHealthPouch/SM_Medical_MilitaryHealthPouch.fbx",
+    "source_root": ".checks/vendor-medical-wave2",
+    "desired_longest_metres": 0.18,
+    "materials": [
+      {
+        "source": "Mat_UVChecker",
+        "material": "{4C1472890D60506E}Assets/Medical/SutureKit/Data/SutureKit.emat",
+        "base_preview": "Assets/Medical/SutureKit/Data/SutureKit_BCR.png"
+      }
+    ],
+    "model": "{36D6BF1281F4F241}Assets/Medical/SutureKit/BCMM_SutureKit.xob"
+  },
+  {
+    "name": "FieldStretcher",
+    "source": "Stretcher/Stretcher.fbx",
+    "desired_longest_metres": 2.4,
+    "origin_offset": [
+      0,
+      0,
+      0.35
+    ],
+    "materials": [
+      {
+        "source": "Stretcher",
+        "material": "{C0A8067FB9B61F69}Assets/Medical/FieldStretcher/Data/FieldStretcher_0.emat",
+        "base_preview": "Assets/Medical/FieldStretcher/Data/FieldStretcher_0_BCR.png"
+      }
+    ],
+    "source_root": ".checks/vendor-medical-wave2",
+    "model": "{EF4FAAF6A80E33AF}Assets/Medical/FieldStretcher/BCMM_FieldStretcher.xob"
+  },
+  {
+    "name": "AEDPads",
+    "source": "AED Use Pads Only/AED.fbx",
+    "desired_longest_metres": 0.24,
+    "include_objects": [
+      "AED_Electrode_1",
+      "AED_Electrode_2"
+    ],
+    "materials": [
+      {
+        "source": "BCMM_Default",
+        "material": "{32BDAAB5C58185F0}Assets/Medical/AEDPads/Data/AEDPads_0.emat",
+        "base_preview": "Assets/Medical/AEDPads/Data/AEDPads_0_BCR.png"
+      }
+    ],
+    "source_root": ".checks/vendor-medical-wave2",
+    "model": "{F2A5784BEB743BF2}Assets/Medical/AEDPads/BCMM_AEDPads.xob"
+  },
+  {
+    "name": "BVM",
+    "source": "BVM/Ambu+bag.fbx",
+    "desired_longest_metres": 0.4,
+    "materials": [
+      {
+        "source": "Plastic",
+        "material": "{F437A1F038E32BAD}Assets/Medical/BVM/Data/BVM_0.emat",
+        "base_preview": "Assets/Medical/BVM/Data/BVM_0_BCR.png"
+      },
+      {
+        "source": "Transparent_part",
+        "material": "{14E88EC5E6812260}Assets/Medical/BVM/Data/BVM_1.emat",
+        "base_preview": "Assets/Medical/BVM/Data/BVM_1_BCR.png"
+      }
+    ],
+    "source_root": ".checks/vendor-medical-wave2",
+    "model": "{CD0AD96E3DB44DC9}Assets/Medical/BVM/BCMM_BVM.xob"
+  },
+  {
+    "name": "Monitor",
+    "source": "Monitor/Monitor(1).fbx",
+    "desired_longest_metres": 0.28,
+    "materials": [
+      {
+        "source": "Monitor",
+        "material": "{1C97A4B3E80C1D27}Assets/Medical/Monitor/Data/Monitor_0.emat",
+        "base_preview": "Assets/Medical/Monitor/Data/Monitor_0_BCR.png"
+      }
+    ],
+    "source_root": ".checks/vendor-medical-wave2",
+    "model": "{2B8C74DB74D72FCF}Assets/Medical/Monitor/BCMM_Monitor.xob"
+  },
+  {
+    "name": "VascularAccess",
+    "source": "VascularAccess/TS_MDL_Cannula_V01_01.fbx",
+    "source_root": ".checks/vendor-medical-wave2",
+    "desired_longest_metres": 0.045,
+    "decimate_ratio": 0.35,
+    "materials": [
+      {
+        "source": "Lock_Plug",
+        "material": "{6B310EAA5E847601}Assets/Medical/VascularAccess/Data/VascularAccess_0.emat",
+        "base_preview": "Assets/Medical/VascularAccess/Data/VascularAccess_0_BCR.png"
+      },
+      {
+        "source": "Injection_Cap",
+        "material": "{DAD5C3145CEE8E17}Assets/Medical/VascularAccess/Data/VascularAccess_1.emat",
+        "base_preview": "Assets/Medical/VascularAccess/Data/VascularAccess_1_BCR.png"
+      },
+      {
+        "source": "Needle",
+        "material": "{7B2453F165F337B7}Assets/Medical/VascularAccess/Data/VascularAccess_2.emat",
+        "base_preview": "Assets/Medical/VascularAccess/Data/VascularAccess_2_BCR.png"
+      },
+      {
+        "source": "Material.002",
+        "material": "{D6B3F62CBDBF39F7}Assets/Medical/VascularAccess/Data/VascularAccess_3.emat",
+        "base_preview": "Assets/Medical/VascularAccess/Data/VascularAccess_3_BCR.png"
+      },
+      {
+        "source": "Glass_Tube",
+        "material": "{F547B8F296A564CD}Assets/Medical/VascularAccess/Data/VascularAccess_4.emat",
+        "base_preview": "Assets/Medical/VascularAccess/Data/VascularAccess_4_BCR.png"
+      }
+    ],
+    "model": "{5EA7D2DD12461F05}Assets/Medical/VascularAccess/BCMM_VascularAccess.xob"
+  },
+  {
+    "name": "Suction",
+    "source": "Suction/VAC+Device+model.fbx",
+    "source_root": ".checks/vendor-medical-wave2",
+    "desired_longest_metres": 0.35,
+    "decimate_ratio": 0.35,
+    "materials": [
+      {
+        "source": "Slic_Cup_VRayMtl10",
+        "material": "{3696D7BC7A4A3B7C}Assets/Medical/Suction/Data/Suction_0.emat",
+        "base_preview": "Assets/Medical/Suction/Data/Suction_0_BCR.png"
+      },
+      {
+        "source": "Slic_Cup_VRayMtl11",
+        "material": "{8C3DE9F38A607240}Assets/Medical/Suction/Data/Suction_1.emat",
+        "base_preview": "Assets/Medical/Suction/Data/Suction_1_BCR.png"
+      },
+      {
+        "source": "Power_Switch_VRayMtl4",
+        "material": "{C0160C811DA93E65}Assets/Medical/Suction/Data/Suction_2.emat",
+        "base_preview": "Assets/Medical/Suction/Data/Suction_2_BCR.png"
+      },
+      {
+        "source": "LED__VRayMtl5",
+        "material": "{29FAD143646AFAFE}Assets/Medical/Suction/Data/Suction_3.emat",
+        "base_preview": "Assets/Medical/Suction/Data/Suction_3_BCR.png"
+      },
+      {
+        "source": "Dark_Plastic_VRayMtl9",
+        "material": "{C6C01CDF18145E32}Assets/Medical/Suction/Data/Suction_4.emat",
+        "base_preview": "Assets/Medical/Suction/Data/Suction_4_BCR.png"
+      },
+      {
+        "source": "VRayMtl7",
+        "material": "{4883129CD0624385}Assets/Medical/Suction/Data/Suction_5.emat",
+        "base_preview": "Assets/Medical/Suction/Data/Suction_5_BCR.png"
+      },
+      {
+        "source": "VRayBlendMtl1",
+        "material": "{2079204343EBD8CB}Assets/Medical/Suction/Data/Suction_6.emat",
+        "base_preview": "Assets/Medical/Suction/Data/Suction_6_BCR.png"
+      },
+      {
+        "source": "Screen_Frame_VRayMtl2",
+        "material": "{4C971310367BCACB}Assets/Medical/Suction/Data/Suction_7.emat",
+        "base_preview": "Assets/Medical/Suction/Data/Suction_7_BCR.png"
+      },
+      {
+        "source": "Screen_VRayMtl3",
+        "material": "{A36D61768ED0E006}Assets/Medical/Suction/Data/Suction_8.emat",
+        "base_preview": "Assets/Medical/Suction/Data/Suction_8_BCR.png"
+      },
+      {
+        "source": "Screen_Glass_VRayMtl10",
+        "material": "{671FFF09B994CEDF}Assets/Medical/Suction/Data/Suction_9.emat",
+        "base_preview": "Assets/Medical/Suction/Data/Suction_9_BCR.png"
+      },
+      {
+        "source": "USB_Metal_VRayMtl11",
+        "material": "{1034D8F8B8F919C8}Assets/Medical/Suction/Data/Suction_10.emat",
+        "base_preview": "Assets/Medical/Suction/Data/Suction_10_BCR.png"
+      },
+      {
+        "source": "USB_Metal_VRayMtl12",
+        "material": "{5075418059853A24}Assets/Medical/Suction/Data/Suction_11.emat",
+        "base_preview": "Assets/Medical/Suction/Data/Suction_11_BCR.png"
+      },
+      {
+        "source": "USB_BLack_PlasticVRayMtl12",
+        "material": "{454AA8FBBD3DB060}Assets/Medical/Suction/Data/Suction_12.emat",
+        "base_preview": "Assets/Medical/Suction/Data/Suction_12_BCR.png"
+      },
+      {
+        "source": "Vacuum_PumpVRayMtl1",
+        "material": "{C32297E342B40EA5}Assets/Medical/Suction/Data/Suction_13.emat",
+        "base_preview": "Assets/Medical/Suction/Data/Suction_13_BCR.png"
+      },
+      {
+        "source": "Label_Glasses_VRayMtl6",
+        "material": "{F201E817610FDC7D}Assets/Medical/Suction/Data/Suction_14.emat",
+        "base_preview": "Assets/Medical/Suction/Data/Suction_14_BCR.png"
+      },
+      {
+        "source": "Pump_Chamber_VRayMtl8",
+        "material": "{AFDE35D2E8307BC5}Assets/Medical/Suction/Data/Suction_15.emat",
+        "base_preview": "Assets/Medical/Suction/Data/Suction_15_BCR.png"
+      }
+    ],
+    "model": "{3D8461E4034652C3}Assets/Medical/Suction/BCMM_Suction.xob"
+  },
+  {
+    "name": "Laryngoscope",
+    "source": "Laryngscope/Laryngoscope.fbx",
+    "source_root": ".checks/vendor-medical-wave2",
+    "desired_longest_metres": 0.25,
+    "decimate_ratio": 1,
+    "materials": [
+      {
+        "source": "SummitDoppler_Laryngoscope",
+        "material": "{370C748AB2A414C6}Assets/Medical/Laryngoscope/Data/Laryngoscope_0.emat",
+        "base_preview": "Assets/Medical/Laryngoscope/Data/Laryngoscope_0_BCR.png"
+      }
+    ],
+    "model": "{71ED3A9EA695166A}Assets/Medical/Laryngoscope/BCMM_Laryngoscope.xob"
+  },
+  {
+    "name": "ChestSeal",
+    "source": "Chest Seal/Dressing.blend",
+    "source_root": ".checks/vendor-medical-wave2",
+    "desired_longest_metres": 0.17,
+    "materials": [
+      {
+        "source": "BCMM_Default",
+        "material": "{C72F8A64B03A3064}Assets/Medical/ChestSeal/Data/ChestSeal.emat",
+        "base_preview": "Assets/Medical/ChestSeal/Data/ChestSeal_BCR.png"
+      }
+    ],
+    "model": "{464FFC4E0E94E6D4}Assets/Medical/ChestSeal/BCMM_ChestSeal.xob"
+  },
+  {
+    "name": "AppliedAEDUpper",
+    "source": "AED Use Pads Only/AED.fbx",
+    "source_root": ".checks/vendor-medical-wave2",
+    "desired_longest_metres": 0.095,
+    "include_objects": [
+      "AED_Electrode_1"
+    ],
+    "materials": [
+      {
+        "source": "BCMM_Default",
+        "material": "{32BDAAB5C58185F0}Assets/Medical/AEDPads/Data/AEDPads_0.emat",
+        "base_preview": "Assets/Medical/AEDPads/Data/AEDPads_0_BCR.png"
+      }
+    ],
+    "decimate_ratio": 1,
+    "model": "{612B3BCC23985A99}Assets/Medical/AppliedAEDUpper/BCMM_AppliedAEDUpper.xob"
+  },
+  {
+    "name": "AppliedAEDLower",
+    "source": "AED Use Pads Only/AED.fbx",
+    "source_root": ".checks/vendor-medical-wave2",
+    "desired_longest_metres": 0.095,
+    "include_objects": [
+      "AED_Electrode_2"
+    ],
+    "materials": [
+      {
+        "source": "BCMM_Default",
+        "material": "{32BDAAB5C58185F0}Assets/Medical/AEDPads/Data/AEDPads_0.emat",
+        "base_preview": "Assets/Medical/AEDPads/Data/AEDPads_0_BCR.png"
+      }
+    ],
+    "decimate_ratio": 1,
+    "model": "{59B41BF9A1A95142}Assets/Medical/AppliedAEDLower/BCMM_AppliedAEDLower.xob"
+  },
+  {
+    "name": "AppliedIVCannula",
+    "source": "VascularAccess/TS_MDL_Cannula_V01_01.fbx",
+    "source_root": ".checks/vendor-medical-wave2",
+    "desired_longest_metres": 0.045,
+    "include_objects": [
+      "Wings",
+      "Injection_Cap",
+      "glass_tube",
+      "glass_tube.001"
+    ],
+    "materials": [
+      {
+        "source": "Injection_Cap",
+        "material": "{DAD5C3145CEE8E17}Assets/Medical/VascularAccess/Data/VascularAccess_1.emat",
+        "base_preview": "Assets/Medical/VascularAccess/Data/VascularAccess_1_BCR.png"
+      },
+      {
+        "source": "Glass_Tube",
+        "material": "{F547B8F296A564CD}Assets/Medical/VascularAccess/Data/VascularAccess_4.emat",
+        "base_preview": "Assets/Medical/VascularAccess/Data/VascularAccess_4_BCR.png"
+      }
+    ],
+    "decimate_ratio": 0.5,
+    "model": "{50BA5CC4A1995D3A}Assets/Medical/AppliedIVCannula/BCMM_AppliedIVCannula.xob"
+  },
+  {
+    "name": "AppliedSplint",
+    "source": "Source/MedicalModels/AppliedSplint/BCMM_AppliedSplint.blend",
+    "source_root": ".",
+    "desired_longest_metres": 0.43,
+    "materials": [
+      {
+        "source": "BCMM_SplintOrange",
+        "material": "{C7B2D60A060DC9DC}Assets/Medical/AppliedSplint/Data/AppliedSplint_0.emat",
+        "base_preview": "Assets/Medical/AppliedSplint/Data/AppliedSplint_0_BCR.png"
+      },
+      {
+        "source": "BCMM_SplintFoam",
+        "material": "{D05039344E6DD62D}Assets/Medical/AppliedSplint/Data/AppliedSplint_1.emat",
+        "base_preview": "Assets/Medical/AppliedSplint/Data/AppliedSplint_1_BCR.png"
+      },
+      {
+        "source": "BCMM_Nylon",
+        "material": "{62C1A0436263ADFF}Assets/Medical/AppliedSplint/Data/AppliedSplint_2.emat",
+        "base_preview": "Assets/Medical/AppliedSplint/Data/AppliedSplint_2_BCR.png"
+      }
+    ],
+    "model": "{D2CD74C75D2620EE}Assets/Medical/AppliedSplint/BCMM_AppliedSplint.xob"
+  },
+  {
+    "name": "AppliedTourniquet",
+    "source": "Source/MedicalModels/AppliedTourniquet/BCMM_AppliedTourniquet.blend",
+    "source_root": ".",
+    "desired_longest_metres": 0.16,
+    "materials": [
+      {
+        "source": "BCMM_Nylon",
+        "material": "{A38F4CEC484AA162}Assets/Medical/AppliedTourniquet/Data/AppliedTourniquet_0.emat",
+        "base_preview": "Assets/Medical/AppliedTourniquet/Data/AppliedTourniquet_0_BCR.png"
+      },
+      {
+        "source": "BCMM_Windlass",
+        "material": "{6332DBA3643917EC}Assets/Medical/AppliedTourniquet/Data/AppliedTourniquet_1.emat",
+        "base_preview": "Assets/Medical/AppliedTourniquet/Data/AppliedTourniquet_1_BCR.png"
+      },
+      {
+        "source": "BCMM_ReleaseTab",
+        "material": "{D46064882036C3F7}Assets/Medical/AppliedTourniquet/Data/AppliedTourniquet_2.emat",
+        "base_preview": "Assets/Medical/AppliedTourniquet/Data/AppliedTourniquet_2_BCR.png"
+      }
+    ],
+    "model": "{ED3A0287659108BC}Assets/Medical/AppliedTourniquet/BCMM_AppliedTourniquet.xob"
+  }
+]

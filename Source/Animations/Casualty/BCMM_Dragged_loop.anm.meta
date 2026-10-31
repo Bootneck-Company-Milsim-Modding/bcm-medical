@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{67AA5E94B6994117}Source/Animations/Casualty/BCMM_Dragged_loop.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourcePath "BCMM_CasualtyPoses.blend"
+   SourceProfile "101_FullBodyABS"
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+ }
+}

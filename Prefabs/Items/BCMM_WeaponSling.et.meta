@@ -1,0 +1,1 @@
+MetaFileClass { Name "{1AC68034B6B789EF}Prefabs/Items/BCMM_WeaponSling.et" Configurations { EntityTemplateResourceClass PC {} EntityTemplateResourceClass HEADLESS : PC {} } }

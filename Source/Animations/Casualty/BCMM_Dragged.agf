@@ -1,0 +1,7 @@
+AnimSrcGraphFile { Sheets { AnimSrcGraphSheet BCMPatientPose { Nodes {
+ AnimSrcNodeGroupSelect MasterControl { Child "PoseRepeat" Group "Speeches" Column "Open" }
+ AnimSrcNodeGroupSelect PlayerMasterControl { Child "PoseRepeat" Group "Speeches" Column "Open" }
+ AnimSrcNodeGroupSelect VehicleMasterControl { Child "PoseRepeat" Group "Speeches" Column "Open" }
+ AnimSrcNodeSwitch PoseRepeat { BlendTime 0 SwitchItems { AnimSrcNodeSwitchItem { Child "PoseClip" NextProbabilities "100" } } }
+ AnimSrcNodeSource PoseClip { Source "Speeches.Loop1" }
+ } } } }

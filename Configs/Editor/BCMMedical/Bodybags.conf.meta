@@ -1,0 +1,1 @@
+MetaFileClass { Name "{6AB4B3F3FD219108}Configs/Editor/BCMMedical/Bodybags.conf" Configurations { CONFResourceClass PC {} CONFResourceClass HEADLESS : PC {} } }

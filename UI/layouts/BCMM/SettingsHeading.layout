@@ -1,0 +1,18 @@
+SizeLayoutWidgetClass {
+ Name "BCMMSettingsSection"
+ Slot LayoutSlot { HorizontalAlign 3 Padding 0 14 0 6 }
+ AllowHeightOverride 1 HeightOverride 38
+ AllowMinDesiredWidth 1 MinDesiredWidth 800
+ components { BCMM_SectionHeadingUI {} }
+ { FrameWidgetClass { Name "HeadingContent" Slot AlignableSlot { HorizontalAlign 3 VerticalAlign 3 } {
+  TextWidgetClass { Name "SectionTitle" "Ignore Cursor" 1
+   Slot FrameWidgetSlot { Anchor 0 0 1 1 OffsetLeft 14 OffsetTop 1 OffsetRight 0 OffsetBottom 0 }
+   "Font Size" 20 Color 0.93 0.68 0.27 1
+   FontProperties FontProperties { Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt" }
+  }
+  ImageWidgetClass { Name "SectionRule" "Ignore Cursor" 1
+   Slot FrameWidgetSlot { Anchor 0 1 1 1 OffsetLeft 14 OffsetTop -1 OffsetRight -14 OffsetBottom 0 }
+   Color 1 1 1 0.16
+  }
+ } } }
+}

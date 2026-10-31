@@ -1,0 +1,709 @@
+{
+  "archive_sha256": "ea04b84d5990ee7e81c94b285801d6928b7e08b36aae437ba9717417bfdd6837",
+  "files": [
+    {
+      "source": "Mod Assets/AED/ipad-sp1-automated-external-defibrillator-aed.zip",
+      "bytes": 2228552,
+      "sha256": "eef3d5c601a936aeeb652de96f858aea385f93b4dd0c9922f7a828b016393667",
+      "local": ".checks\\vendor-medical\\Mod Assets\\AED\\ipad-sp1-automated-external-defibrillator-aed.zip"
+    },
+    {
+      "source": "Mod Assets/AED/ipad-sp1-automated-external-defibrillator-aed.zip!/source/AED IPAD.fbx",
+      "bytes": 1203676,
+      "sha256": "07711d0857bcbc540aef4fdf92518b21d08a18469a991b1c42402831cd243a5e",
+      "local": ".checks\\vendor-medical\\Mod Assets\\AED\\ipad-sp1-automated-external-defibrillator-aed\\source\\AED IPAD.fbx"
+    },
+    {
+      "source": "Mod Assets/AED/ipad-sp1-automated-external-defibrillator-aed.zip!/textures/AED ipad texture.png",
+      "bytes": 1024606,
+      "sha256": "775509f2a6a4f3e8af8b259b920ff761000a9ad0f2866d61c508f8d451a0e4cf",
+      "local": ".checks\\vendor-medical\\Mod Assets\\AED\\ipad-sp1-automated-external-defibrillator-aed\\textures\\AED ipad texture.png"
+    },
+    {
+      "source": "Mod Assets/AED/ipad_sp1_automated_external_defibrillator__aed (1).glb",
+      "bytes": 587916,
+      "sha256": "4255ff9f480bd15c47abcdf7341f1138b946a2cedb401a02a279ccf69c8428e0",
+      "local": ".checks\\vendor-medical\\Mod Assets\\AED\\ipad_sp1_automated_external_defibrillator__aed (1).glb",
+      "metadata": {
+        "extras": {
+          "author": "R3D Reality (https://sketchfab.com/redonemart)",
+          "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+          "source": "https://sketchfab.com/3d-models/ipad-sp1-automated-external-defibrillator-aed-faff5cbba8734373bed35e00291bf9a1",
+          "title": "IPAD SP1 Automated External Defibrillator – AED"
+        },
+        "generator": "Sketchfab-16.73.0",
+        "version": "2.0"
+      }
+    },
+    {
+      "source": "Mod Assets/AED/ipad_sp1_automated_external_defibrillator__aed.glb",
+      "bytes": 1144616,
+      "sha256": "306cf0084ca5e492345ccae8ccad08ff43ddd1f03f1e4151fee155bd1ab185fe",
+      "local": ".checks\\vendor-medical\\Mod Assets\\AED\\ipad_sp1_automated_external_defibrillator__aed.glb",
+      "metadata": {
+        "extras": {
+          "author": "R3D Reality (https://sketchfab.com/redonemart)",
+          "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+          "source": "https://sketchfab.com/3d-models/ipad-sp1-automated-external-defibrillator-aed-faff5cbba8734373bed35e00291bf9a1",
+          "title": "IPAD SP1 Automated External Defibrillator – AED"
+        },
+        "generator": "Sketchfab-16.73.0",
+        "version": "2.0"
+      }
+    },
+    {
+      "source": "Mod Assets/AutoInjector1/autoinjector.glb",
+      "bytes": 1181632,
+      "sha256": "09f259223fff9e644b101b834a5159abb2687d5cb889459713899cbf5c68b635",
+      "local": ".checks\\vendor-medical\\Mod Assets\\AutoInjector1\\autoinjector.glb",
+      "metadata": {
+        "extras": {
+          "author": "Milch Frische (https://sketchfab.com/MilchFrische)",
+          "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+          "source": "https://sketchfab.com/3d-models/autoinjector-e426b178833847919a1ba24381d0066b",
+          "title": "Autoinjector"
+        },
+        "generator": "Sketchfab-16.33.0",
+        "version": "2.0"
+      }
+    },
+    {
+      "source": "Mod Assets/AutoInjector1/autoinjector.zip",
+      "bytes": 1854375,
+      "sha256": "29f713b1e9709ed03ba99ce78f8c73cee3f3820a7589c7be3bb2137df8fa33ec",
+      "local": ".checks\\vendor-medical\\Mod Assets\\AutoInjector1\\autoinjector.zip"
+    },
+    {
+      "source": "Mod Assets/AutoInjector1/autoinjector.zip!/source/Model_0.fbx",
+      "bytes": 22332,
+      "sha256": "247e42de81bea0ca500eea84bcbffaecb816136d3c7e735c59c0796c25516db3",
+      "local": ".checks\\vendor-medical\\Mod Assets\\AutoInjector1\\autoinjector\\source\\Model_0.fbx"
+    },
+    {
+      "source": "Mod Assets/AutoInjector1/autoinjector.zip!/textures/Model_0_Low_DefaultMaterial_SpecularSmooth.png",
+      "bytes": 314568,
+      "sha256": "175f1b8f98e5f233434f3cd2d31e520468f3875f38c8da39e7c2bb0c2eaa44f0",
+      "local": ".checks\\vendor-medical\\Mod Assets\\AutoInjector1\\autoinjector\\textures\\Model_0_Low_DefaultMaterial_SpecularSmooth.png"
+    },
+    {
+      "source": "Mod Assets/AutoInjector1/autoinjector.zip!/textures/Model_0_Low_DefaultMaterial_AlbedoTranspar.png",
+      "bytes": 805543,
+      "sha256": "9c90d0892724f6c2bc74afbeece595ed24078fa87f127818c22a23a3a83ea590",
+      "local": ".checks\\vendor-medical\\Mod Assets\\AutoInjector1\\autoinjector\\textures\\Model_0_Low_DefaultMaterial_AlbedoTranspar.png"
+    },
+    {
+      "source": "Mod Assets/AutoInjector1/autoinjector.zip!/textures/Model_0_Low_DefaultMaterial_Metallic.png",
+      "bytes": 20545,
+      "sha256": "35f538ca7a13c48198b060a6cdac1f7aaea4c55a26137337c043fc7dcafffe9b",
+      "local": ".checks\\vendor-medical\\Mod Assets\\AutoInjector1\\autoinjector\\textures\\Model_0_Low_DefaultMaterial_Metallic.png"
+    },
+    {
+      "source": "Mod Assets/AutoInjector1/autoinjector.zip!/textures/Model_0_Low_DefaultMaterial_Normal.png",
+      "bytes": 288374,
+      "sha256": "a4dc223872b76d79b6ba62e9b278a282065bb2346d97f0fe2f40c7f93914147d",
+      "local": ".checks\\vendor-medical\\Mod Assets\\AutoInjector1\\autoinjector\\textures\\Model_0_Low_DefaultMaterial_Normal.png"
+    },
+    {
+      "source": "Mod Assets/AutoInjector1/autoinjector.zip!/textures/Model_0_Low_DefaultMaterial_Roughness.png",
+      "bytes": 401987,
+      "sha256": "54825c2ce623d1f629512f54025e7776513a7547a2f1497245625688a8f50daa",
+      "local": ".checks\\vendor-medical\\Mod Assets\\AutoInjector1\\autoinjector\\textures\\Model_0_Low_DefaultMaterial_Roughness.png"
+    },
+    {
+      "source": "Mod Assets/Better Epinephrine/SurvivalKit_AutoInjectorV1_FBX.zip",
+      "bytes": 26850,
+      "sha256": "ada25c70c70d3cc71118af4cf6a4ad8352629d26f6239b2b3486c900f6b53dae",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Epinephrine\\SurvivalKit_AutoInjectorV1_FBX.zip"
+    },
+    {
+      "source": "Mod Assets/Better Epinephrine/SurvivalKit_AutoInjectorV1_FBX.zip!/SurvivalKit_AutoInjectorV1.fbx",
+      "bytes": 47212,
+      "sha256": "99f41071c79ff5647822d64a5bb2b13f190db63c18f6d6e88d592bb9c1d2a5e0",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Epinephrine\\SurvivalKit_AutoInjectorV1_FBX\\SurvivalKit_AutoInjectorV1.fbx"
+    },
+    {
+      "source": "Mod Assets/Better Epinephrine/SurvivalKit_AutoInjectorV1_TEXTURES.zip",
+      "bytes": 1082262,
+      "sha256": "9919b169cd64e11c7542dc613d7217308ce0595039f4c07247b379e71a9163d8",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Epinephrine\\SurvivalKit_AutoInjectorV1_TEXTURES.zip"
+    },
+    {
+      "source": "Mod Assets/Better Epinephrine/SurvivalKit_AutoInjectorV1_TEXTURES.zip!/SurvivalKit_AutoInjectorV1_Albedo.png",
+      "bytes": 212360,
+      "sha256": "70c6bf55a000838c44cf40b37da821a953e96c2af051ab80c57ca5fdbe68fee1",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Epinephrine\\SurvivalKit_AutoInjectorV1_TEXTURES\\SurvivalKit_AutoInjectorV1_Albedo.png"
+    },
+    {
+      "source": "Mod Assets/Better Epinephrine/SurvivalKit_AutoInjectorV1_TEXTURES.zip!/SurvivalKit_AutoInjectorV1_AO.png",
+      "bytes": 142525,
+      "sha256": "179fb657bc3d84c7f4623bbf1ef7198c05cff73150723dca76acd6fe721b690a",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Epinephrine\\SurvivalKit_AutoInjectorV1_TEXTURES\\SurvivalKit_AutoInjectorV1_AO.png"
+    },
+    {
+      "source": "Mod Assets/Better Epinephrine/SurvivalKit_AutoInjectorV1_TEXTURES.zip!/SurvivalKit_AutoInjectorV1_Metallic.png",
+      "bytes": 863,
+      "sha256": "1f57dbd7635258a60a0c96a7030deb21c942df657a3fc7acaea3c362ce8e6bb6",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Epinephrine\\SurvivalKit_AutoInjectorV1_TEXTURES\\SurvivalKit_AutoInjectorV1_Metallic.png"
+    },
+    {
+      "source": "Mod Assets/Better Epinephrine/SurvivalKit_AutoInjectorV1_TEXTURES.zip!/SurvivalKit_AutoInjectorV1_NormalDirectX.png",
+      "bytes": 129382,
+      "sha256": "ae6474ba112971ff3735b011ba2dd86ec6acc2f6566c4eef1dde1c535542239b",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Epinephrine\\SurvivalKit_AutoInjectorV1_TEXTURES\\SurvivalKit_AutoInjectorV1_NormalDirectX.png"
+    },
+    {
+      "source": "Mod Assets/Better Epinephrine/SurvivalKit_AutoInjectorV1_TEXTURES.zip!/SurvivalKit_AutoInjectorV1_NormaOpenGL.png",
+      "bytes": 129690,
+      "sha256": "135825aa2c6db85f829dbbc2d04a3b0eee1a1bdd2874111db0da0d738998a0ee",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Epinephrine\\SurvivalKit_AutoInjectorV1_TEXTURES\\SurvivalKit_AutoInjectorV1_NormaOpenGL.png"
+    },
+    {
+      "source": "Mod Assets/Better Epinephrine/SurvivalKit_AutoInjectorV1_TEXTURES.zip!/SurvivalKit_AutoInjectorV1_ORM.png",
+      "bytes": 269034,
+      "sha256": "06f2d069548314cc351be562f5d1121ab964f344a0f9968dd28fde9ee45f55c6",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Epinephrine\\SurvivalKit_AutoInjectorV1_TEXTURES\\SurvivalKit_AutoInjectorV1_ORM.png"
+    },
+    {
+      "source": "Mod Assets/Better Epinephrine/SurvivalKit_AutoInjectorV1_TEXTURES.zip!/SurvivalKit_AutoInjectorV1_Roughness.png",
+      "bytes": 200499,
+      "sha256": "d32d547cda233bdcf3f1ddcc5f1be655219539f1dc8950fca3e55b1ee9e6d3af",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Epinephrine\\SurvivalKit_AutoInjectorV1_TEXTURES\\SurvivalKit_AutoInjectorV1_Roughness.png"
+    },
+    {
+      "source": "Mod Assets/Better Injector/SurvivalKit_AutoInjectorV2_FBX.zip",
+      "bytes": 33223,
+      "sha256": "0a7499a04754920e7e57755bd84377824d0dd147eb163ae2354ce08036d5a2d8",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Injector\\SurvivalKit_AutoInjectorV2_FBX.zip"
+    },
+    {
+      "source": "Mod Assets/Better Injector/SurvivalKit_AutoInjectorV2_FBX.zip!/SurvivalKit_AutoInjectorV2.fbx",
+      "bytes": 53564,
+      "sha256": "3035aa7d44a6a808ec162ed79da6b6d2d40991db74d7c2c6136c52e4e271b59f",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Injector\\SurvivalKit_AutoInjectorV2_FBX\\SurvivalKit_AutoInjectorV2.fbx"
+    },
+    {
+      "source": "Mod Assets/Better Injector/SurvivalKit_AutoInjectorV2_TEXTURES.zip",
+      "bytes": 1056451,
+      "sha256": "e8b497fb48ec277d03beba8a5c65f354599b6ca1a9943bc6fea46315c7c6a97c",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Injector\\SurvivalKit_AutoInjectorV2_TEXTURES.zip"
+    },
+    {
+      "source": "Mod Assets/Better Injector/SurvivalKit_AutoInjectorV2_TEXTURES.zip!/SurvivalKit_AutoInjectorV2_Albedo.png",
+      "bytes": 244292,
+      "sha256": "dce2be48efc0e5216e1a1e0087d209dea3afe7b05ab8a4c82ba22644f2e4b6a3",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Injector\\SurvivalKit_AutoInjectorV2_TEXTURES\\SurvivalKit_AutoInjectorV2_Albedo.png"
+    },
+    {
+      "source": "Mod Assets/Better Injector/SurvivalKit_AutoInjectorV2_TEXTURES.zip!/SurvivalKit_AutoInjectorV2_AO.png",
+      "bytes": 154075,
+      "sha256": "2e658e56b93d20d3369abb7e01da10977abbd68be6488828874f7d1f26c2045d",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Injector\\SurvivalKit_AutoInjectorV2_TEXTURES\\SurvivalKit_AutoInjectorV2_AO.png"
+    },
+    {
+      "source": "Mod Assets/Better Injector/SurvivalKit_AutoInjectorV2_TEXTURES.zip!/SurvivalKit_AutoInjectorV2_Metallic.png",
+      "bytes": 863,
+      "sha256": "1f57dbd7635258a60a0c96a7030deb21c942df657a3fc7acaea3c362ce8e6bb6",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Injector\\SurvivalKit_AutoInjectorV2_TEXTURES\\SurvivalKit_AutoInjectorV2_Metallic.png"
+    },
+    {
+      "source": "Mod Assets/Better Injector/SurvivalKit_AutoInjectorV2_TEXTURES.zip!/SurvivalKit_AutoInjectorV2_NormalDirectX.png",
+      "bytes": 103501,
+      "sha256": "e3350d445755fcd062ea251a53fe943fa434c12eecd61e92191269d73a6edcf7",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Injector\\SurvivalKit_AutoInjectorV2_TEXTURES\\SurvivalKit_AutoInjectorV2_NormalDirectX.png"
+    },
+    {
+      "source": "Mod Assets/Better Injector/SurvivalKit_AutoInjectorV2_TEXTURES.zip!/SurvivalKit_AutoInjectorV2_NormaOpenGL.png",
+      "bytes": 103491,
+      "sha256": "fc5c7e50c9e1d191d9f63fde019fd5a014d56d062fe80f61decdc9e1c8c39dab",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Injector\\SurvivalKit_AutoInjectorV2_TEXTURES\\SurvivalKit_AutoInjectorV2_NormaOpenGL.png"
+    },
+    {
+      "source": "Mod Assets/Better Injector/SurvivalKit_AutoInjectorV2_TEXTURES.zip!/SurvivalKit_AutoInjectorV2_ORM.png",
+      "bytes": 270616,
+      "sha256": "d7ceb0b45573420dfeed7e196b9bc3e8382666ba4671cab5e0c5964a5df308b1",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Injector\\SurvivalKit_AutoInjectorV2_TEXTURES\\SurvivalKit_AutoInjectorV2_ORM.png"
+    },
+    {
+      "source": "Mod Assets/Better Injector/SurvivalKit_AutoInjectorV2_TEXTURES.zip!/SurvivalKit_AutoInjectorV2_Roughness.png",
+      "bytes": 182072,
+      "sha256": "4d9d68e027a0dbdf74dd94e107e7ef53fce43eecc6d3500ae5c3117b8f3a95f4",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Injector\\SurvivalKit_AutoInjectorV2_TEXTURES\\SurvivalKit_AutoInjectorV2_Roughness.png"
+    },
+    {
+      "source": "Mod Assets/Better Morphine/SM_MorphineShot.fbx",
+      "bytes": 70268,
+      "sha256": "5ae802c9dbb82661e31372e38ef36492606af47280519c88d204e82c5d8a9e9b",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Morphine\\SM_MorphineShot.fbx"
+    },
+    {
+      "source": "Mod Assets/Better Morphine/Textures.zip",
+      "bytes": 1861047,
+      "sha256": "9f1a5439d02d57ab04e063b6cdc21ecb6fdd652291cbd88fd9943fb1266f8011",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Morphine\\Textures.zip"
+    },
+    {
+      "source": "Mod Assets/Better Morphine/Textures.zip!/T_MorphineShot_AO.tga",
+      "bytes": 1049388,
+      "sha256": "d12a7db9c8e481007d4ecf14189950fc8b89952e66a52c5d551ab4aed8f4423a",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Morphine\\Textures\\T_MorphineShot_AO.tga"
+    },
+    {
+      "source": "Mod Assets/Better Morphine/Textures.zip!/T_MorphineShot_BC.tga",
+      "bytes": 3145772,
+      "sha256": "734b7f521aa1308155ae938c05ac18d509a6e6db02efaf872694a908a4c1c1fb",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Morphine\\Textures\\T_MorphineShot_BC.tga"
+    },
+    {
+      "source": "Mod Assets/Better Morphine/Textures.zip!/T_MorphineShot_M.tga",
+      "bytes": 1049388,
+      "sha256": "846edc398067eb19b6d37afe1c7275eb0991ff21811662c59f93d2e335f0f1d4",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Morphine\\Textures\\T_MorphineShot_M.tga"
+    },
+    {
+      "source": "Mod Assets/Better Morphine/Textures.zip!/T_MorphineShot_N.tga",
+      "bytes": 3145772,
+      "sha256": "30525d1972ef256a9dbb70078846cf207ad48f617aa30c678e401f8397f27157",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Morphine\\Textures\\T_MorphineShot_N.tga"
+    },
+    {
+      "source": "Mod Assets/Better Morphine/Textures.zip!/T_MorphineShot_R.tga",
+      "bytes": 1049388,
+      "sha256": "2b17a0b4baff2fa0811f79a8de8c72980ef496eec2cfdd28c9f30567bab604dd",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Morphine\\Textures\\T_MorphineShot_R.tga"
+    },
+    {
+      "source": "Mod Assets/Better Pulse Oximiter/Pulse+Oximeter+Textures.zip",
+      "bytes": 1991187,
+      "sha256": "99678f16fd4c9e8166d077b3a4155c4d9291418e9bdb30feb553df17e0788582",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Pulse Oximiter\\Pulse+Oximeter+Textures.zip"
+    },
+    {
+      "source": "Mod Assets/Better Pulse Oximiter/Pulse+Oximeter+Textures.zip!/Textures/Pulse Oximeter_Base_Color.png",
+      "bytes": 522978,
+      "sha256": "5b77821c01999662a0d224753c5fc232b90ffaabc46b95dac0d41d94cf06aa2f",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Pulse Oximiter\\Pulse+Oximeter+Textures\\Textures\\Pulse Oximeter_Base_Color.png"
+    },
+    {
+      "source": "Mod Assets/Better Pulse Oximiter/Pulse+Oximeter+Textures.zip!/Textures/Pulse Oximeter_Height.png",
+      "bytes": 15640,
+      "sha256": "324ef4ac77e3918f88e8107df65bfe20f2ef86493f86be07399388295f57e99b",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Pulse Oximiter\\Pulse+Oximeter+Textures\\Textures\\Pulse Oximeter_Height.png"
+    },
+    {
+      "source": "Mod Assets/Better Pulse Oximiter/Pulse+Oximeter+Textures.zip!/Textures/Pulse Oximeter_Metallic.png",
+      "bytes": 29489,
+      "sha256": "d059267700b099f437e73669b1c8cbe2a2ea03abb28fbb3d17bff86cf9a05089",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Pulse Oximiter\\Pulse+Oximeter+Textures\\Textures\\Pulse Oximeter_Metallic.png"
+    },
+    {
+      "source": "Mod Assets/Better Pulse Oximiter/Pulse+Oximeter+Textures.zip!/Textures/Pulse Oximeter_Mixed_AO.png",
+      "bytes": 776810,
+      "sha256": "3a6a8cde89548a6c51148fd3bf25810402884887370fc7478a65e8b5eb60ce52",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Pulse Oximiter\\Pulse+Oximeter+Textures\\Textures\\Pulse Oximeter_Mixed_AO.png"
+    },
+    {
+      "source": "Mod Assets/Better Pulse Oximiter/Pulse+Oximeter+Textures.zip!/Textures/Pulse Oximeter_Normal.png",
+      "bytes": 29570,
+      "sha256": "50d993b195ee17360eb6cee6b09746bfe0b19b204cf5d56857177b4c5bc97bd8",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Pulse Oximiter\\Pulse+Oximeter+Textures\\Textures\\Pulse Oximeter_Normal.png"
+    },
+    {
+      "source": "Mod Assets/Better Pulse Oximiter/Pulse+Oximeter+Textures.zip!/Textures/Pulse Oximeter_Normal_OpenGL.png",
+      "bytes": 664359,
+      "sha256": "1983b6ebf5c2c6d431dce1fcc260ed92dd5dd01be4ba0e3302864614dff43e4c",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Pulse Oximiter\\Pulse+Oximeter+Textures\\Textures\\Pulse Oximeter_Normal_OpenGL.png"
+    },
+    {
+      "source": "Mod Assets/Better Pulse Oximiter/Pulse+Oximeter+Textures.zip!/Textures/Pulse Oximeter_Roughness.png",
+      "bytes": 28530,
+      "sha256": "78a5aa2ae84ab84d61510d8a56516c6a736ff53cabadb9cfd4df6818c6a6600b",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Pulse Oximiter\\Pulse+Oximeter+Textures\\Textures\\Pulse Oximeter_Roughness.png"
+    },
+    {
+      "source": "Mod Assets/Better Pulse Oximiter/Pulse+Oximeter.fbx",
+      "bytes": 126684,
+      "sha256": "8544fd13ae545246c99828747dc0c52ddf101b468cf2f667c0c1263bb89f7a42",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Better Pulse Oximiter\\Pulse+Oximeter.fbx"
+    },
+    {
+      "source": "Mod Assets/blood+_bag.fbx",
+      "bytes": 181068,
+      "sha256": "84149585d0d47ea47f8dc284347e675d3889d8dfe5181bdb81de573c0b5f8d55",
+      "local": ".checks\\vendor-medical\\Mod Assets\\blood+_bag.fbx"
+    },
+    {
+      "source": "Mod Assets/MediShot/healthshot-injector-model-cs2.zip",
+      "bytes": 714419,
+      "sha256": "085637fcebe073d65bdba4c1f3557c082b0eaaead25640507fe5399018298c2f",
+      "local": ".checks\\vendor-medical\\Mod Assets\\MediShot\\healthshot-injector-model-cs2.zip"
+    },
+    {
+      "source": "Mod Assets/MediShot/healthshot-injector-model-cs2.zip!/source/HEALTHSHOT.glb",
+      "bytes": 575904,
+      "sha256": "0b37813c8f3f1da1c8e9030313539245d94d00afe5c0270cddc59a4f0f4eeb6e",
+      "local": ".checks\\vendor-medical\\Mod Assets\\MediShot\\healthshot-injector-model-cs2\\source\\HEALTHSHOT.glb",
+      "metadata": {
+        "generator": "Khronos glTF Blender I/O v3.6.28",
+        "version": "2.0"
+      }
+    },
+    {
+      "source": "Mod Assets/MediShot/healthshot-injector-model-cs2.zip!/textures/health_shot_color_psd_125712c_2.png",
+      "bytes": 137153,
+      "sha256": "54010c38f967b3e50d92e5c332dae40e286d63385196c4b0c34efd54fef494a3",
+      "local": ".checks\\vendor-medical\\Mod Assets\\MediShot\\healthshot-injector-model-cs2\\textures\\health_shot_color_psd_125712c_2.png"
+    },
+    {
+      "source": "Mod Assets/MediShot/healthshot-injector-model-cs2.zip!/textures/default_ao_tga_559f1ac6_orm_1388148950_1@channels=B.png",
+      "bytes": 67,
+      "sha256": "0de7e4c9fcc81730fb6090300e6f7ac339859c1faf21384f2198087ca97ed3a5",
+      "local": ".checks\\vendor-medical\\Mod Assets\\MediShot\\healthshot-injector-model-cs2\\textures\\default_ao_tga_559f1ac6_orm_1388148950_1@channels=B.png"
+    },
+    {
+      "source": "Mod Assets/MediShot/healthshot-injector-model-cs2.zip!/textures/health_shot_vmat_g_tnormal_d480e47f_0.png",
+      "bytes": 69,
+      "sha256": "1462019cf04d24d9a871cc9a932f037537bba36459aef2357e2180baadf7f3ae",
+      "local": ".checks\\vendor-medical\\Mod Assets\\MediShot\\healthshot-injector-model-cs2\\textures\\health_shot_vmat_g_tnormal_d480e47f_0.png"
+    },
+    {
+      "source": "Mod Assets/MediShot/healthshot-injector-model-cs2.zip!/textures/default_ao_tga_559f1ac6_orm_1388148950_1@channels=R.png",
+      "bytes": 67,
+      "sha256": "e9472e8afecb79cfbe880f6ea70c5adc15c43f5abb32f1babb9006ea900b0349",
+      "local": ".checks\\vendor-medical\\Mod Assets\\MediShot\\healthshot-injector-model-cs2\\textures\\default_ao_tga_559f1ac6_orm_1388148950_1@channels=R.png"
+    },
+    {
+      "source": "Mod Assets/MediShot/healthshot-injector-model-cs2.zip!/textures/default_ao_tga_559f1ac6_orm_1388148950_1@channels=G.png",
+      "bytes": 67,
+      "sha256": "17c0233b4002581e533e10875558b8a3c4c2ab3b28b3e5ea52fef098a755a90e",
+      "local": ".checks\\vendor-medical\\Mod Assets\\MediShot\\healthshot-injector-model-cs2\\textures\\default_ao_tga_559f1ac6_orm_1388148950_1@channels=G.png"
+    },
+    {
+      "source": "Mod Assets/MediShot/healthshot__injector_model_cs2.glb",
+      "bytes": 741784,
+      "sha256": "cac44f7746fcdd57dfc2a5a79f7fa3e24cebb8aa337cefff08a1aa672332a1d9",
+      "local": ".checks\\vendor-medical\\Mod Assets\\MediShot\\healthshot__injector_model_cs2.glb",
+      "metadata": {
+        "extras": {
+          "author": "6lucius (https://sketchfab.com/6lucius)",
+          "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+          "source": "https://sketchfab.com/3d-models/healthshot-injector-model-cs2-c4829f084346419888184552f5d2cb62",
+          "title": "HEALTHSHOT | Injector Model (CS2)"
+        },
+        "generator": "Sketchfab-16.8.0",
+        "version": "2.0"
+      }
+    },
+    {
+      "source": "Mod Assets/Morphine Auto Injector/morphine-auto-injector.zip",
+      "bytes": 348466,
+      "sha256": "277b9c4afaf1c7eda26c3ba7b38171fabc07f0cf261febe4f7fb3e53fa13c007",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Morphine Auto Injector\\morphine-auto-injector.zip"
+    },
+    {
+      "source": "Mod Assets/Morphine Auto Injector/morphine-auto-injector.zip!/source/Morhpine Auto Injector.fbx",
+      "bytes": 35024,
+      "sha256": "8ab0ae6e5d97a038cf8c8618474838bb3a0c70f09b755fc122fe5e540e10d08a",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Morphine Auto Injector\\morphine-auto-injector\\source\\Morhpine Auto Injector.fbx"
+    },
+    {
+      "source": "Mod Assets/Morphine Auto Injector/morphine-auto-injector.zip!/textures/Morhpine_Auto_Injector_DefaultMaterial_Met.png",
+      "bytes": 123581,
+      "sha256": "fca6eec5f1e0d173575e1176a9aefe49b5bf516404f954641e102ebed16084aa",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Morphine Auto Injector\\morphine-auto-injector\\textures\\Morhpine_Auto_Injector_DefaultMaterial_Met.png"
+    },
+    {
+      "source": "Mod Assets/Morphine Auto Injector/morphine-auto-injector.zip!/textures/Morhpine_Auto_Injector_DefaultMaterial_Rou.png",
+      "bytes": 39341,
+      "sha256": "bd19307d1bd8e77ddac45d2ed56f93430096f4864c8b318ef52c5d1f1efa893f",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Morphine Auto Injector\\morphine-auto-injector\\textures\\Morhpine_Auto_Injector_DefaultMaterial_Rou.png"
+    },
+    {
+      "source": "Mod Assets/Morphine Auto Injector/morphine-auto-injector.zip!/textures/Morhpine_Auto_Injector_DefaultMaterial_Nor.png",
+      "bytes": 31717,
+      "sha256": "9e816d9b62cab778fa32881f734a6ba3c809a5c39d718f0482c0ccd8aad91a51",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Morphine Auto Injector\\morphine-auto-injector\\textures\\Morhpine_Auto_Injector_DefaultMaterial_Nor.png"
+    },
+    {
+      "source": "Mod Assets/Morphine Auto Injector/morphine-auto-injector.zip!/textures/Morhpine_Auto_Injector_DefaultMaterial_Bas.png",
+      "bytes": 117895,
+      "sha256": "d578eb63d3562c5f65d98a4211d13dbfbbba39bda35bb2cebd1d5d9d00903407",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Morphine Auto Injector\\morphine-auto-injector\\textures\\Morhpine_Auto_Injector_DefaultMaterial_Bas.png"
+    },
+    {
+      "source": "Mod Assets/Morphine Auto Injector/morphine_auto_injector (1).glb",
+      "bytes": 423932,
+      "sha256": "6134c597aab5878bc07d2de4d8551f72488f28bda9b76019e9eeb0410fb07564",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Morphine Auto Injector\\morphine_auto_injector (1).glb",
+      "metadata": {
+        "extras": {
+          "author": "doodyk2019 (https://sketchfab.com/doodyk2019)",
+          "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+          "source": "https://sketchfab.com/3d-models/morphine-auto-injector-338fcd5ea9de466ab71641ff9f528724",
+          "title": "Morphine Auto Injector"
+        },
+        "generator": "Sketchfab-12.68.0",
+        "version": "2.0"
+      }
+    },
+    {
+      "source": "Mod Assets/Morphine Auto Injector/morphine_auto_injector.glb",
+      "bytes": 196816,
+      "sha256": "4ea170c23d583a0fb48a06fee335cb9f1de8004d7139277c096bb706e7c16649",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Morphine Auto Injector\\morphine_auto_injector.glb",
+      "metadata": {
+        "extras": {
+          "author": "doodyk2019 (https://sketchfab.com/doodyk2019)",
+          "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+          "source": "https://sketchfab.com/3d-models/morphine-auto-injector-338fcd5ea9de466ab71641ff9f528724",
+          "title": "Morphine Auto Injector"
+        },
+        "generator": "Sketchfab-12.68.0",
+        "version": "2.0"
+      }
+    },
+    {
+      "source": "Mod Assets/Oxygen/oxygen-mask.zip",
+      "bytes": 530476,
+      "sha256": "58f87199f6e342cf971e07e988369976fabd6886959e3da9799dacbd4a879e76",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Oxygen\\oxygen-mask.zip"
+    },
+    {
+      "source": "Mod Assets/Oxygen/oxygen-mask.zip!/source/breathing_mask.fbx",
+      "bytes": 508944,
+      "sha256": "33e057581e3436b1fc459db1b959761e1738aeacda50ec623f56665b3b23aab8",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Oxygen\\oxygen-mask\\source\\breathing_mask.fbx"
+    },
+    {
+      "source": "Mod Assets/Oxygen/oxygen-mask.zip!/textures/out_uv_v2_oxygenmask_bag.png",
+      "bytes": 658,
+      "sha256": "ecabc47e86648b6844f63289ad3f096b8bf9578c414655b22bfc590fd6cc535a",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Oxygen\\oxygen-mask\\textures\\out_uv_v2_oxygenmask_bag.png"
+    },
+    {
+      "source": "Mod Assets/Oxygen/oxygen-mask.zip!/textures/out_uv_v2_oxygenmask_mouthpiece.png",
+      "bytes": 19588,
+      "sha256": "9be5a94cdd794de5d0b8d04336105f819e9e81d36c1956ec0737a76a5d63f2ad",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Oxygen\\oxygen-mask\\textures\\out_uv_v2_oxygenmask_mouthpiece.png"
+    },
+    {
+      "source": "Mod Assets/Oxygen/oxygen-mask.zip!/textures/out_uv_v2_oxygenmask_attachments.png",
+      "bytes": 658,
+      "sha256": "7cfeed12014ac605ab2c945cb95df5637cb76efa621fc4773adf8d834f271a78",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Oxygen\\oxygen-mask\\textures\\out_uv_v2_oxygenmask_attachments.png"
+    },
+    {
+      "source": "Mod Assets/Oxygen/oxygen_mask (1).glb",
+      "bytes": 210920,
+      "sha256": "ce64bcdeb15f086a12a5e585b9955d8d8b32927a652bdccba2204384fefeee51",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Oxygen\\oxygen_mask (1).glb",
+      "metadata": {
+        "extras": {
+          "author": "elouisetrewartha (https://sketchfab.com/etrewartha)",
+          "license": "CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)",
+          "source": "https://sketchfab.com/3d-models/oxygen-mask-1614f4e9974c4789a0b09865d3b4a7f3",
+          "title": "Oxygen Mask"
+        },
+        "generator": "Sketchfab-12.66.0",
+        "version": "2.0"
+      }
+    },
+    {
+      "source": "Mod Assets/Oxygen/oxygen_mask.glb",
+      "bytes": 217052,
+      "sha256": "45b26ebf453cf2d406bd17b8595aeadd5a6de54826f478ac221e5905f0689942",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Oxygen\\oxygen_mask.glb",
+      "metadata": {
+        "extras": {
+          "author": "elouisetrewartha (https://sketchfab.com/etrewartha)",
+          "license": "CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)",
+          "source": "https://sketchfab.com/3d-models/oxygen-mask-1614f4e9974c4789a0b09865d3b4a7f3",
+          "title": "Oxygen Mask"
+        },
+        "generator": "Sketchfab-12.66.0",
+        "version": "2.0"
+      }
+    },
+    {
+      "source": "Mod Assets/Pule Oximitter/pulse-oximeter-ii.zip",
+      "bytes": 555156,
+      "sha256": "d2383af20f4c0fe6a0c50204e05b09ac4af6dfe73e3936b0fd32c71bdd282355",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Pule Oximitter\\pulse-oximeter-ii.zip"
+    },
+    {
+      "source": "Mod Assets/Pule Oximitter/pulse-oximeter-ii.zip!/source/パルスオキシメータ.glb",
+      "bytes": 518328,
+      "sha256": "c0530dfa612d313c3e462d9dfdffba02d19e1ade434193394d47a1014fe0d350",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Pule Oximitter\\pulse-oximeter-ii\\source\\パルスオキシメータ.glb",
+      "metadata": {
+        "generator": "Khronos glTF Blender I/O v3.4.50",
+        "version": "2.0"
+      }
+    },
+    {
+      "source": "Mod Assets/Pule Oximitter/pulse-oximeter-ii.zip!/textures/パルス（NOZOMI）_画面-01_0.png",
+      "bytes": 36486,
+      "sha256": "f85ea030a6c34451c03e6aa7ffc72c106402d4c27b74448b7b0382d5f2a4d14a",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Pule Oximitter\\pulse-oximeter-ii\\textures\\パルス（NOZOMI）_画面-01_0.png"
+    },
+    {
+      "source": "Mod Assets/Pule Oximitter/pulse_oximeter_ii (1).glb",
+      "bytes": 589720,
+      "sha256": "86ba37fd35bf46e0b3b5ef603b466cd22349d62136a261575cdbb97cb66ac74f",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Pule Oximitter\\pulse_oximeter_ii (1).glb",
+      "metadata": {
+        "extras": {
+          "author": "星医療酸器 (https://sketchfab.com/7634hosi)",
+          "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+          "source": "https://sketchfab.com/3d-models/pulse-oximeter-ii-045c7ea17bb9441da84f6c3dc2283062",
+          "title": "Pulse oximeter Ⅱ"
+        },
+        "generator": "Sketchfab-16.63.0",
+        "version": "2.0"
+      }
+    },
+    {
+      "source": "Mod Assets/Pule Oximitter/pulse_oximeter_ii.glb",
+      "bytes": 688816,
+      "sha256": "9eb7cbaf1e711c20e77395736168bf5ac34f6ec0fa1907b44950fefb46072b53",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Pule Oximitter\\pulse_oximeter_ii.glb",
+      "metadata": {
+        "extras": {
+          "author": "星医療酸器 (https://sketchfab.com/7634hosi)",
+          "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+          "source": "https://sketchfab.com/3d-models/pulse-oximeter-ii-045c7ea17bb9441da84f6c3dc2283062",
+          "title": "Pulse oximeter Ⅱ"
+        },
+        "generator": "Sketchfab-16.63.0",
+        "version": "2.0"
+      }
+    },
+    {
+      "source": "Mod Assets/Pulse/pulse-oximeter.zip",
+      "bytes": 4731378,
+      "sha256": "57a92893056480588a7e05470e8a2671797006e8d2012057b32d9cfc0ca79665",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Pulse\\pulse-oximeter.zip"
+    },
+    {
+      "source": "Mod Assets/Pulse/pulse-oximeter.zip!/source/病室　コンソール.glb",
+      "bytes": 4035320,
+      "sha256": "d2916d4ef4a8502815065fbf6d005d3764b2b866b76bd7044aab02056e580339",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Pulse\\pulse-oximeter\\source\\病室　コンソール.glb",
+      "metadata": {
+        "generator": "Khronos glTF Blender I/O v4.1.63",
+        "version": "2.0"
+      }
+    },
+    {
+      "source": "Mod Assets/Pulse/pulse-oximeter.zip!/textures/Material_Normal_0.jpeg",
+      "bytes": 592331,
+      "sha256": "c12aefb7ecd7a1c13a3d17ffc405f6e809b9e953a540b504ec7942ef4a9f82ff",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Pulse\\pulse-oximeter\\textures\\Material_Normal_0.jpeg"
+    },
+    {
+      "source": "Mod Assets/Pulse/pulse-oximeter.zip!/textures/ras-97_モニター_0.png",
+      "bytes": 103277,
+      "sha256": "49ac4c99e6a2cb48feee349f656f8c9b964c38063053cf5b6e0ec2965a0824f7",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Pulse\\pulse-oximeter\\textures\\ras-97_モニター_0.png"
+    },
+    {
+      "source": "Mod Assets/Pulse/pulse_oximeter (1).glb",
+      "bytes": 5125104,
+      "sha256": "cfb51a0d8f17172f471fc0c6e54ca193034763b43f19607fb6b1d5e51e18e1ca",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Pulse\\pulse_oximeter (1).glb",
+      "metadata": {
+        "extras": {
+          "author": "星医療酸器 (https://sketchfab.com/7634hosi)",
+          "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+          "source": "https://sketchfab.com/3d-models/pulse-oximeter-2f65771d9823465faf83a24e27ec14c6",
+          "title": "Pulse oximeter"
+        },
+        "generator": "Sketchfab-16.74.0",
+        "version": "2.0"
+      }
+    },
+    {
+      "source": "Mod Assets/Pulse/pulse_oximeter.glb",
+      "bytes": 5383660,
+      "sha256": "1bc2a9b788bcf0373380ff860c7051575e40527f97635191431c544eaf75a075",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Pulse\\pulse_oximeter.glb",
+      "metadata": {
+        "extras": {
+          "author": "星医療酸器 (https://sketchfab.com/7634hosi)",
+          "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+          "source": "https://sketchfab.com/3d-models/pulse-oximeter-2f65771d9823465faf83a24e27ec14c6",
+          "title": "Pulse oximeter"
+        },
+        "generator": "Sketchfab-16.74.0",
+        "version": "2.0"
+      }
+    },
+    {
+      "source": "Mod Assets/Stim1/medic-stim.zip",
+      "bytes": 4883870,
+      "sha256": "d81874a2c13f30d054b1ab0f111703990edfdbe422862659b49d11aa4697dd07",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Stim1\\medic-stim.zip"
+    },
+    {
+      "source": "Mod Assets/Stim1/medic-stim.zip!/source/Stim_Low.fbx",
+      "bytes": 127840,
+      "sha256": "5e271cbb69e9d0cfa5a957235403827a21c01f521d503045d7988ec367f93698",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Stim1\\medic-stim\\source\\Stim_Low.fbx"
+    },
+    {
+      "source": "Mod Assets/Stim1/medic-stim.zip!/textures/Stim_Low_lambert1_Normal.png",
+      "bytes": 672632,
+      "sha256": "1065cab77c04e9ead2d2c6ddea82afde286aea3638435fb08ece48ccc7ff81ba",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Stim1\\medic-stim\\textures\\Stim_Low_lambert1_Normal.png"
+    },
+    {
+      "source": "Mod Assets/Stim1/medic-stim.zip!/textures/Stim_Low_lambert1_BaseColor.png",
+      "bytes": 2635602,
+      "sha256": "7c280dfb7ce7c0810ca23bb1b89866bb6fae16d9099197fd897dd8240f1c3ff8",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Stim1\\medic-stim\\textures\\Stim_Low_lambert1_BaseColor.png"
+    },
+    {
+      "source": "Mod Assets/Stim1/medic-stim.zip!/textures/Stim_Low_lambert1_Roughness.png",
+      "bytes": 1421846,
+      "sha256": "061c6c259124a3b571d4791d5577deb835d6f0289806f8122866985cd57fc30c",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Stim1\\medic-stim\\textures\\Stim_Low_lambert1_Roughness.png"
+    },
+    {
+      "source": "Mod Assets/Stim1/medic-stim.zip!/textures/Stim_Low_lambert1_Metallic.png",
+      "bytes": 25198,
+      "sha256": "0d97354d8fa61b4489af7cba286f24797a93daf58e1850ba0997aa5e1a810bba",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Stim1\\medic-stim\\textures\\Stim_Low_lambert1_Metallic.png"
+    },
+    {
+      "source": "Mod Assets/Stim1/medic_stim (1).glb",
+      "bytes": 5127480,
+      "sha256": "4442f910249c492e33c3a23d66fb2fe3f8dc22b5ace73bdeb776e879aefb299e",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Stim1\\medic_stim (1).glb",
+      "metadata": {
+        "extras": {
+          "author": "Cailjones (https://sketchfab.com/Cailjones)",
+          "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+          "source": "https://sketchfab.com/3d-models/medic-stim-efe7dec45d21435e822403bd79223e9b",
+          "title": "Medic stim"
+        },
+        "generator": "Sketchfab-15.32.0",
+        "version": "2.0"
+      }
+    },
+    {
+      "source": "Mod Assets/Stim1/medic_stim.glb",
+      "bytes": 1651716,
+      "sha256": "5fff3ff52a7fadc0a8b41748712d41f6786d19854ff5b370a76adcf692661b3f",
+      "local": ".checks\\vendor-medical\\Mod Assets\\Stim1\\medic_stim.glb",
+      "metadata": {
+        "extras": {
+          "author": "Cailjones (https://sketchfab.com/Cailjones)",
+          "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+          "source": "https://sketchfab.com/3d-models/medic-stim-efe7dec45d21435e822403bd79223e9b",
+          "title": "Medic stim"
+        },
+        "generator": "Sketchfab-15.32.0",
+        "version": "2.0"
+      }
+    }
+  ]
+}

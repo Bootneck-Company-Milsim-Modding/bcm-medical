@@ -1,0 +1,4 @@
+MetaFileClass {
+ Name "{6AB4B3F3FD216007}Prefabs/Items/BCMM_DragRope.et"
+ Configurations { EntityTemplateResourceClass PC {} EntityTemplateResourceClass HEADLESS : PC {} }
+}
