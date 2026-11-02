@@ -1,977 +1,1120 @@
 # BCM Medical player test checklist
 
-31 October 2026. Test the complete player-focused build, including treatment, equipment, transport, deceased recovery and server controls. This workbook is for Arma Reforger gameplay. Use it with the BCM Medical Player Training Guide. None of the boxes below is pre-passed by previous automated tests.
-
-## Record the session
-
-Build commit or package hash: __________  Server and mission: __________  Date: __________
-
-Game version/platform: ________  Testers/roles: ________  Ping/player count: ________
-
-Settings profile and changes: __________  Mods loaded: __________  Evidence folder: __________
-
-Mark each test PASS, FAIL, BLOCKED or NOT RUN. Record each named iteration separately. A condition that you could not create is BLOCKED, not PASS. For a failure, record the test ID, exact steps, patient and operator names, inventory before/after, server settings, elapsed time, screenshot/video and client/server logs. Reset the casualty between independent tests; do not let an earlier drug, wound or consumed source invalidate the next setup.
-
-## Prepare the range
-
-Use a private test mission on a dedicated server with BCM Medical and the base game only. Keep a backup of the normal mission save/settings. Use a disposable test profile for destructive life, death and restart cases. Do not test on an active operation. Disable unrelated medical, ACE carrying, retention and AI medical mods for the baseline; compatibility combinations are a separate later run.
-
-Minimum people: patient A and medic B. Recommended: add observer/second medic C and a separate GM. A and B must be real connected players for ownership, consent and reconnect tests. An NPC is useful for injury preparation but cannot substitute for conscious-player acceptance. A headless/local diagnostic client is not proof of Internet account behaviour.
-
-Prepare a flat open range, cover, slope, doorway, stairs and safe water edge; a native qualifying medical facility and a GM-placed BCM stationary treatment stretcher; US, USSR and FIA arsenals; and a jeep, truck, helicopter and ambulance with accessible fixed cargo. Keep one deliberately unsuitable/full cargo container. Record exact vehicle variants.
-
-Stock all 29 entries: bandage, tourniquet, splint, surgery kit, suture kit, folded body bag, drag rope, weapon sling; morphine, naloxone, epinephrine, TXA, paracetamol, fentanyl; chest seal, decompression kit, airway adjunct, suction, BVM, AED, AED pads, chest drain, IV cannula, whole blood, medical monitor, pulse oximeter, saline, plasma and portable oxygen. Also prepare a shovel/entrenching tool, supported rifle with distinctive optic/magazine/ammunition, a pistol, launcher and spare grenades. Keep named spare items separate so a duplicate cannot hide a consumption bug.
-
-Record the active settings before starting. Fresh defaults include 2 m treatment/pickup reach, bandage 10 s, splint 30 s, surgery/suture 60 s, medic reduction 40%, consent timeout 15 s and sling-required retention policy 1. Existing saved profiles can differ. Most advanced medic-only restrictions default off; fentanyl defaults to medic-only plus IV access. Independent fluid lines and oxygen default on; redistributed-fluid burden and stable-care component recovery default off. Two-player stretcher carrying stays off.
-
-## Create and verify casualties
-
-For the first leg test, A stands still with the chosen leg exposed, B fires one controlled low-power shot into the lower leg from a recorded distance, then both stop. Use H, confirm A's name, select that exact leg and run Check bleeding and Examine injury. Record weapon, ammunition, distance and hit side. Armour, projectile chance and damage can change the outcome: a shot is an input, not proof of a fracture, retained bullet, tension or internal injury. Verify the reported condition before using that casualty for a specialised case. GM reset/replace and repeat when the wrong condition was generated.
-
-Use these setup recipes throughout. W means a confirmed external wound in the named region. F means a confirmed left/right leg fracture. P means a confirmed retained projectile. I means a confirmed unrepaired internal source in the named compartment. C means a verified side-specific chest leak, tension or pleural blood collection. O means verified obstruction/foreign material. R means a living pulseless casualty with verified rhythm. V means controlled blood loss followed by external bleeding control, with reserve/pressure recorded. Start healthy when a negative test says so.
-
-For rare conditions, use a prepared, reproducible test mission/casualty supplied by the developer, or repeat controlled trauma and verify the condition. There is no promised GM button to directly set every rhythm, blood component or obstruction. Do not substitute a dead body for arrest, or a low saturation reading for a confirmed chest diagnosis. If a recipe cannot produce a stable isolated condition, mark that case BLOCKED and request a prepared scenario. Developer fixtures under Tests/Runtime are automated evidence, not a player-facing injury menu.
-
-Use a stopwatch from the visible action/progress start to completion. Preparation and completion handling can add variable time; the preparation allowance is not a mandatory extra 15 s. For comparisons, use the same stance, original supply, role and server settings. GM FullHeal is an administrative reset, not a treatment pass, and does not resurrect a destroyed character or refill a used external device. Respawn/re-equip as needed.
-
-## Run order and multiplayer rules
-
-First run INSTALL, MENU, WOUND and TXN as a short smoke session. Then run the remaining clinical, equipment and transport groups. Run LIFE, SAVE and GM on the disposable profile last. Finish with NET and compatibility/performance cases. Reserve enough sessions; do not rush the full checklist into one short evening.
-
-For every successful treatment below, A confirms their own state, B confirms completion and inventory use, and C checks the visible result. Reopen and re-examine: old examination text is a snapshot. For each treatment family repeat once with A/B swapped, once on self where the action is supported, and once with a late joiner observing the completed state. Record unsupported self-use as the expected refusal, not a missing feature.
-
-For each family also run the shared interruption matrix TXN. For left/right procedures, run each side independently and a wrong-side attempt. For seven-region checks, run head, chest, abdomen, left/right arm and left/right leg as seven recorded iterations. Do not tick a parameterised test until all its named iterations have results.
-
-## Installation and supply baseline
-
-### INSTALL01 Clean install and dependency check
-Setup: A fresh client profile and dedicated server; record the build identifier. Preserve your normal installation separately.
-Do: Load the test mission with BCM Medical plus base game only. Join with A and B, spawn and inspect client/server logs. Repeat on another clean client.
-Pass: Join and character spawn succeed, BCM input/menu/supplies load, no missing addon/script/resource errors, and no ACE or external medical/retention dependency is requested.
-
-### INSTALL02 Catalogue and all supplies
-Setup: Empty recorded inventories and each US, USSR and FIA arsenal in turn.
-Do: Find the BCM Medical heading. Acquire every one of the 29 named entries, inspect its name/icon/model, transfer it, drop/pick it up and reopen inventory. Record each item and faction separately.
-Pass: All enabled entries are available and usable by their intended action; counts remain exact through transfer. Temporary shared art is recorded for polish rather than mistaken for a different functional item.
-
-### INSTALL03 Ordinary base game behaviour
-Setup: A healthy player, ordinary weapons/backpack, stock bandages and native saline.
-Do: Walk, run, crouch, prone, aim, fire, reload, change weapons, enter/exit vehicles and manage inventory. Compare before and after opening medical UI.
-Pass: Normal controls return after closing the UI; no stuck camera/input, lost gear or unexpected medical treatment occurs on healthy players.
-
 ## Medical menu and assessment
 
-### MENU01 Target identity and self selection
-Setup: A and C stand near B; then move one out of examination access.
-Do: B looks at A and presses H; repeat looking at C and empty ground. Use SELF / SWAP. Repeat with a conscious and unconscious A.
-Pass: Patient name and body belong to the intended eligible target; no eligible looked-at patient opens self. Swapping never applies an action to the previous person.
+### MENU01 Open the correct patient
+Setup: Two players close together. One is the patient and one is the medic.
+Do:
+1. Look at the patient and press H. Check the name at the top. Look away and open it again.
+2. Use SELF / SWAP. Repeat with another patient and with an unconscious patient.
+Pass: The menu selects the person you looked at, or yourself when nobody is selected. Treatment must never go to the previous patient.
 
-### MENU02 Seven regions and five tabs
-Setup: A has one verified W on a recorded side; other regions are healthy.
-Do: Select all seven regions and each of Circulation, Airway, Surgery, Medication and Fluids. Use MORE TREATMENTS. Check bleeding/examine the hit region and its opposite side.
-Pass: The correct patient-side injury is reported; patient left appears on the viewer's right. Available actions match region and pagination, with no clipped/unreachable buttons.
+### MENU02 Choose the correct body part
+Setup: A patient with one confirmed wound.
+Do:
+1. Click head, chest, abdomen (stomach area), both arms and both legs. Open all five treatment tabs and MORE TREATMENTS.
+2. Check the wounded part, then the opposite side. Remember that the patient's left is on your right.
+Pass: The wound appears on the correct part. All tabs and buttons work and fit on screen.
 
-### MENU03 Findings are requested and private
-Setup: A wounded, B examining, C with a separate medical view.
-Do: Open/select without running a check; then examine, treat and re-examine. Switch patient during a pending check, close/reopen, and compare C's findings.
-Pass: Opening/clicking alone is not a completed examination. Replies attach to the correct patient/region and do not overwrite a newer selection. Old private snapshots are not presented as newly measured shared findings.
+### MENU03 Check and refresh the findings
+Setup: A patient, a medic and another player viewing the patient.
+Do:
+1. Open the menu without examining. Then examine, treat and examine again.
+2. Change patient while a check is running. Close and reopen the menu. Compare the other player's findings.
+Pass: Opening the menu alone does not examine anyone. Old results are not shown as fresh results or attached to the wrong patient.
 
-### MENU04 Vehicle patient list
-Setup: A and B in one vehicle, C nearby outside or in another vehicle.
-Do: Open the occupant list, change seats, exit and re-enter. Attempt an otherwise prohibited treatment while seated.
-Pass: The list reflects actual shared-vehicle examination access, not everyone nearby. Leaving removes access as appropriate; examination access does not bypass in-vehicle procedure restrictions.
+### MENU04 Check patients inside a vehicle
+Setup: Two players in the same vehicle and a third player outside.
+Do:
+1. Open the patient list. Change seats, leave the vehicle and get back in.
+2. Try a treatment that is normally blocked while seated.
+Pass: The list shows other occupants of your vehicle. Being able to examine them does not unlock blocked vehicle treatments.
 
-### MENU05 Bindings and human input
-Setup: Save your original input settings; keyboard/mouse and controller if supported by your intended platform.
-Do: Rebind Medical interface in personal BCM Medical controls; test tap/hold and reset to H. Reconnect/restart. Repeat body selection, paging, cancel and bottom-right transport controls at 720p, 1080p and your normal UI scale.
-Pass: Personal bindings persist and affect only that player. Small transport buttons remain side-by-side at bottom right without shrinking/covering the body or preventing controller focus and selection.
+### MENU05 Check controls and screen size
+Setup: Keyboard and mouse, plus a controller if you plan to use one.
+Do:
+1. Rebind Medical interface in BCM Medical controls. Try tap and hold, restart, then restore H.
+2. Try body selection, paging, cancel and carry/drag buttons at 720p, 1080p and your usual UI size.
+Pass: Your binding stays saved. Buttons remain readable and usable. The small carry/drag pair stays at the bottom right without covering the body.
 
 ## Bleeding wounds and tourniquets
 
-### WOUND01 First leg shot and both interaction routes
-Setup: A healthy with exposed left lower leg; B has at least two counted dressings.
-Do: Make one W as described in the setup recipe. Inspect native look-at/inventory bandaging availability without the medical menu, then use H > left leg > Circulation > Check bleeding. Bandage through the menu and recheck. Reset and repeat the available native route, then repeat the right leg.
-Pass: Both supported routes treat the intended real wound and consume one dressing only on success. External loss falls/stops for that wound, the region shows dressing state and another unbandaged region is not silently treated.
+### WOUND01 Shoot a leg and bandage it
+Setup: Two players and two bandages. Start with a healthy patient.
+Do:
+1. Fire one controlled shot into the left lower leg. Stop shooting. Press H, confirm the patient's name, select that leg and check bleeding.
+2. Bandage through the medical menu and check bleeding again. Reset the patient and repeat using the normal look-at/inventory bandage action. Then test the right leg.
+Pass: The correct leg shows the wound. Each successful bandage uses one item and controls that wound's bleeding. Both supported interaction routes work.
 
-### WOUND02 Every region and multiple wounds
-Setup: Separate verified W cases for all seven regions; then wounds in two regions and two wounds in one region where reproducible.
-Do: Record region counts, blood/reserve trend and inventory. Dress one region, recheck every injured region, then finish the rest.
-Pass: Counts and dressing state match actual regions. A completed region treatment follows its linked native wound group; it does not close or dress another region or double-charge the same application.
+### WOUND02 Check all body parts and several wounds
+Setup: Separate patients or resets for head, chest, stomach, both arms and both legs.
+Do:
+1. Create and confirm a wound on each part in turn. Also test two wounded parts together and several wounds on one part.
+2. Bandage one part, then check every injured part again.
+Pass: Only the treated part's wound group is dressed. Other wounded parts still need treatment. Item use and wound counts stay correct.
 
-### WOUND03 Dressing wear and movement
-Setup: Three comparable dressed W cases; record wear settings and remove further incoming damage.
-Do: Keep one resting, one walking and one running. Recheck periodically beyond the active wear budget; record reopening and re-bandage. For a faster dedicated run, use a valid shorter wear setting and restore it afterwards.
-Pass: Dressings can reopen, movement accelerates wear according to settings, recurrence produces real renewed loss and fresh dressing controls it. Random lifetime differences are accounted for before comparing rates.
+### WOUND03 Check bandages wearing out
+Setup: Similar bandaged wounds and the current dressing-wear settings.
+Do:
+1. Keep one patient resting, one walking and one running. Check bleeding regularly and time when each dressing reopens.
+2. Bandage a reopened wound again. Use shorter valid wear settings for a separate faster test, then restore them.
+Pass: Dressings can reopen. Movement wears them faster, and a fresh bandage controls the reopened wound. Allow for the random starting lifetime.
 
-### WOUND04 Native tourniquet
-Setup: Verified bleeding limb, one native tourniquet and dressing; record the selected limb.
-Do: Apply through its supported native action, inspect TQ state and loss, dress the wound and remove/reapply the tourniquet where native interaction permits. Repeat opposite limb and try an ineligible torso target.
-Pass: Appropriate limb flow responds; torso use is refused. TQ state remains separate from dressing, suturing and lost-blood replacement; no duplicate usable tourniquet is created.
+### WOUND04 Apply and remove a tourniquet
+Setup: A bleeding limb, a tourniquet and a bandage.
+Do:
+1. Use the normal game action to apply the tourniquet. Check that limb's TQ marker and bleeding. Dress the wound.
+2. Remove/reapply it where the game allows. Repeat on the opposite limb and try an unsuitable torso target.
+Pass: Limb bleeding responds correctly. A tourniquet does not close the wound or replace lost blood. Torso use is refused and no spare item appears.
 
-### WOUND05 Continued loss without double ticking
-Setup: One isolated W, no medicines/fluids/internal injury; note timed circulation estimates.
-Do: Compare equal stationary intervals before dressing, immediately after dressing and after a confirmed reopening. Repeat at a different server frame/load condition.
-Pass: Native external bleeding remains coherent with the wound and treatment, without an unexplained second BCM damage tick. Unexpected loss is investigated for a hidden internal source before reporting duplication.
+### WOUND05 Check that bleeding is counted once
+Setup: One confirmed external wound with no internal bleeding, medicines or fluids.
+Do:
+1. Record blood loss over equal periods while resting, after bandaging, and after a confirmed reopening.
+2. Repeat during a busier server session. Check for a separate internal injury if loss looks too high.
+Pass: Blood loss follows the wound and treatment. There is no unexplained second bleeding effect from the same wound.
 
-## Extraction suturing and internal repair
+## Bullet removal stitching and internal bleeding
 
-### SURG01 Retained projectile extraction
-Setup: A verified P with bleeding controlled; B owns one surgery kit; suitable facility when required.
-Do: Examine the exact region, explore/remove projectile, check progress/inventory and examine again. Attempt the same extraction when no projectile remains; repeat a non-projectile injury.
-Pass: The verified projectile is removed by a completed eligible operation. Extraction does not silently suture or repair separate internal injury; repetition without a target cannot consume a spare kit for a free heal.
+### SURG01 Remove a retained bullet
+Setup: A wound that examination confirms still contains a bullet, controlled bleeding and a surgery kit.
+Do:
+1. At a facility if required, examine the injured part and choose Explore / remove projectile. Check it again afterwards.
+2. Try repeating the procedure after removal. Also try a wound that contains no bullet.
+Pass: The confirmed bullet is removed once. Extraction does not automatically stitch the wound or repair separate internal bleeding. Unneeded repeats must not waste a kit.
 
-### SURG02 Suture prerequisites and new damage
-Setup: First a bleeding wound, then a dressed P, then a controlled projectile-free wound; one counted suture kit each run.
-Do: Attempt suture in all three states. Complete the eligible case, wait beyond the old dressing timer, then inflict and verify a new W in that region.
-Pass: Active loss or retained projectile blocks closure. Eligible closure consumes once and stays closed; a new impact can create a new injury without reopening the old closed wound as a timer artefact.
+### SURG02 Stitch a wound
+Setup: A suture kit. Test an actively bleeding wound, a dressed wound containing a bullet, and a controlled wound with no bullet.
+Do:
+1. Try suturing each case. Complete the allowed case and wait beyond its old bandage-wear time.
+2. Cause a fresh wound in the same part and examine it again.
+Pass: Bleeding or a retained bullet blocks stitching. The properly closed wound stays closed; a new hit can still create a new wound.
 
-### SURG03 Critical regions and facility radius
-Setup: Confirmed head, chest and abdominal surgical indications, plus a limb case; active facility policy recorded.
-Do: Try the relevant repair away from a facility, with only one participant inside its radius, and with both inside. Repeat around the boundary; then toggle field critical surgery in the disposable profile.
-Pass: Head/torso policy and both-person range checks are enforced throughout. An inventory medical pouch or ordinary seat does not count as a stationary facility.
+### SURG03 Check where surgery is allowed
+Setup: Surgical injuries in the head, chest, stomach and a limb. Record the facility setting.
+Do:
+1. Try the operation away from a facility, with only one player inside its treatment range, and with both inside.
+2. Repeat near the range boundary. In a separate test, change the field-surgery setting and restore it afterwards.
+Pass: The current rules are enforced. An ordinary vehicle seat or medical pouch does not count as a treatment facility.
 
-### SURG04 Internal source and compartments
-Setup: I separately in head, chest and abdomen with external loss controlled.
-Do: Observe reserve deterioration, apply an external dressing, then perform eligible Repair internal bleeding for the exact compartment. Reassess another unrepaired compartment if present.
-Pass: Dressing alone does not repair internal loss. Correct surgery stops its source while leaving other sources, existing pleural collection and missing circulating reserve to their own treatments.
+### SURG04 Repair internal bleeding
+Setup: Confirmed internal bleeding in the head, chest and stomach, tested separately. Control external bleeding first.
+Do:
+1. Watch the patient's blood level, then apply an external bandage and check again.
+2. Perform Repair internal bleeding on the correct part at the required facility. Check any other internal injuries separately.
+Pass: A bandage does not fix internal loss. Surgery repairs its own source, but does not refill blood or clear a separate chest collection.
 
-## Leg fractures and stationary care
+## Broken legs and the stationary stretcher
 
-### LEG01 Unsupported and splinted movement
-Setup: Verified F on each leg separately and both legs together; record movement settings and reserve.
-Do: Attempt walk/run, crouch/crawl, jump and climb. Apply the correct splint through Surgery, repeat movement and compare pain/weight-bearing loss. Inspect wrong-leg treatment.
-Pass: Unsupported movement is very slow; splint improves the configured cap without curing the fracture. Jump/climb remain blocked, and weight-bearing loss follows the fracture rules. Rest/carry/crawl avoid that specific loss, not unrelated bleeding.
+### LEG01 Move with a broken leg
+Setup: A confirmed broken left leg, then right leg, then both. A splint kit.
+Do:
+1. Try walking, running, crouching, crawling, jumping and climbing before and after applying a splint to the injured leg.
+2. Compare speed, pain and blood loss. Also try treating the wrong leg and moving the patient by carry/drag.
+Pass: The splint improves movement but does not heal the break. Jumping/climbing stay blocked. Walking/running can cause fracture-related loss; resting, crawling or being carried avoids that particular loss.
 
-### LEG02 Definitive fracture surgery
-Setup: A splinted F, surgical supplies; B with permitted role.
-Do: Try away from a qualifying facility even if field critical surgery is allowed. Move both participants to a facility, complete fracture repair and re-examine movement/jump restrictions.
-Pass: Definitive fracture repair still requires facility access; successful repair clears the actual fracture and corresponding restrictions, without refilling blood or healing unrelated injury.
+### LEG02 Repair a broken leg fully
+Setup: A confirmed broken leg, surgical supplies and a permitted medic.
+Do:
+1. Try fracture surgery away from a medical facility, even with field surgery enabled.
+2. Move both players to a facility, complete the repair, then check the fracture and movement again.
+Pass: Full fracture repair requires a facility. A completed repair clears that fracture's restrictions, without fixing unrelated wounds or replacing blood.
 
-### LEG03 Stationary stretcher placement
-Setup: GM opens the normal object browser; eligible unconscious A with recorded injuries/gear.
-Do: Place BCM stationary treatment stretcher on valid ground. Place/remove A using its native actions; try conscious A and invalid range. Inspect from B/C and after late join.
-Pass: The placed object/thumbnail and original casualty replicate. Correct placement supplies configured stationary support without healing or replacing A; ineligible placement is rejected. Two-player carry remains unavailable in the baseline.
+### LEG03 Use the stationary stretcher
+Setup: A GM and an unconscious living patient with recorded injuries and equipment.
+Do:
+1. Place BCM stationary treatment stretcher from the GM object browser. Use its Place casualty and Remove casualty actions.
+2. Try a conscious patient and an out-of-range patient. Have another player and a late joiner inspect it.
+Pass: The same patient is placed and removed without healing or losing gear. Invalid use is refused. Two-player stretcher carrying remains disabled.
 
-### LEG04 Facility support and dressing stability
-Setup: Comparable dressed casualties on/off stationary support and a procedure requiring a facility.
-Do: Confirm both actors meet radius rules, time comparable dressing wear and perform the eligible operation. Remove the casualty/station or move outside range mid-procedure.
-Pass: Configured support applies only while eligible; unsupported movement/removal cannot leave a stale facility privilege or complete an invalid procedure.
+### LEG04 Check stretcher treatment support
+Setup: Comparable bandaged patients on and off the stationary stretcher, plus a procedure needing a facility.
+Do:
+1. Compare bandage wear and try the facility treatment with both players in range.
+2. During treatment, move out of range or remove the patient/stretcher in separate runs.
+Pass: Support applies only while the patient qualifies. Removing support cannot leave a treatment running with invalid facility access.
 
-## Airway and side specific chest treatment
+## Airway and chest treatment
 
-### AIR01 Airway assessment and adjunct
-Setup: Healthy conscious negative case and eligible unconscious O with verified soft-tissue obstruction. If necessary enable the configurable obstruction generator for a separate recorded run.
-Do: Head > Airway > Check airway, then insert adjunct using the original supply; reassess. Repeat on conscious/ineligible patient and with no obstruction.
-Pass: The adjunct affects its eligible soft-tissue obstruction only, not foreign material or spontaneous breath production. Rejected use preserves supplies; applied state is visible and cleans up on reset.
+### AIR01 Check an obstructed airway
+Setup: An unconscious patient with confirmed soft-tissue airway blockage and an airway adjunct. Use a healthy conscious patient for comparison.
+Do:
+1. Select Head > Airway > Check airway. Insert the adjunct and check again.
+2. Try it on a conscious patient and one without the relevant blockage. If you cannot create the blockage, leave that test untested.
+Pass: The adjunct treats the suitable blockage. It does not remove foreign material or make the patient breathe automatically. Refused use keeps the item.
 
-### AIR02 Suction foreign material
-Setup: Verified foreign-material O; retained suction device and a separate adjunct-only case.
-Do: Check airway, suction, reassess and reuse the same device on a second eligible patient. Compare the result of adjunct alone.
-Pass: Suction clears its separate obstruction and retains the exact device. Adjunct alone does not pretend to clear foreign material; a patent airway is not proof of adequate ventilation.
+### AIR02 Clear foreign material with suction
+Setup: A confirmed airway blockage from foreign material and a suction device.
+Do:
+1. Check the airway, use suction and check again. Compare this with using an airway adjunct alone.
+2. Reuse the same suction device on another suitable patient.
+Pass: Suction clears its type of blockage and remains in inventory. An adjunct does not substitute for suction. An open airway alone does not prove good breathing.
 
-### AIR03 Chest seals and wrong side
-Setup: Verified open left chest leak, then right; separate seal supply and assessed side.
-Do: Chest > Airway, check breathing and seal the opposite side first, then the confirmed side. Record side state, consumption and deterioration; repeat both sides.
-Pass: Wrong-side use cannot repair the affected side. The correct seal closes its leak without silently relieving existing tension, draining blood or repairing an internal source. Record whether an unneeded side is refused according to current state.
+### AIR03 Seal the correct side of the chest
+Setup: A confirmed open chest leak on one side and chest seals. Test left and right separately.
+Do:
+1. Select Chest > Airway and check breathing. Try the opposite side first, then seal the injured side.
+2. Recheck both sides, item count and the patient's condition.
+Pass: Only the correct side's leak is fixed. A seal does not also clear tension, drain collected blood or repair an internal bleeding source.
 
-### AIR04 Tension decompression
-Setup: Confirmed left/right tension cases with leak/source state recorded.
-Do: Check breathing, perform wrong-side then correct-side decompression, seal the causative open leak when indicated and recheck over time.
-Pass: Correct decompression relieves that side's tension; it is not a permanent all-chest cure while a leak remains. Wrong-side treatment does not clear the affected side; repeat procedure eligibility remains coherent.
+### AIR04 Relieve chest tension
+Setup: A confirmed tension problem on the left or right side and a decompression kit.
+Do:
+1. Check breathing. Try the wrong side, then decompress the confirmed side. Repeat for both sides.
+2. Treat any open leak as needed and keep checking for returning problems.
+Pass: Correct-side decompression relieves that side's tension. It does not permanently fix an untreated leak or cure every chest injury.
 
-### AIR05 Pleural blood drain
-Setup: Confirmed pleural collection and internal source on one side; chest drain kit, facility/role if required by the action.
-Do: Check both sides, try dressing/seal as a comparison, install the matching drain and watch the collection over time. Repair the source and replace reserve separately.
-Pass: Drain removes matching pleural blood at the configured rate. It cannot restore circulating blood, drain an abdominal/head injury or fix the unrepaired bleeding source. Confirm both sides separately.
+### AIR05 Drain blood collected in the chest
+Setup: A confirmed chest blood collection on one side, a drain kit and any required treatment access.
+Do:
+1. Check both sides. Compare the effect of a dressing/seal with inserting the drain on the correct side.
+2. Watch the collection decrease. Repair the bleeding source and replace lost blood separately.
+Pass: The drain removes the matching chest collection over time. It does not refill circulation or drain the head/stomach.
 
-### AIR06 Lung recovery after cause correction
-Setup: Verified chest injury with reduced functioning lung fraction; no uncontrolled external loss.
-Do: Record breathing/SpO2, correct the actual leak/tension/collection/source as indicated, then observe recovery at timed intervals. Compare with an intentionally uncorrected cause.
-Pass: Recovery follows configured lung capacity and corrected causes over time; oxygen alone does not erase structural collapse. Inspect for stable recovery rather than an unexplained instant full reset.
+### AIR06 Check breathing recovery
+Setup: A confirmed chest injury causing poor lung function, without uncontrolled external bleeding.
+Do:
+1. Record breathing and oxygen readings. Treat the actual leak, tension, collection or bleeding source.
+2. Recheck over time. Compare with a similar patient whose cause has not been treated.
+Pass: Recovery follows the corrected injuries and server settings. Oxygen alone does not instantly repair a damaged/collapsed lung.
 
-### AIR07 BVM and patent airway
-Setup: Verified inadequate ventilation with a patent airway, then an obstructed comparison; original BVM retained.
-Do: Perform assisted ventilation, time the finite support interval, reassess after it lapses and repeat. Stop/cancel one cycle and transfer/reuse the device on another casualty.
-Pass: Completed cycles provide the configured temporary ventilation benefit, not indefinite automatic breaths. Airway obstruction still matters, device is retained and cancellation cannot grant a completed cycle for free.
+### AIR07 Help breathing with the bag valve mask
+Setup: A patient breathing inadequately, a clear airway and a bag valve mask (BVM).
+Do:
+1. Give assisted ventilation. Watch how long the breathing support lasts, then repeat. Compare with a blocked airway.
+2. Cancel one cycle before completion and reuse/transfer the device to another patient.
+Pass: Completed cycles provide temporary help, so support may need repeating. The device is reusable. Cancelling must not award a free completed cycle.
 
 ## Oxygen and monitoring devices
 
-### OXY01 Finite oxygen benefit
-Setup: A has a patent airway, breathing and reduced oxygenation with remaining functioning lung; B owns a full identified kit.
-Do: Connect at Head > Airway, check chest breathing for source status, litres and flow, record a timed litre change and disconnect. Reconnect the same kit; compare a healthy/no-benefit case.
-Pass: Actual oxygen drains at the active flow while connected and can support eligible oxygenation. Disconnect stops delivery; the same kit keeps its remaining contents and does not create breaths or restore blood cells.
+### OXY01 Connect and use oxygen
+Setup: A patient with reduced oxygenation, a clear airway, some functioning lung and a full oxygen kit.
+Do:
+1. Connect oxygen under Head > Airway. Check Chest > breathing for source, remaining litres and flow. Time the contents falling.
+2. Disconnect and reconnect the same kit. Compare with a healthy patient.
+Pass: The original supply drains at the set rate and retains its remaining contents. Oxygen helps suitable oxygenation problems; it does not create breaths or replace blood cells.
 
-### OXY02 Range ownership and unconsciousness
-Setup: Active oxygen with original kit and operator recorded.
-Do: Cross the operating range, transfer/drop/delete the original kit in separate runs, change operator/patient consciousness and kill/reset the patient. Restore a kit only after observing stop behaviour.
-Pass: Range/supply/death/reset conditions end invalid delivery. Unconsciousness alone does not remove an otherwise valid connection. A visually present mask without a valid source supplies nothing.
+### OXY02 Check when oxygen stops
+Setup: An active oxygen connection with the operator and original kit identified.
+Do:
+1. In separate runs leave operating range, drop/transfer/delete the kit, make either player unconscious, or kill/reset the patient.
+2. After each change, recheck oxygen delivery and source status before adding another kit.
+Pass: Invalid source/range/death/reset stops delivery. Unconsciousness alone does not remove an otherwise valid connection. A mask with no working supply gives no oxygen.
 
-### OXY03 Exhaustion removal and disabled state
-Setup: A low-contents kit prepared by prior active use, another full kit and active oxygen GM control.
-Do: Let the original run empty, reconnect it, disconnect without a spare kit, then test connection disabled and disabling an active supply. Compare contents before/after reset, transfer and restart under SAVE.
-Pass: Empty kits stay empty and cannot supply infinite oxygen. Removal does not require another kit; disabling cannot leave an invisible active oxygen effect or replenish contents.
+### OXY03 Empty and disconnect oxygen
+Setup: A nearly empty kit, a full spare and access to the oxygen setting.
+Do:
+1. Let the original empty, try it again, then disconnect without owning a spare kit.
+2. Test oxygen disabled before connection and disabled during use. Check used contents after transfer, reset and save/restart.
+Pass: Empty kits stay empty. Disconnecting needs no spare. Disabled oxygen must not keep working invisibly or refill itself.
 
-### MON01 Hands only and instrumented vitals
-Setup: Comparable patients; B first has no monitor/oximeter, then obtains each counted device.
-Do: Perform hands-only pulse/rate and breathing checks, circulation assessment and instrumented chest vitals. Read labels and repeat after state changes.
-Pass: Hands checks can report pulse/rate and qualitative findings. Instrument-only measurements need their device. Game volume/red-cell estimates are labelled as estimates; stale snapshots are not silently live measurements.
+### MON01 Check vitals with and without equipment
+Setup: A patient; first examine without a monitor/oximeter, then with each device.
+Do:
+1. Check pulse and breathing by hand. Check circulation and perform the instrumented chest check.
+2. Change the patient's condition and repeat the checks.
+Pass: Hand checks and equipment checks give their intended information. Equipment-only readings need the device. Estimated blood values are labelled; old readings do not update themselves.
 
-### MON02 Live pulse oximeter and sound
-Setup: Active arm pulse oximetry, B holding the original retained instrument, C viewing A.
-Do: Change A's state, watch updated pulse/SpO2 from B/C, cross operating and audible ranges, toggle sound, transfer/drop the instrument and end the session. Compare with a manual old check.
-Pass: Active feed and optional audio follow current valid device/range/settings. Device loss stops updates; a stale manual reading is distinguishable. No monitor item is consumed or duplicated.
+### MON02 Use the live pulse oximeter
+Setup: A pulse oximeter in the medic's inventory, a patient and another medical viewer.
+Do:
+1. Start oximetry on an arm. Change the patient's condition and compare both viewers' pulse/oxygen readings. Check the sound setting and range.
+2. Move out of device range, transfer/drop it, then end the session. Compare with an older manual reading.
+Pass: Live readings/sounds follow the valid device and range. Losing the device stops the feed. The item is not consumed or duplicated.
 
-## Arrest CPR and AED
+## No pulse CPR and the AED
 
-### CPR01 Arrest and compressions
-Setup: A verified living R created by confirmed severe blood loss or hypoxia, with cause recorded; teammates ready.
-Do: Check pulse, start CPR, inspect patient and observer animation, then stop/cancel/restart and let a lease expire. Record pulse and deterioration with/without ongoing compressions.
-Pass: CPR provides configured partial perfusion but reported spontaneous pulse remains zero during arrest. Lease/cancellation stops unsupported compressions; no duplicate rescuer session or universal instant revival occurs.
+### CPR01 Start and stop CPR
+Setup: A living patient with a confirmed absent pulse. Use a prepared case if ordinary trauma cannot produce it reliably.
+Do:
+1. Check pulse, start chest compressions and compare the medic's and observer's views.
+2. Stop, cancel and restart. Also let the connection/communication time limit expire and compare the patient's deterioration.
+Pass: CPR gives partial blood-flow support, but the spontaneous pulse stays zero until circulation returns. Stopping or losing the session ends unsupported compressions.
 
-### CPR02 AED pads analysis and advised shock
-Setup: Verified shockable VF/pulseless VT R; one pad set and an identified charged AED.
-Do: Apply pads, analyse with that AED, stop CPR and complete an advised discharge while analysis is current. Resume necessary resuscitation and reassess. Run VF and pulseless VT separately when prepared cases are available.
-Pass: Pads and device are separate requirements; one completed shock spends one charge on the original AED. Rhythm can change without guaranteed ROSC. Missing supplies or active CPR prevent an invalid discharge.
+### CPR02 Use the AED when a shock is advised
+Setup: A living pulseless patient with a confirmed shockable rhythm, electrode pads and a charged AED.
+Do:
+1. Apply pads and analyse with that AED. Stop CPR and give the advised shock before the analysis expires.
+2. Resume needed care and recheck. Test VF and pulseless VT separately when suitable prepared cases are available.
+Pass: One completed shock uses one charge on the actual device. Rhythm may change without the patient reviving. Missing kit or active CPR blocks an invalid shock.
 
-### CPR03 No shock rhythms and healthy patients
-Setup: Separate confirmed PEA, asystole, living perfusing and deceased cases; otherwise complete AED kit.
-Do: Analyse, follow no-shock advice and attempt discharge. Observe charge/pad counts and patient state.
-Pass: PEA/asystole and ineligible patients do not receive a qualifying shock/revive. A refusal does not spend a discharge as though successful. Mark uncreated rhythms BLOCKED rather than substituting another rhythm.
+### CPR03 Check when a shock is not allowed
+Setup: Separate confirmed PEA, asystole, healthy/perfusing and deceased cases. Keep AED equipment available.
+Do:
+1. Analyse each patient and attempt a discharge when the advice says no shock.
+2. Check patient state, pads and remaining charges. Mark a rhythm you cannot create as untested.
+Pass: Unshockable rhythms and unsuitable patients are not shocked/revived. A refused shock does not spend a successful discharge.
 
-### CPR04 Analysis age device and rhythm changes
-Setup: Valid shock advice from AED one and a second AED; note the analysis timestamp.
-Do: Wait beyond the active analysis lifetime, switch AED, or let the rhythm change before discharge in separate runs; attempt discharge, then reanalyse with the actual current device.
-Pass: Expired/different-device/stale-rhythm advice cannot authorise a shock. A fresh eligible analysis can; transferring/reconnecting does not refill charges.
+### CPR04 Check expired or wrong AED advice
+Setup: Current shock advice from one AED and a second device.
+Do:
+1. Try shocking after the advice expires, with the other AED, and after the patient's rhythm changes. Test these separately.
+2. Analyse again using the actual device and current patient state.
+Pass: Old advice cannot authorise a new shock. Fresh suitable advice can. Swapping/reconnecting devices does not refill them.
 
-### CPR05 Finite AED and source retention
-Setup: AED previously used in recorded shocks, with known remaining count; prepared shockable cases.
-Do: Continue until empty in a dedicated run, attempt another shock, transfer the exact device, reset the patient and reanalyse. Repeat across SAVE.
-Pass: The original finite device stays depleted and no reset, patient change, transfer or supported restart silently refills it. Analysis is not itself a free discharge.
+### CPR05 Check the AED can run out
+Setup: One identified AED with a recorded number of used charges and repeatable shockable cases.
+Do:
+1. Use it until empty, then attempt another shock.
+2. Transfer it, reset/change the patient and save/restart before trying again.
+Pass: The same device keeps its used charge count and remains empty when exhausted. Analysis alone is not a free shock.
 
-### CPR06 ROSC and terminal limits
-Setup: Comparable R cases; one receives CPR, ventilation/airway and correction of actual blood-loss/chest/drug causes; one remains uncorrected.
-Do: Recheck pulse and breathing through the configured sustained recovery interval, then monitor after apparent recovery. In a separate disposable case permit prolonged unresolved terminal deterioration.
-Pass: Sustained correction permits the simulated ROSC path; CPR/epinephrine/shocks alone are not guaranteed revival. Terminal death stays terminal, and later treatment does not revive a destroyed character.
+### CPR06 Restore circulation and check death limits
+Setup: Similar living pulseless patients and a team able to provide CPR, breathing support and treatment of the cause.
+Do:
+1. Treat the actual bleeding, missing blood, airway, chest or drug problem while giving required support. Keep checking pulse/breathing through the recovery period.
+2. Compare with an untreated cause. In a separate disposable case, allow prolonged untreated deterioration.
+Pass: Proper sustained care can restore spontaneous circulation. CPR, adrenaline or repeated shocks alone do not guarantee revival. A truly dead character stays dead.
 
-## Medication pain and safeguards
+## Pain and medicines
 
-### MED01 Pain assessment and structural injury
-Setup: Verified W, F and I cases with recorded medication-free vitals and aiming behaviour.
-Do: Assess pain/medication history, dress/close/splint as appropriate and compare. Give eligible analgesia in a stable case and compare aim, pain, breathing and structural movement limits.
-Pass: Injury care and analgesia affect their configured pain contribution. Relief does not repair fractures, arm damage or lost reserve; side effects appear according to onset and active medication records.
+### MED01 Check pain and pain relief
+Setup: Separate wound, broken-leg and internal-injury cases. Record pain, vitals and aiming before medicine.
+Do:
+1. Compare pain after dressing, stitching or splinting as appropriate.
+2. Give a permitted pain medicine to a stable patient and compare pain, aim, breathing and movement.
+Pass: Pain responds to treatment and medicine. Pain relief does not heal fractures/arm damage or replace blood. Breathing/pressure side effects still matter.
 
-### MED02 Morphine
-Setup: Stable painful casualty above active safety limits; one named injector; no prior opioid.
-Do: Select a limb > Medication, give morphine, inspect use/record, then check pain, pressure and breathing before onset and after about the configured onset/duration. Repeat eligible self-use.
-Pass: Exactly one completed dose is recorded/consumed and its timed pain relief/depression is observable. No instant full heal or blood replacement occurs.
+### MED02 Give morphine
+Setup: A stable patient in pain, one morphine injector and no existing opioid dose.
+Do:
+1. Select a limb > Medication and give morphine. Check the item count and medication record.
+2. Compare pain, breathing and pressure before its effect starts, during it and after it fades. Repeat supported self-use.
+Pass: One successful dose uses one injector and produces timed effects. It does not instantly heal the patient or replace blood.
 
-### MED03 Fentanyl and its separate effects
-Setup: Stable painful casualty, B assigned medic and IV access established; record fentanyl-specific limits.
-Do: Give through limb Medication, inspect analgesia and later respiratory effect separately. Repeat without medic role, without IV and with each unsafe vital condition.
-Pass: Default medic/access safeguards are enforced without consuming refused doses. Analgesic and respiratory onset/clearance can differ; loss of pain relief does not prove respiratory depression has ended.
+### MED03 Give fentanyl
+Setup: A stable patient in pain, a medic, IV access and fentanyl. Record its separate safety settings.
+Do:
+1. Give fentanyl on a limb. Watch early pain relief and the later breathing effect separately.
+2. Repeat without medic status, without IV access and below each safety limit.
+Pass: Current role/access/safety rules are enforced without wasting refused doses. Breathing depression can last longer than pain relief.
 
-### MED04 Paracetamol and oral eligibility
-Setup: Conscious stable painful A, tablet supply; then unconscious and obstructed/poor-breathing negative cases.
-Do: Head > Medication, administer, watch self/other handling and recheck pain after onset. Try in the unsafe cases and during unsupported posture transitions.
-Pass: Tablets are oral and delayed, not an injection or instant repair. Unsafe swallowing/consciousness refuses treatment; successful use consumes one original item, with controls restored after presentation.
+### MED04 Give paracetamol
+Setup: A conscious patient in pain and tablets. Also test unconscious, blocked-airway and poor-breathing cases.
+Do:
+1. Select Head > Medication and give paracetamol. Watch self-use/handover and wait for pain relief.
+2. Try the unsafe cases and different supported stances. Check controls afterwards.
+Pass: Tablets give delayed relief and are refused when swallowing is unsafe. A successful dose uses one item and does not leave input stuck.
 
-### MED05 Naloxone and recurrence
-Setup: Confirmed active opioid effect with adequate supporting care; a separate opioid-free casualty.
-Do: Give naloxone, observe the finite reversal and continue monitoring long enough for reversal to clear while the original opioid could remain. Try without an active recorded opioid.
-Pass: Appropriate opioid effects are temporarily suppressed; trauma/blood loss remain. Recurrence is possible when timings permit. The default opioid-required refusal preserves an unnecessary dose.
+### MED05 Reverse opioid effects with naloxone
+Setup: A patient with an active recorded opioid effect, plus a comparison patient without one.
+Do:
+1. Give naloxone and watch the change in opioid effects.
+2. Keep monitoring after reversal starts wearing off. Try naloxone on the opioid-free patient.
+Pass: Reversal is temporary and does not fix traumatic blood loss. Opioid effects can return. The default unnecessary-dose refusal preserves the item.
 
-### MED06 Epinephrine
-Setup: Separate eligible R and perfusing cases; record allow-with-pulse setting and rate/pressure ceilings.
-Do: Administer in eligible states, observe timed rate/pressure change and medication record. Try high-rate/high-pressure perfusing states and pulse-present use with that permission disabled.
-Pass: Configured admission rules apply. Epinephrine does not refill blood, open an airway or guarantee ROSC; a refused dose is retained.
+### MED06 Give epinephrine
+Setup: Separate pulseless and pulse-present cases. Record the allow-with-pulse setting and rate/pressure limits.
+Do:
+1. Give epinephrine when permitted and watch its timed pulse/pressure effect and medication record.
+2. Try high pulse, high pressure and pulse-present use with that option disabled.
+Pass: The current limits are obeyed. Epinephrine does not replace blood, open the airway or guarantee revival. Refused doses remain available.
 
-### MED07 TXA eligibility and persistence of clot support
-Setup: Separate open/dressed W, unrepaired I, fully closed/repaired injury and no-IV cases.
-Do: Attempt TXA on a limb, record eligible administration, onset, dressing wear/internal flow, then repeat before its dedicated interval or at its active cap.
-Pass: Default IV and qualifying-injury requirements hold. Eligible support affects clot persistence/part of internal loss without closure or volume gain; finished injury alone does not justify repeated doses.
+### MED07 Give TXA
+Setup: An open/dressed wound or unrepaired internal bleed, IV access and TXA. Also test fully repaired injuries and no-IV cases.
+Do:
+1. Try TXA on a limb. For a successful dose, watch its onset, dressing wear and internal loss.
+2. Try repeating it too soon and while its active-dose limit is reached.
+Pass: Only eligible use succeeds. TXA supports clotting but does not close wounds, repair the source or add blood cells. Unneeded/early doses are refused.
 
-### MED08 Every safety threshold and repeat cap
-Setup: Prepared cases near each active admission threshold; healthy baseline and original medication counts.
-Do: For morphine and fentanyl test pulse, systolic pressure, respiratory rate and saturation separately just below/at/above their limits; test absent circulation. For epinephrine test rate/pressure ceilings. For all six medicines test early repeat, valid repeat and active cap using their own settings.
-Pass: Acceptance/refusal matches the actual boundary comparison, supply, route and role. An unstable state arising during a procedure is rechecked before commit. Record each drug/threshold as a separate result; no uncreated boundary is pre-passed.
+### MED08 Check medication limits
+Setup: Prepared patients close to each current safety limit and counted supplies of all six medicines.
+Do:
+1. For morphine/fentanyl, test pulse, pressure, breathing and oxygen limits separately: below, at and above. Also test absent pulse. For epinephrine test both upper limits.
+2. For every medicine test an early repeat, an allowed repeat and the active-dose limit. Include a patient becoming unsafe during administration.
+Pass: The server applies the correct limit at completion and consumes only successful doses. Record each drug/limit separately; leave a condition untested if you cannot create it.
 
-### MED09 Combining opioids and patient records
-Setup: Two distinct patients; controlled permitted doses and adequate support. Use shortened valid timings only in a labelled disposable test profile if needed.
-Do: Compare morphine alone, fentanyl alone and eligible combined active effects; switch patients during a request and inspect each history. Repeat after loss/regain of consciousness.
-Pass: Separate drug records remain patient-specific, overlapping depression is not accidentally cancelled, and duplicate clicks/replies do not add extra doses. Turning off a visual animation cannot bypass the clinical checks.
+### MED09 Check combined medicines and patient records
+Setup: Two patients and controlled, permitted morphine/fentanyl doses with support available.
+Do:
+1. Compare each opioid alone and both active together. Watch breathing/pressure as well as pain.
+2. Switch patient during a request and recheck both medication records. Repeat through unconsciousness and waking.
+Pass: Records stay with the correct patient. Effects can overlap. Extra clicks or old replies do not add doses, and cosmetic animation settings cannot bypass safety checks.
 
-## Fluids access and original supplies
+## IV access blood and fluids
 
-### FLUID01 Vascular access
-Setup: V casualty and IV cannula kit; record treated limb and access state.
-Do: Attempt held fluid/TXA/fentanyl before access where required; establish access on the chosen limb and retry. Remove/lose access mid-delivery through an available supported removal or prepared scenario.
-Pass: Required access is checked and its applied state replicates. Access loss stops delivery; a different limb or visual cannula does not silently create missing authorised access.
+### FLUID01 Insert an IV
+Setup: A patient missing blood, an IV kit and a selected limb.
+Do:
+1. Try treatments that require IV access before inserting it. Insert the IV and retry the permitted treatment.
+2. In a supported removal/prepared case, remove access during fluid delivery and check the result.
+Pass: Required IV access is enforced. Losing access stops delivery. A visual cannula or selecting another limb does not invent missing access.
 
-### FLUID02 Each held bag and composition
-Setup: Three comparable V casualties with access, no continuing loss and separately identified whole blood, saline and plasma bags.
-Do: Assess reserves, administer each held bag over its active time, recheck delivered volume, pressure, red-cell and clotting estimates. Repeat with a deliberately inadequate reserve type.
-Pass: Delivery is progressive and type-correct. Saline supplies volume without red cells/factors, plasma supplies volume/clotting without red cells, and whole blood replaces all modelled components. Pressure improvement alone is not full recovery.
+### FLUID02 Compare blood saline and plasma
+Setup: Three comparable patients with controlled blood loss, no continuing bleed and IV access. Use one named bag type per patient.
+Do:
+1. Record volume, red-cell and clotting estimates. Give whole blood, saline and plasma separately and check during/after delivery.
+2. Compare pressure improvement with the missing blood components.
+Pass: Fluid arrives gradually. Saline adds volume; plasma also supports clotting; whole blood also replaces red cells. Better pressure alone does not mean every deficit is fixed.
 
-### FLUID03 Partial cancellation and same source
-Setup: A single identified full BCM bag in B's inventory and V with enough deficit.
-Do: Cancel around halfway, inspect actual delivered amount and remaining source, transfer that exact partial item and resume it. Repeat source drop/loss and patient change in separate runs.
-Pass: Already delivered fluid remains; no further delivery occurs while stopped. The same source resumes only its remainder and cannot be swapped invisibly for a full item. Exhausted held supply is consumed once.
+### FLUID03 Stop and reuse a partly used bag
+Setup: One identified full BCM bag and a patient needing enough fluid.
+Do:
+1. Stop the held infusion about halfway. Check what reached the patient and what remains in that actual bag.
+2. Transfer the partial bag and resume it. Separately test dropping/losing it and changing patient.
+Pass: Stopping ends further delivery. The same bag supplies only its remainder. An exhausted held bag is consumed once; it never returns full.
 
-### FLUID04 Safety stops and wrong supplies
-Setup: Healthy/full reserve, high-pressure, minimal-deficit and genuine V cases; one of each bag type.
-Do: Attempt each infusion, cross an active stop threshold during delivery, and remove the required type while leaving another type in inventory.
-Pass: Current deficit/pressure safeguards stop or refuse extra delivery and preserve the unused portion. A different bag type cannot silently satisfy the named treatment or be consumed as the original source.
+### FLUID04 Check fluid safety stops
+Setup: Separate full/healthy, high-pressure, small-deficit and blood-loss cases. Keep each fluid type clearly identified.
+Do:
+1. Attempt infusions in each case and let a patient cross a stop limit during delivery.
+2. Remove the requested bag type while leaving a different type available.
+Pass: Current pressure/deficit limits stop or refuse fluid and preserve the unused amount. A different bag cannot silently replace the selected type.
 
-### FLUID05 Redistribution and no passive refill
-Setup: Controlled post-loss casualties given measured saline/plasma, no active bleed or further infusion; natural regeneration off.
-Do: Record volume/red-cell/clotting estimates immediately and at timed intervals over several redistribution time scales; compare whole blood and an untreated stable case.
-Pass: Retention follows the active model, cell-free fluids do not manufacture red cells, and stopped bleeding alone does not automatically refill volume under default settings. Redistribution is not a new external wound.
+### FLUID05 Watch fluid redistribution
+Setup: Patients after controlled blood loss and measured saline/plasma/whole-blood treatment. No continuing bleed; natural blood regeneration off.
+Do:
+1. Record blood-component estimates immediately, then at regular intervals over several minutes. Include an untreated stable comparison.
+2. Compare what remains after saline and plasma redistribute.
+Pass: Fluid types retain their intended effects. Cell-free fluid does not create red cells, and stopping bleeding alone does not refill blood under default settings.
 
-### FLUID06 Connect independent drips
-Setup: V with access and inventory capacity; B has one identified bag. Repeat whole blood, saline and plasma.
-Do: Connect the chosen drip, inspect the original item moving into A's inventory, then let B leave. Reassess and disconnect without a spare bag. Transfer the partial source to C before C reconnects; repeat eligible self-connection.
-Pass: Connection frees the operator and continues valid delivery independently. Disconnect retains the partial original; C must own the usable source for a new connection. No duplicate bag or free fluid appears.
+### FLUID06 Connect and disconnect a drip
+Setup: A patient with IV access and spare inventory space. The medic owns one identified bag. Repeat for all three fluid types.
+Do:
+1. Connect the chosen drip, check the actual bag moves to the patient, and let the medic walk away. Then disconnect without a spare bag.
+2. Transfer the partial bag to a different medic before reconnecting. Also test permitted self-connection.
+Pass: Valid delivery continues independently. Disconnection keeps the partial original. A new connection needs the usable bag in that operator's inventory; nothing duplicates.
 
-### FLUID07 Drip capacity duplication and source loss
-Setup: Empty/full patient inventory cases, one live line and a second medic/bag.
-Do: Attempt connection without capacity and a second simultaneous line; then transfer/drop/delete its source, remove access, kill/reset A or disable lines in separate runs.
-Pass: Invalid connection fails without losing/duplicating supplies. Source/access/life/settings loss stops further delivery; one original line cannot deliver twice through competing requests.
+### FLUID07 Check failed and interrupted drip connections
+Setup: Patients with room/full inventories, one active drip, a second medic and a second bag.
+Do:
+1. Try connecting without space and starting a competing line.
+2. Separately drop/transfer/delete the active source, remove IV access, kill/reset the patient and disable lines.
+Pass: Invalid connections do not lose or copy bags. Losing required source/access/state stops flow. Two requests cannot make the same line deliver twice.
 
-### FLUID08 Empty drip and transport
-Setup: A low-contents independent bag with valid access and a separate transported patient with an active line.
-Do: Run the first bag empty and inspect the physical item; try reconnecting it. Carry, drag and load/seat the second casualty where supported, then stop and recheck.
-Pass: Exhausted drip leaves a physical empty bag that cannot refill itself. Valid existing delivery can continue with transport without duplicated flow or granting otherwise prohibited new in-vehicle procedures.
+### FLUID08 Empty a drip and move the patient
+Setup: A nearly empty drip bag and another patient with a working line.
+Do:
+1. Let the first bag empty, inspect the remaining item and try reconnecting it.
+2. Carry/drag the other patient and use supported vehicle transport. Stop and check delivery again.
+Pass: An empty drip leaves an empty physical bag. A valid existing line can continue during transport, without granting blocked new vehicle treatments or extra flow.
 
-### FLUID09 Native stock saline
-Setup: Actual base-game saline, a BCM saline item for comparison, and V with access as required by the native route.
-Do: Use the native stock item through supported native actions, interrupt/retrieve it, transfer/reapply the exact source, then repeat FullHeal and SAVE recovery on that used source.
-Pass: Native saline retains its native rate/lifetime rather than being labelled a fresh BCM 500 ml bag. The original used lifetime cannot reset through retrieval, reapplication, FullHeal or supported save/restart.
+### FLUID09 Check base game saline
+Setup: An actual base-game saline item, a separate BCM saline bag and a suitable patient.
+Do:
+1. Use the base-game item's normal route. Interrupt/retrieve it, then transfer and reuse the same source.
+2. Repeat after GM FullHeal and a save/restart. Compare it with BCM saline.
+Pass: Stock saline keeps its native delivery/lifetime rules. Reusing, transferring, resetting or restarting must not give a used source a fresh lifetime.
 
-### FLUID10 Optional redistributed fluid burden
-Setup: Separate labelled profile with burden enabled; prepare redistributed cell-free fluid accumulation, plus an off-baseline case. Record pressure and functioning lung state.
-Do: Observe burden onset/severity, attempt further water-loading infusion, try needle/drain as a comparison, then allow active perfused recovery and a saved offline interval.
-Pass: Configured burden can impair lung support and block additional water loading. Pleural procedures do not clear it. Recovery follows eligible active time, not offline elapsed time; default-off produces no hidden burden penalty.
+### FLUID10 Check optional fluid overload
+Setup: A separate test profile with redistributed-fluid burden enabled, plus a default-disabled comparison.
+Do:
+1. Prepare a patient who has accumulated redistributed cell-free fluid. Observe lung effects and attempts to give more water-loading fluid. Compare a needle/drain attempt.
+2. Allow active recovery, then compare with time spent offline after saving.
+Pass: Configured overload can affect breathing and block more fluid. A chest drain does not clear it. Offline time gives no free recovery; disabled mode gives no hidden penalty.
 
-### FLUID11 Optional stable component recovery
-Setup: Recovery enabled in a separate profile, stable casualty low in red-cell/clotting reserve at a qualifying facility, adequate volume/pressure/oxygenation.
-Do: Record active recovery, then independently add ongoing loss, lower pressure/oxygenation, leave the facility or disable recovery. Compare with default-off and a save/offline interval.
-Pass: Only eligible components recover at configured rates. No circulating-volume refill, bleed repair, offline gain or resurrection occurs; each disqualifying condition pauses the benefit.
+### FLUID11 Check optional blood component recovery
+Setup: Recovery enabled separately, a stable patient low in red cells/clotting, and a qualifying facility. Keep volume, pressure and oxygen adequate.
+Do:
+1. Record recovery. Separately introduce bleeding, low pressure/oxygen, leaving the facility and disabling recovery.
+2. Compare default-disabled mode and a saved offline interval.
+Pass: Only eligible components recover. Disqualifying conditions pause it. It does not add circulating volume, heal a bleed, revive anyone or give offline gains.
 
-## Treatment transactions and progress
+## Cancelling treatments and checking progress
 
-### TXN01 Shared interruption matrix
-Setup: A valid indication, exact named original supply and known inventory. Run for bandage, splint, extraction, suture, internal/fracture repair, airway/chest procedures, IV, each drug, pads, oxygen and held/connected fluids.
-Do: In separate attempts cancel early and near completion; move beyond tolerance, leave range/line of sight, raise weapon, become unconscious, lose the original item, change role/facility, or remove the indication mid-action. Include completed controls.
-Pass: Each family follows its own commit point. Pre-commit cancellation keeps unspent consumables; held fluids/finite sources retain only what is actually left. No free completed effect, double consumption or stale reservation survives. Record family and interruption separately.
+### TXN01 Interrupt each treatment
+Setup: A suitable patient and counted original supplies. Repeat for every treatment family, including medicines, surgery, devices and fluids.
+Do:
+1. In separate runs cancel early/late, move away, raise your weapon, become unconscious, lose the item, lose required role/facility access or remove the injury.
+2. After each attempt, recheck the patient, item count and remaining contents. Include a normal completed attempt for comparison.
+Pass: Cancelled unspent items are kept. Any fluid already delivered stays delivered, with only the real remainder left. No free completed treatment, double use or stuck session occurs.
 
-### TXN02 Progress HUD timing and privacy
-Setup: Eligible B procedure on A, C nearby; compare medic/non-medic with recorded time reduction.
-Do: Time bandage, splint, surgery, suture and selected equipment/drugs; watch owner progress through start, cancel, complete and menu close/reopen. Repeat supported postures.
-Pass: Owner sees readable progress and cancel, C does not get B's private HUD, and timing follows current settings plus actual preparation/completion. Default field operations use progress-only presentation; no new animation is required for a missing motion.
+### TXN02 Check progress and treatment times
+Setup: A medic, patient and observer. Record treatment times and medic speed settings.
+Do:
+1. Time bandage, splint, surgery, suture and selected drugs/devices. Compare ordinary and medic roles, plus supported stances.
+2. Check start, cancel, finish and closing/reopening the menu.
+Pass: Only the operator gets their progress display. Timing follows active settings plus handling time. Progress-only field procedures work without a special animation or stuck controls.
 
-### TXN03 Two rescuers and repeated clicks
-Setup: B and C target the same injury with distinct counted supplies, then different injuries.
-Do: Start competing same-source procedures, spam/double click start/finish/cancel, switch region/patient, then coordinate separate permitted care.
-Pass: Authority serialises conflicting commits without duplicate consumption/heal. Independent permitted care is coherent; rejected/stale requests cannot complete on a new patient or injury.
+### TXN03 Try two medics and repeated clicks
+Setup: Two medics with separate counted supplies and one patient.
+Do:
+1. Both try treating the same injury. Double-click start/cancel/finish and change selected body part/patient during requests.
+2. Then treat different suitable injuries at the same time.
+Pass: Conflicting work does not heal or consume twice. Separate permitted work remains usable. An old request cannot finish on a newly selected patient.
 
-## Living carry drag and consent
+## Carrying and dragging living players
 
-### MOVE01 Conscious carry request
-Setup: Conscious A, first healthy then verified broken leg; B within pickup range, C observing.
-Do: B selects A and requests carry using the small medical controls. A opens their own medical interface and accepts; then repeat decline, timeout, requester cancel and out-of-range attempts.
-Pass: No conscious player is moved before explicit acceptance. Correct named offer/mode is shown; stale/declined/expired offers cannot lift A. Accepted broken-leg carry preserves the original casualty and injuries.
+### MOVE01 Ask to carry a conscious player
+Setup: A conscious player, then a conscious player with a broken leg. A rescuer stands within pickup range.
+Do:
+1. Request carry using the small medical-menu buttons. The patient opens their own medical menu and accepts.
+2. Repeat with decline, no reply until timeout, rescuer cancel and out-of-range requests.
+Pass: No conscious player moves before accepting. Refused/expired/cancelled offers stay invalid. Accepted carrying keeps the same patient, injuries and gear.
 
-### MOVE02 Conscious drag request
-Setup: Conscious A and eligible B with drag enabled; use a fresh request rather than an old carry offer.
-Do: Request drag, accept, decline, cancel and let it time out in separate runs. Try accepting a cancelled offer and accepting as a different player.
-Pass: The conscious-player consent path authorises only the actual offer, patient and mode. No stale carry token or another person's button grants drag consent.
+### MOVE02 Ask to drag a conscious player
+Setup: A conscious player and a rescuer with dragging enabled.
+Do:
+1. Send a fresh drag request and accept it. Repeat decline, timeout and cancel.
+2. Try accepting a cancelled request, an old carry request or another patient's request.
+Pass: Only the correct current drag request can be accepted. Old offers and the wrong player cannot authorise movement.
 
-### MOVE03 Unconscious pickup and waking
-Setup: A verified unconscious but alive, with named gear and current medical state.
-Do: Carry without requesting consent, release, then drag without requesting consent. Wake A through genuine stabilisation during each mode; try continuing/restarting with a fresh conscious request.
-Pass: Unconscious pickup needs no acceptance prompt. Waking ends the unconsented attachment; further conscious transport requires fresh acceptance. No injury, inventory or blood reset occurs.
+### MOVE03 Pick up an unconscious player
+Setup: A living unconscious patient with recorded injuries and equipment.
+Do:
+1. Carry them without a consent request, release, then repeat by dragging.
+2. Restore consciousness through treatment during each mode. Try moving them again with a new conscious-player request.
+Pass: Unconscious pickup needs no acceptance. Waking ends unconsented movement; continuing needs fresh consent. Injuries and gear do not reset.
 
-### MOVE04 Carry locomotion and casualty shape
-Setup: Accepted or unconscious carry, normal light/heavy loadouts and different character clothing.
-Do: A/B/C inspect front, rear and both sides while idle, walking and turning. Film shoulder contact, head, right/left arm, hips, knees and feet. Repeat both player owners.
-Pass: Carrier uses permitted normal locomotion and configured speed cap; casualty remains anatomically coherent without reversed legs, twisted hips/neck, trapped arm or large hovering/intersection. Record latest carry as visual review pending until this human check passes.
+### MOVE04 Check the carried body position
+Setup: A carried patient and observers. Repeat with light/heavy loadouts and different clothing.
+Do:
+1. Look from front, back and both sides while still, walking and turning. Record a short video.
+2. Check head, both arms, shoulder contact, hips, knees and feet. Swap who carries whom.
+Pass: Movement is slow as configured. No backwards legs, twisted hips/neck, trapped arms or severe hovering/clipping. Leave the latest carry appearance unapproved until this check passes.
 
-### MOVE05 Drag crouch and direction
-Setup: Eligible drag on flat ground with A/B/C views.
-Do: Walk forward/back/sideways, turn freely, try standing, sprint, jump, vault and climb. Compare against normal crouch speed and active drag movement fraction.
-Pass: Rescuer remains crouched, can change facing/direction and moves at the configured reduced cap. Forbidden movements do not stand/launch the casualty; drag posture remains believable with the original injuries.
+### MOVE05 Move while dragging
+Setup: A valid living drag on flat ground and an observer.
+Do:
+1. Move forward, backwards and sideways while turning to look in different directions.
+2. Try standing, sprinting, jumping, vaulting and climbing. Compare with ordinary crouch movement.
+Pass: Dragging stays crouched and slower, with free direction changes. Blocked moves must not stand up or launch the casualty.
 
-### MOVE06 Terrain obstruction and release
-Setup: Carry and drag cases near slope, steps, doorway, wall and uneven ground.
-Do: Approach each slowly, turn in tight spaces, attempt an obstructed placement and release through both participants' menus. Repeat moving across the safe-step boundary in a prepared controlled case.
-Pass: No wall teleport, ground fall-through, explosive correction or permanent attachment. Invalid floor/obstruction/excessive step yields a safe stop/release; each participant can end their permitted session.
+### MOVE06 Use slopes doors and safe release
+Setup: Carry and drag cases near slopes, steps, walls, doors and uneven ground.
+Do:
+1. Approach each slowly, turn in tight spaces and try releasing where placement is obstructed.
+2. Have each participant use their release button. Test an excessive movement step in a prepared case.
+Pass: No wall teleport, ground fall-through or permanent attachment. Unsafe movement/placement stops or releases safely, and both players can end the allowed session.
 
-### MOVE07 Competing requests and permissions
-Setup: B/C request A, then attempt on a patient already transported or seated/ineligible; toggle carry and drag separately.
-Do: Accept/reject competing offers, switch target, exceed range, disable a mode and test NPC pickup without a player dialogue.
-Pass: One authorised holder/mode owns the actual casualty. Disallowed states/settings refuse cleanly, requests do not cross-authorise, and NPC absence of consent does not bypass life/eligibility checks.
+### MOVE07 Try competing or disabled transport
+Setup: Two rescuers, one patient, a seated/already transported comparison patient and separate carry/drag switches.
+Do:
+1. Send competing requests, change target and move out of reach. Disable each mode separately and retry.
+2. Try an eligible NPC, which has no player acceptance dialogue.
+Pass: Only one valid holder/mode owns the patient. Invalid states are refused. NPC pickup still checks life and eligibility.
 
-### MOVE08 Death disconnect and active restart
-Setup: Separate accepted carry and drag sessions on a disposable save; both participants logged in normally.
-Do: In independent runs kill A, kill B, disconnect A, disconnect B, reconnect each and save/restart during attachment. Repeat with active drip and distinctive gear.
-Pass: No ghost holder, stuck input, duplicated/lost casualty or unreachable gear survives. Invalid sessions terminate safely. Restored medical/supply state stays coherent; record actual attachment restoration/release policy and require a developer ruling before accepting an ambiguous restart result.
+### MOVE08 Die disconnect or restart during transport
+Setup: Separate carry and drag cases in a disposable saved mission, with original gear recorded. Include a patient with a drip.
+Do:
+1. Separately kill the patient, kill the rescuer, disconnect each player, reconnect, and save/restart while attached.
+2. Check the original patient, equipment, line and controls after each change.
+Pass: No ghost attachment, copied/lost patient or stuck controls. Invalid sessions end safely. If restart behaviour is unclear, record it and get it reviewed rather than marking a pass.
 
-## Sling and unconscious weapon retention
+## Sling and keeping weapons when unconscious
 
-### SLING01 Default sling required policy
-Setup: Policy 1; A holds an identified rifle with recorded optic, magazine and exact round count. First carry one sling, then none.
-Do: Cause verified BCM unconsciousness through a controlled injury, inspect hands/inventory/ground from A/B/C, recover consciousness and inspect the exact weapon. Repeat rifle, sniper rifle and machine gun where supported.
-Pass: With sling, the same supported held long gun and its ammunition/attachments remain owned. Without sling, native dropping policy applies. No duplicate/prefab replacement appears, and the sling remains an inventory-only non-consumable item.
+### SLING01 Keep a rifle using a sling
+Setup: Retention policy 1. A rifle with a known optic, magazine and round count; one inventory sling.
+Do:
+1. Cause controlled BCM unconsciousness while holding the rifle. Inspect hands, inventory and ground from both players, then wake and recheck.
+2. Repeat without a sling, then with supported sniper rifles and machine guns.
+Pass: With a sling, the exact supported gun, ammo and attachments stay owned. Without it, native dropping applies. No duplicate gun appears; the sling is kept and need not be equipped.
 
-### SLING02 Other policies and item movement
-Setup: The same distinctive weapon; record policy 0 then 2 in separate runs; carried sling state known.
-Do: Repeat unconsciousness for policy 0 with sling and policy 2 without sling. Under policy 1 transfer/drop the sling before the trigger, and move it after retention separately. Change weapon before trigger.
-Pass: Policy 0 leaves native behaviour; policy 2 protects supported held long guns without a sling. Trigger uses current item/weapon ownership without conjuring protection from a transferred sling or retaining the wrong weapon.
+### SLING02 Check all retention policies
+Setup: The same identifiable long gun and recorded sling ownership.
+Do:
+1. Test policy 0 with a sling and policy 2 without one, triggering unconsciousness each time.
+2. Under policy 1, drop/transfer the sling before unconsciousness, move it after retention separately, and change the held weapon before the trigger.
+Pass: Policy 0 uses native behaviour; policy 2 keeps supported long guns without a sling. The trigger uses the actual current weapon and ownership.
 
-### SLING03 Unsupported weapons and final death
-Setup: Pistol, launcher and active grenade cases on a disposable character; sling present.
-Do: Trigger unconsciousness and compare native handling; separately follow a retained rifle through waking, actual death, body bag recovery and restart.
-Pass: Unsupported classes follow native behaviour without an unsafe blanket retention claim. Supported gear has one coherent location/owner through later transitions; no extra rifle or live grenade duplication occurs.
+### SLING03 Check other weapons and later death
+Setup: A pistol, launcher and active-grenade test on disposable characters. Also use a retained rifle.
+Do:
+1. Trigger unconsciousness with each unsupported weapon and compare normal game handling.
+2. Follow the retained rifle through waking, actual death, bagging and save/restart.
+Pass: Unsupported weapons keep native behaviour. Each weapon has one correct location/owner through later events; there is no spare rifle or live grenade duplication.
 
 ## Deceased bagging and equipment recovery
 
-### BAG01 Actual death and bag identity
-Setup: Verified deceased A with distinctive named equipment, one folded bag; separately prepare a living unconscious A.
-Do: Attempt bagging alive, then bag the actual deceased within range; search/display the result and inspect from all clients. Move out of range/cancel one attempt.
-Pass: Living casualties cannot be bagged. Successful bagging consumes one folded bag, creates one named searchable bag and transfers the original remains/equipment without duplication; interrupted attempts retain valid gear/supply.
+### BAG01 Bag a deceased player
+Setup: A genuinely dead patient with named gear and one folded bag. Use a living unconscious patient for comparison.
+Do:
+1. Try bagging the living patient, then bag the dead one within range. Search the result from different players.
+2. Cancel or move away during a separate attempt. Check the folded bag and all gear afterwards.
+Pass: Only the deceased can be bagged. Success uses one folded bag and creates one named bag with the original gear. Interrupted attempts do not lose or duplicate items.
 
-### BAG02 Dropped weapon ownership
-Setup: A's recorded native-dropped weapon within recovery radius; another unrelated weapon nearby. In a second run C takes ownership of A's drop; in a third it is outside radius.
-Do: Bag A and inventory/search all sources after each run.
-Pass: Only eligible exact recorded casualty drops are recovered. Nearby unrelated, newly owned or out-of-range items are not swept into the bag. Record all gear locations rather than just total counts.
+### BAG02 Recover the correct dropped weapon
+Setup: A dead player's recorded dropped weapon nearby, plus an unrelated weapon. Also test the casualty's drop taken by another player or outside recovery range.
+Do:
+1. Bag the casualty separately in each situation.
+2. Search the bag and inspect every weapon's final location and owner.
+Pass: Only the eligible recorded casualty drop is recovered. Unrelated, newly owned or out-of-range weapons are not swept into the bag.
 
-### BAG03 Search and simultaneous recovery
-Setup: Filled bag with named contents, B/C opening search and a third attempted bagging of the same body.
-Do: Move one item at a time, compete for the same item, close/open search and interrupt a transfer; attempt duplicate bagging.
-Pass: Search/authority locks preserve single ownership. Each item has one final location; no double loot, second bag or vanished inventory appears after rejection/reconnect.
+### BAG03 Search a bag with several players
+Setup: A filled bag with named items and two players searching it.
+Do:
+1. Move items one at a time. Both players try taking the same item; interrupt a transfer and reopen the bag.
+2. Also try bagging the same corpse twice. Reconnect and recheck contents.
+Pass: Items end up in one place only. No double loot, second bag or vanished equipment follows a rejected/interrupted action.
 
-### BAG04 Remains lifetime
-Setup: One unbagged corpse and one filled bag with evidence timestamps on a disposable mission; ordinary cleanup active.
-Do: Observe through the protected corpse interval and active bag drag/search/cargo use, then through ordinary allowed cleanup. Separately test explicit GM deletion/vehicle deletion and record the policy.
-Pass: Ordinary garbage collection respects at least the current 1800 s corpse protection and active recovery retention. Explicit deletion is not confused with ordinary GC protection; no immortal leaked session remains after intentional removal.
+### BAG04 Check bodies are not cleaned up too soon
+Setup: One unbagged corpse and one filled bag, with timestamps and normal mission cleanup running.
+Do:
+1. Watch through the current corpse protection period, at least 1800 seconds. Test active bag search/drag/cargo recovery too.
+2. Separately test deliberate GM deletion and vehicle deletion on disposable objects.
+Pass: Ordinary cleanup respects the protection/recovery rules. Deliberate deletion is recorded separately, and ended recovery sessions do not remain stuck forever.
 
 ## Bag dragging rope and cargo
 
-### BAGMOVE01 Manual filled bag drag
-Setup: Filled bag on valid ground; B uses its normal native drag action, C observing.
-Do: Start/stop, turn, walk/crouch, exceed manual movement limit, raise weapon, become unconscious, lose reach and disconnect in independent runs. Try to carry the filled bag.
-Pass: Manual dragging follows limits and releases invalid control safely. Inventory stays with the one bag; no filled-body-bag carry feature is offered as a completed workflow.
+### BAGMOVE01 Drag a filled body bag by hand
+Setup: A filled bag on suitable ground and an observer.
+Do:
+1. Use the normal drag action. Start/stop, turn, crouch/walk and try exceeding the movement limit.
+2. Separately raise your weapon, become unconscious, move out of reach and disconnect. Check for a carry option.
+Pass: Manual dragging stays within its limits and releases safely when invalid. There is still only one bag and no completed filled-bag carry workflow.
 
-### BAGMOVE02 Rope drag
-Setup: Filled bag and original rope in B's inventory; record rope length/release distance.
-Do: Attach and walk/turn/crouch/use permitted weapons, increase separation, remove the rope item, die/disconnect and detach manually in separate runs. Inspect visual tether and bag collisions from C.
-Pass: Valid rope dragging permits its intended ordinary movement, tracks the bag within configured bounds and releases when eligibility/separation fails. Rope absence cannot leave an infinite tow; no duplicate bag appears.
+### BAGMOVE02 Drag a bag with a rope
+Setup: A filled bag and a rope in the rescuer's inventory. Record the length and release-distance settings.
+Do:
+1. Attach, walk, turn and crouch; try permitted weapon use. Inspect the bag and tether from another player.
+2. Separately exceed separation, remove the rope, die, disconnect and detach manually.
+Pass: Valid towing follows the settings. Losing the required rope/state/range releases it safely, without duplicating the bag or leaving an endless tow.
 
-### CARGO01 Four vehicle families
-Setup: Jeep, truck, helicopter and ambulance variants with suitable fixed inventory capacity, stationary and within range.
-Do: For each variant load a filled named bag, inspect gear deposition, move the vehicle, unload and search both bag and vehicle. Repeat with all clients and a late joiner.
-Pass: Supported fixed cargo handles the actual bag and original gear. Unload leaves deposited gear in that vehicle inventory; a passenger seat/personal backpack is not substituted for fixed cargo.
+### CARGO01 Load and unload body bags
+Setup: A jeep, truck, helicopter and ambulance with suitable fixed cargo space. Test each variant separately.
+Do:
+1. While stationary and in range, load a named filled bag, inspect deposited gear, move the vehicle, then unload.
+2. Search the bag and vehicle. Repeat with observers and a late joiner.
+Pass: Supported cargo uses the real bag and gear. Unloading leaves deposited gear in that vehicle. Seats and personal backpacks are not treated as fixed vehicle cargo.
 
-### CARGO02 Rejections rollback and vehicle changes
-Setup: Full/unsuitable cargo, moving/out-of-range vehicle and two suitable vehicles A/B; named bag contents.
-Do: Attempt invalid loads, interrupt a valid one, then load into A, unload and load into B. Try to load one bag simultaneously, delete/destroy a vehicle in a disposable run and inspect results.
-Pass: Invalid operations do not lose/duplicate gear. Gear deposited in A is not magically recovered into B by unloading its bag. Explicit vehicle destruction is recorded separately from a transfer failure.
+### CARGO02 Try failed loads and two vehicles
+Setup: Full/unsuitable cargo, a moving/out-of-range vehicle, and two suitable vehicles. Record named bag contents.
+Do:
+1. Try invalid and interrupted loads, then simultaneous loading. Load vehicle one, unload and move the bag to vehicle two.
+2. Delete/destroy a vehicle separately and inspect where all items end up.
+Pass: Invalid transfers lose/copy nothing. Gear left in vehicle one does not magically move to vehicle two. Record deliberate vehicle destruction separately from a transfer bug.
 
 ## Burial and sending home
 
-### REMAINS01 Burial requirements and memorial
-Setup: Filled bag, natural ground and hard/invalid surfaces; B first without then with held entrenching tool.
-Do: Try invalid ground/tool/range/movement, then hold still for valid burial. Cancel once, complete once, inspect the memorial from B/C and after late join/SAVE.
-Pass: Default 30 s/4 m policy is enforced. Completed burial leaves inspectable memorial state and disposes remaining bag gear; no life refund or copied equipment. Retrieve wanted gear before this destructive test.
+### REMAINS01 Bury a body bag
+Setup: A filled bag, natural ground, hard ground and an entrenching tool. Use expendable gear.
+Do:
+1. Try without the held tool, on unsuitable ground, out of range and while moving. Cancel once, then complete a valid burial.
+2. Inspect the memorial from another player, a late joiner and after save/restart.
+Pass: Valid burial follows the set time/range, leaves the memorial and disposes remaining bag gear. It does not give back a life. Retrieve wanted items first.
 
-### REMAINS02 Send home
-Setup: Filled bag with expendable contents; qualifying native healing area/facility inactive and active variants as applicable.
-Do: Try sending home away from the qualifying area and with feature disabled; then complete the permitted action at the configured inactive native healing area. Inspect bag, gear and life allowance.
-Pass: Only the qualifying supported path disposes the actual bag/remaining gear. There is no automatic respawn permission, extra life or old separate Body Bag Admin/countdown workflow.
+### REMAINS02 Send a body bag home
+Setup: A filled bag and the qualifying inactive native healing area, plus unsuitable/active-area comparisons.
+Do:
+1. Try outside the area and with sending home disabled, then use the permitted action at the correct area.
+2. Check the bag, remaining gear and player's life allowance.
+Pass: Only the supported location/state succeeds. Disposal removes the bag and remaining gear, without an extra life, free respawn or old Body Bag Admin menu.
 
 ## Death protection lives suppression and focus
 
-### DEATH01 No instant death and depletion grace
-Setup: Fresh patient and active death/grace settings recorded; keep a medic and verified fluid source ready.
-Do: Apply controlled normally lethal trauma and inspect unconscious/living state. In separate runs let blood reach zero, hit again during depletion, supply actual fluid before expiry, and allow grace to expire untreated.
-Pass: Ordinary protected lethal damage follows BCM unconsciousness policy. Repeat hits do not restart a free grace window. Real positive fluid delivery can clear depletion before expiry, but does not erase independent terminal hypoxic debt or make the character immortal.
+### DEATH01 Check no instant death and the rescue window
+Setup: A fresh patient, a medic and a working fluid source. Record the death/grace settings.
+Do:
+1. Cause normally lethal damage and check unconscious/living state. Separately let blood reach zero, hit again during the window and give actual fluid before it ends.
+2. Run another case untreated until the window expires.
+Pass: Protected damage follows BCM unconsciousness rules. Extra hits do not restart the window. Actual fluid can rescue depletion in time, but cannot erase separate terminal oxygen damage or make the player immortal.
 
-### LIFE01 Initial spawn and exhaustion
-Setup: New disposable identity/profile with limited lives on and known total, default four including initial deployment.
-Do: Record allowance after first spawn, cancelled spawn choices, confirmed later deployments and eventual exhaustion. Reconnect to an existing surviving character and try a denied new deployment.
-Pass: Allowance is committed by deployment, not a mere query/cancel. Initial deployment counts, reconnect does not award another allowance, and exhaustion prevents an unauthorised new body without killing a surviving one.
+### LIFE01 Use and run out of lives
+Setup: A disposable test profile with limited lives enabled and a known total, normally four including the first spawn.
+Do:
+1. Check the allowance after the first spawn, cancelled spawn choices and later actual deployments. Continue until no new deployment is allowed.
+2. Reconnect to the same surviving character and try a denied new spawn.
+Pass: Actual deployments use the allowance; looking/cancelling does not. The first spawn counts. Reconnecting gives no bonus life and running out does not kill a surviving character.
 
-### LIFE02 GM administration and authority
-Setup: Connected A with recorded allowance/current injury; authorised GM and ordinary non-GM C.
-Do: Use normal character context actions to add/remove/reset allowance, revoke Edit authority and retry, then SAVE/reconnect. Try on an unsupported offline target without assuming an admin UI exists.
-Pass: Only authorised connected-target operations change the ledger; they do not heal/kill/replace A. New value persists where supported. Removed body-bag respawn controls are absent; offline administration is not claimed implemented.
+### LIFE02 Change lives as GM
+Setup: A connected injured player, an authorised GM and a normal player.
+Do:
+1. Use the normal character actions to add/remove/reset allowance. Revoke GM Edit permission and retry; also try as the normal player.
+2. Reconnect/save/restart and check the value. Check that unsupported offline targets and retired bag-admin controls are not presented as working features.
+Pass: Only authorised supported changes work. Changing allowance does not heal, kill or replace the character. Supported changes persist.
 
-### SUP01 Suppression source and cover
-Setup: Healthy stationary A, B firing controlled near misses at recorded distances with/without intervening cover; C observing.
-Do: Test qualifying near rounds, clearly distant rounds, A's own fire, successive near misses and stopping fire. Measure release and compare UI/vitals before/after.
-Pass: Qualifying incoming near misses produce configured local blur/vignette and release; own fire does not self-suppress. Cover/distance affect eligibility; suppression alone creates no wound/blood loss or shared clinical injury.
+### SUP01 Check incoming suppression
+Setup: A healthy player and a shooter using near misses at recorded distances, with/without cover.
+Do:
+1. Compare close incoming misses, distant shots and the patient's own firing.
+2. Fire several near misses, stop, and time the visual effect clearing. Check injuries and blood afterwards.
+Pass: Suitable incoming rounds cause local blur/vignette, then release. Own fire does not self-suppress. Suppression alone creates no medical injury.
 
-### SUP02 Suppression settings
-Setup: Saved baseline and separate disabled, blur-only, vignette-only and scaled settings runs.
-Do: Repeat the same firing recipe for each, including disabling during an active effect.
-Pass: Visual channels follow their separate scales and clear safely; changing these controls does not alter bleeding, health or life allowance. Record photos/video at the same resolution.
+### SUP02 Change suppression settings
+Setup: The same firing test and saved baseline settings.
+Do:
+1. Test suppression off, blur only, vignette only and stronger/weaker values separately.
+2. Disable it during an effect, then restore the original settings.
+Pass: The selected visual channels change/clear correctly. Bleeding, health and lives do not change because of these settings.
 
-### FOCUS01 Focus budget and cooldown
-Setup: Healthy A with normal optics and active focus strength/duration/cooldown recorded.
-Do: Use the normal bound focus control, hold through its budget, release/repress before and after cooldown, then test disabled and valid zero-duration unlimited configurations. Repeat ADS/optics and after medical UI close.
-Pass: Additional focus follows configured strength/budget and requires proper release/recovery after exhaustion. Native aiming/optic behaviour stays coherent; no stuck focus, camera or input persists through UI/unconsciousness.
+### FOCUS01 Check focus duration and recovery
+Setup: A healthy player with normal optics. Record focus strength, duration and cooldown.
+Do:
+1. Hold the bound focus control until exhausted. Release/retry before and after cooldown.
+2. Test disabled mode and valid zero-duration unlimited mode. Try aiming through optics and opening/closing medical UI.
+Pass: Extra focus follows its settings and resets properly after exhaustion. No stuck zoom, camera or input remains through UI use or unconsciousness.
 
 ## Applied visuals and presentation
 
-### ART01 Every applied device
-Setup: Eligible treated casualties for tourniquet, bandage markers, splint, pads, IV, mask and supported chest devices.
-Do: Inspect correct region/side from A/B/C and late joiner, change clothing/stance, remove/reset/kill where supported, and toggle master/per-device visibility and distance.
-Pass: Appearance matches authoritative application and cleans up when invalid. Cosmetic visibility does not grant treatment, duplicate a usable item or refill a finite supply. Record clipping/temporary art as distinct visual defects.
+### ART01 Check devices shown on the body
+Setup: Patients with applied tourniquet, splint, pads, IV, oxygen mask and supported chest devices.
+Do:
+1. Inspect the correct body part/side from patient, medic, observer and late joiner. Change clothing/stance and test display range/switches.
+2. Remove/reset/kill where supported and look for leftover props.
+Pass: Visible devices follow real treatment state and clean up correctly. Hiding/showing them does not provide treatment, a spare item or a refill. Record clipping separately.
 
-### ART02 Existing treatment and casualty motions
-Setup: CPR and current drug/item handling plus default progress-only field procedures; supported self/other/prone/standing cases.
-Do: Watch entry, loop, exit, cancellation and control return. Inspect sling weave/buckles in inventory and carry/drag body alignment during movement.
-Pass: No stuck motion, contorted limb or missing control follows an action. Default splint/surgery/suture show progress-only policy; the two approved original casualty poses are assessed without expecting new custom rescuer motions or shelved stretcher animations.
+### ART02 Check treatment and transport movement
+Setup: Supported self/other, standing/prone treatments, CPR, medicine use and progress-only field procedures.
+Do:
+1. Watch each action start, run, stop and cancel. Check normal controls return.
+2. Inspect the sling's fabric/buckles and carried/dragged body position during movement.
+Pass: No stuck animation or twisted limb remains. Default splint/surgery/suture work through progress bars. Assess the two original casualty poses; do not expect shelved stretcher carrying.
 
 ## Save restart and persistence
 
-### SAVE01 Settings profile versus world save
-Setup: Mission with actual native persistence enabled and a known server profile/save ID; baseline and backup recorded.
-Do: Change one harmless setting, create a wounded named casualty with gear, save the world, exit cleanly and restart using that same profile and save. Repeat once without loading the save as a comparison.
-Pass: Settings and actual world persistence are distinguishable. Valid loaded save restores supported state; merely saving settings does not recreate a casualty/world. Record profile path/save ID without uploading credentials.
+### SAVE01 Save the actual mission
+Setup: A disposable mission with native persistence enabled, a known profile/save and a backup.
+Do:
+1. Change one harmless setting, create a wounded player with named gear, save the world and restart using that same profile/save.
+2. Compare with restarting without loading the world save.
+Pass: Settings and actual world saving are separate. The correct loaded save restores supported state; saving settings alone does not recreate the mission's casualties.
 
-### SAVE02 Clinical state and old findings
-Setup: Saved wounded/splinted casualty with projectile/internal/chest/airway state and active drug records documented; each condition tested separately where necessary.
-Do: Save/restart and reconnect with the original identity, check original character/gear, then freshly examine every relevant region. Reassess CPR/rhythm and AED analysis instead of assuming old authority remains valid.
-Pass: Supported injuries, timed state and inventory restore coherently without a free heal or extra dose. Old private snapshots/expired analysis are not used as current measurements; no time-offline fluid or component gain occurs.
+### SAVE02 Restore patient injuries and medicines
+Setup: A saved patient with recorded wounds, fracture/splint, bullet, internal/chest/airway injuries and medicine history. Use separate cases as needed.
+Do:
+1. Save/restart and reconnect as the same account. Confirm the character and gear, then freshly examine each affected part.
+2. Recheck pulse/rhythm and redo AED analysis rather than trusting old results.
+Pass: Supported medical state restores once, without a free heal or extra dose. Old findings/advice are not fresh measurements and offline time gives no free fluid/recovery.
 
-### SAVE03 Finite physical equipment
-Setup: Distinct partly used oxygen kit, partly spent AED, partial held/drip BCM bag and used native saline source. Photograph/name/record each original before saving.
-Do: Save/restart/reconnect, retrieve or transfer each original, resume only an eligible use and compare remaining contents/charges/native lifetime. Include unused controls and exhausted sources.
-Pass: Exact original sources retain supported used state. Nothing refills from FullHeal, new owner, reapplication or offline duration; spent/empty sources remain spent. A missing physical source cannot be replaced by a phantom persisted delivery.
+### SAVE03 Restore partly used equipment
+Setup: Identified partly used oxygen, AED, held/drip BCM bags and native saline. Include unused and empty controls.
+Do:
+1. Record remaining contents/charges, save/restart and reconnect.
+2. Retrieve/transfer each original and resume suitable use. Compare after FullHeal and reapplication too.
+Pass: Each source keeps its supported used state. No refill or phantom delivery appears after transfer, reset, restart or loss of the real item.
 
-### SAVE04 World remains cargo and stretcher
-Setup: Separate named searchable bag, memorial, loaded vehicle cargo and placed stationary stretcher with casualty association; record gear locations and entity identities.
-Do: Save/restart, inspect with owner/observer/late joiner, search/remove/unload and compare original contents. Include a deliberately deleted source/vehicle in a separate run.
-Pass: Supported world records restore once with correct associations; cargo gear remains at the recorded vehicle. Deleted/missing objects do not produce cloned equipment or stuck recovery sessions.
+### SAVE04 Restore bags vehicles and stretchers
+Setup: Named filled bag, memorial, loaded vehicle and stationary stretcher with a patient. Record gear locations.
+Do:
+1. Save/restart. Inspect from the owner, observer and late joiner, then search/unload/remove as appropriate.
+2. Separately repeat with a deliberately deleted source/vehicle.
+Pass: Supported objects restore once with the right patient/gear links. Vehicle gear stays in its recorded cargo. Missing objects do not create copied gear or stuck sessions.
 
-## All GM controls and role boundaries
+## GM settings and medic permissions
 
-### GM01 Catalogue and permissions
-Setup: Authorised GM and normal player, fresh profile plus a backup of a complete older supported profile.
-Do: Open BCM Medical settings, count all 279 saved controls under the fifteen headings, change/save/reopen one per group and try as the normal player. Load the older profile and compare retained custom values.
-Pass: One coherent tab with fifteen groups, all catalogue entries and current schema 35; permissions enforced. Supported older complete profiles migrate without replacing valid custom values with fresh defaults.
+### GM01 Find and save the medical settings
+Setup: An authorised GM, an ordinary player, a fresh profile and a backed-up older supported complete profile.
+Do:
+1. Open BCM Medical settings. Check the fifteen headings and all 279 controls. Change/save/reopen one per group; try the same as the ordinary player.
+2. Load the older profile and compare its saved custom values.
+Pass: Permissions work and supported old settings migrate to schema 35 without replacing valid choices with fresh defaults.
 
-### GM02 Every setting worksheet
-Setup: Use Appendix A for each of the 279 entries; save active baseline and change only one independent setting at a time.
-Do: Read its label/description/allowed range, choose a valid contrasting value, save/reopen/reconnect, run its linked family case, restore baseline and rerun. For paired min/max settings keep the pair valid. Exercise UI bounds without editing production profile files.
-Pass: Saved value and observable intended effect agree across authority/clients, unrelated behaviour stays stable and baseline is restored. For retained shelved stretcher controls, verify presence/save and disabled workflow only; do not claim unimplemented carrying accepted.
+### GM02 Test each setting in the worksheet
+Setup: A saved baseline. Use every row in the settings worksheet as a separate check.
+Do:
+1. Change one setting to another valid value. Save/reopen/reconnect and repeat the linked test to see the difference. Keep paired minimum/maximum values valid.
+2. Restore the baseline and check again. Record the changed value and result beside the setting.
+Pass: The saved value produces the intended effect. Test menu limits too. For shelved stretcher controls marked *, check presence/save only and keep carrying/grip disabled.
 
-### GM03 Role assignment revocation and time reduction
-Setup: B initially ordinary, GM assigns/revokes the native BCM medic role; restrictions and reduction recorded.
-Do: For each configurable surgery, AED, fluids, advanced-airway and injectable family test allowed ordinary use, medic-only enabled, role grant and mid-action revocation. Separately test fentanyl's own role/access controls and time comparisons.
-Pass: Current authority role/policy is checked at commit and affects time as configured. UI/client flags cannot grant a forbidden treatment; default-off restrictions are not mistakenly taught as always medic-only.
+### GM03 Assign and remove medic permission
+Setup: An ordinary player who can be assigned medic by the GM. Record role limits and medic speed reduction.
+Do:
+1. For surgery, AED, fluids, advanced airway and injections, compare ordinary use, medic-only enabled, medic role granted and role revoked mid-treatment.
+2. Test fentanyl's separate role/IV options and compare treatment times.
+Pass: Current permission is checked at completion and times follow settings. Client buttons alone cannot grant access. Default-off limits are not treated as permanently medic-only.
 
-### GM04 Arsenal prices availability and refunds
-Setup: Native supply economy mission, each faction and recorded item costs/refund value.
-Do: For each of 29 entries change its price, acquire/return through supported arsenal actions and compare supply totals; toggle faction availability, reopen and reconnect. Restore values.
-Pass: Prices/refunds and US/USSR/FIA visibility match controls without duplicating stock. Hiding entries does not silently delete already carried supplies; no real-money system is implied.
+### GM04 Check every supply and arsenal setting
+Setup: US, USSR and FIA arsenals, a mission using native supply costs, and all 29 BCM items.
+Do:
+1. Take, inspect, transfer, drop/pick up and use each item. Change its price/refund setting and compare supply totals when taking/returning it.
+2. Toggle each faction's availability, reopen/reconnect and restore baseline values.
+Pass: All enabled items work under the BCM heading, with correct counts/costs/refunds. Hiding an entry does not delete carried items. Shared temporary models are recorded as art issues.
 
-### GM05 Disabled and removed scope
-Setup: Baseline player-focused build with no external AI medical mod loaded.
-Do: Inspect GM controls/actions and observe untreated NPC casualties near other NPCs. Treat NPCs manually, and inspect retired body-bag admin/AI and shelved stretcher options.
-Pass: Autonomous medical AI and old body-bag respawn administration are absent; manual care of NPCs still works. Two-player stretcher carrying remains disabled and no ACE dependency or borrowed ACE content is required.
+### GM05 Check removed and shelved features
+Setup: The player-focused mod without another AI medical mod.
+Do:
+1. Inspect GM controls and watch untreated NPC casualties near other NPCs. Treat an NPC manually.
+2. Check the old body-bag respawn admin and two-player stretcher workflow.
+Pass: Autonomous medical AI and old bag-respawn administration are absent. Players can still treat NPCs. Stretcher carrying stays disabled and no ACE addon is required.
 
-## Real multiplayer compatibility and performance
+## Multiplayer other mods and performance
 
-### NET01 Ownership observers and late join
-Setup: Dedicated server, three real accounts, then a fourth late joiner; record ordinary Internet ping.
-Do: Repeat one successful and interrupted procedure from each family, carry/drag consent/release, sling retention, bagging/search/cargo and GM allowance change. Rotate patient/operator/observer, then join after applied states exist.
-Pass: Only the proper player accepts conscious transport; authority commits once, all relevant state/visuals converge and private HUD/findings remain appropriately private. Late joiner sees current state rather than replaying consumptions or requests.
+### NET01 Compare real players and late joiners
+Setup: A dedicated server with three real accounts and a fourth joining later. Record ping.
+Do:
+1. Repeat successful/interrupted treatment from each family, carry/drag consent, sling retention, bag search/cargo and GM life changes. Swap patient/medic/observer roles.
+2. Join another player after treatments and devices are already applied.
+Pass: The correct player accepts transport, treatment is applied once, relevant state agrees and private information stays private. Joining does not repeat item use or old requests.
 
-### NET02 Disconnect latency and session recovery
-Setup: Disposable dedicated mission; baseline low ping and an ordinary higher-latency remote connection, never an active operation.
-Do: Disconnect each participant during treatment preparation, near commit, drip/oxygen, CPR, bag transfer and transport; reconnect as the original account. Repeat rapid repeated requests under latency and a clean server restart.
-Pass: No double treatment, double charge, stolen identity/allowance, ghost session or endless progress. Original items and committed partial effects reconcile. Record account authentication and actual ping; local diagnostics alone do not pass this case.
+### NET02 Disconnect during actions
+Setup: A disposable dedicated session, tested with ordinary low and higher Internet latency.
+Do:
+1. Disconnect each participant before/near completion of treatment, drip/oxygen, CPR, bag transfer and transport. Reconnect using the same account.
+2. Repeat rapid requests under latency and a clean server restart.
+Pass: No double use, wrong identity/life allowance, ghost session or endless progress. Original items and already delivered effects remain correct. A local automated client does not replace this check.
 
-### NET03 Load and long session
-Setup: Expected player count or staged increasing counts with controlled casualties; record server FPS, client FPS, memory and initial log size.
-Do: Run concurrent examinations/treatments, devices, drips, bag inventories and transports; rotate for an extended session and repeat joins/leaves. Sample metrics at regular intervals and after cleanup.
-Pass: Choose acceptable latency/FPS/memory thresholds before the run. No sustained unbounded memory/entity/log growth, repeated script error or worsening interaction delay; totals and ownership remain correct under expected load.
+### NET03 Run a busy long session
+Setup: The expected player count, or numbers increased in stages. Agree acceptable performance limits before testing.
+Do:
+1. Run simultaneous treatment, live devices/drips, bag search and transport for an extended session. Include players joining/leaving.
+2. Record server/client FPS, memory, logs and interaction delay regularly and after cleanup.
+Pass: No repeated script errors, steadily growing memory/object counts or worsening delays. Gear, patient state and ownership stay correct under the intended load.
 
-### NET04 Intended platforms and content combinations
-Setup: Separate baseline and one additional intended mod/platform/input combination at a time; identify exact versions.
-Do: Repeat INSTALL, MENU, WOUND01, TXN, MOVE, SLING and SAVE smoke cases for each intended Windows/Linux server, client/controller/console target and content pack that is actually available.
-Pass: Each tested combination has its own result/evidence. Unavailable Linux/console builds and untested third-party weapons remain NOT RUN; a Windows local pass does not certify them. Investigate a failed combination against the clean baseline before blaming either mod.
+### NET04 Try intended platforms and other mods
+Setup: A clean baseline, then one intended extra mod, platform or input combination at a time. Record versions.
+Do:
+1. Repeat menu, leg bandage, interruption, carry/drag, sling, supply and save tests for each available combination.
+2. Compare any failure with the clean baseline before deciding its cause.
+Pass: Give every combination its own result. Leave unavailable/untested Linux, console and third-party weapon combinations untested; one Windows pass does not cover them all.
 
-## Acceptance and handover
+## Record the result
 
-Treat lost/duplicated equipment, wrong-patient actions, consent bypass, infinite supplies, life bypass, persistent input lock and reproducible authority/script errors as blocking defects. Clinical wrong-side repair, uncontrolled loss after a falsely reported success, or false revival/death is also blocking. Record art/contact issues separately, with the latest carry needing explicit human visual acceptance.
+For each test, tick Pass, Fail or Not tested. Use Not tested if you cannot create the required condition. Write down which side, item, medicine or interruption you tried; repeated versions need separate results. Record failures with the test ID, what happened and a screenshot or video.
 
-The first human session is ready only when the short smoke groups pass and open blockers are reviewed. Wider player testing needs every intended feature group and relevant multiplayer/restart matrix completed. Public release additionally needs intended platform/compatibility/load acceptance and outstanding artwork/provenance review. A checklist document or an automated log is not itself a human pass.
+Stop and report wrong-patient treatment, consent bypass, lost/copied gear, infinite supplies, incorrect life use, stuck controls, repeated script errors or clearly wrong treatment/death results. Record appearance issues separately. Recheck fixed problems before approving the build.
 
-Tester signoff: __________  Build: __________  PASS/FAIL/BLOCKED/NOT RUN totals: __________
+Tester: __________  Build: __________  Date: __________
 
-Open blocking IDs and evidence: __________  Retest build/date: __________  Reviewer: __________
+Failed or untested checks: __________  Evidence or notes: __________
 
-## Appendix A Complete settings worksheet
+## Appendix A Settings worksheet
 
-The build tool appends all current canonical setting labels, defaults and linked test groups here. Each row is a separate required GM02 iteration. For each, record baseline, changed value, effect evidence and restored value; use a separate sheet keyed by the exact setting key if you need more space. A blank result is NOT RUN. Binary defaults use On/Off; other values retain their stated units or fractional scale.
+Use GM02 above for each row. Change one setting, check its effect, then restore it. Defaults below are references; your server may use different values. Write the test result and changed/restored value in your notes.
 
 <!-- GENERATED SETTINGS WORKSHEET -->
 
-Retained shelved stretcher controls are marked with *. Keep carrying/grip disabled; test presence and saving only. All other rows require a functional comparison using GM02 and their linked test family.
+Controls marked * belong to shelved stretcher carrying. Keep those features off; check that the controls exist and save only. Use GM02 and the listed checks for other rows.
 
 ### Bleeding
 
 | Control and exact key | Fresh default | Run with GM02 | Result and evidence |
 | --- | --- | --- | --- |
-| Bandage minimum wear time (seconds) (`bandageReopenMinSeconds`) | 300 | WOUND | NOT RUN |
-| Bandage maximum wear time (seconds) (`bandageReopenMaxSeconds`) | 600 | WOUND | NOT RUN |
-| Walking dressing wear multiplier (`walkingWoundWearMultiplier`) | 1.5 | WOUND | NOT RUN |
-| Running dressing wear multiplier (`runningWoundWearMultiplier`) | 3 | WOUND | NOT RUN |
-| Reopened wound bleeding fraction (`reopenedBleedingMultiplier`) | 0.65 | WOUND | NOT RUN |
-| Bandage application time (seconds) (`bandageApplicationSeconds`) | 10 | WOUND | NOT RUN |
-| Show applied tourniquets (`equipmentVisualTourniquetsEnabled`) | On | WOUND | NOT RUN |
-| Maximum dilution bleeding increase (`fluidDilutionBleedMultiplier`) | 0.5 | WOUND | NOT RUN |
-| Maximum dilution dressing wear increase (`fluidDilutionWearMultiplier`) | 1 | WOUND | NOT RUN |
+| Bandage minimum wear time (seconds) (`bandageReopenMinSeconds`) | 300 | WOUND | Not tested |
+| Bandage maximum wear time (seconds) (`bandageReopenMaxSeconds`) | 600 | WOUND | Not tested |
+| Walking dressing wear multiplier (`walkingWoundWearMultiplier`) | 1.5 | WOUND | Not tested |
+| Running dressing wear multiplier (`runningWoundWearMultiplier`) | 3 | WOUND | Not tested |
+| Reopened wound bleeding fraction (`reopenedBleedingMultiplier`) | 0.65 | WOUND | Not tested |
+| Bandage application time (seconds) (`bandageApplicationSeconds`) | 10 | WOUND | Not tested |
+| Show applied tourniquets (`equipmentVisualTourniquetsEnabled`) | On | WOUND | Not tested |
+| Maximum dilution bleeding increase (`fluidDilutionBleedMultiplier`) | 0.5 | WOUND | Not tested |
+| Maximum dilution dressing wear increase (`fluidDilutionWearMultiplier`) | 1 | WOUND | Not tested |
 
 ### Airway and breathing
 
 | Control and exact key | Fresh default | Run with GM02 | Result and evidence |
 | --- | --- | --- | --- |
-| Resting respiratory rate (`normalRespiratoryRate`) | 16 | AIR OXY | NOT RUN |
-| Oxygen response per second (`oxygenChangePerSecond`) | 0.015 | AIR OXY | NOT RUN |
-| Hypoxic arrest oxygen fraction (`arrestOxygenFraction`) | 0.3 | AIR OXY | NOT RUN |
-| Unconscious oxygen fraction (`unconsciousOxygenFraction`) | 0.65 | AIR OXY | NOT RUN |
-| Chest seal application time (seconds) (`chestSealApplicationSeconds`) | 15 | AIR OXY | NOT RUN |
-| Decompression procedure time (seconds) (`decompressionSeconds`) | 15 | AIR OXY | NOT RUN |
-| Airway adjunct insertion time (seconds) (`airwayInsertionSeconds`) | 10 | AIR OXY | NOT RUN |
-| Airway suction time (seconds) (`suctionSeconds`) | 10 | AIR OXY | NOT RUN |
-| Assisted ventilation action time (seconds) (`ventilationCycleSeconds`) | 3 | AIR OXY | NOT RUN |
-| Ventilation support per completed cycle (seconds) (`ventilationSupportSeconds`) | 5 | AIR OXY | NOT RUN |
-| Chest drain insertion time (seconds) (`chestDrainInsertionSeconds`) | 30 | AIR OXY | NOT RUN |
-| Installed drain removal rate (game ml per second) (`chestDrainMlPerSecond`) | 10 | AIR OXY | NOT RUN |
-| Lung recovery after corrected chest cause (fraction per second) (`lungReinflationPerSecond`) | 0.01 | AIR OXY | NOT RUN |
-| Chest penetration injury chance at full impact (`penetratingChestInjuryChance`) | 0.35 | AIR OXY | NOT RUN |
-| Tension chance within a generated chest injury (`initialTensionChance`) | 0.2 | AIR OXY | NOT RUN |
-| Maximum initial traumatic lung collapse fraction (`initialLungCollapseFraction`) | 0.35 | AIR OXY | NOT RUN |
-| Airway contamination chance at full head impact (`headAirwayOcclusionChance`) | 0.15 | AIR OXY | NOT RUN |
-| Generate soft-tissue airway obstruction while unconscious (`automaticUnconsciousAirwayObstruction`) | Off | AIR OXY | NOT RUN |
-| Minimum adequate ventilation rate (`adequateRespiratoryRate`) | 8 | AIR OXY | NOT RUN |
-| Portable oxygen enabled (`oxygenEnabled`) | On | AIR OXY | NOT RUN |
-| Connect oxygen equipment (seconds) (`oxygenApplicationSeconds`) | 10 | AIR OXY | NOT RUN |
-| Disconnect oxygen equipment (seconds) (`oxygenRemovalSeconds`) | 3 | AIR OXY | NOT RUN |
-| New portable oxygen capacity (litres) (`oxygenCapacityLitres`) | 300 | AIR OXY | NOT RUN |
-| Portable oxygen flow (litres/minute) (`oxygenFlowLitresPerMinute`) | 10 | AIR OXY | NOT RUN |
-| Oxygen operator maximum range (metres) (`oxygenRangeMetres`) | 3 | AIR OXY | NOT RUN |
-| Oxygen support of remaining lung capacity (`oxygenLungCompensation`) | 0.5 | AIR OXY | NOT RUN |
-| Minimum lung fraction for oxygen benefit (`oxygenMinimumLungFraction`) | 0.1 | AIR OXY | NOT RUN |
-| Oxygen connection requires medic (`medicOnlyOxygen`) | Off | AIR OXY | NOT RUN |
-| Show applied oxygen mask (`equipmentVisualOxygenEnabled`) | On | AIR OXY | NOT RUN |
-| Mask right offset (m) (`maskOffsetRight`) | 0 | AIR OXY | NOT RUN |
-| Mask up offset (m) (`maskOffsetUp`) | -0.08 | AIR OXY | NOT RUN |
-| Mask forward offset (m) (`maskOffsetForward`) | 0.09 | AIR OXY | NOT RUN |
-| Mask scale (`maskScale`) | 1.45 | AIR OXY | NOT RUN |
-| Mask yaw adjustment (`maskYawDegrees`) | 0 | AIR OXY | NOT RUN |
-| Mask pitch adjustment (`maskPitchDegrees`) | 90 | AIR OXY | NOT RUN |
-| Mask roll adjustment (`maskRollDegrees`) | 0 | AIR OXY | NOT RUN |
+| Resting respiratory rate (`normalRespiratoryRate`) | 16 | AIR | Not tested |
+| Oxygen response per second (`oxygenChangePerSecond`) | 0.015 | AIR | Not tested |
+| Hypoxic arrest oxygen fraction (`arrestOxygenFraction`) | 0.3 | AIR | Not tested |
+| Unconscious oxygen fraction (`unconsciousOxygenFraction`) | 0.65 | AIR | Not tested |
+| Chest seal application time (seconds) (`chestSealApplicationSeconds`) | 15 | AIR | Not tested |
+| Decompression procedure time (seconds) (`decompressionSeconds`) | 15 | AIR | Not tested |
+| Airway adjunct insertion time (seconds) (`airwayInsertionSeconds`) | 10 | AIR | Not tested |
+| Airway suction time (seconds) (`suctionSeconds`) | 10 | AIR | Not tested |
+| Assisted ventilation action time (seconds) (`ventilationCycleSeconds`) | 3 | AIR | Not tested |
+| Ventilation support per completed cycle (seconds) (`ventilationSupportSeconds`) | 5 | AIR | Not tested |
+| Chest drain insertion time (seconds) (`chestDrainInsertionSeconds`) | 30 | AIR | Not tested |
+| Installed drain removal rate (game ml per second) (`chestDrainMlPerSecond`) | 10 | AIR | Not tested |
+| Lung recovery after corrected chest cause (fraction per second) (`lungReinflationPerSecond`) | 0.01 | AIR | Not tested |
+| Chest penetration injury chance at full impact (`penetratingChestInjuryChance`) | 0.35 | AIR | Not tested |
+| Tension chance within a generated chest injury (`initialTensionChance`) | 0.2 | AIR | Not tested |
+| Maximum initial traumatic lung collapse fraction (`initialLungCollapseFraction`) | 0.35 | AIR | Not tested |
+| Airway contamination chance at full head impact (`headAirwayOcclusionChance`) | 0.15 | AIR | Not tested |
+| Generate soft-tissue airway obstruction while unconscious (`automaticUnconsciousAirwayObstruction`) | Off | AIR | Not tested |
+| Minimum adequate ventilation rate (`adequateRespiratoryRate`) | 8 | AIR | Not tested |
+| Portable oxygen enabled (`oxygenEnabled`) | On | OXY | Not tested |
+| Connect oxygen equipment (seconds) (`oxygenApplicationSeconds`) | 10 | OXY | Not tested |
+| Disconnect oxygen equipment (seconds) (`oxygenRemovalSeconds`) | 3 | OXY | Not tested |
+| New portable oxygen capacity (litres) (`oxygenCapacityLitres`) | 300 | OXY | Not tested |
+| Portable oxygen flow (litres/minute) (`oxygenFlowLitresPerMinute`) | 10 | OXY | Not tested |
+| Oxygen operator maximum range (metres) (`oxygenRangeMetres`) | 3 | OXY | Not tested |
+| Oxygen support of remaining lung capacity (`oxygenLungCompensation`) | 0.5 | AIR | Not tested |
+| Minimum lung fraction for oxygen benefit (`oxygenMinimumLungFraction`) | 0.1 | OXY | Not tested |
+| Oxygen connection requires medic (`medicOnlyOxygen`) | Off | OXY | Not tested |
+| Show applied oxygen mask (`equipmentVisualOxygenEnabled`) | On | OXY | Not tested |
+| Mask right offset (m) (`maskOffsetRight`) | 0 | OXY | Not tested |
+| Mask up offset (m) (`maskOffsetUp`) | -0.08 | OXY | Not tested |
+| Mask forward offset (m) (`maskOffsetForward`) | 0.09 | OXY | Not tested |
+| Mask scale (`maskScale`) | 1.45 | OXY | Not tested |
+| Mask yaw adjustment (`maskYawDegrees`) | 0 | OXY | Not tested |
+| Mask pitch adjustment (`maskPitchDegrees`) | 90 | OXY | Not tested |
+| Mask roll adjustment (`maskRollDegrees`) | 0 | OXY | Not tested |
 
 ### Circulation
 
 | Control and exact key | Fresh default | Run with GM02 | Result and evidence |
 | --- | --- | --- | --- |
-| Nominal blood volume (mL) (`normalBloodVolumeMl`) | 5000 | FLUID MON | NOT RUN |
-| Resting heart rate (`normalHeartRate`) | 75 | FLUID MON | NOT RUN |
-| Instrumented vital check time (seconds) (`monitorCheckSeconds`) | 5 | FLUID MON | NOT RUN |
-| Vascular access insertion time (seconds) (`ivAccessSeconds`) | 15 | FLUID MON | NOT RUN |
-| Fluid bag delivery time (seconds) (`fluidInfusionSeconds`) | 60 | FLUID MON | NOT RUN |
-| Fluid reserve delivered by one bag (game ml) (`fluidBagVolumeMl`) | 500 | FLUID MON | NOT RUN |
-| Pulse oximeter setup time (seconds) (`pulseOximeterApplicationSeconds`) | 5 | FLUID MON | NOT RUN |
-| Pulse oximeter operating range (metres) (`pulseOximeterRangeMetres`) | 3 | FLUID MON | NOT RUN |
-| Pulse oximeter audible range (metres) (`pulseOximeterAudibleMetres`) | 8 | FLUID MON | NOT RUN |
-| Pulse oximeter sound enabled (`pulseOximeterSoundEnabled`) | On | FLUID MON | NOT RUN |
-| Show applied chest devices (`equipmentVisualChestDevicesEnabled`) | On | FLUID MON | NOT RUN |
-| Blood-loss compensation pulse boost (`compensatoryHeartRateBoost`) | 80 | FLUID MON | NOT RUN |
-| Late shock decompensation fraction (`shockDecompensationBloodFraction`) | 0.35 | FLUID MON | NOT RUN |
-| Lower efficient pumping rate (`minimumEfficientHeartRate`) | 50 | FLUID MON | NOT RUN |
-| Upper efficient pumping rate (`maximumEfficientHeartRate`) | 180 | FLUID MON | NOT RUN |
-| Allow native passive blood regeneration (`naturalBloodRegenerationEnabled`) | Off | FLUID MON | NOT RUN |
-| Allow stabilised blood-component recovery (`componentRecoveryEnabled`) | Off | FLUID MON | NOT RUN |
-| Red-cell recovery timescale (seconds) (`redCellRecoverySeconds`) | 3600 | FLUID MON | NOT RUN |
-| Clotting recovery timescale (seconds) (`clottingRecoverySeconds`) | 900 | FLUID MON | NOT RUN |
-| Minimum volume for component recovery (`componentRecoveryMinimumBloodFraction`) | 0.8 | FLUID MON | NOT RUN |
-| Require facility for component recovery (`componentRecoveryRequiresFacility`) | On | FLUID MON | NOT RUN |
-| Minimum pressure for component recovery (`componentRecoveryMinimumSystolicPressure`) | 90 | FLUID MON | NOT RUN |
-| Allow independent fluid drips (`continuousFluidLinesEnabled`) | On | FLUID MON | NOT RUN |
-| Fluid line connection time (seconds) (`fluidLineConnectionSeconds`) | 8 | FLUID MON | NOT RUN |
-| Fluid line disconnection time (seconds) (`fluidLineRemovalSeconds`) | 3 | FLUID MON | NOT RUN |
-| Model redistributed fluid overload (`fluidOverloadEnabled`) | Off | FLUID MON | NOT RUN |
-| Fluid burden onset fraction (`fluidOverloadThresholdFraction`) | 0.15 | FLUID MON | NOT RUN |
-| Severe fluid burden fraction (`fluidOverloadSevereFraction`) | 0.4 | FLUID MON | NOT RUN |
-| Fluid burden clearance timescale (`fluidOverloadClearanceSeconds`) | 1800 | FLUID MON | NOT RUN |
-| Lung fraction at severe fluid burden (`fluidOverloadMinimumLungFraction`) | 0.65 | FLUID MON | NOT RUN |
-| Withhold additional water-loading fluids (`fluidOverloadStopAdditionalWater`) | On | FLUID MON | NOT RUN |
-| Water-loading stop severity (`fluidOverloadStopSeverity`) | 0.5 | FLUID MON | NOT RUN |
+| Nominal blood volume (mL) (`normalBloodVolumeMl`) | 5000 | FLUID | Not tested |
+| Resting heart rate (`normalHeartRate`) | 75 | FLUID | Not tested |
+| Instrumented vital check time (seconds) (`monitorCheckSeconds`) | 5 | FLUID | Not tested |
+| Vascular access insertion time (seconds) (`ivAccessSeconds`) | 15 | FLUID | Not tested |
+| Fluid bag delivery time (seconds) (`fluidInfusionSeconds`) | 60 | FLUID | Not tested |
+| Fluid reserve delivered by one bag (game ml) (`fluidBagVolumeMl`) | 500 | FLUID | Not tested |
+| Pulse oximeter setup time (seconds) (`pulseOximeterApplicationSeconds`) | 5 | MON | Not tested |
+| Pulse oximeter operating range (metres) (`pulseOximeterRangeMetres`) | 3 | MON | Not tested |
+| Pulse oximeter audible range (metres) (`pulseOximeterAudibleMetres`) | 8 | MON | Not tested |
+| Pulse oximeter sound enabled (`pulseOximeterSoundEnabled`) | On | MON | Not tested |
+| Show applied chest devices (`equipmentVisualChestDevicesEnabled`) | On | FLUID | Not tested |
+| Blood-loss compensation pulse boost (`compensatoryHeartRateBoost`) | 80 | FLUID | Not tested |
+| Late shock decompensation fraction (`shockDecompensationBloodFraction`) | 0.35 | FLUID | Not tested |
+| Lower efficient pumping rate (`minimumEfficientHeartRate`) | 50 | FLUID | Not tested |
+| Upper efficient pumping rate (`maximumEfficientHeartRate`) | 180 | FLUID | Not tested |
+| Allow native passive blood regeneration (`naturalBloodRegenerationEnabled`) | Off | FLUID | Not tested |
+| Allow stabilised blood-component recovery (`componentRecoveryEnabled`) | Off | FLUID | Not tested |
+| Red-cell recovery timescale (seconds) (`redCellRecoverySeconds`) | 3600 | FLUID | Not tested |
+| Clotting recovery timescale (seconds) (`clottingRecoverySeconds`) | 900 | FLUID | Not tested |
+| Minimum volume for component recovery (`componentRecoveryMinimumBloodFraction`) | 0.8 | FLUID | Not tested |
+| Require facility for component recovery (`componentRecoveryRequiresFacility`) | On | FLUID | Not tested |
+| Minimum pressure for component recovery (`componentRecoveryMinimumSystolicPressure`) | 90 | FLUID | Not tested |
+| Allow independent fluid drips (`continuousFluidLinesEnabled`) | On | FLUID | Not tested |
+| Fluid line connection time (seconds) (`fluidLineConnectionSeconds`) | 8 | FLUID | Not tested |
+| Fluid line disconnection time (seconds) (`fluidLineRemovalSeconds`) | 3 | FLUID | Not tested |
+| Model redistributed fluid overload (`fluidOverloadEnabled`) | Off | FLUID | Not tested |
+| Fluid burden onset fraction (`fluidOverloadThresholdFraction`) | 0.15 | FLUID | Not tested |
+| Severe fluid burden fraction (`fluidOverloadSevereFraction`) | 0.4 | FLUID | Not tested |
+| Fluid burden clearance timescale (`fluidOverloadClearanceSeconds`) | 1800 | FLUID | Not tested |
+| Lung fraction at severe fluid burden (`fluidOverloadMinimumLungFraction`) | 0.65 | FLUID | Not tested |
+| Withhold additional water-loading fluids (`fluidOverloadStopAdditionalWater`) | On | FLUID | Not tested |
+| Water-loading stop severity (`fluidOverloadStopSeverity`) | 0.5 | FLUID | Not tested |
 
 ### Resuscitation
 
 | Control and exact key | Fresh default | Run with GM02 | Result and evidence |
 | --- | --- | --- | --- |
-| BCM depletion grace (seconds) (`bloodDepletionGraceSeconds`) | 60 | CPR DEATH | NOT RUN |
-| Resting systolic pressure (`normalSystolicPressure`) | 120 | CPR DEATH | NOT RUN |
-| Circulatory arrest blood fraction (`arrestBloodFraction`) | 0.25 | CPR DEATH | NOT RUN |
-| Critical-state time before arrest (seconds) (`arrestOnsetSeconds`) | 10 | CPR DEATH | NOT RUN |
-| CPR perfusion fraction (`cprPerfusionFraction`) | 0.25 | CPR DEATH | NOT RUN |
-| Corrected reversible causes before ROSC (seconds) (`roscStabilitySeconds`) | 10 | CPR DEATH | NOT RUN |
-| Maximum hypoxic injury debt (seconds) (`hypoxicDebtLimitSeconds`) | 180 | CPR DEATH | NOT RUN |
-| AED pad application time (seconds) (`aedPadApplicationSeconds`) | 20 | CPR DEATH | NOT RUN |
-| AED analysis time (seconds) (`aedAnalysisSeconds`) | 5 | CPR DEATH | NOT RUN |
-| AED stand-clear and discharge time (seconds) (`aedShockSeconds`) | 5 | CPR DEATH | NOT RUN |
-| Maximum shock analysis age (seconds) (`aedAnalysisValiditySeconds`) | 30 | CPR DEATH | NOT RUN |
-| Available discharges per AED device (`aedShocksPerDevice`) | 20 | CPR DEATH | NOT RUN |
-| Critical slow pulse threshold (`criticalBradycardiaRate`) | 25 | CPR DEATH | NOT RUN |
-| Critical fast pulse threshold (`criticalTachycardiaRate`) | 220 | CPR DEATH | NOT RUN |
-| Critical perfusion pressure (`criticalSystolicPressure`) | 45 | CPR DEATH | NOT RUN |
-| Rate instability pressure ceiling (`criticalRatePressureCeiling`) | 90 | CPR DEATH | NOT RUN |
-| Unstable vital exposure time (seconds) (`criticalVitalExposureSeconds`) | 15 | CPR DEATH | NOT RUN |
-| Critical oxygen-delivery fraction (`criticalOxygenDeliveryFraction`) | 0.15 | CPR DEATH | NOT RUN |
-| Recovery oxygen-delivery fraction (`recoveryOxygenDeliveryFraction`) | 0.3 | CPR DEATH | NOT RUN |
+| BCM depletion grace (seconds) (`bloodDepletionGraceSeconds`) | 60 | CPR | Not tested |
+| Resting systolic pressure (`normalSystolicPressure`) | 120 | CPR | Not tested |
+| Circulatory arrest blood fraction (`arrestBloodFraction`) | 0.25 | CPR | Not tested |
+| Critical-state time before arrest (seconds) (`arrestOnsetSeconds`) | 10 | CPR | Not tested |
+| CPR perfusion fraction (`cprPerfusionFraction`) | 0.25 | CPR | Not tested |
+| Corrected reversible causes before ROSC (seconds) (`roscStabilitySeconds`) | 10 | CPR | Not tested |
+| Maximum hypoxic injury debt (seconds) (`hypoxicDebtLimitSeconds`) | 180 | CPR | Not tested |
+| AED pad application time (seconds) (`aedPadApplicationSeconds`) | 20 | CPR | Not tested |
+| AED analysis time (seconds) (`aedAnalysisSeconds`) | 5 | CPR | Not tested |
+| AED stand-clear and discharge time (seconds) (`aedShockSeconds`) | 5 | CPR | Not tested |
+| Maximum shock analysis age (seconds) (`aedAnalysisValiditySeconds`) | 30 | CPR | Not tested |
+| Available discharges per AED device (`aedShocksPerDevice`) | 20 | CPR | Not tested |
+| Critical slow pulse threshold (`criticalBradycardiaRate`) | 25 | CPR | Not tested |
+| Critical fast pulse threshold (`criticalTachycardiaRate`) | 220 | CPR | Not tested |
+| Critical perfusion pressure (`criticalSystolicPressure`) | 45 | CPR | Not tested |
+| Rate instability pressure ceiling (`criticalRatePressureCeiling`) | 90 | CPR | Not tested |
+| Unstable vital exposure time (seconds) (`criticalVitalExposureSeconds`) | 15 | CPR | Not tested |
+| Critical oxygen-delivery fraction (`criticalOxygenDeliveryFraction`) | 0.15 | CPR | Not tested |
+| Recovery oxygen-delivery fraction (`recoveryOxygenDeliveryFraction`) | 0.3 | CPR | Not tested |
 
 ### Surgery
 
 | Control and exact key | Fresh default | Run with GM02 | Result and evidence |
 | --- | --- | --- | --- |
-| Retained projectile chance (`retainedBulletChance`) | 0.4 | SURG | NOT RUN |
-| Head and torso surgery requires facility (`criticalSurgeryFacilityOnly`) | On | SURG | NOT RUN |
-| Surgery procedure time (seconds) (`surgeryDurationSeconds`) | 60 | SURG | NOT RUN |
-| Suture procedure time (seconds) (`sutureDurationSeconds`) | 60 | SURG | NOT RUN |
-| Medical facility treatment radius (metres) (`medicalFacilityRangeMetres`) | 5 | SURG | NOT RUN |
-| Internal injury chance at full penetrating impact (`penetratingInternalBleedChance`) | 0.4 | SURG | NOT RUN |
-| Maximum initial internal source flow (game ml per second) (`internalBleedMaxMlPerSecond`) | 6 | SURG | NOT RUN |
+| Retained projectile chance (`retainedBulletChance`) | 0.4 | SURG | Not tested |
+| Head and torso surgery requires facility (`criticalSurgeryFacilityOnly`) | On | SURG | Not tested |
+| Surgery procedure time (seconds) (`surgeryDurationSeconds`) | 60 | SURG | Not tested |
+| Suture procedure time (seconds) (`sutureDurationSeconds`) | 60 | SURG | Not tested |
+| Medical facility treatment radius (metres) (`medicalFacilityRangeMetres`) | 5 | SURG | Not tested |
+| Internal injury chance at full penetrating impact (`penetratingInternalBleedChance`) | 0.4 | SURG | Not tested |
+| Maximum initial internal source flow (game ml per second) (`internalBleedMaxMlPerSecond`) | 6 | SURG | Not tested |
 
 ### Fractures
 
 | Control and exact key | Fresh default | Run with GM02 | Result and evidence |
 | --- | --- | --- | --- |
-| Unsplinted leg movement fraction (`fractureUnsplitSpeedScale`) | 0.08 | LEG | NOT RUN |
-| Splinted leg movement fraction (`fractureSplintedSpeedScale`) | 0.75 | LEG | NOT RUN |
-| Splinted walking internal loss (ml/s) (`fractureWalkingBleedMlPerSecond`) | 0.15 | LEG | NOT RUN |
-| Splinted running internal loss (ml/s) (`fractureRunningBleedMlPerSecond`) | 0.45 | LEG | NOT RUN |
-| Splint application time (seconds) (`splintApplicationSeconds`) | 30 | LEG | NOT RUN |
-| Show applied leg splints (`equipmentVisualSplintsEnabled`) | On | LEG | NOT RUN |
+| Unsplinted leg movement fraction (`fractureUnsplitSpeedScale`) | 0.08 | LEG | Not tested |
+| Splinted leg movement fraction (`fractureSplintedSpeedScale`) | 0.75 | LEG | Not tested |
+| Splinted walking internal loss (ml/s) (`fractureWalkingBleedMlPerSecond`) | 0.15 | LEG | Not tested |
+| Splinted running internal loss (ml/s) (`fractureRunningBleedMlPerSecond`) | 0.45 | LEG | Not tested |
+| Splint application time (seconds) (`splintApplicationSeconds`) | 30 | LEG | Not tested |
+| Show applied leg splints (`equipmentVisualSplintsEnabled`) | On | LEG | Not tested |
 
 ### Medical interactions
 
 | Control and exact key | Fresh default | Run with GM02 | Result and evidence |
 | --- | --- | --- | --- |
-| Treatment interaction range (metres) (`treatmentRangeMetres`) | 2 | TXN GM03 SLING | NOT RUN |
-| Examination duration (seconds) (`examinationDurationSeconds`) | 2 | TXN GM03 SLING | NOT RUN |
-| CPR communication lease (seconds) (`cprLeaseSeconds`) | 5 | TXN GM03 SLING | NOT RUN |
-| Treatment movement tolerance (metres) (`treatmentMovementToleranceMetres`) | 0.5 | TXN GM03 SLING | NOT RUN |
-| Maximum procedure equipment preparation time (seconds) (`procedurePreparationSeconds`) | 15 | TXN GM03 SLING | NOT RUN |
-| Procedure animation completion grace (seconds) (`procedureCompletionGraceSeconds`) | 5 | TXN GM03 SLING | NOT RUN |
-| Medic time reduction (%) (`medicTimeReductionPercent`) | 40 | TXN GM03 SLING | NOT RUN |
-| Only medics may perform surgery (`medicOnlySurgery`) | Off | TXN GM03 SLING | NOT RUN |
-| Only medics may operate AEDs (`medicOnlyAED`) | Off | TXN GM03 SLING | NOT RUN |
-| Only medics may insert IVs and administer fluids (`medicOnlyFluids`) | Off | TXN GM03 SLING | NOT RUN |
-| Only medics may perform advanced airway procedures (`medicOnlyAdvancedAirway`) | Off | TXN GM03 SLING | NOT RUN |
-| Only medics may administer injectable medication (`medicOnlyMedication`) | Off | TXN GM03 SLING | NOT RUN |
-| Applied medical equipment visuals (`equipmentVisualsEnabled`) | On | TXN GM03 SLING | NOT RUN |
-| Applied equipment display range (metres) (`equipmentVisualRangeMetres`) | 40 | TXN GM03 SLING | NOT RUN |
-| Progress-only splint, surgery and suturing (`fieldProcedureProgressOnly`) | On | TXN GM03 SLING | NOT RUN |
-| Unconscious weapon retention (`weaponRetentionPolicy`) | 1 | TXN GM03 SLING | NOT RUN |
+| Treatment interaction range (metres) (`treatmentRangeMetres`) | 2 | TXN | Not tested |
+| Examination duration (seconds) (`examinationDurationSeconds`) | 2 | MENU | Not tested |
+| CPR communication lease (seconds) (`cprLeaseSeconds`) | 5 | TXN | Not tested |
+| Treatment movement tolerance (metres) (`treatmentMovementToleranceMetres`) | 0.5 | TXN | Not tested |
+| Maximum procedure equipment preparation time (seconds) (`procedurePreparationSeconds`) | 15 | TXN | Not tested |
+| Procedure animation completion grace (seconds) (`procedureCompletionGraceSeconds`) | 5 | TXN | Not tested |
+| Medic time reduction (%) (`medicTimeReductionPercent`) | 40 | GM03 | Not tested |
+| Only medics may perform surgery (`medicOnlySurgery`) | Off | GM03 | Not tested |
+| Only medics may operate AEDs (`medicOnlyAED`) | Off | GM03 | Not tested |
+| Only medics may insert IVs and administer fluids (`medicOnlyFluids`) | Off | GM03 | Not tested |
+| Only medics may perform advanced airway procedures (`medicOnlyAdvancedAirway`) | Off | GM03 | Not tested |
+| Only medics may administer injectable medication (`medicOnlyMedication`) | Off | GM03 | Not tested |
+| Applied medical equipment visuals (`equipmentVisualsEnabled`) | On | GM03 | Not tested |
+| Applied equipment display range (metres) (`equipmentVisualRangeMetres`) | 40 | ART01 | Not tested |
+| Progress-only splint, surgery and suturing (`fieldProcedureProgressOnly`) | On | TXN | Not tested |
+| Unconscious weapon retention (`weaponRetentionPolicy`) | 1 | SLING | Not tested |
 
 ### Body bags
 
 | Control and exact key | Fresh default | Run with GM02 | Result and evidence |
 | --- | --- | --- | --- |
-| Bagging duration (seconds) (`baggingDurationSeconds`) | 3 | BAG REMAINS | NOT RUN |
-| Bagging interaction range (metres) (`baggingRangeMetres`) | 2 | BAG REMAINS | NOT RUN |
-| Dropped casualty equipment recovery radius (metres) (`deathEquipmentRecoveryRangeMetres`) | 5 | BAG REMAINS | NOT RUN |
-| Allow body-bag burial (`burialEnabled`) | On | BAG REMAINS | NOT RUN |
-| Body-bag burial duration (seconds) (`burialDurationSeconds`) | 30 | BAG REMAINS | NOT RUN |
-| Body-bag burial range (metres) (`burialRangeMetres`) | 4 | BAG REMAINS | NOT RUN |
-| Allow sending body bags home (`sendHomeEnabled`) | On | BAG REMAINS | NOT RUN |
+| Bagging duration (seconds) (`baggingDurationSeconds`) | 3 | BAG | Not tested |
+| Bagging interaction range (metres) (`baggingRangeMetres`) | 2 | BAG | Not tested |
+| Dropped casualty equipment recovery radius (metres) (`deathEquipmentRecoveryRangeMetres`) | 5 | BAG | Not tested |
+| Allow body-bag burial (`burialEnabled`) | On | REMAINS | Not tested |
+| Body-bag burial duration (seconds) (`burialDurationSeconds`) | 30 | REMAINS | Not tested |
+| Body-bag burial range (metres) (`burialRangeMetres`) | 4 | REMAINS | Not tested |
+| Allow sending body bags home (`sendHomeEnabled`) | On | REMAINS | Not tested |
 
 ### Transport
 
 | Control and exact key | Fresh default | Run with GM02 | Result and evidence |
 | --- | --- | --- | --- |
-| Body bag rope length (metres) (`ropeLengthMetres`) | 2 | MOVE BAGMOVE CARGO LEG | NOT RUN |
-| Rope safety release distance (metres) (`ropeBreakDistanceMetres`) | 6 | MOVE BAGMOVE CARGO LEG | NOT RUN |
-| Conscious carry consent timeout (seconds) (`carryConsentTimeoutSeconds`) | 15 | MOVE BAGMOVE CARGO LEG | NOT RUN |
-| Vehicle cargo interaction range (metres) (`cargoInteractionRangeMetres`) | 5 | MOVE BAGMOVE CARGO LEG | NOT RUN |
-| Maximum loading vehicle speed (m/s) (`cargoMaxVehicleSpeedMetresPerSecond`) | 0.5 | MOVE BAGMOVE CARGO LEG | NOT RUN |
-| Bag follow speed limit (metres/second) (`bagDragMaxSpeedMetresPerSecond`) | 8 | MOVE BAGMOVE CARGO LEG | NOT RUN |
-| Bag follow responsiveness (`bagDragResponsiveness`) | 6 | MOVE BAGMOVE CARGO LEG | NOT RUN |
-| Manual drag movement limit (metres/second) (`manualBagDragMaxSpeedMetresPerSecond`) | 2.5 | MOVE BAGMOVE CARGO LEG | NOT RUN |
-| Two-player stretcher carrying * (`stretcherCarryEnabled`) | Off | Retained only | NOT RUN |
-| Stretcher handle reach (metres) * (`stretcherJoinRangeMetres`) | 1 | Retained only | NOT RUN |
-| Wait for second stretcher carrier (seconds) * (`stretcherPairTimeoutSeconds`) | 20 | Retained only | NOT RUN |
-| Minimum carrier separation (metres) * (`stretcherMinimumSpanMetres`) | 1.7 | Retained only | NOT RUN |
-| Maximum carrier separation (metres) * (`stretcherMaximumSpanMetres`) | 3.4 | Retained only | NOT RUN |
-| Stretcher carry safety speed (metres/second) * (`stretcherMaximumSpeedMetresPerSecond`) | 2.2 | Retained only | NOT RUN |
-| Stretcher carrier movement fraction * (`stretcherCarrySpeedFraction`) | 0.3 | Retained only | NOT RUN |
-| Stretcher lift height (metres) * (`stretcherCarryHeightMetres`) | 0.85 | Retained only | NOT RUN |
-| Maximum carrier height difference (metres) * (`stretcherMaximumHeightDifferenceMetres`) | 0.6 | Retained only | NOT RUN |
-| Stretcher movement protection (`stretcherStabilityEnabled`) | On | MOVE BAGMOVE CARGO LEG | NOT RUN |
-| Stretcher dressing wear reduction (`stretcherDressingWearReduction`) | 0.25 | MOVE BAGMOVE CARGO LEG | NOT RUN |
-| Stretcher carrier end offset (metres) * (`stretcherHandleOffsetMetres`) | 1.5 | Retained only | NOT RUN |
-| Stretcher maximum turn rate (degrees/second) * (`stretcherMaximumTurnDegreesPerSecond`) | 120 | Retained only | NOT RUN |
-| Stretcher hand-grip animation * (`stretcherGripAnimationEnabled`) | Off | Retained only | NOT RUN |
-| Stretcher grip blend time (seconds) * (`stretcherGripBlendSeconds`) | 0.25 | Retained only | NOT RUN |
-| Living casualty carrying (`casualtyCarryEnabled`) | On | MOVE BAGMOVE CARGO LEG | NOT RUN |
-| Living casualty dragging (`casualtyDragEnabled`) | On | MOVE BAGMOVE CARGO LEG | NOT RUN |
-| Casualty pickup and request range (`casualtyTransportRangeMetres`) | 2 | MOVE BAGMOVE CARGO LEG | NOT RUN |
-| Casualty carry movement fraction (`casualtyCarrySpeedFraction`) | 0.35 | MOVE BAGMOVE CARGO LEG | NOT RUN |
-| Casualty crouch-drag movement fraction (`casualtyDragSpeedFraction`) | 0.25 | MOVE BAGMOVE CARGO LEG | NOT RUN |
-| Casualty transport movement break distance (`casualtyTransportMaxStepMetres`) | 1.5 | MOVE BAGMOVE CARGO LEG | NOT RUN |
+| Body bag rope length (metres) (`ropeLengthMetres`) | 2 | BAGMOVE | Not tested |
+| Rope safety release distance (metres) (`ropeBreakDistanceMetres`) | 6 | BAGMOVE | Not tested |
+| Conscious carry consent timeout (seconds) (`carryConsentTimeoutSeconds`) | 15 | MOVE | Not tested |
+| Vehicle cargo interaction range (metres) (`cargoInteractionRangeMetres`) | 5 | CARGO | Not tested |
+| Maximum loading vehicle speed (m/s) (`cargoMaxVehicleSpeedMetresPerSecond`) | 0.5 | CARGO | Not tested |
+| Bag follow speed limit (metres/second) (`bagDragMaxSpeedMetresPerSecond`) | 8 | BAGMOVE | Not tested |
+| Bag follow responsiveness (`bagDragResponsiveness`) | 6 | BAGMOVE | Not tested |
+| Manual drag movement limit (metres/second) (`manualBagDragMaxSpeedMetresPerSecond`) | 2.5 | BAGMOVE | Not tested |
+| Two-player stretcher carrying * (`stretcherCarryEnabled`) | Off | Shelved | Not tested |
+| Stretcher handle reach (metres) * (`stretcherJoinRangeMetres`) | 1 | Shelved | Not tested |
+| Wait for second stretcher carrier (seconds) * (`stretcherPairTimeoutSeconds`) | 20 | Shelved | Not tested |
+| Minimum carrier separation (metres) * (`stretcherMinimumSpanMetres`) | 1.7 | Shelved | Not tested |
+| Maximum carrier separation (metres) * (`stretcherMaximumSpanMetres`) | 3.4 | Shelved | Not tested |
+| Stretcher carry safety speed (metres/second) * (`stretcherMaximumSpeedMetresPerSecond`) | 2.2 | Shelved | Not tested |
+| Stretcher carrier movement fraction * (`stretcherCarrySpeedFraction`) | 0.3 | Shelved | Not tested |
+| Stretcher lift height (metres) * (`stretcherCarryHeightMetres`) | 0.85 | Shelved | Not tested |
+| Maximum carrier height difference (metres) * (`stretcherMaximumHeightDifferenceMetres`) | 0.6 | Shelved | Not tested |
+| Stretcher movement protection (`stretcherStabilityEnabled`) | On | LEG | Not tested |
+| Stretcher dressing wear reduction (`stretcherDressingWearReduction`) | 0.25 | LEG | Not tested |
+| Stretcher carrier end offset (metres) * (`stretcherHandleOffsetMetres`) | 1.5 | Shelved | Not tested |
+| Stretcher maximum turn rate (degrees/second) * (`stretcherMaximumTurnDegreesPerSecond`) | 120 | Shelved | Not tested |
+| Stretcher hand-grip animation * (`stretcherGripAnimationEnabled`) | Off | Shelved | Not tested |
+| Stretcher grip blend time (seconds) * (`stretcherGripBlendSeconds`) | 0.25 | Shelved | Not tested |
+| Living casualty carrying (`casualtyCarryEnabled`) | On | MOVE | Not tested |
+| Living casualty dragging (`casualtyDragEnabled`) | On | MOVE | Not tested |
+| Casualty pickup and request range (`casualtyTransportRangeMetres`) | 2 | MOVE | Not tested |
+| Casualty carry movement fraction (`casualtyCarrySpeedFraction`) | 0.35 | MOVE | Not tested |
+| Casualty crouch-drag movement fraction (`casualtyDragSpeedFraction`) | 0.25 | MOVE | Not tested |
+| Casualty transport movement break distance (`casualtyTransportMaxStepMetres`) | 1.5 | MOVE | Not tested |
 
 ### Suppression
 
 | Control and exact key | Fresh default | Run with GM02 | Result and evidence |
 | --- | --- | --- | --- |
-| Suppression enabled (`suppressionEnabled`) | On | SUP | NOT RUN |
-| Suppression release (seconds) (`suppressionReleaseSeconds`) | 3 | SUP | NOT RUN |
-| Suppression blur (%) (`suppressionBlurPercent`) | 12 | SUP | NOT RUN |
-| Suppression vignette (%) (`suppressionVignettePercent`) | 18 | SUP | NOT RUN |
-| Suppression blur multiplier (`suppressionBlurMultiplier`) | 1 | SUP | NOT RUN |
-| Suppression vignette multiplier (`suppressionVignetteMultiplier`) | 1 | SUP | NOT RUN |
+| Suppression enabled (`suppressionEnabled`) | On | SUP | Not tested |
+| Suppression release (seconds) (`suppressionReleaseSeconds`) | 3 | SUP | Not tested |
+| Suppression blur (%) (`suppressionBlurPercent`) | 12 | SUP | Not tested |
+| Suppression vignette (%) (`suppressionVignettePercent`) | 18 | SUP | Not tested |
+| Suppression blur multiplier (`suppressionBlurMultiplier`) | 1 | SUP | Not tested |
+| Suppression vignette multiplier (`suppressionVignetteMultiplier`) | 1 | SUP | Not tested |
 
 ### Lives
 
 | Control and exact key | Fresh default | Run with GM02 | Result and evidence |
 | --- | --- | --- | --- |
-| Limit player lives (`livesEnabled`) | On | LIFE | NOT RUN |
-| Total lives including initial deployment (`totalLives`) | 4 | LIFE | NOT RUN |
+| Limit player lives (`livesEnabled`) | On | LIFE | Not tested |
+| Total lives including initial deployment (`totalLives`) | 4 | LIFE | Not tested |
 
 ### Focus
 
 | Control and exact key | Fresh default | Run with GM02 | Result and evidence |
 | --- | --- | --- | --- |
-| Focus budget enabled (`focusEnabled`) | On | FOCUS | NOT RUN |
-| Extra focus strength (%) (`focusStrengthPercent`) | 50 | FOCUS | NOT RUN |
-| Focus maximum duration (0 unlimited) (`focusDurationSeconds`) | 10 | FOCUS | NOT RUN |
-| Focus cooldown (seconds) (`focusCooldownSeconds`) | 30 | FOCUS | NOT RUN |
+| Focus budget enabled (`focusEnabled`) | On | FOCUS | Not tested |
+| Extra focus strength (%) (`focusStrengthPercent`) | 50 | FOCUS | Not tested |
+| Focus maximum duration (0 unlimited) (`focusDurationSeconds`) | 10 | FOCUS | Not tested |
+| Focus cooldown (seconds) (`focusCooldownSeconds`) | 30 | FOCUS | Not tested |
 
 ### Pain
 
 | Control and exact key | Fresh default | Run with GM02 | Result and evidence |
 | --- | --- | --- | --- |
-| Pain per open wound (game units) (`painWoundUnits`) | 18 | MED01 | NOT RUN |
-| Dressed wound pain multiplier (`painDressedMultiplier`) | 0.6 | MED01 | NOT RUN |
-| Closed wound pain multiplier (`painSuturedMultiplier`) | 0.2 | MED01 | NOT RUN |
-| Pain per unsupported fracture (game units) (`painFractureUnits`) | 45 | MED01 | NOT RUN |
-| Splinted fracture pain multiplier (`painSplintMultiplier`) | 0.5 | MED01 | NOT RUN |
-| Pain per active internal injury (game units) (`painInternalUnits`) | 25 | MED01 | NOT RUN |
-| Maximum pain contribution to native aiming damage (`painAimingPenalty`) | 0.4 | MED01 | NOT RUN |
-| Maximum pain pulse increase (`painHeartRateBoost`) | 15 | MED01 | NOT RUN |
+| Pain per open wound (game units) (`painWoundUnits`) | 18 | MED01 | Not tested |
+| Dressed wound pain multiplier (`painDressedMultiplier`) | 0.6 | MED01 | Not tested |
+| Closed wound pain multiplier (`painSuturedMultiplier`) | 0.2 | MED01 | Not tested |
+| Pain per unsupported fracture (game units) (`painFractureUnits`) | 45 | MED01 | Not tested |
+| Splinted fracture pain multiplier (`painSplintMultiplier`) | 0.5 | MED01 | Not tested |
+| Pain per active internal injury (game units) (`painInternalUnits`) | 25 | MED01 | Not tested |
+| Maximum pain contribution to native aiming damage (`painAimingPenalty`) | 0.4 | MED01 | Not tested |
+| Maximum pain pulse increase (`painHeartRateBoost`) | 15 | MED01 | Not tested |
 
 ### Medication
 
 | Control and exact key | Fresh default | Run with GM02 | Result and evidence |
 | --- | --- | --- | --- |
-| Medication application time (seconds) (`medicationApplicationSeconds`) | 10 | MED | NOT RUN |
-| Minimum repeat interval per medication (seconds) (`medicationRepeatSeconds`) | 60 | MED | NOT RUN |
-| Maximum concurrent doses per medication (`medicationMaxActiveDoses`) | 3 | MED | NOT RUN |
-| Morphine onset time (seconds) (`morphineOnsetSeconds`) | 30 | MED | NOT RUN |
-| Morphine effect duration (seconds) (`morphineDurationSeconds`) | 600 | MED | NOT RUN |
-| Morphine pain relief per active dose (game units) (`morphinePainReliefUnits`) | 45 | MED | NOT RUN |
-| Morphine breathing suppression per active dose (`morphineRespiratoryDepression`) | 0.35 | MED | NOT RUN |
-| Morphine pressure suppression per active dose (`morphinePressureDepression`) | 0.15 | MED | NOT RUN |
-| Naloxone onset time (seconds) (`naloxoneOnsetSeconds`) | 5 | MED | NOT RUN |
-| Naloxone effect duration (seconds) (`naloxoneDurationSeconds`) | 180 | MED | NOT RUN |
-| Naloxone opioid suppression per active dose (`naloxoneReversalFraction`) | 1 | MED | NOT RUN |
-| Epinephrine onset time (seconds) (`epinephrineOnsetSeconds`) | 10 | MED | NOT RUN |
-| Epinephrine effect duration (seconds) (`epinephrineDurationSeconds`) | 180 | MED | NOT RUN |
-| Epinephrine pulse increase per active dose (`epinephrineHeartRateBoost`) | 25 | MED | NOT RUN |
-| Epinephrine pressure increase per active dose (`epinephrinePressureBoost`) | 15 | MED | NOT RUN |
-| TXA administration time (seconds) (`txaApplicationSeconds`) | 15 | MED | NOT RUN |
-| TXA onset time (seconds) (`txaOnsetSeconds`) | 30 | MED | NOT RUN |
-| TXA effect duration (seconds) (`txaDurationSeconds`) | 600 | MED | NOT RUN |
-| TXA clot breakdown reduction (`txaClotWearReduction`) | 0.5 | MED | NOT RUN |
-| TXA minimum repeat interval (seconds) (`txaRepeatSeconds`) | 600 | MED | NOT RUN |
-| TXA maximum active administrations (`txaMaxActiveDoses`) | 1 | MED | NOT RUN |
-| TXA requires vascular access (`txaRequiresVascularAccess`) | On | MED | NOT RUN |
-| TXA restricted to medics (`txaMedicOnly`) | Off | MED | NOT RUN |
-| Show applied IV access (`equipmentVisualIVEnabled`) | On | MED | NOT RUN |
-| Medication vital-sign safeguards (`medicationVitalChecksEnabled`) | On | MED | NOT RUN |
-| Morphine minimum pulse (bpm) (`morphineMinimumHeartRate`) | 50 | MED | NOT RUN |
-| Morphine minimum systolic pressure (`morphineMinimumSystolicPressure`) | 90 | MED | NOT RUN |
-| Morphine minimum breathing rate (`morphineMinimumRespiratoryRate`) | 10 | MED | NOT RUN |
-| Morphine minimum oxygen saturation (`morphineMinimumOxygenFraction`) | 0.9 | MED | NOT RUN |
-| Epinephrine maximum pulse (bpm) (`epinephrineMaximumHeartRate`) | 180 | MED | NOT RUN |
-| Epinephrine maximum systolic pressure (`epinephrineMaximumSystolicPressure`) | 180 | MED | NOT RUN |
-| Allow epinephrine with a pulse (`epinephrineWithPulseEnabled`) | On | MED | NOT RUN |
-| Naloxone requires active opioid (`naloxoneRequiresOpioid`) | On | MED | NOT RUN |
-| Fluid vital-sign safeguards (`fluidSafetyChecksEnabled`) | On | MED | NOT RUN |
-| Fluid stop systolic pressure (`fluidMaximumSystolicPressure`) | 140 | MED | NOT RUN |
-| Minimum fluid deficit (ml) (`fluidMinimumDeficitMl`) | 50 | MED | NOT RUN |
-| TXA internal clot support fraction (`txaInternalBleedReduction`) | 0.2 | MED | NOT RUN |
-| Simulate fluid composition (`fluidCompositionEnabled`) | On | MED | NOT RUN |
-| Saline retained volume fraction (`salineRetainedFraction`) | 0.25 | MED | NOT RUN |
-| Plasma retained volume fraction (`plasmaRetainedFraction`) | 0.8 | MED | NOT RUN |
-| Fluid redistribution time scale (seconds) (`fluidRedistributionSeconds`) | 300 | MED | NOT RUN |
-| Tablet administration time (seconds) (`paracetamolApplicationSeconds`) | 10 | MED | NOT RUN |
-| Paracetamol onset (game seconds) (`paracetamolOnsetSeconds`) | 60 | MED | NOT RUN |
-| Paracetamol clearance (game seconds) (`paracetamolDurationSeconds`) | 1200 | MED | NOT RUN |
-| Tablet minimum repeat interval (seconds) (`paracetamolRepeatSeconds`) | 300 | MED | NOT RUN |
-| Maximum active tablet administrations (`paracetamolMaxActiveDoses`) | 2 | MED | NOT RUN |
-| Tablet pain relief (game units) (`paracetamolPainReliefUnits`) | 20 | MED | NOT RUN |
-| Minimum breathing rate for oral medicine (`oralMinimumRespiratoryRate`) | 10 | MED | NOT RUN |
-| Fentanyl administration (seconds) (`fentanylApplicationSeconds`) | 10 | MED | NOT RUN |
-| Fentanyl analgesic onset (game seconds) (`fentanylOnsetSeconds`) | 10 | MED | NOT RUN |
-| Fentanyl analgesic clearance (seconds) (`fentanylDurationSeconds`) | 180 | MED | NOT RUN |
-| Fentanyl breathing-effect onset (seconds) (`fentanylRespiratoryOnsetSeconds`) | 20 | MED | NOT RUN |
-| Fentanyl breathing-effect clearance (seconds) (`fentanylRespiratoryDurationSeconds`) | 300 | MED | NOT RUN |
-| Fentanyl minimum repeat interval (seconds) (`fentanylRepeatSeconds`) | 120 | MED | NOT RUN |
-| Maximum active fentanyl administrations (`fentanylMaxActiveDoses`) | 2 | MED | NOT RUN |
-| Fentanyl pain relief (game units) (`fentanylPainReliefUnits`) | 70 | MED | NOT RUN |
-| Fentanyl breathing depression fraction (`fentanylRespiratoryDepression`) | 0.5 | MED | NOT RUN |
-| Fentanyl pressure depression fraction (`fentanylPressureDepression`) | 0.2 | MED | NOT RUN |
-| Fentanyl minimum systolic pressure (`fentanylMinimumSystolicPressure`) | 100 | MED | NOT RUN |
-| Fentanyl minimum pulse (bpm) (`fentanylMinimumHeartRate`) | 50 | MED | NOT RUN |
-| Fentanyl minimum breathing rate (`fentanylMinimumRespiratoryRate`) | 12 | MED | NOT RUN |
-| Fentanyl minimum oxygen fraction (`fentanylMinimumOxygenFraction`) | 0.92 | MED | NOT RUN |
-| Fentanyl requires vascular access (`fentanylRequiresVascularAccess`) | On | MED | NOT RUN |
-| Fentanyl requires medic (`fentanylMedicOnly`) | On | MED | NOT RUN |
-| Tablet hand-to-mouth animation (`tabletAnimationEnabled`) | On | MED | NOT RUN |
+| Medication application time (seconds) (`medicationApplicationSeconds`) | 10 | MED | Not tested |
+| Minimum repeat interval per medication (seconds) (`medicationRepeatSeconds`) | 60 | MED | Not tested |
+| Maximum concurrent doses per medication (`medicationMaxActiveDoses`) | 3 | MED | Not tested |
+| Morphine onset time (seconds) (`morphineOnsetSeconds`) | 30 | MED | Not tested |
+| Morphine effect duration (seconds) (`morphineDurationSeconds`) | 600 | MED | Not tested |
+| Morphine pain relief per active dose (game units) (`morphinePainReliefUnits`) | 45 | MED | Not tested |
+| Morphine breathing suppression per active dose (`morphineRespiratoryDepression`) | 0.35 | MED | Not tested |
+| Morphine pressure suppression per active dose (`morphinePressureDepression`) | 0.15 | MED | Not tested |
+| Naloxone onset time (seconds) (`naloxoneOnsetSeconds`) | 5 | MED | Not tested |
+| Naloxone effect duration (seconds) (`naloxoneDurationSeconds`) | 180 | MED | Not tested |
+| Naloxone opioid suppression per active dose (`naloxoneReversalFraction`) | 1 | MED | Not tested |
+| Epinephrine onset time (seconds) (`epinephrineOnsetSeconds`) | 10 | MED | Not tested |
+| Epinephrine effect duration (seconds) (`epinephrineDurationSeconds`) | 180 | MED | Not tested |
+| Epinephrine pulse increase per active dose (`epinephrineHeartRateBoost`) | 25 | MED | Not tested |
+| Epinephrine pressure increase per active dose (`epinephrinePressureBoost`) | 15 | MED | Not tested |
+| TXA administration time (seconds) (`txaApplicationSeconds`) | 15 | MED | Not tested |
+| TXA onset time (seconds) (`txaOnsetSeconds`) | 30 | MED | Not tested |
+| TXA effect duration (seconds) (`txaDurationSeconds`) | 600 | MED | Not tested |
+| TXA clot breakdown reduction (`txaClotWearReduction`) | 0.5 | MED | Not tested |
+| TXA minimum repeat interval (seconds) (`txaRepeatSeconds`) | 600 | MED | Not tested |
+| TXA maximum active administrations (`txaMaxActiveDoses`) | 1 | MED | Not tested |
+| TXA requires vascular access (`txaRequiresVascularAccess`) | On | MED | Not tested |
+| TXA restricted to medics (`txaMedicOnly`) | Off | MED | Not tested |
+| Show applied IV access (`equipmentVisualIVEnabled`) | On | MED | Not tested |
+| Medication vital-sign safeguards (`medicationVitalChecksEnabled`) | On | MED | Not tested |
+| Morphine minimum pulse (bpm) (`morphineMinimumHeartRate`) | 50 | MED | Not tested |
+| Morphine minimum systolic pressure (`morphineMinimumSystolicPressure`) | 90 | MED | Not tested |
+| Morphine minimum breathing rate (`morphineMinimumRespiratoryRate`) | 10 | MED | Not tested |
+| Morphine minimum oxygen saturation (`morphineMinimumOxygenFraction`) | 0.9 | MED | Not tested |
+| Epinephrine maximum pulse (bpm) (`epinephrineMaximumHeartRate`) | 180 | MED | Not tested |
+| Epinephrine maximum systolic pressure (`epinephrineMaximumSystolicPressure`) | 180 | MED | Not tested |
+| Allow epinephrine with a pulse (`epinephrineWithPulseEnabled`) | On | MED | Not tested |
+| Naloxone requires active opioid (`naloxoneRequiresOpioid`) | On | MED | Not tested |
+| Fluid vital-sign safeguards (`fluidSafetyChecksEnabled`) | On | MED | Not tested |
+| Fluid stop systolic pressure (`fluidMaximumSystolicPressure`) | 140 | MED | Not tested |
+| Minimum fluid deficit (ml) (`fluidMinimumDeficitMl`) | 50 | MED | Not tested |
+| TXA internal clot support fraction (`txaInternalBleedReduction`) | 0.2 | MED | Not tested |
+| Simulate fluid composition (`fluidCompositionEnabled`) | On | MED | Not tested |
+| Saline retained volume fraction (`salineRetainedFraction`) | 0.25 | MED | Not tested |
+| Plasma retained volume fraction (`plasmaRetainedFraction`) | 0.8 | MED | Not tested |
+| Fluid redistribution time scale (seconds) (`fluidRedistributionSeconds`) | 300 | MED | Not tested |
+| Tablet administration time (seconds) (`paracetamolApplicationSeconds`) | 10 | MED | Not tested |
+| Paracetamol onset (game seconds) (`paracetamolOnsetSeconds`) | 60 | MED | Not tested |
+| Paracetamol clearance (game seconds) (`paracetamolDurationSeconds`) | 1200 | MED | Not tested |
+| Tablet minimum repeat interval (seconds) (`paracetamolRepeatSeconds`) | 300 | MED | Not tested |
+| Maximum active tablet administrations (`paracetamolMaxActiveDoses`) | 2 | MED | Not tested |
+| Tablet pain relief (game units) (`paracetamolPainReliefUnits`) | 20 | MED | Not tested |
+| Minimum breathing rate for oral medicine (`oralMinimumRespiratoryRate`) | 10 | MED | Not tested |
+| Fentanyl administration (seconds) (`fentanylApplicationSeconds`) | 10 | MED | Not tested |
+| Fentanyl analgesic onset (game seconds) (`fentanylOnsetSeconds`) | 10 | MED | Not tested |
+| Fentanyl analgesic clearance (seconds) (`fentanylDurationSeconds`) | 180 | MED | Not tested |
+| Fentanyl breathing-effect onset (seconds) (`fentanylRespiratoryOnsetSeconds`) | 20 | MED | Not tested |
+| Fentanyl breathing-effect clearance (seconds) (`fentanylRespiratoryDurationSeconds`) | 300 | MED | Not tested |
+| Fentanyl minimum repeat interval (seconds) (`fentanylRepeatSeconds`) | 120 | MED | Not tested |
+| Maximum active fentanyl administrations (`fentanylMaxActiveDoses`) | 2 | MED | Not tested |
+| Fentanyl pain relief (game units) (`fentanylPainReliefUnits`) | 70 | MED | Not tested |
+| Fentanyl breathing depression fraction (`fentanylRespiratoryDepression`) | 0.5 | MED | Not tested |
+| Fentanyl pressure depression fraction (`fentanylPressureDepression`) | 0.2 | MED | Not tested |
+| Fentanyl minimum systolic pressure (`fentanylMinimumSystolicPressure`) | 100 | MED | Not tested |
+| Fentanyl minimum pulse (bpm) (`fentanylMinimumHeartRate`) | 50 | MED | Not tested |
+| Fentanyl minimum breathing rate (`fentanylMinimumRespiratoryRate`) | 12 | MED | Not tested |
+| Fentanyl minimum oxygen fraction (`fentanylMinimumOxygenFraction`) | 0.92 | MED | Not tested |
+| Fentanyl requires vascular access (`fentanylRequiresVascularAccess`) | On | MED | Not tested |
+| Fentanyl requires medic (`fentanylMedicOnly`) | On | MED | Not tested |
+| Tablet hand-to-mouth animation (`tabletAnimationEnabled`) | On | MED | Not tested |
 
 ### Arsenal
 
 | Control and exact key | Fresh default | Run with GM02 | Result and evidence |
 | --- | --- | --- | --- |
-| US medical supplies (`arsenalUSEnabled`) | On | INSTALL02 GM04 | NOT RUN |
-| USSR medical supplies (`arsenalUSSREnabled`) | On | INSTALL02 GM04 | NOT RUN |
-| FIA medical supplies (`arsenalFIAEnabled`) | On | INSTALL02 GM04 | NOT RUN |
-| Medical supply refund fraction (`arsenalRefundFraction`) | 0 | INSTALL02 GM04 | NOT RUN |
-| Tourniquet supply cost (`arsenalCostTourniquet`) | 0 | INSTALL02 GM04 | NOT RUN |
-| Bandage supply cost (`arsenalCostBandage`) | 0 | INSTALL02 GM04 | NOT RUN |
-| AED supply cost (`arsenalCostAED`) | 30 | INSTALL02 GM04 | NOT RUN |
-| AED electrode pads supply cost (`arsenalCostAEDPads`) | 3 | INSTALL02 GM04 | NOT RUN |
-| AirwayAdjunct (placeholder) supply cost (`arsenalCostAirwayAdjunct`) | 3 | INSTALL02 GM04 | NOT RUN |
-| Bag valve mask supply cost (`arsenalCostBVM`) | 8 | INSTALL02 GM04 | NOT RUN |
-| ChestDrain (placeholder) supply cost (`arsenalCostChestDrain`) | 3 | INSTALL02 GM04 | NOT RUN |
-| Vented chest seal supply cost (`arsenalCostChestSeal`) | 3 | INSTALL02 GM04 | NOT RUN |
-| Body-bag drag rope supply cost (`arsenalCostDragRope`) | 2 | INSTALL02 GM04 | NOT RUN |
-| Body bag (empty) supply cost (`arsenalCostEmptyBodyBag`) | 3 | INSTALL02 GM04 | NOT RUN |
-| Epinephrine supply cost (`arsenalCostEpinephrine`) | 3 | INSTALL02 GM04 | NOT RUN |
-| Fentanyl supply cost (`arsenalCostFentanyl`) | 3 | INSTALL02 GM04 | NOT RUN |
-| Whole blood bag supply cost (`arsenalCostFluidBag`) | 3 | INSTALL02 GM04 | NOT RUN |
-| Medical monitor supply cost (`arsenalCostMonitor`) | 15 | INSTALL02 GM04 | NOT RUN |
-| Morphine supply cost (`arsenalCostMorphine`) | 3 | INSTALL02 GM04 | NOT RUN |
-| Naloxone supply cost (`arsenalCostNaloxone`) | 3 | INSTALL02 GM04 | NOT RUN |
-| NCD kit supply cost (`arsenalCostNCD`) | 3 | INSTALL02 GM04 | NOT RUN |
-| Portable oxygen kit supply cost (`arsenalCostOxygen`) | 15 | INSTALL02 GM04 | NOT RUN |
-| Paracetamol tablets supply cost (`arsenalCostParacetamol`) | 3 | INSTALL02 GM04 | NOT RUN |
-| Plasma bag supply cost (`arsenalCostPlasma`) | 3 | INSTALL02 GM04 | NOT RUN |
-| Pulse oximeter supply cost (`arsenalCostPulseOximeter`) | 3 | INSTALL02 GM04 | NOT RUN |
-| Saline bag supply cost (`arsenalCostSaline`) | 3 | INSTALL02 GM04 | NOT RUN |
-| Packaged leg splint supply cost (`arsenalCostSplint`) | 5 | INSTALL02 GM04 | NOT RUN |
-| Portable medical suction supply cost (`arsenalCostSuction`) | 10 | INSTALL02 GM04 | NOT RUN |
-| Surgery kit supply cost (`arsenalCostSurgeryKit`) | 10 | INSTALL02 GM04 | NOT RUN |
-| Suture kit supply cost (`arsenalCostSutureKit`) | 5 | INSTALL02 GM04 | NOT RUN |
-| TXA supply cost (`arsenalCostTXA`) | 3 | INSTALL02 GM04 | NOT RUN |
-| IV cannula kit supply cost (`arsenalCostVascularAccess`) | 3 | INSTALL02 GM04 | NOT RUN |
-| Weapon sling supply cost (`arsenalCostWeaponSling`) | 3 | INSTALL02 GM04 | NOT RUN |
+| US medical supplies (`arsenalUSEnabled`) | On | GM04 | Not tested |
+| USSR medical supplies (`arsenalUSSREnabled`) | On | GM04 | Not tested |
+| FIA medical supplies (`arsenalFIAEnabled`) | On | GM04 | Not tested |
+| Medical supply refund fraction (`arsenalRefundFraction`) | 0 | GM04 | Not tested |
+| Tourniquet supply cost (`arsenalCostTourniquet`) | 0 | GM04 | Not tested |
+| Bandage supply cost (`arsenalCostBandage`) | 0 | GM04 | Not tested |
+| AED supply cost (`arsenalCostAED`) | 30 | GM04 | Not tested |
+| AED electrode pads supply cost (`arsenalCostAEDPads`) | 3 | GM04 | Not tested |
+| AirwayAdjunct (placeholder) supply cost (`arsenalCostAirwayAdjunct`) | 3 | GM04 | Not tested |
+| Bag valve mask supply cost (`arsenalCostBVM`) | 8 | GM04 | Not tested |
+| ChestDrain (placeholder) supply cost (`arsenalCostChestDrain`) | 3 | GM04 | Not tested |
+| Vented chest seal supply cost (`arsenalCostChestSeal`) | 3 | GM04 | Not tested |
+| Body-bag drag rope supply cost (`arsenalCostDragRope`) | 2 | GM04 | Not tested |
+| Body bag (empty) supply cost (`arsenalCostEmptyBodyBag`) | 3 | GM04 | Not tested |
+| Epinephrine supply cost (`arsenalCostEpinephrine`) | 3 | GM04 | Not tested |
+| Fentanyl supply cost (`arsenalCostFentanyl`) | 3 | GM04 | Not tested |
+| Whole blood bag supply cost (`arsenalCostFluidBag`) | 3 | GM04 | Not tested |
+| Medical monitor supply cost (`arsenalCostMonitor`) | 15 | GM04 | Not tested |
+| Morphine supply cost (`arsenalCostMorphine`) | 3 | GM04 | Not tested |
+| Naloxone supply cost (`arsenalCostNaloxone`) | 3 | GM04 | Not tested |
+| NCD kit supply cost (`arsenalCostNCD`) | 3 | GM04 | Not tested |
+| Portable oxygen kit supply cost (`arsenalCostOxygen`) | 15 | GM04 | Not tested |
+| Paracetamol tablets supply cost (`arsenalCostParacetamol`) | 3 | GM04 | Not tested |
+| Plasma bag supply cost (`arsenalCostPlasma`) | 3 | GM04 | Not tested |
+| Pulse oximeter supply cost (`arsenalCostPulseOximeter`) | 3 | GM04 | Not tested |
+| Saline bag supply cost (`arsenalCostSaline`) | 3 | GM04 | Not tested |
+| Packaged leg splint supply cost (`arsenalCostSplint`) | 5 | GM04 | Not tested |
+| Portable medical suction supply cost (`arsenalCostSuction`) | 10 | GM04 | Not tested |
+| Surgery kit supply cost (`arsenalCostSurgeryKit`) | 10 | GM04 | Not tested |
+| Suture kit supply cost (`arsenalCostSutureKit`) | 5 | GM04 | Not tested |
+| TXA supply cost (`arsenalCostTXA`) | 3 | GM04 | Not tested |
+| IV cannula kit supply cost (`arsenalCostVascularAccess`) | 3 | GM04 | Not tested |
+| Weapon sling supply cost (`arsenalCostWeaponSling`) | 3 | GM04 | Not tested |

@@ -19,18 +19,18 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'Docs/Training'
 SOURCE = OUT / 'BCM Medical Player Test Checklist.md'
 TARGET = OUT / 'BCM Medical Player Test Checklist.docx'
-QA = ROOT / '.checks/player-test-checklist-20261031'
+QA = ROOT / '.checks/simplify-checklist-20261031'
 QA.mkdir(parents=True, exist_ok=True)
 catalog = json.loads((ROOT/'Tools/SettingsCatalog.json').read_text(encoding='utf-8-sig'))
 text = SOURCE.read_text(encoding='utf-8-sig').split('<!-- GENERATED SETTINGS WORKSHEET -->')[0]
 groups = ['Bleeding', 'Airway and breathing', 'Circulation', 'Resuscitation',
           'Surgery', 'Fractures', 'Medical interactions', 'Body bags', 'Transport',
           'Suppression', 'Lives', 'Focus', 'Pain', 'Medication', 'Arsenal']
-routes = {'Bleeding':'WOUND', 'Airway and breathing':'AIR OXY', 'Circulation':'FLUID MON',
-          'Resuscitation':'CPR DEATH', 'Surgery':'SURG', 'Fractures':'LEG',
-          'Medical interactions':'TXN GM03 SLING', 'Body bags':'BAG REMAINS',
-          'Transport':'MOVE BAGMOVE CARGO LEG', 'Suppression':'SUP', 'Lives':'LIFE',
-          'Focus':'FOCUS', 'Pain':'MED01', 'Medication':'MED', 'Arsenal':'INSTALL02 GM04'}
+routes = {'Bleeding':'WOUND', 'Airway and breathing':'AIR', 'Circulation':'FLUID',
+          'Resuscitation':'CPR', 'Surgery':'SURG', 'Fractures':'LEG',
+          'Medical interactions':'TXN', 'Body bags':'BAG',
+          'Transport':'MOVE', 'Suppression':'SUP', 'Lives':'LIFE',
+          'Focus':'FOCUS', 'Pain':'MED01', 'Medication':'MED', 'Arsenal':'GM04'}
 legacy = {'stretcherCarryEnabled', 'stretcherJoinRangeMetres',
           'stretcherPairTimeoutSeconds', 'stretcherMinimumSpanMetres',
           'stretcherMaximumSpanMetres', 'stretcherMaximumSpeedMetresPerSecond',
@@ -40,6 +40,24 @@ legacy = {'stretcherCarryEnabled', 'stretcherJoinRangeMetres',
           'stretcherGripBlendSeconds'}
 assert legacy <= {e['key'] for e in catalog}
 
+def route(entry):
+    key=entry['key'].lower()
+    label=entry['label'].lower()
+    if entry['key'] in legacy:return 'Shelved'
+    if entry['group']=='Transport':
+        if 'stretcher' in key:return 'LEG'
+        if 'vehicle' in key or 'cargo' in key:return 'CARGO'
+        if 'bag' in key or 'rope' in key:return 'BAGMOVE'
+    if entry['group']=='Medical interactions':
+        if 'weapon' in key:return 'SLING'
+        if 'medic' in label:return 'GM03'
+        if 'visual' in label or 'display' in label:return 'ART01'
+        if 'examination' in key:return 'MENU'
+    if entry['group']=='Body bags' and ('burial' in key or 'home' in key):return 'REMAINS'
+    if entry['group']=='Airway and breathing' and ('oxygen' in label or 'mask' in label) and ('portable' in label or 'operator' in label or 'mask' in label or 'connection' in label or 'connect' in label or 'oxygen benefit' in label):return 'OXY'
+    if entry['group']=='Circulation' and ('oximeter' in key or 'instrument' in key):return 'MON'
+    return routes[entry['group']]
+
 def default(entry):
     v = entry['default']
     if entry['min']==0 and entry['max']==1 and entry['step']==1:
@@ -47,7 +65,7 @@ def default(entry):
     return f'{v:g}'
 
 appendix = ['<!-- GENERATED SETTINGS WORKSHEET -->', '',
-            'Retained shelved stretcher controls are marked with *. Keep carrying/grip disabled; test presence and saving only. All other rows require a functional comparison using GM02 and their linked test family.', '']
+            'Controls marked * belong to shelved stretcher carrying. Keep those features off; check that the controls exist and save only. Use GM02 and the listed checks for other rows.', '']
 for group in groups:
     appendix += ['### '+group, '', '| Control and exact key | Fresh default | Run with GM02 | Result and evidence |',
                  '| --- | --- | --- | --- |']
@@ -55,7 +73,7 @@ for group in groups:
         if entry['group'] != group:
             continue
         mark = ' *' if entry['key'] in legacy else ''
-        appendix += [f"| {entry['label']}{mark} (`{entry['key']}`) | {default(entry)} | {'Retained only' if mark else routes[group]} | NOT RUN |"]
+        appendix += [f"| {entry['label']}{mark} (`{entry['key']}`) | {default(entry)} | {route(entry)} | Not tested |"]
     appendix += ['']
 SOURCE.write_text((text+'\n'.join(appendix)).rstrip()+'\n', encoding='utf-8')
 
@@ -72,8 +90,8 @@ for style in doc.styles:
         style.font.color.rgb = RGBColor(0,0,0)
         style.paragraph_format.widow_control = True
 normal = doc.styles['Normal']
-normal.font.size = Pt(11)
-normal.paragraph_format.line_spacing = 1.05
+normal.font.size = Pt(11.5)
+normal.paragraph_format.line_spacing = 1.08
 normal.paragraph_format.space_after = Pt(5)
 for name,size in [('Title',25),('Subtitle',12),('Heading 1',17),('Heading 2',12)]:
     style=doc.styles[name]
@@ -91,7 +109,7 @@ def para(s,style=None):
     p=doc.add_paragraph(style=style)
     label=re.match(r'^(Setup|Do|Pass): (.*)$',s)
     if label:
-        p.add_run(label[1]+': ').bold=True
+        p.add_run({'Setup':'You need','Do':'Steps','Pass':'What should happen'}[label[1]]+': ').bold=True
         p.add_run(label[2])
     else:
         p.add_run(s)
@@ -125,15 +143,24 @@ for line in text.splitlines():
         p._p.insert(0,start);p._p.append(end)
     elif line.startswith('<!--'):
         continue
+    elif line=='Do:':
+        p=para('Steps:')
+        p.runs[0].bold=True
+        p.paragraph_format.keep_with_next=True
+    elif re.match(r'^\d+\. ',line):
+        p=para(line)
+        p.paragraph_format.left_indent=Inches(.2)
+        p.paragraph_format.first_line_indent=Inches(-.2)
+        p.paragraph_format.keep_with_next=True
     else:
         p=para(line)
         if line.startswith(('Setup:','Do:')):
             p.paragraph_format.keep_with_next=True
         if line.startswith('Pass:'):
             p.paragraph_format.keep_with_next=True
-            result=para('[ ] PASS   [ ] FAIL   [ ] BLOCKED   [ ] NOT RUN     Evidence: __________')
+            result=para('[ ] Pass   [ ] Fail   [ ] Not tested     Notes: ____________________')
             result.paragraph_format.space_after=Pt(9)
-            for run in result.runs:run.font.size=Pt(9)
+            for run in result.runs:run.font.size=Pt(10)
 
 def table(entries):
     t=doc.add_table(rows=0,cols=4)
@@ -145,10 +172,10 @@ def table(entries):
     for side in ['top','bottom','left','right','insideH','insideV']:
         el=OxmlElement('w:'+side);el.set(qn('w:val'),'single');el.set(qn('w:sz'),'4');el.set(qn('w:color'),'D9D9D9');borders.append(el)
     t._tbl.tblPr.append(borders)
-    rows=[['GM control','Default','Test family','Result']]
+    rows=[['Setting','Default','Checks','Result']]
     for e in entries:
         mark=' *' if e['key'] in legacy else ''
-        rows.append([e['label']+mark,default(e),'Retained only' if mark else routes[e['group']],'________'])
+        rows.append([e['label']+mark,default(e),route(e),'________'])
     for i,row in enumerate(rows):
         cells=t.add_row().cells
         for j,(cell,content,width) in enumerate(zip(cells,row,widths)):
@@ -170,13 +197,13 @@ def table(entries):
             for c in cells:c.paragraphs[0].paragraph_format.keep_with_next=True
     doc.add_paragraph().paragraph_format.space_after=Pt(2)
 
-para('Mark P, F, B or N in each row. Record the changed/restored values and effect evidence separately under the exact control label/key. Defaults are references, not assumed live server values. Every row uses the full GM02 procedure. An asterisk marks a retained control for shelved stretcher carrying/grip: keep the workflow disabled and test presence/save only.')
+para('Write Pass, Fail or Not tested in each row, with the changed/restored values in your notes. The Checks column points to the matching test IDs above. Controls marked * belong to shelved stretcher carrying: keep carrying/grip off and check that the controls exist and save only.')
 for group in groups:
     para(group,'Heading 2')
     table([e for e in catalog if e['group']==group])
 for element in [doc._element,doc.styles.element]:
     for border in list(element.xpath('.//w:pBdr')):border.getparent().remove(border)
-assert len(cases)==len(set(cases)) and len(catalog)==279
+assert len(cases)==len(set(cases))==101 and len(catalog)==279
 doc.save(TARGET)
 manifest={'output':str(TARGET),'markdown':str(SOURCE),'cases':len(cases),'ids':cases,
           'settingRows':len(catalog),'groups':len(groups),'catalogSHA256':hashlib.sha256((ROOT/'Tools/SettingsCatalog.json').read_bytes()).hexdigest()}

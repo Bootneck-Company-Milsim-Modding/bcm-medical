@@ -17,7 +17,7 @@ Two-player stretcher carrying remains shelved and disabled. The GM stationary tr
 ## Player documents
 
 - [Medical training guide](Docs/Training/BCM%20Medical%20Player%20Training%20Guide.docx): treatment workflows, equipment, recovery, instructor drills and the complete settings reference.
-- [Player test workbook](Docs/Training/BCM%20Medical%20Player%20Test%20Checklist.docx): 104 human test cases with setup, actions, expected results and result fields, plus all 279 settings.
+- [Player test workbook](Docs/Training/BCM%20Medical%20Player%20Test%20Checklist.docx): simplified checklist starting at medical menu and assessment, with 101 checks, numbered steps, expected results and all 279 settings. The earlier introductory and installation sections have been removed at the user's request.
 - [Test checklist source and worksheet](Docs/Training/BCM%20Medical%20Player%20Test%20Checklist.md): repository-readable version with exact setting keys.
 - [Current source snapshot and validation limits](Docs/SOURCE-SNAPSHOT-20261031.md).
 - [Private test candidate](Docs/PLAYER-TEST-CANDIDATE-20261030.md): package identifier and the previous automated acceptance evidence.
