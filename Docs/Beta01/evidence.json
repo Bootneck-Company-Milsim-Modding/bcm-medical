@@ -1,0 +1,618 @@
+{
+  "collectedUtc": "2026-11-02T16:30:14.959943+00:00",
+  "results": {
+    "clinical-safety-20": {
+      "profile": ".checks/beta01-packed-20261102-145625-237/acceptance-ClinicalSafety-20261102-160904-054",
+      "consoleSha256": "17195a2032ad42d90c63a3f7714bfd149e714f33b7831452ba57098f4d93a297",
+      "completion": [
+        "14280",
+        "0",
+        "e7208f487f7b4f3081b48f05d875e221"
+      ],
+      "evidence": "Evidence/clinical-safety-20.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "clinical-safety-cleanup-10": {
+      "profile": ".checks/beta01-packed-20261102-145625-237/acceptance-ClinicalSafety-20261102-161728-912",
+      "consoleSha256": "6e6dfaa730336ce9342050a04d5314019a71be425791fc64fb4ddff72b1b2020",
+      "completion": [
+        "7140",
+        "0",
+        "dd351a4dcc4945cd90006a2e78565fdf"
+      ],
+      "evidence": "Evidence/clinical-safety-cleanup-10.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "bag-action-placement": {
+      "profile": ".checks/beta01-packed-20261102-145625-237/acceptance-BagActions-20261102-162206-749",
+      "consoleSha256": "3b55b34407f13019f5c3e4df0d06ea9d8c0a564c915f7d4aaca9bc0116dffce4",
+      "completion": [
+        "760",
+        "0",
+        "9900517a5d0e4883aeadfd6283fef149"
+      ],
+      "evidence": "Evidence/bag-action-placement.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "ui-4k-clipped": {
+      "profile": ".checks/beta01-packed-20261102-145625-237/acceptance-UI-20261102-162523-570",
+      "consoleSha256": "f4c30551c816c2af0a1836c2b134e44eb79bab296fcc493b1b31b2ca67cde1e6",
+      "completion": null,
+      "evidence": "Evidence/ui-4k-clipped.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "ui-4k-fixed": {
+      "profile": ".checks/beta01-packed-20261102-162550-552/acceptance-UI-20261102-162636-880",
+      "consoleSha256": "21f70a3c16f498d3149288c82555e2d178e0ecb44d3a331dc552d56d92364dac",
+      "completion": [
+        "30",
+        "0",
+        "924ed3bacb1741bb8aefcbf371e35ef6"
+      ],
+      "evidence": "Evidence/ui-4k-fixed.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "ui-720p-fixed": {
+      "profile": ".checks/beta01-packed-20261102-162550-552/acceptance-UI-20261102-162649-932",
+      "consoleSha256": "d40a2a67e23e692a2ed616be0e8c8825efd8392aa6e98d3636697d71076eee97",
+      "completion": [
+        "30",
+        "0",
+        "280ce26888634f8ca08daeecaa9982ce"
+      ],
+      "evidence": "Evidence/ui-720p-fixed.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "ui-ultrawide-fixed": {
+      "profile": ".checks/beta01-packed-20261102-162550-552/acceptance-UI-20261102-162702-438",
+      "consoleSha256": "1644b24b4c1b2c0d583757dad61589aa20d1109f85118aa881e823f3a931097c",
+      "completion": [
+        "30",
+        "0",
+        "76ba6831684c46f783277f47d351e528"
+      ],
+      "evidence": "Evidence/ui-ultrawide-fixed.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "packed-drag-server-final": {
+      "profile": ".checks/packed-drag-clear-corridor-20261102-113004-926/.checks/drag-network-20261102-113008-637/server",
+      "consoleSha256": "d64fb54db3fb5d653727cde8cc11769024b32212d7fbf4d347187d9d295fad39",
+      "completion": [
+        "702",
+        "0",
+        "f8a3b25079d54ee9b1bbb7f2a05738cf"
+      ],
+      "evidence": "Evidence/packed-drag-server-final.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "packed-drag-owner-final": {
+      "profile": ".checks/packed-drag-clear-corridor-20261102-113004-926/.checks/drag-network-20261102-113008-637/observer-a",
+      "consoleSha256": "10893fb7f7fd9c7e442edb29a30ea61d605b54b85113cd2f45b40e0286e22596",
+      "completion": null,
+      "evidence": "Evidence/packed-drag-owner-final.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "packed-drag-peer-final": {
+      "profile": ".checks/packed-drag-clear-corridor-20261102-113004-926/.checks/drag-network-20261102-113008-637/observer-b",
+      "consoleSha256": "6b985d26dbd7a8abb99837a9bb7c39fc6a0341420fa3f13ef84346c8a73b751e",
+      "completion": null,
+      "evidence": "Evidence/packed-drag-peer-final.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "packed-drag-late-final": {
+      "profile": ".checks/packed-drag-clear-corridor-20261102-113004-926/.checks/drag-network-20261102-113008-637/late-join",
+      "consoleSha256": "c89b793f8f233094791156dd505623786944f9235d4b8d32bdf9d159147d90e0",
+      "completion": null,
+      "evidence": "Evidence/packed-drag-late-final.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "equip-resumed": {
+      "profile": ".checks/resumed-equip-snapshot-20261102-105207-352/.checks/beta01-item-review-20261102-105228-820",
+      "consoleSha256": "3101d354c7892ba2b5f607270e7070920c8e139adf56ecac637ab883ebc98691",
+      "completion": null,
+      "evidence": "Evidence/equip-resumed.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "equipment-completed": {
+      "profile": ".checks/equipment-final-snapshot-20261102-102406-316/.checks/20261102-105133-049",
+      "consoleSha256": "38af0c4d5112a8c24dfec3c48c2e7988a8b49bbc48dc33af38b5a75fd7aa91e2",
+      "completion": [
+        "738",
+        "0",
+        "5d7d75dc8ddd425ab07c2840eea637b0"
+      ],
+      "evidence": "Evidence/equipment-completed.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "medication-completed": {
+      "profile": ".checks/equipment-final-snapshot-20261102-102406-316/.checks/20261102-105657-604",
+      "consoleSha256": "0f0a91df6cdf095d31654c01efbf45753c9ffe5f4978039f5667aca17a989bac",
+      "completion": [
+        "705",
+        "0",
+        "f538fbdee7ee4397a8c0f7c90c264e68"
+      ],
+      "evidence": "Evidence/medication-completed.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "txa-completed": {
+      "profile": ".checks/equipment-final-snapshot-20261102-102406-316/.checks/20261102-105750-302",
+      "consoleSha256": "4bafa2acd5fbba9159158a609248c3b7ef0d010a2b5ba7fdbf74d66cb98d6b99",
+      "completion": [
+        "690",
+        "0",
+        "b80c504ae03748faa26373e8c6204836"
+      ],
+      "evidence": "Evidence/txa-completed.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "drag-network-server": {
+      "profile": ".checks/drag-observers-snapshot-20261102-105525-888/.checks/drag-network-20261102-105619-363/server",
+      "consoleSha256": "7993b825c4b1c1cdd8bb78fea97e7add85902c1d8b5b5ac8c1db7168ce18f0f4",
+      "completion": [
+        "697",
+        "0",
+        "9226d17fce19458d9f6498d3681738ad"
+      ],
+      "evidence": "Evidence/drag-network-server.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "drag-network-a": {
+      "profile": ".checks/drag-observers-snapshot-20261102-105525-888/.checks/drag-network-20261102-105619-363/observer-a",
+      "consoleSha256": "d6f261b0a7128b1a076b7a860d11eca293d0c1012ce0bdea9ce1891746938c8a",
+      "completion": null,
+      "evidence": "Evidence/drag-network-a.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "drag-network-b": {
+      "profile": ".checks/drag-observers-snapshot-20261102-105525-888/.checks/drag-network-20261102-105619-363/observer-b",
+      "consoleSha256": "c030cd3d1b64d9728d37cbd8de2a0308d885d1af9fd3395822629a3d08149708",
+      "completion": null,
+      "evidence": "Evidence/drag-network-b.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "drag-network-late": {
+      "profile": ".checks/drag-observers-snapshot-20261102-105525-888/.checks/drag-network-20261102-105619-363/late-join",
+      "consoleSha256": "7c569e4920e47ee9a7793e10dd1003412570e29c0bae3e363cd95ba343384a04",
+      "completion": null,
+      "evidence": "Evidence/drag-network-late.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "packed-packing-current": {
+      "profile": ".checks/beta01-packed-20261102-110632-749/acceptance-Packing-20261102-110936-939",
+      "consoleSha256": "6d07e3d9cef7cda9e5b036c319c4360c946bcef45e9e2a557cdb69b0547851d1",
+      "completion": [
+        "698",
+        "0",
+        "36faf0947c6840058ab72810451cdc5b"
+      ],
+      "evidence": "Evidence/packed-packing-current.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "packed-recovery-current": {
+      "profile": ".checks/beta01-packed-20261102-110632-749/acceptance-Bagging-20261102-110948-399",
+      "consoleSha256": "2753883b3b29f1d73d719c872ae56955692af5f2a1e54b07d5ece859516f6678",
+      "completion": [
+        "865",
+        "0",
+        "59388b2d410b4e2fac743579309f6d6d"
+      ],
+      "evidence": "Evidence/packed-recovery-current.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "packed-slopes-current": {
+      "profile": ".checks/beta01-packed-20261102-110632-749/acceptance-DragMatrix-20261102-111025-512",
+      "consoleSha256": "0e506259bd108abaee30bbf28464b3284c88fa7bb6b266c3108233587fbab520",
+      "completion": [
+        "716",
+        "0",
+        "99e1b464984c429b9885453b0dfe3d4f"
+      ],
+      "evidence": "Evidence/packed-slopes-current.txt",
+      "status": "SUPERSEDED_FIXTURE",
+      "limitation": "Static wall was moved after spawn; native collision remained horizontal. This run does not prove obstacle rejection."
+    },
+    "settings-state": {
+      "profile": ".checks/20261102-085432-443",
+      "consoleSha256": "b2f7f6dccc082e6cc1208b9f2d56e2d2216c8028ee52dac813d2a055ded62386",
+      "completion": [
+        "223880",
+        "0",
+        "683c00e070c74791984b6cd3daf7041d"
+      ],
+      "evidence": "Evidence/settings-state.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "hold-cancellation": {
+      "profile": ".checks/20261102-092331-782",
+      "consoleSha256": "46b6264c3531a73252ea35992de9db0640e3b4bc766209859825e442e4147275",
+      "completion": [
+        "1441",
+        "0",
+        "f57bff874e9d4b2088da69fda3abbbe3"
+      ],
+      "evidence": "Evidence/hold-cancellation.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "requested-loadout": {
+      "profile": ".checks/20261102-095500-780",
+      "consoleSha256": "3b8d1cc7cf420eec708c74312869eba431f6bc4d9321ebdfea54dbf3a9cb1ceb",
+      "completion": [
+        "865",
+        "0",
+        "ad577dce96f846d39076e2c2bc2a24b0"
+      ],
+      "evidence": "Evidence/requested-loadout.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "knowledge-boundaries": {
+      "profile": ".checks/20261102-093329-927",
+      "consoleSha256": "d77edb688b765d8d639d5478efc471dcec99f88acd4580f61fb291fe918a5fb5",
+      "completion": [
+        "1892",
+        "0",
+        "b5efc0a8569140b68c2c2c13a3c74984"
+      ],
+      "evidence": "Evidence/knowledge-boundaries.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "equip-pilot": {
+      "profile": ".checks/beta01-item-review-20261102-092600-842",
+      "consoleSha256": "c147cbf7b175ebf2b7bf413a7200a5a23a7d993f2aba6545b1be5298f04d1992",
+      "completion": null,
+      "evidence": "Evidence/equip-pilot.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "equip-campaign": {
+      "profile": ".checks/beta01-item-review-20261102-093224-436",
+      "consoleSha256": "8ec105517a969d83a540a332716c2a04dff5e60e229374359fd0fb010eba502c",
+      "completion": null,
+      "evidence": "Evidence/equip-campaign.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "knowledge-menu": {
+      "profile": ".checks/visual-final-snapshot-20261102-094805-082/.checks/beta01-item-review-20261102-095712-348",
+      "consoleSha256": "162b7a95d9b710b1030f440d7812456525dc64f42ef9013474c61c94d56808db",
+      "completion": null,
+      "evidence": "Evidence/knowledge-menu.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "progress-menu-hud": {
+      "profile": ".checks/visual-final-snapshot-20261102-094805-082/.checks/beta01-item-review-20261102-095247-009",
+      "consoleSha256": "c66a7b90f8ab38fc6a55ec8772e228276561249618c2fc84b7ab413c376268dc",
+      "completion": null,
+      "evidence": "Evidence/progress-menu-hud.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "icon-board": {
+      "profile": ".checks/beta01-item-review-20261102-145406-410",
+      "consoleSha256": "98ec3f7716b5a2a19140378ed631c9e9f8312d9c6d3ac1f9f79070cf12a34b41",
+      "completion": null,
+      "evidence": "Evidence/icon-board.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "collision-packed-hands": {
+      "profile": ".checks/beta01-packed-20261102-130428-281/acceptance-Hands-20261102-130527-000",
+      "consoleSha256": "1f73e8a3ba6dc0b4ddf352f812333bd8635152cde935221a2e6d43e4807d0fc5",
+      "completion": [
+        "734",
+        "0",
+        "73d4eff2ea8c40a6ba81ef9ebb385338"
+      ],
+      "evidence": "Evidence/collision-packed-hands.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "ui-fixed-wall-time-failure": {
+      "profile": ".checks/beta01-packed-20261102-134409-602/acceptance-UI-20261102-134528-441",
+      "consoleSha256": "d55964328fac899bd0392ecb5fcb419277e45eae0b3cc56553df6a0fef442b96",
+      "completion": null,
+      "evidence": "Evidence/ui-fixed-wall-time-failure.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "ui-acknowledged-deadline": {
+      "profile": ".checks/beta01-packed-20261102-134409-602/acceptance-UI-20261102-135048-286",
+      "consoleSha256": "c8e133174d163f5f3b577065a761aba566373a0578bfbbe96a02a06d4b194538",
+      "completion": [
+        "29",
+        "0",
+        "3f4bd31feb4348a79a57f5635a94f76e"
+      ],
+      "evidence": "Evidence/ui-acknowledged-deadline.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "human-h-toggle-confirmed": {
+      "profile": ".checks/toggle-context-review-20261102-144155-774",
+      "consoleSha256": "cd9c1544993e76e0921921cee64b10eb30ad54c8db0116133dc21be99665b997",
+      "completion": null,
+      "evidence": "Evidence/human-h-toggle-confirmed.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "native-toggle-200": {
+      "profile": ".checks/beta01-packed-20261102-143953-395/acceptance-Hint-20261102-144316-290",
+      "consoleSha256": "8b188adccb9dd3abe8f5545be2b8b146b28b3948a6607f35a1e97e889a48b57c",
+      "completion": [
+        "1085",
+        "0",
+        "385267aecc5e4130b8b3ef1083d57b62"
+      ],
+      "evidence": "Evidence/native-toggle-200.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "native-toggle-retained-failure": {
+      "profile": ".checks/beta01-packed-20261102-141928-578/acceptance-Hint-20261102-143850-927",
+      "consoleSha256": "c4ffdc72ab2196bd6c0f68ea1dc9444709e0f518992d890d2ef3e5ff47003ca6",
+      "completion": null,
+      "evidence": "Evidence/native-toggle-retained-failure.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "injector-needle-up-hands": {
+      "profile": ".checks/beta01-packed-20261102-145112-692/acceptance-Hands-20261102-145134-532",
+      "consoleSha256": "cd8478cc0ba0bbbff14de2b0646f4114e8687caa298cde05ec5b35108933517c",
+      "completion": [
+        "734",
+        "0",
+        "4eb05884b8f243fd8f5d9fb7b93ec653"
+      ],
+      "evidence": "Evidence/injector-needle-up-hands.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "menu-context-ui": {
+      "profile": ".checks/beta01-packed-20261102-145112-692/acceptance-UI-20261102-145201-927",
+      "consoleSha256": "fda3d1d01b5e7aca17a094fb53b781bef19b0846ecc2a4a97a8f3eb88dc4c0c3",
+      "completion": [
+        "29",
+        "0",
+        "bbcb8d8af9da45d0a88bf948b110f2d5"
+      ],
+      "evidence": "Evidence/menu-context-ui.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "human-h-key-confirmed": {
+      "profile": ".checks/hint-input-20261102-132443-625",
+      "consoleSha256": "4606dc0992c7aaf6dd4d5f9d52c628df13b2852d663c9d54feac68c7a9a010f3",
+      "completion": null,
+      "evidence": "Evidence/human-h-key-confirmed.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "knowledge-network-owner-a": {
+      "profile": ".checks/knowledge-network-snapshot-20261102-101051-702/.checks/knowledge-network-20261102-101507-723/owner-a",
+      "consoleSha256": "715f25f393a3b04793e59fa7ee12bc2bf07e2a886ee90213b68f775831ec2028",
+      "completion": null,
+      "evidence": "Evidence/knowledge-network-owner-a.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "knowledge-network-owner-b": {
+      "profile": ".checks/knowledge-network-snapshot-20261102-101051-702/.checks/knowledge-network-20261102-101507-723/owner-b",
+      "consoleSha256": "b20725295ca2c98b55d114f0a4d7cc8361f3b46f9ede4cd51c8d9cae508f2d7b",
+      "completion": null,
+      "evidence": "Evidence/knowledge-network-owner-b.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "packed-baseline": {
+      "profile": ".checks/beta01-packed-20261102-101844-508/acceptance-Baseline-20261102-102025-826",
+      "consoleSha256": "910b30486ced8911a90e448f0864ffde1f29fae2c1352ef72cb9041f15e38b39",
+      "completion": [
+        "680",
+        "0",
+        "5c031f02edcc4611b1c3630c220254f8"
+      ],
+      "evidence": "Evidence/packed-baseline.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "packed-recovery": {
+      "profile": ".checks/beta01-packed-20261102-101844-508/acceptance-Bagging-20261102-102241-251",
+      "consoleSha256": "15310332ef0bf32e5b854d7e7dea8d1b176c6823e542a1e659fee809a5509e01",
+      "completion": [
+        "865",
+        "0",
+        "6404d94b207348fea439086e090aa569"
+      ],
+      "evidence": "Evidence/packed-recovery.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "packed-assessment": {
+      "profile": ".checks/beta01-packed-20261102-101844-508/acceptance-Assessment-20261102-102320-373",
+      "consoleSha256": "126770c873b31f23e74baf9e87549b908b58f494f2e96c3ca36e48f6a8a6c879",
+      "completion": [
+        "1892",
+        "0",
+        "6b8480cd098d4a9983d4d90d71a4fa2c"
+      ],
+      "evidence": "Evidence/packed-assessment.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "packed-ui": {
+      "profile": ".checks/beta01-packed-20261102-101844-508/acceptance-UI-20261102-102332-251",
+      "consoleSha256": "68b30cce5781dcce4a9df79af937b887bbbd783edb4e6fdaa3265afe6288a83a",
+      "completion": [
+        "28",
+        "0",
+        "10df9a4714b64bf08a6d3bcfd431b4b1"
+      ],
+      "evidence": "Evidence/packed-ui.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "final-packed-ui": {
+      "profile": ".checks/beta01-packed-20261102-162550-552/acceptance-UI-20261102-162702-438",
+      "consoleSha256": "1644b24b4c1b2c0d583757dad61589aa20d1109f85118aa881e823f3a931097c",
+      "completion": [
+        "30",
+        "0",
+        "76ba6831684c46f783277f47d351e528"
+      ],
+      "evidence": "Evidence/final-packed-ui.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "current-drag-network-server": {
+      "profile": ".checks/drag-start-diagnostic-snapshot-20261102-132108-655/.checks/drag-network-20261102-132115-759/server",
+      "consoleSha256": "25e244aa9b7dd0ef898f988c38987166d8bb8628eafdb8719394ddc2f31a7cac",
+      "completion": [
+        "702",
+        "0",
+        "54d95c4556e9418aa77a71b97aaa27bf"
+      ],
+      "evidence": "Evidence/current-drag-network-server.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "current-drag-network-observer-a": {
+      "profile": ".checks/drag-start-diagnostic-snapshot-20261102-132108-655/.checks/drag-network-20261102-132115-759/observer-a",
+      "consoleSha256": "54afd1a003a38c3882f1f7aff38d1a68472c17e3ef2986af83034918d9486f04",
+      "completion": null,
+      "evidence": "Evidence/current-drag-network-observer-a.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "current-drag-network-observer-b": {
+      "profile": ".checks/drag-start-diagnostic-snapshot-20261102-132108-655/.checks/drag-network-20261102-132115-759/observer-b",
+      "consoleSha256": "d3af1716db421c42b752181da22eb63123e2092de5edf479852665e0ad24f04c",
+      "completion": null,
+      "evidence": "Evidence/current-drag-network-observer-b.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "current-drag-network-late-join": {
+      "profile": ".checks/drag-start-diagnostic-snapshot-20261102-132108-655/.checks/drag-network-20261102-132115-759/late-join",
+      "consoleSha256": "9d1585de6d80bee8d75e682e8b79be41cd561063df4da8d0939bdf91798dcc0c",
+      "completion": null,
+      "evidence": "Evidence/current-drag-network-late-join.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "current-living-transport-network-server": {
+      "profile": ".checks/drag-start-diagnostic-snapshot-20261102-132108-655/.checks/living-transport-network-20261102-132224-756/server",
+      "consoleSha256": "138ee55a57ab18a9d5931ab397ef8c23eeacd714456d0bf8f53b28753f8aa325",
+      "completion": [
+        "701",
+        "0",
+        "797c0c1c73754ef6bea5c7d8d4924042"
+      ],
+      "evidence": "Evidence/current-living-transport-network-server.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "current-living-transport-network-owner": {
+      "profile": ".checks/drag-start-diagnostic-snapshot-20261102-132108-655/.checks/living-transport-network-20261102-132224-756/owner",
+      "consoleSha256": "454ade187e1aea97c1c6c5d704a52f314d1a3a2d6efbfa334b7abcfeb8427f59",
+      "completion": null,
+      "evidence": "Evidence/current-living-transport-network-owner.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "current-living-transport-network-patient": {
+      "profile": ".checks/drag-start-diagnostic-snapshot-20261102-132108-655/.checks/living-transport-network-20261102-132224-756/patient",
+      "consoleSha256": "321f27d26e3661de9a63fbc754f89f773f9267fa2584c03ad48f35f9cd39799d",
+      "completion": null,
+      "evidence": "Evidence/current-living-transport-network-patient.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    },
+    "current-living-transport-network-late-join": {
+      "profile": ".checks/drag-start-diagnostic-snapshot-20261102-132108-655/.checks/living-transport-network-20261102-132224-756/late-join",
+      "consoleSha256": "950d3f63b8cba5c56866253b0b9ad8381665e6c5cf99acf78a5337e54859893c",
+      "completion": null,
+      "evidence": "Evidence/current-living-transport-network-late-join.txt",
+      "status": "RECORDED",
+      "limitation": ""
+    }
+  },
+  "screenshots": [
+    {
+      "file": "Evidence/icons-native.png",
+      "nativeOriginal": ".checks/beta01-item-review-20261102-145406-410/profile/screenshots/labelled-native-icon-board.bmp",
+      "sha256": "28f81376c6f3f40d3aa6c4bae56a2fff0b15e6838399e40560b8100ffa08adc2"
+    },
+    {
+      "file": "Evidence/procedure-menu.png",
+      "nativeOriginal": ".checks/visual-final-snapshot-20261102-094805-082/.checks/beta01-item-review-20261102-095247-009/profile/screenshots/active-procedure-menu.bmp",
+      "sha256": "183940a075dd09c2bd9321766dbfd74b4eaab928a5fc28b898051dd0e9cf7c0b"
+    },
+    {
+      "file": "Evidence/procedure-hud.png",
+      "nativeOriginal": ".checks/visual-final-snapshot-20261102-094805-082/.checks/beta01-item-review-20261102-095247-009/profile/screenshots/active-procedure-closed-menu-hud.bmp",
+      "sha256": "57ba7bbd5427ede3087dbe98f90044d549049b11e9b63575a68b3d8af0a4c892"
+    },
+    {
+      "file": "Evidence/airway-200-switches.png",
+      "nativeOriginal": ".checks/visual-final-snapshot-20261102-094805-082/.checks/beta01-item-review-20261102-095712-348/profile/screenshots/airway-after-200-patient-switches.bmp",
+      "sha256": "e7eb6a8de8b1a58d5875570fffa6e5552bc70f01f95ad4014f0c035945d2bf85"
+    },
+    {
+      "file": "Evidence/airway-invalidated.png",
+      "nativeOriginal": ".checks/visual-final-snapshot-20261102-094805-082/.checks/beta01-item-review-20261102-095712-348/profile/screenshots/airway-invalidated-after-device-change.bmp",
+      "sha256": "40725310953c89c3181d43ce9bf2492accb9943ead7ddfd21dd7edbe3b5614ab"
+    },
+    {
+      "file": "Evidence/epinephrine-native-grip-and-menu-hint.png",
+      "nativeOriginal": ".checks/beta01-packed-20261102-145112-692/acceptance-Hands-20261102-145134-532/profile/profile/screenshots/hand-10-view-2.bmp",
+      "sha256": "93365aa064a3376a2ee92469df9c221432fce37e9396e26a6837cbc9288d9d55"
+    }
+  ],
+  "nativeEquipCyclesRecorded": 5360,
+  "nativeEquipResourcesRecorded": 26,
+  "packedArtifact": {
+    "path": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\beta01-packed-20261102-162550-552\\packed\\data.pak",
+    "sha256": "bedda0f29e13af1009581140adaafef8a4c543940c75e35ab41badcd0d078edf"
+  },
+  "releaseAcceptance": "Each result identifies its own build and scope. Historical wall evidence is superseded by corrected spawn-transform fixtures. Recovery reached 202 completed chains; the retained acquisition failure was reproduced as a still-falling fixture actor and resolved by bounded setup waiting without weakening production rejection. Splint reached 200 native instances. H toggling is physically user-confirmed and passed 200 native input-action cycles. Six catalogue injectors were reviewed needle-end-up in three native hand views each; capped models retain their caps. Missing third-party vehicle dependencies, controller/LOD and human group acceptance, and unexecuted gameplay matrices remain explicit gaps.",
+  "pause": {
+    "pausedAtUtc": "2026-11-02T10:27:58.5984072Z",
+    "reason": "User requested a pause point to record",
+    "status": "resumed",
+    "ownedProcessIds": [
+      30340,
+      23808,
+      31576,
+      22096,
+      32552
+    ],
+    "unfinishedRunsAreNotPasses": true,
+    "resumedByUser": "ok carry on with your goal"
+  }
+}

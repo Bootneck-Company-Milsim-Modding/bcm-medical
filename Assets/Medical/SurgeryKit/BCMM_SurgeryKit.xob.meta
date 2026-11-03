@@ -3,7 +3,7 @@ MetaFileClass {
  Configurations {
   FBXResourceClass PC {
    MaterialAssigns {
-    MaterialAssignClass "{6AB6A94DDF0C509B}" {
+    MaterialAssignClass "{6AC48C38F6AE8C38}" {
      SourceMaterial "BCMM_SurgeryKit_M0"
      AssignedMaterial "{D5F8A977AB74972D}Assets/Medical/SurgeryKit/Data/SurgeryKit.emat"
     }

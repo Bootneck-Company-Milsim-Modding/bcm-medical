@@ -1,0 +1,260 @@
+---------------------------------------------
+Log C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\packed-drag-clear-corridor-20261102-113004-926\.checks\drag-network-20261102-113008-637\server\logs\logs_2026-11-02_11-30-08\console.log started at 2026-11-02 11:30:08 (2026-11-02 11:30:08 UTC)
+
+11:30:08.734 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\packed-drag-clear-corridor-20261102-113004-926\.checks\drag-network-20261102-113008-637\server\logs\logs_2026-11-02_11-30-08' to filesystem under name logs
+11:30:08.734 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\packed-drag-clear-corridor-20261102-113004-926\.checks\drag-network-20261102-113008-637\server\profile' to filesystem under name profile
+11:30:08.734 ENGINE       : FileSystem: Current working directory: 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\'
+11:30:08.736 ENGINE       : Initializing engine, version 192142
+11:30:08.736 ENGINE       : CLI Params: -gproj C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\packed-drag-clear-corridor-20261102-113004-926\Tests\Runtime\addon.gproj -addons B6C4ED1CA1260002 -addonsDir C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-112244-087\packed,C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\packed-drag-clear-corridor-20261102-113004-926\Tests\Runtime,C:\Program Files (x86)\Steam\steamapps\common\Arma Reforger\addons -noBackend -disableCrashReporter -noSound -noThrow -noFocus -forceUpdate -maxFPS 30 -server worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent -port 2001 -bcmmDragRuntime 1 -bcmmDragNetwork 1 -bcmmRunToken f8a3b25079d54ee9b1bbb7f2a05738cf -profile C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\packed-drag-clear-corridor-20261102-113004-926\.checks\drag-network-20261102-113008-637\server
+11:30:08.739 ENGINE       : Addon dirs:
+11:30:08.739  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/packed-drag-clear-corridor-20261102-113004-926/Tests/Runtime/'
+11:30:08.739  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-112244-087/packed'
+11:30:08.739  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/packed-drag-clear-corridor-20261102-113004-926/Tests/Runtime'
+11:30:08.739  ENGINE       : dir: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons'
+11:30:08.739  ENGINE       : dir: './addons'
+11:30:08.739  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/packed-drag-clear-corridor-20261102-113004-926/.checks/drag-network-20261102-113008-637/server/addons'
+11:30:08.739 ENGINE       : Available addons:
+11:30:08.739  ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/packed-drag-clear-corridor-20261102-113004-926/Tests/Runtime/addon.gproj' guid: 'B6C4ED1CA1260002'
+11:30:08.739  ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-112244-087/packed/addon.gproj' guid: '6AB4B3F3FD215919' (packed)
+11:30:08.739  ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/core.gproj' guid: '5614BBCCBB55ED1C' (packed)
+11:30:08.739  ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/ArmaReforger.gproj' guid: '58D0FB3206B6F859' (packed)
+11:30:08.740 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\packed-drag-clear-corridor-20261102-113004-926\Tests\Runtime' to filesystem under name BCM_Medical_DomainChecks
+11:30:08.745 ENGINE       : FileSystem: Adding package 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-112244-087/packed/' (pak count: 1) to filesystem under name MCBMedical
+11:30:08.827 ENGINE       : FileSystem: Adding package 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/' (pak count: 14) to filesystem under name ArmaReforger
+11:30:08.830 ENGINE       : FileSystem: Adding package 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/' (pak count: 2) to filesystem under name core
+11:30:08.830 ENGINE       : CPU vendor         : GenuineIntel
+11:30:08.830 ENGINE       : CPU type           : 1
+11:30:08.831 ENGINE       : CPU name           : 12th Gen Intel(R) Core(TM) i7-12700K
+11:30:08.831 ENGINE       : CPU cache info     : L1 [Inst 64KB, Data 48KB], L2 [Unif 2048KB], L3 [Unif 25600KB]
+11:30:08.831 ENGINE       : CPU count logical  : 20
+11:30:08.831 ENGINE       : CPU count physical : 12
+11:30:08.831 ENGINE       : CPU features       : mmx sse sse2 sse3 ssse3 sse4_1 sse4_2 popcnt aesni pclmulqdq osxsave avx sha avx2
+11:30:08.831 RESOURCES    : ResourceDB: loading cache (id=0 name=BCM_Medical_DomainChecks path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\packed-drag-clear-corridor-20261102-113004-926\Tests\Runtime/resourceDatabase.rdb)
+11:30:08.832 RESOURCES    : ResourceDB: loading cache (id=1 name=MCBMedical path=C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-112244-087/packed/resourceDatabase.rdb)
+11:30:08.833 RESOURCES    : ResourceDB: loading cache (id=2 name=ArmaReforger path=C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/resourceDatabase.rdb)
+11:30:08.925 RESOURCES    : ResourceDB: loading cache (id=3 name=core path=C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/resourceDatabase.rdb)
+11:30:08.927 RESOURCES    : ResourceDB: loading cache (id=4 name=profile path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\packed-drag-clear-corridor-20261102-113004-926\.checks\drag-network-20261102-113008-637\server\profile/resourceDatabase.rdb)
+11:30:08.928 RESOURCES    : ResourceDB: loading cache (id=5 name=logs path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\packed-drag-clear-corridor-20261102-113004-926\.checks\drag-network-20261102-113008-637\server\logs\logs_2026-11-02_11-30-08/resourceDatabase.rdb)
+11:30:09.022 ENGINE       : GameProject load
+11:30:09.022  ENGINE       : Loaded addons:
+11:30:09.022   ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/core.gproj' guid: '5614BBCCBB55ED1C'
+11:30:09.022   ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/ArmaReforger.gproj' guid: '58D0FB3206B6F859'
+11:30:09.022   ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-112244-087/packed/addon.gproj' guid: '6AB4B3F3FD215919'
+11:30:09.022   ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/packed-drag-clear-corridor-20261102-113004-926/Tests/Runtime/addon.gproj' guid: 'B6C4ED1CA1260002'
+11:30:09.024 ENGINE       : Loading custom engine user config '$profile:.save/settings/ReforgerEngineSettings.conf'
+11:30:09.025 ENGINE       : No Enfusion settings file loaded. Continuing with defaults
+11:30:09.025 ENGINE    (W): No module info used, trying to identify -> 0x82A80000
+11:30:09.025 RENDER       : Basic screen setup:
+11:30:09.025 RENDER       :   Back buffer width x height: 0x0
+11:30:09.025 RENDER       :   Back buffer format	       : TEXFMT_UNKNOWN (0)
+11:30:09.025 RENDER       :   MSAA                      : none
+11:30:09.025 RENDER       : GPU_DUMMY (0xFFFF) (Enfusion dummy render) with 1 GPU detected, VRAM 128MB (fast 128MB), shared 128MB, driver version Unknown version
+11:30:09.025 RENDER       : Detected output devices:
+11:30:09.025 RENDER       :  * 1 device/s connected to Dummy:
+11:30:09.025 RENDER       :    Dummy output (Dummy device for our dummy render.), 1920x1080 (offset 0x0), 60Hz
+11:30:09.026 RENDER       :   Concurrent frames limit 2
+11:30:09.026 ENGINE       : Job system settings: coreCount=20, shortJobContextCount=16, shortJobThreadCount=15, longJobThreadCount=7
+11:30:09.037 PROFILING    : Settings changed took: 0.021300 ms
+11:30:09.040 ENGINE       : Initializing inputs.
+11:30:09.044 NETWORK      : Initializing networking.
+11:30:09.045 NETWORK      : Using new GameRplScheduler.
+11:30:09.045  SCRIPT       : SCRIPT       : Initializing scripts
+11:30:09.045   SCRIPT       : SCRIPT       : ScriptProjectManager init
+11:30:09.045  PROFILING    : ScriptProjectManager init took: 0.020200 ms
+11:30:09.063 PROFILING    : Initializing scripts took: 17.122100 ms
+11:30:09.063 BACKEND      : Backend Services are disabled.
+11:30:09.063 ENGINE       : Enfusion engine successfully created.
+11:30:09.102 GUI          : Using default language (en_us)
+11:30:09.102 GUI          : Loading 'en_us' localization file.
+11:30:09.102  INIT         : INIT         : Loading StringTable
+11:30:09.121 PROFILING    : Loading StringTable took: 18.124100 ms
+11:30:09.121  SCRIPT       : SCRIPT       : Compiling GameLib scripts
+11:30:09.148  SCRIPT       : Module: GameLib; loaded 465x files; 607x classes; used 775K of static memory; defines: "ENF_WB,PLATFORM_WINDOWS,ENF_ENABLE_VHC_OVERRIDE,ENF_ENABLE_RPLCOMPONENT_IN_GAMECODE"; CRC32: 4507af04
+11:30:09.149 PROFILING    : Compiling GameLib scripts took: 28.658300 ms
+11:30:09.149  SCRIPT       : SCRIPT       : Compiling Game scripts
+11:30:09.971 SCRIPT       : Compiling Game scripts
+11:30:09.971  SCRIPT    (W): @"Scripts/Game/Editor/Components/EditableEntity/SCR_EditableEntityComponent.c,785": 'GetPlayerPlatformKind' is obsolete
+11:30:09.971  SCRIPT    (W): @"Scripts/Game/Editor/Components/EditableEntity/SCR_EditableEntityComponent.c,786": 'GetPlayerPlatformId' is obsolete
+11:30:10.188  SCRIPT    (W): @"Scripts/Game/Workshop/SCR_AddonManager.c,876": 'GetRefCount' is obsolete: Will be removed
+11:30:10.211  SCRIPT    (W): @"Scripts/Game/Campaign/SCR_PlayerProfileManagerComponent.c,142": 'PlayerData' is obsolete
+11:30:10.291  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,159": 'GetDSSession' is obsolete
+11:30:10.291  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,162": 'RoomID' is obsolete
+11:30:10.291  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,197": 'GetDSSession' is obsolete
+11:30:10.291  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,201": 'RoomID' is obsolete
+11:30:10.365  SCRIPT    (W): @"Scripts/Game/DataCollection/SCR_DataCollectorComponent.c,481": 'GetStorage' is obsolete
+11:30:10.365  SCRIPT    (W): @"Scripts/Game/DataCollection/SCR_DataCollectorComponent.c,483": 'GetOnlineWritePrivilege' is obsolete
+11:30:10.367  SCRIPT    (W): @"Scripts/Game/Utilities/SCR_PlayerIdentityUtils.c,20": 'GetPlayerIdentityId' is obsolete
+11:30:10.401  SCRIPT    (W): @"Scripts/Game/UI/Menu/MainMenuUI.c,643": 'GetNotifyCount' is obsolete: Will be substitued by Notification Api.
+11:30:10.401  SCRIPT    (W): @"Scripts/Game/UI/Menu/MainMenuUI.c,645": 'GetNotifyItem' is obsolete: Will be substitued by Notification Api.
+11:30:10.445  SCRIPT    (W): @"Scripts/Game/DataCollection/PlayerData/SCR_PlayerData.c,210": 'PlayerData' is obsolete
+11:30:10.544  SCRIPT       : Module: Game; loaded 5839x files; 11887x classes; used 33357K of static memory; defines: "ENF_WB,PLATFORM_WINDOWS,ENF_ENABLE_VHC_OVERRIDE,ENF_ENABLE_RPLCOMPONENT_IN_GAMECODE,ENABLE_BASE_DESTRUCTION,BUDGET_OPTIMIZATION_CHECKS,DEBUG,RESPAWN_TIMER_COMPONENT_DEBUG,DEBUG_CONFIGURABLE_DIALOGS,DISABLE_WEAPON_SWITCHING,SCRIPTED_AIM_MODIFIER_DEBUG"; CRC32: d3f7fd10
+11:30:10.590 PROFILING    : Compiling Game scripts took: 1440.023100 ms
+11:30:10.590 INIT         : Creating game instance(ArmaReforgerScripted), version 1.8.0.13 built 2026-08-21 14:30:18 UTC.
+11:30:10.613 ENGINE       : Game successfully created.
+11:30:10.687 PLATFORM     : Save data from container 'settings' have been loaded
+11:30:10.795 PLATFORM     : Save data from container 'sessions' have been loaded
+11:30:10.795 PLATFORM     : System language differs from the saved one - using new language {new: 'en_us'; old: ''}
+11:30:10.795 PLATFORM     : Save data transaction to 'settings' started.
+11:30:10.796 NETWORK      : Starting local multiplayer server using command line args.
+11:30:10.904 DEFAULT      : [SaveGameManager] Starting new playthrough nr.0 '' for mission 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'.
+11:30:10.904  WORLD        : WORLD        : Entities load 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'
+11:30:10.908 WORLD        : Entities load 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'
+11:30:10.908  RESOURCES (E): Wrong GUID/name for resource @"{0000000000000000}(null)" in property "m_sLoadingLayout"
+11:30:10.913 PROFILING    : Entities load took: 8.391100 ms
+11:30:10.914  WORLD        : WORLD        : Game::LoadEntities
+11:30:10.914   WORLD        : WORLD        : Initializing world systems
+11:30:10.915   NETWORK      : Enabled lag compensation, 29 frames with 100 FPS and 280 ms rewind limits.
+11:30:10.915   WORLD        : WORLD        : CreateEntities
+11:30:10.915    WORLD        : WORLD        : CreateEntities
+11:30:10.915     WORLD        : WORLD        : NotifyBeforeEntitiesCreated
+11:30:10.917     RESOURCES    : Loaded mission headers from 4 addon(s)!
+11:30:10.917    PROFILING    : NotifyBeforeEntitiesCreated took: 1.928300 ms
+11:30:10.917     WORLD        : WORLD        : Wait for preloading data
+11:30:10.917    PROFILING    : Wait for preloading data took: 0.000400 ms
+11:30:10.921    ENTITY       : Create entity @"ENTITY:2" ('MPTestTerrain', GenericTerrainEntity) at <0.000000 1.000000 0.000000>
+11:30:10.921      PROFILING    : PROFILING    : Terrain load
+11:30:10.928     PROFILING    : Terrain load took: 7.051500 ms
+11:30:10.931 WORLD        : Game::LoadEntities
+11:30:10.931  WORLD        : CreateEntities
+11:30:10.931   WORLD        : CreateEntities
+11:30:10.931    ENTITY       : Create entity @"ENTITY:4611686018427387905" ('SCR_AIWorld') at <107.915001 1.000000 159.473999> @"{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et"
+11:30:10.931     PATHFINDING   : Navmesh Init 'Soldiers'
+11:30:10.932      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+11:30:10.932     PATHFINDING   : Navmesh Init 'BTRlike'
+11:30:10.932      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+11:30:10.932     PATHFINDING   : Navmesh Init 'LowRes'
+11:30:10.932      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+11:30:11.194     WORLD        : WORLD        : NotifyBeforeEntitiesInitialized
+11:30:11.194    PROFILING    : NotifyBeforeEntitiesInitialized took: 0.016900 ms
+11:30:11.195    WORLD        : InitEntities 'world'
+11:30:11.195     ENTITY       : Init entity @"ENTITY:4611686018427387906" ('GameMode_Plain1', SCR_BaseGameMode) at <123.265999 1.000000 136.613998>
+11:30:11.195      SCRIPT    (W): SCR_PerceivedFactionManagerComponent trying to set fall back faction 'CIV' but this faction could not be found so it is null instead.
+11:30:11.196     WORLD        : WORLD        : NotifyEntitiesInitialized
+11:30:11.196      TERRAIN      : TERRAIN      : Initializing road networks...
+11:30:11.196     PROFILING    : Initializing road networks... took: 0.003200 ms
+11:30:11.196      DEFAULT      : DEFAULT      : WorldVolumesCollection
+11:30:11.196     PROFILING    : WorldVolumesCollection took: 0.007600 ms
+11:30:11.197    PROFILING    : NotifyEntitiesInitialized took: 0.230900 ms
+11:30:11.197   PROFILING    : CreateEntities took: 281.325400 ms
+11:30:11.197  PROFILING    : CreateEntities took: 281.406000 ms
+11:30:11.197   WORLD        : WORLD        : EOnActivate
+11:30:11.197  PROFILING    : EOnActivate took: 0.060700 ms
+11:30:11.197 PROFILING    : Game::LoadEntities took: 282.900700 ms
+11:30:11.197 PROFILING    : * LoadEntities: 283.019400 ms
+11:30:11.294 NETWORK      : Starting RPL server, listening on address 0.0.0.0:2001, fastValidation=false
+11:30:11.619 DEFAULT      : Entered online game state.
+11:30:11.727 PROFILING    : Settings changed took: 0.128300 ms
+11:30:11.739 WORLD        : Frame start
+11:30:11.739  SCRIPT       : ScenarioFramework: Available tasks are empty, no new tasks will be generated.
+11:30:11.742 WORLD        : UpdateEntities
+11:30:11.742  WORLD        : Frame
+11:30:11.742   SCRIPT       : SCR_BaseGameMode::OnGameStateChanged = GAME
+11:30:11.807 SCRIPT       : BCMM_BETA_GEOMETRY item={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et low=<-0.0345764,-0.00198102,-0.041445> high=<0.0322266,0.024261,0.042839> dimensions=<0.066803,0.026242,0.084284>
+11:30:11.808 SCRIPT       : BCMM_BETA_GEOMETRY item={0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et low=<-0.00631714,-0.00109887,-0.048049> high=<0.00631714,0.0108988,0.04829> dimensions=<0.0126343,0.0119977,0.096339>
+11:30:11.809 SCRIPT       : BCMM_BETA_GEOMETRY item={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et low=<-0.00997925,-0.00496697,-0.071> high=<0.00997925,0.014967,0.071> dimensions=<0.0199585,0.0199339,0.142>
+11:30:13.550 SCRIPT       : BCMM_FLUID_RECOVERY pulse=128.913 red=0.326083 delivery=0.319561 terminal=0
+11:30:14.719 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=US count=29 ordinary=187
+11:30:14.721 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=USSR count=29 ordinary=166
+11:30:14.724 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=FIA count=29 ordinary=105
+11:30:15.936 RPL          : ServerImpl event: authenticating (identity=0x00000000, address=127.0.0.1:63298, slots=1/256)
+11:30:15.936 RPL          : ServerImpl event: connected (identity=0x00000000)
+11:30:15.938 RPL          : ServerImpl event: authenticating (identity=0x00000001, address=127.0.0.1:63299, slots=2/256)
+11:30:15.938 RPL          : ServerImpl event: connected (identity=0x00000001)
+11:30:16.271 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=1
+11:30:16.288 SCRIPT       : BCMM settings read path=$profile:BCMM_InvalidSettings/settings-a.json parsed=1 valid=0 generation=999
+11:30:16.288 SCRIPT    (E): BCMM settings invalid: files preserved; edits locked until repaired.
+11:30:16.315 SCRIPT       : BCMM_ROLE_LIST count=38 roles=2 native=1
+11:30:16.320 SCRIPT       : BCMM_CATALOGUE_REGISTRIES medical=1 nativeEntries=41
+11:30:16.742 ENTITY       : SpawnEntityPrefab @"{2F912ED6E399FF47}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Unarmed.et"
+11:30:16.742  WORLD        : InitEntities 'world'
+11:30:16.742   ENTITY       : Init entity @"ENTITY:6917529027641081867" ('SCR_ChimeraCharacter','Assets/Characters/Basebody/Basebody_Male_01.xob') at <100.000000 1.200000 0.000000> @"{2F912ED6E399FF47}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Unarmed.et"
+11:30:16.742    ENTITY       : SpawnEntityPrefab @"{73950FBA2D7DB5C5}Prefabs/Items/Equipment/Radios/Radio_ANPRC68.et"
+11:30:16.743     ENTITY       : Create entity @"ENTITY:6917529027641081894" ('GenericEntity') at <0.000000 0.000000 0.000000> @"{73950FBA2D7DB5C5}Prefabs/Items/Equipment/Radios/Radio_ANPRC68.et"
+11:30:16.743      ENTITY       : CreateComponent 'BaseRadioComponent'
+11:30:16.743       DEFAULT   (W): World doesn't contain RadioManagerEntity to support any BaseRadioComponent.
+11:30:16.744 ENTITY       : SpawnEntityPrefab @"{6AB4B3F3FD216007}Prefabs/Items/BCMM_DragRope.et"
+11:30:16.744  ENTITY       : Create entity @"ENTITY:6917529027641081897" ('GenericEntity') at <100.000000 1.500000 0.000000>
+11:30:16.744   ENTITY       : EntityPrefabUse @"{6AB4B3F3FD216007}Prefabs/Items/BCMM_DragRope.et"
+11:30:16.744    RESOURCES    : GetResourceObject @"{096D352E628C46F0}Assets/Medical/CompactDragRope/BCMM_CompactDragRope.xob"
+11:30:16.744     RESOURCES    : MeshObjectLoad @"{096D352E628C46F0}Assets/Medical/CompactDragRope/BCMM_CompactDragRope.xob"
+11:30:16.744      RESOURCES (E): Wrong GUID/name for resource @"{536BF67B2052B869}material/metal.gamemat" in property "UBX_BCMM_CompactDragRope"
+11:30:16.744      RESOURCES    : GetResourceObject @"{536BF67B2052B869}material/metal.gamemat"
+11:30:16.744       RESOURCES (E): Failed to open
+11:30:16.751 WORLD        : UpdateEntities
+11:30:16.752  NETWORK   (E): Trying to register connection of possibly unauthorized client.
+11:30:16.752  NETWORK   (E): Trying to register connection of possibly unauthorized client.
+11:30:17.767 NETWORK      : Player connected: connectionID=0
+11:30:17.767 NETWORK      : ### Connecting player: connectionID=0, Name=
+11:30:17.767 NETWORK      : Player connected: connectionID=1
+11:30:17.767 NETWORK      : ### Connecting player: connectionID=1, Name=
+11:30:17.801 WORLD        : UpdateEntities
+11:30:17.801  RPL          : rpl::Pip::ProcessNetToGame
+11:30:17.801   NETWORK      : ### Creating player: PlayerId=1, Name=TacticalBootneck
+11:30:17.807 WORLD        : UpdateEntities
+11:30:17.807  RPL          : rpl::Pip::ProcessNetToGame
+11:30:17.807   ENTITY       : SpawnEntityPrefab @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+11:30:17.807    ENTITY       : Create entity @"ENTITY:6917529027641081900" ('SCR_PlayerController') at <0.000000 0.000000 0.000000>
+11:30:17.807     ENTITY       : EntityPrefabUse @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+11:30:17.808      SCRIPT    (W): Notification data in 'SCR_NotificationsLogDisplay' has duplicate notification info key: 'EDITOR_PERCEIVED_FACTION_PUNISHMENT_KILLING_SET'. There should only be one of each key!
+11:30:17.808      SCRIPT    (W): Notification data in 'SCR_NotificationsLogDisplay' has duplicate notification info key: 'EDITOR_PERCEIVED_FACTION_TYPE_DISABLED'. There should only be one of each key!
+11:30:17.808     SCRIPT    (W): Can't open config file ""
+11:30:17.808    WORLD        : InitEntities 'world'
+11:30:17.808     ENTITY       : Init entity @"ENTITY:6917529027641081900" ('SCR_PlayerController') at <0.000000 0.000000 0.000000> @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+11:30:17.808      DEFAULT   (W): Chat not available - missing ChatEntity. Only printing this message once. There're possibly more nodes with this requirement.
+11:30:17.809   NETWORK      : ### Creating player: PlayerId=2, Name=TacticalBootneck
+11:30:17.809   ENTITY       : SpawnEntityPrefab @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+11:30:17.809    ENTITY       : Create entity @"ENTITY:6917529027641081901" ('SCR_PlayerController') at <0.000000 0.000000 0.000000> @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+11:30:17.809     SCRIPT    (W): Can't open config file ""
+11:30:17.903 WORLD        : UpdateEntities
+11:30:17.903  RPL          : rpl::Pip::ProcessNetToGame
+11:30:17.903   SCRIPT    (W): Ban Settings could not be loaded from BE Storage: Relying on default config
+11:30:17.903 WORLD        : UpdateEntities
+11:30:17.903  RPL          : rpl::Pip::ProcessNetToGame
+11:30:17.903   NETWORK      : ### Updating player: PlayerId=1, Name=TacticalBootneck, rplIdentity=0x00000000, IdentityId=00000000-0000-0000-0000-000000000000
+11:30:17.903   NETWORK      : Players connecting: 0
+11:30:17.903   NETWORK      : Players connected: 2 / 2
+11:30:17.935 WORLD        : UpdateEntities
+11:30:17.935  RPL          : rpl::Pip::ProcessNetToGame
+11:30:17.935   NETWORK      : ### Updating player: PlayerId=2, Name=TacticalBootneck, rplIdentity=0x00000001, IdentityId=00000000-0000-0000-0000-000000000000
+11:30:17.935   NETWORK      : Players connecting: 0
+11:30:17.935   NETWORK      : Players connected: 2 / 2
+11:30:19.406 SCRIPT       : BCMM_NET_BODY player=1 assigned=1
+11:30:19.438 SCRIPT       : BCMM_NET_BODY player=2 assigned=1
+11:30:20.100 SCRIPT       : BCMM_DRAG start=<100.701,1.02264,-0.0045562> now=<100.692,1.01909,0.986944> actor=<100.701,0.999853,2.99544> mode=4 velocity=<-6.66002e-05,0.00440189,0.00107226>
+11:30:20.100 SCRIPT       : BCMM_DRAG_NET_PHASE 1
+11:30:23.991 RPL          : ServerImpl event: authenticating (identity=0x00000002, address=127.0.0.1:62500, slots=3/256)
+11:30:23.991 RPL          : ServerImpl event: connected (identity=0x00000002)
+11:30:24.002 WORLD        : UpdateEntities
+11:30:24.002  NETWORK   (E): Trying to register connection of possibly unauthorized client.
+11:30:24.900 NETWORK      : Player connected: connectionID=2
+11:30:24.900 NETWORK      : ### Connecting player: connectionID=2, Name=
+11:30:24.935 WORLD        : UpdateEntities
+11:30:24.935  RPL          : rpl::Pip::ProcessNetToGame
+11:30:24.935   NETWORK      : ### Creating player: PlayerId=3, Name=TacticalBootneck
+11:30:24.935 WORLD        : UpdateEntities
+11:30:24.935  RPL          : rpl::Pip::ProcessNetToGame
+11:30:24.935   ENTITY       : SpawnEntityPrefab @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+11:30:24.936    ENTITY       : Create entity @"ENTITY:6917529027641081964" ('SCR_PlayerController') at <0.000000 0.000000 0.000000> @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+11:30:24.936     SCRIPT    (W): Can't open config file ""
+11:30:25.069 WORLD        : UpdateEntities
+11:30:25.069  RPL          : rpl::Pip::ProcessNetToGame
+11:30:25.069   NETWORK      : ### Updating player: PlayerId=3, Name=TacticalBootneck, rplIdentity=0x00000002, IdentityId=00000000-0000-0000-0000-000000000000
+11:30:25.069   NETWORK      : Players connecting: 0
+11:30:25.069   NETWORK      : Players connected: 3 / 3
+11:30:26.571 SCRIPT       : BCMM_NET_BODY player=3 assigned=1
+11:30:40.134 SCRIPT       : BCMM drag release: rope safety distance exceeded
+11:30:40.436 SCRIPT       : BCMM_DRAG_NET_PHASE 2
+11:30:45.934 SCRIPT       : BCMM_DRAG_NET_PHASE 3
+11:30:49.934 SCRIPT       : BCMM_DRAG_NET_PHASE 4
+11:30:53.934 SCRIPT       : BCMM_DRAG_NET_PHASE 5
+11:30:56.300 SCRIPT       : BCMM_DRAG_NET_PHASE 6
+11:31:00.300 SCRIPT       : BCMM_DRAG_OWNER_WALK actorDistance=2.06 bagDistance=2.08848 mode=3
+11:31:00.300 SCRIPT       : BCMM_DRAG_NET_PHASE 7
+11:31:10.927 RPL          : ServerImpl event: connection timeout (identity=0x00000000)
+11:31:10.927 RPL          : ServerImpl: Connection slot free (slots=2/256)
+11:31:10.967 NETWORK      : Player disconnected: connectionID=0
+11:31:10.968 NETWORK      : Total number of players: 2
+11:31:11.000 SCRIPT       : BCMM drag release: controller changed
+11:31:11.200 SCRIPT       : BCMM_DRAG_NET_PHASE 8
+11:31:16.201 SCRIPT       : BCMM_CHECK COMPLETE checks=702 failures=0 run=f8a3b25079d54ee9b1bbb7f2a05738cf
+11:31:16.445 RPL          : Replication finishing...

@@ -2,7 +2,7 @@ GenericEntity : "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/Field
  ID "6AB4B3F3FD217031"
  components {
   MeshObject "{51F66EC3C5BC700D}" { Object "{9F7A8E6397179496}Assets/Medical/PulseOximeter/BCMM_PulseOximeter.xob" }
-  SCR_ConsumableItemComponent "{5943631460899505}" { m_ConsumableEffect BCMM_ProcedurePresentationEffect "{594363147CC4C6BE}" { m_bDeleteOnUse 0 } }
+  SCR_ConsumableItemComponent "{5943631460899505}" { m_bAlternativeModelOnAction 0 m_ConsumableEffect BCMM_ProcedurePresentationEffect "{594363147CC4C6BE}" { m_bDeleteOnUse 0 } }
   BCMM_EquipmentItemComponent "{6AB4B3F3FD218331}" { Kind 11 }
   InventoryItemComponent "{5222EB4D0C73006B}" {
    Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
@@ -11,11 +11,13 @@ GenericEntity : "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/Field
      Description "BCM original medical equipment. Reusable handheld pulse oximeter. Keep the device and remain near the patient for live pulse and SpO2 monitoring."
     }
     ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     DimensionScaler 1
      Weight 0.05
      SizeSetupStrategy Manual
      ItemDimensions 9 6 5
      ItemVolume 150
     }
+    CustomAttributes { PreviewRenderAttributes "{6098B9508619B4D0}" { CameraPreset Front CameraDistanceToItem 0.124 CameraOffset 0 0 0 ItemRenderRotation 90 0 0 FOV 35 AspectRatio 1 } }
     CommonItemType "EQUIPMENT"
    }
   }

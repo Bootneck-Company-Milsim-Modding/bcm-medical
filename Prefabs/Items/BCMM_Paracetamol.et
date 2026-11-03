@@ -6,12 +6,14 @@ GenericEntity : "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/M
   BCMM_MedicationItemComponent "{6AB4B3F3FD218312}" { Kind 4 }
   InventoryItemComponent "{5222EB4D0C73006B}" {
    Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
-    CustomAttributes { SCR_AlternativeModel "{59E68C742A7C6A5F}" { m_sAlternativeModel "{36D6BF1281F4F241}Assets/Medical/SutureKit/BCMM_SutureKit.xob" } }
+    CustomAttributes {
+     PreviewRenderAttributes "{5A5AEE4B8FF125F0}" { CameraPreset Top CameraDistanceToItem 0.228 CameraOffset 0 0 0 ItemRenderRotation 0 0 0 FOV 35 AspectRatio 1 } SCR_AlternativeModel "{59E68C742A7C6A5F}" { m_sAlternativeModel "{36D6BF1281F4F241}Assets/Medical/SutureKit/BCMM_SutureKit.xob" } }
     ItemDisplayName SCR_InventoryUIInfo "{5222EB4D07D865FA}" {
      Name "Paracetamol tablets"
      Description "Oral non-opioid game supply. Requires an awake patient able to swallow. Pouch and handling animation are temporary."
     }
     ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     DimensionScaler 1
      Weight 0.4
      SizeSetupStrategy Manual
      ItemDimensions 20 10 5

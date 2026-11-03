@@ -3,7 +3,7 @@ MetaFileClass {
  Configurations {
   FBXResourceClass PC {
    MaterialAssigns {
-    MaterialAssignClass "{6AB693BBFE0FA546}" {
+    MaterialAssignClass "{6AC4EC96F75CB1C5}" {
      SourceMaterial "BCMM_Injector_M0"
      AssignedMaterial "{3FBBA13A23C7BE8C}Assets/Medical/Injector/Data/Injector_0.emat"
     }

@@ -1,0 +1,46 @@
+{
+  "clinical-safety-20": {
+    "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\beta01-packed-20261102-145625-237\\acceptance-ClinicalSafety-20261102-160904-054",
+    "passed": true,
+    "completion": "BCMM_CHECK COMPLETE checks=14280 failures=0 run=e7208f487f7b4f3081b48f05d875e221",
+    "result": "clinical-safety-20-result.json",
+    "limitation": "Gameplay assertions valid; standalone test arsenal omitted from cleanup, so not evidence of production memory retention."
+  },
+  "clinical-safety-cleanup-10": {
+    "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\beta01-packed-20261102-145625-237\\acceptance-ClinicalSafety-20261102-161728-912",
+    "passed": true,
+    "completion": "BCMM_CHECK COMPLETE checks=7140 failures=0 run=dd351a4dcc4945cd90006a2e78565fdf",
+    "result": "clinical-safety-cleanup-10-result.json",
+    "limitation": "Short local native repetition; not an hours-long dedicated multiplayer soak."
+  },
+  "bag-action-placement": {
+    "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\beta01-packed-20261102-145625-237\\acceptance-BagActions-20261102-162206-749",
+    "passed": true,
+    "completion": "BCMM_CHECK COMPLETE checks=760 failures=0 run=9900517a5d0e4883aeadfd6283fef149",
+    "result": "bag-action-placement-result.json"
+  },
+  "ui-4k-clipped": {
+    "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\beta01-packed-20261102-145625-237\\acceptance-UI-20261102-162523-570",
+    "passed": false,
+    "completion": "",
+    "result": "ui-4k-clipped-result.json"
+  },
+  "ui-4k-fixed": {
+    "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\beta01-packed-20261102-162550-552\\acceptance-UI-20261102-162636-880",
+    "passed": true,
+    "completion": "BCMM_CHECK COMPLETE checks=30 failures=0 run=924ed3bacb1741bb8aefcbf371e35ef6",
+    "result": "ui-4k-fixed-result.json"
+  },
+  "ui-720p-fixed": {
+    "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\beta01-packed-20261102-162550-552\\acceptance-UI-20261102-162649-932",
+    "passed": true,
+    "completion": "BCMM_CHECK COMPLETE checks=30 failures=0 run=280ce26888634f8ca08daeecaa9982ce",
+    "result": "ui-720p-fixed-result.json"
+  },
+  "ui-ultrawide-fixed": {
+    "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\beta01-packed-20261102-162550-552\\acceptance-UI-20261102-162702-438",
+    "passed": true,
+    "completion": "BCMM_CHECK COMPLETE checks=30 failures=0 run=76ba6831684c46f783277f47d351e528",
+    "result": "ui-ultrawide-fixed-result.json"
+  }
+}

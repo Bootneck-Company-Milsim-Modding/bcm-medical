@@ -5,6 +5,13 @@ class BCMM_DragRopeComponentClass : ScriptComponentClass {}
 class BCMM_DragRopeComponent : ScriptComponent {}
 class BCMM_NativeBagDrag
 {
+ static void ExcludeHierarchy(IEntity root, array<IEntity> exclusions)
+ {
+  if (!root || exclusions.Contains(root)) return;
+  exclusions.Insert(root);
+  IEntity child = root.GetChildren();
+  while (child) { ExcludeHierarchy(child, exclusions); child = child.GetSibling(); }
+ }
  protected static ref array<ref BCMM_NativeBagDrag> s_Active = {};
  protected static int s_NextToken;
  protected static float s_NextUpdate;
@@ -14,13 +21,18 @@ class BCMM_NativeBagDrag
  protected int m_PlayerId;
  protected int m_Token;
  protected bool m_Rope;
+ protected float m_AirborneSince;
+ protected float m_OverSpeedSince;
  protected string m_StopReason;
  protected bool Fail(string reason) { m_StopReason = reason; return false; }
  protected ref BCMM_BodyBagDragSession m_Policy = new BCMM_BodyBagDragSession();
  protected ref BCMM_Settings m_Settings = new BCMM_Settings();
  static bool ManualDragging(IEntity actor)
  {
-  foreach(BCMM_NativeBagDrag session:s_Active)if(session.m_Actor==actor && !session.m_Rope)return true;
+  if (!actor) return false;
+  RplId actorId = BCMM_BodyBagComponent.Id(actor);
+  foreach (BCMM_BodyBagComponent bag : BCMM_BodyBagComponent.Instances)
+   if (bag && bag.DragMode() == BCMM_TransportMode.BODY_BAG_MANUAL_DRAG && bag.DraggingActor() == actorId) return true;
   return false;
  }
  static bool HasActor(IEntity actor)
@@ -99,7 +111,7 @@ class BCMM_NativeBagDrag
  protected bool Tick()
  {
   if (!m_Bag || !m_State || m_State.State() != BCMM_BagCargoState.WORLD || !m_State.Ready()) return Fail("bag unavailable");
-  if (!ActorValid(m_Actor, m_Rope)) return Fail("actor no longer able to drag");
+  if (!ActorValid(m_Actor, true)) return Fail("actor no longer able to drag");
   InventoryItemComponent item = InventoryItemComponent.Cast(m_Bag.FindComponent(InventoryItemComponent));
   if (!item || item.GetParentSlot()) return Fail("bag entered inventory");
   if (m_PlayerId > 0 && GetGame().GetPlayerManager().GetPlayerControlledEntity(m_PlayerId) != m_Actor) return Fail("controller changed");
@@ -107,7 +119,24 @@ class BCMM_NativeBagDrag
   SCR_BaseGameMode mode = SCR_BaseGameMode.Cast(GetGame().GetGameMode());
   if (mode) mode.BCMM_CopySettings(m_Settings);
   CharacterControllerComponent controller = ChimeraCharacter.Cast(m_Actor).GetCharacterController();
-  if (!m_Rope && (controller.IsWeaponRaised() || controller.IsSprinting() || controller.GetVelocity().Length() > m_Settings.Get("manualBagDragMaxSpeedMetresPerSecond"))) return Fail("manual movement/weapon restriction");
+  float now = GetGame().GetWorld().GetWorldTime() * 0.001;
+  if (controller.IsFalling())
+  {
+   if (m_AirborneSince <= 0) m_AirborneSince = now;
+   if (now - m_AirborneSince > 0.5) return Fail("performer left supporting ground");
+  }
+  else m_AirborneSince = 0;
+  vector movement = controller.GetVelocity(); movement[1] = 0;
+  if (!m_Rope && controller.IsWeaponRaised()) return Fail("weapon raised while manually dragging");
+  if (!m_Rope && controller.IsSprinting()) return Fail("sprinting while manually dragging");
+  if (!m_Rope && movement.Length() > m_Settings.Get("manualBagDragMaxSpeedMetresPerSecond"))
+  {
+   // The owner's gait cap arrives through replication. Brief acceleration or
+   // position-correction spikes must not cancel the first movement frame.
+   if (m_OverSpeedSince <= 0) m_OverSpeedSince = now;
+   if (now - m_OverSpeedSince > 0.35) return Fail("sustained movement exceeds manual drag speed limit");
+  }
+  else m_OverSpeedSince = 0;
   vector desired;
   if (!m_Policy.DesiredBagPosition(m_Actor.GetOrigin(), m_Bag.GetOrigin(), true, true, m_Settings, desired)) return Fail("rope safety distance exceeded");
   TraceParam floor = new TraceParam();
@@ -115,27 +144,49 @@ class BCMM_NativeBagDrag
   floor.End = floor.Start - "0 5 0";
   floor.Flags = TraceFlags.WORLD | TraceFlags.ENTS;
   floor.LayerMask = EPhysicsLayerPresets.Projectile;
-  array<IEntity> exclusions = {m_Bag, m_Actor};
+  array<IEntity> exclusions = {};
+  ExcludeHierarchy(m_Bag, exclusions); ExcludeHierarchy(m_Actor, exclusions);
   floor.ExcludeArray = exclusions;
   float ground = m_Bag.GetWorld().TraceMove(floor);
   if (ground >= 1) return Fail("no supporting surface");
   vector boundsMin, boundsMax;
-  m_Bag.GetWorldBounds(boundsMin, boundsMax);
-  float originClearance = Math.Max(0.05, m_Bag.GetOrigin()[1] - boundsMin[1]);
+  // Local model clearance must not grow when a loaded hierarchy rolls or
+  // contains clothing with its own displaced world bounds.
+  m_Bag.GetBounds(boundsMin, boundsMax);
+  float originClearance = Math.Max(0.02, -boundsMin[1]);
   desired[1] = floor.Start[1] - 5 * ground + originClearance + 0.03;
-  TraceParam path = new TraceParam();
+  TraceBox path = new TraceBox();
+  path.Mins = "-0.15 -0.1 -0.15";
+  path.Maxs = "0.15 0.1 0.15";
   path.Start = m_Bag.GetOrigin() + "0 0.2 0";
   path.End = desired + "0 0.2 0";
   path.Flags = TraceFlags.WORLD | TraceFlags.ENTS;
-  path.LayerMask = EPhysicsLayerPresets.Projectile;
+  // Obstructions include physical geometry without a projectile layer.
+  path.TargetLayers = -1;
   path.ExcludeArray = exclusions;
-  if (m_Bag.GetWorld().TraceMove(path) < 0.99) return Fail("movement blocked");
+  float pathFraction=m_Bag.GetWorld().TraceMove(path);
+  if (pathFraction < 0.99) return Fail("movement blocked");
   vector velocity = (desired - m_Bag.GetOrigin()) * m_Settings.Get("bagDragResponsiveness");
   float speed = velocity.Length();
   float maximum = m_Settings.Get("bagDragMaxSpeedMetresPerSecond");
   if (speed > maximum) velocity *= maximum / speed;
   Physics physics = m_Bag.GetPhysics();
   if (!physics) return Fail("no bag physics");
+  vector normal = floor.TraceNorm;
+  if (normal.LengthSq() > 0.01 && normal[1] > 0.3)
+  {
+   normal.Normalize();
+   vector frame[4]; m_Bag.GetWorldTransform(frame);
+   vector forward = frame[2];
+   float projection = forward[0]*normal[0] + forward[1]*normal[1] + forward[2]*normal[2];
+   forward -= normal * projection;
+   if (forward.LengthSq() < 0.01) forward = "0 0 1";
+   forward.Normalize();
+   vector right = BCMM_GripMath.Cross(normal, forward); right.Normalize();
+   frame[0] = right; frame[1] = normal; frame[2] = BCMM_GripMath.Cross(right, normal);
+   m_Bag.SetWorldTransform(frame);
+   physics.SetAngularVelocity(vector.Zero);
+  }
   physics.SetActive(ActiveState.ACTIVE);
   physics.SetVelocity(velocity);
   return true;

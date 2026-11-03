@@ -414,7 +414,7 @@
     "description": "Maximum accumulated injury from insufficient oxygen delivery before terminal deterioration. Severe deficits accumulate debt faster; adequate delivery allows gradual recovery."
   },
   {
-    "default": 3,
+    "default": 12,
     "step": 1,
     "key": "baggingDurationSeconds",
     "max": 30,

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{6456AAB4914B8EB7}Assets/Medical/FluidBag/Data/PlasmaBody.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+ }
+}

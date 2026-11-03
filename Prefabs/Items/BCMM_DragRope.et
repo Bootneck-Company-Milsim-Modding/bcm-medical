@@ -11,28 +11,24 @@ GenericEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
      Description "Attach to a filled body bag to tow it while moving and using weapons."
     }
     ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     DimensionScaler 1
      Weight 0.5
      SizeSetupStrategy Manual
-     ItemDimensions 15 10 5
-     ItemVolume 500
+     ItemDimensions 8 6 3
+     ItemVolume 120
     }
     CustomAttributes {
-     PreviewRenderAttributes "{B4C0B4D71A258FEC}" {
-      CameraPreset Top
-      CameraOrbitAngles 0 0 90
-      CameraDistanceToItem 0.65
-      FOV 35
-     }
+     PreviewRenderAttributes "{6098B9508619B4D0}" { CameraPreset Top CameraDistanceToItem 0.266 CameraOffset 0 0 0 ItemRenderRotation 0 0 0 FOV 35 AspectRatio 1 }
     }
     CommonItemType "EQUIPMENT"
    }
   }
   MeshObject "{A8DDA767AF0E0FA7}" {
-   Object "{E20A38B86EF7369B}Assets/Props/Naval/FishingGear_01/FishingRope_01.xob"
+   Object "{096D352E628C46F0}Assets/Medical/CompactDragRope/BCMM_CompactDragRope.xob"
   }
   RigidBody "{C83410D6ED3C2D9B}" {
    Mass 0.5
   }
  }
- scale 0.15
+ scale 1
 }

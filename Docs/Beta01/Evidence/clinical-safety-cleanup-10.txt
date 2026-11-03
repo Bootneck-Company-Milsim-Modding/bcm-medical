@@ -1,0 +1,474 @@
+---------------------------------------------
+Log C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145625-237\acceptance-ClinicalSafety-20261102-161728-912\profile\logs\logs_2026-11-02_16-17-29\console.log started at 2026-11-02 16:17:29 (2026-11-02 16:17:29 UTC)
+
+16:17:29.145 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145625-237\acceptance-ClinicalSafety-20261102-161728-912\profile\logs\logs_2026-11-02_16-17-29' to filesystem under name logs
+16:17:29.145 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145625-237\acceptance-ClinicalSafety-20261102-161728-912\profile\profile' to filesystem under name profile
+16:17:29.145 ENGINE       : FileSystem: Current working directory: 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\'
+16:17:29.146 ENGINE       : Initializing engine, version 192142
+16:17:29.146 ENGINE       : CLI Params: -gproj C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145625-237\acceptance-ClinicalSafety-20261102-161728-912\diagnostic/addon.gproj -addons B6C4ED1CA1260002 -addonsDir C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145625-237\acceptance-ClinicalSafety-20261102-161728-912\diagnostic,C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145625-237\packed,C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons -profile C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145625-237\acceptance-ClinicalSafety-20261102-161728-912/profile -world worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent -noBackend -disableCrashReporter -noSound -noThrow -noFocus -forceUpdate -window -screenWidth 1280 -screenHeight 720 -posX -2000 -posY -2000 -maxFPS 30 -bcmmRunToken dd351a4dcc4945cd90006a2e78565fdf -bcmmClinicalSafetyRuntime 1 -bcmmRepeatNative 10
+16:17:29.150 ENGINE       : Addon dirs:
+16:17:29.150  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-145625-237/acceptance-ClinicalSafety-20261102-161728-912/diagnostic/'
+16:17:29.150  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-145625-237/acceptance-ClinicalSafety-20261102-161728-912/diagnostic'
+16:17:29.150  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-145625-237/packed'
+16:17:29.150  ENGINE       : dir: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons'
+16:17:29.150  ENGINE       : dir: './addons'
+16:17:29.150  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-145625-237/acceptance-ClinicalSafety-20261102-161728-912/profile/addons'
+16:17:29.150 ENGINE       : Available addons:
+16:17:29.150  ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-145625-237/acceptance-ClinicalSafety-20261102-161728-912/diagnostic/addon.gproj' guid: 'B6C4ED1CA1260002'
+16:17:29.150  ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-145625-237/packed/addon.gproj' guid: '6AB4B3F3FD215919' (packed)
+16:17:29.150  ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/core.gproj' guid: '5614BBCCBB55ED1C' (packed)
+16:17:29.150  ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/ArmaReforger.gproj' guid: '58D0FB3206B6F859' (packed)
+16:17:29.150 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145625-237\acceptance-ClinicalSafety-20261102-161728-912\diagnostic' to filesystem under name BCM_Medical_DomainChecks
+16:17:29.151 ENGINE       : FileSystem: Adding package 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-145625-237/packed/' (pak count: 1) to filesystem under name MCBMedical
+16:17:29.234 ENGINE       : FileSystem: Adding package 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/' (pak count: 14) to filesystem under name ArmaReforger
+16:17:29.239 ENGINE       : FileSystem: Adding package 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/' (pak count: 2) to filesystem under name core
+16:17:29.239 ENGINE       : CPU vendor         : GenuineIntel
+16:17:29.239 ENGINE       : CPU type           : 1
+16:17:29.239 ENGINE       : CPU name           : 12th Gen Intel(R) Core(TM) i7-12700K
+16:17:29.239 ENGINE       : CPU cache info     : L1 [Inst 64KB, Data 48KB], L2 [Unif 2048KB], L3 [Unif 25600KB]
+16:17:29.239 ENGINE       : CPU count logical  : 20
+16:17:29.239 ENGINE       : CPU count physical : 12
+16:17:29.239 ENGINE       : CPU features       : mmx sse sse2 sse3 ssse3 sse4_1 sse4_2 popcnt aesni pclmulqdq osxsave avx sha avx2
+16:17:29.239 RESOURCES    : ResourceDB: loading cache (id=0 name=BCM_Medical_DomainChecks path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145625-237\acceptance-ClinicalSafety-20261102-161728-912\diagnostic/resourceDatabase.rdb)
+16:17:29.240 RESOURCES    : ResourceDB: loading cache (id=1 name=MCBMedical path=C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-145625-237/packed/resourceDatabase.rdb)
+16:17:29.241 RESOURCES    : ResourceDB: loading cache (id=2 name=ArmaReforger path=C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/resourceDatabase.rdb)
+16:17:29.333 RESOURCES    : ResourceDB: loading cache (id=3 name=core path=C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/resourceDatabase.rdb)
+16:17:29.334 RESOURCES    : ResourceDB: loading cache (id=4 name=profile path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145625-237\acceptance-ClinicalSafety-20261102-161728-912\profile\profile/resourceDatabase.rdb)
+16:17:29.334 RESOURCES    : ResourceDB: loading cache (id=5 name=logs path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145625-237\acceptance-ClinicalSafety-20261102-161728-912\profile\logs\logs_2026-11-02_16-17-29/resourceDatabase.rdb)
+16:17:29.427 ENGINE       : GameProject load
+16:17:29.427  ENGINE       : Loaded addons:
+16:17:29.427   ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/core.gproj' guid: '5614BBCCBB55ED1C'
+16:17:29.427   ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/ArmaReforger.gproj' guid: '58D0FB3206B6F859'
+16:17:29.427   ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-145625-237/packed/addon.gproj' guid: '6AB4B3F3FD215919'
+16:17:29.427   ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-145625-237/acceptance-ClinicalSafety-20261102-161728-912/diagnostic/addon.gproj' guid: 'B6C4ED1CA1260002'
+16:17:29.428 ENGINE       : Loading custom engine user config '$profile:.save/app1874880_user76561198093323465/settings/ReforgerEngineSettings.conf'
+16:17:29.428 ENGINE       : No Enfusion settings file loaded. Continuing with defaults
+16:17:29.428 ENGINE       : Locale info: system en-GB (English), user en-GB (English)
+16:17:29.592 RENDER       : (OK) Adapter 'NVIDIA GeForce RTX 5070 Ti' supports feature level 12_0
+16:17:29.641 RENDER       : (OK) Adapter 'Intel(R) UHD Graphics 770' supports feature level 12_0
+16:17:29.645 RENDER       : Adapter 1 (Intel(R) UHD Graphics 770) failed to provide some output
+16:17:29.645 RENDER       : Basic screen setup:
+16:17:29.645 RENDER       :   Back buffer width x height: 1280x720
+16:17:29.645 RENDER       :   Back buffer format	       : TEXFMT_R8G8B8A8_SRGB (29)
+16:17:29.645 RENDER       :   MSAA                      : none
+16:17:29.656 RENDER       : Driver for NVIDIA GeForce RTX 5070 Ti is from 22.7.2026 (3 months, 14 days old)
+16:17:29.656 RENDER       : GPU_NVIDIA (0x10DE) (NVIDIA GeForce RTX 5070 Ti) with 1 GPU detected, VRAM 15995MB (fast 0MB), shared 16274MB, driver version 610.88
+16:17:29.656 RENDER       : Detected output devices:
+16:17:29.656 RENDER       :  * 2 device/s connected to NVIDIA GeForce RTX 5070 Ti:
+16:17:29.656 RENDER       :    Generic PnP Monitor (\\.\DISPLAY1), 3840x2160 (offset 0x0), 60Hz
+16:17:29.656 RENDER       :    Generic PnP Monitor (\\.\DISPLAY2), 1920x1080 (offset 1065x-1080), 144Hz
+16:17:29.656 RENDER       :  * no output device connected to Intel(R) UHD Graphics 770
+16:17:29.656 RENDER       :   Concurrent frames limit 2
+16:17:29.817 RENDER       : Graphics device features
+16:17:29.817 RENDER       :  Needed:
+16:17:29.817 RENDER       :  * Highest supported shader model: 6.8 (6.0 needed)
+16:17:29.817 RENDER       :  Optional:
+16:17:29.817 RENDER       :  * Allow tearing (VSYNC) : 1
+16:17:29.817 RENDER       :  * 16 bits : 1
+16:17:29.817 RENDER       :  * Resource heap tier : 3
+16:17:29.817 RENDER       :  * Persistent heaps (DRED) : 1
+16:17:29.817 RENDER       :  * DRED 1.2 is supported by compiler
+16:17:29.853 RENDER       : Main RT format setup.
+16:17:29.853 RENDER       :   Main RT format for quality 0	: TEXFMT_R11G11B10_FLOAT (26)
+16:17:29.853 RENDER       :   Main RT format for quality 1	: TEXFMT_R16G16B16A16_FLOAT (10)
+16:17:29.860 ENGINE       : Job system settings: coreCount=20, shortJobContextCount=16, shortJobThreadCount=15, longJobThreadCount=7
+16:17:29.879 PROFILING    : Settings changed took: 0.876600 ms
+16:17:29.884 INPUT        : NPClient: interface -- initialize OK.
+16:17:29.884 INPUT        : NPClient: Window handle registration successful.
+16:17:29.884 INPUT        : NPClient: NaturalPoint software version is 5.0
+16:17:29.884 INPUT        : NPClient: Cursor stopped
+16:17:29.884 INPUT        : NPClient: Data transmission started
+16:17:29.884  RENDER       : RENDER       : Reload shaders
+16:17:29.885  RENDER       : Enfusion shader version 13
+16:17:29.885   INIT         : INIT         : ShaderListReload
+16:17:29.885  PROFILING    : ShaderListReload took: 0.000400 ms
+16:17:30.148  RENDER       : Loaded 3752 newer shader binaries
+16:17:30.149 PROFILING    : Reload shaders took: 264.330600 ms
+16:17:30.159 ENGINE       : Initializing inputs.
+16:17:30.165 NETWORK      : Initializing networking.
+16:17:30.165 NETWORK      : Using new GameRplScheduler.
+16:17:30.165  SCRIPT       : SCRIPT       : Initializing scripts
+16:17:30.165   SCRIPT       : SCRIPT       : ScriptProjectManager init
+16:17:30.165  PROFILING    : ScriptProjectManager init took: 0.010000 ms
+16:17:30.182 PROFILING    : Initializing scripts took: 17.584600 ms
+16:17:30.182 BACKEND      : Backend Services are disabled.
+16:17:30.182 ENGINE       : Enfusion engine successfully created.
+16:17:30.225 DEFAULT   (W): LogiLED: Cannot initialize! (service not running or no compatible device detected)
+16:17:30.240 GUI          : Using default language (en_us)
+16:17:30.240 GUI          : Loading 'en_us' localization file.
+16:17:30.240  INIT         : INIT         : Loading StringTable
+16:17:30.258 PROFILING    : Loading StringTable took: 18.188100 ms
+16:17:30.258  SCRIPT       : SCRIPT       : Compiling GameLib scripts
+16:17:30.285  SCRIPT       : Module: GameLib; loaded 465x files; 607x classes; used 775K of static memory; defines: "ENF_WB,PLATFORM_WINDOWS,ENABLE_DIAG,ENF_ENABLE_VHC_OVERRIDE,ENF_ENABLE_RPLCOMPONENT_IN_GAMECODE"; CRC32: 4507af04
+16:17:30.286 PROFILING    : Compiling GameLib scripts took: 27.610300 ms
+16:17:30.286 RESOURCES    : GetResourceObject @"{1C71B463B3B66BAB}UI/layouts/Menus/MainMenu/IntroSplashScreen.layout"
+16:17:30.287  GUI          : Layout load @"{1C71B463B3B66BAB}UI/layouts/Menus/MainMenu/IntroSplashScreen.layout"
+16:17:30.287   GUI       (E): Unknown class 'SCR_WidgetExportRuleRoot' at offset 282(0x11a)
+16:17:30.424  SCRIPT       : SCRIPT       : Compiling Game scripts
+16:17:31.251 SCRIPT       : Compiling Game scripts
+16:17:31.251  SCRIPT    (W): @"Scripts/Game/Editor/Components/EditableEntity/SCR_EditableEntityComponent.c,785": 'GetPlayerPlatformKind' is obsolete
+16:17:31.251  SCRIPT    (W): @"Scripts/Game/Editor/Components/EditableEntity/SCR_EditableEntityComponent.c,786": 'GetPlayerPlatformId' is obsolete
+16:17:31.478  SCRIPT    (W): @"Scripts/Game/Workshop/SCR_AddonManager.c,876": 'GetRefCount' is obsolete: Will be removed
+16:17:31.499  SCRIPT    (W): @"Scripts/Game/Campaign/SCR_PlayerProfileManagerComponent.c,142": 'PlayerData' is obsolete
+16:17:31.582  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,159": 'GetDSSession' is obsolete
+16:17:31.582  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,162": 'RoomID' is obsolete
+16:17:31.582  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,197": 'GetDSSession' is obsolete
+16:17:31.582  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,201": 'RoomID' is obsolete
+16:17:31.652  SCRIPT    (W): @"Scripts/Game/DataCollection/SCR_DataCollectorComponent.c,481": 'GetStorage' is obsolete
+16:17:31.652  SCRIPT    (W): @"Scripts/Game/DataCollection/SCR_DataCollectorComponent.c,483": 'GetOnlineWritePrivilege' is obsolete
+16:17:31.653  SCRIPT    (W): @"Scripts/Game/Utilities/SCR_PlayerIdentityUtils.c,20": 'GetPlayerIdentityId' is obsolete
+16:17:31.688  SCRIPT    (W): @"Scripts/Game/UI/Menu/MainMenuUI.c,643": 'GetNotifyCount' is obsolete: Will be substitued by Notification Api.
+16:17:31.688  SCRIPT    (W): @"Scripts/Game/UI/Menu/MainMenuUI.c,645": 'GetNotifyItem' is obsolete: Will be substitued by Notification Api.
+16:17:31.730  SCRIPT    (W): @"Scripts/Game/DataCollection/PlayerData/SCR_PlayerData.c,210": 'PlayerData' is obsolete
+16:17:31.825  SCRIPT       : Module: Game; loaded 5846x files; 11921x classes; used 33608K of static memory; defines: "ENF_WB,PLATFORM_WINDOWS,ENABLE_DIAG,ENF_ENABLE_VHC_OVERRIDE,ENF_ENABLE_RPLCOMPONENT_IN_GAMECODE,ENABLE_BASE_DESTRUCTION,BUDGET_OPTIMIZATION_CHECKS,DEBUG,RESPAWN_TIMER_COMPONENT_DEBUG,GAME_MODE_DEBUG,DEBUG_CONFIGURABLE_DIALOGS,DISABLE_WEAPON_SWITCHING,SCRIPTED_AIM_MODIFIER_DEBUG"; CRC32: c25a9857
+16:17:31.865 PROFILING    : Compiling Game scripts took: 1440.400700 ms
+16:17:31.865 INIT         : Creating game instance(ArmaReforgerScripted), version 1.8.0.13 built 2026-08-21 14:30:18 UTC.
+16:17:31.891 ENGINE       : Game successfully created.
+16:17:31.984 PLATFORM     : Save data from container 'settings' have been loaded
+16:17:32.083 PLATFORM     : Save data from container 'sessions' have been loaded
+16:17:32.485 PLATFORM     : System language differs from the saved one - using new language {new: 'en_us'; old: ''}
+16:17:32.485 PLATFORM     : Save data transaction to 'settings' started.
+16:17:32.583 DEFAULT      : [SaveGameManager] Starting new playthrough nr.0 '' for mission 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'.
+16:17:32.584  WORLD        : WORLD        : Entities load 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'
+16:17:32.588 WORLD        : Entities load 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'
+16:17:32.588  RESOURCES (E): Wrong GUID/name for resource @"{0000000000000000}(null)" in property "m_sLoadingLayout"
+16:17:32.592 PROFILING    : Entities load took: 7.918200 ms
+16:17:32.592  WORLD        : WORLD        : Game::LoadEntities
+16:17:32.592   WORLD        : WORLD        : Initializing world systems
+16:17:32.593   NETWORK      : Enabled lag compensation, 29 frames with 100 FPS and 280 ms rewind limits.
+16:17:32.593   WORLD        : WORLD        : CreateEntities
+16:17:32.593    WORLD        : WORLD        : CreateEntities
+16:17:32.593     WORLD        : WORLD        : NotifyBeforeEntitiesCreated
+16:17:32.596     RESOURCES    : Loaded mission headers from 4 addon(s)!
+16:17:32.596    PROFILING    : NotifyBeforeEntitiesCreated took: 1.760900 ms
+16:17:32.596     WORLD        : WORLD        : Wait for preloading data
+16:17:32.596    PROFILING    : Wait for preloading data took: 0.000200 ms
+16:17:32.610    ENTITY       : Create entity @"ENTITY:2" ('MPTestTerrain', GenericTerrainEntity) at <0.000000 1.000000 0.000000>
+16:17:32.610      PROFILING    : PROFILING    : Terrain load
+16:17:32.623     PROFILING    : Terrain load took: 12.329100 ms
+16:17:32.636 WORLD        : Game::LoadEntities
+16:17:32.636  WORLD        : CreateEntities
+16:17:32.636   WORLD        : CreateEntities
+16:17:32.636    ENTITY       : Create entity @"ENTITY:4611686018427387905" ('SCR_AIWorld') at <107.915001 1.000000 159.473999> @"{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et"
+16:17:32.636     PATHFINDING   : Navmesh Init 'Soldiers'
+16:17:32.636      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+16:17:32.636     PATHFINDING   : Navmesh Init 'BTRlike'
+16:17:32.636      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+16:17:32.636     PATHFINDING   : Navmesh Init 'LowRes'
+16:17:32.636      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+16:17:32.904     WORLD        : WORLD        : NotifyBeforeEntitiesInitialized
+16:17:32.904    PROFILING    : NotifyBeforeEntitiesInitialized took: 0.015100 ms
+16:17:32.908    WORLD        : InitEntities 'world'
+16:17:32.908     ENTITY       : Init entity @"ENTITY:4611686018427387906" ('GameMode_Plain1', SCR_BaseGameMode) at <123.265999 1.000000 136.613998>
+16:17:32.908      SCRIPT    (W): SCR_PerceivedFactionManagerComponent trying to set fall back faction 'CIV' but this faction could not be found so it is null instead.
+16:17:32.909     WORLD        : WORLD        : NotifyEntitiesInitialized
+16:17:32.909      TERRAIN      : TERRAIN      : Initializing road networks...
+16:17:32.909     PROFILING    : Initializing road networks... took: 0.000300 ms
+16:17:32.909      DEFAULT      : DEFAULT      : WorldVolumesCollection
+16:17:32.909     PROFILING    : WorldVolumesCollection took: 0.005300 ms
+16:17:32.909    PROFILING    : NotifyEntitiesInitialized took: 0.051400 ms
+16:17:32.909   PROFILING    : CreateEntities took: 315.300000 ms
+16:17:32.909  PROFILING    : CreateEntities took: 315.308400 ms
+16:17:32.909   WORLD        : WORLD        : EOnActivate
+16:17:32.909  PROFILING    : EOnActivate took: 0.085300 ms
+16:17:32.909 PROFILING    : Game::LoadEntities took: 316.365000 ms
+16:17:32.909 PROFILING    : * LoadEntities: 316.377600 ms
+16:17:33.105 DEFAULT      : Entered offline game state.
+16:17:33.205 PROFILING    : Settings changed took: 0.572600 ms
+16:17:33.208 NETWORK      : Player connected: connectionID=2147483646
+16:17:33.208 NETWORK      : ### Connecting player: connectionID=2147483646, Name=
+16:17:33.208 NETWORK      : ### Creating player: PlayerId=1, Name=TacticalBootneck
+16:17:33.214 ENTITY       : SpawnEntityPrefab @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+16:17:33.214  ENTITY       : Create entity @"ENTITY:6917529027641081863" ('SCR_PlayerController') at <0.000000 0.000000 0.000000>
+16:17:33.214   ENTITY       : EntityPrefabUse @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+16:17:33.214    SCRIPT    (W): Notification data in 'SCR_NotificationsLogDisplay' has duplicate notification info key: 'EDITOR_PERCEIVED_FACTION_PUNISHMENT_KILLING_SET'. There should only be one of each key!
+16:17:33.214    SCRIPT    (W): Notification data in 'SCR_NotificationsLogDisplay' has duplicate notification info key: 'EDITOR_PERCEIVED_FACTION_TYPE_DISABLED'. There should only be one of each key!
+16:17:33.216   SCRIPT    (W): Can't open config file ""
+16:17:33.216   SCRIPT    (W): Cannot update game blocklist. Backend is offline.
+16:17:33.216  WORLD        : InitEntities 'world'
+16:17:33.216   ENTITY       : Init entity @"ENTITY:6917529027641081863" ('SCR_PlayerController') at <0.000000 0.000000 0.000000> @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+16:17:33.216    DEFAULT   (W): Chat not available - missing ChatEntity. Only printing this message once. There're possibly more nodes with this requirement.
+16:17:33.232    GUI          : WidgetManager: CrateWidgets @"{3C9DCDD76AB83157}UI/layouts/HUD/HUDLayouts/HUDManager_Root.layout"
+16:17:33.232     SCRIPT    (W): Slot_WeaponInfo Has no Content!
+16:17:33.232     SCRIPT    (W): Slot_Chat Has no Content!
+16:17:33.232     SCRIPT    (W): Slot_VON Has no Content!
+16:17:33.232     SCRIPT    (W): Slot_AvailableActions Has no Content!
+16:17:33.232     SCRIPT    (W): Slot_Vehicle Has no Content!
+16:17:33.232     SCRIPT    (W): Slot_GameVersion Has no Content!
+16:17:33.232     SCRIPT    (W): Slot_Notifications Has no Content!
+16:17:33.232     SCRIPT    (W): Slot_Hints Has no Content!
+16:17:33.234 ENTITY       : SpawnEntityPrefab @"{788933FFDC706A68}Prefabs/Editor/EditorManager.et"
+16:17:33.234  ENTITY       : Create entity @"ENTITY:6917529027641081864" ('SCR_EditorManagerEntity') at <0.000000 0.000000 0.000000> @"{788933FFDC706A68}Prefabs/Editor/EditorManager.et"
+16:17:33.234   ENTITY       : CreateComponent 'BaseRadioComponent'
+16:17:33.234    DEFAULT   (W): World doesn't contain RadioManagerEntity to support any BaseRadioComponent.
+16:17:33.245 NETWORK      : ### Updating player: PlayerId=1, Name=TacticalBootneck, rplIdentity=0xFFFFFFFE, IdentityId=00000000-0000-0000-0000-000000000000
+16:17:33.245 SCRIPT    (W): Ban Settings could not be loaded from BE Storage: Relying on default config
+16:17:33.245 NETWORK      : Players connecting: 0
+16:17:33.245 NETWORK      : Players connected: 1 / 1
+16:17:33.254 WORLD        : Frame start
+16:17:33.254  SCRIPT       : ScenarioFramework: Available tasks are empty, no new tasks will be generated.
+16:17:33.256 WORLD        : UpdateEntities
+16:17:33.256  WORLD        : Frame
+16:17:33.256   SCRIPT       : SCR_BaseGameMode::OnGameStateChanged = GAME
+16:17:33.313 WORLD        : UpdateEntities
+16:17:33.313  WORLD        : PostFrame
+16:17:33.313   GUI          : WidgetManager: CrateWidgets @"{D89BBA18F99053D6}UI/layouts/HUD/Chat/ChatHud.layout"
+16:17:33.313    SCRIPT    (W): EditBoxFilterComponent used on invalid widget type.
+16:17:33.358   RESOURCES    : GetResourceObject @"{20A6917D2114E29A}UI/layouts/HUD/Hint/HintInfoDisplay.layout"
+16:17:33.358    GUI          : Layout load @"{20A6917D2114E29A}UI/layouts/HUD/Hint/HintInfoDisplay.layout"
+16:17:33.358     GUI          : Widget prefab @"{EA1CC57D868E94F9}UI/layouts/HUD/Hint/Hint.layout"
+16:17:33.358      GUI       (W): Overridden prefab member (GUID: '{661AB14E0F471C66}' type: ButtonWidgetClass) no longer exists in prefab
+16:17:33.440  RENDER       : RENDER       : ObjectsHeightMap::Build
+16:17:33.440   RENDER       : RENDER       : MeshOccupancyGridManager::GenerateAllForWorld
+16:17:33.440  PROFILING    : MeshOccupancyGridManager::GenerateAllForWorld took: 0.003400 ms
+16:17:33.445 PROFILING    : ObjectsHeightMap::Build took: 5.440700 ms
+16:17:33.491 SCRIPT       : BCMM_BETA_GEOMETRY item={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et low=<-0.0345764,-0.00198102,-0.041445> high=<0.0322266,0.024261,0.042839> dimensions=<0.066803,0.026242,0.084284>
+16:17:33.493 SCRIPT       : BCMM_BETA_GEOMETRY item={0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et low=<-0.00631714,-0.00109887,-0.048049> high=<0.00631714,0.0108988,0.04829> dimensions=<0.0126343,0.0119977,0.096339>
+16:17:33.493 SCRIPT       : BCMM_BETA_GEOMETRY item={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et low=<-0.00997925,-0.00496697,-0.071> high=<0.00997925,0.014967,0.071> dimensions=<0.0199585,0.0199339,0.142>
+16:17:34.750 SCRIPT       : BCMM_FLUID_RECOVERY pulse=128.913 red=0.326083 delivery=0.319561 terminal=0
+16:17:35.510 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=US count=29 ordinary=187
+16:17:35.511 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=USSR count=29 ordinary=166
+16:17:35.514 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=FIA count=29 ordinary=105
+16:17:36.804 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=1
+16:17:36.820 SCRIPT       : BCMM settings read path=$profile:BCMM_InvalidSettings/settings-a.json parsed=1 valid=0 generation=999
+16:17:36.820 SCRIPT    (E): BCMM settings invalid: files preserved; edits locked until repaired.
+16:17:36.845 SCRIPT       : BCMM_ROLE_LIST count=38 roles=2 native=1
+16:17:36.850 SCRIPT       : BCMM_CATALOGUE_REGISTRIES medical=1 nativeEntries=41
+16:17:38.364 SCRIPT       : BCMM_NET_BODY player=1 assigned=1
+16:17:42.058 SCRIPT       : BCMM_PROCEDURE_ANIMATION started token=1 seconds=10
+16:17:44.324 SCRIPT       : BCMM_PROCEDURE_CANCEL token=1 action=Morphine administration reason=patient condition, role or device eligibility changed
+16:17:47.692 SCRIPT       : BCMM_PROCEDURE_ANIMATION started token=2 seconds=60
+16:17:49.492 SCRIPT    (W): BCMM_ARSENAL_REFUND_DENIED: supply reserved by an active medical procedure
+16:17:49.492 SCRIPT    (W): BCMM_ARSENAL_REFUND_DENIED: supply reserved by an active medical procedure
+16:17:49.791 SCRIPT       : BCMM_PROCEDURE_CANCEL token=2 action=Saline infusion reason=patient condition, role or device eligibility changed
+16:17:52.725 SCRIPT       : BCMM_LEGACY_SALINE before=2418.87 after=2424.8 active=1
+16:17:53.725 SCRIPT       : BCMM_LEGACY_SALINE_STOP before=2424.8 after=2424.74 active=1 allowed=0 duration=1.19841 max=20
+16:17:57.358 SCRIPT       : BCMM_PROCEDURE_CANCEL token=3 action=Connect oxygen supply reason=patient out of reach, obstructed, or performer unable to treat
+16:17:58.259 SCRIPT       : BCMM_NATIVE_ITERATION completed=1 target=10 checks=714 failures=0
+16:17:58.996 SCRIPT       : BCMM_BETA_GEOMETRY item={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et low=<-0.0345764,-0.00198102,-0.041445> high=<0.0322266,0.024261,0.042839> dimensions=<0.066803,0.026242,0.084284>
+16:17:58.996 SCRIPT       : BCMM_BETA_GEOMETRY item={0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et low=<-0.00631714,-0.00109887,-0.048049> high=<0.00631714,0.0108988,0.04829> dimensions=<0.0126343,0.0119977,0.096339>
+16:17:58.996 SCRIPT       : BCMM_BETA_GEOMETRY item={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et low=<-0.00997925,-0.00496697,-0.071> high=<0.00997925,0.014967,0.071> dimensions=<0.0199585,0.0199339,0.142>
+16:18:00.206 SCRIPT       : BCMM_FLUID_RECOVERY pulse=128.913 red=0.326083 delivery=0.319561 terminal=0
+16:18:00.926 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=US count=29 ordinary=187
+16:18:00.927 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=USSR count=29 ordinary=166
+16:18:00.929 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=FIA count=29 ordinary=105
+16:18:02.172 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-a.json parsed=1 valid=1 generation=2
+16:18:02.182 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=1
+16:18:02.204 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-a.json parsed=1 valid=1 generation=2
+16:18:02.213 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=3
+16:18:02.228 SCRIPT       : BCMM settings read path=$profile:BCMM_InvalidSettings/settings-a.json parsed=1 valid=0 generation=999
+16:18:02.228 SCRIPT    (E): BCMM settings invalid: files preserved; edits locked until repaired.
+16:18:02.251 SCRIPT       : BCMM_ROLE_LIST count=38 roles=2 native=1
+16:18:02.252 SCRIPT       : BCMM_CATALOGUE_REGISTRIES medical=1 nativeEntries=41
+16:18:07.258 SCRIPT       : BCMM_PROCEDURE_ANIMATION started token=4 seconds=10
+16:18:09.391 SCRIPT       : BCMM_PROCEDURE_CANCEL token=4 action=Morphine administration reason=patient condition, role or device eligibility changed
+16:18:12.892 SCRIPT       : BCMM_PROCEDURE_ANIMATION started token=5 seconds=60
+16:18:14.658 SCRIPT    (W): BCMM_ARSENAL_REFUND_DENIED: supply reserved by an active medical procedure
+16:18:14.658 SCRIPT    (W): BCMM_ARSENAL_REFUND_DENIED: supply reserved by an active medical procedure
+16:18:15.025 SCRIPT       : BCMM_PROCEDURE_CANCEL token=5 action=Saline infusion reason=patient condition, role or device eligibility changed
+16:18:17.892 SCRIPT       : BCMM_LEGACY_SALINE before=2418.53 after=2424.48 active=1
+16:18:18.891 SCRIPT       : BCMM_LEGACY_SALINE_STOP before=2424.48 after=2424.42 active=1 allowed=0 duration=1.20056 max=20
+16:18:22.525 SCRIPT       : BCMM_PROCEDURE_CANCEL token=6 action=Connect oxygen supply reason=patient out of reach, obstructed, or performer unable to treat
+16:18:23.425 SCRIPT       : BCMM_NATIVE_ITERATION completed=2 target=10 checks=714 failures=0
+16:18:24.164 SCRIPT       : BCMM_BETA_GEOMETRY item={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et low=<-0.0345764,-0.00198102,-0.041445> high=<0.0322266,0.024261,0.042839> dimensions=<0.066803,0.026242,0.084284>
+16:18:24.164 SCRIPT       : BCMM_BETA_GEOMETRY item={0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et low=<-0.00631714,-0.00109887,-0.048049> high=<0.00631714,0.0108988,0.04829> dimensions=<0.0126343,0.0119977,0.096339>
+16:18:24.164 SCRIPT       : BCMM_BETA_GEOMETRY item={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et low=<-0.00997925,-0.00496697,-0.071> high=<0.00997925,0.014967,0.071> dimensions=<0.0199585,0.0199339,0.142>
+16:18:25.399 SCRIPT       : BCMM_FLUID_RECOVERY pulse=128.913 red=0.326083 delivery=0.319561 terminal=0
+16:18:26.127 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=US count=29 ordinary=187
+16:18:26.128 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=USSR count=29 ordinary=166
+16:18:26.130 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=FIA count=29 ordinary=105
+16:18:27.425 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-a.json parsed=1 valid=1 generation=4
+16:18:27.432 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=3
+16:18:27.457 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-a.json parsed=1 valid=1 generation=4
+16:18:27.465 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=5
+16:18:27.480 SCRIPT       : BCMM settings read path=$profile:BCMM_InvalidSettings/settings-a.json parsed=1 valid=0 generation=999
+16:18:27.480 SCRIPT    (E): BCMM settings invalid: files preserved; edits locked until repaired.
+16:18:27.506 SCRIPT       : BCMM_ROLE_LIST count=38 roles=2 native=1
+16:18:27.507 SCRIPT       : BCMM_CATALOGUE_REGISTRIES medical=1 nativeEntries=41
+16:18:32.525 SCRIPT       : BCMM_PROCEDURE_ANIMATION started token=7 seconds=10
+16:18:34.725 SCRIPT       : BCMM_PROCEDURE_CANCEL token=7 action=Morphine administration reason=patient condition, role or device eligibility changed
+16:18:38.158 SCRIPT       : BCMM_PROCEDURE_ANIMATION started token=8 seconds=60
+16:18:39.958 SCRIPT    (W): BCMM_ARSENAL_REFUND_DENIED: supply reserved by an active medical procedure
+16:18:39.958 SCRIPT    (W): BCMM_ARSENAL_REFUND_DENIED: supply reserved by an active medical procedure
+16:18:40.325 SCRIPT       : BCMM_PROCEDURE_CANCEL token=8 action=Saline infusion reason=patient condition, role or device eligibility changed
+16:18:43.191 SCRIPT       : BCMM_LEGACY_SALINE before=2419.53 after=2425.47 active=1
+16:18:44.224 SCRIPT       : BCMM_LEGACY_SALINE_STOP before=2425.47 after=2425.41 active=1 allowed=0 duration=1.20035 max=20
+16:18:47.858 SCRIPT       : BCMM_PROCEDURE_CANCEL token=9 action=Connect oxygen supply reason=patient out of reach, obstructed, or performer unable to treat
+16:18:48.726 SCRIPT       : BCMM_NATIVE_ITERATION completed=3 target=10 checks=714 failures=0
+16:18:49.462 SCRIPT       : BCMM_BETA_GEOMETRY item={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et low=<-0.0345764,-0.00198102,-0.041445> high=<0.0322266,0.024261,0.042839> dimensions=<0.066803,0.026242,0.084284>
+16:18:49.462 SCRIPT       : BCMM_BETA_GEOMETRY item={0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et low=<-0.00631714,-0.00109887,-0.048049> high=<0.00631714,0.0108988,0.04829> dimensions=<0.0126343,0.0119977,0.096339>
+16:18:49.462 SCRIPT       : BCMM_BETA_GEOMETRY item={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et low=<-0.00997925,-0.00496697,-0.071> high=<0.00997925,0.014967,0.071> dimensions=<0.0199585,0.0199339,0.142>
+16:18:50.677 SCRIPT       : BCMM_FLUID_RECOVERY pulse=128.913 red=0.326083 delivery=0.319561 terminal=0
+16:18:51.410 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=US count=29 ordinary=187
+16:18:51.412 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=USSR count=29 ordinary=166
+16:18:51.414 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=FIA count=29 ordinary=105
+16:18:52.664 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-a.json parsed=1 valid=1 generation=6
+16:18:52.671 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=5
+16:18:52.696 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-a.json parsed=1 valid=1 generation=6
+16:18:52.704 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=7
+16:18:52.720 SCRIPT       : BCMM settings read path=$profile:BCMM_InvalidSettings/settings-a.json parsed=1 valid=0 generation=999
+16:18:52.720 SCRIPT    (E): BCMM settings invalid: files preserved; edits locked until repaired.
+16:18:52.742 SCRIPT       : BCMM_ROLE_LIST count=38 roles=2 native=1
+16:18:52.744 SCRIPT       : BCMM_CATALOGUE_REGISTRIES medical=1 nativeEntries=41
+16:18:57.758 SCRIPT       : BCMM_PROCEDURE_ANIMATION started token=10 seconds=10
+16:18:59.895 SCRIPT       : BCMM_PROCEDURE_CANCEL token=10 action=Morphine administration reason=patient condition, role or device eligibility changed
+16:19:03.358 SCRIPT       : BCMM_PROCEDURE_ANIMATION started token=11 seconds=60
+16:19:05.158 SCRIPT    (W): BCMM_ARSENAL_REFUND_DENIED: supply reserved by an active medical procedure
+16:19:05.158 SCRIPT    (W): BCMM_ARSENAL_REFUND_DENIED: supply reserved by an active medical procedure
+16:19:05.458 SCRIPT       : BCMM_PROCEDURE_CANCEL token=11 action=Saline infusion reason=patient condition, role or device eligibility changed
+16:19:08.424 SCRIPT       : BCMM_LEGACY_SALINE before=2418.86 after=2425.14 active=1
+16:19:09.425 SCRIPT       : BCMM_LEGACY_SALINE_STOP before=2425.14 after=2425.07 active=1 allowed=0 duration=1.2665 max=20
+16:19:12.958 SCRIPT       : BCMM_PROCEDURE_CANCEL token=12 action=Connect oxygen supply reason=patient out of reach, obstructed, or performer unable to treat
+16:19:13.959 SCRIPT       : BCMM_NATIVE_ITERATION completed=4 target=10 checks=714 failures=0
+16:19:14.694 SCRIPT       : BCMM_BETA_GEOMETRY item={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et low=<-0.0345764,-0.00198102,-0.041445> high=<0.0322266,0.024261,0.042839> dimensions=<0.066803,0.026242,0.084284>
+16:19:14.694 SCRIPT       : BCMM_BETA_GEOMETRY item={0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et low=<-0.00631714,-0.00109887,-0.048049> high=<0.00631714,0.0108988,0.04829> dimensions=<0.0126343,0.0119977,0.096339>
+16:19:14.695 SCRIPT       : BCMM_BETA_GEOMETRY item={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et low=<-0.00997925,-0.00496697,-0.071> high=<0.00997925,0.014967,0.071> dimensions=<0.0199585,0.0199339,0.142>
+16:19:15.978 SCRIPT       : BCMM_FLUID_RECOVERY pulse=128.913 red=0.326083 delivery=0.319561 terminal=0
+16:19:16.712 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=US count=29 ordinary=187
+16:19:16.714 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=USSR count=29 ordinary=166
+16:19:16.716 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=FIA count=29 ordinary=105
+16:19:17.971 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-a.json parsed=1 valid=1 generation=8
+16:19:17.979 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=7
+16:19:18.003 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-a.json parsed=1 valid=1 generation=8
+16:19:18.011 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=9
+16:19:18.026 SCRIPT       : BCMM settings read path=$profile:BCMM_InvalidSettings/settings-a.json parsed=1 valid=0 generation=999
+16:19:18.027 SCRIPT    (E): BCMM settings invalid: files preserved; edits locked until repaired.
+16:19:18.051 SCRIPT       : BCMM_ROLE_LIST count=38 roles=2 native=1
+16:19:18.052 SCRIPT       : BCMM_CATALOGUE_REGISTRIES medical=1 nativeEntries=41
+16:19:23.124 SCRIPT       : BCMM_PROCEDURE_ANIMATION started token=13 seconds=10
+16:19:25.325 SCRIPT       : BCMM_PROCEDURE_CANCEL token=13 action=Morphine administration reason=patient condition, role or device eligibility changed
+16:19:28.758 SCRIPT       : BCMM_PROCEDURE_ANIMATION started token=14 seconds=60
+16:19:30.524 SCRIPT    (W): BCMM_ARSENAL_REFUND_DENIED: supply reserved by an active medical procedure
+16:19:30.524 SCRIPT    (W): BCMM_ARSENAL_REFUND_DENIED: supply reserved by an active medical procedure
+16:19:30.860 SCRIPT       : BCMM_PROCEDURE_CANCEL token=14 action=Saline infusion reason=patient condition, role or device eligibility changed
+16:19:33.758 SCRIPT       : BCMM_LEGACY_SALINE before=2418.85 after=2425.12 active=1
+16:19:34.791 SCRIPT       : BCMM_LEGACY_SALINE_STOP before=2425.12 after=2425.06 active=1 allowed=0 duration=1.26693 max=20
+16:19:38.361 SCRIPT       : BCMM_PROCEDURE_CANCEL token=15 action=Connect oxygen supply reason=patient out of reach, obstructed, or performer unable to treat
+16:19:39.325 SCRIPT       : BCMM_NATIVE_ITERATION completed=5 target=10 checks=714 failures=0
+16:19:40.028 SCRIPT       : BCMM_BETA_GEOMETRY item={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et low=<-0.0345764,-0.00198102,-0.041445> high=<0.0322266,0.024261,0.042839> dimensions=<0.066803,0.026242,0.084284>
+16:19:40.028 SCRIPT       : BCMM_BETA_GEOMETRY item={0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et low=<-0.00631714,-0.00109887,-0.048049> high=<0.00631714,0.0108988,0.04829> dimensions=<0.0126343,0.0119977,0.096339>
+16:19:40.028 SCRIPT       : BCMM_BETA_GEOMETRY item={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et low=<-0.00997925,-0.00496697,-0.071> high=<0.00997925,0.014967,0.071> dimensions=<0.0199585,0.0199339,0.142>
+16:19:41.247 SCRIPT       : BCMM_FLUID_RECOVERY pulse=128.913 red=0.326083 delivery=0.319561 terminal=0
+16:19:41.974 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=US count=29 ordinary=187
+16:19:41.977 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=USSR count=29 ordinary=166
+16:19:41.978 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=FIA count=29 ordinary=105
+16:19:43.216 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-a.json parsed=1 valid=1 generation=10
+16:19:43.223 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=9
+16:19:43.245 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-a.json parsed=1 valid=1 generation=10
+16:19:43.252 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=11
+16:19:43.269 SCRIPT       : BCMM settings read path=$profile:BCMM_InvalidSettings/settings-a.json parsed=1 valid=0 generation=999
+16:19:43.269 SCRIPT    (E): BCMM settings invalid: files preserved; edits locked until repaired.
+16:19:43.290 SCRIPT       : BCMM_ROLE_LIST count=38 roles=2 native=1
+16:19:43.291 SCRIPT       : BCMM_CATALOGUE_REGISTRIES medical=1 nativeEntries=41
+16:19:48.358 SCRIPT       : BCMM_PROCEDURE_ANIMATION started token=16 seconds=10
+16:19:50.558 SCRIPT       : BCMM_PROCEDURE_CANCEL token=16 action=Morphine administration reason=patient condition, role or device eligibility changed
+16:19:53.925 SCRIPT       : BCMM_PROCEDURE_ANIMATION started token=17 seconds=60
+16:19:55.725 SCRIPT    (W): BCMM_ARSENAL_REFUND_DENIED: supply reserved by an active medical procedure
+16:19:55.725 SCRIPT    (W): BCMM_ARSENAL_REFUND_DENIED: supply reserved by an active medical procedure
+16:19:56.025 SCRIPT       : BCMM_PROCEDURE_CANCEL token=17 action=Saline infusion reason=patient condition, role or device eligibility changed
+16:19:58.958 SCRIPT       : BCMM_LEGACY_SALINE before=2418.86 after=2424.8 active=1
+16:19:59.958 SCRIPT       : BCMM_LEGACY_SALINE_STOP before=2424.8 after=2424.74 active=1 allowed=0 duration=1.20025 max=20
+16:20:03.560 SCRIPT       : BCMM_PROCEDURE_CANCEL token=18 action=Connect oxygen supply reason=patient out of reach, obstructed, or performer unable to treat
+16:20:04.459 SCRIPT       : BCMM_NATIVE_ITERATION completed=6 target=10 checks=714 failures=0
+16:20:05.194 SCRIPT       : BCMM_BETA_GEOMETRY item={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et low=<-0.0345764,-0.00198102,-0.041445> high=<0.0322266,0.024261,0.042839> dimensions=<0.066803,0.026242,0.084284>
+16:20:05.194 SCRIPT       : BCMM_BETA_GEOMETRY item={0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et low=<-0.00631714,-0.00109887,-0.048049> high=<0.00631714,0.0108988,0.04829> dimensions=<0.0126343,0.0119977,0.096339>
+16:20:05.196 SCRIPT       : BCMM_BETA_GEOMETRY item={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et low=<-0.00997925,-0.00496697,-0.071> high=<0.00997925,0.014967,0.071> dimensions=<0.0199585,0.0199339,0.142>
+16:20:06.543 SCRIPT       : BCMM_FLUID_RECOVERY pulse=128.913 red=0.326083 delivery=0.319561 terminal=0
+16:20:07.305 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=US count=29 ordinary=187
+16:20:07.307 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=USSR count=29 ordinary=166
+16:20:07.309 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=FIA count=29 ordinary=105
+16:20:08.619 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-a.json parsed=1 valid=1 generation=12
+16:20:08.629 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=11
+16:20:08.654 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-a.json parsed=1 valid=1 generation=12
+16:20:08.661 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=13
+16:20:08.677 SCRIPT       : BCMM settings read path=$profile:BCMM_InvalidSettings/settings-a.json parsed=1 valid=0 generation=999
+16:20:08.677 SCRIPT    (E): BCMM settings invalid: files preserved; edits locked until repaired.
+16:20:08.704 SCRIPT       : BCMM_ROLE_LIST count=38 roles=2 native=1
+16:20:08.706 SCRIPT       : BCMM_CATALOGUE_REGISTRIES medical=1 nativeEntries=41
+16:20:13.658 SCRIPT       : BCMM_PROCEDURE_ANIMATION started token=19 seconds=10
+16:20:15.891 SCRIPT       : BCMM_PROCEDURE_CANCEL token=19 action=Morphine administration reason=patient condition, role or device eligibility changed
+16:20:19.358 SCRIPT       : BCMM_PROCEDURE_ANIMATION started token=20 seconds=60
+16:20:21.158 SCRIPT    (W): BCMM_ARSENAL_REFUND_DENIED: supply reserved by an active medical procedure
+16:20:21.158 SCRIPT    (W): BCMM_ARSENAL_REFUND_DENIED: supply reserved by an active medical procedure
+16:20:21.458 SCRIPT       : BCMM_PROCEDURE_CANCEL token=20 action=Saline infusion reason=patient condition, role or device eligibility changed
+16:20:24.358 SCRIPT       : BCMM_LEGACY_SALINE before=2418.53 after=2424.48 active=1
+16:20:25.391 SCRIPT       : BCMM_LEGACY_SALINE_STOP before=2424.48 after=2424.42 active=1 allowed=0 duration=1.19991 max=20
+16:20:28.958 SCRIPT       : BCMM_PROCEDURE_CANCEL token=21 action=Connect oxygen supply reason=patient out of reach, obstructed, or performer unable to treat
+16:20:29.893 SCRIPT       : BCMM_NATIVE_ITERATION completed=7 target=10 checks=714 failures=0
+16:20:30.627 SCRIPT       : BCMM_BETA_GEOMETRY item={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et low=<-0.0345764,-0.00198102,-0.041445> high=<0.0322266,0.024261,0.042839> dimensions=<0.066803,0.026242,0.084284>
+16:20:30.627 SCRIPT       : BCMM_BETA_GEOMETRY item={0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et low=<-0.00631714,-0.00109887,-0.048049> high=<0.00631714,0.0108988,0.04829> dimensions=<0.0126343,0.0119977,0.096339>
+16:20:30.627 SCRIPT       : BCMM_BETA_GEOMETRY item={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et low=<-0.00997925,-0.00496697,-0.071> high=<0.00997925,0.014967,0.071> dimensions=<0.0199585,0.0199339,0.142>
+16:20:31.892 SCRIPT       : BCMM_FLUID_RECOVERY pulse=128.913 red=0.326083 delivery=0.319561 terminal=0
+16:20:32.656 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=US count=29 ordinary=187
+16:20:32.658 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=USSR count=29 ordinary=166
+16:20:32.660 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=FIA count=29 ordinary=105
+16:20:33.956 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-a.json parsed=1 valid=1 generation=14
+16:20:33.965 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=13
+16:20:33.989 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-a.json parsed=1 valid=1 generation=14
+16:20:33.997 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=15
+16:20:34.019 SCRIPT       : BCMM settings read path=$profile:BCMM_InvalidSettings/settings-a.json parsed=1 valid=0 generation=999
+16:20:34.019 SCRIPT    (E): BCMM settings invalid: files preserved; edits locked until repaired.
+16:20:34.047 SCRIPT       : BCMM_ROLE_LIST count=38 roles=2 native=1
+16:20:34.049 SCRIPT       : BCMM_CATALOGUE_REGISTRIES medical=1 nativeEntries=41
+16:20:39.124 SCRIPT       : BCMM_PROCEDURE_ANIMATION started token=22 seconds=10
+16:20:41.291 SCRIPT       : BCMM_PROCEDURE_CANCEL token=22 action=Morphine administration reason=patient condition, role or device eligibility changed
+16:20:44.825 SCRIPT       : BCMM_PROCEDURE_ANIMATION started token=23 seconds=60
+16:20:46.591 SCRIPT    (W): BCMM_ARSENAL_REFUND_DENIED: supply reserved by an active medical procedure
+16:20:46.591 SCRIPT    (W): BCMM_ARSENAL_REFUND_DENIED: supply reserved by an active medical procedure
+16:20:46.958 SCRIPT       : BCMM_PROCEDURE_CANCEL token=23 action=Saline infusion reason=patient condition, role or device eligibility changed
+16:20:49.824 SCRIPT       : BCMM_LEGACY_SALINE before=2418.88 after=2424.82 active=1
+16:20:50.825 SCRIPT       : BCMM_LEGACY_SALINE_STOP before=2424.82 after=2424.76 active=1 allowed=0 duration=1.19971 max=20
+16:20:54.425 SCRIPT       : BCMM_PROCEDURE_CANCEL token=24 action=Connect oxygen supply reason=patient out of reach, obstructed, or performer unable to treat
+16:20:55.359 SCRIPT       : BCMM_NATIVE_ITERATION completed=8 target=10 checks=714 failures=0
+16:20:56.095 SCRIPT       : BCMM_BETA_GEOMETRY item={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et low=<-0.0345764,-0.00198102,-0.041445> high=<0.0322266,0.024261,0.042839> dimensions=<0.066803,0.026242,0.084284>
+16:20:56.095 SCRIPT       : BCMM_BETA_GEOMETRY item={0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et low=<-0.00631714,-0.00109887,-0.048049> high=<0.00631714,0.0108988,0.04829> dimensions=<0.0126343,0.0119977,0.096339>
+16:20:56.095 SCRIPT       : BCMM_BETA_GEOMETRY item={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et low=<-0.00997925,-0.00496697,-0.071> high=<0.00997925,0.014967,0.071> dimensions=<0.0199585,0.0199339,0.142>
+16:20:57.358 SCRIPT       : BCMM_FLUID_RECOVERY pulse=128.913 red=0.326083 delivery=0.319561 terminal=0
+16:20:58.122 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=US count=29 ordinary=187
+16:20:58.125 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=USSR count=29 ordinary=166
+16:20:58.127 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=FIA count=29 ordinary=105
+16:20:59.421 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-a.json parsed=1 valid=1 generation=16
+16:20:59.429 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=15
+16:20:59.453 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-a.json parsed=1 valid=1 generation=16
+16:20:59.460 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=17
+16:20:59.477 SCRIPT       : BCMM settings read path=$profile:BCMM_InvalidSettings/settings-a.json parsed=1 valid=0 generation=999
+16:20:59.477 SCRIPT    (E): BCMM settings invalid: files preserved; edits locked until repaired.
+16:20:59.501 SCRIPT       : BCMM_ROLE_LIST count=38 roles=2 native=1
+16:20:59.503 SCRIPT       : BCMM_CATALOGUE_REGISTRIES medical=1 nativeEntries=41
+16:21:04.525 SCRIPT       : BCMM_PROCEDURE_ANIMATION started token=25 seconds=10
+16:21:06.758 SCRIPT       : BCMM_PROCEDURE_CANCEL token=25 action=Morphine administration reason=patient condition, role or device eligibility changed
+16:21:10.191 SCRIPT       : BCMM_PROCEDURE_ANIMATION started token=26 seconds=60
+16:21:11.958 SCRIPT    (W): BCMM_ARSENAL_REFUND_DENIED: supply reserved by an active medical procedure
+16:21:11.958 SCRIPT    (W): BCMM_ARSENAL_REFUND_DENIED: supply reserved by an active medical procedure
+16:21:12.324 SCRIPT       : BCMM_PROCEDURE_CANCEL token=26 action=Saline infusion reason=patient condition, role or device eligibility changed
+16:21:15.158 SCRIPT       : BCMM_LEGACY_SALINE before=2418.86 after=2424.8 active=1
+16:21:16.191 SCRIPT       : BCMM_LEGACY_SALINE_STOP before=2424.8 after=2424.73 active=1 allowed=0 duration=1.19795 max=20
+16:21:19.758 SCRIPT       : BCMM_PROCEDURE_CANCEL token=27 action=Connect oxygen supply reason=patient out of reach, obstructed, or performer unable to treat
+16:21:20.726 SCRIPT       : BCMM_NATIVE_ITERATION completed=9 target=10 checks=714 failures=0
+16:21:21.429 SCRIPT       : BCMM_BETA_GEOMETRY item={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et low=<-0.0345764,-0.00198102,-0.041445> high=<0.0322266,0.024261,0.042839> dimensions=<0.066803,0.026242,0.084284>
+16:21:21.429 SCRIPT       : BCMM_BETA_GEOMETRY item={0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et low=<-0.00631714,-0.00109887,-0.048049> high=<0.00631714,0.0108988,0.04829> dimensions=<0.0126343,0.0119977,0.096339>
+16:21:21.429 SCRIPT       : BCMM_BETA_GEOMETRY item={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et low=<-0.00997925,-0.00496697,-0.071> high=<0.00997925,0.014967,0.071> dimensions=<0.0199585,0.0199339,0.142>
+16:21:22.677 SCRIPT       : BCMM_FLUID_RECOVERY pulse=128.913 red=0.326083 delivery=0.319561 terminal=0
+16:21:23.436 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=US count=29 ordinary=187
+16:21:23.437 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=USSR count=29 ordinary=166
+16:21:23.439 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=FIA count=29 ordinary=105
+16:21:24.730 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-a.json parsed=1 valid=1 generation=18
+16:21:24.738 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=17
+16:21:24.761 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-a.json parsed=1 valid=1 generation=18
+16:21:24.769 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=19
+16:21:24.786 SCRIPT       : BCMM settings read path=$profile:BCMM_InvalidSettings/settings-a.json parsed=1 valid=0 generation=999
+16:21:24.786 SCRIPT    (E): BCMM settings invalid: files preserved; edits locked until repaired.
+16:21:24.809 SCRIPT       : BCMM_ROLE_LIST count=38 roles=2 native=1
+16:21:24.811 SCRIPT       : BCMM_CATALOGUE_REGISTRIES medical=1 nativeEntries=41
+16:21:29.891 SCRIPT       : BCMM_PROCEDURE_ANIMATION started token=28 seconds=10
+16:21:31.991 SCRIPT       : BCMM_PROCEDURE_CANCEL token=28 action=Morphine administration reason=patient condition, role or device eligibility changed
+16:21:35.492 SCRIPT       : BCMM_PROCEDURE_ANIMATION started token=29 seconds=60
+16:21:37.291 SCRIPT    (W): BCMM_ARSENAL_REFUND_DENIED: supply reserved by an active medical procedure
+16:21:37.291 SCRIPT    (W): BCMM_ARSENAL_REFUND_DENIED: supply reserved by an active medical procedure
+16:21:37.591 SCRIPT       : BCMM_PROCEDURE_CANCEL token=29 action=Saline infusion reason=patient condition, role or device eligibility changed
+16:21:40.525 SCRIPT       : BCMM_LEGACY_SALINE before=2418.87 after=2424.81 active=1
+16:21:41.558 SCRIPT       : BCMM_LEGACY_SALINE_STOP before=2424.81 after=2424.75 active=1 allowed=0 duration=1.19994 max=20
+16:21:45.158 SCRIPT       : BCMM_PROCEDURE_CANCEL token=30 action=Connect oxygen supply reason=patient out of reach, obstructed, or performer unable to treat
+16:21:46.093 SCRIPT       : BCMM_NATIVE_ITERATION completed=10 target=10 checks=714 failures=0
+16:21:46.093 SCRIPT       : BCMM_CHECK COMPLETE checks=7140 failures=0 run=dd351a4dcc4945cd90006a2e78565fdf
+16:21:46.125 SCRIPT    (W): Maybe a problem: DataProgression is not ready but the analytics event was requested

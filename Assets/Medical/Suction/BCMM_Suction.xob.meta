@@ -3,69 +3,61 @@ MetaFileClass {
  Configurations {
   FBXResourceClass PC {
    MaterialAssigns {
-    MaterialAssignClass "{6AB6FC0BD92983FB}" {
-     SourceMaterial "BCMM_Suction_M0"
-     AssignedMaterial "{3696D7BC7A4A3B7C}Assets/Medical/Suction/Data/Suction_0.emat"
+    MaterialAssignClass "{6AC49B53F751A705}" {
+     SourceMaterial "BCMM_Suction_M15"
+     AssignedMaterial "{AFDE35D2E8307BC5}Assets/Medical/Suction/Data/Suction_15.emat"
     }
-    MaterialAssignClass "{6AB6FC0BD929822E}" {
-     SourceMaterial "BCMM_Suction_M1"
-     AssignedMaterial "{8C3DE9F38A607240}Assets/Medical/Suction/Data/Suction_1.emat"
-    }
-    MaterialAssignClass "{6AB6FC0BD929823C}" {
-     SourceMaterial "BCMM_Suction_M2"
-     AssignedMaterial "{C0160C811DA93E65}Assets/Medical/Suction/Data/Suction_2.emat"
-    }
-    MaterialAssignClass "{6AB6FC0BD9298230}" {
-     SourceMaterial "BCMM_Suction_M3"
-     AssignedMaterial "{29FAD143646AFAFE}Assets/Medical/Suction/Data/Suction_3.emat"
-    }
-    MaterialAssignClass "{6AB6FC0BD929820B}" {
-     SourceMaterial "BCMM_Suction_M4"
-     AssignedMaterial "{C6C01CDF18145E32}Assets/Medical/Suction/Data/Suction_4.emat"
-    }
-    MaterialAssignClass "{6AB6FC0BD929821F}" {
-     SourceMaterial "BCMM_Suction_M5"
-     AssignedMaterial "{4883129CD0624385}Assets/Medical/Suction/Data/Suction_5.emat"
-    }
-    MaterialAssignClass "{6AB6FC0BD9298217}" {
-     SourceMaterial "BCMM_Suction_M6"
-     AssignedMaterial "{2079204343EBD8CB}Assets/Medical/Suction/Data/Suction_6.emat"
-    }
-    MaterialAssignClass "{6AB6FC0BD929826B}" {
-     SourceMaterial "BCMM_Suction_M7"
-     AssignedMaterial "{4C971310367BCACB}Assets/Medical/Suction/Data/Suction_7.emat"
-    }
-    MaterialAssignClass "{6AB6FC0BD9298263}" {
-     SourceMaterial "BCMM_Suction_M8"
-     AssignedMaterial "{A36D61768ED0E006}Assets/Medical/Suction/Data/Suction_8.emat"
-    }
-    MaterialAssignClass "{6AB6FC0BD9298274}" {
-     SourceMaterial "BCMM_Suction_M9"
-     AssignedMaterial "{671FFF09B994CEDF}Assets/Medical/Suction/Data/Suction_9.emat"
-    }
-    MaterialAssignClass "{6AB6FC0BD9298249}" {
-     SourceMaterial "BCMM_Suction_M10"
-     AssignedMaterial "{1034D8F8B8F919C8}Assets/Medical/Suction/Data/Suction_10.emat"
-    }
-    MaterialAssignClass "{6AB6FC0BD9298240}" {
-     SourceMaterial "BCMM_Suction_M11"
-     AssignedMaterial "{5075418059853A24}Assets/Medical/Suction/Data/Suction_11.emat"
-    }
-    MaterialAssignClass "{6AB6FC0BD929825F}" {
-     SourceMaterial "BCMM_Suction_M12"
-     AssignedMaterial "{454AA8FBBD3DB060}Assets/Medical/Suction/Data/Suction_12.emat"
-    }
-    MaterialAssignClass "{6AB6FC0BD9298257}" {
-     SourceMaterial "BCMM_Suction_M13"
-     AssignedMaterial "{C32297E342B40EA5}Assets/Medical/Suction/Data/Suction_13.emat"
-    }
-    MaterialAssignClass "{6AB6FC0BD92982AF}" {
+    MaterialAssignClass "{6AC49B53F751A70E}" {
      SourceMaterial "BCMM_Suction_M14"
      AssignedMaterial "{F201E817610FDC7D}Assets/Medical/Suction/Data/Suction_14.emat"
     }
-    MaterialAssignClass "{6AB6FC0BD92982A5}" {
-     SourceMaterial "BCMM_Suction_M15"
-     AssignedMaterial "{AFDE35D2E8307BC5}Assets/Medical/Suction/Data/Suction_15.emat"
+    MaterialAssignClass "{6AC49B53F751A098}" {
+     SourceMaterial "BCMM_Suction_M2"
+     AssignedMaterial "{C0160C811DA93E65}Assets/Medical/Suction/Data/Suction_2.emat"
+    }
+    MaterialAssignClass "{6AC49B53F751A093}" {
+     SourceMaterial "BCMM_Suction_M3"
+     AssignedMaterial "{29FAD143646AFAFE}Assets/Medical/Suction/Data/Suction_3.emat"
+    }
+    MaterialAssignClass "{6AC49B53F751A0E5}" {
+     SourceMaterial "BCMM_Suction_M4"
+     AssignedMaterial "{C6C01CDF18145E32}Assets/Medical/Suction/Data/Suction_4.emat"
+    }
+    MaterialAssignClass "{6AC49B53F751A0FF}" {
+     SourceMaterial "BCMM_Suction_M5"
+     AssignedMaterial "{4883129CD0624385}Assets/Medical/Suction/Data/Suction_5.emat"
+    }
+    MaterialAssignClass "{6AC49B53F751A0F0}" {
+     SourceMaterial "BCMM_Suction_M6"
+     AssignedMaterial "{2079204343EBD8CB}Assets/Medical/Suction/Data/Suction_6.emat"
+    }
+    MaterialAssignClass "{6AC49B53F751A0C8}" {
+     SourceMaterial "BCMM_Suction_M7"
+     AssignedMaterial "{4C971310367BCACB}Assets/Medical/Suction/Data/Suction_7.emat"
+    }
+    MaterialAssignClass "{6AC49B53F751A0C0}" {
+     SourceMaterial "BCMM_Suction_M8"
+     AssignedMaterial "{A36D61768ED0E006}Assets/Medical/Suction/Data/Suction_8.emat"
+    }
+    MaterialAssignClass "{6AC49B53F751A0DA}" {
+     SourceMaterial "BCMM_Suction_M9"
+     AssignedMaterial "{671FFF09B994CEDF}Assets/Medical/Suction/Data/Suction_9.emat"
+    }
+    MaterialAssignClass "{6AC49B53F751A729}" {
+     SourceMaterial "BCMM_Suction_M10"
+     AssignedMaterial "{1034D8F8B8F919C8}Assets/Medical/Suction/Data/Suction_10.emat"
+    }
+    MaterialAssignClass "{6AC49B53F751A721}" {
+     SourceMaterial "BCMM_Suction_M11"
+     AssignedMaterial "{5075418059853A24}Assets/Medical/Suction/Data/Suction_11.emat"
+    }
+    MaterialAssignClass "{6AC49B53F751A738}" {
+     SourceMaterial "BCMM_Suction_M12"
+     AssignedMaterial "{454AA8FBBD3DB060}Assets/Medical/Suction/Data/Suction_12.emat"
+    }
+    MaterialAssignClass "{6AC49B53F751A737}" {
+     SourceMaterial "BCMM_Suction_M13"
+     AssignedMaterial "{C32297E342B40EA5}Assets/Medical/Suction/Data/Suction_13.emat"
     }
    }
    MeshParams {

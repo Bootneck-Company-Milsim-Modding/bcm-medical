@@ -166,6 +166,7 @@ modded class SCR_CharacterDamageManagerComponent
  protected int m_BCMMTransportActorPlayer;
  protected int m_BCMMTransportPatientPlayer;
  protected bool m_BCMMTransportApplied;
+ protected ref BCMM_TransportCollision m_BCMMTransportCollision=new BCMM_TransportCollision();
  protected bool m_BCMMTransportInitiallyConscious;
  protected float m_BCMMTransportPoseUntil;
  override void OnPostInit(IEntity owner)
@@ -202,6 +203,7 @@ modded class SCR_CharacterDamageManagerComponent
  protected void BCMM_TransportChanged(){if(m_BCMMLivingTransportMode==0)BCMM_RestoreTransportControls();}
  protected void BCMM_RestoreTransportControls()
  {
+  m_BCMMTransportCollision.Restore(GetOwner());
   BCMM_StopCasualtyPose();
   // Native compartment handling owns collision/gravity and clinical control
   // flags. Only the active input hook is suppressed, so waking cannot restore
@@ -244,6 +246,7 @@ modded class SCR_CharacterDamageManagerComponent
   if(m_BCMMLivingTransportMode==0){if(m_BCMMTransportApplied)BCMM_RestoreTransportControls();return;}
   IEntity actor=BCMM_TransportActor();IEntity patient=GetOwner();
   if(!actor){if(Replication.IsServer())BCMM_EndTransport();return;}
+  m_BCMMTransportCollision.Apply(patient,EPhysicsLayerPresets.FireGeo);
   if(Replication.IsServer())
   {
    bool valid=BCMM_LivingTransport.Eligible(actor,patient,m_BCMMLivingTransportMode,false);

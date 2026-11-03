@@ -1,0 +1,433 @@
+---------------------------------------------
+Log C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145112-692\acceptance-Hands-20261102-145134-532\profile\logs\logs_2026-11-02_14-51-34\console.log started at 2026-11-02 14:51:34 (2026-11-02 14:51:34 UTC)
+
+14:51:34.776 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145112-692\acceptance-Hands-20261102-145134-532\profile\logs\logs_2026-11-02_14-51-34' to filesystem under name logs
+14:51:34.776 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145112-692\acceptance-Hands-20261102-145134-532\profile\profile' to filesystem under name profile
+14:51:34.777 ENGINE       : FileSystem: Current working directory: 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\'
+14:51:34.777 ENGINE       : Initializing engine, version 192142
+14:51:34.777 ENGINE       : CLI Params: -gproj C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145112-692\acceptance-Hands-20261102-145134-532\diagnostic/addon.gproj -addons B6C4ED1CA1260002 -addonsDir C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145112-692\acceptance-Hands-20261102-145134-532\diagnostic,C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145112-692\packed,C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons -profile C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145112-692\acceptance-Hands-20261102-145134-532/profile -world worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent -noBackend -disableCrashReporter -noSound -noThrow -noFocus -forceUpdate -window -screenWidth 1280 -screenHeight 720 -posX -2000 -posY -2000 -maxFPS 30 -bcmmRunToken 4eb05884b8f243fd8f5d9fb7b93ec653 -bcmmBeta01Hands 1
+14:51:34.782 ENGINE       : Addon dirs:
+14:51:34.782  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-145112-692/acceptance-Hands-20261102-145134-532/diagnostic/'
+14:51:34.782  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-145112-692/acceptance-Hands-20261102-145134-532/diagnostic'
+14:51:34.782  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-145112-692/packed'
+14:51:34.782  ENGINE       : dir: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons'
+14:51:34.782  ENGINE       : dir: './addons'
+14:51:34.782  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-145112-692/acceptance-Hands-20261102-145134-532/profile/addons'
+14:51:34.782 ENGINE       : Available addons:
+14:51:34.782  ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-145112-692/acceptance-Hands-20261102-145134-532/diagnostic/addon.gproj' guid: 'B6C4ED1CA1260002'
+14:51:34.782  ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-145112-692/packed/addon.gproj' guid: '6AB4B3F3FD215919' (packed)
+14:51:34.782  ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/core.gproj' guid: '5614BBCCBB55ED1C' (packed)
+14:51:34.782  ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/ArmaReforger.gproj' guid: '58D0FB3206B6F859' (packed)
+14:51:34.782 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145112-692\acceptance-Hands-20261102-145134-532\diagnostic' to filesystem under name BCM_Medical_DomainChecks
+14:51:35.012 ENGINE       : FileSystem: Adding package 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-145112-692/packed/' (pak count: 1) to filesystem under name MCBMedical
+14:51:35.102 ENGINE       : FileSystem: Adding package 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/' (pak count: 14) to filesystem under name ArmaReforger
+14:51:35.106 ENGINE       : FileSystem: Adding package 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/' (pak count: 2) to filesystem under name core
+14:51:35.106 ENGINE       : CPU vendor         : GenuineIntel
+14:51:35.106 ENGINE       : CPU type           : 1
+14:51:35.106 ENGINE       : CPU name           : 12th Gen Intel(R) Core(TM) i7-12700K
+14:51:35.106 ENGINE       : CPU cache info     : L1 [Inst 64KB, Data 48KB], L2 [Unif 2048KB], L3 [Unif 25600KB]
+14:51:35.106 ENGINE       : CPU count logical  : 20
+14:51:35.106 ENGINE       : CPU count physical : 12
+14:51:35.106 ENGINE       : CPU features       : mmx sse sse2 sse3 ssse3 sse4_1 sse4_2 popcnt aesni pclmulqdq osxsave avx sha avx2
+14:51:35.106 RESOURCES    : ResourceDB: loading cache (id=0 name=BCM_Medical_DomainChecks path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145112-692\acceptance-Hands-20261102-145134-532\diagnostic/resourceDatabase.rdb)
+14:51:35.113 RESOURCES    : ResourceDB: loading cache (id=1 name=MCBMedical path=C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-145112-692/packed/resourceDatabase.rdb)
+14:51:35.115 RESOURCES    : ResourceDB: loading cache (id=2 name=ArmaReforger path=C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/resourceDatabase.rdb)
+14:51:35.213 RESOURCES    : ResourceDB: loading cache (id=3 name=core path=C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/resourceDatabase.rdb)
+14:51:35.214 RESOURCES    : ResourceDB: loading cache (id=4 name=profile path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145112-692\acceptance-Hands-20261102-145134-532\profile\profile/resourceDatabase.rdb)
+14:51:35.214 RESOURCES    : ResourceDB: loading cache (id=5 name=logs path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-145112-692\acceptance-Hands-20261102-145134-532\profile\logs\logs_2026-11-02_14-51-34/resourceDatabase.rdb)
+14:51:35.327 ENGINE       : GameProject load
+14:51:35.327  ENGINE       : Loaded addons:
+14:51:35.327   ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/core.gproj' guid: '5614BBCCBB55ED1C'
+14:51:35.327   ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/ArmaReforger.gproj' guid: '58D0FB3206B6F859'
+14:51:35.327   ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-145112-692/packed/addon.gproj' guid: '6AB4B3F3FD215919'
+14:51:35.327   ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-145112-692/acceptance-Hands-20261102-145134-532/diagnostic/addon.gproj' guid: 'B6C4ED1CA1260002'
+14:51:35.330 ENGINE       : Loading custom engine user config '$profile:.save/app1874880_user76561198093323465/settings/ReforgerEngineSettings.conf'
+14:51:35.330 ENGINE       : No Enfusion settings file loaded. Continuing with defaults
+14:51:35.330 ENGINE       : Locale info: system en-GB (English), user en-GB (English)
+14:51:35.498 RENDER       : (OK) Adapter 'NVIDIA GeForce RTX 5070 Ti' supports feature level 12_0
+14:51:35.552 RENDER       : (OK) Adapter 'Intel(R) UHD Graphics 770' supports feature level 12_0
+14:51:35.556 RENDER       : Adapter 1 (Intel(R) UHD Graphics 770) failed to provide some output
+14:51:35.556 RENDER       : Basic screen setup:
+14:51:35.556 RENDER       :   Back buffer width x height: 1280x720
+14:51:35.556 RENDER       :   Back buffer format	       : TEXFMT_R8G8B8A8_SRGB (29)
+14:51:35.556 RENDER       :   MSAA                      : none
+14:51:35.570 RENDER       : Driver for NVIDIA GeForce RTX 5070 Ti is from 22.7.2026 (3 months, 14 days old)
+14:51:35.570 RENDER       : GPU_NVIDIA (0x10DE) (NVIDIA GeForce RTX 5070 Ti) with 1 GPU detected, VRAM 15995MB (fast 0MB), shared 16274MB, driver version 610.88
+14:51:35.570 RENDER       : Detected output devices:
+14:51:35.570 RENDER       :  * 2 device/s connected to NVIDIA GeForce RTX 5070 Ti:
+14:51:35.570 RENDER       :    Generic PnP Monitor (\\.\DISPLAY1), 3840x2160 (offset 0x0), 60Hz
+14:51:35.570 RENDER       :    Generic PnP Monitor (\\.\DISPLAY2), 1920x1080 (offset 1065x-1080), 144Hz
+14:51:35.570 RENDER       :  * no output device connected to Intel(R) UHD Graphics 770
+14:51:35.570 RENDER       :   Concurrent frames limit 2
+14:51:35.752 RENDER       : Graphics device features
+14:51:35.752 RENDER       :  Needed:
+14:51:35.752 RENDER       :  * Highest supported shader model: 6.8 (6.0 needed)
+14:51:35.752 RENDER       :  Optional:
+14:51:35.752 RENDER       :  * Allow tearing (VSYNC) : 1
+14:51:35.752 RENDER       :  * 16 bits : 1
+14:51:35.752 RENDER       :  * Resource heap tier : 3
+14:51:35.752 RENDER       :  * Persistent heaps (DRED) : 1
+14:51:35.752 RENDER       :  * DRED 1.2 is supported by compiler
+14:51:35.792 RENDER       : Main RT format setup.
+14:51:35.792 RENDER       :   Main RT format for quality 0	: TEXFMT_R11G11B10_FLOAT (26)
+14:51:35.792 RENDER       :   Main RT format for quality 1	: TEXFMT_R16G16B16A16_FLOAT (10)
+14:51:35.801 ENGINE       : Job system settings: coreCount=20, shortJobContextCount=16, shortJobThreadCount=15, longJobThreadCount=7
+14:51:35.834 PROFILING    : Settings changed took: 14.999400 ms
+14:51:35.846 INPUT        : NPClient: interface -- initialize OK.
+14:51:35.846 INPUT        : NPClient: Window handle registration successful.
+14:51:35.846 INPUT        : NPClient: NaturalPoint software version is 5.0
+14:51:35.846 INPUT        : NPClient: Cursor stopped
+14:51:35.846 INPUT        : NPClient: Data transmission started
+14:51:35.846  RENDER       : RENDER       : Reload shaders
+14:51:35.846  RENDER       : Enfusion shader version 13
+14:51:35.846   INIT         : INIT         : ShaderListReload
+14:51:35.846  PROFILING    : ShaderListReload took: 0.000600 ms
+14:51:36.092  RENDER       : Loaded 3752 newer shader binaries
+14:51:36.092 PROFILING    : Reload shaders took: 246.739300 ms
+14:51:36.103 ENGINE       : Initializing inputs.
+14:51:36.108 NETWORK      : Initializing networking.
+14:51:36.108 NETWORK      : Using new GameRplScheduler.
+14:51:36.109  SCRIPT       : SCRIPT       : Initializing scripts
+14:51:36.109   SCRIPT       : SCRIPT       : ScriptProjectManager init
+14:51:36.109  PROFILING    : ScriptProjectManager init took: 0.010800 ms
+14:51:36.127 PROFILING    : Initializing scripts took: 17.218800 ms
+14:51:36.127 BACKEND      : Backend Services are disabled.
+14:51:36.127 ENGINE       : Enfusion engine successfully created.
+14:51:36.172 DEFAULT   (W): LogiLED: Cannot initialize! (service not running or no compatible device detected)
+14:51:36.188 GUI          : Using default language (en_us)
+14:51:36.188 GUI          : Loading 'en_us' localization file.
+14:51:36.188  INIT         : INIT         : Loading StringTable
+14:51:36.207 PROFILING    : Loading StringTable took: 19.395100 ms
+14:51:36.207  SCRIPT       : SCRIPT       : Compiling GameLib scripts
+14:51:36.235  SCRIPT       : Module: GameLib; loaded 465x files; 607x classes; used 775K of static memory; defines: "ENF_WB,PLATFORM_WINDOWS,ENABLE_DIAG,ENF_ENABLE_VHC_OVERRIDE,ENF_ENABLE_RPLCOMPONENT_IN_GAMECODE"; CRC32: 4507af04
+14:51:36.236 PROFILING    : Compiling GameLib scripts took: 28.457100 ms
+14:51:36.236 RESOURCES    : GetResourceObject @"{1C71B463B3B66BAB}UI/layouts/Menus/MainMenu/IntroSplashScreen.layout"
+14:51:36.236  GUI          : Layout load @"{1C71B463B3B66BAB}UI/layouts/Menus/MainMenu/IntroSplashScreen.layout"
+14:51:36.236   GUI       (E): Unknown class 'SCR_WidgetExportRuleRoot' at offset 282(0x11a)
+14:51:36.385  SCRIPT       : SCRIPT       : Compiling Game scripts
+14:51:37.353 SCRIPT       : Compiling Game scripts
+14:51:37.353  SCRIPT    (W): @"Scripts/Game/Editor/Components/EditableEntity/SCR_EditableEntityComponent.c,785": 'GetPlayerPlatformKind' is obsolete
+14:51:37.353  SCRIPT    (W): @"Scripts/Game/Editor/Components/EditableEntity/SCR_EditableEntityComponent.c,786": 'GetPlayerPlatformId' is obsolete
+14:51:37.604  SCRIPT    (W): @"Scripts/Game/Workshop/SCR_AddonManager.c,876": 'GetRefCount' is obsolete: Will be removed
+14:51:37.628  SCRIPT    (W): @"Scripts/Game/Campaign/SCR_PlayerProfileManagerComponent.c,142": 'PlayerData' is obsolete
+14:51:37.735  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,159": 'GetDSSession' is obsolete
+14:51:37.735  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,162": 'RoomID' is obsolete
+14:51:37.735  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,197": 'GetDSSession' is obsolete
+14:51:37.735  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,201": 'RoomID' is obsolete
+14:51:37.814  SCRIPT    (W): @"Scripts/Game/DataCollection/SCR_DataCollectorComponent.c,481": 'GetStorage' is obsolete
+14:51:37.814  SCRIPT    (W): @"Scripts/Game/DataCollection/SCR_DataCollectorComponent.c,483": 'GetOnlineWritePrivilege' is obsolete
+14:51:37.816  SCRIPT    (W): @"Scripts/Game/Utilities/SCR_PlayerIdentityUtils.c,20": 'GetPlayerIdentityId' is obsolete
+14:51:37.852  SCRIPT    (W): @"Scripts/Game/UI/Menu/MainMenuUI.c,643": 'GetNotifyCount' is obsolete: Will be substitued by Notification Api.
+14:51:37.852  SCRIPT    (W): @"Scripts/Game/UI/Menu/MainMenuUI.c,645": 'GetNotifyItem' is obsolete: Will be substitued by Notification Api.
+14:51:37.897  SCRIPT    (W): @"Scripts/Game/DataCollection/PlayerData/SCR_PlayerData.c,210": 'PlayerData' is obsolete
+14:51:38.005  SCRIPT       : Module: Game; loaded 5845x files; 11920x classes; used 33605K of static memory; defines: "ENF_WB,PLATFORM_WINDOWS,ENABLE_DIAG,ENF_ENABLE_VHC_OVERRIDE,ENF_ENABLE_RPLCOMPONENT_IN_GAMECODE,ENABLE_BASE_DESTRUCTION,BUDGET_OPTIMIZATION_CHECKS,DEBUG,RESPAWN_TIMER_COMPONENT_DEBUG,GAME_MODE_DEBUG,DEBUG_CONFIGURABLE_DIALOGS,DISABLE_WEAPON_SWITCHING,SCRIPTED_AIM_MODIFIER_DEBUG"; CRC32: 1b07ba2f
+14:51:38.058 PROFILING    : Compiling Game scripts took: 1672.029500 ms
+14:51:38.058 INIT         : Creating game instance(ArmaReforgerScripted), version 1.8.0.13 built 2026-08-21 14:30:18 UTC.
+14:51:38.085 ENGINE       : Game successfully created.
+14:51:38.134 PLATFORM     : Save data from container 'settings' have been loaded
+14:51:38.235 PLATFORM     : Save data from container 'sessions' have been loaded
+14:51:38.635 PLATFORM     : System language differs from the saved one - using new language {new: 'en_us'; old: ''}
+14:51:38.635 PLATFORM     : Save data transaction to 'settings' started.
+14:51:38.734 DEFAULT      : [SaveGameManager] Starting new playthrough nr.0 '' for mission 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'.
+14:51:38.734  WORLD        : WORLD        : Entities load 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'
+14:51:38.738 WORLD        : Entities load 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'
+14:51:38.738  RESOURCES (E): Wrong GUID/name for resource @"{0000000000000000}(null)" in property "m_sLoadingLayout"
+14:51:38.744 PROFILING    : Entities load took: 8.831300 ms
+14:51:38.745  WORLD        : WORLD        : Game::LoadEntities
+14:51:38.745   WORLD        : WORLD        : Initializing world systems
+14:51:38.746   NETWORK      : Enabled lag compensation, 29 frames with 100 FPS and 280 ms rewind limits.
+14:51:38.746   WORLD        : WORLD        : CreateEntities
+14:51:38.746    WORLD        : WORLD        : CreateEntities
+14:51:38.746     WORLD        : WORLD        : NotifyBeforeEntitiesCreated
+14:51:38.748     RESOURCES    : Loaded mission headers from 4 addon(s)!
+14:51:38.748    PROFILING    : NotifyBeforeEntitiesCreated took: 1.929500 ms
+14:51:38.748     WORLD        : WORLD        : Wait for preloading data
+14:51:38.748    PROFILING    : Wait for preloading data took: 0.000500 ms
+14:51:38.763    ENTITY       : Create entity @"ENTITY:2" ('MPTestTerrain', GenericTerrainEntity) at <0.000000 1.000000 0.000000>
+14:51:38.763      PROFILING    : PROFILING    : Terrain load
+14:51:38.777     PROFILING    : Terrain load took: 13.255100 ms
+14:51:38.792 WORLD        : Game::LoadEntities
+14:51:38.792  WORLD        : CreateEntities
+14:51:38.792   WORLD        : CreateEntities
+14:51:38.792    ENTITY       : Create entity @"ENTITY:4611686018427387905" ('SCR_AIWorld') at <107.915001 1.000000 159.473999> @"{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et"
+14:51:38.792     PATHFINDING   : Navmesh Init 'Soldiers'
+14:51:38.792      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+14:51:38.792     PATHFINDING   : Navmesh Init 'BTRlike'
+14:51:38.792      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+14:51:38.792     PATHFINDING   : Navmesh Init 'LowRes'
+14:51:38.792      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+14:51:39.068     WORLD        : WORLD        : NotifyBeforeEntitiesInitialized
+14:51:39.068    PROFILING    : NotifyBeforeEntitiesInitialized took: 0.014700 ms
+14:51:39.071    WORLD        : InitEntities 'world'
+14:51:39.071     ENTITY       : Init entity @"ENTITY:4611686018427387906" ('GameMode_Plain1', SCR_BaseGameMode) at <123.265999 1.000000 136.613998>
+14:51:39.071      SCRIPT    (W): SCR_PerceivedFactionManagerComponent trying to set fall back faction 'CIV' but this faction could not be found so it is null instead.
+14:51:39.072     WORLD        : WORLD        : NotifyEntitiesInitialized
+14:51:39.072      TERRAIN      : TERRAIN      : Initializing road networks...
+14:51:39.072     PROFILING    : Initializing road networks... took: 0.000400 ms
+14:51:39.072      DEFAULT      : DEFAULT      : WorldVolumesCollection
+14:51:39.072     PROFILING    : WorldVolumesCollection took: 0.004200 ms
+14:51:39.072    PROFILING    : NotifyEntitiesInitialized took: 0.056700 ms
+14:51:39.072   PROFILING    : CreateEntities took: 326.493200 ms
+14:51:39.072  PROFILING    : CreateEntities took: 326.501800 ms
+14:51:39.072   WORLD        : WORLD        : EOnActivate
+14:51:39.072  PROFILING    : EOnActivate took: 0.053100 ms
+14:51:39.072 PROFILING    : Game::LoadEntities took: 327.884900 ms
+14:51:39.072 PROFILING    : * LoadEntities: 327.907300 ms
+14:51:39.269 DEFAULT      : Entered offline game state.
+14:51:39.380 PROFILING    : Settings changed took: 11.952300 ms
+14:51:39.382 NETWORK      : Player connected: connectionID=2147483646
+14:51:39.382 NETWORK      : ### Connecting player: connectionID=2147483646, Name=
+14:51:39.383 NETWORK      : ### Creating player: PlayerId=1, Name=TacticalBootneck
+14:51:39.387 ENTITY       : SpawnEntityPrefab @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+14:51:39.387  ENTITY       : Create entity @"ENTITY:6917529027641081863" ('SCR_PlayerController') at <0.000000 0.000000 0.000000>
+14:51:39.387   ENTITY       : EntityPrefabUse @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+14:51:39.387    SCRIPT    (W): Notification data in 'SCR_NotificationsLogDisplay' has duplicate notification info key: 'EDITOR_PERCEIVED_FACTION_PUNISHMENT_KILLING_SET'. There should only be one of each key!
+14:51:39.387    SCRIPT    (W): Notification data in 'SCR_NotificationsLogDisplay' has duplicate notification info key: 'EDITOR_PERCEIVED_FACTION_TYPE_DISABLED'. There should only be one of each key!
+14:51:39.389   SCRIPT    (W): Can't open config file ""
+14:51:39.389   SCRIPT    (W): Cannot update game blocklist. Backend is offline.
+14:51:39.389  WORLD        : InitEntities 'world'
+14:51:39.389   ENTITY       : Init entity @"ENTITY:6917529027641081863" ('SCR_PlayerController') at <0.000000 0.000000 0.000000> @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+14:51:39.389    DEFAULT   (W): Chat not available - missing ChatEntity. Only printing this message once. There're possibly more nodes with this requirement.
+14:51:39.406    GUI          : WidgetManager: CrateWidgets @"{3C9DCDD76AB83157}UI/layouts/HUD/HUDLayouts/HUDManager_Root.layout"
+14:51:39.406     SCRIPT    (W): Slot_WeaponInfo Has no Content!
+14:51:39.406     SCRIPT    (W): Slot_Chat Has no Content!
+14:51:39.406     SCRIPT    (W): Slot_VON Has no Content!
+14:51:39.406     SCRIPT    (W): Slot_AvailableActions Has no Content!
+14:51:39.406     SCRIPT    (W): Slot_Vehicle Has no Content!
+14:51:39.406     SCRIPT    (W): Slot_GameVersion Has no Content!
+14:51:39.406     SCRIPT    (W): Slot_Notifications Has no Content!
+14:51:39.406     SCRIPT    (W): Slot_Hints Has no Content!
+14:51:39.407 ENTITY       : SpawnEntityPrefab @"{788933FFDC706A68}Prefabs/Editor/EditorManager.et"
+14:51:39.407  ENTITY       : Create entity @"ENTITY:6917529027641081864" ('SCR_EditorManagerEntity') at <0.000000 0.000000 0.000000> @"{788933FFDC706A68}Prefabs/Editor/EditorManager.et"
+14:51:39.407   ENTITY       : CreateComponent 'BaseRadioComponent'
+14:51:39.407    DEFAULT   (W): World doesn't contain RadioManagerEntity to support any BaseRadioComponent.
+14:51:39.420 NETWORK      : ### Updating player: PlayerId=1, Name=TacticalBootneck, rplIdentity=0xFFFFFFFE, IdentityId=00000000-0000-0000-0000-000000000000
+14:51:39.420 SCRIPT    (W): Ban Settings could not be loaded from BE Storage: Relying on default config
+14:51:39.420 NETWORK      : Players connecting: 0
+14:51:39.420 NETWORK      : Players connected: 1 / 1
+14:51:39.428 WORLD        : Frame start
+14:51:39.428  SCRIPT       : ScenarioFramework: Available tasks are empty, no new tasks will be generated.
+14:51:39.431 WORLD        : UpdateEntities
+14:51:39.431  WORLD        : Frame
+14:51:39.431   SCRIPT       : SCR_BaseGameMode::OnGameStateChanged = GAME
+14:51:39.502  WORLD        : PostFrame
+14:51:39.502   SCRIPT       : BCMM_NATIVE_HINT action= label=
+14:51:39.507 WORLD        : UpdateEntities
+14:51:39.507  WORLD        : PostFrame
+14:51:39.507   GUI          : WidgetManager: CrateWidgets @"{D89BBA18F99053D6}UI/layouts/HUD/Chat/ChatHud.layout"
+14:51:39.507    SCRIPT    (W): EditBoxFilterComponent used on invalid widget type.
+14:51:39.555   RESOURCES    : GetResourceObject @"{20A6917D2114E29A}UI/layouts/HUD/Hint/HintInfoDisplay.layout"
+14:51:39.555    GUI          : Layout load @"{20A6917D2114E29A}UI/layouts/HUD/Hint/HintInfoDisplay.layout"
+14:51:39.555     GUI          : Widget prefab @"{EA1CC57D868E94F9}UI/layouts/HUD/Hint/Hint.layout"
+14:51:39.555      GUI       (W): Overridden prefab member (GUID: '{661AB14E0F471C66}' type: ButtonWidgetClass) no longer exists in prefab
+14:51:39.650  RENDER       : RENDER       : ObjectsHeightMap::Build
+14:51:39.650   RENDER       : RENDER       : MeshOccupancyGridManager::GenerateAllForWorld
+14:51:39.650  PROFILING    : MeshOccupancyGridManager::GenerateAllForWorld took: 0.005400 ms
+14:51:39.655 PROFILING    : ObjectsHeightMap::Build took: 5.411400 ms
+14:51:39.704 SCRIPT       : BCMM_BETA_GEOMETRY item={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et low=<-0.0345764,-0.00198102,-0.041445> high=<0.0322266,0.024261,0.042839> dimensions=<0.066803,0.026242,0.084284>
+14:51:39.707 SCRIPT       : BCMM_BETA_GEOMETRY item={0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et low=<-0.00631714,-0.00109887,-0.048049> high=<0.00631714,0.0108988,0.04829> dimensions=<0.0126343,0.0119977,0.096339>
+14:51:39.708 SCRIPT       : BCMM_BETA_GEOMETRY item={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et low=<-0.00997925,-0.00496697,-0.071> high=<0.00997925,0.014967,0.071> dimensions=<0.0199585,0.0199339,0.142>
+14:51:41.096 SCRIPT       : BCMM_FLUID_RECOVERY pulse=128.913 red=0.326083 delivery=0.319561 terminal=0
+14:51:41.864 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=US count=29 ordinary=187
+14:51:41.866 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=USSR count=29 ordinary=166
+14:51:41.867 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=FIA count=29 ordinary=105
+14:51:43.242 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=1
+14:51:43.267 SCRIPT       : BCMM settings read path=$profile:BCMM_InvalidSettings/settings-a.json parsed=1 valid=0 generation=999
+14:51:43.267 SCRIPT    (E): BCMM settings invalid: files preserved; edits locked until repaired.
+14:51:43.295 SCRIPT       : BCMM_ROLE_LIST count=38 roles=2 native=1
+14:51:43.301 SCRIPT       : BCMM_CATALOGUE_REGISTRIES medical=1 nativeEntries=41
+14:51:44.882 SCRIPT       : BCMM_NET_BODY player=1 assigned=1
+14:51:46.972 WORLD        : UpdateEntities
+14:51:46.972  WORLD        : PostFrame
+14:51:46.972   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: Tourniquet
+14:51:48.593 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-0-view-0 (1280x720)
+14:51:49.051 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-0-view-1 (1280x720)
+14:51:49.517 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-0-view-2 (1280x720)
+14:51:49.517 SCRIPT       : BCMM_HAND_REVIEW item=0 resource={D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et views=3
+14:51:50.438 WORLD        : UpdateEntities
+14:51:50.438  WORLD        : PostFrame
+14:51:50.439   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: Bandage
+14:51:52.286 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-1-view-0 (1280x720)
+14:51:52.748 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-1-view-1 (1280x720)
+14:51:53.218 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-1-view-2 (1280x720)
+14:51:53.218 SCRIPT       : BCMM_HAND_REVIEW item=1 resource={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et views=3
+14:51:54.172 WORLD        : UpdateEntities
+14:51:54.172  WORLD        : PostFrame
+14:51:54.172   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: AED
+14:51:55.884 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-2-view-0 (1280x720)
+14:51:56.350 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-2-view-1 (1280x720)
+14:51:56.827 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-2-view-2 (1280x720)
+14:51:56.827 SCRIPT       : BCMM_HAND_REVIEW item=2 resource={6AB4B3F3FD216025}Prefabs/Items/BCMM_AED.et views=3
+14:51:57.672 WORLD        : UpdateEntities
+14:51:57.672  WORLD        : PostFrame
+14:51:57.672   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: AED electrode pads
+14:51:59.550 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-3-view-0 (1280x720)
+14:52:00.017 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-3-view-1 (1280x720)
+14:52:00.486 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-3-view-2 (1280x720)
+14:52:00.486 SCRIPT       : BCMM_HAND_REVIEW item=3 resource={6AB4B3F3FD216026}Prefabs/Items/BCMM_AEDPads.et views=3
+14:52:01.405 WORLD        : UpdateEntities
+14:52:01.405  WORLD        : PostFrame
+14:52:01.405   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: AirwayAdjunct (placeholder)
+14:52:03.254 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-4-view-0 (1280x720)
+14:52:03.723 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-4-view-1 (1280x720)
+14:52:04.195 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-4-view-2 (1280x720)
+14:52:04.195 SCRIPT       : BCMM_HAND_REVIEW item=4 resource={6AB4B3F3FD216022}Prefabs/Items/BCMM_AirwayAdjunct.et views=3
+14:52:05.173 WORLD        : UpdateEntities
+14:52:05.173  WORLD        : PostFrame
+14:52:05.173   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: Bag valve mask
+14:52:07.015 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-5-view-0 (1280x720)
+14:52:07.476 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-5-view-1 (1280x720)
+14:52:07.950 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-5-view-2 (1280x720)
+14:52:07.950 SCRIPT       : BCMM_HAND_REVIEW item=5 resource={6AB4B3F3FD216024}Prefabs/Items/BCMM_BVM.et views=3
+14:52:08.905 WORLD        : UpdateEntities
+14:52:08.905  WORLD        : PostFrame
+14:52:08.905   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: ChestDrain (placeholder)
+14:52:10.761 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-6-view-0 (1280x720)
+14:52:11.225 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-6-view-1 (1280x720)
+14:52:11.693 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-6-view-2 (1280x720)
+14:52:11.693 SCRIPT       : BCMM_HAND_REVIEW item=6 resource={6AB4B3F3FD216027}Prefabs/Items/BCMM_ChestDrain.et views=3
+14:52:12.672 WORLD        : UpdateEntities
+14:52:12.672  WORLD        : PostFrame
+14:52:12.672   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: Vented chest seal
+14:52:14.488 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-7-view-0 (1280x720)
+14:52:14.957 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-7-view-1 (1280x720)
+14:52:15.427 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-7-view-2 (1280x720)
+14:52:15.427 SCRIPT       : BCMM_HAND_REVIEW item=7 resource={6AB4B3F3FD216020}Prefabs/Items/BCMM_ChestSeal.et views=3
+14:52:15.671 ENTITY       : SpawnEntityPrefab @"{6AB4B3F3FD216007}Prefabs/Items/BCMM_DragRope.et"
+14:52:15.671  ENTITY       : Create entity @"ENTITY:6917529027641081967" ('GenericEntity') at <100.000000 1.000000 0.000000>
+14:52:15.671   ENTITY       : EntityPrefabUse @"{6AB4B3F3FD216007}Prefabs/Items/BCMM_DragRope.et"
+14:52:15.671    RESOURCES    : GetResourceObject @"{096D352E628C46F0}Assets/Medical/CompactDragRope/BCMM_CompactDragRope.xob"
+14:52:15.671     RESOURCES    : MeshObjectLoad @"{096D352E628C46F0}Assets/Medical/CompactDragRope/BCMM_CompactDragRope.xob"
+14:52:15.671      RESOURCES (E): Wrong GUID/name for resource @"{536BF67B2052B869}material/metal.gamemat" in property "UBX_BCMM_CompactDragRope"
+14:52:15.671      RESOURCES    : GetResourceObject @"{536BF67B2052B869}material/metal.gamemat"
+14:52:15.671       RESOURCES (E): Failed to open
+14:52:16.405 WORLD        : UpdateEntities
+14:52:16.405  WORLD        : PostFrame
+14:52:16.405   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: Epinephrine
+14:52:16.405   SCRIPT       : BCMM_NATIVE_HINT action=GadgetActivate label=#AR-MorphineInjectionAction
+14:52:18.185 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-10-view-0 (1280x720)
+14:52:18.645 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-10-view-1 (1280x720)
+14:52:19.148 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-10-view-2 (1280x720)
+14:52:19.148 SCRIPT       : BCMM_HAND_REVIEW item=10 resource={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et views=3
+14:52:20.139 WORLD        : UpdateEntities
+14:52:20.139  WORLD        : PostFrame
+14:52:20.139   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: Fentanyl
+14:52:21.863 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-11-view-0 (1280x720)
+14:52:22.347 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-11-view-1 (1280x720)
+14:52:22.785 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-11-view-2 (1280x720)
+14:52:22.785 SCRIPT       : BCMM_HAND_REVIEW item=11 resource={D0F8A8C2097AA101}Prefabs/Items/BCMM_Fentanyl.et views=3
+14:52:23.606 WORLD        : UpdateEntities
+14:52:23.606  WORLD        : PostFrame
+14:52:23.606   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: Whole blood bag
+14:52:25.466 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-12-view-0 (1280x720)
+14:52:25.945 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-12-view-1 (1280x720)
+14:52:26.397 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-12-view-2 (1280x720)
+14:52:26.397 SCRIPT       : BCMM_HAND_REVIEW item=12 resource={6AB4B3F3FD216029}Prefabs/Items/BCMM_FluidBag.et views=3
+14:52:27.372 WORLD        : UpdateEntities
+14:52:27.372  WORLD        : PostFrame
+14:52:27.372   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: Medical monitor
+14:52:29.183 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-13-view-0 (1280x720)
+14:52:29.655 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-13-view-1 (1280x720)
+14:52:30.115 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-13-view-2 (1280x720)
+14:52:30.115 SCRIPT       : BCMM_HAND_REVIEW item=13 resource={6AB4B3F3FD216030}Prefabs/Items/BCMM_Monitor.et views=3
+14:52:31.107 WORLD        : UpdateEntities
+14:52:31.107  WORLD        : PostFrame
+14:52:31.107   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: Morphine
+14:52:32.844 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-14-view-0 (1280x720)
+14:52:33.312 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-14-view-1 (1280x720)
+14:52:33.785 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-14-view-2 (1280x720)
+14:52:33.785 SCRIPT       : BCMM_HAND_REVIEW item=14 resource={6AB4B3F3FD216012}Prefabs/Items/BCMM_Morphine.et views=3
+14:52:34.839 WORLD        : UpdateEntities
+14:52:34.839  WORLD        : PostFrame
+14:52:34.839   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: Naloxone
+14:52:36.491 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-15-view-0 (1280x720)
+14:52:36.950 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-15-view-1 (1280x720)
+14:52:37.419 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-15-view-2 (1280x720)
+14:52:37.420 SCRIPT       : BCMM_HAND_REVIEW item=15 resource={6AB4B3F3FD216013}Prefabs/Items/BCMM_Naloxone.et views=3
+14:52:38.305 WORLD        : UpdateEntities
+14:52:38.305  WORLD        : PostFrame
+14:52:38.305   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: NCD kit
+14:52:40.186 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-16-view-0 (1280x720)
+14:52:40.648 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-16-view-1 (1280x720)
+14:52:41.117 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-16-view-2 (1280x720)
+14:52:41.118 SCRIPT       : BCMM_HAND_REVIEW item=16 resource={6AB4B3F3FD216021}Prefabs/Items/BCMM_NCD.et views=3
+14:52:42.039 WORLD        : UpdateEntities
+14:52:42.039  WORLD        : PostFrame
+14:52:42.039   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: Portable oxygen kit
+14:52:43.817 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-17-view-0 (1280x720)
+14:52:44.278 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-17-view-1 (1280x720)
+14:52:44.759 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-17-view-2 (1280x720)
+14:52:44.760 SCRIPT       : BCMM_HAND_REVIEW item=17 resource={D0F8A8C2097AA103}Prefabs/Items/BCMM_Oxygen.et views=3
+14:52:45.773 WORLD        : UpdateEntities
+14:52:45.773  WORLD        : PostFrame
+14:52:45.773   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: Paracetamol tablets
+14:52:47.412 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-18-view-0 (1280x720)
+14:52:47.884 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-18-view-1 (1280x720)
+14:52:48.353 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-18-view-2 (1280x720)
+14:52:48.354 SCRIPT       : BCMM_HAND_REVIEW item=18 resource={D0F8A8C2097AA102}Prefabs/Items/BCMM_Paracetamol.et views=3
+14:52:49.242 WORLD        : UpdateEntities
+14:52:49.242  WORLD        : PostFrame
+14:52:49.242   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: Plasma bag
+14:52:51.014 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-19-view-0 (1280x720)
+14:52:51.487 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-19-view-1 (1280x720)
+14:52:51.948 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-19-view-2 (1280x720)
+14:52:51.948 SCRIPT       : BCMM_HAND_REVIEW item=19 resource={B6D83F6853C68D73}Prefabs/Items/BCMM_Plasma.et views=3
+14:52:52.971 WORLD        : UpdateEntities
+14:52:52.971  WORLD        : PostFrame
+14:52:52.971   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: Pulse oximeter
+14:52:54.614 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-20-view-0 (1280x720)
+14:52:55.088 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-20-view-1 (1280x720)
+14:52:55.563 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-20-view-2 (1280x720)
+14:52:55.563 SCRIPT       : BCMM_HAND_REVIEW item=20 resource={6AB4B3F3FD216031}Prefabs/Items/BCMM_PulseOximeter.et views=3
+14:52:56.472 WORLD        : UpdateEntities
+14:52:56.472  WORLD        : PostFrame
+14:52:56.472   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: Saline bag
+14:52:58.390 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-21-view-0 (1280x720)
+14:52:58.849 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-21-view-1 (1280x720)
+14:52:59.316 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-21-view-2 (1280x720)
+14:52:59.316 SCRIPT       : BCMM_HAND_REVIEW item=21 resource={47B2D2C90145E642}Prefabs/Items/BCMM_Saline.et views=3
+14:53:00.205 WORLD        : UpdateEntities
+14:53:00.205  WORLD        : PostFrame
+14:53:00.205   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: Packaged leg splint
+14:53:02.011 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-22-view-0 (1280x720)
+14:53:02.475 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-22-view-1 (1280x720)
+14:53:02.946 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-22-view-2 (1280x720)
+14:53:02.946 SCRIPT       : BCMM_HAND_REVIEW item=22 resource={6AB4B3F3FD216008}Prefabs/Items/BCMM_Splint.et views=3
+14:53:03.938 WORLD        : UpdateEntities
+14:53:03.938  WORLD        : PostFrame
+14:53:03.938   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: Portable medical suction
+14:53:05.760 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-23-view-0 (1280x720)
+14:53:06.217 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-23-view-1 (1280x720)
+14:53:06.677 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-23-view-2 (1280x720)
+14:53:06.677 SCRIPT       : BCMM_HAND_REVIEW item=23 resource={6AB4B3F3FD216023}Prefabs/Items/BCMM_Suction.et views=3
+14:53:07.672 WORLD        : UpdateEntities
+14:53:07.672  WORLD        : PostFrame
+14:53:07.672   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: Surgery kit
+14:53:09.457 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-24-view-0 (1280x720)
+14:53:09.933 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-24-view-1 (1280x720)
+14:53:10.375 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-24-view-2 (1280x720)
+14:53:10.376 SCRIPT       : BCMM_HAND_REVIEW item=24 resource={6AB4B3F3FD216009}Prefabs/Items/BCMM_SurgeryKit.et views=3
+14:53:11.406 WORLD        : UpdateEntities
+14:53:11.406  WORLD        : PostFrame
+14:53:11.406   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: Suture kit
+14:53:13.086 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-25-view-0 (1280x720)
+14:53:13.559 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-25-view-1 (1280x720)
+14:53:14.008 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-25-view-2 (1280x720)
+14:53:14.008 SCRIPT       : BCMM_HAND_REVIEW item=25 resource={6AB4B3F3FD216010}Prefabs/Items/BCMM_SutureKit.et views=3
+14:53:14.872 WORLD        : UpdateEntities
+14:53:14.872  WORLD        : PostFrame
+14:53:14.872   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: TXA
+14:53:16.743 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-26-view-0 (1280x720)
+14:53:17.227 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-26-view-1 (1280x720)
+14:53:17.676 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-26-view-2 (1280x720)
+14:53:17.677 SCRIPT       : BCMM_HAND_REVIEW item=26 resource={6AB4B3F3FD216032}Prefabs/Items/BCMM_TXA.et views=3
+14:53:18.606 WORLD        : UpdateEntities
+14:53:18.606  WORLD        : PostFrame
+14:53:18.606   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: IV cannula kit
+14:53:20.450 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-27-view-0 (1280x720)
+14:53:20.926 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-27-view-1 (1280x720)
+14:53:21.388 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-27-view-2 (1280x720)
+14:53:21.388 SCRIPT       : BCMM_HAND_REVIEW item=27 resource={6AB4B3F3FD216028}Prefabs/Items/BCMM_VascularAccess.et views=3
+14:53:21.639 SCRIPT       : BCMM_HAND_REVIEW_COMPLETE items=26
+14:53:21.640 SCRIPT       : BCMM_CHECK COMPLETE checks=734 failures=0 run=4eb05884b8f243fd8f5d9fb7b93ec653
+14:53:21.671 SCRIPT    (W): Maybe a problem: DataProgression is not ready but the analytics event was requested

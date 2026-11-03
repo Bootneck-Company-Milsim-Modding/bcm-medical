@@ -90,7 +90,9 @@ class BCMM_EquipmentRuntimeChecks : BCMM_SplintRuntimeChecks
  {
   PrintFormat("BCMM_EQUIPMENT_POSITION actor=%1 patient=%2", m_Actor.GetOrigin(),m_Target.GetOrigin());
   PrintFormat("BCMM_EQUIPMENT_MID action=%1 kit=%2 busy=%3 using=%4 destroyed=%5 terminal=%6 reach=%7", m_Steps[m_Step], m_Kit != null, BCMM_SplintTreatment.IsBusy(m_Actor,m_Target), ChimeraCharacter.Cast(m_Actor).GetCharacterController().IsUsingItem(), m_Medical.IsDestroyed(), m_Medical.BCMM_GetPatient().Terminal, BCMM_TreatmentAccess.CanReach(m_Actor,m_Target));
-  m_Suite.Record(m_Kit && ChimeraCharacter.Cast(m_Actor).GetCharacterController().IsUsingItem(), "Advanced procedure occupies actor with original equipment and native animation at midpoint");
+  // Native injection playback can finish before the configurable procedure
+  // timer. The exact supply and authority lease must remain until commit.
+  m_Suite.Record(m_Kit && m_Inventory.Contains(m_Kit) && BCMM_SplintTreatment.IsBusy(m_Actor,m_Target), "Advanced procedure retains exact original supply and authority lease at midpoint");
  }
  protected void CheckStep()
  {

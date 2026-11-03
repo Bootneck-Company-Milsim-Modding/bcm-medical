@@ -13,7 +13,7 @@ SCR_ChimeraCharacter {
      ParentContextList { "LowerTorso" }
      UIInfo SCR_ActionUIInfo { Name "Place in body bag" }
      VisibilityRange 5
-     Duration 0
+     Duration 12
      "Sort Priority" 15
     }
    }

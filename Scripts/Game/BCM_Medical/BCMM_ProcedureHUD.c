@@ -38,6 +38,6 @@ class BCMM_ProcedureHUD
   if (!track || !fill) return;
   float width, height;
   track.GetScreenSize(width, height);
-  FrameSlot.SetSize(fill, GetGame().GetWorkspace().DPIUnscale(width * player.BCMM_ProcedureProgress()), 4);
+  FrameSlot.SetSize(fill, GetGame().GetWorkspace().DPIUnscale(width * player.BCMM_ProcedureProgress()), 8);
  }
 }

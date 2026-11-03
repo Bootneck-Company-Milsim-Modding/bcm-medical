@@ -1,0 +1,1852 @@
+---------------------------------------------
+Log C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-143953-395\acceptance-Hint-20261102-144316-290\profile\logs\logs_2026-11-02_14-43-16\console.log started at 2026-11-02 14:43:16 (2026-11-02 14:43:16 UTC)
+
+14:43:16.556 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-143953-395\acceptance-Hint-20261102-144316-290\profile\logs\logs_2026-11-02_14-43-16' to filesystem under name logs
+14:43:16.556 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-143953-395\acceptance-Hint-20261102-144316-290\profile\profile' to filesystem under name profile
+14:43:16.556 ENGINE       : FileSystem: Current working directory: 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\'
+14:43:16.557 ENGINE       : Initializing engine, version 192142
+14:43:16.558 ENGINE       : CLI Params: -gproj C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-143953-395\acceptance-Hint-20261102-144316-290\diagnostic/addon.gproj -addons B6C4ED1CA1260002 -addonsDir C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-143953-395\acceptance-Hint-20261102-144316-290\diagnostic,C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-143953-395\packed,C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons -profile C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-143953-395\acceptance-Hint-20261102-144316-290/profile -world worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent -noBackend -disableCrashReporter -noSound -noThrow -noFocus -forceUpdate -window -screenWidth 1280 -screenHeight 720 -posX -2000 -posY -2000 -maxFPS 30 -bcmmRunToken 385267aecc5e4130b8b3ef1083d57b62 -bcmmBeta01Hands 1 -bcmmBeta01HandHold 1 -bcmmBeta01HintAuto 1 -bcmmBeta01ToggleAction 1 -bcmmBeta01ToggleCycles 200
+14:43:16.562 ENGINE       : Addon dirs:
+14:43:16.562  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-143953-395/acceptance-Hint-20261102-144316-290/diagnostic/'
+14:43:16.562  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-143953-395/acceptance-Hint-20261102-144316-290/diagnostic'
+14:43:16.562  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-143953-395/packed'
+14:43:16.562  ENGINE       : dir: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons'
+14:43:16.562  ENGINE       : dir: './addons'
+14:43:16.562  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-143953-395/acceptance-Hint-20261102-144316-290/profile/addons'
+14:43:16.562 ENGINE       : Available addons:
+14:43:16.562  ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-143953-395/acceptance-Hint-20261102-144316-290/diagnostic/addon.gproj' guid: 'B6C4ED1CA1260002'
+14:43:16.562  ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-143953-395/packed/addon.gproj' guid: '6AB4B3F3FD215919' (packed)
+14:43:16.562  ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/core.gproj' guid: '5614BBCCBB55ED1C' (packed)
+14:43:16.562  ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/ArmaReforger.gproj' guid: '58D0FB3206B6F859' (packed)
+14:43:16.562 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-143953-395\acceptance-Hint-20261102-144316-290\diagnostic' to filesystem under name BCM_Medical_DomainChecks
+14:43:16.563 ENGINE       : FileSystem: Adding package 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-143953-395/packed/' (pak count: 1) to filesystem under name MCBMedical
+14:43:16.657 ENGINE       : FileSystem: Adding package 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/' (pak count: 14) to filesystem under name ArmaReforger
+14:43:16.661 ENGINE       : FileSystem: Adding package 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/' (pak count: 2) to filesystem under name core
+14:43:16.661 ENGINE       : CPU vendor         : GenuineIntel
+14:43:16.661 ENGINE       : CPU type           : 1
+14:43:16.661 ENGINE       : CPU name           : 12th Gen Intel(R) Core(TM) i7-12700K
+14:43:16.661 ENGINE       : CPU cache info     : L1 [Inst 64KB, Data 48KB], L2 [Unif 2048KB], L3 [Unif 25600KB]
+14:43:16.661 ENGINE       : CPU count logical  : 20
+14:43:16.661 ENGINE       : CPU count physical : 12
+14:43:16.661 ENGINE       : CPU features       : mmx sse sse2 sse3 ssse3 sse4_1 sse4_2 popcnt aesni pclmulqdq osxsave avx sha avx2
+14:43:16.661 RESOURCES    : ResourceDB: loading cache (id=0 name=BCM_Medical_DomainChecks path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-143953-395\acceptance-Hint-20261102-144316-290\diagnostic/resourceDatabase.rdb)
+14:43:16.663 RESOURCES    : ResourceDB: loading cache (id=1 name=MCBMedical path=C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-143953-395/packed/resourceDatabase.rdb)
+14:43:16.664 RESOURCES    : ResourceDB: loading cache (id=2 name=ArmaReforger path=C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/resourceDatabase.rdb)
+14:43:16.764 RESOURCES    : ResourceDB: loading cache (id=3 name=core path=C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/resourceDatabase.rdb)
+14:43:16.765 RESOURCES    : ResourceDB: loading cache (id=4 name=profile path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-143953-395\acceptance-Hint-20261102-144316-290\profile\profile/resourceDatabase.rdb)
+14:43:16.765 RESOURCES    : ResourceDB: loading cache (id=5 name=logs path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-143953-395\acceptance-Hint-20261102-144316-290\profile\logs\logs_2026-11-02_14-43-16/resourceDatabase.rdb)
+14:43:16.871 ENGINE       : GameProject load
+14:43:16.871  ENGINE       : Loaded addons:
+14:43:16.871   ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/core.gproj' guid: '5614BBCCBB55ED1C'
+14:43:16.871   ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/ArmaReforger.gproj' guid: '58D0FB3206B6F859'
+14:43:16.871   ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-143953-395/packed/addon.gproj' guid: '6AB4B3F3FD215919'
+14:43:16.871   ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-143953-395/acceptance-Hint-20261102-144316-290/diagnostic/addon.gproj' guid: 'B6C4ED1CA1260002'
+14:43:16.873 ENGINE       : Loading custom engine user config '$profile:.save/app1874880_user76561198093323465/settings/ReforgerEngineSettings.conf'
+14:43:16.873 ENGINE       : No Enfusion settings file loaded. Continuing with defaults
+14:43:16.873 ENGINE       : Locale info: system en-GB (English), user en-GB (English)
+14:43:17.052 RENDER       : (OK) Adapter 'NVIDIA GeForce RTX 5070 Ti' supports feature level 12_0
+14:43:17.111 RENDER       : (OK) Adapter 'Intel(R) UHD Graphics 770' supports feature level 12_0
+14:43:17.116 RENDER       : Adapter 1 (Intel(R) UHD Graphics 770) failed to provide some output
+14:43:17.116 RENDER       : Basic screen setup:
+14:43:17.116 RENDER       :   Back buffer width x height: 1280x720
+14:43:17.116 RENDER       :   Back buffer format	       : TEXFMT_R8G8B8A8_SRGB (29)
+14:43:17.116 RENDER       :   MSAA                      : none
+14:43:17.131 RENDER       : Driver for NVIDIA GeForce RTX 5070 Ti is from 22.7.2026 (3 months, 14 days old)
+14:43:17.131 RENDER       : GPU_NVIDIA (0x10DE) (NVIDIA GeForce RTX 5070 Ti) with 1 GPU detected, VRAM 15995MB (fast 0MB), shared 16274MB, driver version 610.88
+14:43:17.131 RENDER       : Detected output devices:
+14:43:17.131 RENDER       :  * 2 device/s connected to NVIDIA GeForce RTX 5070 Ti:
+14:43:17.131 RENDER       :    Generic PnP Monitor (\\.\DISPLAY1), 3840x2160 (offset 0x0), 60Hz
+14:43:17.131 RENDER       :    Generic PnP Monitor (\\.\DISPLAY2), 1920x1080 (offset 1065x-1080), 144Hz
+14:43:17.131 RENDER       :  * no output device connected to Intel(R) UHD Graphics 770
+14:43:17.131 RENDER       :   Concurrent frames limit 2
+14:43:17.304 RENDER       : Graphics device features
+14:43:17.304 RENDER       :  Needed:
+14:43:17.304 RENDER       :  * Highest supported shader model: 6.8 (6.0 needed)
+14:43:17.304 RENDER       :  Optional:
+14:43:17.304 RENDER       :  * Allow tearing (VSYNC) : 1
+14:43:17.304 RENDER       :  * 16 bits : 1
+14:43:17.304 RENDER       :  * Resource heap tier : 3
+14:43:17.304 RENDER       :  * Persistent heaps (DRED) : 1
+14:43:17.304 RENDER       :  * DRED 1.2 is supported by compiler
+14:43:17.345 RENDER       : Main RT format setup.
+14:43:17.345 RENDER       :   Main RT format for quality 0	: TEXFMT_R11G11B10_FLOAT (26)
+14:43:17.345 RENDER       :   Main RT format for quality 1	: TEXFMT_R16G16B16A16_FLOAT (10)
+14:43:17.354 ENGINE       : Job system settings: coreCount=20, shortJobContextCount=16, shortJobThreadCount=15, longJobThreadCount=7
+14:43:17.378 PROFILING    : Settings changed took: 2.510600 ms
+14:43:17.384 INPUT        : NPClient: interface -- initialize OK.
+14:43:17.384 INPUT        : NPClient: Window handle registration successful.
+14:43:17.384 INPUT        : NPClient: NaturalPoint software version is 5.0
+14:43:17.384 INPUT        : NPClient: Cursor stopped
+14:43:17.384 INPUT        : NPClient: Data transmission started
+14:43:17.384  RENDER       : RENDER       : Reload shaders
+14:43:17.384  RENDER       : Enfusion shader version 13
+14:43:17.384   INIT         : INIT         : ShaderListReload
+14:43:17.384  PROFILING    : ShaderListReload took: 0.000700 ms
+14:43:17.642  RENDER       : Loaded 3752 newer shader binaries
+14:43:17.642 PROFILING    : Reload shaders took: 257.446700 ms
+14:43:17.654 ENGINE       : Initializing inputs.
+14:43:17.661 NETWORK      : Initializing networking.
+14:43:17.661 NETWORK      : Using new GameRplScheduler.
+14:43:17.661  SCRIPT       : SCRIPT       : Initializing scripts
+14:43:17.661   SCRIPT       : SCRIPT       : ScriptProjectManager init
+14:43:17.661  PROFILING    : ScriptProjectManager init took: 0.009400 ms
+14:43:17.682 PROFILING    : Initializing scripts took: 20.596300 ms
+14:43:17.682 BACKEND      : Backend Services are disabled.
+14:43:17.682 ENGINE       : Enfusion engine successfully created.
+14:43:17.727 DEFAULT   (W): LogiLED: Cannot initialize! (service not running or no compatible device detected)
+14:43:17.743 GUI          : Using default language (en_us)
+14:43:17.743 GUI          : Loading 'en_us' localization file.
+14:43:17.743  INIT         : INIT         : Loading StringTable
+14:43:17.766 PROFILING    : Loading StringTable took: 22.558900 ms
+14:43:17.766  SCRIPT       : SCRIPT       : Compiling GameLib scripts
+14:43:17.795  SCRIPT       : Module: GameLib; loaded 465x files; 607x classes; used 775K of static memory; defines: "ENF_WB,PLATFORM_WINDOWS,ENABLE_DIAG,ENF_ENABLE_VHC_OVERRIDE,ENF_ENABLE_RPLCOMPONENT_IN_GAMECODE"; CRC32: 4507af04
+14:43:17.796 PROFILING    : Compiling GameLib scripts took: 30.015900 ms
+14:43:17.796 RESOURCES    : GetResourceObject @"{1C71B463B3B66BAB}UI/layouts/Menus/MainMenu/IntroSplashScreen.layout"
+14:43:17.796  GUI          : Layout load @"{1C71B463B3B66BAB}UI/layouts/Menus/MainMenu/IntroSplashScreen.layout"
+14:43:17.796   GUI       (E): Unknown class 'SCR_WidgetExportRuleRoot' at offset 282(0x11a)
+14:43:17.937  SCRIPT       : SCRIPT       : Compiling Game scripts
+14:43:18.899 SCRIPT       : Compiling Game scripts
+14:43:18.899  SCRIPT    (W): @"Scripts/Game/Editor/Components/EditableEntity/SCR_EditableEntityComponent.c,785": 'GetPlayerPlatformKind' is obsolete
+14:43:18.899  SCRIPT    (W): @"Scripts/Game/Editor/Components/EditableEntity/SCR_EditableEntityComponent.c,786": 'GetPlayerPlatformId' is obsolete
+14:43:19.143  SCRIPT    (W): @"Scripts/Game/Workshop/SCR_AddonManager.c,876": 'GetRefCount' is obsolete: Will be removed
+14:43:19.171  SCRIPT    (W): @"Scripts/Game/Campaign/SCR_PlayerProfileManagerComponent.c,142": 'PlayerData' is obsolete
+14:43:19.270  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,159": 'GetDSSession' is obsolete
+14:43:19.270  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,162": 'RoomID' is obsolete
+14:43:19.270  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,197": 'GetDSSession' is obsolete
+14:43:19.270  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,201": 'RoomID' is obsolete
+14:43:19.344  SCRIPT    (W): @"Scripts/Game/DataCollection/SCR_DataCollectorComponent.c,481": 'GetStorage' is obsolete
+14:43:19.344  SCRIPT    (W): @"Scripts/Game/DataCollection/SCR_DataCollectorComponent.c,483": 'GetOnlineWritePrivilege' is obsolete
+14:43:19.345  SCRIPT    (W): @"Scripts/Game/Utilities/SCR_PlayerIdentityUtils.c,20": 'GetPlayerIdentityId' is obsolete
+14:43:19.382  SCRIPT    (W): @"Scripts/Game/UI/Menu/MainMenuUI.c,643": 'GetNotifyCount' is obsolete: Will be substitued by Notification Api.
+14:43:19.382  SCRIPT    (W): @"Scripts/Game/UI/Menu/MainMenuUI.c,645": 'GetNotifyItem' is obsolete: Will be substitued by Notification Api.
+14:43:19.425  SCRIPT    (W): @"Scripts/Game/DataCollection/PlayerData/SCR_PlayerData.c,210": 'PlayerData' is obsolete
+14:43:19.525  SCRIPT       : Module: Game; loaded 5845x files; 11920x classes; used 33605K of static memory; defines: "ENF_WB,PLATFORM_WINDOWS,ENABLE_DIAG,ENF_ENABLE_VHC_OVERRIDE,ENF_ENABLE_RPLCOMPONENT_IN_GAMECODE,ENABLE_BASE_DESTRUCTION,BUDGET_OPTIMIZATION_CHECKS,DEBUG,RESPAWN_TIMER_COMPONENT_DEBUG,GAME_MODE_DEBUG,DEBUG_CONFIGURABLE_DIALOGS,DISABLE_WEAPON_SWITCHING,SCRIPTED_AIM_MODIFIER_DEBUG"; CRC32: b1d5367e
+14:43:19.568 PROFILING    : Compiling Game scripts took: 1630.594900 ms
+14:43:19.568 INIT         : Creating game instance(ArmaReforgerScripted), version 1.8.0.13 built 2026-08-21 14:30:18 UTC.
+14:43:19.591 ENGINE       : Game successfully created.
+14:43:19.681 PLATFORM     : Save data from container 'settings' have been loaded
+14:43:19.782 PLATFORM     : Save data from container 'sessions' have been loaded
+14:43:20.185 PLATFORM     : System language differs from the saved one - using new language {new: 'en_us'; old: ''}
+14:43:20.185 PLATFORM     : Save data transaction to 'settings' started.
+14:43:20.283 DEFAULT      : [SaveGameManager] Starting new playthrough nr.0 '' for mission 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'.
+14:43:20.284  WORLD        : WORLD        : Entities load 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'
+14:43:20.287 WORLD        : Entities load 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'
+14:43:20.287  RESOURCES (E): Wrong GUID/name for resource @"{0000000000000000}(null)" in property "m_sLoadingLayout"
+14:43:20.293 PROFILING    : Entities load took: 9.300100 ms
+14:43:20.293  WORLD        : WORLD        : Game::LoadEntities
+14:43:20.293   WORLD        : WORLD        : Initializing world systems
+14:43:20.295   NETWORK      : Enabled lag compensation, 29 frames with 100 FPS and 280 ms rewind limits.
+14:43:20.295   WORLD        : WORLD        : CreateEntities
+14:43:20.295    WORLD        : WORLD        : CreateEntities
+14:43:20.295     WORLD        : WORLD        : NotifyBeforeEntitiesCreated
+14:43:20.297     RESOURCES    : Loaded mission headers from 4 addon(s)!
+14:43:20.297    PROFILING    : NotifyBeforeEntitiesCreated took: 2.481200 ms
+14:43:20.297     WORLD        : WORLD        : Wait for preloading data
+14:43:20.297    PROFILING    : Wait for preloading data took: 0.000400 ms
+14:43:20.312    ENTITY       : Create entity @"ENTITY:2" ('MPTestTerrain', GenericTerrainEntity) at <0.000000 1.000000 0.000000>
+14:43:20.312      PROFILING    : PROFILING    : Terrain load
+14:43:20.326     PROFILING    : Terrain load took: 14.089600 ms
+14:43:20.343 WORLD        : Game::LoadEntities
+14:43:20.343  WORLD        : CreateEntities
+14:43:20.343   WORLD        : CreateEntities
+14:43:20.343    ENTITY       : Create entity @"ENTITY:4611686018427387905" ('SCR_AIWorld') at <107.915001 1.000000 159.473999> @"{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et"
+14:43:20.343     PATHFINDING   : Navmesh Init 'Soldiers'
+14:43:20.343      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+14:43:20.343     PATHFINDING   : Navmesh Init 'BTRlike'
+14:43:20.343      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+14:43:20.343     PATHFINDING   : Navmesh Init 'LowRes'
+14:43:20.343      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+14:43:20.621     WORLD        : WORLD        : NotifyBeforeEntitiesInitialized
+14:43:20.621    PROFILING    : NotifyBeforeEntitiesInitialized took: 0.025400 ms
+14:43:20.624    WORLD        : InitEntities 'world'
+14:43:20.624     ENTITY       : Init entity @"ENTITY:4611686018427387906" ('GameMode_Plain1', SCR_BaseGameMode) at <123.265999 1.000000 136.613998>
+14:43:20.625      SCRIPT    (W): SCR_PerceivedFactionManagerComponent trying to set fall back faction 'CIV' but this faction could not be found so it is null instead.
+14:43:20.625     WORLD        : WORLD        : NotifyEntitiesInitialized
+14:43:20.625      TERRAIN      : TERRAIN      : Initializing road networks...
+14:43:20.625     PROFILING    : Initializing road networks... took: 0.001300 ms
+14:43:20.625      DEFAULT      : DEFAULT      : WorldVolumesCollection
+14:43:20.625     PROFILING    : WorldVolumesCollection took: 0.005500 ms
+14:43:20.625    PROFILING    : NotifyEntitiesInitialized took: 0.052500 ms
+14:43:20.625   PROFILING    : CreateEntities took: 330.660800 ms
+14:43:20.625  PROFILING    : CreateEntities took: 330.804000 ms
+14:43:20.625   WORLD        : WORLD        : EOnActivate
+14:43:20.625  PROFILING    : EOnActivate took: 0.067400 ms
+14:43:20.626 PROFILING    : Game::LoadEntities took: 331.926300 ms
+14:43:20.626 PROFILING    : * LoadEntities: 331.946100 ms
+14:43:20.821 DEFAULT      : Entered offline game state.
+14:43:20.923 PROFILING    : Settings changed took: 3.438800 ms
+14:43:20.925 NETWORK      : Player connected: connectionID=2147483646
+14:43:20.925 NETWORK      : ### Connecting player: connectionID=2147483646, Name=
+14:43:20.925 NETWORK      : ### Creating player: PlayerId=1, Name=TacticalBootneck
+14:43:20.932 ENTITY       : SpawnEntityPrefab @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+14:43:20.932  ENTITY       : Create entity @"ENTITY:6917529027641081863" ('SCR_PlayerController') at <0.000000 0.000000 0.000000>
+14:43:20.932   ENTITY       : EntityPrefabUse @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+14:43:20.932    SCRIPT    (W): Notification data in 'SCR_NotificationsLogDisplay' has duplicate notification info key: 'EDITOR_PERCEIVED_FACTION_PUNISHMENT_KILLING_SET'. There should only be one of each key!
+14:43:20.932    SCRIPT    (W): Notification data in 'SCR_NotificationsLogDisplay' has duplicate notification info key: 'EDITOR_PERCEIVED_FACTION_TYPE_DISABLED'. There should only be one of each key!
+14:43:20.934   SCRIPT    (W): Can't open config file ""
+14:43:20.934   SCRIPT    (W): Cannot update game blocklist. Backend is offline.
+14:43:20.934  WORLD        : InitEntities 'world'
+14:43:20.934   ENTITY       : Init entity @"ENTITY:6917529027641081863" ('SCR_PlayerController') at <0.000000 0.000000 0.000000> @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+14:43:20.934    DEFAULT   (W): Chat not available - missing ChatEntity. Only printing this message once. There're possibly more nodes with this requirement.
+14:43:20.951    GUI          : WidgetManager: CrateWidgets @"{3C9DCDD76AB83157}UI/layouts/HUD/HUDLayouts/HUDManager_Root.layout"
+14:43:20.951     SCRIPT    (W): Slot_WeaponInfo Has no Content!
+14:43:20.951     SCRIPT    (W): Slot_Chat Has no Content!
+14:43:20.951     SCRIPT    (W): Slot_VON Has no Content!
+14:43:20.951     SCRIPT    (W): Slot_AvailableActions Has no Content!
+14:43:20.951     SCRIPT    (W): Slot_Vehicle Has no Content!
+14:43:20.951     SCRIPT    (W): Slot_GameVersion Has no Content!
+14:43:20.951     SCRIPT    (W): Slot_Notifications Has no Content!
+14:43:20.951     SCRIPT    (W): Slot_Hints Has no Content!
+14:43:20.951 ENTITY       : SpawnEntityPrefab @"{788933FFDC706A68}Prefabs/Editor/EditorManager.et"
+14:43:20.951  ENTITY       : Create entity @"ENTITY:6917529027641081864" ('SCR_EditorManagerEntity') at <0.000000 0.000000 0.000000> @"{788933FFDC706A68}Prefabs/Editor/EditorManager.et"
+14:43:20.951   ENTITY       : CreateComponent 'BaseRadioComponent'
+14:43:20.951    DEFAULT   (W): World doesn't contain RadioManagerEntity to support any BaseRadioComponent.
+14:43:20.963 NETWORK      : ### Updating player: PlayerId=1, Name=TacticalBootneck, rplIdentity=0xFFFFFFFE, IdentityId=00000000-0000-0000-0000-000000000000
+14:43:20.963 SCRIPT    (W): Ban Settings could not be loaded from BE Storage: Relying on default config
+14:43:20.963 NETWORK      : Players connecting: 0
+14:43:20.963 NETWORK      : Players connected: 1 / 1
+14:43:20.972 WORLD        : Frame start
+14:43:20.972  SCRIPT       : ScenarioFramework: Available tasks are empty, no new tasks will be generated.
+14:43:20.975 WORLD        : UpdateEntities
+14:43:20.975  WORLD        : Frame
+14:43:20.975   SCRIPT       : SCR_BaseGameMode::OnGameStateChanged = GAME
+14:43:21.034  WORLD        : PostFrame
+14:43:21.034   SCRIPT       : BCMM_NATIVE_HINT action= label=
+14:43:21.039 WORLD        : UpdateEntities
+14:43:21.039  WORLD        : PostFrame
+14:43:21.039   GUI          : WidgetManager: CrateWidgets @"{D89BBA18F99053D6}UI/layouts/HUD/Chat/ChatHud.layout"
+14:43:21.039    SCRIPT    (W): EditBoxFilterComponent used on invalid widget type.
+14:43:21.087   RESOURCES    : GetResourceObject @"{20A6917D2114E29A}UI/layouts/HUD/Hint/HintInfoDisplay.layout"
+14:43:21.087    GUI          : Layout load @"{20A6917D2114E29A}UI/layouts/HUD/Hint/HintInfoDisplay.layout"
+14:43:21.087     GUI          : Widget prefab @"{EA1CC57D868E94F9}UI/layouts/HUD/Hint/Hint.layout"
+14:43:21.087      GUI       (W): Overridden prefab member (GUID: '{661AB14E0F471C66}' type: ButtonWidgetClass) no longer exists in prefab
+14:43:21.184  RENDER       : RENDER       : ObjectsHeightMap::Build
+14:43:21.184   RENDER       : RENDER       : MeshOccupancyGridManager::GenerateAllForWorld
+14:43:21.184  PROFILING    : MeshOccupancyGridManager::GenerateAllForWorld took: 0.004700 ms
+14:43:21.190 PROFILING    : ObjectsHeightMap::Build took: 5.453700 ms
+14:43:21.240 SCRIPT       : BCMM_BETA_GEOMETRY item={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et low=<-0.0345764,-0.00198102,-0.041445> high=<0.0322266,0.024261,0.042839> dimensions=<0.066803,0.026242,0.084284>
+14:43:21.241 SCRIPT       : BCMM_BETA_GEOMETRY item={0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et low=<-0.00631714,-0.00109887,-0.048049> high=<0.00631714,0.0108988,0.04829> dimensions=<0.0126343,0.0119977,0.096339>
+14:43:21.242 SCRIPT       : BCMM_BETA_GEOMETRY item={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et low=<-0.00997925,-0.00496697,-0.071> high=<0.00997925,0.014967,0.071> dimensions=<0.0199585,0.0199339,0.142>
+14:43:22.611 SCRIPT       : BCMM_FLUID_RECOVERY pulse=128.913 red=0.326083 delivery=0.319561 terminal=0
+14:43:23.404 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=US count=29 ordinary=187
+14:43:23.405 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=USSR count=29 ordinary=166
+14:43:23.408 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=FIA count=29 ordinary=105
+14:43:24.786 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=1
+14:43:24.807 SCRIPT       : BCMM settings read path=$profile:BCMM_InvalidSettings/settings-a.json parsed=1 valid=0 generation=999
+14:43:24.807 SCRIPT    (E): BCMM settings invalid: files preserved; edits locked until repaired.
+14:43:24.839 SCRIPT       : BCMM_ROLE_LIST count=38 roles=2 native=1
+14:43:24.844 SCRIPT       : BCMM_CATALOGUE_REGISTRIES medical=1 nativeEntries=41
+14:43:26.401 SCRIPT       : BCMM_NET_BODY player=1 assigned=1
+14:43:28.228 WORLD        : UpdateEntities
+14:43:28.228  WORLD        : PostFrame
+14:43:28.228   SCRIPT       : BCMM_NATIVE_HINT action=GadgetCancel label=Unequip: Epinephrine
+14:43:28.228   SCRIPT       : BCMM_NATIVE_HINT action=GadgetActivate label=#AR-MorphineInjectionAction
+14:43:30.165 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-10-view-0 (1280x720)
+14:43:30.632 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-10-view-1 (1280x720)
+14:43:31.105 ENGINE       : Screenshot successfully saved into $profile:screenshots/hand-10-view-2 (1280x720)
+14:43:31.105 SCRIPT       : BCMM_HAND_REVIEW item=10 resource={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et views=3
+14:43:31.105 SCRIPT       : BCMM_HINT_KEY_READY
+14:43:31.105 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:31.109 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:31.109 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:31.393 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:31.600 ENGINE       : Screenshot successfully saved into $profile:screenshots/held-injector-medical-menu (1280x720)
+14:43:31.600 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:31.600 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:31.628 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:31.893 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:32.093 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:32.093 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:32.093 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:32.393 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:32.593 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:32.593 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:32.628 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:32.893 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:33.093 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:33.093 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:33.094 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:33.393 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:33.593 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:33.593 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:33.628 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:33.893 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:34.093 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:34.093 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:34.093 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:34.393 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:34.593 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:34.593 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:34.628 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:34.893 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:35.093 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:35.093 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:35.094 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:35.393 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:35.593 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:35.593 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:35.628 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:35.893 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:36.093 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:36.093 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:36.094 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:36.393 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:36.593 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:36.593 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:36.628 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:36.893 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:37.093 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:37.093 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:37.094 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:37.393 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:37.593 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:37.593 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:37.627 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:37.893 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:38.094 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:38.094 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:38.094 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:38.393 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:38.593 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:38.593 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:38.629 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:38.927 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:39.127 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:39.127 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:39.127 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:39.427 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:39.627 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:39.627 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:39.661 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:39.960 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:40.160 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:40.160 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:40.160 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:40.460 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:40.660 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:40.660 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:40.694 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:40.960 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:41.160 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:41.160 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:41.160 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:41.460 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:41.693 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:41.693 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:41.728 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:41.993 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:42.193 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:42.193 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:42.194 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:42.494 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:42.693 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:42.693 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:42.728 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:43.027 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:43.227 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:43.227 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:43.227 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:43.526 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:43.727 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:43.727 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:43.761 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:44.027 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:44.227 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:44.227 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:44.227 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:44.526 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:44.727 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:44.727 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:44.761 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:45.060 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:45.260 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:45.261 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:45.261 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:45.560 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:45.794 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:45.794 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:45.827 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:46.093 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:46.295 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:46.295 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:46.296 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:46.593 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:46.793 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:46.793 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:46.828 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:47.093 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:47.295 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:47.296 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:47.296 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:47.593 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:47.793 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:47.793 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:47.827 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:48.093 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:48.295 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:48.295 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:48.296 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:48.593 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:48.793 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:48.793 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:48.828 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:49.093 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:49.295 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:49.296 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:49.296 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:49.593 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:49.793 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:49.793 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:49.828 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:50.093 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:50.295 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:50.295 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:50.295 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:50.593 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:50.794 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:50.794 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:50.827 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:51.094 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:51.295 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:51.295 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:51.295 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:51.593 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:51.793 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:51.793 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:51.828 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:52.093 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:52.328 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:52.329 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:52.329 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:52.660 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:52.860 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:52.860 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:52.894 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:53.160 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:53.360 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:53.361 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:53.361 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:53.660 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:53.860 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:53.860 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:53.894 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:54.160 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:54.393 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:54.394 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:54.394 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:54.727 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:54.927 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:54.927 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:54.961 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:55.227 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:55.426 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:55.427 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:55.427 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:55.727 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:55.926 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:55.926 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:55.962 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:56.227 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:56.426 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:56.427 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:56.427 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:56.727 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:56.927 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:56.927 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:56.961 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:57.227 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:57.427 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:57.427 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:57.427 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:57.727 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:57.926 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:57.926 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:57.961 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:58.226 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:58.426 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:58.427 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:58.427 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:58.727 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:58.927 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:58.927 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:58.961 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:43:59.226 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:43:59.427 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:59.427 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:43:59.427 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:59.727 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:43:59.927 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:43:59.927 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:43:59.962 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:00.227 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:00.426 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:00.427 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:00.427 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:00.760 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:00.960 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:00.960 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:00.995 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:01.260 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:01.460 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:01.461 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:01.461 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:01.760 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:01.960 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:01.960 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:01.995 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:02.260 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:02.461 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:02.461 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:02.461 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:02.760 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:02.960 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:02.960 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:02.994 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:03.260 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:03.460 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:03.460 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:03.460 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:03.760 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:03.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:03.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:04.028 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:04.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:04.527 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:04.532 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:04.532 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:04.827 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:05.026 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:05.026 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:05.062 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:05.327 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:05.527 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:05.527 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:05.527 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:05.827 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:06.027 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:06.027 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:06.062 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:06.360 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:06.560 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:06.561 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:06.561 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:06.860 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:07.060 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:07.060 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:07.095 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:07.360 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:07.560 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:07.561 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:07.561 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:07.860 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:08.060 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:08.060 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:08.095 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:08.360 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:08.560 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:08.560 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:08.561 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:08.860 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:09.060 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:09.060 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:09.095 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:09.360 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:09.560 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:09.561 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:09.561 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:09.861 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:10.060 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:10.060 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:10.095 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:10.360 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:10.560 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:10.560 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:10.560 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:10.860 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:11.060 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:11.060 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:11.094 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:11.360 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:11.560 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:11.560 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:11.561 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:11.860 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:12.060 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:12.060 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:12.095 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:12.360 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:12.560 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:12.560 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:12.561 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:12.894 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:13.093 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:13.093 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:13.127 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:13.393 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:13.627 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:13.627 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:13.627 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:13.927 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:14.126 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:14.126 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:14.161 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:14.427 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:14.660 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:14.660 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:14.660 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:14.960 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:15.160 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:15.160 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:15.195 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:15.460 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:15.660 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:15.661 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:15.661 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:15.960 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:16.160 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:16.160 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:16.195 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:16.460 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:16.660 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:16.661 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:16.661 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:16.960 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:17.160 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:17.160 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:17.194 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:17.460 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:17.660 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:17.661 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:17.661 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:17.960 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:18.160 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:18.160 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:18.194 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:18.460 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:18.660 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:18.660 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:18.661 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:18.960 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:19.160 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:19.160 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:19.194 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:19.460 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:19.660 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:19.660 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:19.660 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:19.960 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:20.160 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:20.160 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:20.194 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:20.460 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:20.660 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:20.660 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:20.660 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:20.960 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:21.160 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:21.160 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:21.194 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:21.460 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:21.660 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:21.661 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:21.661 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:21.993 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:22.160 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:22.160 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:22.194 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:22.460 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:22.660 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:22.661 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:22.661 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:22.960 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:23.160 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:23.160 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:23.195 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:23.460 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:23.660 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:23.661 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:23.661 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:23.960 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:24.160 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:24.160 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:24.195 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:24.460 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:24.693 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:24.693 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:24.693 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:25.027 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:25.227 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:25.227 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:25.261 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:25.527 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:25.762 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:25.763 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:25.763 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:26.060 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:26.260 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:26.260 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:26.295 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:26.560 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:26.762 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:26.763 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:26.763 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:27.060 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:27.260 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:27.260 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:27.294 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:27.560 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:27.761 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:27.762 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:27.762 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:28.060 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:28.260 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:28.260 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:28.294 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:28.560 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:28.762 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:28.762 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:28.762 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:29.060 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:29.260 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:29.261 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:29.295 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:29.593 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:29.793 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:29.794 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:29.794 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:30.126 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:30.327 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:30.327 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:30.361 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:30.626 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:30.827 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:30.827 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:30.828 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:31.160 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:31.360 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:31.360 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:31.395 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:31.660 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:31.860 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:31.860 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:31.860 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:32.160 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:32.360 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:32.360 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:32.395 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:32.660 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:32.860 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:32.861 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:32.861 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:33.160 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:33.393 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:33.393 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:33.428 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:33.693 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:33.893 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:33.893 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:33.893 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:34.227 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:34.427 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:34.427 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:34.462 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:34.727 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:34.927 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:34.927 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:34.928 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:35.226 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:35.460 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:35.460 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:35.495 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:35.760 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:35.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:35.994 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:35.994 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:36.327 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:36.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:36.493 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:36.528 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:36.827 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:37.027 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:37.027 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:37.027 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:37.326 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:37.527 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:37.527 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:37.561 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:37.860 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:38.060 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:38.060 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:38.061 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:38.360 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:38.593 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:38.593 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:38.628 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:38.893 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:39.093 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:39.094 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:39.094 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:39.393 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:39.593 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:39.593 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:39.628 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:39.893 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:40.093 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:40.094 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:40.094 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:40.426 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:40.626 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:40.626 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:40.662 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:40.927 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:41.127 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:41.128 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:41.128 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:41.426 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:41.627 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:41.627 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:41.662 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:41.927 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:42.126 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:42.127 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:42.127 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:42.427 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:42.626 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:42.626 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:42.661 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:42.929 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:43.127 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:43.127 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:43.127 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:43.427 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:43.627 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:43.627 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:43.661 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:43.929 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:44.160 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:44.161 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:44.161 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:44.460 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:44.693 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:44.693 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:44.728 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:44.993 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:45.193 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:45.194 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:45.194 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:45.495 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:45.693 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:45.693 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:45.728 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:45.995 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:46.193 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:46.194 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:46.194 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:46.494 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:46.693 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:46.693 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:46.728 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:46.995 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:47.193 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:47.194 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:47.194 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:47.495 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:47.693 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:47.693 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:47.728 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:47.995 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:48.193 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:48.194 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:48.195 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:48.528 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:48.693 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:48.693 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:48.729 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:48.995 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:49.193 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:49.194 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:49.194 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:49.527 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:49.693 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:49.693 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:49.728 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:49.994 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:50.193 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:50.194 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:50.194 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:50.493 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:50.727 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:50.727 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:50.762 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:51.027 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:51.227 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:51.228 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:51.228 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:51.527 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:51.727 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:51.727 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:51.761 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:52.027 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:52.260 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:52.260 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:52.261 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:52.560 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:52.760 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:52.760 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:52.794 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:53.060 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:53.293 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:53.294 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:53.294 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:53.593 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:53.793 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:53.793 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:53.827 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:54.093 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:54.293 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:54.294 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:54.294 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:54.593 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:54.793 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:54.793 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:54.827 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:55.127 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:55.293 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:55.294 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:55.294 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:55.593 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:55.793 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:55.793 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:55.827 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:56.093 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:56.293 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:56.294 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:56.294 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:56.593 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:56.793 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:56.793 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:56.827 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:57.093 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:57.293 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:57.294 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:57.294 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:57.593 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:57.793 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:57.793 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:57.828 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:58.093 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:58.293 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:58.294 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:58.294 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:58.593 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:58.793 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:58.793 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:58.828 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:44:59.093 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:44:59.293 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:59.293 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:44:59.294 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:59.593 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:44:59.793 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:44:59.793 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:44:59.827 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:00.127 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:00.293 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:00.294 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:00.294 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:00.593 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:00.793 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:00.793 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:00.828 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:01.093 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:01.293 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:01.294 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:01.294 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:01.593 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:01.826 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:01.826 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:01.861 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:02.127 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:02.326 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:02.327 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:02.327 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:02.627 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:02.827 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:02.827 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:02.861 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:03.126 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:03.327 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:03.327 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:03.327 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:03.626 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:03.827 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:03.827 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:03.861 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:04.127 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:04.326 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:04.326 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:04.327 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:04.627 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:04.827 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:04.827 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:04.861 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:05.127 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:05.327 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:05.327 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:05.327 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:05.627 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:05.826 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:05.826 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:05.861 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:06.127 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:06.327 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:06.327 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:06.327 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:06.626 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:06.860 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:06.860 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:06.894 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:07.160 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:07.360 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:07.361 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:07.361 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:07.660 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:07.860 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:07.860 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:07.894 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:08.160 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:08.360 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:08.361 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:08.361 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:08.660 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:08.860 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:08.860 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:08.894 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:09.160 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:09.360 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:09.360 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:09.360 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:09.660 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:09.860 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:09.860 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:09.894 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:10.160 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:10.360 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:10.361 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:10.361 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:10.660 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:10.860 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:10.860 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:10.894 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:11.160 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:11.360 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:11.360 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:11.360 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:11.660 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:11.860 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:11.860 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:11.895 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:12.160 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:12.360 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:12.360 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:12.360 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:12.660 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:12.860 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:12.860 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:12.895 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:13.160 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:13.360 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:13.360 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:13.361 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:13.660 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:13.860 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:13.860 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:13.894 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:14.193 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:14.393 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:14.394 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:14.394 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:14.693 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:14.926 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:14.926 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:14.961 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:15.227 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:15.426 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:15.426 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:15.426 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:15.727 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:15.926 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:15.926 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:15.962 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:16.226 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:16.426 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:16.427 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:16.427 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:16.727 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:16.960 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:16.960 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:16.995 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:17.260 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:17.460 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:17.460 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:17.460 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:17.760 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:17.960 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:17.960 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:17.995 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:18.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:18.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:18.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:18.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:18.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:18.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:18.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:19.027 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:19.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:19.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:19.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:19.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:19.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:19.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:19.994 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:20.028 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:20.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:20.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:20.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:20.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:20.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:20.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:20.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:21.028 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:21.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:21.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:21.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:21.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:21.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:21.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:21.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:22.027 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:22.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:22.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:22.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:22.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:22.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:22.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:22.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:23.028 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:23.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:23.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:23.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:23.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:23.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:23.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:23.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:24.029 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:24.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:24.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:24.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:24.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:24.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:24.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:24.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:25.027 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:25.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:25.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:25.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:25.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:25.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:25.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:25.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:26.028 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:26.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:26.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:26.493 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:26.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:26.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:26.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:26.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:27.028 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:27.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:27.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:27.493 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:27.493 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:27.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:27.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:27.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:28.028 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:28.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:28.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:28.493 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:28.493 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:28.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:28.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:28.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:29.028 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:29.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:29.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:29.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:29.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:29.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:29.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:29.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:30.028 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:30.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:30.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:30.493 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:30.493 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:30.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:30.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:30.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:31.028 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:31.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:31.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:31.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:31.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:31.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:31.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:31.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:32.028 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:32.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:32.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:32.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:32.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:32.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:32.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:32.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:33.028 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:33.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:33.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:33.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:33.495 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:33.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:33.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:33.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:34.028 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:34.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:34.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:34.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:34.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:34.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:34.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:34.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:35.027 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:35.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:35.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:35.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:35.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:35.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:35.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:35.994 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:36.028 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:36.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:36.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:36.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:36.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:36.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:36.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:36.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:37.028 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:37.295 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:37.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:37.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:37.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:37.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:37.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:37.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:38.029 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:38.295 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:38.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:38.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:38.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:38.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:38.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:38.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:39.028 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:39.295 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:39.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:39.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:39.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:39.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:39.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:39.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:40.028 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:40.295 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:40.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:40.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:40.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:40.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:40.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:40.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:41.028 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:41.295 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:41.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:41.493 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:41.493 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:41.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:41.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:41.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:42.029 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:42.294 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:42.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:42.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:42.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:42.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:42.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:42.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:43.028 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:43.294 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:43.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:43.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:43.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:43.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:43.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:43.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:44.029 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:44.296 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:44.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:44.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:44.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:44.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:44.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:44.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:45.027 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:45.295 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:45.493 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:45.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:45.495 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:45.803 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:45.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:45.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:46.028 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:46.295 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:46.506 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:46.507 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:46.507 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:46.827 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:46.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:46.993 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:47.037 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:47.327 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:47.494 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:47.494 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:47.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:47.826 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:48.027 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:48.027 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:48.061 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:48.327 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:48.526 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:48.527 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:48.527 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:48.860 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:49.060 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:49.060 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:49.094 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:49.360 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:49.560 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:49.560 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:49.561 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:49.860 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:50.060 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:50.060 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:50.094 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:50.393 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:50.593 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:50.594 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:50.594 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:50.893 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:51.093 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:51.093 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:51.127 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:51.393 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:51.593 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:51.594 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:51.594 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:51.893 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:52.126 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:52.126 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:52.161 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:52.426 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:52.626 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:52.627 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:52.627 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:52.926 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:53.126 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:53.126 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:53.162 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:53.427 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:53.626 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:53.627 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:53.627 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:53.927 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:54.126 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:54.126 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:54.161 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:54.426 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:54.627 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:54.627 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:54.628 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:54.927 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:55.127 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:55.127 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:55.162 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:55.427 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:55.626 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:55.626 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:55.626 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:55.927 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:56.160 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:56.160 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:56.195 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:56.460 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:56.660 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:56.661 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:56.661 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:56.993 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:57.193 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:57.193 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:57.227 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:57.527 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:57.693 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:57.693 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:57.693 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:58.027 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:58.193 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:58.193 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:58.227 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:58.526 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:58.693 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:58.694 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:58.694 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:59.026 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:45:59.226 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:59.226 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:45:59.262 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:45:59.526 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:45:59.726 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:45:59.727 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:45:59.727 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:00.060 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:00.260 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:00.260 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:00.294 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:00.560 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:00.760 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:00.760 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:00.761 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:01.060 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:01.260 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:01.260 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:01.295 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:01.560 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:01.760 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:01.760 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:01.760 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:02.060 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:02.260 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:02.260 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:02.294 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:02.560 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:02.760 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:02.761 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:02.761 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:03.060 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:03.260 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:03.260 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:03.294 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:03.560 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:03.760 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:03.760 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:03.760 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:04.060 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:04.260 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:04.260 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:04.294 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:04.560 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:04.760 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:04.760 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:04.760 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:05.060 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:05.260 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:05.260 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:05.295 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:05.560 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:05.760 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:05.761 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:05.761 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:06.060 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:06.260 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:06.260 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:06.294 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:06.560 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:06.760 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:06.760 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:06.760 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:07.060 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:07.260 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:07.260 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:07.294 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:07.593 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:07.793 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:07.794 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:07.794 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:08.093 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:08.293 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:08.293 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:08.327 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:08.593 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:08.793 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:08.793 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:08.793 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:09.126 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:09.326 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:09.326 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:09.362 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:09.626 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:09.862 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:09.862 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:09.863 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:10.193 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:10.393 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:10.393 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:10.427 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:10.693 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:10.893 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:10.893 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:10.893 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:11.227 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:11.427 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:11.427 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:11.463 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:11.726 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:11.926 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:11.926 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:11.926 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:12.260 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:12.460 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:12.460 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:12.495 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:12.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:12.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:12.994 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:12.994 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:13.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:13.494 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:13.494 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:13.528 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:13.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:13.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:13.994 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:13.994 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:14.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:14.495 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:14.495 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:14.527 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:14.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:14.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:14.994 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:14.994 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:15.293 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:15.495 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:15.495 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:15.528 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:15.793 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:15.993 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:15.994 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:15.995 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:16.326 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:16.526 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:16.526 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:16.561 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:16.860 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:17.060 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:17.060 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:17.060 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:17.360 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:17.560 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:17.560 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:17.594 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:17.893 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:18.093 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:18.093 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:18.093 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:18.393 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:18.593 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:18.593 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:18.628 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:18.893 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:19.093 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:19.094 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:19.094 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:19.393 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:19.593 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:19.593 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:19.628 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:19.893 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:20.093 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:20.094 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:20.094 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:20.393 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:20.593 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:20.593 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:20.628 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:20.926 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:21.127 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:21.127 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:21.127 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:21.427 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:21.626 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:21.626 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:21.661 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:21.927 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:22.126 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:22.126 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:22.128 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:22.460 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:22.660 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:22.660 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:22.695 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:22.962 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:23.160 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:23.161 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:23.161 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:23.460 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:23.660 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:23.660 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:23.695 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:23.995 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:24.160 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:24.160 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:24.161 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:24.460 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:24.660 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:24.660 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:24.695 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:24.960 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:25.160 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:25.161 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:25.161 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:25.493 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:25.660 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:25.660 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:25.695 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:25.960 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:26.160 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:26.160 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:26.161 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:26.460 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:26.660 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:26.660 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:26.695 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:26.960 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:27.193 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:27.194 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:27.194 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:27.527 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:27.726 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:27.726 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:27.761 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:28.062 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:28.260 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:28.260 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:28.260 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:28.595 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:28.760 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:28.760 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:28.794 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:29.061 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:29.293 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:29.293 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:29.294 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:29.595 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:29.793 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:29.794 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:29.828 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:30.095 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:30.326 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:30.327 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:30.327 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:30.626 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:30.860 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:30.860 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:30.895 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:31.193 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:31.360 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:31.360 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:31.360 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:31.660 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:31.860 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:31.860 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:31.895 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:32.193 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:32.360 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:32.360 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:32.361 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:32.662 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:32.860 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:32.860 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:32.895 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:33.160 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:33.360 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:33.360 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:33.360 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:33.661 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:33.860 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:33.860 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:33.894 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:34.160 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:34.360 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:34.360 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:34.361 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:34.661 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:34.860 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:34.860 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:34.895 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:35.162 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:35.393 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:35.394 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:35.394 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:35.693 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:35.893 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:35.893 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:35.927 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:36.194 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:36.393 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:36.394 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:36.394 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:36.695 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:36.927 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:36.927 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:36.961 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:37.226 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:37.427 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:37.427 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:37.428 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:37.726 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:37.927 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:37.927 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:37.961 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:38.226 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:38.427 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:38.427 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:38.428 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:38.726 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:38.926 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:38.926 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:38.961 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:39.227 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:39.426 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:39.427 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:39.427 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:39.726 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:39.927 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:39.927 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:39.961 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:40.226 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:40.426 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:40.427 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:40.427 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:40.726 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:40.926 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:40.926 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:40.961 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:41.227 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:41.426 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:41.426 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:41.426 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:41.726 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:41.926 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:41.926 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:41.961 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:42.227 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:42.427 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:42.427 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:42.427 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:42.728 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:42.927 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:42.927 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:42.961 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:43.226 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:43.426 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:43.427 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:43.427 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:43.726 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:43.927 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:43.927 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:43.961 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:44.226 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:44.427 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:44.427 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:44.427 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:44.727 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:44.927 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:44.927 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:44.961 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:45.228 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:45.426 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:45.426 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:45.426 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:45.726 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:45.927 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:45.927 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:45.961 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:46.229 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:46.426 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:46.426 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:46.426 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:46.727 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:46.927 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:46.927 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:46.961 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:47.227 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:47.427 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:47.427 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:47.427 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:47.727 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:47.960 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:47.960 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:47.994 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:48.260 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:48.460 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:48.460 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:48.460 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:48.761 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:48.960 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:48.960 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:48.994 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:49.260 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:49.460 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:49.461 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:49.461 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:49.762 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:49.960 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:49.960 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:49.994 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:50.260 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:50.460 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:50.460 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:50.460 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:50.761 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:50.960 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:50.960 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:50.994 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:51.262 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:51.460 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:51.460 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:51.460 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:51.762 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:51.960 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:51.960 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:51.994 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:52.262 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:52.460 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:52.460 SCRIPT       : BCMM_TOGGLE_LIFECYCLE opening this=BCMM_MedicalMenu<0x0000020D03731D18> current=NULL
+14:46:52.460 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:52.762 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=0 isOpen=1
+14:46:52.960 SCRIPT       : BCMM_HINT_OPEN_ACTION_RECEIVED
+14:46:52.960 SCRIPT       : BCMM_HINT_OPEN_RESULT menu=BCMM_MedicalMenu<0x0000020D03731D18>
+14:46:52.995 SCRIPT       : BCMM_TOGGLE_LIFECYCLE closing this=BCMM_MedicalMenu<0x0000020D03731D18> current=BCMM_MedicalMenu<0x0000020D03731D18> medical=0 back=0
+14:46:53.260 SCRIPT       : BCMM_HINT_TOGGLE_SETTLED wasOpen=1 isOpen=0
+14:46:53.460 SCRIPT       : BCMM_TOGGLE_CYCLES_COMPLETE cycles=200
+14:46:53.961 SCRIPT       : BCMM_CHECK COMPLETE checks=1085 failures=0 run=385267aecc5e4130b8b3ef1083d57b62
+14:46:53.993 SCRIPT    (W): Maybe a problem: DataProgression is not ready but the analytics event was requested

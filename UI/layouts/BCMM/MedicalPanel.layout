@@ -58,6 +58,6 @@ TextWidgetClass { Name "TransportStatus" "Ignore Cursor" 1 Slot FrameWidgetSlot 
 ImageWidgetClass { Name "FooterRule" "Ignore Cursor" 1 Slot FrameWidgetSlot { Anchor 0.025 0.942 0.975 0.944 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 } Color 1 1 1 0.09 }
 TextWidgetClass { Name "TreatmentStatus" "Ignore Cursor" 1 Slot FrameWidgetSlot { Anchor 0.025 0.957 0.69 0.991 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 } Text "Ready" "Font Size" 14 Color 0.62 0.71 0.70 1 FontProperties FontProperties { Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt" } }
 ButtonWidgetClass : "{6AB4B3F3FD215006}UI/layouts/BCMM/MedicalButton.layout" { Name "CancelProcedure" Slot FrameWidgetSlot { Anchor 0.72 0.953 0.975 0.992 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 } }
-ImageWidgetClass { Name "ProcedureTrack" "Ignore Cursor" 1 Slot FrameWidgetSlot { Anchor 0.025 0.938 0.69 0.941 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 } Color 1 1 1 0.07 }
+ImageWidgetClass { Name "ProcedureTrack" "Ignore Cursor" 1 Slot FrameWidgetSlot { Anchor 0.025 0.938 0.69 0.950 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 } Color 1 1 1 0.15 }
 ImageWidgetClass { Name "ProcedureFill" "Ignore Cursor" 1 Slot FrameWidgetSlot { Anchor 0.025 0.938 0.025 0.938 OffsetLeft 0 OffsetTop 0 OffsetRight 0 OffsetBottom 0 } Color 0.76 0.63 0.3 1 }
 } } } }

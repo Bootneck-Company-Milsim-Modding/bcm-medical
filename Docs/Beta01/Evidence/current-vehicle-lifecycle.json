@@ -1,0 +1,30 @@
+[
+  {
+    "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\drag-start-diagnostic-snapshot-20261102-132108-655\\.checks\\bodybag-vehicle-20261102-133334-367",
+    "search": false,
+    "session": false,
+    "loss": false,
+    "completion": "13:34:16.756 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=11 failures=0"
+  },
+  {
+    "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\drag-start-diagnostic-snapshot-20261102-132108-655\\.checks\\bodybag-vehicle-20261102-133548-311",
+    "search": true,
+    "session": false,
+    "loss": false,
+    "completion": "13:36:56.190 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=37 failures=0"
+  },
+  {
+    "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\drag-start-diagnostic-snapshot-20261102-132108-655\\.checks\\bodybag-vehicle-20261102-133656-846",
+    "search": false,
+    "session": true,
+    "loss": false,
+    "completion": "13:37:45.877 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=18 failures=0"
+  },
+  {
+    "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\drag-start-diagnostic-snapshot-20261102-132108-655\\.checks\\bodybag-vehicle-20261102-133746-177",
+    "search": false,
+    "session": false,
+    "loss": true,
+    "completion": "13:38:10.719 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=33 failures=0"
+  }
+]

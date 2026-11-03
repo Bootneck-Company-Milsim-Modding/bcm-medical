@@ -46,6 +46,8 @@ class BCMM_DomainChecks
 
  void Run()
  {
+  BCMM_Beta01Checks.ExportNative();
+  BCMM_Beta01Checks.RunIfRequested(this);
   string preview;
   if (System.GetCLIParam("bcmmUIPreview", preview)) { BCMM_UIPreview.Start(); return; }
   string observer; if (System.GetCLIParam("bcmmCargoObserver", observer)) return;
@@ -140,6 +142,8 @@ class BCMM_DomainChecks
   string appliedVisuals;
   if(System.GetCLIParam("bcmmAppliedVisualsRuntime",appliedVisuals)) { m_SplintRuntime=new BCMM_AppliedVisualsRuntimeChecks();m_SplintRuntime.Start(this);return; }
   string gripCoordinate;
+  if(System.GetCLIParam("bcmmBeta01WorldReview",gripCoordinate)){m_SplintRuntime=new BCMM_Beta01WorldReview();m_SplintRuntime.Start(this);return;}
+  if(System.GetCLIParam("bcmmBeta01Hands",gripCoordinate)){m_SplintRuntime=new BCMM_Beta01HandReview();m_SplintRuntime.Start(this);return;}
   if(System.GetCLIParam("bcmmGripCoordinateRuntime",gripCoordinate)) { m_SplintRuntime=new BCMM_GripCoordinateChecks();m_SplintRuntime.Start(this);return; }
   string stretcherRuntime;
   if (System.GetCLIParam("bcmmStretcherRuntime", stretcherRuntime)) { m_SplintRuntime = new BCMM_StretcherRuntimeChecks(); m_SplintRuntime.Start(this); return; }
@@ -163,6 +167,9 @@ class BCMM_DomainChecks
   string splintRuntime;
   if (System.GetCLIParam("bcmmSplintRuntime", splintRuntime)) { m_SplintRuntime = new BCMM_SplintRuntimeChecks(); m_SplintRuntime.Start(this); return; }
   string dragRuntime;
+  if (System.GetCLIParam("bcmmTerrainDrag", dragRuntime)) { m_DragRuntime = new BCMM_Beta01TerrainDrag(); m_DragRuntime.Start(this); return; }
+  if (System.GetCLIParam("bcmmBeta01Packing", dragRuntime)) { m_DragRuntime = new BCMM_Beta01Packing(); m_DragRuntime.Start(this); return; }
+  if (System.GetCLIParam("bcmmBeta01DragMatrix", dragRuntime)) { m_DragRuntime = new BCMM_Beta01DragMatrix(); m_DragRuntime.Start(this); return; }
   if (System.GetCLIParam("bcmmDragRuntime", dragRuntime)) { m_DragRuntime = new BCMM_DragRuntimeChecks(); m_DragRuntime.Start(this); return; }
   string lifeRuntime;
   if (System.GetCLIParam("bcmmLifeRuntime", lifeRuntime)) { m_LifeRuntime = new BCMM_LifeRuntimeChecks(); m_LifeRuntime.Start(this); return; }
@@ -269,7 +276,7 @@ class BCMM_DomainChecks
    previous.Values.Insert(settings.ValueAt(i));
   }
   BCMM_Settings migrated = new BCMM_Settings();
-  Check(previous.Decode(migrated) && migrated.Get("baggingDurationSeconds") == 3, "Schema three migrates bagging controls without losing previous settings");
+  Check(previous.Decode(migrated) && migrated.Get("baggingDurationSeconds") == 12, "Schema three migrates bagging controls without losing previous settings");
  }
  protected void CheckPhysiology()
  {

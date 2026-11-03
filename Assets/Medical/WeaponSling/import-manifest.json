@@ -4,10 +4,11 @@
   "materials": 7,
   "triangles": 17999,
   "dimensionsMetres": [
-    0.35014185309410095,
-    0.2905053496360779,
-    0.25556689500808716
+    0.14000000059604645,
+    0.11615505814552307,
+    0.10218533873558044
   ],
   "staticInventoryOnly": true,
-  "source": "Source/Equipment/BlackBungeeSling/BCM_Black_TwoHook_BungeeSling.blend"
+  "source": "Source/Equipment/BlackBungeeSling/BCM_Black_TwoHook_BungeeSling.blend",
+  "beta01Compact": true
 }

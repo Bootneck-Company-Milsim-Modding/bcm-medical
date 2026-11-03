@@ -1,0 +1,913 @@
+{
+  "packedSha256": "bedda0f29e13af1009581140adaafef8a4c543940c75e35ab41badcd0d078edf",
+  "runs": [
+    {
+      "matrix": ".checks\\bodybag-compatibility-20261103-070201-895\\results.json",
+      "Name": "JLTV",
+      "Prefab": "{E62EEF185EC31C54}Prefabs/Vehicles/Wheeled/JLTV/Unarmed/JLTV_Unarmed.et",
+      "Pilot": false,
+      "ExtraAddons": [
+        "5C721177A220B42F"
+      ],
+      "Status": "passed",
+      "RunDirectory": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\bodybag-vehicle-20261103-070201-946",
+      "Failure": "",
+      "Checks": 11,
+      "CarrierOwnerConfirmed": true,
+      "PilotOwnerConfirmed": false,
+      "roles": {
+        "late-join": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070201-946\\late-join\\logs\\logs_2026-11-03_07-02-12\\console.log",
+          "logSha256": "59060606de48bf2ecd91c76345de4512652ff51e0035d2fba294299357d38443",
+          "completion": [],
+          "observations": [
+            "07:02:17.363 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "07:02:33.766 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "07:02:38.765 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "owner": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070201-946\\owner\\logs\\logs_2026-11-03_07-02-05\\console.log",
+          "logSha256": "642d0ee6c713e643a3d269aeecacbb0fdf9c2fa4a4204d068937216b5cad7023",
+          "completion": [],
+          "observations": [
+            "07:02:11.953 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "07:02:33.791 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "07:02:38.791 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "server": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070201-946\\server\\logs\\logs_2026-11-03_07-02-02\\console.log",
+          "logSha256": "04a9259675ee1af2385a72ec48339e8e272b46746d5e0d6338c80814dc55ee8c",
+          "completion": [
+            "07:02:43.724 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=11 failures=0"
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "matrix": ".checks\\bodybag-compatibility-20261103-070201-895\\results.json",
+      "Name": "Cougar 4x4",
+      "Prefab": "{1D86460CBEA92CAC}Prefabs/Vehicles/Wheeled/Cougar4x4/Cougar4x4_Olive.et",
+      "Pilot": false,
+      "ExtraAddons": [
+        "5D5A20A8AE33C21E"
+      ],
+      "Status": "passed",
+      "RunDirectory": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\bodybag-vehicle-20261103-070244-323",
+      "Failure": "",
+      "Checks": 11,
+      "CarrierOwnerConfirmed": true,
+      "PilotOwnerConfirmed": false,
+      "roles": {
+        "late-join": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070244-323\\late-join\\logs\\logs_2026-11-03_07-02-53\\console.log",
+          "logSha256": "72607b757b52e1cdc322f01e06905da4f32d5129c11c6e2ae9a1ccaf40040c6c",
+          "completion": [],
+          "observations": [
+            "07:02:59.358 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "07:03:15.694 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "07:03:20.694 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "owner": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070244-323\\owner\\logs\\logs_2026-11-03_07-02-47\\console.log",
+          "logSha256": "5435653db1522855fb716d8add399265bcd678a7cd632a602358685ff9461d1b",
+          "completion": [],
+          "observations": [
+            "07:02:53.818 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "07:03:15.689 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "07:03:20.689 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "server": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070244-323\\server\\logs\\logs_2026-11-03_07-02-44\\console.log",
+          "logSha256": "b1e42028bc41c4979864df9d6472ec91f84748353c934d1f883a6683d433a70b",
+          "completion": [
+            "07:03:25.634 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=11 failures=0"
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "matrix": ".checks\\bodybag-compatibility-20261103-070201-895\\results.json",
+      "Name": "Medical Little Bird",
+      "Prefab": "{B54777A1574316FD}Prefabs/Vehicles/Helicopters/AH6M/AH6M_Medevac2.et",
+      "Pilot": false,
+      "ExtraAddons": [
+        "665845C43FB3DA78"
+      ],
+      "Status": "passed",
+      "RunDirectory": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\bodybag-vehicle-20261103-070326-076",
+      "Failure": "",
+      "Checks": 11,
+      "CarrierOwnerConfirmed": true,
+      "PilotOwnerConfirmed": false,
+      "roles": {
+        "late-join": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070326-076\\late-join\\logs\\logs_2026-11-03_07-03-36\\console.log",
+          "logSha256": "43d935cdda9f401a675f7b976dcca0853f2dc8eb56ca5793666cf42480d2ac0f",
+          "completion": [],
+          "observations": [
+            "07:03:42.072 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "07:03:58.310 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "07:04:03.311 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "owner": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070326-076\\owner\\logs\\logs_2026-11-03_07-03-29\\console.log",
+          "logSha256": "9304a7779164771566d61467b959296350e44347722af511683d19aa99bdca4d",
+          "completion": [],
+          "observations": [
+            "07:03:36.426 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "07:03:58.328 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "07:04:03.327 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "server": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070326-076\\server\\logs\\logs_2026-11-03_07-03-26\\console.log",
+          "logSha256": "3ef39a0fc9a17370fbaa3b19479c01501f1c8c2a977e6a3a5d06e7c75cf3d316",
+          "completion": [
+            "07:04:08.271 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=11 failures=0"
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "matrix": ".checks\\bodybag-compatibility-20261103-070201-895\\results.json",
+      "Name": "BCM UH-60",
+      "Prefab": "{AA8A16E764AA2F6E}Prefabs/Vehicles/Helicopters/AUS_MH60/Awenzj_SOAR_UH60.et",
+      "Pilot": false,
+      "ExtraAddons": [
+        "69431AA10656FA71",
+        "6992B994D1870DD9"
+      ],
+      "Status": "passed",
+      "RunDirectory": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\bodybag-vehicle-20261103-070408-734",
+      "Failure": "",
+      "Checks": 11,
+      "CarrierOwnerConfirmed": true,
+      "PilotOwnerConfirmed": false,
+      "roles": {
+        "late-join": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070408-734\\late-join\\logs\\logs_2026-11-03_07-04-20\\console.log",
+          "logSha256": "4d3207394ed080e4d34180b8cee4f42aea2cc8179bc1d562c1fa78316d958eb0",
+          "completion": [],
+          "observations": [
+            "07:04:26.678 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "07:04:41.818 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "07:04:46.849 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "owner": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070408-734\\owner\\logs\\logs_2026-11-03_07-04-12\\console.log",
+          "logSha256": "3f8d11d72a565c3bf0b94f8141298972da3bec0b72bbb6b3ffc06a09875dca0d",
+          "completion": [],
+          "observations": [
+            "07:04:19.944 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "07:04:41.817 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "07:04:46.848 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "server": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070408-734\\server\\logs\\logs_2026-11-03_07-04-08\\console.log",
+          "logSha256": "4daf662c0ff231a0e3267a7d0262c15181240cd5f8b513648bc529e762857078",
+          "completion": [
+            "07:04:51.781 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=11 failures=0"
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "matrix": ".checks\\bodybag-compatibility-20261103-070201-895\\results.json",
+      "Name": "BCM HH-60G",
+      "Prefab": "{05BEA1ABB0190245}Prefabs/Vehicles/Helicopters/AUS_MH60/New Variants/Awenzj_HH-60G.et",
+      "Pilot": false,
+      "ExtraAddons": [
+        "689910D4936BDF6C",
+        "6992B994D1870DD9"
+      ],
+      "Status": "passed-with-upstream-diagnostic-policy",
+      "RunDirectory": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\bodybag-vehicle-20261103-070452-089",
+      "Failure": "",
+      "Checks": 11,
+      "CarrierOwnerConfirmed": true,
+      "PilotOwnerConfirmed": false,
+      "roles": {
+        "late-join": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070452-089\\late-join\\logs\\logs_2026-11-03_07-05-08\\console.log",
+          "logSha256": "c4e00a4f709197ba9de9c6ab20dd55c56b6f47df6df5fa75ae7969a47d40a7a7",
+          "completion": [],
+          "observations": [
+            "07:05:16.466 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "07:05:29.302 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "07:05:34.302 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "owner": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070452-089\\owner\\logs\\logs_2026-11-03_07-04-55\\console.log",
+          "logSha256": "0faa522e6ebf86dee92bfe3f492851d41a716aea982116ffae6c583f07ea138e",
+          "completion": [],
+          "observations": [
+            "07:05:06.632 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "07:05:29.302 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "07:05:34.302 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "server": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070452-089\\server\\logs\\logs_2026-11-03_07-04-52\\console.log",
+          "logSha256": "6b0b16a7714b89f5dc76149b70148db775608b029c2710d89ce137325557cc39",
+          "completion": [
+            "07:05:39.262 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=11 failures=0"
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "matrix": ".checks\\bodybag-compatibility-20261103-070541-075\\results.json",
+      "Name": "Medical Little Bird",
+      "Prefab": "{B54777A1574316FD}Prefabs/Vehicles/Helicopters/AH6M/AH6M_Medevac2.et",
+      "Pilot": true,
+      "ExtraAddons": [
+        "665845C43FB3DA78"
+      ],
+      "Status": "passed",
+      "RunDirectory": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\bodybag-vehicle-20261103-070541-082",
+      "Failure": "",
+      "Checks": 13,
+      "CarrierOwnerConfirmed": true,
+      "PilotOwnerConfirmed": true,
+      "roles": {
+        "late-join": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070541-082\\late-join\\logs\\logs_2026-11-03_07-05-52\\console.log",
+          "logSha256": "0176e48999e9e8025d87017e85b788805306da24c1fb0dc6978c74d6d52cd668",
+          "completion": [],
+          "observations": [
+            "07:05:58.427 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "07:07:13.198 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "07:07:18.198 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "owner": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070541-082\\owner\\logs\\logs_2026-11-03_07-05-44\\console.log",
+          "logSha256": "2bd6ca3703bc3faa085a5809ac52aa3f901cedbf6d18b0a321b1732193e195cd",
+          "completion": [],
+          "observations": [
+            "07:05:52.875 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "07:07:13.212 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "07:07:18.212 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "server": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070541-082\\server\\logs\\logs_2026-11-03_07-05-41\\console.log",
+          "logSha256": "54c54ab929dc26ffec6a5ac301c97c99f0d6b15f8610c072abfb28099a44c385",
+          "completion": [
+            "07:07:23.151 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=13 failures=0"
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "matrix": ".checks\\bodybag-compatibility-20261103-070724-490\\results.json",
+      "Name": "BCM HH-60G",
+      "Prefab": "{05BEA1ABB0190245}Prefabs/Vehicles/Helicopters/AUS_MH60/New Variants/Awenzj_HH-60G.et",
+      "Pilot": true,
+      "ExtraAddons": [
+        "689910D4936BDF6C",
+        "6992B994D1870DD9"
+      ],
+      "Status": "passed-with-upstream-diagnostic-policy",
+      "RunDirectory": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\bodybag-vehicle-20261103-070724-530",
+      "Failure": "",
+      "Checks": 13,
+      "CarrierOwnerConfirmed": true,
+      "PilotOwnerConfirmed": true,
+      "roles": {
+        "late-join": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070724-530\\late-join\\logs\\logs_2026-11-03_07-07-35\\console.log",
+          "logSha256": "b476cf6aadf3b77f2747f3c44ee9379d142f32fd836ffd94f9af32015fabfc8b",
+          "completion": [],
+          "observations": [
+            "07:07:41.088 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "07:09:58.478 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "07:10:03.480 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "owner": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070724-530\\owner\\logs\\logs_2026-11-03_07-07-28\\console.log",
+          "logSha256": "58522aa05bd15dacdf3630265d9ea486408ff80e3750de45a6498deb823a86c4",
+          "completion": [],
+          "observations": [
+            "07:07:35.243 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "07:09:58.481 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "07:10:03.483 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "server": {
+          "packedMount": true,
+          "log": ".checks\\bodybag-vehicle-20261103-070724-530\\server\\logs\\logs_2026-11-03_07-07-24\\console.log",
+          "logSha256": "7a1a08f8bda19df392d26f42bcb3e7fc34f5e0fd225b4165fa09f9681cbb8c4e",
+          "completion": [
+            "07:10:08.409 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=13 failures=0"
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "matrix": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-compatibility-20261103-065126-477\\results.json",
+      "Name": "MRZR D4",
+      "Prefab": "{AC8918B033DB356D}Prefabs/Vehicles/Wheeled/MRZR/Unarmed/MRZR_D4_Unarmed_Camo.et",
+      "Pilot": false,
+      "ExtraAddons": [
+        "64900A5A31F5DCB5"
+      ],
+      "Status": "failed",
+      "RunDirectory": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065126-532",
+      "Failure": "BCM Medical vehicle checks failed; inspect C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065126-532",
+      "Checks": 0,
+      "CarrierOwnerConfirmed": false,
+      "PilotOwnerConfirmed": false,
+      "roles": {
+        "owner": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065126-532\\owner\\logs\\logs_2026-11-03_06-51-31\\console.log",
+          "logSha256": "44ccaebcf15a768ed7d2b267a94371a6ee5fd2c70a481590179f788a09151318",
+          "completion": [],
+          "observations": []
+        },
+        "server": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065126-532\\server\\logs\\logs_2026-11-03_06-51-28\\console.log",
+          "logSha256": "16369b859941e18bfb74102b6f7c8e3eb56275605f1d339cf4d71c9ea92ecf24",
+          "completion": [
+            "06:52:06.791 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=4 failures=1"
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "matrix": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-compatibility-20261103-065126-477\\results.json",
+      "Name": "JLTV",
+      "Prefab": "{E62EEF185EC31C54}Prefabs/Vehicles/Wheeled/JLTV/Unarmed/JLTV_Unarmed.et",
+      "Pilot": false,
+      "ExtraAddons": [
+        "5C721177A220B42F"
+      ],
+      "Status": "blocked-missing-dependency",
+      "RunDirectory": "",
+      "Failure": "Missing installed vehicle dependency: 5C721177A220B42F",
+      "Checks": 0,
+      "CarrierOwnerConfirmed": false,
+      "PilotOwnerConfirmed": false,
+      "roles": {}
+    },
+    {
+      "matrix": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-compatibility-20261103-065126-477\\results.json",
+      "Name": "Cougar 4x4",
+      "Prefab": "{1D86460CBEA92CAC}Prefabs/Vehicles/Wheeled/Cougar4x4/Cougar4x4_Olive.et",
+      "Pilot": false,
+      "ExtraAddons": [
+        "5D5A20A8AE33C21E"
+      ],
+      "Status": "blocked-missing-dependency",
+      "RunDirectory": "",
+      "Failure": "Missing installed vehicle dependency: 5D5A20A8AE33C21E",
+      "Checks": 0,
+      "CarrierOwnerConfirmed": false,
+      "PilotOwnerConfirmed": false,
+      "roles": {}
+    },
+    {
+      "matrix": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-compatibility-20261103-065126-477\\results.json",
+      "Name": "Medical Little Bird",
+      "Prefab": "{B54777A1574316FD}Prefabs/Vehicles/Helicopters/AH6M/AH6M_Medevac2.et",
+      "Pilot": false,
+      "ExtraAddons": [
+        "665845C43FB3DA78"
+      ],
+      "Status": "blocked-missing-dependency",
+      "RunDirectory": "",
+      "Failure": "Missing installed vehicle dependency: 62CCD69DD17E4F2F",
+      "Checks": 0,
+      "CarrierOwnerConfirmed": false,
+      "PilotOwnerConfirmed": false,
+      "roles": {}
+    },
+    {
+      "matrix": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-compatibility-20261103-065126-477\\results.json",
+      "Name": "BCM UH-60",
+      "Prefab": "{AA8A16E764AA2F6E}Prefabs/Vehicles/Helicopters/AUS_MH60/Awenzj_SOAR_UH60.et",
+      "Pilot": false,
+      "ExtraAddons": [
+        "6992B994D1870DD9"
+      ],
+      "Status": "failed",
+      "RunDirectory": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065207-566",
+      "Failure": "BCM Medical vehicle checks failed; inspect C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065207-566",
+      "Checks": 0,
+      "CarrierOwnerConfirmed": false,
+      "PilotOwnerConfirmed": false,
+      "roles": {
+        "owner": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065207-566\\owner\\logs\\logs_2026-11-03_06-52-10\\console.log",
+          "logSha256": "fe09d793ff40b8fb6c71f743f334e67c540ff54474446184d5e9d5cb10ecc96e",
+          "completion": [],
+          "observations": []
+        },
+        "server": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065207-566\\server\\logs\\logs_2026-11-03_06-52-07\\console.log",
+          "logSha256": "4a3440c9fe2a10a90cc74005bd947f460d15212977c0a244b394f36c54e36dc0",
+          "completion": [
+            "06:52:46.590 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=4 failures=1"
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "matrix": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-compatibility-20261103-065126-477\\results.json",
+      "Name": "BCM HH-60G",
+      "Prefab": "{05BEA1ABB0190245}Prefabs/Vehicles/Helicopters/AUS_MH60/New Variants/Awenzj_HH-60G.et",
+      "Pilot": false,
+      "ExtraAddons": [
+        "6992B994D1870DD9"
+      ],
+      "Status": "failed",
+      "RunDirectory": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065246-978",
+      "Failure": "BCM Medical vehicle checks failed; inspect C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065246-978",
+      "Checks": 0,
+      "CarrierOwnerConfirmed": false,
+      "PilotOwnerConfirmed": false,
+      "roles": {
+        "owner": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065246-978\\owner\\logs\\logs_2026-11-03_06-52-49\\console.log",
+          "logSha256": "e65cb36a926b0944890f0fe4bcc9d64103c26853e60e8f1837d0d9db580b2497",
+          "completion": [],
+          "observations": []
+        },
+        "server": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065246-978\\server\\logs\\logs_2026-11-03_06-52-47\\console.log",
+          "logSha256": "2041c8dd59812e3c82af5cad56560e9f37fb00b897e92ed66e94c56205464476",
+          "completion": [
+            "06:53:26.043 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=4 failures=1"
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "matrix": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-compatibility-20261103-065126-477\\results.json",
+      "Name": "BCM Chinook",
+      "Prefab": "{BDD5BF2D60C2F5F0}Prefabs/Vehicles/Helicopters/H47/CH47F_MY2.et",
+      "Pilot": false,
+      "ExtraAddons": [
+        "6992B994D1870DD9"
+      ],
+      "Status": "failed",
+      "RunDirectory": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065326-346",
+      "Failure": "BCM Medical vehicle checks failed; inspect C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065326-346",
+      "Checks": 0,
+      "CarrierOwnerConfirmed": false,
+      "PilotOwnerConfirmed": false,
+      "roles": {
+        "owner": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065326-346\\owner\\logs\\logs_2026-11-03_06-53-29\\console.log",
+          "logSha256": "402ada668aa55def10c4a436f09b2b7eadbe9f6021ffa37e3bb88e1642337fb1",
+          "completion": [],
+          "observations": []
+        },
+        "server": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065326-346\\server\\logs\\logs_2026-11-03_06-53-26\\console.log",
+          "logSha256": "edc0a8d3bf5fe6039ee5b070b5179841f19f03c3e4c6145609382244a17f5a4c",
+          "completion": [
+            "06:53:31.581 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=2 failures=1"
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "matrix": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-compatibility-20261103-065454-566\\results.json",
+      "Name": "MRZR D4",
+      "Prefab": "{AC8918B033DB356D}Prefabs/Vehicles/Wheeled/MRZR/Unarmed/MRZR_D4_Unarmed_Camo.et",
+      "Pilot": false,
+      "ExtraAddons": [
+        "64900A5A31F5DCB5"
+      ],
+      "Status": "passed",
+      "RunDirectory": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065454-623",
+      "Failure": "",
+      "Checks": 11,
+      "CarrierOwnerConfirmed": true,
+      "PilotOwnerConfirmed": false,
+      "roles": {
+        "late-join": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065454-623\\late-join\\logs\\logs_2026-11-03_06-55-05\\console.log",
+          "logSha256": "a495c07f40d124c0ecb8bf41781a01a1507765db37cee297bec0754eaec1341a",
+          "completion": [],
+          "observations": [
+            "06:55:10.362 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "06:55:26.862 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "06:55:31.831 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "owner": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065454-623\\owner\\logs\\logs_2026-11-03_06-54-58\\console.log",
+          "logSha256": "735a10d14d009e88b7a64bf457277e209031b82c93bf85a6a6f1667e5307a38f",
+          "completion": [],
+          "observations": [
+            "06:55:05.016 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "06:55:26.814 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "06:55:31.847 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "server": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065454-623\\server\\logs\\logs_2026-11-03_06-54-55\\console.log",
+          "logSha256": "384c60c2e6febd3820d6e95221ff438033d1f6992cc617fbcaafce560fb07f96",
+          "completion": [
+            "06:55:36.790 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=11 failures=0"
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "matrix": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-compatibility-20261103-065454-566\\results.json",
+      "Name": "BCM UH-60",
+      "Prefab": "{AA8A16E764AA2F6E}Prefabs/Vehicles/Helicopters/AUS_MH60/Awenzj_SOAR_UH60.et",
+      "Pilot": false,
+      "ExtraAddons": [
+        "6992B994D1870DD9"
+      ],
+      "Status": "failed",
+      "RunDirectory": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065537-322",
+      "Failure": "BCM Medical vehicle checks failed; inspect C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065537-322",
+      "Checks": 0,
+      "CarrierOwnerConfirmed": false,
+      "PilotOwnerConfirmed": false,
+      "roles": {
+        "owner": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065537-322\\owner\\logs\\logs_2026-11-03_06-55-40\\console.log",
+          "logSha256": "1c32a9dca519575e377d0ab9bb2b5596aecd261ad1708db567898cdd430bd4ab",
+          "completion": [],
+          "observations": []
+        },
+        "server": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065537-322\\server\\logs\\logs_2026-11-03_06-55-37\\console.log",
+          "logSha256": "0403af2c8dfaf5d9e2ae9d39809f200e6d4c875d2bcd334f882339719758e47b",
+          "completion": [
+            "06:55:45.191 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=5 failures=1"
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "matrix": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-compatibility-20261103-065454-566\\results.json",
+      "Name": "BCM HH-60G",
+      "Prefab": "{05BEA1ABB0190245}Prefabs/Vehicles/Helicopters/AUS_MH60/New Variants/Awenzj_HH-60G.et",
+      "Pilot": false,
+      "ExtraAddons": [
+        "6992B994D1870DD9"
+      ],
+      "Status": "failed",
+      "RunDirectory": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065545-852",
+      "Failure": "BCM Medical vehicle checks failed; inspect C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065545-852",
+      "Checks": 0,
+      "CarrierOwnerConfirmed": false,
+      "PilotOwnerConfirmed": false,
+      "roles": {
+        "owner": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065545-852\\owner\\logs\\logs_2026-11-03_06-55-48\\console.log",
+          "logSha256": "01e478a278aab76ef4df421eb7c350d6c510fd404eae740bca034463ff9124b6",
+          "completion": [],
+          "observations": []
+        },
+        "server": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065545-852\\server\\logs\\logs_2026-11-03_06-55-46\\console.log",
+          "logSha256": "03d4d0b916d60c6ffb45ec80a7751241b84395eb547702b3ca66dcfee3fa17ee",
+          "completion": [
+            "06:55:53.703 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=5 failures=1"
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "matrix": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-compatibility-20261103-065454-566\\results.json",
+      "Name": "ACM MH-47G (BCM Vehicles dependency)",
+      "Prefab": "{76A52BA44C1A058F}Prefabs/CH_47/CH_47_SOAR.et",
+      "Pilot": false,
+      "ExtraAddons": [
+        "6992B994D1870DD9"
+      ],
+      "Status": "passed",
+      "RunDirectory": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065554-354",
+      "Failure": "",
+      "Checks": 11,
+      "CarrierOwnerConfirmed": true,
+      "PilotOwnerConfirmed": false,
+      "roles": {
+        "late-join": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065554-354\\late-join\\logs\\logs_2026-11-03_06-56-04\\console.log",
+          "logSha256": "992648c8ec536df4491bdb0141fa2490820ab00da88c5b67a8086ac6df58d526",
+          "completion": [],
+          "observations": [
+            "06:56:10.005 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "06:56:26.203 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "06:56:31.201 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "owner": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065554-354\\owner\\logs\\logs_2026-11-03_06-55-57\\console.log",
+          "logSha256": "0bce64616e7fe0f3a4bb828c301a40f0d74f7dde8969f78cb325c36b0922a210",
+          "completion": [],
+          "observations": [
+            "06:56:04.304 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "06:56:26.174 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "06:56:31.174 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "server": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065554-354\\server\\logs\\logs_2026-11-03_06-55-54\\console.log",
+          "logSha256": "58452bf3f3879ba73ab5fcf68e09d8c8ad9ec5ce0f7f7a9c1d33f1913728f326",
+          "completion": [
+            "06:56:36.165 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=11 failures=0"
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "matrix": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-compatibility-20261103-065636-462\\results.json",
+      "Name": "BCM UH-60",
+      "Prefab": "{AA8A16E764AA2F6E}Prefabs/Vehicles/Helicopters/AUS_MH60/Awenzj_SOAR_UH60.et",
+      "Pilot": true,
+      "ExtraAddons": [
+        "69431AA10656FA71",
+        "6992B994D1870DD9"
+      ],
+      "Status": "passed",
+      "RunDirectory": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065636-502",
+      "Failure": "",
+      "Checks": 13,
+      "CarrierOwnerConfirmed": true,
+      "PilotOwnerConfirmed": true,
+      "roles": {
+        "late-join": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065636-502\\late-join\\logs\\logs_2026-11-03_06-56-46\\console.log",
+          "logSha256": "16692463796cc6ef8037d51eddfb2f438717cf03caad1f2f4090a5b05aa241fc",
+          "completion": [],
+          "observations": [
+            "06:56:53.231 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "06:59:09.037 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "06:59:14.036 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "owner": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065636-502\\owner\\logs\\logs_2026-11-03_06-56-39\\console.log",
+          "logSha256": "11e98e8bbec8443228eced003e6341cc97a2faceb919eed3968c79dbe4a3778e",
+          "completion": [],
+          "observations": [
+            "06:56:46.595 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "06:59:09.035 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "06:59:14.032 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "server": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065636-502\\server\\logs\\logs_2026-11-03_06-56-36\\console.log",
+          "logSha256": "f3e1adca9f868f43175e74d71e1fdf2a9230196a475c85a879484d09fbb144df",
+          "completion": [
+            "06:59:18.972 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=13 failures=0"
+          ],
+          "observations": []
+        }
+      }
+    },
+    {
+      "matrix": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-compatibility-20261103-065636-462\\results.json",
+      "Name": "BCM HH-60G",
+      "Prefab": "{05BEA1ABB0190245}Prefabs/Vehicles/Helicopters/AUS_MH60/New Variants/Awenzj_HH-60G.et",
+      "Pilot": true,
+      "ExtraAddons": [
+        "69431AA10656FA71",
+        "6992B994D1870DD9"
+      ],
+      "Status": "failed",
+      "RunDirectory": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065919-385",
+      "Failure": "BCM Medical vehicle checks failed; inspect C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065919-385",
+      "Checks": 0,
+      "CarrierOwnerConfirmed": false,
+      "PilotOwnerConfirmed": false,
+      "roles": {
+        "owner": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065919-385\\owner\\logs\\logs_2026-11-03_06-59-22\\console.log",
+          "logSha256": "a42b9bd8f09bec33ed35a0d94b15ab98f04d40cf4ae24c2e104a98be6e1d31d2",
+          "completion": [],
+          "observations": []
+        },
+        "server": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065919-385\\server\\logs\\logs_2026-11-03_06-59-19\\console.log",
+          "logSha256": "3120097b8f515e6b559fd0a7dca397df283615b0ad137b397370d488f9b44b10",
+          "completion": [],
+          "observations": []
+        }
+      }
+    },
+    {
+      "matrix": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-compatibility-20261103-065636-462\\results.json",
+      "Name": "ACM MH-47G (BCM Vehicles dependency)",
+      "Prefab": "{76A52BA44C1A058F}Prefabs/CH_47/CH_47_SOAR.et",
+      "Pilot": true,
+      "ExtraAddons": [
+        "6992B994D1870DD9"
+      ],
+      "Status": "passed",
+      "RunDirectory": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065925-100",
+      "Failure": "",
+      "Checks": 13,
+      "CarrierOwnerConfirmed": true,
+      "PilotOwnerConfirmed": true,
+      "roles": {
+        "late-join": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065925-100\\late-join\\logs\\logs_2026-11-03_06-59-35\\console.log",
+          "logSha256": "7e044e14d607b278d009d743ba2f12ff81a5f3f669d5145bc79abb382002c878",
+          "completion": [],
+          "observations": [
+            "06:59:40.793 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "07:01:49.596 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "07:01:54.598 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "owner": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065925-100\\owner\\logs\\logs_2026-11-03_06-59-28\\console.log",
+          "logSha256": "543475a33e16baa428f5940cbd2323595abff197bc8321b330c0016adbf3dec5",
+          "completion": [],
+          "observations": [
+            "06:59:35.273 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=1",
+            "07:01:49.575 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=2",
+            "07:01:54.609 SCRIPT       : BCMM_VEHICLE_CLIENT PASS phase=3"
+          ]
+        },
+        "server": {
+          "packedMount": true,
+          "log": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065925-100\\server\\logs\\logs_2026-11-03_06-59-25\\console.log",
+          "logSha256": "1181da7c5c6e306d61c6f4fec7cef9ef32e494a371b66ddc44780887cda3ecb5",
+          "completion": [
+            "07:01:59.539 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=13 failures=0"
+          ],
+          "observations": []
+        }
+      }
+    }
+  ],
+  "externalTransfers": [
+    {
+      "prefab": "{76A52BA44C1A058F}Prefabs/CH_47/CH_47_SOAR.et",
+      "passed": true,
+      "packedMount": true,
+      "completion": [
+        "07:11:52.664 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=21 failures=0"
+      ],
+      "run": ".checks\\bodybag-vehicle-20261103-071135-422",
+      "logSha256": "6d5d1478f72e72d4d21ce5fc4882c5f271c80e3bede5b71e65a617604add45ff"
+    },
+    {
+      "prefab": "{BDD5BF2D60C2F5F0}Prefabs/Vehicles/Helicopters/H47/CH47F_MY2.et",
+      "passed": false,
+      "packedMount": true,
+      "completion": [
+        "06:54:17.434 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=2 failures=1"
+      ],
+      "run": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065411-761",
+      "logSha256": "3ef3ffeee56c649e4d61e1869c8928ada0a2216bb463c70ddf2a731a573323cf"
+    },
+    {
+      "prefab": "{05BEA1ABB0190245}Prefabs/Vehicles/Helicopters/AUS_MH60/New Variants/Awenzj_HH-60G.et",
+      "passed": false,
+      "packedMount": true,
+      "completion": [],
+      "run": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065401-355",
+      "logSha256": "a37d4e26570f4e86da4f9eabc2d8885aad88281c044d4cbd78cb0566570f9f55"
+    },
+    {
+      "prefab": "{AA8A16E764AA2F6E}Prefabs/Vehicles/Helicopters/AUS_MH60/Awenzj_SOAR_UH60.et",
+      "passed": false,
+      "packedMount": true,
+      "completion": [],
+      "run": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065350-626",
+      "logSha256": "5e2f2714fa648c7eb3fcce0838ad17eeaf2f54077ee293edfc89d3b700eb4944"
+    },
+    {
+      "prefab": "{05BEA1ABB0190245}Prefabs/Vehicles/Helicopters/AUS_MH60/New Variants/Awenzj_HH-60G.et",
+      "passed": true,
+      "packedMount": true,
+      "completion": [
+        "07:11:35.140 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=21 failures=0"
+      ],
+      "run": ".checks\\bodybag-vehicle-20261103-071118-062",
+      "logSha256": "8d74d71ae89f312ab5085cecdf43e3538cedeb82f6970009a7b51e1e7fd5dcf7"
+    },
+    {
+      "prefab": "{AA8A16E764AA2F6E}Prefabs/Vehicles/Helicopters/AUS_MH60/Awenzj_SOAR_UH60.et",
+      "passed": true,
+      "packedMount": true,
+      "completion": [
+        "07:11:17.465 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=21 failures=0"
+      ],
+      "run": ".checks\\bodybag-vehicle-20261103-071100-202",
+      "logSha256": "dc792d78e7edb453cebcb907f31c9f903d0273693ef411d73e6caa5f812f7735"
+    },
+    {
+      "prefab": "{1D86460CBEA92CAC}Prefabs/Vehicles/Wheeled/Cougar4x4/Cougar4x4_Olive.et",
+      "passed": true,
+      "packedMount": true,
+      "completion": [
+        "07:10:42.732 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=21 failures=0"
+      ],
+      "run": ".checks\\bodybag-vehicle-20261103-071025-882",
+      "logSha256": "535c5af3a31cab046d3cb24e373f7b3be74b25ec5dee3821ab8f915d0b42a709"
+    },
+    {
+      "prefab": "{E62EEF185EC31C54}Prefabs/Vehicles/Wheeled/JLTV/Unarmed/JLTV_Unarmed.et",
+      "passed": true,
+      "packedMount": true,
+      "completion": [
+        "07:10:25.579 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=21 failures=0"
+      ],
+      "run": ".checks\\bodybag-vehicle-20261103-071008-681",
+      "logSha256": "9f58e1a4ae5c38912ed9c33cadf0215cfd7efe6ca26918371370a84b9a5a2628"
+    },
+    {
+      "prefab": "{B54777A1574316FD}Prefabs/Vehicles/Helicopters/AH6M/AH6M_Medevac2.et",
+      "passed": true,
+      "packedMount": true,
+      "completion": [
+        "07:10:59.815 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=21 failures=0"
+      ],
+      "run": ".checks\\bodybag-vehicle-20261103-071043-048",
+      "logSha256": "e42913f4d383cbac727c469189aea1dd0b92ab5144ac857ea56ab71199f7f7a4"
+    },
+    {
+      "prefab": "{AC8918B033DB356D}Prefabs/Vehicles/Wheeled/MRZR/Unarmed/MRZR_D4_Unarmed_Camo.et",
+      "passed": true,
+      "packedMount": true,
+      "completion": [
+        "06:53:49.970 SCRIPT       : BCMM_VEHICLE_COMPLETE checks=21 failures=0"
+      ],
+      "run": ".checks\\vehicle-download-retest-20261103-065124\\.checks\\bodybag-vehicle-20261103-065332-517",
+      "logSha256": "de2bb76e704ac8867b22e479e13617dfcfb1a6e45f1350a4b0f7358173def318"
+    }
+  ]
+}

@@ -89,6 +89,7 @@ class BCMM_BodyBagDragSession
    return false;
   }
   float length = settings.Get("ropeLengthMetres");
+  if (m_Mode == BCMM_TransportMode.BODY_BAG_MANUAL_DRAG) length = 0.9;
   if (distance > length) desired = carrier + offset * (length / distance);
   return true;
  }

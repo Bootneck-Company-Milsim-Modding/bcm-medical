@@ -3,9 +3,9 @@ MetaFileClass {
  Configurations {
   FBXResourceClass PC {
    MaterialAssigns {
-    MaterialAssignClass "{6AB6927341A4F3EE}" {
+    MaterialAssignClass "{6AC48B4DC7F97499}" {
      SourceMaterial "BCMM_FluidBag_M0"
-     AssignedMaterial "{118722C39E94A971}Assets/Medical/FluidBag/Data/FluidBag_0.emat"
+     AssignedMaterial "{E0C417D61451A2A6}Assets/Medical/FluidBag/Data/BloodBody.emat"
     }
    }
    MeshParams {

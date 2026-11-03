@@ -6,12 +6,14 @@ GenericEntity : "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/M
   BCMM_MedicationItemComponent "{6AB4B3F3FD218332}" { Kind 3 }
   InventoryItemComponent "{5222EB4D0C73006B}" {
    Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
-    CustomAttributes { SCR_AlternativeModel "{59E68C742A7C6A5F}" { m_sAlternativeModel "{C7F742C0DF1497BF}Assets/Medical/TXA/BCMM_TXA.xob" } }
+    CustomAttributes {
+     PreviewRenderAttributes "{5A5AEE4B8FF125F0}" { CameraPreset Front CameraDistanceToItem 0.266 CameraOffset 0 0 0 ItemRenderRotation 90 0 0 FOV 35 AspectRatio 1 } SCR_AlternativeModel "{59E68C742A7C6A5F}" { m_sAlternativeModel "{C7F742C0DF1497BF}Assets/Medical/TXA/BCMM_TXA.xob" } }
     ItemDisplayName SCR_InventoryUIInfo "{5222EB4D07D865FA}" {
      Name "TXA"
      Description "Injectable TXA. Supports clot stability; requires vascular access when enabled in GM settings. Does not replace blood, seal wounds or perform suturing."
     }
     ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     DimensionScaler 1
      Weight 0.4
      SizeSetupStrategy Manual
      ItemDimensions 20 10 5

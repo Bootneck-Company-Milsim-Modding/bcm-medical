@@ -1,8 +1,8 @@
-GenericEntity : "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" {
+GenericEntity : "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et" {
  ID "6AB4B3F3FD217021"
  components {
-  MeshObject "{51F66EC3C5BC700D}" { Object "{AA23AFD2A759EF96}Assets/Medical/NCD/BCMM_NCD.xob" }
-  SCR_ConsumableItemComponent "{5943631460899505}" { m_ConsumableEffect BCMM_ProcedurePresentationEffect "{594363147CC4C6BE}" { m_bDeleteOnUse 0 } m_bAlternativeModelOnAction 0 }
+  MeshObject "{59CE87DB17B6B1C5}" { Object "{AA23AFD2A759EF96}Assets/Medical/NCD/BCMM_NCD.xob" }
+  SCR_ConsumableItemComponent "{59E68C74C5CEE74F}" { m_ConsumableEffect BCMM_InjectionPresentationEffect "{59E68C74C1F3910E}" { m_bDeleteOnUse 0 } m_bAlternativeModelOnAction 0 }
   BCMM_EquipmentItemComponent "{6AB4B3F3FD218321}" { Kind 1 }
   InventoryItemComponent "{5222EB4D0C73006B}" {
    Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
@@ -11,11 +11,13 @@ GenericEntity : "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/Field
      Description "BCM original medical equipment. Temporary native package shape and treatment animation."
     }
     ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     DimensionScaler 1
      Weight 0.4
      SizeSetupStrategy Manual
      ItemDimensions 20 10 5
      ItemVolume 1000
     }
+    CustomAttributes { PreviewRenderAttributes "{5A5AEE4B8FF125F0}" { CameraPreset Front CameraDistanceToItem 0.266 CameraOffset 0 0 0 ItemRenderRotation 90 0 0 FOV 35 AspectRatio 1 } }
     CommonItemType "EQUIPMENT"
    }
   }

@@ -29,6 +29,9 @@ modded class SCR_BaseGameMode
   if(System.GetCLIParam("bcmmWorldPersistenceNetwork",savedWorldNetwork))spawn.Transform[3]=Vector(108,1.2,0.5*playerId);
   string clinicalNetwork;
   if (System.GetCLIParam("bcmmSplintNetwork", clinicalNetwork) || System.GetCLIParam("bcmmDragNetwork", clinicalNetwork)) spawn.Transform[3] = Vector(100.6, 1.2, 2 + 0.8 * playerId);
+  // Observer bodies must not stand directly in the owner's measured walking
+  // corridor; their character colliders otherwise turn this into a crowd test.
+  if (System.GetCLIParam("bcmmDragNetwork", clinicalNetwork) && playerId > 1) spawn.Transform[3] = Vector(104, 1.2, playerId);
   if (System.GetCLIParam("bcmmSplintNetwork", clinicalNetwork) && playerId == 1) spawn.Transform[3] = "100 1.2 -0.8";
   string stretcherNetwork;
   if (System.GetCLIParam("bcmmStretcherNetwork",stretcherNetwork))
@@ -49,7 +52,7 @@ modded class SCR_BaseGameMode
    // replication ownership as the native possession path does, so client-side
    // item commands are exercised by the actual owning character.
    string nativeItemFixture;
-   if (System.GetCLIParam("bcmmLivingTransportNetwork",nativeItemFixture) || System.GetCLIParam("bcmmWorldPersistenceNetwork",nativeItemFixture) || System.GetCLIParam("bcmmBurialNetwork",nativeItemFixture) || System.GetCLIParam("bcmmSplintNetwork", nativeItemFixture) || System.GetCLIParam("bcmmAnimationNetwork", nativeItemFixture) || System.GetCLIParam("bcmmMedicalNetwork", nativeItemFixture) || System.GetCLIParam("bcmmStretcherNetwork",nativeItemFixture) || System.GetCLIParam("bcmmOxygenNetwork",nativeItemFixture) || System.GetCLIParam("bcmmArsenalNetwork",nativeItemFixture) || System.GetCLIParam("bcmmFluidNetwork",nativeItemFixture) || System.GetCLIParam("bcmmAppliedEquipmentNetwork",nativeItemFixture) || System.GetCLIParam("bcmmOxygenRemovalNetwork",nativeItemFixture) || System.GetCLIParam("bcmmFluidLineNetwork",nativeItemFixture) || System.GetCLIParam("bcmmFluidBurdenNetwork",nativeItemFixture) || System.GetCLIParam("bcmmStockCommitNetwork",nativeItemFixture))
+   if (System.GetCLIParam("bcmmDragNetwork",nativeItemFixture) || System.GetCLIParam("bcmmLivingTransportNetwork",nativeItemFixture) || System.GetCLIParam("bcmmWorldPersistenceNetwork",nativeItemFixture) || System.GetCLIParam("bcmmBurialNetwork",nativeItemFixture) || System.GetCLIParam("bcmmSplintNetwork", nativeItemFixture) || System.GetCLIParam("bcmmAnimationNetwork", nativeItemFixture) || System.GetCLIParam("bcmmMedicalNetwork", nativeItemFixture) || System.GetCLIParam("bcmmStretcherNetwork",nativeItemFixture) || System.GetCLIParam("bcmmOxygenNetwork",nativeItemFixture) || System.GetCLIParam("bcmmArsenalNetwork",nativeItemFixture) || System.GetCLIParam("bcmmFluidNetwork",nativeItemFixture) || System.GetCLIParam("bcmmAppliedEquipmentNetwork",nativeItemFixture) || System.GetCLIParam("bcmmOxygenRemovalNetwork",nativeItemFixture) || System.GetCLIParam("bcmmFluidLineNetwork",nativeItemFixture) || System.GetCLIParam("bcmmFluidBurdenNetwork",nativeItemFixture) || System.GetCLIParam("bcmmStockCommitNetwork",nativeItemFixture))
    {
     RplComponent replication = RplComponent.Cast(character.FindComponent(RplComponent));
     if (replication) replication.GiveExt(player.GetRplIdentity(), false);

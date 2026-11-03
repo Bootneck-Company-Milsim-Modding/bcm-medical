@@ -1,0 +1,14 @@
+BCM Medical — Player Beta Update
+- H now opens and closes the medical menu.
+- Improved treatment completion, cancellation feedback and procedure progress displays.
+- Retained examination findings when switching patients.
+- Improved equipment icons, dimensions, packing space and injector orientation.
+- Corrected blood/plasma colours, saline presentation and duplicate BVM mask.
+- Fixed body-bag equipment capture, manual/rope dragging, grounding and multiplayer movement.
+- Added 12-second hold-F body bagging with visible progress and cancellation.
+- Improved transport collision handling and vehicle cargo inventory preservation.
+- Verified AI casualty carry/drag and dedicated multiplayer vehicle workflows.
+- Fixed clipped interface guidance at 4K.
+
+Compatibility
+HH-60G passed with UH-60 Tweaks and BCM Vehicles. Adding MH60 Variants produced electrical/startup errors.

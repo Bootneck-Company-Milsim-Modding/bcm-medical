@@ -10,11 +10,13 @@ GenericEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
      Description "Black two-hook bungee sling. Keep in inventory; no equipping required."
     }
     ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     DimensionScaler 1
      Weight 0.2
      SizeSetupStrategy Manual
-     ItemDimensions 18 12 4
-     ItemVolume 500
+     ItemDimensions 8 5 2
+     ItemVolume 80
     }
+    CustomAttributes { PreviewRenderAttributes "{6098B9508619B4D0}" { CameraPreset Top CameraDistanceToItem 0.266 CameraOffset 0 0 0 ItemRenderRotation 0 0 0 FOV 35 AspectRatio 1 } }
     CommonItemType "EQUIPMENT"
    }
   }

@@ -3,7 +3,7 @@ MetaFileClass {
  Configurations {
   FBXResourceClass PC {
    MaterialAssigns {
-    MaterialAssignClass "{6AB6A94DDF0589A8}" {
+    MaterialAssignClass "{6AC48C38F6A93ACA}" {
      SourceMaterial "BCMM_Splint_M0"
      AssignedMaterial "{EF208F78A6B48AF4}Assets/Medical/Splint/Data/Splint.emat"
     }

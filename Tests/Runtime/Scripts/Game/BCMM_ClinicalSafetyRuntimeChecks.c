@@ -8,6 +8,13 @@ class BCMM_ClinicalSafetyRuntimeChecks : BCMM_SplintRuntimeChecks
  protected ref SCR_SalineDamageEffect m_LegacySaline;
  protected float m_SalineBefore;
  protected vector m_RangeActorStart;
+ override protected void Finish()
+ {
+  // This standalone arsenal belongs to the fixture, not to the actor's
+  // inventory hierarchy. Release it between repeated native instances.
+  if(m_RefundArsenal)SCR_EntityHelper.DeleteEntityAndChildren(m_RefundArsenal);
+  super.Finish();
+ }
  override protected void Prepare()
  {
   SCR_EntityHelper.DeleteEntityAndChildren(m_Floor);m_Floor=Spawn("{B6C4ED1CA1262110}Prefabs/BCMM_StretcherTestPlatform.et","100 2 0");
@@ -150,7 +157,7 @@ class BCMM_ClinicalSafetyRuntimeChecks : BCMM_SplintRuntimeChecks
  }
  protected void MoveCasualtyOutOfRange()
  {
-  m_Suite.Record(ChimeraCharacter.Cast(m_Actor).GetCharacterController().IsUsingItem(),"Range-loss case reaches native connection animation before casualty displacement");
+  m_Suite.Record(BCMM_SplintTreatment.IsBusy(m_Actor,m_Target) && !m_Medical.BCMM_GetPatient().Equipment.OxygenActive,"Range-loss case has an active server-timed connection before casualty displacement");
   vector pose[4];m_Target.GetWorldTransform(pose);pose[3]=m_Actor.GetOrigin()+Vector(BCMM_TreatmentAccess.Setting("treatmentRangeMetres")+0.2,0,0);ChimeraCharacter.Cast(m_Target).Teleport(pose);
   GetGame().GetCallqueue().CallLater(CheckCasualtyRangeLoss,1000);
  }

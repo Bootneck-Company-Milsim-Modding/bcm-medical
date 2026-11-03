@@ -1,0 +1,287 @@
+---------------------------------------------
+Log C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-101844-508\acceptance-Bagging-20261102-102241-251\profile\logs\logs_2026-11-02_10-22-41\console.log started at 2026-11-02 10:22:41 (2026-11-02 10:22:41 UTC)
+
+10:22:41.512 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-101844-508\acceptance-Bagging-20261102-102241-251\profile\logs\logs_2026-11-02_10-22-41' to filesystem under name logs
+10:22:41.512 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-101844-508\acceptance-Bagging-20261102-102241-251\profile\profile' to filesystem under name profile
+10:22:41.512 ENGINE       : FileSystem: Current working directory: 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\'
+10:22:41.513 ENGINE       : Initializing engine, version 192142
+10:22:41.513 ENGINE       : CLI Params: -gproj C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-101844-508\acceptance-Bagging-20261102-102241-251\diagnostic/addon.gproj -addons B6C4ED1CA1260002 -addonsDir C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-101844-508\acceptance-Bagging-20261102-102241-251\diagnostic,C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-101844-508\packed,C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons -profile C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-101844-508\acceptance-Bagging-20261102-102241-251/profile -world worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent -noBackend -disableCrashReporter -noSound -noThrow -noFocus -forceUpdate -window -screenWidth 1280 -screenHeight 720 -posX -2000 -posY -2000 -maxFPS 30 -bcmmRunToken 6404d94b207348fea439086e090aa569 -bcmmBaggingRuntime 1
+10:22:41.516 ENGINE       : Addon dirs:
+10:22:41.516  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-101844-508/acceptance-Bagging-20261102-102241-251/diagnostic/'
+10:22:41.516  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-101844-508/acceptance-Bagging-20261102-102241-251/diagnostic'
+10:22:41.516  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-101844-508/packed'
+10:22:41.516  ENGINE       : dir: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons'
+10:22:41.516  ENGINE       : dir: './addons'
+10:22:41.516  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-101844-508/acceptance-Bagging-20261102-102241-251/profile/addons'
+10:22:41.516 ENGINE       : Available addons:
+10:22:41.516  ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-101844-508/acceptance-Bagging-20261102-102241-251/diagnostic/addon.gproj' guid: 'B6C4ED1CA1260002'
+10:22:41.516  ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-101844-508/packed/addon.gproj' guid: '6AB4B3F3FD215919' (packed)
+10:22:41.516  ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/core.gproj' guid: '5614BBCCBB55ED1C' (packed)
+10:22:41.516  ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/ArmaReforger.gproj' guid: '58D0FB3206B6F859' (packed)
+10:22:41.516 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-101844-508\acceptance-Bagging-20261102-102241-251\diagnostic' to filesystem under name BCM_Medical_DomainChecks
+10:22:41.523 ENGINE       : FileSystem: Adding package 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-101844-508/packed/' (pak count: 1) to filesystem under name MCBMedical
+10:22:41.608 ENGINE       : FileSystem: Adding package 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/' (pak count: 14) to filesystem under name ArmaReforger
+10:22:41.612 ENGINE       : FileSystem: Adding package 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/' (pak count: 2) to filesystem under name core
+10:22:41.612 ENGINE       : CPU vendor         : GenuineIntel
+10:22:41.612 ENGINE       : CPU type           : 1
+10:22:41.612 ENGINE       : CPU name           : 12th Gen Intel(R) Core(TM) i7-12700K
+10:22:41.612 ENGINE       : CPU cache info     : L1 [Inst 64KB, Data 48KB], L2 [Unif 2048KB], L3 [Unif 25600KB]
+10:22:41.612 ENGINE       : CPU count logical  : 20
+10:22:41.612 ENGINE       : CPU count physical : 12
+10:22:41.612 ENGINE       : CPU features       : mmx sse sse2 sse3 ssse3 sse4_1 sse4_2 popcnt aesni pclmulqdq osxsave avx sha avx2
+10:22:41.612 RESOURCES    : ResourceDB: loading cache (id=0 name=BCM_Medical_DomainChecks path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-101844-508\acceptance-Bagging-20261102-102241-251\diagnostic/resourceDatabase.rdb)
+10:22:41.614 RESOURCES    : ResourceDB: loading cache (id=1 name=MCBMedical path=C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-101844-508/packed/resourceDatabase.rdb)
+10:22:41.615 RESOURCES    : ResourceDB: loading cache (id=2 name=ArmaReforger path=C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/resourceDatabase.rdb)
+10:22:41.714 RESOURCES    : ResourceDB: loading cache (id=3 name=core path=C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/resourceDatabase.rdb)
+10:22:41.715 RESOURCES    : ResourceDB: loading cache (id=4 name=profile path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-101844-508\acceptance-Bagging-20261102-102241-251\profile\profile/resourceDatabase.rdb)
+10:22:41.715 RESOURCES    : ResourceDB: loading cache (id=5 name=logs path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-101844-508\acceptance-Bagging-20261102-102241-251\profile\logs\logs_2026-11-02_10-22-41/resourceDatabase.rdb)
+10:22:41.818 ENGINE       : GameProject load
+10:22:41.818  ENGINE       : Loaded addons:
+10:22:41.818   ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/core.gproj' guid: '5614BBCCBB55ED1C'
+10:22:41.818   ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/ArmaReforger.gproj' guid: '58D0FB3206B6F859'
+10:22:41.818   ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-101844-508/packed/addon.gproj' guid: '6AB4B3F3FD215919'
+10:22:41.818   ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-101844-508/acceptance-Bagging-20261102-102241-251/diagnostic/addon.gproj' guid: 'B6C4ED1CA1260002'
+10:22:41.819 ENGINE       : Loading custom engine user config '$profile:.save/app1874880_user76561198093323465/settings/ReforgerEngineSettings.conf'
+10:22:41.819 ENGINE       : No Enfusion settings file loaded. Continuing with defaults
+10:22:41.819 ENGINE       : Locale info: system en-GB (English), user en-GB (English)
+10:22:41.988 RENDER       : (OK) Adapter 'NVIDIA GeForce RTX 5070 Ti' supports feature level 12_0
+10:22:42.041 RENDER       : (OK) Adapter 'Intel(R) UHD Graphics 770' supports feature level 12_0
+10:22:42.047 RENDER       : Adapter 1 (Intel(R) UHD Graphics 770) failed to provide some output
+10:22:42.047 RENDER       : Basic screen setup:
+10:22:42.047 RENDER       :   Back buffer width x height: 1280x720
+10:22:42.047 RENDER       :   Back buffer format	       : TEXFMT_R8G8B8A8_SRGB (29)
+10:22:42.047 RENDER       :   MSAA                      : none
+10:22:42.059 RENDER       : Driver for NVIDIA GeForce RTX 5070 Ti is from 22.7.2026 (3 months, 14 days old)
+10:22:42.059 RENDER       : GPU_NVIDIA (0x10DE) (NVIDIA GeForce RTX 5070 Ti) with 1 GPU detected, VRAM 15995MB (fast 0MB), shared 16274MB, driver version 610.88
+10:22:42.059 RENDER       : Detected output devices:
+10:22:42.059 RENDER       :  * 2 device/s connected to NVIDIA GeForce RTX 5070 Ti:
+10:22:42.059 RENDER       :    Generic PnP Monitor (\\.\DISPLAY1), 3840x2160 (offset 0x0), 60Hz
+10:22:42.059 RENDER       :    Generic PnP Monitor (\\.\DISPLAY2), 1920x1080 (offset 1065x-1080), 144Hz
+10:22:42.059 RENDER       :  * no output device connected to Intel(R) UHD Graphics 770
+10:22:42.059 RENDER       :   Concurrent frames limit 2
+10:22:42.238 RENDER       : Graphics device features
+10:22:42.238 RENDER       :  Needed:
+10:22:42.238 RENDER       :  * Highest supported shader model: 6.8 (6.0 needed)
+10:22:42.238 RENDER       :  Optional:
+10:22:42.238 RENDER       :  * Allow tearing (VSYNC) : 1
+10:22:42.238 RENDER       :  * 16 bits : 1
+10:22:42.238 RENDER       :  * Resource heap tier : 3
+10:22:42.238 RENDER       :  * Persistent heaps (DRED) : 1
+10:22:42.238 RENDER       :  * DRED 1.2 is supported by compiler
+10:22:42.284 RENDER       : Main RT format setup.
+10:22:42.284 RENDER       :   Main RT format for quality 0	: TEXFMT_R11G11B10_FLOAT (26)
+10:22:42.284 RENDER       :   Main RT format for quality 1	: TEXFMT_R16G16B16A16_FLOAT (10)
+10:22:42.293 ENGINE       : Job system settings: coreCount=20, shortJobContextCount=16, shortJobThreadCount=15, longJobThreadCount=7
+10:22:42.321 PROFILING    : Settings changed took: 9.459500 ms
+10:22:42.327 INPUT        : NPClient: interface -- initialize OK.
+10:22:42.327 INPUT        : NPClient: Window handle registration successful.
+10:22:42.327 INPUT        : NPClient: NaturalPoint software version is 5.0
+10:22:42.327 INPUT        : NPClient: Cursor stopped
+10:22:42.327 INPUT        : NPClient: Data transmission started
+10:22:42.327  RENDER       : RENDER       : Reload shaders
+10:22:42.327  RENDER       : Enfusion shader version 13
+10:22:42.327   INIT         : INIT         : ShaderListReload
+10:22:42.327  PROFILING    : ShaderListReload took: 0.000300 ms
+10:22:42.579  RENDER       : Loaded 3752 newer shader binaries
+10:22:42.580 PROFILING    : Reload shaders took: 253.373300 ms
+10:22:42.590 ENGINE       : Initializing inputs.
+10:22:42.596 NETWORK      : Initializing networking.
+10:22:42.596 NETWORK      : Using new GameRplScheduler.
+10:22:42.597  SCRIPT       : SCRIPT       : Initializing scripts
+10:22:42.597   SCRIPT       : SCRIPT       : ScriptProjectManager init
+10:22:42.597  PROFILING    : ScriptProjectManager init took: 0.011500 ms
+10:22:42.618 PROFILING    : Initializing scripts took: 21.154500 ms
+10:22:42.618 BACKEND      : Backend Services are disabled.
+10:22:42.618 ENGINE       : Enfusion engine successfully created.
+10:22:42.658 DEFAULT   (W): LogiLED: Cannot initialize! (service not running or no compatible device detected)
+10:22:42.676 GUI          : Using default language (en_us)
+10:22:42.676 GUI          : Loading 'en_us' localization file.
+10:22:42.676  INIT         : INIT         : Loading StringTable
+10:22:42.695 PROFILING    : Loading StringTable took: 19.738000 ms
+10:22:42.695  SCRIPT       : SCRIPT       : Compiling GameLib scripts
+10:22:42.726  SCRIPT       : Module: GameLib; loaded 465x files; 607x classes; used 775K of static memory; defines: "ENF_WB,PLATFORM_WINDOWS,ENABLE_DIAG,ENF_ENABLE_VHC_OVERRIDE,ENF_ENABLE_RPLCOMPONENT_IN_GAMECODE"; CRC32: 4507af04
+10:22:42.726 PROFILING    : Compiling GameLib scripts took: 31.075400 ms
+10:22:42.727 RESOURCES    : GetResourceObject @"{1C71B463B3B66BAB}UI/layouts/Menus/MainMenu/IntroSplashScreen.layout"
+10:22:42.727  GUI          : Layout load @"{1C71B463B3B66BAB}UI/layouts/Menus/MainMenu/IntroSplashScreen.layout"
+10:22:42.727   GUI       (E): Unknown class 'SCR_WidgetExportRuleRoot' at offset 282(0x11a)
+10:22:42.882  SCRIPT       : SCRIPT       : Compiling Game scripts
+10:22:43.893 SCRIPT       : Compiling Game scripts
+10:22:43.893  SCRIPT    (W): @"Scripts/Game/Editor/Components/EditableEntity/SCR_EditableEntityComponent.c,785": 'GetPlayerPlatformKind' is obsolete
+10:22:43.893  SCRIPT    (W): @"Scripts/Game/Editor/Components/EditableEntity/SCR_EditableEntityComponent.c,786": 'GetPlayerPlatformId' is obsolete
+10:22:44.128  SCRIPT    (W): @"Scripts/Game/Workshop/SCR_AddonManager.c,876": 'GetRefCount' is obsolete: Will be removed
+10:22:44.153  SCRIPT    (W): @"Scripts/Game/Campaign/SCR_PlayerProfileManagerComponent.c,142": 'PlayerData' is obsolete
+10:22:44.244  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,159": 'GetDSSession' is obsolete
+10:22:44.244  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,162": 'RoomID' is obsolete
+10:22:44.244  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,197": 'GetDSSession' is obsolete
+10:22:44.244  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,201": 'RoomID' is obsolete
+10:22:44.320  SCRIPT    (W): @"Scripts/Game/DataCollection/SCR_DataCollectorComponent.c,481": 'GetStorage' is obsolete
+10:22:44.320  SCRIPT    (W): @"Scripts/Game/DataCollection/SCR_DataCollectorComponent.c,483": 'GetOnlineWritePrivilege' is obsolete
+10:22:44.322  SCRIPT    (W): @"Scripts/Game/Utilities/SCR_PlayerIdentityUtils.c,20": 'GetPlayerIdentityId' is obsolete
+10:22:44.356  SCRIPT    (W): @"Scripts/Game/UI/Menu/MainMenuUI.c,643": 'GetNotifyCount' is obsolete: Will be substitued by Notification Api.
+10:22:44.356  SCRIPT    (W): @"Scripts/Game/UI/Menu/MainMenuUI.c,645": 'GetNotifyItem' is obsolete: Will be substitued by Notification Api.
+10:22:44.398  SCRIPT    (W): @"Scripts/Game/DataCollection/PlayerData/SCR_PlayerData.c,210": 'PlayerData' is obsolete
+10:22:44.499  SCRIPT       : Module: Game; loaded 5836x files; 11905x classes; used 33545K of static memory; defines: "ENF_WB,PLATFORM_WINDOWS,ENABLE_DIAG,ENF_ENABLE_VHC_OVERRIDE,ENF_ENABLE_RPLCOMPONENT_IN_GAMECODE,ENABLE_BASE_DESTRUCTION,BUDGET_OPTIMIZATION_CHECKS,DEBUG,RESPAWN_TIMER_COMPONENT_DEBUG,GAME_MODE_DEBUG,DEBUG_CONFIGURABLE_DIALOGS,DISABLE_WEAPON_SWITCHING,SCRIPTED_AIM_MODIFIER_DEBUG"; CRC32: 6b7d938c
+10:22:44.541 PROFILING    : Compiling Game scripts took: 1658.557600 ms
+10:22:44.541 INIT         : Creating game instance(ArmaReforgerScripted), version 1.8.0.13 built 2026-08-21 14:30:18 UTC.
+10:22:44.564 ENGINE       : Game successfully created.
+10:22:44.652 PLATFORM     : Save data from container 'settings' have been loaded
+10:22:44.752 PLATFORM     : Save data from container 'sessions' have been loaded
+10:22:45.253 PLATFORM     : System language differs from the saved one - using new language {new: 'en_us'; old: ''}
+10:22:45.253 PLATFORM     : Save data transaction to 'settings' started.
+10:22:45.652 DEFAULT      : [SaveGameManager] Starting new playthrough nr.0 '' for mission 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'.
+10:22:45.653  WORLD        : WORLD        : Entities load 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'
+10:22:45.656 WORLD        : Entities load 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'
+10:22:45.656  RESOURCES (E): Wrong GUID/name for resource @"{0000000000000000}(null)" in property "m_sLoadingLayout"
+10:22:45.661 PROFILING    : Entities load took: 8.106200 ms
+10:22:45.661  WORLD        : WORLD        : Game::LoadEntities
+10:22:45.661   WORLD        : WORLD        : Initializing world systems
+10:22:45.662   NETWORK      : Enabled lag compensation, 29 frames with 100 FPS and 280 ms rewind limits.
+10:22:45.662   WORLD        : WORLD        : CreateEntities
+10:22:45.662    WORLD        : WORLD        : CreateEntities
+10:22:45.662     WORLD        : WORLD        : NotifyBeforeEntitiesCreated
+10:22:45.664     RESOURCES    : Loaded mission headers from 4 addon(s)!
+10:22:45.664    PROFILING    : NotifyBeforeEntitiesCreated took: 1.887000 ms
+10:22:45.664     WORLD        : WORLD        : Wait for preloading data
+10:22:45.664    PROFILING    : Wait for preloading data took: 0.000400 ms
+10:22:45.679    ENTITY       : Create entity @"ENTITY:2" ('MPTestTerrain', GenericTerrainEntity) at <0.000000 1.000000 0.000000>
+10:22:45.679      PROFILING    : PROFILING    : Terrain load
+10:22:45.690     PROFILING    : Terrain load took: 12.053000 ms
+10:22:45.705 WORLD        : Game::LoadEntities
+10:22:45.705  WORLD        : CreateEntities
+10:22:45.705   WORLD        : CreateEntities
+10:22:45.705    ENTITY       : Create entity @"ENTITY:4611686018427387905" ('SCR_AIWorld') at <107.915001 1.000000 159.473999> @"{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et"
+10:22:45.705     PATHFINDING   : Navmesh Init 'Soldiers'
+10:22:45.705      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+10:22:45.705     PATHFINDING   : Navmesh Init 'BTRlike'
+10:22:45.705      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+10:22:45.705     PATHFINDING   : Navmesh Init 'LowRes'
+10:22:45.705      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+10:22:45.992     WORLD        : WORLD        : NotifyBeforeEntitiesInitialized
+10:22:45.992    PROFILING    : NotifyBeforeEntitiesInitialized took: 0.027000 ms
+10:22:45.993    WORLD        : InitEntities 'world'
+10:22:45.993     ENTITY       : Init entity @"ENTITY:4611686018427387906" ('GameMode_Plain1', SCR_BaseGameMode) at <123.265999 1.000000 136.613998>
+10:22:45.993      SCRIPT    (W): SCR_PerceivedFactionManagerComponent trying to set fall back faction 'CIV' but this faction could not be found so it is null instead.
+10:22:45.994     WORLD        : WORLD        : NotifyEntitiesInitialized
+10:22:45.994      TERRAIN      : TERRAIN      : Initializing road networks...
+10:22:45.994     PROFILING    : Initializing road networks... took: 0.000500 ms
+10:22:45.994      DEFAULT      : DEFAULT      : WorldVolumesCollection
+10:22:45.994     PROFILING    : WorldVolumesCollection took: 0.004500 ms
+10:22:45.994    PROFILING    : NotifyEntitiesInitialized took: 0.047500 ms
+10:22:45.994   PROFILING    : CreateEntities took: 332.018600 ms
+10:22:45.994  PROFILING    : CreateEntities took: 332.026400 ms
+10:22:45.994   WORLD        : WORLD        : EOnActivate
+10:22:45.994  PROFILING    : EOnActivate took: 0.056100 ms
+10:22:45.994 PROFILING    : Game::LoadEntities took: 333.242000 ms
+10:22:45.994 PROFILING    : * LoadEntities: 333.262700 ms
+10:22:46.193 DEFAULT      : Entered offline game state.
+10:22:46.296 PROFILING    : Settings changed took: 3.479300 ms
+10:22:46.298 NETWORK      : Player connected: connectionID=2147483646
+10:22:46.298 NETWORK      : ### Connecting player: connectionID=2147483646, Name=
+10:22:46.299 NETWORK      : ### Creating player: PlayerId=1, Name=TacticalBootneck
+10:22:46.306 ENTITY       : SpawnEntityPrefab @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+10:22:46.306  ENTITY       : Create entity @"ENTITY:6917529027641081863" ('SCR_PlayerController') at <0.000000 0.000000 0.000000>
+10:22:46.306   ENTITY       : EntityPrefabUse @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+10:22:46.306    SCRIPT    (W): Notification data in 'SCR_NotificationsLogDisplay' has duplicate notification info key: 'EDITOR_PERCEIVED_FACTION_PUNISHMENT_KILLING_SET'. There should only be one of each key!
+10:22:46.306    SCRIPT    (W): Notification data in 'SCR_NotificationsLogDisplay' has duplicate notification info key: 'EDITOR_PERCEIVED_FACTION_TYPE_DISABLED'. There should only be one of each key!
+10:22:46.308   SCRIPT    (W): Can't open config file ""
+10:22:46.309   SCRIPT    (W): Cannot update game blocklist. Backend is offline.
+10:22:46.309  WORLD        : InitEntities 'world'
+10:22:46.309   ENTITY       : Init entity @"ENTITY:6917529027641081863" ('SCR_PlayerController') at <0.000000 0.000000 0.000000> @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+10:22:46.309    DEFAULT   (W): Chat not available - missing ChatEntity. Only printing this message once. There're possibly more nodes with this requirement.
+10:22:46.330    GUI          : WidgetManager: CrateWidgets @"{3C9DCDD76AB83157}UI/layouts/HUD/HUDLayouts/HUDManager_Root.layout"
+10:22:46.330     SCRIPT    (W): Slot_WeaponInfo Has no Content!
+10:22:46.330     SCRIPT    (W): Slot_Chat Has no Content!
+10:22:46.330     SCRIPT    (W): Slot_VON Has no Content!
+10:22:46.330     SCRIPT    (W): Slot_AvailableActions Has no Content!
+10:22:46.330     SCRIPT    (W): Slot_Vehicle Has no Content!
+10:22:46.330     SCRIPT    (W): Slot_GameVersion Has no Content!
+10:22:46.330     SCRIPT    (W): Slot_Notifications Has no Content!
+10:22:46.330     SCRIPT    (W): Slot_Hints Has no Content!
+10:22:46.331 ENTITY       : SpawnEntityPrefab @"{788933FFDC706A68}Prefabs/Editor/EditorManager.et"
+10:22:46.331  ENTITY       : Create entity @"ENTITY:6917529027641081864" ('SCR_EditorManagerEntity') at <0.000000 0.000000 0.000000> @"{788933FFDC706A68}Prefabs/Editor/EditorManager.et"
+10:22:46.331   ENTITY       : CreateComponent 'BaseRadioComponent'
+10:22:46.331    DEFAULT   (W): World doesn't contain RadioManagerEntity to support any BaseRadioComponent.
+10:22:46.346 NETWORK      : ### Updating player: PlayerId=1, Name=TacticalBootneck, rplIdentity=0xFFFFFFFE, IdentityId=00000000-0000-0000-0000-000000000000
+10:22:46.347 SCRIPT    (W): Ban Settings could not be loaded from BE Storage: Relying on default config
+10:22:46.347 NETWORK      : Players connecting: 0
+10:22:46.347 NETWORK      : Players connected: 1 / 1
+10:22:46.360 WORLD        : Frame start
+10:22:46.360  SCRIPT       : ScenarioFramework: Available tasks are empty, no new tasks will be generated.
+10:22:46.363 WORLD        : UpdateEntities
+10:22:46.363  WORLD        : Frame
+10:22:46.363   SCRIPT       : SCR_BaseGameMode::OnGameStateChanged = GAME
+10:22:46.440 WORLD        : UpdateEntities
+10:22:46.440  WORLD        : PostFrame
+10:22:46.440   GUI          : WidgetManager: CrateWidgets @"{D89BBA18F99053D6}UI/layouts/HUD/Chat/ChatHud.layout"
+10:22:46.440    SCRIPT    (W): EditBoxFilterComponent used on invalid widget type.
+10:22:46.500   RESOURCES    : GetResourceObject @"{20A6917D2114E29A}UI/layouts/HUD/Hint/HintInfoDisplay.layout"
+10:22:46.500    GUI          : Layout load @"{20A6917D2114E29A}UI/layouts/HUD/Hint/HintInfoDisplay.layout"
+10:22:46.500     GUI          : Widget prefab @"{EA1CC57D868E94F9}UI/layouts/HUD/Hint/Hint.layout"
+10:22:46.500      GUI       (W): Overridden prefab member (GUID: '{661AB14E0F471C66}' type: ButtonWidgetClass) no longer exists in prefab
+10:22:46.656  RENDER       : RENDER       : ObjectsHeightMap::Build
+10:22:46.656   RENDER       : RENDER       : MeshOccupancyGridManager::GenerateAllForWorld
+10:22:46.657  PROFILING    : MeshOccupancyGridManager::GenerateAllForWorld took: 0.005300 ms
+10:22:46.663 PROFILING    : ObjectsHeightMap::Build took: 6.489600 ms
+10:22:46.729 SCRIPT       : BCMM_BETA_GEOMETRY item={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et low=<-0.0345764,-0.00198102,-0.041445> high=<0.0322266,0.024261,0.042839> dimensions=<0.066803,0.026242,0.084284>
+10:22:46.731 SCRIPT       : BCMM_BETA_GEOMETRY item={0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et low=<-0.00631714,-0.00109887,-0.048049> high=<0.00631714,0.0108988,0.04829> dimensions=<0.0126343,0.0119977,0.096339>
+10:22:46.731 SCRIPT       : BCMM_BETA_GEOMETRY item={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et low=<-0.00997925,-0.00496697,-0.071> high=<0.00997925,0.014967,0.071> dimensions=<0.0199585,0.0199339,0.142>
+10:22:48.254 SCRIPT       : BCMM_FLUID_RECOVERY pulse=128.913 red=0.326083 delivery=0.319561 terminal=0
+10:22:49.057 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=US count=29 ordinary=187
+10:22:49.059 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=USSR count=29 ordinary=166
+10:22:49.060 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=FIA count=29 ordinary=105
+10:22:50.728 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=1
+10:22:50.754 SCRIPT       : BCMM settings read path=$profile:BCMM_InvalidSettings/settings-a.json parsed=1 valid=0 generation=999
+10:22:50.754 SCRIPT    (E): BCMM settings invalid: files preserved; edits locked until repaired.
+10:22:50.782 SCRIPT       : BCMM_ROLE_LIST count=38 roles=2 native=1
+10:22:50.793 SCRIPT       : BCMM_CATALOGUE_REGISTRIES medical=1 nativeEntries=41
+10:22:52.815 SCRIPT       : BCMM_NET_BODY player=1 assigned=1
+10:23:10.715 SCRIPT       : BCMM_BAG_MOVE index=0/13 item=GenericEntity<0x0000017027FDE838> @"ENTITY:6917529027641081999" ('GenericEntity','Assets/Items/Identity/Belongings_Personal/Notebook_01_Personal_Base_INV.xob') at <100.469124 3.123012 -0.613396> @"{6676FF9B716402CC}Prefabs/Items/PersonalBelongings/PersonalBelongings_US.et" world=0
+10:23:10.724 SCRIPT       : BCMM_BAG_MOVE index=1/13 item=GenericEntity<0x0000017027FD73B0> @"ENTITY:6917529027641081902" ('GenericEntity','Assets/Items/Equipment/Binoculars/Binoculars_M22/Binoculars_M22.xob') at <100.250664 3.356167 -0.895241> @"{0CF54B9A85D8E0D4}Prefabs/Items/Equipment/Binoculars/Binoculars_M22/Binoculars_M22.et" world=0
+10:23:10.766 SCRIPT       : BCMM_BAG_MOVE index=2/13 item=GenericEntity<0x0000017027FD74B8> @"ENTITY:6917529027641081903" ('GenericEntity','Assets/Items/Equipment/Watches/Watch_SandY184A/Watch_SandY184A.xob') at <100.469124 3.123012 -0.613396> @"{78ED4FEF62BBA728}Prefabs/Items/Equipment/Watches/Watch_SandY184A.et" world=0
+10:23:10.797 SCRIPT       : BCMM_BAG_MOVE index=3/13 item=GameEntity<0x0000017027FD8220> @"ENTITY:6917529027641081912" ('GameEntity','Assets/Characters/HeadGear/Helmet_PASGT/Helmet_PASGT_01_cover.xob') at <100.469070 3.122982 -0.613278> @"{FE5C49069C2499D9}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helmet_PASGT_01_cover.et" world=0
+10:23:10.849 SCRIPT       : BCMM_BAG_MOVE index=4/13 item=GameEntity<0x0000017027FD8538> @"ENTITY:6917529027641081913" ('GameEntity','Assets/Characters/Uniforms/Jacket_BDU_M81/Jacket_BDU_M81_Deflated.xob') at <100.469124 3.123012 -0.613396> @"{C7861F11D5334C0E}Prefabs/Characters/Uniforms/Jacket_US_BDU.et" world=0
+10:23:10.871 SCRIPT       : BCMM_BAG_MOVE index=5/13 item=GameEntity<0x0000017027FD8B68> @"ENTITY:6917529027641081916" ('GameEntity','Assets/Characters/Vests/Vest_PASGT/Vest_PASGT.xob') at <100.469070 3.122982 -0.613278> @"{4B57C11AA5161760}Prefabs/Characters/Vests/Vest_PASGT/Vest_PASGT.et" world=0
+10:23:10.925 SCRIPT       : BCMM_BAG_MOVE index=6/13 item=GameEntity<0x0000017027FD8E80> @"ENTITY:6917529027641081917" ('GameEntity','Assets/Characters/Uniforms/Pants_BDU_M81/Pants_BDU_M81.xob') at <100.469124 3.123012 -0.613396> @"{604BB72BE8E023C2}Prefabs/Characters/Uniforms/Pants_US_BDU.et" world=0
+10:23:10.958 SCRIPT       : BCMM_BAG_MOVE index=7/13 item=GenericEntity<0x0000017027FD9090> @"ENTITY:6917529027641081919" ('GenericEntity','Assets/Characters/Footwear/CombatBoots_US_01/CombatBoots_US_01.xob') at <100.469124 3.123012 -0.613396> @"{DAAFD15478BDE1C3}Prefabs/Characters/Footwear/CombatBoots_US_01.et" world=0
+10:23:10.991 SCRIPT       : BCMM_BAG_MOVE index=8/13 item=GenericEntity<0x0000017027FDDDE8> @"ENTITY:6917529027641081989" ('GenericEntity','Assets/Items/Equipment/Backpacks/Backpack_ALICE_Medium/Backpack_ALICE_Medium_combined.xob') at <100.469124 3.123012 -0.613396> @"{5C5C6EE05EE2FF1A}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium_assembled.et" world=0
+10:23:11.039 SCRIPT       : BCMM_BAG_MOVE index=9/13 item=GenericEntity<0x0000017027FD9198> @"ENTITY:6917529027641081920" ('GenericEntity','Assets/Characters/Vests/Vest_ALICE/Vest_ALICE_belt.xob') at <100.469124 3.123012 -0.613396> @"{2835A0EA3B79E63E}Prefabs/Characters/Vests/Vest_ALICE/Variants/Vest_ALICE_rifleman.et" world=0
+10:23:11.061 SCRIPT       : BCMM_BAG_MOVE index=10/13 item=GenericEntity<0x0000017027FD77D0> @"ENTITY:6917529027641081906" ('GenericEntity','Assets/Weapons/Grenades/M67/Grenade_M67.xob') at <100.044815 3.152256 -0.921398> @"{E8F00BF730225B00}Prefabs/Weapons/Grenades/Grenade_M67.et" world=0
+10:23:11.091 SCRIPT       : BCMM_BAG_MOVE index=11/13 item=GenericEntity<0x0000017027FDDFF8> @"ENTITY:6917529027641081991" ('GenericEntity','Assets/Weapons/Grenades/M18/Smoke_M18.xob') at <100.044815 3.152256 -0.921398> @"{D41D22DD1B8E921E}Prefabs/Weapons/Grenades/M18/Smoke_M18_Green.et" world=0
+10:23:11.133 SCRIPT       : BCMM_BAG_MOVE index=12/13 item=GenericEntity<0x0000017027FD78D8> @"ENTITY:6917529027641081907" ('GenericEntity','Assets/Weapons/Rifles/M16A2/M16A2_body.xob') at <100.657249 3.053105 0.203190> @"{3E413771E1834D2F}Prefabs/Weapons/Rifles/M16/Rifle_M16A2.et" world=1
+10:23:11.176 SCRIPT       : BCMM_BAG_MANIFEST reconciled originalEntities=47 movedRoots=13
+10:23:11.209 SCRIPT       : BCMM bagging commit inventory complete
+10:23:11.209 SCRIPT       : BCMM_REMAINS transfer token=1 bagToken=1 physical=GenericEntity<0x0000017027FDED60> @"ENTITY:6917529027641082004" ('GenericEntity','Assets/BodyBags/BCM_FilledBodyBag/BCM_FilledBodyBag_Collision.xob') at <100.469124 3.273012 -0.613396> @"{6AB4B3F3FD216001}Prefabs/BodyBags/BCMM_FilledBodyBag.et"
+10:23:11.209 SCRIPT       : BCMM bagging corpse removal complete
+10:23:14.724 SCRIPT       : BCMM_BAGGING verify starts
+10:23:14.724 SCRIPT       : BCMM_BAGGING verify bag=GenericEntity<0x0000017027FDED60> @"ENTITY:6917529027641082004" ('GenericEntity','Assets/BodyBags/BCM_FilledBodyBag/BCM_FilledBodyBag_Collision.xob') at <100.454582 2.938674 -0.611728> @"{6AB4B3F3FD216001}Prefabs/BodyBags/BCMM_FilledBodyBag.et" corpse=NULL empty=NULL
+10:23:14.724 SCRIPT       : BCMM_REMAINS_TEST expectedToken=1 bagToken=1 record=BCMM_RemainsRecord<0x0000016FB4A20938> physical=GenericEntity<0x0000017027FDED60> @"ENTITY:6917529027641082004" ('GenericEntity','Assets/BodyBags/BCM_FilledBodyBag/BCM_FilledBodyBag_Collision.xob') at <100.454582 2.938674 -0.611728> @"{6AB4B3F3FD216001}Prefabs/BodyBags/BCMM_FilledBodyBag.et" bag=GenericEntity<0x0000017027FDED60> @"ENTITY:6917529027641082004" ('GenericEntity','Assets/BodyBags/BCM_FilledBodyBag/BCM_FilledBodyBag_Collision.xob') at <100.454582 2.938674 -0.611728> @"{6AB4B3F3FD216001}Prefabs/BodyBags/BCMM_FilledBodyBag.et"
+10:23:17.308 SCRIPT       : BCMM_LOADED_DRAG start=<100.455,2.93867,-0.611728> end=<100.372,3.01689,1.42838> actor=<100.431,2.99986,2.37748> angles=<-0.0567228,-21.58,0.409226>
+10:23:17.849 ENTITY       : SpawnEntityPrefab @"{6AB4B3F3FD216004}Prefabs/Vehicles/BCMMedical/BCMM_CargoTruck.et"
+10:23:17.849  ENTITY       : Create entity @"ENTITY:6917529027641082006" ('Vehicle') at <103.431038 3.199929 2.377484> @"{6AB4B3F3FD216004}Prefabs/Vehicles/BCMMedical/BCMM_CargoTruck.et"
+10:23:17.849   ENTITY       : CreateComponent 'BaseRadioComponent'
+10:23:17.849    DEFAULT   (W): BaseRadioComponent does not have any transceiver. (Entity: @"ENTITY:6917529027641082006" ('Vehicle') at <103.431038 3.199929 2.377484> @"{6AB4B3F3FD216004}Prefabs/Vehicles/BCMMedical/BCMM_CargoTruck.et"). Only printing this message once. There're possibly more nodes with this requirement.
+10:23:17.889 SCRIPT       : BCMM_CARGO_GEAR index=0/13 item=GenericEntity<0x0000017027FDE838> @"ENTITY:6917529027641081999" ('GenericEntity','Assets/Items/Identity/Belongings_Personal/Notebook_01_Personal_Base_INV.xob') at <100.347740 2.971848 1.421141> @"{6676FF9B716402CC}Prefabs/Items/PersonalBelongings/PersonalBelongings_US.et" destination=SCR_UniversalInventoryStorageComponent<0x000001700B0424A0>
+10:23:17.896 SCRIPT    (W): 'SCR_Faction' trying to get entity list of type 'VEHICLE' but there is no catalog with that type for faction 'US'
+10:23:17.896 SCRIPT    (W): 'SCR_Faction' trying to get entity list of type 'CHARACTER' but there is no catalog with that type for faction 'US'
+10:23:17.896 SCRIPT    (W): 'SCR_Faction' trying to get entity list of type 'GROUP' but there is no catalog with that type for faction 'US'
+10:23:17.896 SCRIPT       : BCMM_CARGO_GEAR index=1/13 item=GenericEntity<0x0000017027FD73B0> @"ENTITY:6917529027641081902" ('GenericEntity','Assets/Items/Equipment/Binoculars/Binoculars_M22/Binoculars_M22.xob') at <100.338654 2.965906 1.417787> @"{0CF54B9A85D8E0D4}Prefabs/Items/Equipment/Binoculars/Binoculars_M22/Binoculars_M22.et" destination=SCR_UniversalInventoryStorageComponent<0x000001700B0424A0>
+10:23:17.946 SCRIPT       : BCMM_CARGO_GEAR index=2/13 item=GenericEntity<0x0000017027FD74B8> @"ENTITY:6917529027641081903" ('GenericEntity','Assets/Items/Equipment/Watches/Watch_SandY184A/Watch_SandY184A.xob') at <100.324806 2.957392 1.412646> @"{78ED4FEF62BBA728}Prefabs/Items/Equipment/Watches/Watch_SandY184A.et" destination=SCR_UniversalInventoryStorageComponent<0x000001700B0424A0>
+10:23:17.995 SCRIPT       : BCMM_CARGO_GEAR index=3/13 item=GameEntity<0x0000017027FD8220> @"ENTITY:6917529027641081912" ('GameEntity','Assets/Characters/HeadGear/Helmet_PASGT/Helmet_PASGT_01_cover_item.xob') at <100.324188 2.956912 1.412464> @"{FE5C49069C2499D9}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helmet_PASGT_01_cover.et" destination=SCR_UniversalInventoryStorageComponent<0x000001700B0424A0>
+10:23:18.024 SCRIPT       : BCMM_CARGO_GEAR index=4/13 item=GameEntity<0x0000017027FD8538> @"ENTITY:6917529027641081913" ('GameEntity','Assets/Characters/Uniforms/Jacket_BDU_M81/Jacket_BDU_M81_item.xob') at <100.319298 2.953078 1.411203> @"{C7861F11D5334C0E}Prefabs/Characters/Uniforms/Jacket_US_BDU.et" destination=SCR_UniversalInventoryStorageComponent<0x000001700B0424A0>
+10:23:18.057 SCRIPT       : BCMM_CARGO_GEAR index=5/13 item=GameEntity<0x0000017027FD8B68> @"ENTITY:6917529027641081916" ('GameEntity','Assets/Characters/Vests/Vest_PASGT/Vest_PASGT_item.xob') at <100.314087 2.949008 1.409775> @"{4B57C11AA5161760}Prefabs/Characters/Vests/Vest_PASGT/Vest_PASGT.et" destination=SCR_UniversalInventoryStorageComponent<0x000001700B0424A0>
+10:23:18.091 SCRIPT       : BCMM_CARGO_GEAR index=6/13 item=GameEntity<0x0000017027FD8E80> @"ENTITY:6917529027641081917" ('GameEntity','Assets/Characters/Uniforms/Pants_BDU_M81/Pants_BDU_M81_item.xob') at <100.310959 2.946568 1.408836> @"{604BB72BE8E023C2}Prefabs/Characters/Uniforms/Pants_US_BDU.et" destination=SCR_UniversalInventoryStorageComponent<0x000001700B0424A0>
+10:23:18.124 SCRIPT       : BCMM_CARGO_GEAR index=7/13 item=GenericEntity<0x0000017027FD9090> @"ENTITY:6917529027641081919" ('GenericEntity','Assets/Characters/Footwear/CombatBoots_US_01/CombatBoots_US_01_item.xob') at <100.307312 2.943788 1.407607> @"{DAAFD15478BDE1C3}Prefabs/Characters/Footwear/CombatBoots_US_01.et" destination=SCR_UniversalInventoryStorageComponent<0x000001700B0424A0>
+10:23:18.173 SCRIPT       : BCMM_CARGO_GEAR index=8/13 item=GenericEntity<0x0000017027FDDDE8> @"ENTITY:6917529027641081989" ('GenericEntity','Assets/Items/Equipment/Backpacks/Backpack_ALICE_Medium/Backpack_ALICE_Medium_item.xob') at <100.303719 2.941406 1.406308> @"{5C5C6EE05EE2FF1A}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium_assembled.et" destination=SCR_UniversalInventoryStorageComponent<0x000001700B0424A0>
+10:23:18.191 SCRIPT       : BCMM_CARGO_GEAR index=9/13 item=GenericEntity<0x0000017027FD9198> @"ENTITY:6917529027641081920" ('GenericEntity','Assets/Characters/Vests/Vest_ALICE/Vest_ALICE_belt_item.xob') at <100.300728 2.942429 1.404576> @"{2835A0EA3B79E63E}Prefabs/Characters/Vests/Vest_ALICE/Variants/Vest_ALICE_rifleman.et" destination=SCR_UniversalInventoryStorageComponent<0x000001700B042150>
+10:23:18.252 SCRIPT       : BCMM_CARGO_GEAR index=10/13 item=GenericEntity<0x0000017027FD77D0> @"ENTITY:6917529027641081906" ('GenericEntity','Assets/Weapons/Grenades/M67/Grenade_M67.xob') at <100.300385 2.943155 1.404377> @"{E8F00BF730225B00}Prefabs/Weapons/Grenades/Grenade_M67.et" destination=SCR_UniversalInventoryStorageComponent<0x000001700B041410>
+10:23:18.294 SCRIPT       : BCMM_CARGO_GEAR index=11/13 item=GenericEntity<0x0000017027FDDFF8> @"ENTITY:6917529027641081991" ('GenericEntity','Assets/Weapons/Grenades/M18/Smoke_M18.xob') at <100.300743 2.942170 1.404543> @"{D41D22DD1B8E921E}Prefabs/Weapons/Grenades/M18/Smoke_M18_Green.et" destination=SCR_UniversalInventoryStorageComponent<0x000001700B041268>
+10:23:18.326 SCRIPT       : BCMM_CARGO_GEAR index=12/13 item=GenericEntity<0x0000017027FD78D8> @"ENTITY:6917529027641081907" ('GenericEntity','Assets/Weapons/Rifles/M16A2/M16A2_body.xob') at <100.301620 2.942281 1.405006> @"{3E413771E1834D2F}Prefabs/Weapons/Rifles/M16/Rifle_M16A2.et" destination=SCR_UniversalInventoryStorageComponent<0x000001700B0424A0>
+10:23:19.842 SCRIPT       : BCMM_BAGGING cleanup bag
+10:23:19.842 SCRIPT       : BCMM_REMAINS disposition token=1 state=4 name=BCM bagging test casualty
+10:23:19.842 SCRIPT       : BCMM_BAGGING cleanup corpse
+10:23:19.842 SCRIPT       : BCMM_BAGGING cleanup actor
+10:23:19.844 SCRIPT       : BCMM_BAGGING cleanup floor
+10:23:19.844 SCRIPT       : BCMM_BAGGING cleanup after floor
+10:23:19.844 SCRIPT       : BCMM_BAGGING cleanup complete
+10:23:19.844 SCRIPT       : BCMM_CHECK COMPLETE checks=865 failures=0 run=6404d94b207348fea439086e090aa569
+10:23:19.896 SCRIPT    (W): Maybe a problem: DataProgression is not ready but the analytics event was requested

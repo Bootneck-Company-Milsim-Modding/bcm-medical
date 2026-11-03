@@ -57,13 +57,25 @@ class BCMM_StretcherRuntimeChecks : BCMM_SplintRuntimeChecks
   SCR_BaseGameMode.Cast(GetGame().GetGameMode()).BCMM_PublishStretcher(2,m_Station,m_Target);
   string carry;
   if (System.GetCLIParam("bcmmStretcherCarryNetwork",carry)) GetGame().GetCallqueue().CallLater(PrepareCarriers,500);
-  else GetGame().GetCallqueue().CallLater(RequestNetworkRemoval,15000);
+  else
+  {
+   string stationaryOwner;
+   if(System.GetCLIParam("bcmmStationaryPatientOwner",stationaryOwner))GetGame().GetCallqueue().CallLater(AssignPatientOwner,500);
+   GetGame().GetCallqueue().CallLater(RequestNetworkRemoval,15000);
+  }
  }
  protected void PrepareCarriers()
  {
   SCR_PlayerController second=SCR_PlayerController.Cast(GetGame().GetPlayerManager().GetPlayerController(2));
   if (!second || !second.GetControlledEntity()) { m_Suite.Record(false,"Second distinct connected carrier is available");FinishNetwork();return; }
   m_SecondCarrier=second.GetControlledEntity();
+  // Carry is opt-in in the production catalogue. Exercise that boundary,
+  // then explicitly enable the feature through the actual authority setting.
+  m_Suite.Record(BCMM_TreatmentAccess.Setting("stretcherCarryEnabled")==0 && !m_Stretcher.CanJoin(m_Actor,true),"Default disabled stretcher carry rejects a reservation");
+  m_Suite.Record(SCR_BaseGameMode.Cast(GetGame().GetGameMode()).BCMM_TestRoleSetting("stretcherCarryEnabled",1),"Authority explicitly enables optional stretcher carrying for this fixture");
+  string presentation;
+  if(System.GetCLIParam("bcmmGripPresentationCheck",presentation))
+   m_Suite.Record(SCR_BaseGameMode.Cast(GetGame().GetGameMode()).BCMM_TestRoleSetting("stretcherGripAnimationEnabled",1),"Authority explicitly enables optional grip presentation for its requested checks");
   m_Actor.SetAngles("0 0 0");m_SecondCarrier.SetAngles("0 0 0");
   m_Actor.SetOrigin(m_Stretcher.Handle(true)+"0 0.15 0");m_SecondCarrier.SetOrigin(m_Stretcher.Handle(false)+"0 0.15 0");
   m_Suite.Record(!m_Stretcher.ReleaseGrip(m_SecondCarrier),"Unreserved player cannot release another stretcher");
@@ -214,6 +226,13 @@ class BCMM_StretcherRuntimeChecks : BCMM_SplintRuntimeChecks
  protected void CheckNetworkRemoved()
  {
   m_Suite.Record(!m_Stretcher.Patient() && m_Inventory.Contains(m_Kit), "Actual owning client RPC removes casualty without losing gear");
+  string stationaryOwner;
+  if(System.GetCLIParam("bcmmStationaryPatientOwner",stationaryOwner))
+  {
+   float distance=vector.Distance(m_Target.GetOrigin(),m_Station.GetOrigin());
+   m_Suite.Record(distance>0.8 && distance<2 && Math.AbsFloat(m_Target.GetOrigin()[1]-m_Station.GetOrigin()[1])<0.6,"Player-owned stationary casualty unloads beside the supported station");
+   PrintFormat("BCMM_STATIONARY_UNLOAD_SERVER distance=%1 patient=%2 station=%3",distance,m_Target.GetOrigin(),m_Station.GetOrigin());
+  }
   SCR_BaseGameMode.Cast(GetGame().GetGameMode()).BCMM_PublishStretcher(4,m_Station,m_Target);
   GetGame().GetCallqueue().CallLater(FinishNetwork, 5000);
  }

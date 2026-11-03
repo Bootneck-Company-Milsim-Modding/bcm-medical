@@ -11,11 +11,13 @@ GenericEntity : "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/Field
      Description "BCM original medical equipment. Temporary native package shape and treatment animation."
     }
     ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     DimensionScaler 1
      Weight 0.4
      SizeSetupStrategy Manual
      ItemDimensions 20 10 5
      ItemVolume 1000
     }
+    CustomAttributes { PreviewRenderAttributes "{6098B9508619B4D0}" { CameraPreset Front CameraDistanceToItem 0.571 CameraOffset 0 0 0 ItemRenderRotation 180 0 0 FOV 35 AspectRatio 1 } }
     CommonItemType "EQUIPMENT"
    }
   }

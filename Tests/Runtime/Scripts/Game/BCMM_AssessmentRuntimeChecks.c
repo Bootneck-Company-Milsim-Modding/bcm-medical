@@ -4,6 +4,7 @@ class BCMM_AssessmentRuntimeChecks : BCMM_SplintRuntimeChecks
  protected IEntity m_Outside;
  override protected void Prepare()
  {
+  CheckKnowledgeBoundaries();
   m_Suite.Record(BCMM_TreatmentAccess.CanExamine(m_Actor, m_Actor), "Conscious player can examine self");
   m_Suite.Record(BCMM_TreatmentAccess.CanExamine(m_Actor, m_Target), "Conscious nearby casualty can be examined");
   SCR_CharacterDamageManagerComponent.Cast(m_Target.FindComponent(SCR_CharacterDamageManagerComponent)).BCMM_GetPatient().LeftLeg.Broken = true;
@@ -26,6 +27,30 @@ class BCMM_AssessmentRuntimeChecks : BCMM_SplintRuntimeChecks
   m_Suite.Record(first.GetInVehicle(m_Vehicle, slots[0], true, -1, ECloseDoorAfterActions.INVALID, false), "Examiner enters native vehicle seat");
   m_Suite.Record(second.GetInVehicle(m_Vehicle, slots[1], true, -1, ECloseDoorAfterActions.INVALID, false), "Other conscious character enters same vehicle");
   GetGame().GetCallqueue().CallLater(CheckSeated, 1000);
+ }
+ protected void CheckKnowledgeBoundaries()
+ {
+  BCMM_Patient life = SCR_CharacterDamageManagerComponent.Cast(m_Target.FindComponent(SCR_CharacterDamageManagerComponent)).BCMM_GetPatient();
+  BCMM_Patient otherLife = new BCMM_Patient();
+  BCMM_ClinicalKnowledge known = new BCMM_ClinicalKnowledge();
+  known.Actor = m_Actor; known.Patient = m_Target; known.Life = life;
+  known.Region = BCMM_BodyRegion.HEAD; known.Check = BCMM_ClinicalCheck.AIRWAY;
+  for (int cycle = 0; cycle < 200; cycle++)
+  {
+   known.Signature = BCMM_ClinicalKnowledge.State(life, known.Region, known.Check);
+   m_Suite.Record(known.Matches(m_Actor, m_Target, life), "BT01 known A survives switching away and back with unchanged domain");
+   m_Suite.Record(!known.Matches(m_Actor, m_Actor, life), "BT01 patient B cannot reuse A findings");
+   m_Suite.Record(!known.Matches(m_Target, m_Target, life), "BT01 another examiner cannot reuse findings");
+   m_Suite.Record(!known.Matches(m_Actor, m_Target, otherLife), "BT01 new patient life cannot reuse findings");
+   float oldPain = life.Medication.Pain;
+   life.Medication.Pain = 80;
+   m_Suite.Record(known.Matches(m_Actor, m_Target, life), "BT01 unrelated pain does not invalidate airway domain");
+   life.Medication.Pain = oldPain;
+   life.Equipment.AirwayAdjunct = !life.Equipment.AirwayAdjunct;
+   m_Suite.Record(!known.Matches(m_Actor, m_Target, life), "BT01 airway device change invalidates airway finding");
+   life.Equipment.AirwayAdjunct = !life.Equipment.AirwayAdjunct;
+  }
+  Print("BCMM_BETA_KNOWLEDGE cycles=200 boundaryAssertions=1200 ownerRPCAndVisibleMenuCycles=0");
  }
  protected void CheckSeated()
  {

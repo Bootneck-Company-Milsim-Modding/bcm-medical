@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "failure": "",
+  "case": "Splint",
+  "requested": 200,
+  "completed": 200,
+  "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\repetition-fixture-20261102-114057-909\\.checks\\repeated-Splint-20261102-114507-712",
+  "token": "f15f9ed5296d4d08a31235925dc3b952",
+  "completion": "BCMM_CHECK COMPLETE checks=138400 failures=0 run=f15f9ed5296d4d08a31235925dc3b952"
+}

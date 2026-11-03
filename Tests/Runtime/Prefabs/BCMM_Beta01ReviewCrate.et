@@ -1,0 +1,14 @@
+GenericEntity {
+ components {
+  SCR_UniversalInventoryStorageComponent {
+   Attributes SCR_ItemAttributeCollection {
+    ItemDisplayName SCR_InventoryUIInfo { Name "Beta 01 medical review" }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes { Weight 1 SizeSetupStrategy Manual ItemDimensions 100 100 100 ItemVolume 1000000 }
+   }
+   UseCapacityCoefficient 0 MaxCumulativeVolume 2000000 MaxItemSize 250 250 250 m_fMaxWeight 1000
+  }
+  InventoryStorageManagerComponent {}
+  Hierarchy {}
+  RplComponent { "Rpl State Override" Runtime AutoHierarchy 1 }
+ }
+}

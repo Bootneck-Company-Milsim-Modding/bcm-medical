@@ -3,11 +3,11 @@ MetaFileClass {
  Configurations {
   FBXResourceClass PC {
    MaterialAssigns {
-    MaterialAssignClass "{6AB69C6DF853ED22}" {
+    MaterialAssignClass "{6AC4EC96F7378582}" {
      SourceMaterial "BCMM_TXA_M0"
      AssignedMaterial "{0878EC9CD8CB5DEB}Assets/Medical/GenericInjector/Data/GenericInjector_0.emat"
     }
-    MaterialAssignClass "{6AB69C6DF853ED05}" {
+    MaterialAssignClass "{6AC4EC96F73785E4}" {
      SourceMaterial "BCMM_TXA_M1"
      AssignedMaterial "{381D0BD22D93E809}Assets/Medical/TXA/Data/TXA.emat"
     }

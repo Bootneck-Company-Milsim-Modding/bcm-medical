@@ -228,6 +228,20 @@ class BCMM_EquipmentTreatment : BCMM_SplintTreatment
  }
  protected override int ProcedureRegion() { return m_Region; }
  protected override string ProcedureName() { return BCMM_EquipmentPolicy.Name(m_Action); }
+ protected override bool RequiresNativeAnimation()
+ {
+  // Connecting/operating a retained device is server-timed work, not the
+  // native bandage item-use command. That command can reject an uninjured
+  // body part or an unsupported pose before the medical work has completed.
+  // Invasive supplies retain their native injection/dressing presentation.
+  return m_Action != BCMM_EquipmentProcedure.CONNECT_OXYGEN
+   && m_Action != BCMM_EquipmentProcedure.ANALYSE
+   && m_Action != BCMM_EquipmentProcedure.SHOCK
+   && m_Action != BCMM_EquipmentProcedure.MONITOR
+   && m_Action != BCMM_EquipmentProcedure.PULSE_OXIMETER
+   && m_Action != BCMM_EquipmentProcedure.VENTILATE
+   && m_Action != BCMM_EquipmentProcedure.SUCTION;
+ }
  protected override bool ConsumesKit()
  {
   if(BCMM_EquipmentPolicy.IsInfusion(m_Action))

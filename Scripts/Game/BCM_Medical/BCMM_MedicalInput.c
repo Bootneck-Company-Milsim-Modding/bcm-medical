@@ -17,14 +17,23 @@ class BCMM_MedicalInput : Managed
  }
  protected void OpenMedical()
  {
+  if (BCMM_MedicalMenu.Current())
+  {
+   // Leave input dispatch before removing the menu and its input listeners.
+   // Bind the callback to this exact panel so a later view cannot be closed.
+   GetGame().GetCallqueue().CallLater(CloseCurrentPanel,0,false,BCMM_MedicalMenu.Current());return;
+  }
   SCR_PlayerController player = SCR_PlayerController.Cast(GetGame().GetPlayerController());
   if (!player || !player.GetControlledEntity()) return;
-  if (BCMM_MedicalMenu.Current()) { BCMM_MedicalMenu.Current().Close(); return; }
   ChimeraCharacter actor = ChimeraCharacter.Cast(player.GetControlledEntity());
   if (!actor || actor.GetCharacterController().IsUnconscious() || actor.GetCharacterController().GetLifeState() != ECharacterLifeState.ALIVE) return;
   IEntity target = BCMM_AssessmentTargets.LookingAt(actor);
   if (!target) target = actor;
   BCMM_MedicalMenu.Open(target);
+ }
+ protected static void CloseCurrentPanel(BCMM_MedicalMenu panel)
+ {
+  if(panel && BCMM_MedicalMenu.Current()==panel)panel.Close();
  }
 }
 class BCMM_AssessmentTargets

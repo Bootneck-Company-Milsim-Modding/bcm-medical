@@ -1,0 +1,26 @@
+{
+  "utc": "2026-11-02T18:39:46.7887315Z",
+  "scope": "Installed addon directory names; previously diagnosed dependency IDs for seven vehicle integrations",
+  "dependencies": [
+    {
+      "guid": "64900A5A31F5DCB5",
+      "matches": []
+    },
+    {
+      "guid": "5C721177A220B42F",
+      "matches": []
+    },
+    {
+      "guid": "5D5A20A8AE33C21E",
+      "matches": []
+    },
+    {
+      "guid": "62CCD69DD17E4F2F",
+      "matches": []
+    },
+    {
+      "guid": "6992B994D1870DD9",
+      "matches": []
+    }
+  ]
+}

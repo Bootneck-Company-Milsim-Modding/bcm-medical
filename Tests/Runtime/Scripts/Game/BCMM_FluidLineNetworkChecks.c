@@ -2,6 +2,12 @@ modded class SCR_BaseGameMode
 {
  [RplProp()] protected int m_BCMMLinePhase;
  [RplProp()] protected RplId m_BCMMLinePatient=RplId.Invalid();
+ protected ref array<int> m_BCMMLineReleaseObservers={};
+ void BCMM_LineReleaseObserved(int playerId)
+ {
+  if(Replication.IsServer() && m_BCMMLinePhase==4 && playerId>0 && !m_BCMMLineReleaseObservers.Contains(playerId))m_BCMMLineReleaseObservers.Insert(playerId);
+ }
+ bool BCMM_AllLineReleaseObserved(){return m_BCMMLineReleaseObservers.Contains(1) && m_BCMMLineReleaseObservers.Contains(2) && m_BCMMLineReleaseObservers.Contains(3);}
  void BCMM_PublishLineTest(int phase,IEntity patient)
  {
   m_BCMMLinePhase=phase;
@@ -17,6 +23,12 @@ modded class SCR_BaseGameMode
  {
   return BCMM_BodyBagComponent.Resolve(m_BCMMLinePatient);
  }
+}
+modded class SCR_PlayerController
+{
+ void BCMM_LineReleaseAck(){Rpc(BCMM_LineReleaseAckServer);}
+ [RplRpc(RplChannel.Reliable,RplRcver.Server)]
+ protected void BCMM_LineReleaseAckServer(){SCR_BaseGameMode.Cast(GetGame().GetGameMode()).BCMM_LineReleaseObserved(GetPlayerId());}
 }
 modded class BCMM_MedicalMenu
 {
@@ -119,7 +131,8 @@ class BCMM_FluidLineNetworkChecks : BCMM_SplintRuntimeChecks
   {
    m_Suite.Record(m_PatientInventory.Contains(m_Kit) && BCMM_EquipmentItemComponent.Cast(m_Kit.FindComponent(BCMM_EquipmentItemComponent)).FluidRemainingMl()>0 && !BCMM_EquipmentTreatment.FindEquipment(m_Actor,BCMM_EquipmentKind.FLUID),"Actual owner line removal retains original partial bag in patient inventory without creating a medic supply");
    SCR_BaseGameMode.Cast(GetGame().GetGameMode()).BCMM_PublishLineTest(4,m_Target);
-   GetGame().GetCallqueue().CallLater(Finish,8000);
+   m_LineWait=0;
+   GetGame().GetCallqueue().CallLater(WaitReleaseObservers,250);
    return;
   }
   if(m_LineWait++<80)
@@ -129,6 +142,16 @@ class BCMM_FluidLineNetworkChecks : BCMM_SplintRuntimeChecks
   }
   m_Suite.Record(false,"Actual empty-handed owner disconnects through native menu/RPC");
   Finish();
+ }
+ protected void WaitReleaseObservers()
+ {
+  if(SCR_BaseGameMode.Cast(GetGame().GetGameMode()).BCMM_AllLineReleaseObserved())
+  {
+   m_Suite.Record(true,"All three actual clients acknowledge replicated fluid-line removal before diagnostic teardown");
+   GetGame().GetCallqueue().CallLater(Finish,1000);return;
+  }
+  if(m_LineWait++<100){GetGame().GetCallqueue().CallLater(WaitReleaseObservers,250);return;}
+  m_Suite.Record(false,"All three clients receive fluid-line removal within the bounded observation window");Finish();
  }
 }
 modded class ArmaReforgerScripted
@@ -230,6 +253,7 @@ modded class ArmaReforgerScripted
   {
    m_BCMMLineObserved=phase;
    PrintFormat("BCMM_LINE_OBSERVED %1 player=%2 remaining=%3",phase,player.GetPlayerId(),medical.BCMM_FluidLineRemainingMl());
+   if(phase==4)player.BCMM_LineReleaseAck();
   }
  }
 }

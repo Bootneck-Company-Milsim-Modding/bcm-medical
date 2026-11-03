@@ -46,6 +46,7 @@
     "Name": "BCM UH-60",
     "Prefab": "{AA8A16E764AA2F6E}Prefabs/Vehicles/Helicopters/AUS_MH60/Awenzj_SOAR_UH60.et",
     "ExtraAddons": [
+      "69431AA10656FA71",
       "6992B994D1870DD9"
     ],
     "Aircraft": true,
@@ -55,14 +56,15 @@
     "Name": "BCM HH-60G",
     "Prefab": "{05BEA1ABB0190245}Prefabs/Vehicles/Helicopters/AUS_MH60/New Variants/Awenzj_HH-60G.et",
     "ExtraAddons": [
+      "689910D4936BDF6C",
       "6992B994D1870DD9"
     ],
     "Aircraft": true,
     "AllowKnownSupportStationDiagnostic": true
   },
   {
-    "Name": "BCM Chinook",
-    "Prefab": "{BDD5BF2D60C2F5F0}Prefabs/Vehicles/Helicopters/H47/CH47F_MY2.et",
+    "Name": "ACM MH-47G (BCM Vehicles dependency)",
+    "Prefab": "{76A52BA44C1A058F}Prefabs/CH_47/CH_47_SOAR.et",
     "ExtraAddons": [
       "6992B994D1870DD9"
     ],

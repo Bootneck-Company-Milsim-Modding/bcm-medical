@@ -1,0 +1,240 @@
+---------------------------------------------
+Log C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\visual-final-snapshot-20261102-094805-082\.checks\beta01-item-review-20261102-095712-348\logs\logs_2026-11-02_09-57-12\console.log started at 2026-11-02 09:57:12 (2026-11-02 09:57:12 UTC)
+
+09:57:12.502 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\visual-final-snapshot-20261102-094805-082\.checks\beta01-item-review-20261102-095712-348\logs\logs_2026-11-02_09-57-12' to filesystem under name logs
+09:57:12.502 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\visual-final-snapshot-20261102-094805-082\.checks\beta01-item-review-20261102-095712-348\profile' to filesystem under name profile
+09:57:12.503 ENGINE       : FileSystem: Current working directory: 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\'
+09:57:12.504 ENGINE       : Initializing engine, version 192142
+09:57:12.504 ENGINE       : CLI Params: -gproj C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\visual-final-snapshot-20261102-094805-082\Tests\Runtime\addon.gproj -profile C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\visual-final-snapshot-20261102-094805-082\.checks\beta01-item-review-20261102-095712-348 -addonsDir C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\visual-final-snapshot-20261102-094805-082,C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\visual-final-snapshot-20261102-094805-082\Tests\Runtime,C:\Program Files (x86)\Steam\steamapps\common\Arma Reforger\addons -world worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent -addons B6C4ED1CA1260002 -noBackend -disableCrashReporter -noSound -noThrow -forceUpdate -window -screenWidth 1600 -screenHeight 1000 -posX 0 -posY 0 -maxFPS 30 -bcmmUIPreview 1 -bcmmBeta01Items 1 -bcmmBeta01Knowledge 1
+09:57:12.509 ENGINE       : Addon dirs:
+09:57:12.509  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/visual-final-snapshot-20261102-094805-082/Tests/Runtime/'
+09:57:12.509  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/visual-final-snapshot-20261102-094805-082'
+09:57:12.509  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/visual-final-snapshot-20261102-094805-082/Tests/Runtime'
+09:57:12.509  ENGINE       : dir: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons'
+09:57:12.509  ENGINE       : dir: './addons'
+09:57:12.509  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/visual-final-snapshot-20261102-094805-082/.checks/beta01-item-review-20261102-095712-348/addons'
+09:57:12.509 ENGINE       : Available addons:
+09:57:12.509  ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/visual-final-snapshot-20261102-094805-082/Tests/Runtime/addon.gproj' guid: 'B6C4ED1CA1260002'
+09:57:12.509  ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/visual-final-snapshot-20261102-094805-082/addon.gproj' guid: '6AB4B3F3FD215919'
+09:57:12.509  ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/core.gproj' guid: '5614BBCCBB55ED1C' (packed)
+09:57:12.509  ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/ArmaReforger.gproj' guid: '58D0FB3206B6F859' (packed)
+09:57:12.509 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\visual-final-snapshot-20261102-094805-082\Tests\Runtime' to filesystem under name BCM_Medical_DomainChecks
+09:57:12.509 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\visual-final-snapshot-20261102-094805-082' to filesystem under name MCBMedical
+09:57:12.608 ENGINE       : FileSystem: Adding package 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/' (pak count: 14) to filesystem under name ArmaReforger
+09:57:12.612 ENGINE       : FileSystem: Adding package 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/' (pak count: 2) to filesystem under name core
+09:57:12.612 ENGINE       : CPU vendor         : GenuineIntel
+09:57:12.612 ENGINE       : CPU type           : 1
+09:57:12.612 ENGINE       : CPU name           : 12th Gen Intel(R) Core(TM) i7-12700K
+09:57:12.612 ENGINE       : CPU cache info     : L1 [Inst 64KB, Data 48KB], L2 [Unif 2048KB], L3 [Unif 25600KB]
+09:57:12.612 ENGINE       : CPU count logical  : 20
+09:57:12.612 ENGINE       : CPU count physical : 12
+09:57:12.612 ENGINE       : CPU features       : mmx sse sse2 sse3 ssse3 sse4_1 sse4_2 popcnt aesni pclmulqdq osxsave avx sha avx2
+09:57:12.612 RESOURCES    : ResourceDB: loading cache (id=0 name=BCM_Medical_DomainChecks path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\visual-final-snapshot-20261102-094805-082\Tests\Runtime/resourceDatabase.rdb)
+09:57:12.613 RESOURCES    : ResourceDB: loading cache (id=1 name=MCBMedical path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\visual-final-snapshot-20261102-094805-082/resourceDatabase.rdb)
+09:57:12.614 RESOURCES    : ResourceDB: loading cache (id=2 name=ArmaReforger path=C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/resourceDatabase.rdb)
+09:57:12.724 RESOURCES    : ResourceDB: loading cache (id=3 name=core path=C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/resourceDatabase.rdb)
+09:57:12.726 RESOURCES    : ResourceDB: loading cache (id=4 name=profile path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\visual-final-snapshot-20261102-094805-082\.checks\beta01-item-review-20261102-095712-348\profile/resourceDatabase.rdb)
+09:57:12.726 RESOURCES    : ResourceDB: loading cache (id=5 name=logs path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\visual-final-snapshot-20261102-094805-082\.checks\beta01-item-review-20261102-095712-348\logs\logs_2026-11-02_09-57-12/resourceDatabase.rdb)
+09:57:12.860 ENGINE       : GameProject load
+09:57:12.860  ENGINE       : Loaded addons:
+09:57:12.860   ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/core.gproj' guid: '5614BBCCBB55ED1C'
+09:57:12.860   ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/ArmaReforger.gproj' guid: '58D0FB3206B6F859'
+09:57:12.860   ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/visual-final-snapshot-20261102-094805-082/addon.gproj' guid: '6AB4B3F3FD215919'
+09:57:12.860   ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/visual-final-snapshot-20261102-094805-082/Tests/Runtime/addon.gproj' guid: 'B6C4ED1CA1260002'
+09:57:12.865 ENGINE       : Loading custom engine user config '$profile:.save/app1874880_user76561198093323465/settings/ReforgerEngineSettings.conf'
+09:57:12.865 ENGINE       : No Enfusion settings file loaded. Continuing with defaults
+09:57:12.865 ENGINE       : Locale info: system en-GB (English), user en-GB (English)
+09:57:13.121 RENDER       : (OK) Adapter 'NVIDIA GeForce RTX 5070 Ti' supports feature level 12_0
+09:57:13.188 RENDER       : (OK) Adapter 'Intel(R) UHD Graphics 770' supports feature level 12_0
+09:57:13.193 RENDER       : Adapter 1 (Intel(R) UHD Graphics 770) failed to provide some output
+09:57:13.193 RENDER       : Basic screen setup:
+09:57:13.193 RENDER       :   Back buffer width x height: 1600x1000
+09:57:13.193 RENDER       :   Back buffer format	       : TEXFMT_R8G8B8A8_SRGB (29)
+09:57:13.193 RENDER       :   MSAA                      : none
+09:57:13.208 RENDER       : Driver for NVIDIA GeForce RTX 5070 Ti is from 22.7.2026 (3 months, 14 days old)
+09:57:13.208 RENDER       : GPU_NVIDIA (0x10DE) (NVIDIA GeForce RTX 5070 Ti) with 1 GPU detected, VRAM 15995MB (fast 0MB), shared 16274MB, driver version 610.88
+09:57:13.208 RENDER       : Detected output devices:
+09:57:13.208 RENDER       :  * 2 device/s connected to NVIDIA GeForce RTX 5070 Ti:
+09:57:13.208 RENDER       :    Generic PnP Monitor (\\.\DISPLAY1), 3840x2160 (offset 0x0), 60Hz
+09:57:13.208 RENDER       :    Generic PnP Monitor (\\.\DISPLAY2), 1920x1080 (offset 1065x-1080), 144Hz
+09:57:13.208 RENDER       :  * no output device connected to Intel(R) UHD Graphics 770
+09:57:13.208 RENDER       :   Concurrent frames limit 2
+09:57:13.406 RENDER       : Graphics device features
+09:57:13.406 RENDER       :  Needed:
+09:57:13.406 RENDER       :  * Highest supported shader model: 6.8 (6.0 needed)
+09:57:13.406 RENDER       :  Optional:
+09:57:13.406 RENDER       :  * Allow tearing (VSYNC) : 1
+09:57:13.406 RENDER       :  * 16 bits : 1
+09:57:13.406 RENDER       :  * Resource heap tier : 3
+09:57:13.406 RENDER       :  * Persistent heaps (DRED) : 1
+09:57:13.406 RENDER       :  * DRED 1.2 is supported by compiler
+09:57:13.448 RENDER       : Main RT format setup.
+09:57:13.448 RENDER       :   Main RT format for quality 0	: TEXFMT_R11G11B10_FLOAT (26)
+09:57:13.448 RENDER       :   Main RT format for quality 1	: TEXFMT_R16G16B16A16_FLOAT (10)
+09:57:13.458 ENGINE       : Job system settings: coreCount=20, shortJobContextCount=16, shortJobThreadCount=15, longJobThreadCount=7
+09:57:13.492 PROFILING    : Settings changed took: 4.943200 ms
+09:57:13.502 INPUT        : NPClient: interface -- initialize OK.
+09:57:13.502 INPUT        : NPClient: Window handle registration successful.
+09:57:13.502 INPUT        : NPClient: NaturalPoint software version is 5.0
+09:57:13.502 INPUT        : NPClient: Cursor stopped
+09:57:13.502 INPUT        : NPClient: Data transmission started
+09:57:13.502  RENDER       : RENDER       : Reload shaders
+09:57:13.503  RENDER       : Enfusion shader version 13
+09:57:13.503   INIT         : INIT         : ShaderListReload
+09:57:13.503  PROFILING    : ShaderListReload took: 0.000400 ms
+09:57:13.823  RENDER       : Loaded 3752 newer shader binaries
+09:57:13.824 PROFILING    : Reload shaders took: 321.761200 ms
+09:57:13.842 ENGINE       : Initializing inputs.
+09:57:13.853 NETWORK      : Initializing networking.
+09:57:13.853 NETWORK      : Using new GameRplScheduler.
+09:57:13.854  SCRIPT       : SCRIPT       : Initializing scripts
+09:57:13.854   SCRIPT       : SCRIPT       : ScriptProjectManager init
+09:57:13.854  PROFILING    : ScriptProjectManager init took: 0.018700 ms
+09:57:13.886 PROFILING    : Initializing scripts took: 31.751100 ms
+09:57:13.886 BACKEND      : Backend Services are disabled.
+09:57:13.886 ENGINE       : Enfusion engine successfully created.
+09:57:13.930 DEFAULT   (W): LogiLED: Cannot initialize! (service not running or no compatible device detected)
+09:57:13.950 GUI          : Using default language (en_us)
+09:57:13.950 GUI          : Loading 'en_us' localization file.
+09:57:13.950  INIT         : INIT         : Loading StringTable
+09:57:13.972 PROFILING    : Loading StringTable took: 21.785600 ms
+09:57:13.972  SCRIPT       : SCRIPT       : Compiling GameLib scripts
+09:57:14.010  SCRIPT       : Module: GameLib; loaded 465x files; 607x classes; used 775K of static memory; defines: "ENF_WB,PLATFORM_WINDOWS,ENABLE_DIAG,ENF_ENABLE_VHC_OVERRIDE,ENF_ENABLE_RPLCOMPONENT_IN_GAMECODE"; CRC32: 4507af04
+09:57:14.011 PROFILING    : Compiling GameLib scripts took: 39.227800 ms
+09:57:14.011 RESOURCES    : GetResourceObject @"{1C71B463B3B66BAB}UI/layouts/Menus/MainMenu/IntroSplashScreen.layout"
+09:57:14.011  GUI          : Layout load @"{1C71B463B3B66BAB}UI/layouts/Menus/MainMenu/IntroSplashScreen.layout"
+09:57:14.011   GUI       (E): Unknown class 'SCR_WidgetExportRuleRoot' at offset 282(0x11a)
+09:57:14.177  SCRIPT       : SCRIPT       : Compiling Game scripts
+09:57:15.228 SCRIPT       : Compiling Game scripts
+09:57:15.228  SCRIPT    (W): @"Scripts/Game/Editor/Components/EditableEntity/SCR_EditableEntityComponent.c,785": 'GetPlayerPlatformKind' is obsolete
+09:57:15.228  SCRIPT    (W): @"Scripts/Game/Editor/Components/EditableEntity/SCR_EditableEntityComponent.c,786": 'GetPlayerPlatformId' is obsolete
+09:57:15.517  SCRIPT    (W): @"Scripts/Game/Workshop/SCR_AddonManager.c,876": 'GetRefCount' is obsolete: Will be removed
+09:57:15.553  SCRIPT    (W): @"Scripts/Game/Campaign/SCR_PlayerProfileManagerComponent.c,142": 'PlayerData' is obsolete
+09:57:15.664  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,159": 'GetDSSession' is obsolete
+09:57:15.664  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,162": 'RoomID' is obsolete
+09:57:15.664  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,197": 'GetDSSession' is obsolete
+09:57:15.664  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,201": 'RoomID' is obsolete
+09:57:15.770  SCRIPT    (W): @"Scripts/Game/DataCollection/SCR_DataCollectorComponent.c,481": 'GetStorage' is obsolete
+09:57:15.770  SCRIPT    (W): @"Scripts/Game/DataCollection/SCR_DataCollectorComponent.c,483": 'GetOnlineWritePrivilege' is obsolete
+09:57:15.772  SCRIPT    (W): @"Scripts/Game/Utilities/SCR_PlayerIdentityUtils.c,20": 'GetPlayerIdentityId' is obsolete
+09:57:15.823  SCRIPT    (W): @"Scripts/Game/UI/Menu/MainMenuUI.c,643": 'GetNotifyCount' is obsolete: Will be substitued by Notification Api.
+09:57:15.823  SCRIPT    (W): @"Scripts/Game/UI/Menu/MainMenuUI.c,645": 'GetNotifyItem' is obsolete: Will be substitued by Notification Api.
+09:57:15.883  SCRIPT    (W): @"Scripts/Game/DataCollection/PlayerData/SCR_PlayerData.c,210": 'PlayerData' is obsolete
+09:57:16.028  SCRIPT       : Module: Game; loaded 5833x files; 11900x classes; used 33526K of static memory; defines: "ENF_WB,PLATFORM_WINDOWS,ENABLE_DIAG,ENF_ENABLE_VHC_OVERRIDE,ENF_ENABLE_RPLCOMPONENT_IN_GAMECODE,ENABLE_BASE_DESTRUCTION,BUDGET_OPTIMIZATION_CHECKS,DEBUG,RESPAWN_TIMER_COMPONENT_DEBUG,GAME_MODE_DEBUG,DEBUG_CONFIGURABLE_DIALOGS,DISABLE_WEAPON_SWITCHING,SCRIPTED_AIM_MODIFIER_DEBUG"; CRC32: b26ea964
+09:57:16.084 PROFILING    : Compiling Game scripts took: 1907.450700 ms
+09:57:16.084 INIT         : Creating game instance(ArmaReforgerScripted), version 1.8.0.13 built 2026-08-21 14:30:18 UTC.
+09:57:16.117 ENGINE       : Game successfully created.
+09:57:16.123 PLATFORM     : Save data from container 'settings' have been loaded
+09:57:16.220 PLATFORM     : Save data from container 'sessions' have been loaded
+09:57:16.322 PLATFORM     : System language differs from the saved one - using new language {new: 'en_us'; old: ''}
+09:57:16.322 PLATFORM     : Save data transaction to 'settings' started.
+09:57:16.420 DEFAULT      : [SaveGameManager] Starting new playthrough nr.0 '' for mission 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'.
+09:57:16.420  WORLD        : WORLD        : Entities load 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'
+09:57:16.425 WORLD        : Entities load 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'
+09:57:16.425  RESOURCES (E): Wrong GUID/name for resource @"{0000000000000000}(null)" in property "m_sLoadingLayout"
+09:57:16.431 PROFILING    : Entities load took: 10.944300 ms
+09:57:16.432  WORLD        : WORLD        : Game::LoadEntities
+09:57:16.432   WORLD        : WORLD        : Initializing world systems
+09:57:16.433   NETWORK      : Enabled lag compensation, 29 frames with 100 FPS and 280 ms rewind limits.
+09:57:16.433   WORLD        : WORLD        : CreateEntities
+09:57:16.433    WORLD        : WORLD        : CreateEntities
+09:57:16.433     WORLD        : WORLD        : NotifyBeforeEntitiesCreated
+09:57:16.437     RESOURCES    : Loaded mission headers from 4 addon(s)!
+09:57:16.437    PROFILING    : NotifyBeforeEntitiesCreated took: 3.809000 ms
+09:57:16.437     WORLD        : WORLD        : Wait for preloading data
+09:57:16.437    PROFILING    : Wait for preloading data took: 0.000600 ms
+09:57:16.455    ENTITY       : Create entity @"ENTITY:2" ('MPTestTerrain', GenericTerrainEntity) at <0.000000 1.000000 0.000000>
+09:57:16.455      PROFILING    : PROFILING    : Terrain load
+09:57:16.471     PROFILING    : Terrain load took: 15.823400 ms
+09:57:16.488 WORLD        : Game::LoadEntities
+09:57:16.488  WORLD        : CreateEntities
+09:57:16.488   WORLD        : CreateEntities
+09:57:16.488    ENTITY       : Create entity @"ENTITY:4611686018427387905" ('SCR_AIWorld') at <107.915001 1.000000 159.473999> @"{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et"
+09:57:16.488     PATHFINDING   : Navmesh Init 'Soldiers'
+09:57:16.488      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+09:57:16.488     PATHFINDING   : Navmesh Init 'BTRlike'
+09:57:16.488      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+09:57:16.488     PATHFINDING   : Navmesh Init 'LowRes'
+09:57:16.488      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+09:57:16.819     WORLD        : WORLD        : NotifyBeforeEntitiesInitialized
+09:57:16.819    PROFILING    : NotifyBeforeEntitiesInitialized took: 0.021900 ms
+09:57:16.822    WORLD        : InitEntities 'world'
+09:57:16.822     ENTITY       : Init entity @"ENTITY:4611686018427387906" ('GameMode_Plain1', SCR_BaseGameMode) at <123.265999 1.000000 136.613998>
+09:57:16.822      SCRIPT    (W): SCR_PerceivedFactionManagerComponent trying to set fall back faction 'CIV' but this faction could not be found so it is null instead.
+09:57:16.823     WORLD        : WORLD        : NotifyEntitiesInitialized
+09:57:16.823      TERRAIN      : TERRAIN      : Initializing road networks...
+09:57:16.823     PROFILING    : Initializing road networks... took: 0.000700 ms
+09:57:16.823      DEFAULT      : DEFAULT      : WorldVolumesCollection
+09:57:16.823     PROFILING    : WorldVolumesCollection took: 0.010000 ms
+09:57:16.823    PROFILING    : NotifyEntitiesInitialized took: 0.131700 ms
+09:57:16.824   PROFILING    : CreateEntities took: 390.135200 ms
+09:57:16.824  PROFILING    : CreateEntities took: 390.148300 ms
+09:57:16.824   WORLD        : WORLD        : EOnActivate
+09:57:16.824  PROFILING    : EOnActivate took: 0.094900 ms
+09:57:16.824 PROFILING    : Game::LoadEntities took: 391.855200 ms
+09:57:16.824 PROFILING    : * LoadEntities: 391.889100 ms
+09:57:17.024 DEFAULT      : Entered offline game state.
+09:57:17.126 PROFILING    : Settings changed took: 1.900100 ms
+09:57:17.128 NETWORK      : Player connected: connectionID=2147483646
+09:57:17.128 NETWORK      : ### Connecting player: connectionID=2147483646, Name=
+09:57:17.128 NETWORK      : ### Creating player: PlayerId=1, Name=TacticalBootneck
+09:57:17.134 ENTITY       : SpawnEntityPrefab @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+09:57:17.134  ENTITY       : Create entity @"ENTITY:6917529027641081863" ('SCR_PlayerController') at <0.000000 0.000000 0.000000>
+09:57:17.134   ENTITY       : EntityPrefabUse @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+09:57:17.134    SCRIPT    (W): Notification data in 'SCR_NotificationsLogDisplay' has duplicate notification info key: 'EDITOR_PERCEIVED_FACTION_PUNISHMENT_KILLING_SET'. There should only be one of each key!
+09:57:17.134    SCRIPT    (W): Notification data in 'SCR_NotificationsLogDisplay' has duplicate notification info key: 'EDITOR_PERCEIVED_FACTION_TYPE_DISABLED'. There should only be one of each key!
+09:57:17.137   SCRIPT    (W): Can't open config file ""
+09:57:17.137   SCRIPT    (W): Cannot update game blocklist. Backend is offline.
+09:57:17.137  WORLD        : InitEntities 'world'
+09:57:17.137   ENTITY       : Init entity @"ENTITY:6917529027641081863" ('SCR_PlayerController') at <0.000000 0.000000 0.000000> @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+09:57:17.137    DEFAULT   (W): Chat not available - missing ChatEntity. Only printing this message once. There're possibly more nodes with this requirement.
+09:57:17.155    GUI          : WidgetManager: CrateWidgets @"{3C9DCDD76AB83157}UI/layouts/HUD/HUDLayouts/HUDManager_Root.layout"
+09:57:17.155     SCRIPT    (W): Slot_WeaponInfo Has no Content!
+09:57:17.155     SCRIPT    (W): Slot_Chat Has no Content!
+09:57:17.155     SCRIPT    (W): Slot_VON Has no Content!
+09:57:17.155     SCRIPT    (W): Slot_AvailableActions Has no Content!
+09:57:17.155     SCRIPT    (W): Slot_Vehicle Has no Content!
+09:57:17.155     SCRIPT    (W): Slot_GameVersion Has no Content!
+09:57:17.155     SCRIPT    (W): Slot_Notifications Has no Content!
+09:57:17.155     SCRIPT    (W): Slot_Hints Has no Content!
+09:57:17.156 ENTITY       : SpawnEntityPrefab @"{788933FFDC706A68}Prefabs/Editor/EditorManager.et"
+09:57:17.156  ENTITY       : Create entity @"ENTITY:6917529027641081864" ('SCR_EditorManagerEntity') at <0.000000 0.000000 0.000000> @"{788933FFDC706A68}Prefabs/Editor/EditorManager.et"
+09:57:17.156   ENTITY       : CreateComponent 'BaseRadioComponent'
+09:57:17.156    DEFAULT   (W): World doesn't contain RadioManagerEntity to support any BaseRadioComponent.
+09:57:17.168 NETWORK      : ### Updating player: PlayerId=1, Name=TacticalBootneck, rplIdentity=0xFFFFFFFE, IdentityId=00000000-0000-0000-0000-000000000000
+09:57:17.168 SCRIPT    (W): Ban Settings could not be loaded from BE Storage: Relying on default config
+09:57:17.169 NETWORK      : Players connecting: 0
+09:57:17.169 NETWORK      : Players connected: 1 / 1
+09:57:17.181 WORLD        : Frame start
+09:57:17.181  SCRIPT       : ScenarioFramework: Available tasks are empty, no new tasks will be generated.
+09:57:17.182 WORLD        : UpdateEntities
+09:57:17.182  WORLD        : Frame
+09:57:17.182   SCRIPT       : SCR_BaseGameMode::OnGameStateChanged = GAME
+09:57:17.259 WORLD        : UpdateEntities
+09:57:17.259  WORLD        : PostFrame
+09:57:17.259   GUI          : WidgetManager: CrateWidgets @"{D89BBA18F99053D6}UI/layouts/HUD/Chat/ChatHud.layout"
+09:57:17.259    SCRIPT    (W): EditBoxFilterComponent used on invalid widget type.
+09:57:17.315   RESOURCES    : GetResourceObject @"{20A6917D2114E29A}UI/layouts/HUD/Hint/HintInfoDisplay.layout"
+09:57:17.315    GUI          : Layout load @"{20A6917D2114E29A}UI/layouts/HUD/Hint/HintInfoDisplay.layout"
+09:57:17.315     GUI          : Widget prefab @"{EA1CC57D868E94F9}UI/layouts/HUD/Hint/Hint.layout"
+09:57:17.315      GUI       (W): Overridden prefab member (GUID: '{661AB14E0F471C66}' type: ButtonWidgetClass) no longer exists in prefab
+09:57:17.447  RENDER       : RENDER       : ObjectsHeightMap::Build
+09:57:17.447   RENDER       : RENDER       : MeshOccupancyGridManager::GenerateAllForWorld
+09:57:17.447  PROFILING    : MeshOccupancyGridManager::GenerateAllForWorld took: 0.005600 ms
+09:57:17.452 PROFILING    : ObjectsHeightMap::Build took: 5.320500 ms
+09:57:18.892 SCRIPT       : BCMM_NET_BODY player=1 assigned=1
+09:57:18.905 SCRIPT       : BCMM_UI_PREVIEW_READY press H
+09:57:24.338 ENGINE       : Screenshot successfully saved into $profile:screenshots/completed-airway-examination (1600x1000)
+09:57:32.462 SCRIPT       : BCMM_KNOWLEDGE_UI cycles=20 failures=0
+09:57:40.562 SCRIPT       : BCMM_KNOWLEDGE_UI cycles=40 failures=0
+09:57:48.662 SCRIPT       : BCMM_KNOWLEDGE_UI cycles=60 failures=0
+09:57:56.829 SCRIPT       : BCMM_KNOWLEDGE_UI cycles=80 failures=0
+09:58:04.895 SCRIPT       : BCMM_KNOWLEDGE_UI cycles=100 failures=0
+09:58:12.995 SCRIPT       : BCMM_KNOWLEDGE_UI cycles=120 failures=0
+09:58:21.229 SCRIPT       : BCMM_KNOWLEDGE_UI cycles=140 failures=0
+09:58:29.362 SCRIPT       : BCMM_KNOWLEDGE_UI cycles=160 failures=0
+09:58:37.595 SCRIPT       : BCMM_KNOWLEDGE_UI cycles=180 failures=0
+09:58:45.762 SCRIPT       : BCMM_KNOWLEDGE_UI cycles=200 failures=0
+09:58:45.769 ENGINE       : Screenshot successfully saved into $profile:screenshots/airway-after-200-patient-switches (1600x1000)
+09:58:46.229 SCRIPT       : BCMM_KNOWLEDGE_UI_COMPLETE cycles=200 failures=0 changedDomainInvalidated=1 remoteOwnerPrivacyCycles=0
+09:58:46.238 ENGINE       : Screenshot successfully saved into $profile:screenshots/airway-invalidated-after-device-change (1600x1000)

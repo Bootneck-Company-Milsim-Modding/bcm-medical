@@ -1,0 +1,30 @@
+MetaFileClass {
+ Name "{BF0F4BF4CDD635F3}Assets/Medical/DragRopeLine/BCMM_DragRopeLine.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AC48B4DC701BDD1}" {
+     SourceMaterial "BCMM_RopeLine"
+     AssignedMaterial "{2F5FF9812B71E31B}Assets/Medical/WeaponSling/Data/WeaponSling_0.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_DragRopeLine {
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

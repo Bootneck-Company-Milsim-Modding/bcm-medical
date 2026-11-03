@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "case": "BagActions",
+  "width": 1280,
+  "height": 720,
+  "repeatInstances": 1,
+  "processSamples": [
+    {
+      "utc": "2026-11-02T16:22:06.8866373Z",
+      "privateBytes": 17346560,
+      "workingSetBytes": 18792448,
+      "handles": 191
+    },
+    {
+      "utc": "2026-11-02T16:22:16.9000577Z",
+      "privateBytes": 2380386304,
+      "workingSetBytes": 1015861248,
+      "handles": 1290
+    },
+    {
+      "utc": "2026-11-02T16:22:26.9995381Z",
+      "privateBytes": 2385641472,
+      "workingSetBytes": 1021419520,
+      "handles": 1302
+    },
+    {
+      "utc": "2026-11-02T16:22:37.0458926Z",
+      "privateBytes": 2385641472,
+      "workingSetBytes": 1021739008,
+      "handles": 1312
+    }
+  ],
+  "nativeToggleAction": false,
+  "toggleCycles": 1,
+  "failure": "",
+  "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\beta01-packed-20261102-145625-237\\acceptance-BagActions-20261102-162206-749",
+  "packedSha256": "8F535CBA61D5C7B0B81BE468C610CEE3A837530D039F2095C5F9636B74971882",
+  "completion": "BCMM_CHECK COMPLETE checks=760 failures=0 run=9900517a5d0e4883aeadfd6283fef149",
+  "scope": "Packed production addon plus separate unpublished diagnostic addon; loose production source excluded from addonsDir"
+}

@@ -3,11 +3,11 @@ MetaFileClass {
  Configurations {
   FBXResourceClass PC {
    MaterialAssigns {
-    MaterialAssignClass "{6AB69C6DF8656D12}" {
+    MaterialAssignClass "{6AC4EC96F72C64DC}" {
      SourceMaterial "BCMM_Naloxone_M0"
      AssignedMaterial "{0878EC9CD8CB5DEB}Assets/Medical/GenericInjector/Data/GenericInjector_0.emat"
     }
-    MaterialAssignClass "{6AB69C6DF8656D77}" {
+    MaterialAssignClass "{6AC4EC96F72C6B27}" {
      SourceMaterial "BCMM_Naloxone_M1"
      AssignedMaterial "{83FCBBDC40C170D6}Assets/Medical/Naloxone/Data/Naloxone.emat"
     }

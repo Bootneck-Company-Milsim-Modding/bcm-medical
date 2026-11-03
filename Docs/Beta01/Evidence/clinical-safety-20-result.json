@@ -1,0 +1,322 @@
+{
+  "passed": true,
+  "case": "ClinicalSafety",
+  "width": 1280,
+  "height": 720,
+  "repeatInstances": 20,
+  "processSamples": [
+    {
+      "utc": "2026-11-02T16:09:04.2135159Z",
+      "privateBytes": 30089216,
+      "workingSetBytes": 24207360,
+      "handles": 210
+    },
+    {
+      "utc": "2026-11-02T16:09:14.4992976Z",
+      "privateBytes": 2214477824,
+      "workingSetBytes": 974622720,
+      "handles": 1216
+    },
+    {
+      "utc": "2026-11-02T16:09:24.5877424Z",
+      "privateBytes": 2450038784,
+      "workingSetBytes": 999198720,
+      "handles": 1230
+    },
+    {
+      "utc": "2026-11-02T16:09:34.6918824Z",
+      "privateBytes": 2450305024,
+      "workingSetBytes": 999653376,
+      "handles": 1238
+    },
+    {
+      "utc": "2026-11-02T16:09:44.8702239Z",
+      "privateBytes": 2456494080,
+      "workingSetBytes": 1002848256,
+      "handles": 1243
+    },
+    {
+      "utc": "2026-11-02T16:09:54.9470022Z",
+      "privateBytes": 2456629248,
+      "workingSetBytes": 1003196416,
+      "handles": 1248
+    },
+    {
+      "utc": "2026-11-02T16:10:05.0035155Z",
+      "privateBytes": 2454302720,
+      "workingSetBytes": 1004134400,
+      "handles": 1244
+    },
+    {
+      "utc": "2026-11-02T16:10:15.0673923Z",
+      "privateBytes": 2453245952,
+      "workingSetBytes": 1004208128,
+      "handles": 1243
+    },
+    {
+      "utc": "2026-11-02T16:10:25.2036396Z",
+      "privateBytes": 2453364736,
+      "workingSetBytes": 1004552192,
+      "handles": 1244
+    },
+    {
+      "utc": "2026-11-02T16:10:35.3168885Z",
+      "privateBytes": 2454999040,
+      "workingSetBytes": 1006002176,
+      "handles": 1243
+    },
+    {
+      "utc": "2026-11-02T16:10:45.4650417Z",
+      "privateBytes": 2454999040,
+      "workingSetBytes": 1006002176,
+      "handles": 1245
+    },
+    {
+      "utc": "2026-11-02T16:10:55.5479379Z",
+      "privateBytes": 2456174592,
+      "workingSetBytes": 1007038464,
+      "handles": 1243
+    },
+    {
+      "utc": "2026-11-02T16:11:05.6961255Z",
+      "privateBytes": 2456211456,
+      "workingSetBytes": 1007202304,
+      "handles": 1243
+    },
+    {
+      "utc": "2026-11-02T16:11:15.8931584Z",
+      "privateBytes": 2448130048,
+      "workingSetBytes": 1005318144,
+      "handles": 1238
+    },
+    {
+      "utc": "2026-11-02T16:11:26.0574099Z",
+      "privateBytes": 2446577664,
+      "workingSetBytes": 1005563904,
+      "handles": 1229
+    },
+    {
+      "utc": "2026-11-02T16:11:36.2807492Z",
+      "privateBytes": 2446512128,
+      "workingSetBytes": 1005613056,
+      "handles": 1232
+    },
+    {
+      "utc": "2026-11-02T16:11:46.4155992Z",
+      "privateBytes": 2446872576,
+      "workingSetBytes": 1005903872,
+      "handles": 1229
+    },
+    {
+      "utc": "2026-11-02T16:11:56.5043468Z",
+      "privateBytes": 2446938112,
+      "workingSetBytes": 1005965312,
+      "handles": 1232
+    },
+    {
+      "utc": "2026-11-02T16:12:06.6580519Z",
+      "privateBytes": 2446807040,
+      "workingSetBytes": 1005932544,
+      "handles": 1231
+    },
+    {
+      "utc": "2026-11-02T16:12:16.8482372Z",
+      "privateBytes": 2447388672,
+      "workingSetBytes": 1006186496,
+      "handles": 1230
+    },
+    {
+      "utc": "2026-11-02T16:12:26.9673372Z",
+      "privateBytes": 2446209024,
+      "workingSetBytes": 1006235648,
+      "handles": 1231
+    },
+    {
+      "utc": "2026-11-02T16:12:37.0817379Z",
+      "privateBytes": 2446532608,
+      "workingSetBytes": 1006903296,
+      "handles": 1229
+    },
+    {
+      "utc": "2026-11-02T16:12:47.1864434Z",
+      "privateBytes": 2445484032,
+      "workingSetBytes": 1006321664,
+      "handles": 1232
+    },
+    {
+      "utc": "2026-11-02T16:12:57.3033471Z",
+      "privateBytes": 2445025280,
+      "workingSetBytes": 1006432256,
+      "handles": 1234
+    },
+    {
+      "utc": "2026-11-02T16:13:07.3710293Z",
+      "privateBytes": 2445541376,
+      "workingSetBytes": 1006755840,
+      "handles": 1232
+    },
+    {
+      "utc": "2026-11-02T16:13:17.4321259Z",
+      "privateBytes": 2445344768,
+      "workingSetBytes": 1006608384,
+      "handles": 1233
+    },
+    {
+      "utc": "2026-11-02T16:13:27.6171133Z",
+      "privateBytes": 2448494592,
+      "workingSetBytes": 1008984064,
+      "handles": 1232
+    },
+    {
+      "utc": "2026-11-02T16:13:37.7254687Z",
+      "privateBytes": 2450415616,
+      "workingSetBytes": 1011421184,
+      "handles": 1232
+    },
+    {
+      "utc": "2026-11-02T16:13:47.8197160Z",
+      "privateBytes": 2450796544,
+      "workingSetBytes": 1011675136,
+      "handles": 1233
+    },
+    {
+      "utc": "2026-11-02T16:13:58.0121795Z",
+      "privateBytes": 2453176320,
+      "workingSetBytes": 1013526528,
+      "handles": 1231
+    },
+    {
+      "utc": "2026-11-02T16:14:08.1070821Z",
+      "privateBytes": 2455523328,
+      "workingSetBytes": 1014124544,
+      "handles": 1240
+    },
+    {
+      "utc": "2026-11-02T16:14:18.1993889Z",
+      "privateBytes": 2456367104,
+      "workingSetBytes": 1015128064,
+      "handles": 1238
+    },
+    {
+      "utc": "2026-11-02T16:14:28.3724366Z",
+      "privateBytes": 2456432640,
+      "workingSetBytes": 1015177216,
+      "handles": 1238
+    },
+    {
+      "utc": "2026-11-02T16:14:38.5144046Z",
+      "privateBytes": 2456563712,
+      "workingSetBytes": 1015328768,
+      "handles": 1238
+    },
+    {
+      "utc": "2026-11-02T16:14:48.5822763Z",
+      "privateBytes": 2457337856,
+      "workingSetBytes": 1016029184,
+      "handles": 1237
+    },
+    {
+      "utc": "2026-11-02T16:14:58.6837718Z",
+      "privateBytes": 2457468928,
+      "workingSetBytes": 1016127488,
+      "handles": 1240
+    },
+    {
+      "utc": "2026-11-02T16:15:08.8249231Z",
+      "privateBytes": 2457878528,
+      "workingSetBytes": 1016668160,
+      "handles": 1239
+    },
+    {
+      "utc": "2026-11-02T16:15:18.9270417Z",
+      "privateBytes": 2458263552,
+      "workingSetBytes": 1016807424,
+      "handles": 1241
+    },
+    {
+      "utc": "2026-11-02T16:15:29.1721612Z",
+      "privateBytes": 2458329088,
+      "workingSetBytes": 1016860672,
+      "handles": 1240
+    },
+    {
+      "utc": "2026-11-02T16:15:39.2575919Z",
+      "privateBytes": 2458394624,
+      "workingSetBytes": 1016918016,
+      "handles": 1239
+    },
+    {
+      "utc": "2026-11-02T16:15:49.4583009Z",
+      "privateBytes": 2457370624,
+      "workingSetBytes": 1016987648,
+      "handles": 1238
+    },
+    {
+      "utc": "2026-11-02T16:15:59.5500717Z",
+      "privateBytes": 2457436160,
+      "workingSetBytes": 1017053184,
+      "handles": 1236
+    },
+    {
+      "utc": "2026-11-02T16:16:09.7131321Z",
+      "privateBytes": 2457436160,
+      "workingSetBytes": 1017126912,
+      "handles": 1238
+    },
+    {
+      "utc": "2026-11-02T16:16:19.8661232Z",
+      "privateBytes": 2457436160,
+      "workingSetBytes": 1017217024,
+      "handles": 1239
+    },
+    {
+      "utc": "2026-11-02T16:16:29.9174227Z",
+      "privateBytes": 2457436160,
+      "workingSetBytes": 1017237504,
+      "handles": 1237
+    },
+    {
+      "utc": "2026-11-02T16:16:40.0054392Z",
+      "privateBytes": 2457436160,
+      "workingSetBytes": 1017393152,
+      "handles": 1238
+    },
+    {
+      "utc": "2026-11-02T16:16:50.0725516Z",
+      "privateBytes": 2457436160,
+      "workingSetBytes": 1017561088,
+      "handles": 1236
+    },
+    {
+      "utc": "2026-11-02T16:17:00.1848390Z",
+      "privateBytes": 2456592384,
+      "workingSetBytes": 1017380864,
+      "handles": 1231
+    },
+    {
+      "utc": "2026-11-02T16:17:10.2958695Z",
+      "privateBytes": 2456657920,
+      "workingSetBytes": 1017540608,
+      "handles": 1234
+    },
+    {
+      "utc": "2026-11-02T16:17:20.4246243Z",
+      "privateBytes": 2456723456,
+      "workingSetBytes": 1017626624,
+      "handles": 1232
+    },
+    {
+      "utc": "2026-11-02T16:17:30.5286174Z",
+      "privateBytes": 2456723456,
+      "workingSetBytes": 1017630720,
+      "handles": 1234
+    }
+  ],
+  "nativeToggleAction": false,
+  "toggleCycles": 1,
+  "failure": "",
+  "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\beta01-packed-20261102-145625-237\\acceptance-ClinicalSafety-20261102-160904-054",
+  "packedSha256": "8F535CBA61D5C7B0B81BE468C610CEE3A837530D039F2095C5F9636B74971882",
+  "completion": "BCMM_CHECK COMPLETE checks=14280 failures=0 run=e7208f487f7b4f3081b48f05d875e221",
+  "scope": "Packed production addon plus separate unpublished diagnostic addon; loose production source excluded from addonsDir"
+}

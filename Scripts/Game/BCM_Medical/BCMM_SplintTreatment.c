@@ -29,6 +29,8 @@ class BCMM_SplintTreatment : ScriptedInventoryOperationCallback
  protected float m_AnimationEndedAt;
  protected float m_Duration;
  protected string m_FieldClip;
+ protected string m_InvalidReason;
+ protected bool Invalid(string reason) { m_InvalidReason = reason; return false; }
  static IEntity FindKit(IEntity actor)
  {
   if (!actor) return null;
@@ -151,16 +153,19 @@ class BCMM_SplintTreatment : ScriptedInventoryOperationCallback
  protected bool RequiresNativeAnimation(){return true;}
  protected bool Valid()
  {
-  if (m_Player && m_Player.GetControlledEntity() != m_Actor) return false;
-  if(RequiresInventorySupply() && (!m_Inventory || !m_Kit))return false;
+  if (!m_Actor || !m_Target) return Invalid("performer or patient no longer exists");
+  if (m_Player && m_Player.GetControlledEntity() != m_Actor) return Invalid("controlled character changed");
+  if(RequiresInventorySupply() && (!m_Inventory || !m_Kit))return Invalid("reserved supply no longer exists");
   bool held=m_Kit && ChimeraCharacter.Cast(m_Actor).GetCharacterController().GetAttachedGadgetAtLeftHandSlot()==m_Kit;
-  if(RequiresInventorySupply() && !m_Inventory.Contains(m_Kit) && !held)return false;
-  if (!BCMM_TreatmentAccess.CanReach(m_Actor, m_Target) || !StillEligible()) return false;
+  if(RequiresInventorySupply() && !m_Inventory.Contains(m_Kit) && !held)return Invalid("reserved supply left your inventory");
+  if (!BCMM_TreatmentAccess.CanReach(m_Actor, m_Target)) return Invalid("patient out of reach, obstructed, or performer unable to treat");
+  if (!StillEligible()) return Invalid("patient condition, role or device eligibility changed");
   ChimeraCharacter actor = ChimeraCharacter.Cast(m_Actor);
-  if (actor.GetCharacterController().IsWeaponRaised()) return false;
-  if (!m_FieldClip.IsEmpty() && !BCMM_FieldClips.Supported(m_FieldClip,m_Actor,m_Target)) return false;
-  if (actor.GetCharacterController().IsUsingItem() && !held) return false;
-  return vector.Distance(m_Actor.GetOrigin(), m_StartPosition) <= BCMM_TreatmentAccess.Setting("treatmentMovementToleranceMetres");
+  if (actor.GetCharacterController().IsWeaponRaised()) return Invalid("weapon raised");
+  if (!m_FieldClip.IsEmpty() && !BCMM_FieldClips.Supported(m_FieldClip,m_Actor,m_Target)) return Invalid("procedure pose no longer supported");
+  if (actor.GetCharacterController().IsUsingItem() && !held) return Invalid("another item action is active");
+  if (vector.Distance(m_Actor.GetOrigin(), m_StartPosition) > BCMM_TreatmentAccess.Setting("treatmentMovementToleranceMetres")) return Invalid("performer moved too far");
+  return true;
  }
  protected void CheckProgress()
  {
@@ -169,7 +174,8 @@ class BCMM_SplintTreatment : ScriptedInventoryOperationCallback
   {
    string diagnostic;
    if (System.GetCLIParam("bcmmFieldProceduresRuntime", diagnostic)) PrintFormat("BCMM_FIELD_ABORT kind=%1 kit=%2 inventory=%3 reach=%4 ground=%5 drift=%6 eligible=%7", m_FieldClip, m_Kit != null, m_Inventory && m_Inventory.Contains(m_Kit), BCMM_TreatmentAccess.CanReach(m_Actor, m_Target), BCMM_FieldClips.IsGroundPatient(m_Target), vector.Distance(m_Actor.GetOrigin(), m_StartPosition), StillEligible());
-   if (m_Player) m_Player.BCMM_TreatmentFeedback(ProcedureName() + " cancelled; kit retained.");
+   PrintFormat("BCMM_PROCEDURE_CANCEL token=%1 action=%2 reason=%3", m_ProcedureToken, ProcedureName(), m_InvalidReason);
+   if (m_Player) m_Player.BCMM_TreatmentFeedback(ProcedureName() + " cancelled: " + m_InvalidReason + ".");
    Finish();
    return;
   }
@@ -199,7 +205,10 @@ class BCMM_SplintTreatment : ScriptedInventoryOperationCallback
   float grace = BCMM_TreatmentAccess.Setting("procedureCompletionGraceSeconds");
   if (m_UsesAnimation && ((!m_AnimationObserved && now > m_PreparationDeadline) || (m_AnimationEndedAt > 0 && !m_AnimationComplete && now > m_AnimationEndedAt + grace) || (m_AnimationObserved && now > m_Deadline + grace)))
   {
-   if (m_Player) m_Player.BCMM_TreatmentFeedback(ProcedureName() + " animation interrupted; kit retained.");
+   string reason = "native animation did not start";
+   if (m_AnimationObserved) reason = "native animation ended without completion";
+   PrintFormat("BCMM_PROCEDURE_CANCEL token=%1 action=%2 reason=%3", m_ProcedureToken, ProcedureName(), reason);
+   if (m_Player) m_Player.BCMM_TreatmentFeedback(ProcedureName() + " cancelled: " + reason + ".");
    Finish();
    return;
   }

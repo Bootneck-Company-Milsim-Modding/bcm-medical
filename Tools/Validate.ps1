@@ -1,5 +1,6 @@
-param([ValidateSet("Jeep","Truck","Helicopter","Ambulance")][string]$CargoVehicle="Truck", [ValidateSet("","seed","verify","verify-loss")][string]$FinitePersistencePhase="", [string]$NativeSaveId="", [ValidateSet("","seed","verify")][string]$WorldFaultPhase="", [switch]$FinitePersistenceRuntime, [switch]$WorldPersistenceFaultRuntime, [switch]$ArsenalRuntime, [switch]$OxygenMedicationRuntime, [switch]$OxygenRemovalRuntime, [switch]$FluidLineRuntime, [switch]$FluidBurdenRuntime, [switch]$LegacyFluidBurdenWorldRuntime, [switch]$FluidBurdenRestartRuntime, [switch]$FluidLineBoundaryRuntime, [switch]$FluidLinePersistenceRuntime, [switch]$FluidLineRestartRuntime, [switch]$MissingFluidLineRuntime, [switch]$MissingFluidLineRestartRuntime, [switch]$FluidsRuntime, [switch]$ClinicalSafetyRuntime, [switch]$WeaponSlingRuntime, [switch]$LivingTransportRuntime, [switch]$NativeConsumableCommitRuntime, [ValidateSet("","Access","SourceMove","FullHeal","Deferred","SameSourceHeal")][string]$NativeSalineScenario="", [switch]$RetrievedSalineRuntime, [switch]$RetrievedSalineRestartRuntime, [switch]$RetrievedSalineFullHeal, [switch]$OptionalClinicalStateRuntime, [switch]$OptionalClinicalStateRestartRuntime, [ValidateSet("bcmmNativeSaline","bcmmFluidLine","bcmmFluidBurden")][string]$OptionalClinicalStateField="bcmmNativeSaline", [switch]$NativeSalineInactive, [switch]$NativeSalineWorldRuntime, [switch]$NativeSalineWorldRestartRuntime, [switch]$TransportFluidLineRuntime, [switch]$TransportFluidLineRestartRuntime, [switch]$AppliedVisualsRuntime, [switch]$GripCoordinateRuntime, [switch]$StretcherRuntime, [ValidateSet("","Surgery","Suture","Splint")][string]$FieldAnimation = "", [switch]$FieldProceduresRuntime, [switch]$PulseOximeterRuntime, [switch]$PulseAudio, [switch]$TXARuntime, [switch]$AnimationRuntime, [switch]$EquipmentRuntime, [switch]$UISmoke, [switch]$FluidUI, [switch]$MedicationRuntime, [switch]$BandageRuntime, [switch]$InternalSurgeryRuntime, [switch]$AssessmentRuntime, [switch]$SurgeryRuntime, [switch]$SplintRuntime, [switch]$PickupRuntime, [switch]$DragRuntime, [switch]$LifeRuntime, [switch]$LifeAdminRestartRuntime, [switch]$ComponentRecoveryRuntime, [switch]$ComponentRecoveryRestartRuntime, [switch]$TerrainRuntime, [switch]$CargoRollbackRuntime, [switch]$RollbackRuntime, [switch]$TestResources, [string]$DiagnosticProject = '', [switch]$BaggingRuntime, [switch]$BurialRuntime, [switch]$BurialOwner, [switch]$SendHomeRuntime, [ValidateSet('','M997','USTent','USSRTent','FIATent')][string]$HomeFacility = '', [switch]$MedicalRuntime, [switch]$CargoRuntime, [switch]$Runtime, [switch]$ServerRuntime, [int]$ScreenWidth = 640, [int]$ScreenHeight = 480, [string]$ServerDirectory = '', [string]$ProfileDirectory = '', [ValidateSet('','seed','verify','recover')][string]$PersistencePhase = '')
+param([switch]$Beta01HoldRuntime, [switch]$Beta01StateRuntime, [ValidateSet("Jeep","Truck","Helicopter","Ambulance")][string]$CargoVehicle="Truck", [ValidateSet("","seed","verify","verify-loss")][string]$FinitePersistencePhase="", [string]$NativeSaveId="", [ValidateSet("","seed","verify")][string]$WorldFaultPhase="", [switch]$FinitePersistenceRuntime, [switch]$WorldPersistenceFaultRuntime, [switch]$ArsenalRuntime, [switch]$OxygenMedicationRuntime, [switch]$OxygenRemovalRuntime, [switch]$FluidLineRuntime, [switch]$FluidBurdenRuntime, [switch]$LegacyFluidBurdenWorldRuntime, [switch]$FluidBurdenRestartRuntime, [switch]$FluidLineBoundaryRuntime, [switch]$FluidLinePersistenceRuntime, [switch]$FluidLineRestartRuntime, [switch]$MissingFluidLineRuntime, [switch]$MissingFluidLineRestartRuntime, [switch]$FluidsRuntime, [switch]$ClinicalSafetyRuntime, [switch]$WeaponSlingRuntime, [switch]$LivingTransportRuntime, [switch]$NativeConsumableCommitRuntime, [ValidateSet("","Access","SourceMove","FullHeal","Deferred","SameSourceHeal")][string]$NativeSalineScenario="", [switch]$RetrievedSalineRuntime, [switch]$RetrievedSalineRestartRuntime, [switch]$RetrievedSalineFullHeal, [switch]$OptionalClinicalStateRuntime, [switch]$OptionalClinicalStateRestartRuntime, [ValidateSet("bcmmNativeSaline","bcmmFluidLine","bcmmFluidBurden")][string]$OptionalClinicalStateField="bcmmNativeSaline", [switch]$NativeSalineInactive, [switch]$NativeSalineWorldRuntime, [switch]$NativeSalineWorldRestartRuntime, [switch]$TransportFluidLineRuntime, [switch]$TransportFluidLineRestartRuntime, [switch]$AppliedVisualsRuntime, [switch]$GripCoordinateRuntime, [switch]$StretcherRuntime, [ValidateSet("","Surgery","Suture","Splint")][string]$FieldAnimation = "", [switch]$FieldProceduresRuntime, [switch]$PulseOximeterRuntime, [switch]$PulseAudio, [switch]$TXARuntime, [switch]$AnimationRuntime, [switch]$EquipmentRuntime, [switch]$UISmoke, [switch]$FluidUI, [switch]$MedicationRuntime, [switch]$BandageRuntime, [switch]$InternalSurgeryRuntime, [switch]$AssessmentRuntime, [switch]$SurgeryRuntime, [switch]$SplintRuntime, [switch]$PickupRuntime, [switch]$DragRuntime, [switch]$Beta01DragMatrixRuntime, [switch]$LifeRuntime, [switch]$LifeAdminRestartRuntime, [switch]$ComponentRecoveryRuntime, [switch]$ComponentRecoveryRestartRuntime, [switch]$TerrainRuntime, [switch]$CargoRollbackRuntime, [switch]$RollbackRuntime, [switch]$TestResources, [string]$DiagnosticProject = '', [switch]$BaggingRuntime, [switch]$BurialRuntime, [switch]$BurialOwner, [switch]$SendHomeRuntime, [ValidateSet('','M997','USTent','USSRTent','FIATent')][string]$HomeFacility = '', [switch]$MedicalRuntime, [switch]$CargoRuntime, [switch]$Runtime, [switch]$ServerRuntime, [int]$ScreenWidth = 640, [int]$ScreenHeight = 480, [string]$ServerDirectory = '', [string]$ProfileDirectory = '', [ValidateSet('','seed','verify','recover')][string]$PersistencePhase = '')
 $ErrorActionPreference = 'Stop'
+if ($Beta01HoldRuntime) { $BaggingRuntime = $true; $Runtime = $true }
 if($BurialOwner){if($ServerRuntime){throw 'BurialOwner requires local native player'};$BurialRuntime=$true;$Runtime=$true}
 # A requested runtime fixture must launch the game, never merely validate Workbench scripts.
 foreach ($fixtureSwitch in $PSBoundParameters.Keys) {
@@ -38,6 +39,7 @@ if ($ServerRuntime) {
  if ($ServerDirectory) { $serverRoot = $ServerDirectory } else { $serverLocationFile = Join-Path $projectRoot '..\BCM NID AceCompat\.dedicated\server-location.txt'; $serverRoot = (Get-Content -LiteralPath $serverLocationFile -Raw).Trim() }
  $executable = Join-Path $serverRoot 'ArmaReforgerServerDiag.exe'
  $modeArguments = '-server "worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent" -addons B6C4ED1CA1260002 -noBackend -disableCrashReporter -noSound -noThrow -maxFPS 60'
+ # Direct diagnostic -server worlds use the default RPL port; serialize these fixtures.
 }
 # Only the new project, its diagnostic addon and native game directory are exposed.
 if($BurialRuntime -or $TerrainRuntime){$modeArguments=$modeArguments.Replace('worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent','Worlds/BCMM_TerrainChecks.ent')}
@@ -61,7 +63,8 @@ if($FluidLinePersistenceRuntime -or $FluidLineRestartRuntime){$arguments+=' -wor
 if ($OxygenMedicationRuntime) { $arguments += " -bcmmOxygenMedicationRuntime 1" }
 if ($FluidsRuntime) { $arguments += " -bcmmFluidsRuntime 1" }
 if($LivingTransportRuntime){$arguments+=" -bcmmLivingTransportRuntime 1"}
-if($WeaponSlingRuntime){$arguments+=" -bcmmWeaponSlingRuntime 1"}
+if($Beta01StateRuntime){$deadline=(Get-Date).AddSeconds(180)}
+ if($WeaponSlingRuntime){$arguments+=" -bcmmWeaponSlingRuntime 1"}
 if ($ClinicalSafetyRuntime) { $arguments += ' -bcmmClinicalSafetyRuntime 1' }
 if($RetrievedSalineRuntime -or $RetrievedSalineRestartRuntime -or $OptionalClinicalStateRuntime -or $OptionalClinicalStateRestartRuntime){$arguments+=' -worldSystemsConfig "{C50579A2EC48E8EF}Configs/Systems/MissionSystems.conf" -keepSessionSave '}
 if($RetrievedSalineRuntime){$arguments+=' -bcmmRetrievedSalineSeed 1'}
@@ -112,6 +115,10 @@ if ($HomeFacility) { $arguments += ' -bcmmHomeFacility ' + $HomeFacility }
 if ($PersistencePhase) { $arguments += ' -bcmmPersistencePhase ' + $PersistencePhase }
 $arguments += ' -bcmmRunToken ' + $runToken
 $arguments = $arguments.Replace(' -screenWidth 640 -screenHeight 480 ', (' -screenWidth '+$ScreenWidth+' -screenHeight '+$ScreenHeight+' '))
+if ($Beta01StateRuntime) { $arguments += ' -bcmmBeta01State 1' }
+if ($Beta01DragMatrixRuntime) { $arguments += ' -bcmmBeta01DragMatrix 1' }
+if ($TerrainRuntime) { $arguments += ' -bcmmTerrainDrag 1' }
+if ($Beta01HoldRuntime) { $arguments += ' -bcmmBeta01Hold 1' }
 $runStarted = Get-Date
 New-Item -ItemType Directory -Path $profile -Force | Out-Null
 & (Join-Path $PSScriptRoot 'Test-ResourceGuids.ps1') -ProjectRoot $projectRoot -ReportPath (Join-Path $profile 'resource-guid-audit.json')
@@ -119,11 +126,12 @@ $validationSources=@(Get-ChildItem (Join-Path $projectRoot 'Scripts'),(Join-Path
 $validationManifest=[ordered]@{RunToken=$runToken;Project='BCM Medical';StartedUtc=$runStarted.ToUniversalTime().ToString('o');Sources=@($validationSources | Sort-Object FullName -Unique | ForEach-Object { [ordered]@{Path=$_.FullName.Substring($projectRoot.Length+1);SHA256=(Get-FileHash $_.FullName).Hash} })}
 if($DiagnosticProject){$validationManifest.DiagnosticProject=$project;$validationManifest.DiagnosticSources=@(Get-ChildItem (Split-Path $project -Parent) -Recurse -File | Sort-Object FullName | ForEach-Object {[ordered]@{Path=$_.FullName.Substring($projectRoot.Length+1);SHA256=(Get-FileHash $_.FullName).Hash}})}
 [IO.File]::WriteAllText((Join-Path $profile 'validation-manifest.json'),($validationManifest|ConvertTo-Json -Depth 5),[Text.UTF8Encoding]::new($false))
-$process = Start-Process -FilePath $executable -ArgumentList $arguments -WindowStyle Hidden -PassThru
+$process = Start-Process -FilePath $executable -WorkingDirectory (Split-Path $executable -Parent) -ArgumentList $arguments -WindowStyle Hidden -PassThru
 $passed = $false
 $console = $null
 try {
  $deadline = (Get-Date).AddSeconds(60)
+ if($Beta01StateRuntime){$deadline=(Get-Date).AddSeconds(180)}
  if($WeaponSlingRuntime){$deadline=(Get-Date).AddSeconds(100)}
  if($NativeSalineWorldRestartRuntime -or $RetrievedSalineRestartRuntime){$deadline=(Get-Date).AddSeconds(150)}
  if($FluidBurdenRuntime -or $FluidBurdenRestartRuntime){$deadline=(Get-Date).AddSeconds(180)}
@@ -152,4 +160,5 @@ if ($console) {
  Select-String -LiteralPath $console.FullName -Pattern 'BCMM_CHECK|validation successful|SCRIPT.*\(E\)|addons|Addon' | Select-Object -Last 20 | ForEach-Object { $_.Line }
  Write-Output ('Log: ' + $console.FullName)
 }
+if ($TerrainRuntime -and (!$console -or !(Select-String -LiteralPath $console.FullName -Pattern 'BCMM_TERRAIN_DRAG_COMPLETE cases=6' -Quiet))) { $passed=$false }
 if (!$passed) { throw 'Validation did not pass. Inspect the saved console log.' }

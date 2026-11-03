@@ -208,6 +208,7 @@ class BCMM_VehicleLifecycleChecks
   BCMM_BagStorageComponent.Cast(m_Bag.FindComponent(BCMM_BagStorageComponent)).SetTransferring(false);
   BCMM_BodyBagComponent state = BCMM_BodyBagComponent.Cast(m_Bag.FindComponent(BCMM_BodyBagComponent));
   Check(BCMM_CargoOperation.Begin(m_Actor, m_Vehicle, m_Bag, true, state.Revision()), "Medical cargo operation starts on ordinary native vehicle");
+  if (m_Failures) { Finish(); return; }
   GetGame().GetCallqueue().CallLater(Loaded, 2000, false);
  }
  protected void Loaded()

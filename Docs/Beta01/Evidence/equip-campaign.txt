@@ -1,0 +1,864 @@
+---------------------------------------------
+Log C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-item-review-20261102-093224-436\logs\logs_2026-11-02_09-32-24\console.log started at 2026-11-02 09:32:24 (2026-11-02 09:32:24 UTC)
+
+09:32:24.606 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-item-review-20261102-093224-436\logs\logs_2026-11-02_09-32-24' to filesystem under name logs
+09:32:24.606 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-item-review-20261102-093224-436\profile' to filesystem under name profile
+09:32:24.606 ENGINE       : FileSystem: Current working directory: 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\'
+09:32:24.607 ENGINE       : Initializing engine, version 192142
+09:32:24.607 ENGINE       : CLI Params: -gproj C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\Tests\Runtime\addon.gproj -profile C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-item-review-20261102-093224-436 -addonsDir C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical,C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\Tests\Runtime,C:\Program Files (x86)\Steam\steamapps\common\Arma Reforger\addons -world worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent -addons B6C4ED1CA1260002 -noBackend -disableCrashReporter -noSound -noThrow -forceUpdate -window -screenWidth 1600 -screenHeight 1000 -posX 0 -posY 0 -maxFPS 30 -bcmmUIPreview 1 -bcmmBeta01Items 1 -bcmmBeta01EquipCycles 200
+09:32:24.615 ENGINE       : Addon dirs:
+09:32:24.615  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/Tests/Runtime/'
+09:32:24.615  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical'
+09:32:24.615  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/Tests/Runtime'
+09:32:24.615  ENGINE       : dir: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons'
+09:32:24.615  ENGINE       : dir: './addons'
+09:32:24.615  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-item-review-20261102-093224-436/addons'
+09:32:24.615 ENGINE       : Available addons:
+09:32:24.615  ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/Tests/Runtime/addon.gproj' guid: 'B6C4ED1CA1260002'
+09:32:24.615  ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/addon.gproj' guid: '6AB4B3F3FD215919'
+09:32:24.615  ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/core.gproj' guid: '5614BBCCBB55ED1C' (packed)
+09:32:24.615  ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/ArmaReforger.gproj' guid: '58D0FB3206B6F859' (packed)
+09:32:24.615 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\Tests\Runtime' to filesystem under name BCM_Medical_DomainChecks
+09:32:24.615 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical' to filesystem under name MCBMedical
+09:32:24.711 ENGINE       : FileSystem: Adding package 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/' (pak count: 14) to filesystem under name ArmaReforger
+09:32:24.715 ENGINE       : FileSystem: Adding package 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/' (pak count: 2) to filesystem under name core
+09:32:24.715 ENGINE       : CPU vendor         : GenuineIntel
+09:32:24.715 ENGINE       : CPU type           : 1
+09:32:24.715 ENGINE       : CPU name           : 12th Gen Intel(R) Core(TM) i7-12700K
+09:32:24.715 ENGINE       : CPU cache info     : L1 [Inst 64KB, Data 48KB], L2 [Unif 2048KB], L3 [Unif 25600KB]
+09:32:24.715 ENGINE       : CPU count logical  : 20
+09:32:24.715 ENGINE       : CPU count physical : 12
+09:32:24.715 ENGINE       : CPU features       : mmx sse sse2 sse3 ssse3 sse4_1 sse4_2 popcnt aesni pclmulqdq osxsave avx sha avx2
+09:32:24.715 RESOURCES    : ResourceDB: loading cache (id=0 name=BCM_Medical_DomainChecks path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\Tests\Runtime/resourceDatabase.rdb)
+09:32:24.715 RESOURCES    : ResourceDB: loading cache (id=1 name=MCBMedical path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical/resourceDatabase.rdb)
+09:32:24.717 RESOURCES    : ResourceDB: loading cache (id=2 name=ArmaReforger path=C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/resourceDatabase.rdb)
+09:32:24.815 RESOURCES    : ResourceDB: loading cache (id=3 name=core path=C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/resourceDatabase.rdb)
+09:32:24.816 RESOURCES    : ResourceDB: loading cache (id=4 name=profile path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-item-review-20261102-093224-436\profile/resourceDatabase.rdb)
+09:32:24.816 RESOURCES    : ResourceDB: loading cache (id=5 name=logs path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-item-review-20261102-093224-436\logs\logs_2026-11-02_09-32-24/resourceDatabase.rdb)
+09:32:24.922 ENGINE       : GameProject load
+09:32:24.922  ENGINE       : Loaded addons:
+09:32:24.922   ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/core.gproj' guid: '5614BBCCBB55ED1C'
+09:32:24.922   ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/ArmaReforger.gproj' guid: '58D0FB3206B6F859'
+09:32:24.922   ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/addon.gproj' guid: '6AB4B3F3FD215919'
+09:32:24.922   ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/Tests/Runtime/addon.gproj' guid: 'B6C4ED1CA1260002'
+09:32:24.923 ENGINE       : Loading custom engine user config '$profile:.save/app1874880_user76561198093323465/settings/ReforgerEngineSettings.conf'
+09:32:24.923 ENGINE       : No Enfusion settings file loaded. Continuing with defaults
+09:32:24.923 ENGINE       : Locale info: system en-GB (English), user en-GB (English)
+09:32:25.097 RENDER       : (OK) Adapter 'NVIDIA GeForce RTX 5070 Ti' supports feature level 12_0
+09:32:25.150 RENDER       : (OK) Adapter 'Intel(R) UHD Graphics 770' supports feature level 12_0
+09:32:25.155 RENDER       : Adapter 1 (Intel(R) UHD Graphics 770) failed to provide some output
+09:32:25.155 RENDER       : Basic screen setup:
+09:32:25.155 RENDER       :   Back buffer width x height: 1600x1000
+09:32:25.155 RENDER       :   Back buffer format	       : TEXFMT_R8G8B8A8_SRGB (29)
+09:32:25.155 RENDER       :   MSAA                      : none
+09:32:25.168 RENDER       : Driver for NVIDIA GeForce RTX 5070 Ti is from 22.7.2026 (3 months, 14 days old)
+09:32:25.168 RENDER       : GPU_NVIDIA (0x10DE) (NVIDIA GeForce RTX 5070 Ti) with 1 GPU detected, VRAM 15995MB (fast 0MB), shared 16274MB, driver version 610.88
+09:32:25.168 RENDER       : Detected output devices:
+09:32:25.168 RENDER       :  * 2 device/s connected to NVIDIA GeForce RTX 5070 Ti:
+09:32:25.168 RENDER       :    Generic PnP Monitor (\\.\DISPLAY1), 3840x2160 (offset 0x0), 60Hz
+09:32:25.168 RENDER       :    Generic PnP Monitor (\\.\DISPLAY2), 1920x1080 (offset 1065x-1080), 144Hz
+09:32:25.168 RENDER       :  * no output device connected to Intel(R) UHD Graphics 770
+09:32:25.168 RENDER       :   Concurrent frames limit 2
+09:32:25.346 RENDER       : Graphics device features
+09:32:25.346 RENDER       :  Needed:
+09:32:25.346 RENDER       :  * Highest supported shader model: 6.8 (6.0 needed)
+09:32:25.346 RENDER       :  Optional:
+09:32:25.346 RENDER       :  * Allow tearing (VSYNC) : 1
+09:32:25.346 RENDER       :  * 16 bits : 1
+09:32:25.346 RENDER       :  * Resource heap tier : 3
+09:32:25.346 RENDER       :  * Persistent heaps (DRED) : 1
+09:32:25.346 RENDER       :  * DRED 1.2 is supported by compiler
+09:32:25.380 RENDER       : Main RT format setup.
+09:32:25.380 RENDER       :   Main RT format for quality 0	: TEXFMT_R11G11B10_FLOAT (26)
+09:32:25.380 RENDER       :   Main RT format for quality 1	: TEXFMT_R16G16B16A16_FLOAT (10)
+09:32:25.388 ENGINE       : Job system settings: coreCount=20, shortJobContextCount=16, shortJobThreadCount=15, longJobThreadCount=7
+09:32:25.407 PROFILING    : Settings changed took: 1.244300 ms
+09:32:25.416 INPUT        : NPClient: interface -- initialize OK.
+09:32:25.416 INPUT        : NPClient: Window handle registration successful.
+09:32:25.416 INPUT        : NPClient: NaturalPoint software version is 5.0
+09:32:25.416 INPUT        : NPClient: Cursor stopped
+09:32:25.416 INPUT        : NPClient: Data transmission started
+09:32:25.416  RENDER       : RENDER       : Reload shaders
+09:32:25.416  RENDER       : Enfusion shader version 13
+09:32:25.416   INIT         : INIT         : ShaderListReload
+09:32:25.416  PROFILING    : ShaderListReload took: 0.000300 ms
+09:32:25.664  RENDER       : Loaded 3752 newer shader binaries
+09:32:25.664 PROFILING    : Reload shaders took: 248.380200 ms
+09:32:25.674 ENGINE       : Initializing inputs.
+09:32:25.679 NETWORK      : Initializing networking.
+09:32:25.679 NETWORK      : Using new GameRplScheduler.
+09:32:25.680  SCRIPT       : SCRIPT       : Initializing scripts
+09:32:25.680   SCRIPT       : SCRIPT       : ScriptProjectManager init
+09:32:25.680  PROFILING    : ScriptProjectManager init took: 0.010400 ms
+09:32:25.701 PROFILING    : Initializing scripts took: 21.229600 ms
+09:32:25.701 BACKEND      : Backend Services are disabled.
+09:32:25.701 ENGINE       : Enfusion engine successfully created.
+09:32:25.745 DEFAULT   (W): LogiLED: Cannot initialize! (service not running or no compatible device detected)
+09:32:25.759 GUI          : Using default language (en_us)
+09:32:25.759 GUI          : Loading 'en_us' localization file.
+09:32:25.759  INIT         : INIT         : Loading StringTable
+09:32:25.777 PROFILING    : Loading StringTable took: 18.000700 ms
+09:32:25.777  SCRIPT       : SCRIPT       : Compiling GameLib scripts
+09:32:25.805  SCRIPT       : Module: GameLib; loaded 465x files; 607x classes; used 775K of static memory; defines: "ENF_WB,PLATFORM_WINDOWS,ENABLE_DIAG,ENF_ENABLE_VHC_OVERRIDE,ENF_ENABLE_RPLCOMPONENT_IN_GAMECODE"; CRC32: 4507af04
+09:32:25.806 PROFILING    : Compiling GameLib scripts took: 28.678800 ms
+09:32:25.806 RESOURCES    : GetResourceObject @"{1C71B463B3B66BAB}UI/layouts/Menus/MainMenu/IntroSplashScreen.layout"
+09:32:25.806  GUI          : Layout load @"{1C71B463B3B66BAB}UI/layouts/Menus/MainMenu/IntroSplashScreen.layout"
+09:32:25.806   GUI       (E): Unknown class 'SCR_WidgetExportRuleRoot' at offset 282(0x11a)
+09:32:25.947  SCRIPT       : SCRIPT       : Compiling Game scripts
+09:32:26.729 SCRIPT       : Compiling Game scripts
+09:32:26.729  SCRIPT    (W): @"Scripts/Game/Editor/Components/EditableEntity/SCR_EditableEntityComponent.c,785": 'GetPlayerPlatformKind' is obsolete
+09:32:26.729  SCRIPT    (W): @"Scripts/Game/Editor/Components/EditableEntity/SCR_EditableEntityComponent.c,786": 'GetPlayerPlatformId' is obsolete
+09:32:26.947  SCRIPT    (W): @"Scripts/Game/Workshop/SCR_AddonManager.c,876": 'GetRefCount' is obsolete: Will be removed
+09:32:26.975  SCRIPT    (W): @"Scripts/Game/Campaign/SCR_PlayerProfileManagerComponent.c,142": 'PlayerData' is obsolete
+09:32:27.049  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,159": 'GetDSSession' is obsolete
+09:32:27.049  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,162": 'RoomID' is obsolete
+09:32:27.049  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,197": 'GetDSSession' is obsolete
+09:32:27.049  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,201": 'RoomID' is obsolete
+09:32:27.115  SCRIPT    (W): @"Scripts/Game/DataCollection/SCR_DataCollectorComponent.c,481": 'GetStorage' is obsolete
+09:32:27.115  SCRIPT    (W): @"Scripts/Game/DataCollection/SCR_DataCollectorComponent.c,483": 'GetOnlineWritePrivilege' is obsolete
+09:32:27.117  SCRIPT    (W): @"Scripts/Game/Utilities/SCR_PlayerIdentityUtils.c,20": 'GetPlayerIdentityId' is obsolete
+09:32:27.148  SCRIPT    (W): @"Scripts/Game/UI/Menu/MainMenuUI.c,643": 'GetNotifyCount' is obsolete: Will be substitued by Notification Api.
+09:32:27.148  SCRIPT    (W): @"Scripts/Game/UI/Menu/MainMenuUI.c,645": 'GetNotifyItem' is obsolete: Will be substitued by Notification Api.
+09:32:27.189  SCRIPT    (W): @"Scripts/Game/DataCollection/PlayerData/SCR_PlayerData.c,210": 'PlayerData' is obsolete
+09:32:27.283  SCRIPT       : Module: Game; loaded 5830x files; 11896x classes; used 33516K of static memory; defines: "ENF_WB,PLATFORM_WINDOWS,ENABLE_DIAG,ENF_ENABLE_VHC_OVERRIDE,ENF_ENABLE_RPLCOMPONENT_IN_GAMECODE,ENABLE_BASE_DESTRUCTION,BUDGET_OPTIMIZATION_CHECKS,DEBUG,RESPAWN_TIMER_COMPONENT_DEBUG,GAME_MODE_DEBUG,DEBUG_CONFIGURABLE_DIALOGS,DISABLE_WEAPON_SWITCHING,SCRIPTED_AIM_MODIFIER_DEBUG"; CRC32: cbb34620
+09:32:27.325 PROFILING    : Compiling Game scripts took: 1377.949700 ms
+09:32:27.325 INIT         : Creating game instance(ArmaReforgerScripted), version 1.8.0.13 built 2026-08-21 14:30:18 UTC.
+09:32:27.353 ENGINE       : Game successfully created.
+09:32:27.403 PLATFORM     : Save data from container 'settings' have been loaded
+09:32:27.500 PLATFORM     : Save data from container 'sessions' have been loaded
+09:32:27.999 PLATFORM     : System language differs from the saved one - using new language {new: 'en_us'; old: ''}
+09:32:28.000 PLATFORM     : Save data transaction to 'settings' started.
+09:32:28.099 DEFAULT      : [SaveGameManager] Starting new playthrough nr.0 '' for mission 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'.
+09:32:28.100  WORLD        : WORLD        : Entities load 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'
+09:32:28.103 WORLD        : Entities load 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'
+09:32:28.103  RESOURCES (E): Wrong GUID/name for resource @"{0000000000000000}(null)" in property "m_sLoadingLayout"
+09:32:28.108 PROFILING    : Entities load took: 8.229800 ms
+09:32:28.109  WORLD        : WORLD        : Game::LoadEntities
+09:32:28.109   WORLD        : WORLD        : Initializing world systems
+09:32:28.110   NETWORK      : Enabled lag compensation, 29 frames with 100 FPS and 280 ms rewind limits.
+09:32:28.110   WORLD        : WORLD        : CreateEntities
+09:32:28.110    WORLD        : WORLD        : CreateEntities
+09:32:28.110     WORLD        : WORLD        : NotifyBeforeEntitiesCreated
+09:32:28.112     RESOURCES    : Loaded mission headers from 4 addon(s)!
+09:32:28.112    PROFILING    : NotifyBeforeEntitiesCreated took: 2.379600 ms
+09:32:28.112     WORLD        : WORLD        : Wait for preloading data
+09:32:28.112    PROFILING    : Wait for preloading data took: 0.000300 ms
+09:32:28.126    ENTITY       : Create entity @"ENTITY:2" ('MPTestTerrain', GenericTerrainEntity) at <0.000000 1.000000 0.000000>
+09:32:28.126      PROFILING    : PROFILING    : Terrain load
+09:32:28.138     PROFILING    : Terrain load took: 12.184400 ms
+09:32:28.152 WORLD        : Game::LoadEntities
+09:32:28.152  WORLD        : CreateEntities
+09:32:28.152   WORLD        : CreateEntities
+09:32:28.152    ENTITY       : Create entity @"ENTITY:4611686018427387905" ('SCR_AIWorld') at <107.915001 1.000000 159.473999> @"{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et"
+09:32:28.152     PATHFINDING   : Navmesh Init 'Soldiers'
+09:32:28.152      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+09:32:28.152     PATHFINDING   : Navmesh Init 'BTRlike'
+09:32:28.152      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+09:32:28.152     PATHFINDING   : Navmesh Init 'LowRes'
+09:32:28.152      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+09:32:28.428     WORLD        : WORLD        : NotifyBeforeEntitiesInitialized
+09:32:28.428    PROFILING    : NotifyBeforeEntitiesInitialized took: 0.013800 ms
+09:32:28.430    WORLD        : InitEntities 'world'
+09:32:28.430     ENTITY       : Init entity @"ENTITY:4611686018427387906" ('GameMode_Plain1', SCR_BaseGameMode) at <123.265999 1.000000 136.613998>
+09:32:28.430      SCRIPT    (W): SCR_PerceivedFactionManagerComponent trying to set fall back faction 'CIV' but this faction could not be found so it is null instead.
+09:32:28.430     WORLD        : WORLD        : NotifyEntitiesInitialized
+09:32:28.430      TERRAIN      : TERRAIN      : Initializing road networks...
+09:32:28.430     PROFILING    : Initializing road networks... took: 0.000300 ms
+09:32:28.430      DEFAULT      : DEFAULT      : WorldVolumesCollection
+09:32:28.430     PROFILING    : WorldVolumesCollection took: 0.004000 ms
+09:32:28.430    PROFILING    : NotifyEntitiesInitialized took: 0.062800 ms
+09:32:28.430   PROFILING    : CreateEntities took: 320.829800 ms
+09:32:28.430  PROFILING    : CreateEntities took: 320.836900 ms
+09:32:28.430   WORLD        : WORLD        : EOnActivate
+09:32:28.430  PROFILING    : EOnActivate took: 0.067500 ms
+09:32:28.430 PROFILING    : Game::LoadEntities took: 321.872200 ms
+09:32:28.430 PROFILING    : * LoadEntities: 321.891700 ms
+09:32:28.633 DEFAULT      : Entered offline game state.
+09:32:28.733 PROFILING    : Settings changed took: 0.518900 ms
+09:32:28.735 NETWORK      : Player connected: connectionID=2147483646
+09:32:28.735 NETWORK      : ### Connecting player: connectionID=2147483646, Name=
+09:32:28.735 NETWORK      : ### Creating player: PlayerId=1, Name=TacticalBootneck
+09:32:28.740 ENTITY       : SpawnEntityPrefab @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+09:32:28.740  ENTITY       : Create entity @"ENTITY:6917529027641081863" ('SCR_PlayerController') at <0.000000 0.000000 0.000000>
+09:32:28.740   ENTITY       : EntityPrefabUse @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+09:32:28.740    SCRIPT    (W): Notification data in 'SCR_NotificationsLogDisplay' has duplicate notification info key: 'EDITOR_PERCEIVED_FACTION_PUNISHMENT_KILLING_SET'. There should only be one of each key!
+09:32:28.740    SCRIPT    (W): Notification data in 'SCR_NotificationsLogDisplay' has duplicate notification info key: 'EDITOR_PERCEIVED_FACTION_TYPE_DISABLED'. There should only be one of each key!
+09:32:28.742   SCRIPT    (W): Can't open config file ""
+09:32:28.742   SCRIPT    (W): Cannot update game blocklist. Backend is offline.
+09:32:28.742  WORLD        : InitEntities 'world'
+09:32:28.742   ENTITY       : Init entity @"ENTITY:6917529027641081863" ('SCR_PlayerController') at <0.000000 0.000000 0.000000> @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+09:32:28.742    DEFAULT   (W): Chat not available - missing ChatEntity. Only printing this message once. There're possibly more nodes with this requirement.
+09:32:28.757    GUI          : WidgetManager: CrateWidgets @"{3C9DCDD76AB83157}UI/layouts/HUD/HUDLayouts/HUDManager_Root.layout"
+09:32:28.757     SCRIPT    (W): Slot_WeaponInfo Has no Content!
+09:32:28.757     SCRIPT    (W): Slot_Chat Has no Content!
+09:32:28.757     SCRIPT    (W): Slot_VON Has no Content!
+09:32:28.757     SCRIPT    (W): Slot_AvailableActions Has no Content!
+09:32:28.757     SCRIPT    (W): Slot_Vehicle Has no Content!
+09:32:28.757     SCRIPT    (W): Slot_GameVersion Has no Content!
+09:32:28.757     SCRIPT    (W): Slot_Notifications Has no Content!
+09:32:28.757     SCRIPT    (W): Slot_Hints Has no Content!
+09:32:28.758 ENTITY       : SpawnEntityPrefab @"{788933FFDC706A68}Prefabs/Editor/EditorManager.et"
+09:32:28.758  ENTITY       : Create entity @"ENTITY:6917529027641081864" ('SCR_EditorManagerEntity') at <0.000000 0.000000 0.000000> @"{788933FFDC706A68}Prefabs/Editor/EditorManager.et"
+09:32:28.758   ENTITY       : CreateComponent 'BaseRadioComponent'
+09:32:28.758    DEFAULT   (W): World doesn't contain RadioManagerEntity to support any BaseRadioComponent.
+09:32:28.767 NETWORK      : ### Updating player: PlayerId=1, Name=TacticalBootneck, rplIdentity=0xFFFFFFFE, IdentityId=00000000-0000-0000-0000-000000000000
+09:32:28.767 SCRIPT    (W): Ban Settings could not be loaded from BE Storage: Relying on default config
+09:32:28.767 NETWORK      : Players connecting: 0
+09:32:28.767 NETWORK      : Players connected: 1 / 1
+09:32:28.779 WORLD        : Frame start
+09:32:28.779  SCRIPT       : ScenarioFramework: Available tasks are empty, no new tasks will be generated.
+09:32:28.780 WORLD        : UpdateEntities
+09:32:28.780  WORLD        : Frame
+09:32:28.780   SCRIPT       : SCR_BaseGameMode::OnGameStateChanged = GAME
+09:32:28.840 WORLD        : UpdateEntities
+09:32:28.840  WORLD        : PostFrame
+09:32:28.840   GUI          : WidgetManager: CrateWidgets @"{D89BBA18F99053D6}UI/layouts/HUD/Chat/ChatHud.layout"
+09:32:28.840    SCRIPT    (W): EditBoxFilterComponent used on invalid widget type.
+09:32:28.884   RESOURCES    : GetResourceObject @"{20A6917D2114E29A}UI/layouts/HUD/Hint/HintInfoDisplay.layout"
+09:32:28.884    GUI          : Layout load @"{20A6917D2114E29A}UI/layouts/HUD/Hint/HintInfoDisplay.layout"
+09:32:28.884     GUI          : Widget prefab @"{EA1CC57D868E94F9}UI/layouts/HUD/Hint/Hint.layout"
+09:32:28.884      GUI       (W): Overridden prefab member (GUID: '{661AB14E0F471C66}' type: ButtonWidgetClass) no longer exists in prefab
+09:32:28.967  RENDER       : RENDER       : ObjectsHeightMap::Build
+09:32:28.967   RENDER       : RENDER       : MeshOccupancyGridManager::GenerateAllForWorld
+09:32:28.967  PROFILING    : MeshOccupancyGridManager::GenerateAllForWorld took: 0.003900 ms
+09:32:28.973 PROFILING    : ObjectsHeightMap::Build took: 5.013000 ms
+09:32:30.345 SCRIPT       : BCMM_NET_BODY player=1 assigned=1
+09:32:30.358 SCRIPT       : BCMM_UI_PREVIEW_READY press H
+09:32:30.358 RESOURCES (E): Wrong GUID/name for resource @"{B6C4ED1CA126B001}Prefabs/BCMM_Beta01ReviewCrate.et" in property "(null)"
+09:32:30.358 ENTITY       : SpawnEntityPrefab @"{B6C4ED1CA126B001}Prefabs/BCMM_Beta01ReviewCrate.et"
+09:32:30.358  WORLD        : InitEntities 'world'
+09:32:30.358   ENTITY       : Init entity @"ENTITY:6917529027641081929" ('GenericEntity') at <101.000000 1.200000 0.000000> @"{B6C4ED1CA126B001}Prefabs/BCMM_Beta01ReviewCrate.et"
+09:32:30.358    RPL       (E): Attempting to insert an entity with invalid prefab resource GUID @"{B6C4ED1CA126B001}".
+09:32:30.402 SCRIPT       : BCMM_BETA_ITEM resource={D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et inserted=1 dimensions=<0.0929718,0.0421149,0.095677>
+09:32:30.544 SCRIPT       : BCMM_BETA_ITEM resource={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et inserted=1 dimensions=<0.0667877,0.0262419,0.084284>
+09:32:30.679 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216025}Prefabs/Items/BCMM_AED.et inserted=1 dimensions=<0.293793,0.302,0.082018>
+09:32:30.779 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216026}Prefabs/Items/BCMM_AEDPads.et inserted=1 dimensions=<0.242004,0.15784,0.048576>
+09:32:30.877 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216022}Prefabs/Items/BCMM_AirwayAdjunct.et inserted=1 dimensions=<0.0667877,0.0262419,0.084284>
+09:32:30.978 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216024}Prefabs/Items/BCMM_BVM.et inserted=1 dimensions=<0.219208,0.084048,0.322>
+09:32:31.077 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216027}Prefabs/Items/BCMM_ChestDrain.et inserted=1 dimensions=<0.0667877,0.0262419,0.0842839>
+09:32:31.211 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216020}Prefabs/Items/BCMM_ChestSeal.et inserted=1 dimensions=<0.0131378,0.172,0.172>
+09:32:31.312 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216007}Prefabs/Items/BCMM_DragRope.et inserted=1 dimensions=<0.96315,0.0948721,0.493716>
+09:32:31.444 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216006}Prefabs/Items/BCMM_EmptyBodyBag.et inserted=1 dimensions=<0.200478,0.0438491,0.306483>
+09:32:31.545 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et inserted=1 dimensions=<0.019928,0.0199339,0.142>
+09:32:31.644 SCRIPT       : BCMM_BETA_ITEM resource={D0F8A8C2097AA101}Prefabs/Items/BCMM_Fentanyl.et inserted=1 dimensions=<0.019577,0.019573,0.142>
+09:32:31.745 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216029}Prefabs/Items/BCMM_FluidBag.et inserted=1 dimensions=<0.0419006,0.242,0.10883>
+09:32:31.845 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216030}Prefabs/Items/BCMM_Monitor.et inserted=1 dimensions=<0.281998,0.262982,0.116588>
+09:32:31.944 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216012}Prefabs/Items/BCMM_Morphine.et inserted=1 dimensions=<0.0185852,0.0185859,0.142>
+09:32:32.044 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216013}Prefabs/Items/BCMM_Naloxone.et inserted=1 dimensions=<0.019577,0.0195731,0.142>
+09:32:32.145 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216021}Prefabs/Items/BCMM_NCD.et inserted=1 dimensions=<0.019577,0.0195731,0.142>
+09:32:32.245 SCRIPT       : BCMM_BETA_ITEM resource={D0F8A8C2097AA103}Prefabs/Items/BCMM_Oxygen.et inserted=1 dimensions=<0.118469,0.020794,0.222>
+09:32:32.344 SCRIPT       : BCMM_BETA_ITEM resource={D0F8A8C2097AA102}Prefabs/Items/BCMM_Paracetamol.et inserted=1 dimensions=<0.089325,0.057524,0.122>
+09:32:32.445 SCRIPT       : BCMM_BETA_ITEM resource={B6D83F6853C68D73}Prefabs/Items/BCMM_Plasma.et inserted=1 dimensions=<0.0419006,0.242,0.10883>
+09:32:32.544 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216031}Prefabs/Items/BCMM_PulseOximeter.et inserted=1 dimensions=<0.0413513,0.040682,0.067>
+09:32:32.644 SCRIPT       : BCMM_BETA_ITEM resource={47B2D2C90145E642}Prefabs/Items/BCMM_Saline.et inserted=1 dimensions=<0.127029,0.0641139,0.27452>
+09:32:32.745 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216008}Prefabs/Items/BCMM_Splint.et inserted=1 dimensions=<0.0841675,0.08371,0.107>
+09:32:32.846 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216023}Prefabs/Items/BCMM_Suction.et inserted=1 dimensions=<0.352005,0.0522281,0.075582>
+09:32:32.945 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216009}Prefabs/Items/BCMM_SurgeryKit.et inserted=1 dimensions=<0.162003,0.0344359,0.08189>
+09:32:33.044 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216010}Prefabs/Items/BCMM_SutureKit.et inserted=1 dimensions=<0.089325,0.057524,0.122>
+09:32:33.145 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216032}Prefabs/Items/BCMM_TXA.et inserted=1 dimensions=<0.019577,0.0195731,0.142>
+09:32:33.245 SCRIPT       : BCMM_BETA_ITEM resource={6AB4B3F3FD216028}Prefabs/Items/BCMM_VascularAccess.et inserted=1 dimensions=<0.013504,0.01289,0.0470002>
+09:32:33.345 SCRIPT       : BCMM_BETA_ITEM resource={1AC68034B6B789EF}Prefabs/Items/BCMM_WeaponSling.et inserted=1 dimensions=<0.141998,0.104186,0.118156>
+09:32:33.497 GUI          : Creating menu 'Inventory20Menu'
+09:32:33.497  GUI          : WidgetManager: CrateWidgets @"{981ACF4F45EAECAE}UI/layouts/Menus/Inventory/InventoryMain.layout"
+09:32:33.497   SCRIPT    (W): Slot_VON Has no Content!
+09:32:33.497   SCRIPT    (W): Slot_GameVersion Has no Content!
+09:32:33.511 SCRIPT       : BCMM_BETA_ITEM_REVIEW_READY inserted=29 total=29
+09:32:33.647 GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:32:33.647 GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:32:35.484 ENGINE       : Screenshot successfully saved into $profile:screenshots/medical-inventory-overview (1600x1000)
+09:32:35.484 SCRIPT       : BCMM_BETA_INVENTORY_SCREENSHOT_REQUESTED
+09:32:36.480 WORLD        : UpdateEntities
+09:32:36.480  WORLD        : AfterPostSimulate
+09:32:36.480   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:32:36.480   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:32:37.084 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-0-0 (1600x1000)
+09:32:37.347 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et completed=1 failures=0
+09:32:51.444 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et completed=20 failures=0
+09:33:06.377 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et completed=40 failures=0
+09:33:07.745 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:33:22.010 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et completed=60 failures=0
+09:33:37.077 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et completed=80 failures=0
+09:33:38.845 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:33:52.355 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-0-99 (1600x1000)
+09:33:52.644 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et completed=100 failures=0
+09:34:07.577 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et completed=120 failures=0
+09:34:09.945 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:34:23.144 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et completed=140 failures=0
+09:34:37.910 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et completed=160 failures=0
+09:34:40.979 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:34:53.077 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et completed=180 failures=0
+09:35:07.420 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-0-199 (1600x1000)
+09:35:07.744 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et completed=200 failures=0
+09:35:07.751 WORLD        : UpdateEntities
+09:35:07.752  WORLD        : AfterPostSimulate
+09:35:07.752   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:35:07.752   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:35:08.248 WORLD        : UpdateEntities
+09:35:08.248  WORLD        : AfterPostSimulate
+09:35:08.248   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:35:08.248   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:35:08.818 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-1-0 (1600x1000)
+09:35:09.047 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et completed=1 failures=0
+09:35:12.012 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:35:23.777 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et completed=20 failures=0
+09:35:33.231 INPUT     (E): WinInputDevice:: ForceFeedback effect failed to create
+09:35:38.677 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et completed=40 failures=0
+09:35:43.145 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:35:53.844 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et completed=60 failures=0
+09:36:08.544 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et completed=80 failures=0
+09:36:14.245 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:36:23.519 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-1-99 (1600x1000)
+09:36:23.744 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et completed=100 failures=0
+09:36:38.477 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et completed=120 failures=0
+09:36:45.312 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:36:53.877 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et completed=140 failures=0
+09:37:08.810 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et completed=160 failures=0
+09:37:16.312 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:37:24.210 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et completed=180 failures=0
+09:37:38.919 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-1-199 (1600x1000)
+09:37:39.243 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et completed=200 failures=0
+09:37:39.253 WORLD        : UpdateEntities
+09:37:39.253  WORLD        : AfterPostSimulate
+09:37:39.253   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:37:39.253   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:37:39.748 WORLD        : UpdateEntities
+09:37:39.748  WORLD        : AfterPostSimulate
+09:37:39.748   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:37:39.748   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:37:40.405 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-2-0 (1600x1000)
+09:37:40.643 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216025}Prefabs/Items/BCMM_AED.et completed=1 failures=0
+09:37:47.313 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:37:55.244 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216025}Prefabs/Items/BCMM_AED.et completed=20 failures=0
+09:38:10.550 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216025}Prefabs/Items/BCMM_AED.et completed=40 failures=0
+09:38:18.279 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:38:26.710 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216025}Prefabs/Items/BCMM_AED.et completed=60 failures=0
+09:38:42.111 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216025}Prefabs/Items/BCMM_AED.et completed=80 failures=0
+09:38:49.352 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:38:57.887 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-2-99 (1600x1000)
+09:38:58.218 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216025}Prefabs/Items/BCMM_AED.et completed=100 failures=0
+09:39:13.710 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216025}Prefabs/Items/BCMM_AED.et completed=120 failures=0
+09:39:20.826 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:39:29.577 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216025}Prefabs/Items/BCMM_AED.et completed=140 failures=0
+09:39:45.110 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216025}Prefabs/Items/BCMM_AED.et completed=160 failures=0
+09:39:51.879 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:40:00.477 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216025}Prefabs/Items/BCMM_AED.et completed=180 failures=0
+09:40:15.268 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-2-199 (1600x1000)
+09:40:15.510 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216025}Prefabs/Items/BCMM_AED.et completed=200 failures=0
+09:40:15.517 WORLD        : UpdateEntities
+09:40:15.517  WORLD        : AfterPostSimulate
+09:40:15.517   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:40:15.517   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:40:16.047 WORLD        : UpdateEntities
+09:40:16.047  WORLD        : AfterPostSimulate
+09:40:16.047   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:40:16.047   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:40:16.630 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-3-0 (1600x1000)
+09:40:16.910 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216026}Prefabs/Items/BCMM_AEDPads.et completed=1 failures=0
+09:40:22.945 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:40:31.510 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216026}Prefabs/Items/BCMM_AEDPads.et completed=20 failures=0
+09:40:46.410 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216026}Prefabs/Items/BCMM_AEDPads.et completed=40 failures=0
+09:40:53.978 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:41:01.810 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216026}Prefabs/Items/BCMM_AEDPads.et completed=60 failures=0
+09:41:17.210 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216026}Prefabs/Items/BCMM_AEDPads.et completed=80 failures=0
+09:41:24.979 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:41:32.593 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-3-99 (1600x1000)
+09:41:32.910 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216026}Prefabs/Items/BCMM_AEDPads.et completed=100 failures=0
+09:41:47.810 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216026}Prefabs/Items/BCMM_AEDPads.et completed=120 failures=0
+09:41:56.112 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:42:03.210 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216026}Prefabs/Items/BCMM_AEDPads.et completed=140 failures=0
+09:42:15.144 INPUT     (E): WinInputDevice:: ForceFeedback effect failed to create
+09:42:18.043 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216026}Prefabs/Items/BCMM_AEDPads.et completed=160 failures=0
+09:42:27.179 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:42:33.810 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216026}Prefabs/Items/BCMM_AEDPads.et completed=180 failures=0
+09:42:48.427 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-3-199 (1600x1000)
+09:42:48.710 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216026}Prefabs/Items/BCMM_AEDPads.et completed=200 failures=0
+09:42:48.717 WORLD        : UpdateEntities
+09:42:48.717  WORLD        : AfterPostSimulate
+09:42:48.717   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:42:48.717   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:42:49.213 WORLD        : UpdateEntities
+09:42:49.213  WORLD        : AfterPostSimulate
+09:42:49.213   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:42:49.213   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:42:49.752 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-4-0 (1600x1000)
+09:42:50.043 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216022}Prefabs/Items/BCMM_AirwayAdjunct.et completed=1 failures=0
+09:42:58.278 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:43:04.610 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216022}Prefabs/Items/BCMM_AirwayAdjunct.et completed=20 failures=0
+09:43:19.543 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216022}Prefabs/Items/BCMM_AirwayAdjunct.et completed=40 failures=0
+09:43:29.378 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:43:34.943 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216022}Prefabs/Items/BCMM_AirwayAdjunct.et completed=60 failures=0
+09:43:49.910 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216022}Prefabs/Items/BCMM_AirwayAdjunct.et completed=80 failures=0
+09:44:00.478 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:44:04.926 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-4-99 (1600x1000)
+09:44:05.210 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216022}Prefabs/Items/BCMM_AirwayAdjunct.et completed=100 failures=0
+09:44:20.243 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216022}Prefabs/Items/BCMM_AirwayAdjunct.et completed=120 failures=0
+09:44:31.545 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:44:35.743 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216022}Prefabs/Items/BCMM_AirwayAdjunct.et completed=140 failures=0
+09:44:50.677 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216022}Prefabs/Items/BCMM_AirwayAdjunct.et completed=160 failures=0
+09:45:02.578 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:45:05.911 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216022}Prefabs/Items/BCMM_AirwayAdjunct.et completed=180 failures=0
+09:45:20.501 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-4-199 (1600x1000)
+09:45:20.843 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216022}Prefabs/Items/BCMM_AirwayAdjunct.et completed=200 failures=0
+09:45:20.849 WORLD        : UpdateEntities
+09:45:20.849  WORLD        : AfterPostSimulate
+09:45:20.849   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:45:20.849   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:45:21.347 WORLD        : UpdateEntities
+09:45:21.347  WORLD        : AfterPostSimulate
+09:45:21.347   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:45:21.347   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:45:21.998 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-5-0 (1600x1000)
+09:45:22.276 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216024}Prefabs/Items/BCMM_BVM.et completed=1 failures=0
+09:45:33.579 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:45:36.910 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216024}Prefabs/Items/BCMM_BVM.et completed=20 failures=0
+09:45:51.777 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216024}Prefabs/Items/BCMM_BVM.et completed=40 failures=0
+09:46:04.613 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:46:07.243 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216024}Prefabs/Items/BCMM_BVM.et completed=60 failures=0
+09:46:22.344 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216024}Prefabs/Items/BCMM_BVM.et completed=80 failures=0
+09:46:35.645 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:46:37.559 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-5-99 (1600x1000)
+09:46:37.876 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216024}Prefabs/Items/BCMM_BVM.et completed=100 failures=0
+09:46:52.677 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216024}Prefabs/Items/BCMM_BVM.et completed=120 failures=0
+09:47:06.778 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:47:08.277 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216024}Prefabs/Items/BCMM_BVM.et completed=140 failures=0
+09:47:23.310 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216024}Prefabs/Items/BCMM_BVM.et completed=160 failures=0
+09:47:37.914 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:47:38.978 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216024}Prefabs/Items/BCMM_BVM.et completed=180 failures=0
+09:47:53.821 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-5-199 (1600x1000)
+09:47:54.144 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216024}Prefabs/Items/BCMM_BVM.et completed=200 failures=0
+09:47:54.155 WORLD        : UpdateEntities
+09:47:54.155  WORLD        : AfterPostSimulate
+09:47:54.155   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:47:54.155   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:47:54.687 WORLD        : UpdateEntities
+09:47:54.687  WORLD        : AfterPostSimulate
+09:47:54.687   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:47:54.687   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:47:55.286 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-6-0 (1600x1000)
+09:47:55.577 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216027}Prefabs/Items/BCMM_ChestDrain.et completed=1 failures=0
+09:48:08.944 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:48:10.444 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216027}Prefabs/Items/BCMM_ChestDrain.et completed=20 failures=0
+09:48:25.409 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216027}Prefabs/Items/BCMM_ChestDrain.et completed=40 failures=0
+09:48:34.211 INPUT     (E): WinInputDevice:: ForceFeedback effect failed to create
+09:48:40.116 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:48:40.910 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216027}Prefabs/Items/BCMM_ChestDrain.et completed=60 failures=0
+09:48:45.910 INPUT     (E): WinInputDevice:: ForceFeedback effect failed to create
+09:48:50.144 INPUT     (E): WinInputDevice:: ForceFeedback effect failed to create
+09:48:51.910 INPUT     (E): WinInputDevice:: ForceFeedback effect failed to create
+09:48:53.843 INPUT     (E): WinInputDevice:: ForceFeedback effect failed to create
+09:48:55.843 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216027}Prefabs/Items/BCMM_ChestDrain.et completed=80 failures=0
+09:48:56.843 INPUT     (E): WinInputDevice:: ForceFeedback effect failed to create
+09:49:02.077 INPUT     (E): WinInputDevice:: ForceFeedback effect failed to create
+09:49:10.524 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-6-99 (1600x1000)
+09:49:11.278 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:49:11.343 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216027}Prefabs/Items/BCMM_ChestDrain.et completed=100 failures=0
+09:49:26.176 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216027}Prefabs/Items/BCMM_ChestDrain.et completed=120 failures=0
+09:49:41.109 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216027}Prefabs/Items/BCMM_ChestDrain.et completed=140 failures=0
+09:49:42.378 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:49:56.543 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216027}Prefabs/Items/BCMM_ChestDrain.et completed=160 failures=0
+09:50:11.376 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216027}Prefabs/Items/BCMM_ChestDrain.et completed=180 failures=0
+09:50:13.578 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:50:26.688 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-6-199 (1600x1000)
+09:50:26.943 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216027}Prefabs/Items/BCMM_ChestDrain.et completed=200 failures=0
+09:50:26.950 WORLD        : UpdateEntities
+09:50:26.950  WORLD        : AfterPostSimulate
+09:50:26.950   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:50:26.950   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:50:27.445 WORLD        : UpdateEntities
+09:50:27.445  WORLD        : AfterPostSimulate
+09:50:27.445   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:50:27.445   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:50:28.086 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-7-0 (1600x1000)
+09:50:28.376 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216020}Prefabs/Items/BCMM_ChestSeal.et completed=1 failures=0
+09:50:42.609 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216020}Prefabs/Items/BCMM_ChestSeal.et completed=20 failures=0
+09:50:44.711 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:50:58.210 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216020}Prefabs/Items/BCMM_ChestSeal.et completed=40 failures=0
+09:51:13.010 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216020}Prefabs/Items/BCMM_ChestSeal.et completed=60 failures=0
+09:51:15.877 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:51:28.543 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216020}Prefabs/Items/BCMM_ChestSeal.et completed=80 failures=0
+09:51:43.166 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-7-99 (1600x1000)
+09:51:43.476 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216020}Prefabs/Items/BCMM_ChestSeal.et completed=100 failures=0
+09:51:46.944 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:51:58.709 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216020}Prefabs/Items/BCMM_ChestSeal.et completed=120 failures=0
+09:52:13.711 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216020}Prefabs/Items/BCMM_ChestSeal.et completed=140 failures=0
+09:52:18.045 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:52:29.310 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216020}Prefabs/Items/BCMM_ChestSeal.et completed=160 failures=0
+09:52:44.109 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216020}Prefabs/Items/BCMM_ChestSeal.et completed=180 failures=0
+09:52:49.179 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:52:59.424 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-7-199 (1600x1000)
+09:52:59.709 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216020}Prefabs/Items/BCMM_ChestSeal.et completed=200 failures=0
+09:52:59.716 WORLD        : UpdateEntities
+09:52:59.716  WORLD        : AfterPostSimulate
+09:52:59.716   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:52:59.716   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:53:00.243 SCRIPT       : BCMM_BETA_EQUIP_NOT_APPLICABLE item=GenericEntity<0x0000017F27FC9BE8> @"ENTITY:6917529027641081939" ('GenericEntity','Assets/Props/Naval/FishingGear_01/FishingRope_01.xob') at <100.646370 2.000000 0.608497> @"{6AB4B3F3FD216007}Prefabs/Items/BCMM_DragRope.et" inventoryOnly=1
+09:53:00.342 SCRIPT       : BCMM_BETA_EQUIP_NOT_APPLICABLE item=GenericEntity<0x0000017F27FC98D0> @"ENTITY:6917529027641081940" ('GenericEntity','Assets/BodyBags/BCM_EmptyBodyBag/BCM_EmptyBodyBag.xob') at <100.646370 2.000000 0.608497> @"{6AB4B3F3FD216006}Prefabs/Items/BCMM_EmptyBodyBag.et" inventoryOnly=1
+09:53:00.446 WORLD        : UpdateEntities
+09:53:00.446  WORLD        : AfterPostSimulate
+09:53:00.446   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:53:00.446   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:53:01.088 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-10-0 (1600x1000)
+09:53:01.376 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et completed=1 failures=0
+09:53:15.609 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et completed=20 failures=0
+09:53:20.378 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:53:31.143 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et completed=40 failures=0
+09:53:46.179 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et completed=60 failures=0
+09:53:51.443 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:54:01.442 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et completed=80 failures=0
+09:54:16.222 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-10-99 (1600x1000)
+09:54:16.509 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et completed=100 failures=0
+09:54:22.477 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:54:31.743 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et completed=120 failures=0
+09:54:46.642 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et completed=140 failures=0
+09:54:53.543 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:55:02.009 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et completed=160 failures=0
+09:55:16.909 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et completed=180 failures=0
+09:55:24.578 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:55:32.123 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-10-199 (1600x1000)
+09:55:32.443 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et completed=200 failures=0
+09:55:32.452 WORLD        : UpdateEntities
+09:55:32.452  WORLD        : AfterPostSimulate
+09:55:32.452   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:55:32.452   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:55:32.979 WORLD        : UpdateEntities
+09:55:32.979  WORLD        : AfterPostSimulate
+09:55:32.979   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:55:32.979   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:55:33.591 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-11-0 (1600x1000)
+09:55:33.909 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA101}Prefabs/Items/BCMM_Fentanyl.et completed=1 failures=0
+09:55:48.042 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA101}Prefabs/Items/BCMM_Fentanyl.et completed=20 failures=0
+09:55:55.578 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:56:03.510 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA101}Prefabs/Items/BCMM_Fentanyl.et completed=40 failures=0
+09:56:18.376 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA101}Prefabs/Items/BCMM_Fentanyl.et completed=60 failures=0
+09:56:26.643 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:56:33.709 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA101}Prefabs/Items/BCMM_Fentanyl.et completed=80 failures=0
+09:56:48.423 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-11-99 (1600x1000)
+09:56:48.709 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA101}Prefabs/Items/BCMM_Fentanyl.et completed=100 failures=0
+09:56:57.744 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:57:04.176 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA101}Prefabs/Items/BCMM_Fentanyl.et completed=120 failures=0
+09:57:19.142 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA101}Prefabs/Items/BCMM_Fentanyl.et completed=140 failures=0
+09:57:28.844 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:57:34.343 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA101}Prefabs/Items/BCMM_Fentanyl.et completed=160 failures=0
+09:57:49.409 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA101}Prefabs/Items/BCMM_Fentanyl.et completed=180 failures=0
+09:58:00.310 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:58:04.959 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-11-199 (1600x1000)
+09:58:05.275 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA101}Prefabs/Items/BCMM_Fentanyl.et completed=200 failures=0
+09:58:05.283 WORLD        : UpdateEntities
+09:58:05.283  WORLD        : AfterPostSimulate
+09:58:05.283   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:58:05.283   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:58:05.779 WORLD        : UpdateEntities
+09:58:05.779  WORLD        : AfterPostSimulate
+09:58:05.779   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:58:05.779   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+09:58:06.389 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-12-0 (1600x1000)
+09:58:06.742 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216029}Prefabs/Items/BCMM_FluidBag.et completed=1 failures=0
+09:58:20.809 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216029}Prefabs/Items/BCMM_FluidBag.et completed=20 failures=0
+09:58:31.410 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:58:36.242 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216029}Prefabs/Items/BCMM_FluidBag.et completed=40 failures=0
+09:58:51.209 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216029}Prefabs/Items/BCMM_FluidBag.et completed=60 failures=0
+09:59:03.344 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:59:07.842 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216029}Prefabs/Items/BCMM_FluidBag.et completed=80 failures=0
+09:59:22.360 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-12-99 (1600x1000)
+09:59:22.676 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216029}Prefabs/Items/BCMM_FluidBag.et completed=100 failures=0
+09:59:34.443 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+09:59:38.275 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216029}Prefabs/Items/BCMM_FluidBag.et completed=120 failures=0
+09:59:53.209 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216029}Prefabs/Items/BCMM_FluidBag.et completed=140 failures=0
+10:00:05.877 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:00:08.875 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216029}Prefabs/Items/BCMM_FluidBag.et completed=160 failures=0
+10:00:23.876 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216029}Prefabs/Items/BCMM_FluidBag.et completed=180 failures=0
+10:00:37.043 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:00:39.019 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-12-199 (1600x1000)
+10:00:39.342 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216029}Prefabs/Items/BCMM_FluidBag.et completed=200 failures=0
+10:00:39.350 WORLD        : UpdateEntities
+10:00:39.350  WORLD        : AfterPostSimulate
+10:00:39.350   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:00:39.350   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:00:39.879 WORLD        : UpdateEntities
+10:00:39.879  WORLD        : AfterPostSimulate
+10:00:39.879   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:00:39.879   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:00:40.521 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-13-0 (1600x1000)
+10:00:40.809 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216030}Prefabs/Items/BCMM_Monitor.et completed=1 failures=0
+10:00:55.142 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216030}Prefabs/Items/BCMM_Monitor.et completed=20 failures=0
+10:01:08.177 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:01:10.776 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216030}Prefabs/Items/BCMM_Monitor.et completed=40 failures=0
+10:01:25.809 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216030}Prefabs/Items/BCMM_Monitor.et completed=60 failures=0
+10:01:39.243 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:01:41.542 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216030}Prefabs/Items/BCMM_Monitor.et completed=80 failures=0
+10:01:56.018 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-13-99 (1600x1000)
+10:01:56.342 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216030}Prefabs/Items/BCMM_Monitor.et completed=100 failures=0
+10:02:10.844 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:02:11.976 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216030}Prefabs/Items/BCMM_Monitor.et completed=120 failures=0
+10:02:26.909 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216030}Prefabs/Items/BCMM_Monitor.et completed=140 failures=0
+10:02:41.943 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:02:42.275 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216030}Prefabs/Items/BCMM_Monitor.et completed=160 failures=0
+10:02:57.109 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216030}Prefabs/Items/BCMM_Monitor.et completed=180 failures=0
+10:03:11.870 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-13-199 (1600x1000)
+10:03:12.175 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216030}Prefabs/Items/BCMM_Monitor.et completed=200 failures=0
+10:03:12.192 WORLD        : UpdateEntities
+10:03:12.192  WORLD        : AfterPostSimulate
+10:03:12.192   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:03:12.192   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:03:12.714 WORLD        : UpdateEntities
+10:03:12.714  WORLD        : AfterPostSimulate
+10:03:12.714   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:03:12.714   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:03:12.943 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:03:13.356 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-14-0 (1600x1000)
+10:03:13.642 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216012}Prefabs/Items/BCMM_Morphine.et completed=1 failures=0
+10:03:27.942 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216012}Prefabs/Items/BCMM_Morphine.et completed=20 failures=0
+10:03:42.875 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216012}Prefabs/Items/BCMM_Morphine.et completed=40 failures=0
+10:03:44.710 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:03:58.575 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216012}Prefabs/Items/BCMM_Morphine.et completed=60 failures=0
+10:04:13.475 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216012}Prefabs/Items/BCMM_Morphine.et completed=80 failures=0
+10:04:13.976 INPUT     (E): WinInputDevice:: ForceFeedback effect failed to create
+10:04:15.810 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:04:28.552 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-14-99 (1600x1000)
+10:04:28.842 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216012}Prefabs/Items/BCMM_Morphine.et completed=100 failures=0
+10:04:43.875 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216012}Prefabs/Items/BCMM_Morphine.et completed=120 failures=0
+10:04:46.910 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:04:59.308 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216012}Prefabs/Items/BCMM_Morphine.et completed=140 failures=0
+10:05:14.111 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216012}Prefabs/Items/BCMM_Morphine.et completed=160 failures=0
+10:05:17.943 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:05:29.542 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216012}Prefabs/Items/BCMM_Morphine.et completed=180 failures=0
+10:05:44.189 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-14-199 (1600x1000)
+10:05:44.475 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216012}Prefabs/Items/BCMM_Morphine.et completed=200 failures=0
+10:05:44.483 WORLD        : UpdateEntities
+10:05:44.483  WORLD        : AfterPostSimulate
+10:05:44.483   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:05:44.483   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:05:44.979 WORLD        : UpdateEntities
+10:05:44.979  WORLD        : AfterPostSimulate
+10:05:44.979   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:05:44.979   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:05:45.588 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-15-0 (1600x1000)
+10:05:45.908 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216013}Prefabs/Items/BCMM_Naloxone.et completed=1 failures=0
+10:05:49.010 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:06:00.709 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216013}Prefabs/Items/BCMM_Naloxone.et completed=20 failures=0
+10:06:15.512 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216013}Prefabs/Items/BCMM_Naloxone.et completed=40 failures=0
+10:06:20.076 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:06:31.042 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216013}Prefabs/Items/BCMM_Naloxone.et completed=60 failures=0
+10:06:45.808 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216013}Prefabs/Items/BCMM_Naloxone.et completed=80 failures=0
+10:06:51.210 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:07:00.923 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-15-99 (1600x1000)
+10:07:01.142 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216013}Prefabs/Items/BCMM_Naloxone.et completed=100 failures=0
+10:07:15.944 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216013}Prefabs/Items/BCMM_Naloxone.et completed=120 failures=0
+10:07:22.243 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:07:31.342 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216013}Prefabs/Items/BCMM_Naloxone.et completed=140 failures=0
+10:07:46.142 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216013}Prefabs/Items/BCMM_Naloxone.et completed=160 failures=0
+10:07:53.277 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:08:01.275 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216013}Prefabs/Items/BCMM_Naloxone.et completed=180 failures=0
+10:08:15.689 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-15-199 (1600x1000)
+10:08:15.975 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216013}Prefabs/Items/BCMM_Naloxone.et completed=200 failures=0
+10:08:15.983 WORLD        : UpdateEntities
+10:08:15.983  WORLD        : AfterPostSimulate
+10:08:15.983   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:08:15.983   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:08:16.478 WORLD        : UpdateEntities
+10:08:16.478  WORLD        : AfterPostSimulate
+10:08:16.478   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:08:16.478   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:08:16.995 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-16-0 (1600x1000)
+10:08:17.408 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216021}Prefabs/Items/BCMM_NCD.et completed=1 failures=0
+10:08:24.644 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:08:31.908 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216021}Prefabs/Items/BCMM_NCD.et completed=20 failures=0
+10:08:46.642 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216021}Prefabs/Items/BCMM_NCD.et completed=40 failures=0
+10:08:55.710 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:09:01.842 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216021}Prefabs/Items/BCMM_NCD.et completed=60 failures=0
+10:09:16.508 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216021}Prefabs/Items/BCMM_NCD.et completed=80 failures=0
+10:09:26.710 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:09:31.501 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-16-99 (1600x1000)
+10:09:31.808 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216021}Prefabs/Items/BCMM_NCD.et completed=100 failures=0
+10:09:46.509 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216021}Prefabs/Items/BCMM_NCD.et completed=120 failures=0
+10:09:57.809 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:10:01.742 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216021}Prefabs/Items/BCMM_NCD.et completed=140 failures=0
+10:10:16.441 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216021}Prefabs/Items/BCMM_NCD.et completed=160 failures=0
+10:10:28.810 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:10:31.679 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216021}Prefabs/Items/BCMM_NCD.et completed=180 failures=0
+10:10:46.110 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-16-199 (1600x1000)
+10:10:46.375 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216021}Prefabs/Items/BCMM_NCD.et completed=200 failures=0
+10:10:46.383 WORLD        : UpdateEntities
+10:10:46.383  WORLD        : AfterPostSimulate
+10:10:46.383   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:10:46.383   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:10:46.883 WORLD        : UpdateEntities
+10:10:46.883  WORLD        : AfterPostSimulate
+10:10:46.883   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:10:46.883   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:10:47.427 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-17-0 (1600x1000)
+10:10:47.742 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA103}Prefabs/Items/BCMM_Oxygen.et completed=1 failures=0
+10:10:59.876 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:11:02.408 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA103}Prefabs/Items/BCMM_Oxygen.et completed=20 failures=0
+10:11:17.208 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA103}Prefabs/Items/BCMM_Oxygen.et completed=40 failures=0
+10:11:30.843 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:11:32.275 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA103}Prefabs/Items/BCMM_Oxygen.et completed=60 failures=0
+10:11:47.108 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA103}Prefabs/Items/BCMM_Oxygen.et completed=80 failures=0
+10:12:01.909 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:12:01.956 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-17-99 (1600x1000)
+10:12:02.175 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA103}Prefabs/Items/BCMM_Oxygen.et completed=100 failures=0
+10:12:16.908 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA103}Prefabs/Items/BCMM_Oxygen.et completed=120 failures=0
+10:12:31.675 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA103}Prefabs/Items/BCMM_Oxygen.et completed=140 failures=0
+10:12:32.909 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:12:46.875 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA103}Prefabs/Items/BCMM_Oxygen.et completed=160 failures=0
+10:13:01.475 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA103}Prefabs/Items/BCMM_Oxygen.et completed=180 failures=0
+10:13:03.942 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:13:16.559 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-17-199 (1600x1000)
+10:13:16.908 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA103}Prefabs/Items/BCMM_Oxygen.et completed=200 failures=0
+10:13:16.917 WORLD        : UpdateEntities
+10:13:16.917  WORLD        : AfterPostSimulate
+10:13:16.917   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:13:16.917   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:13:17.450 WORLD        : UpdateEntities
+10:13:17.450  WORLD        : AfterPostSimulate
+10:13:17.450   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:13:17.450   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:13:17.956 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-18-0 (1600x1000)
+10:13:18.308 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA102}Prefabs/Items/BCMM_Paracetamol.et completed=1 failures=0
+10:13:32.375 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA102}Prefabs/Items/BCMM_Paracetamol.et completed=20 failures=0
+10:13:35.043 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:13:47.542 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA102}Prefabs/Items/BCMM_Paracetamol.et completed=40 failures=0
+10:14:02.208 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA102}Prefabs/Items/BCMM_Paracetamol.et completed=60 failures=0
+10:14:06.143 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:14:17.541 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA102}Prefabs/Items/BCMM_Paracetamol.et completed=80 failures=0
+10:14:31.916 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-18-99 (1600x1000)
+10:14:32.141 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA102}Prefabs/Items/BCMM_Paracetamol.et completed=100 failures=0
+10:14:37.143 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:14:47.341 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA102}Prefabs/Items/BCMM_Paracetamol.et completed=120 failures=0
+10:15:02.077 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA102}Prefabs/Items/BCMM_Paracetamol.et completed=140 failures=0
+10:15:08.210 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:15:17.341 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA102}Prefabs/Items/BCMM_Paracetamol.et completed=160 failures=0
+10:15:32.008 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA102}Prefabs/Items/BCMM_Paracetamol.et completed=180 failures=0
+10:15:39.211 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:15:47.051 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-18-199 (1600x1000)
+10:15:47.341 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={D0F8A8C2097AA102}Prefabs/Items/BCMM_Paracetamol.et completed=200 failures=0
+10:15:47.350 WORLD        : UpdateEntities
+10:15:47.350  WORLD        : AfterPostSimulate
+10:15:47.350   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:15:47.350   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:15:47.883 WORLD        : UpdateEntities
+10:15:47.883  WORLD        : AfterPostSimulate
+10:15:47.883   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:15:47.883   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:15:48.449 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-19-0 (1600x1000)
+10:15:48.741 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={B6D83F6853C68D73}Prefabs/Items/BCMM_Plasma.et completed=1 failures=0
+10:16:02.674 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={B6D83F6853C68D73}Prefabs/Items/BCMM_Plasma.et completed=20 failures=0
+10:16:10.342 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:16:17.974 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={B6D83F6853C68D73}Prefabs/Items/BCMM_Plasma.et completed=40 failures=0
+10:16:32.608 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={B6D83F6853C68D73}Prefabs/Items/BCMM_Plasma.et completed=60 failures=0
+10:16:41.343 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:16:47.908 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={B6D83F6853C68D73}Prefabs/Items/BCMM_Plasma.et completed=80 failures=0
+10:17:02.347 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-19-99 (1600x1000)
+10:17:02.674 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={B6D83F6853C68D73}Prefabs/Items/BCMM_Plasma.et completed=100 failures=0
+10:17:12.443 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:17:17.874 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={B6D83F6853C68D73}Prefabs/Items/BCMM_Plasma.et completed=120 failures=0
+10:17:32.575 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={B6D83F6853C68D73}Prefabs/Items/BCMM_Plasma.et completed=140 failures=0
+10:17:43.442 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:17:47.808 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={B6D83F6853C68D73}Prefabs/Items/BCMM_Plasma.et completed=160 failures=0
+10:18:02.408 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={B6D83F6853C68D73}Prefabs/Items/BCMM_Plasma.et completed=180 failures=0
+10:18:14.509 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:18:17.452 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-19-199 (1600x1000)
+10:18:17.774 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={B6D83F6853C68D73}Prefabs/Items/BCMM_Plasma.et completed=200 failures=0
+10:18:17.782 WORLD        : UpdateEntities
+10:18:17.782  WORLD        : AfterPostSimulate
+10:18:17.782   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:18:17.782   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:18:18.283 WORLD        : UpdateEntities
+10:18:18.283  WORLD        : AfterPostSimulate
+10:18:18.283   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:18:18.283   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:18:18.784 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-20-0 (1600x1000)
+10:18:19.108 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216031}Prefabs/Items/BCMM_PulseOximeter.et completed=1 failures=0
+10:18:33.041 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216031}Prefabs/Items/BCMM_PulseOximeter.et completed=20 failures=0
+10:18:45.510 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:18:48.041 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216031}Prefabs/Items/BCMM_PulseOximeter.et completed=40 failures=0
+10:19:02.707 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216031}Prefabs/Items/BCMM_PulseOximeter.et completed=60 failures=0
+10:19:16.543 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:19:18.041 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216031}Prefabs/Items/BCMM_PulseOximeter.et completed=80 failures=0
+10:19:32.500 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-20-99 (1600x1000)
+10:19:32.775 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216031}Prefabs/Items/BCMM_PulseOximeter.et completed=100 failures=0
+10:19:47.676 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:19:48.041 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216031}Prefabs/Items/BCMM_PulseOximeter.et completed=120 failures=0
+10:20:02.708 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216031}Prefabs/Items/BCMM_PulseOximeter.et completed=140 failures=0
+10:20:17.311 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216031}Prefabs/Items/BCMM_PulseOximeter.et completed=160 failures=0
+10:20:18.709 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:20:32.641 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216031}Prefabs/Items/BCMM_PulseOximeter.et completed=180 failures=0
+10:20:47.213 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-20-199 (1600x1000)
+10:20:47.474 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216031}Prefabs/Items/BCMM_PulseOximeter.et completed=200 failures=0
+10:20:47.483 WORLD        : UpdateEntities
+10:20:47.483  WORLD        : AfterPostSimulate
+10:20:47.483   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:20:47.483   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:20:47.983 WORLD        : UpdateEntities
+10:20:47.983  WORLD        : AfterPostSimulate
+10:20:47.983   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:20:47.983   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:20:48.535 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-21-0 (1600x1000)
+10:20:48.841 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={47B2D2C90145E642}Prefabs/Items/BCMM_Saline.et completed=1 failures=0
+10:20:49.842 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:21:03.707 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={47B2D2C90145E642}Prefabs/Items/BCMM_Saline.et completed=20 failures=0
+10:21:18.408 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={47B2D2C90145E642}Prefabs/Items/BCMM_Saline.et completed=40 failures=0
+10:21:20.843 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:21:33.607 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={47B2D2C90145E642}Prefabs/Items/BCMM_Saline.et completed=60 failures=0
+10:21:48.408 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={47B2D2C90145E642}Prefabs/Items/BCMM_Saline.et completed=80 failures=0
+10:21:51.842 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:22:03.286 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-21-99 (1600x1000)
+10:22:03.607 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={47B2D2C90145E642}Prefabs/Items/BCMM_Saline.et completed=100 failures=0
+10:22:18.208 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={47B2D2C90145E642}Prefabs/Items/BCMM_Saline.et completed=120 failures=0
+10:22:22.958 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:22:33.574 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={47B2D2C90145E642}Prefabs/Items/BCMM_Saline.et completed=140 failures=0
+10:22:48.341 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={47B2D2C90145E642}Prefabs/Items/BCMM_Saline.et completed=160 failures=0
+10:22:53.976 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:23:03.574 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={47B2D2C90145E642}Prefabs/Items/BCMM_Saline.et completed=180 failures=0
+10:23:18.333 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-21-199 (1600x1000)
+10:23:18.641 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={47B2D2C90145E642}Prefabs/Items/BCMM_Saline.et completed=200 failures=0
+10:23:18.650 WORLD        : UpdateEntities
+10:23:18.650  WORLD        : AfterPostSimulate
+10:23:18.650   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:23:18.650   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:23:19.149 WORLD        : UpdateEntities
+10:23:19.149  WORLD        : AfterPostSimulate
+10:23:19.149   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:23:19.149   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:23:19.745 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-22-0 (1600x1000)
+10:23:20.076 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216008}Prefabs/Items/BCMM_Splint.et completed=1 failures=0
+10:23:25.435 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:23:34.707 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216008}Prefabs/Items/BCMM_Splint.et completed=20 failures=0
+10:23:49.541 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216008}Prefabs/Items/BCMM_Splint.et completed=40 failures=0
+10:23:56.509 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:24:04.941 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216008}Prefabs/Items/BCMM_Splint.et completed=60 failures=0
+10:24:19.674 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216008}Prefabs/Items/BCMM_Splint.et completed=80 failures=0
+10:24:27.509 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:24:34.522 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-22-99 (1600x1000)
+10:24:34.874 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216008}Prefabs/Items/BCMM_Splint.et completed=100 failures=0
+10:24:49.507 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216008}Prefabs/Items/BCMM_Splint.et completed=120 failures=0
+10:24:58.609 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:25:04.907 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216008}Prefabs/Items/BCMM_Splint.et completed=140 failures=0
+10:25:20.028 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216008}Prefabs/Items/BCMM_Splint.et completed=160 failures=0
+10:25:29.878 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:25:35.850 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216008}Prefabs/Items/BCMM_Splint.et completed=180 failures=0
+10:25:50.811 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-22-199 (1600x1000)
+10:25:51.079 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216008}Prefabs/Items/BCMM_Splint.et completed=200 failures=0
+10:25:51.088 WORLD        : UpdateEntities
+10:25:51.088  WORLD        : AfterPostSimulate
+10:25:51.088   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:25:51.088   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:25:51.593 WORLD        : UpdateEntities
+10:25:51.593  WORLD        : AfterPostSimulate
+10:25:51.593   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:25:51.593   GUI       (E): OverlayWidget Frame0 has invalid slot GridWidgetSlot for slot manipulation function used, expected: LayoutSlot
+10:25:52.160 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-23-0 (1600x1000)
+10:25:52.474 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216023}Prefabs/Items/BCMM_Suction.et completed=1 failures=0
+10:26:01.008 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:26:07.474 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216023}Prefabs/Items/BCMM_Suction.et completed=20 failures=0
+10:26:23.007 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216023}Prefabs/Items/BCMM_Suction.et completed=40 failures=0
+10:26:32.342 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:26:39.974 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216023}Prefabs/Items/BCMM_Suction.et completed=60 failures=0
+10:26:55.645 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216023}Prefabs/Items/BCMM_Suction.et completed=80 failures=0
+10:27:03.575 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:27:10.584 ENGINE       : Screenshot successfully saved into $profile:screenshots/equip-23-99 (1600x1000)
+10:27:10.907 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216023}Prefabs/Items/BCMM_Suction.et completed=100 failures=0
+10:27:25.507 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216023}Prefabs/Items/BCMM_Suction.et completed=120 failures=0
+10:27:34.642 SCRIPT       : BCMM_INVENTORY_PREVIEW_REBOUND: stale character preview after item swap
+10:27:40.874 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216023}Prefabs/Items/BCMM_Suction.et completed=140 failures=0
+10:27:55.574 SCRIPT       : BCMM_BETA_EQUIP_CYCLES resource={6AB4B3F3FD216023}Prefabs/Items/BCMM_Suction.et completed=160 failures=0

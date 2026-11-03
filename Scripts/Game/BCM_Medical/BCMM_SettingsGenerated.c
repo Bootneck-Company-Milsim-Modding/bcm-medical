@@ -41,7 +41,7 @@ definitions.Insert(new BCMM_SettingDefinition("arrestOnsetSeconds", 10, 1, 60, 1
 definitions.Insert(new BCMM_SettingDefinition("cprPerfusionFraction", 0.25, 0.1, 0.4, 0.01, false));
 definitions.Insert(new BCMM_SettingDefinition("roscStabilitySeconds", 10, 1, 60, 1, false));
 definitions.Insert(new BCMM_SettingDefinition("hypoxicDebtLimitSeconds", 180, 30, 600, 1, false));
-definitions.Insert(new BCMM_SettingDefinition("baggingDurationSeconds", 3, 1, 30, 1, false));
+definitions.Insert(new BCMM_SettingDefinition("baggingDurationSeconds", 12, 1, 30, 1, false));
 definitions.Insert(new BCMM_SettingDefinition("baggingRangeMetres", 2, 1, 5, 0.25, false));
 definitions.Insert(new BCMM_SettingDefinition("treatmentRangeMetres", 2, 1, 5, 0.25, false));
 definitions.Insert(new BCMM_SettingDefinition("examinationDurationSeconds", 2, 1, 15, 1, false));

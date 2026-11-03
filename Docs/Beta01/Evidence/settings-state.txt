@@ -1,0 +1,443 @@
+---------------------------------------------
+Log C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\20261102-085432-443\logs\logs_2026-11-02_08-54-32\console.log started at 2026-11-02 08:54:32 (2026-11-02 08:54:32 UTC)
+
+08:54:32.952 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\20261102-085432-443\logs\logs_2026-11-02_08-54-32' to filesystem under name logs
+08:54:32.952 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\20261102-085432-443\profile' to filesystem under name profile
+08:54:32.952 ENGINE       : FileSystem: Current working directory: 'C:\Users\ruanb\.codex\visualizations\2026\10\24\01a16d16-76e6-7502-b3e2-09bbd4375c04\BCM-Local-Dedicated-Server\'
+08:54:32.954 ENGINE       : Initializing engine, version 192142
+08:54:32.954 ENGINE       : CLI Params: -gproj C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\Tests\Runtime\addon.gproj -profile C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\20261102-085432-443 -addonsDir C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical,C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\Tests\Runtime,C:\Program Files (x86)\Steam\steamapps\common\Arma Reforger\addons -server worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent -addons B6C4ED1CA1260002 -noBackend -disableCrashReporter -noSound -noThrow -maxFPS 60 -bindIP 127.0.0.1 -bindPort 32125 -bcmmRunToken 683c00e070c74791984b6cd3daf7041d -bcmmBeta01State 1
+08:54:32.961 ENGINE       : Addon dirs:
+08:54:32.961  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/Tests/Runtime/'
+08:54:32.961  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical'
+08:54:32.961  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/Tests/Runtime'
+08:54:32.961  ENGINE       : dir: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons'
+08:54:32.961  ENGINE       : dir: './addons'
+08:54:32.961  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/20261102-085432-443/addons'
+08:54:32.961 ENGINE       : Available addons:
+08:54:32.961  ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/Tests/Runtime/addon.gproj' guid: 'B6C4ED1CA1260002'
+08:54:32.961  ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/addon.gproj' guid: '6AB4B3F3FD215919'
+08:54:32.961  ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/core.gproj' guid: '5614BBCCBB55ED1C' (packed)
+08:54:32.961  ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/ArmaReforger.gproj' guid: '58D0FB3206B6F859' (packed)
+08:54:32.961 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\Tests\Runtime' to filesystem under name BCM_Medical_DomainChecks
+08:54:32.961 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical' to filesystem under name MCBMedical
+08:54:33.040 ENGINE       : FileSystem: Adding package 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/' (pak count: 14) to filesystem under name ArmaReforger
+08:54:33.045 ENGINE       : FileSystem: Adding package 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/' (pak count: 2) to filesystem under name core
+08:54:33.045 ENGINE       : CPU vendor         : GenuineIntel
+08:54:33.045 ENGINE       : CPU type           : 1
+08:54:33.045 ENGINE       : CPU name           : 12th Gen Intel(R) Core(TM) i7-12700K
+08:54:33.045 ENGINE       : CPU cache info     : L1 [Inst 64KB, Data 48KB], L2 [Unif 2048KB], L3 [Unif 25600KB]
+08:54:33.045 ENGINE       : CPU count logical  : 20
+08:54:33.045 ENGINE       : CPU count physical : 12
+08:54:33.045 ENGINE       : CPU features       : mmx sse sse2 sse3 ssse3 sse4_1 sse4_2 popcnt aesni pclmulqdq osxsave avx sha avx2
+08:54:33.045 RESOURCES    : ResourceDB: loading cache (id=0 name=BCM_Medical_DomainChecks path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\Tests\Runtime/resourceDatabase.rdb)
+08:54:33.045 RESOURCES    : ResourceDB: loading cache (id=1 name=MCBMedical path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical/resourceDatabase.rdb)
+08:54:33.046 RESOURCES    : ResourceDB: loading cache (id=2 name=ArmaReforger path=C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/resourceDatabase.rdb)
+08:54:33.131 RESOURCES    : ResourceDB: loading cache (id=3 name=core path=C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/resourceDatabase.rdb)
+08:54:33.132 RESOURCES    : ResourceDB: loading cache (id=4 name=profile path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\20261102-085432-443\profile/resourceDatabase.rdb)
+08:54:33.132 RESOURCES    : ResourceDB: loading cache (id=5 name=logs path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\20261102-085432-443\logs\logs_2026-11-02_08-54-32/resourceDatabase.rdb)
+08:54:33.221 ENGINE       : GameProject load
+08:54:33.221  ENGINE       : Loaded addons:
+08:54:33.221   ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/core.gproj' guid: '5614BBCCBB55ED1C'
+08:54:33.221   ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/ArmaReforger.gproj' guid: '58D0FB3206B6F859'
+08:54:33.221   ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/addon.gproj' guid: '6AB4B3F3FD215919'
+08:54:33.221   ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/Tests/Runtime/addon.gproj' guid: 'B6C4ED1CA1260002'
+08:54:33.223 ENGINE       : Loading custom engine user config '$profile:.save/settings/ReforgerEngineSettings.conf'
+08:54:33.223 ENGINE       : No Enfusion settings file loaded. Continuing with defaults
+08:54:33.224 ENGINE    (W): No module info used, trying to identify -> 0x82A80000
+08:54:33.224 RENDER       : Basic screen setup:
+08:54:33.224 RENDER       :   Back buffer width x height: 0x0
+08:54:33.224 RENDER       :   Back buffer format	       : TEXFMT_UNKNOWN (0)
+08:54:33.224 RENDER       :   MSAA                      : none
+08:54:33.224 RENDER       : GPU_DUMMY (0xFFFF) (Enfusion dummy render) with 1 GPU detected, VRAM 128MB (fast 128MB), shared 128MB, driver version Unknown version
+08:54:33.224 RENDER       : Detected output devices:
+08:54:33.224 RENDER       :  * 1 device/s connected to Dummy:
+08:54:33.224 RENDER       :    Dummy output (Dummy device for our dummy render.), 1920x1080 (offset 0x0), 60Hz
+08:54:33.224 RENDER       :   Concurrent frames limit 2
+08:54:33.224 ENGINE       : Job system settings: coreCount=20, shortJobContextCount=16, shortJobThreadCount=15, longJobThreadCount=7
+08:54:33.238 PROFILING    : Settings changed took: 0.021100 ms
+08:54:33.241 ENGINE       : Initializing inputs.
+08:54:33.246 NETWORK      : Initializing networking.
+08:54:33.246 NETWORK      : Using new GameRplScheduler.
+08:54:33.246  SCRIPT       : SCRIPT       : Initializing scripts
+08:54:33.247   SCRIPT       : SCRIPT       : ScriptProjectManager init
+08:54:33.247  PROFILING    : ScriptProjectManager init took: 0.015700 ms
+08:54:33.266 PROFILING    : Initializing scripts took: 19.437100 ms
+08:54:33.266 BACKEND      : Backend Services are disabled.
+08:54:33.266 ENGINE       : Enfusion engine successfully created.
+08:54:33.289 GUI          : Using default language (en_us)
+08:54:33.289 GUI          : Loading 'en_us' localization file.
+08:54:33.289  INIT         : INIT         : Loading StringTable
+08:54:33.307 PROFILING    : Loading StringTable took: 17.607300 ms
+08:54:33.307  SCRIPT       : SCRIPT       : Compiling GameLib scripts
+08:54:33.336  SCRIPT       : Module: GameLib; loaded 465x files; 607x classes; used 775K of static memory; defines: "ENF_WB,PLATFORM_WINDOWS,ENF_ENABLE_VHC_OVERRIDE,ENF_ENABLE_RPLCOMPONENT_IN_GAMECODE"; CRC32: 4507af04
+08:54:33.336 PROFILING    : Compiling GameLib scripts took: 29.470500 ms
+08:54:33.336  SCRIPT       : SCRIPT       : Compiling Game scripts
+08:54:34.049 SCRIPT       : Compiling Game scripts
+08:54:34.049  SCRIPT    (W): @"Scripts/Game/Editor/Components/EditableEntity/SCR_EditableEntityComponent.c,785": 'GetPlayerPlatformKind' is obsolete
+08:54:34.049  SCRIPT    (W): @"Scripts/Game/Editor/Components/EditableEntity/SCR_EditableEntityComponent.c,786": 'GetPlayerPlatformId' is obsolete
+08:54:34.240  SCRIPT    (W): @"Scripts/Game/Workshop/SCR_AddonManager.c,876": 'GetRefCount' is obsolete: Will be removed
+08:54:34.262  SCRIPT    (W): @"Scripts/Game/Campaign/SCR_PlayerProfileManagerComponent.c,142": 'PlayerData' is obsolete
+08:54:34.330  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,159": 'GetDSSession' is obsolete
+08:54:34.330  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,162": 'RoomID' is obsolete
+08:54:34.331  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,197": 'GetDSSession' is obsolete
+08:54:34.331  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,201": 'RoomID' is obsolete
+08:54:34.398  SCRIPT    (W): @"Scripts/Game/DataCollection/SCR_DataCollectorComponent.c,481": 'GetStorage' is obsolete
+08:54:34.398  SCRIPT    (W): @"Scripts/Game/DataCollection/SCR_DataCollectorComponent.c,483": 'GetOnlineWritePrivilege' is obsolete
+08:54:34.399  SCRIPT    (W): @"Scripts/Game/Utilities/SCR_PlayerIdentityUtils.c,20": 'GetPlayerIdentityId' is obsolete
+08:54:34.430  SCRIPT    (W): @"Scripts/Game/UI/Menu/MainMenuUI.c,643": 'GetNotifyCount' is obsolete: Will be substitued by Notification Api.
+08:54:34.430  SCRIPT    (W): @"Scripts/Game/UI/Menu/MainMenuUI.c,645": 'GetNotifyItem' is obsolete: Will be substitued by Notification Api.
+08:54:34.474  SCRIPT    (W): @"Scripts/Game/DataCollection/PlayerData/SCR_PlayerData.c,210": 'PlayerData' is obsolete
+08:54:34.562  SCRIPT       : Module: Game; loaded 5826x files; 11870x classes; used 33288K of static memory; defines: "ENF_WB,PLATFORM_WINDOWS,ENF_ENABLE_VHC_OVERRIDE,ENF_ENABLE_RPLCOMPONENT_IN_GAMECODE,ENABLE_BASE_DESTRUCTION,BUDGET_OPTIMIZATION_CHECKS,DEBUG,RESPAWN_TIMER_COMPONENT_DEBUG,DEBUG_CONFIGURABLE_DIALOGS,DISABLE_WEAPON_SWITCHING,SCRIPTED_AIM_MODIFIER_DEBUG"; CRC32: 6822f851
+08:54:34.602 PROFILING    : Compiling Game scripts took: 1265.640500 ms
+08:54:34.603 INIT         : Creating game instance(ArmaReforgerScripted), version 1.8.0.13 built 2026-08-21 14:30:18 UTC.
+08:54:34.632 ENGINE       : Game successfully created.
+08:54:34.675 PLATFORM     : Save data from container 'settings' have been loaded
+08:54:34.784 PLATFORM     : Save data from container 'sessions' have been loaded
+08:54:34.784 PLATFORM     : System language differs from the saved one - using new language {new: 'en_us'; old: ''}
+08:54:34.784 PLATFORM     : Save data transaction to 'settings' started.
+08:54:34.785 NETWORK      : Starting local multiplayer server using command line args.
+08:54:34.891 DEFAULT      : [SaveGameManager] Starting new playthrough nr.0 '' for mission 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'.
+08:54:34.891  WORLD        : WORLD        : Entities load 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'
+08:54:34.895 WORLD        : Entities load 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'
+08:54:34.895  RESOURCES (E): Wrong GUID/name for resource @"{0000000000000000}(null)" in property "m_sLoadingLayout"
+08:54:34.900 PROFILING    : Entities load took: 8.436100 ms
+08:54:34.901  WORLD        : WORLD        : Game::LoadEntities
+08:54:34.901   WORLD        : WORLD        : Initializing world systems
+08:54:34.901   NETWORK      : Enabled lag compensation, 29 frames with 100 FPS and 280 ms rewind limits.
+08:54:34.901   WORLD        : WORLD        : CreateEntities
+08:54:34.901    WORLD        : WORLD        : CreateEntities
+08:54:34.901     WORLD        : WORLD        : NotifyBeforeEntitiesCreated
+08:54:34.905     RESOURCES    : Loaded mission headers from 4 addon(s)!
+08:54:34.905    PROFILING    : NotifyBeforeEntitiesCreated took: 2.445500 ms
+08:54:34.905     WORLD        : WORLD        : Wait for preloading data
+08:54:34.905    PROFILING    : Wait for preloading data took: 0.000300 ms
+08:54:34.908    ENTITY       : Create entity @"ENTITY:2" ('MPTestTerrain', GenericTerrainEntity) at <0.000000 1.000000 0.000000>
+08:54:34.908      PROFILING    : PROFILING    : Terrain load
+08:54:34.915     PROFILING    : Terrain load took: 6.630100 ms
+08:54:34.918 WORLD        : Game::LoadEntities
+08:54:34.918  WORLD        : CreateEntities
+08:54:34.918   WORLD        : CreateEntities
+08:54:34.918    ENTITY       : Create entity @"ENTITY:4611686018427387905" ('SCR_AIWorld') at <107.915001 1.000000 159.473999> @"{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et"
+08:54:34.918     PATHFINDING   : Navmesh Init 'Soldiers'
+08:54:34.918      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+08:54:34.918     PATHFINDING   : Navmesh Init 'BTRlike'
+08:54:34.918      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+08:54:34.918     PATHFINDING   : Navmesh Init 'LowRes'
+08:54:34.918      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+08:54:35.193     WORLD        : WORLD        : NotifyBeforeEntitiesInitialized
+08:54:35.193    PROFILING    : NotifyBeforeEntitiesInitialized took: 0.010100 ms
+08:54:35.195    WORLD        : InitEntities 'world'
+08:54:35.195     ENTITY       : Init entity @"ENTITY:4611686018427387906" ('GameMode_Plain1', SCR_BaseGameMode) at <123.265999 1.000000 136.613998>
+08:54:35.196      SCRIPT    (W): SCR_PerceivedFactionManagerComponent trying to set fall back faction 'CIV' but this faction could not be found so it is null instead.
+08:54:35.196     WORLD        : WORLD        : NotifyEntitiesInitialized
+08:54:35.196      TERRAIN      : TERRAIN      : Initializing road networks...
+08:54:35.196     PROFILING    : Initializing road networks... took: 0.004000 ms
+08:54:35.196      DEFAULT      : DEFAULT      : WorldVolumesCollection
+08:54:35.196     PROFILING    : WorldVolumesCollection took: 0.006700 ms
+08:54:35.196    PROFILING    : NotifyEntitiesInitialized took: 0.219800 ms
+08:54:35.196   PROFILING    : CreateEntities took: 294.789200 ms
+08:54:35.196  PROFILING    : CreateEntities took: 294.921000 ms
+08:54:35.196   WORLD        : WORLD        : EOnActivate
+08:54:35.197  PROFILING    : EOnActivate took: 0.055500 ms
+08:54:35.197 PROFILING    : Game::LoadEntities took: 296.321700 ms
+08:54:35.197 PROFILING    : * LoadEntities: 296.431000 ms
+08:54:35.293 NETWORK      : Starting RPL server, listening on address 0.0.0.0:2001, fastValidation=false
+08:54:35.619 DEFAULT      : Entered online game state.
+08:54:35.727 PROFILING    : Settings changed took: 0.140800 ms
+08:54:35.741 WORLD        : Frame start
+08:54:35.741  SCRIPT       : ScenarioFramework: Available tasks are empty, no new tasks will be generated.
+08:54:35.743 WORLD        : UpdateEntities
+08:54:35.743  WORLD        : Frame
+08:54:35.743   SCRIPT       : SCR_BaseGameMode::OnGameStateChanged = GAME
+08:54:35.792 SCRIPT       : BCMM_BETA_GEOMETRY item={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et low=<-0.0345764,-0.00198102,-0.041445> high=<0.0322266,0.024261,0.042839> dimensions=<0.066803,0.026242,0.084284>
+08:54:35.792 SCRIPT       : BCMM_BETA_GEOMETRY item={0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et low=<-0.00631714,-0.00109887,-0.048049> high=<0.00631714,0.0108988,0.04829> dimensions=<0.0126343,0.0119977,0.096339>
+08:54:35.793 SCRIPT       : BCMM_BETA_GEOMETRY item={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et low=<-0.00997925,-0.00496697,-0.071> high=<0.00997925,0.014967,0.071> dimensions=<0.0199585,0.0199339,0.142>
+08:54:35.820 SCRIPT       : BCMM_BETA_SETTING key=retainedBulletChance attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:35.844 SCRIPT       : BCMM_BETA_SETTING key=bandageReopenMinSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:35.871 SCRIPT       : BCMM_BETA_SETTING key=bandageReopenMaxSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:35.899 SCRIPT       : BCMM_BETA_SETTING key=walkingWoundWearMultiplier attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:35.925 SCRIPT       : BCMM_BETA_SETTING key=runningWoundWearMultiplier attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:35.953 SCRIPT       : BCMM_BETA_SETTING key=reopenedBleedingMultiplier attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:35.981 SCRIPT       : BCMM_BETA_SETTING key=criticalSurgeryFacilityOnly attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.009 SCRIPT       : BCMM_BETA_SETTING key=fractureUnsplitSpeedScale attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.037 SCRIPT       : BCMM_BETA_SETTING key=fractureSplintedSpeedScale attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.065 SCRIPT       : BCMM_BETA_SETTING key=fractureWalkingBleedMlPerSecond attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.093 SCRIPT       : BCMM_BETA_SETTING key=fractureRunningBleedMlPerSecond attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.120 SCRIPT       : BCMM_BETA_SETTING key=bloodDepletionGraceSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.148 SCRIPT       : BCMM_BETA_SETTING key=ropeLengthMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.174 SCRIPT       : BCMM_BETA_SETTING key=ropeBreakDistanceMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.202 SCRIPT       : BCMM_BETA_SETTING key=carryConsentTimeoutSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.230 SCRIPT       : BCMM_BETA_SETTING key=suppressionEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.258 SCRIPT       : BCMM_BETA_SETTING key=suppressionReleaseSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.286 SCRIPT       : BCMM_BETA_SETTING key=suppressionBlurPercent attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.313 SCRIPT       : BCMM_BETA_SETTING key=suppressionVignettePercent attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.341 SCRIPT       : BCMM_BETA_SETTING key=suppressionBlurMultiplier attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.369 SCRIPT       : BCMM_BETA_SETTING key=suppressionVignetteMultiplier attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.397 SCRIPT       : BCMM_BETA_SETTING key=livesEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.424 SCRIPT       : BCMM_BETA_SETTING key=totalLives attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.452 SCRIPT       : BCMM_BETA_SETTING key=focusEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.480 SCRIPT       : BCMM_BETA_SETTING key=focusStrengthPercent attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.507 SCRIPT       : BCMM_BETA_SETTING key=focusDurationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.536 SCRIPT       : BCMM_BETA_SETTING key=focusCooldownSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.564 SCRIPT       : BCMM_BETA_SETTING key=cargoInteractionRangeMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.591 SCRIPT       : BCMM_BETA_SETTING key=cargoMaxVehicleSpeedMetresPerSecond attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.620 SCRIPT       : BCMM_BETA_SETTING key=normalBloodVolumeMl attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.648 SCRIPT       : BCMM_BETA_SETTING key=normalHeartRate attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.675 SCRIPT       : BCMM_BETA_SETTING key=normalSystolicPressure attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.703 SCRIPT       : BCMM_BETA_SETTING key=normalRespiratoryRate attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.732 SCRIPT       : BCMM_BETA_SETTING key=oxygenChangePerSecond attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.760 SCRIPT       : BCMM_BETA_SETTING key=arrestBloodFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.788 SCRIPT       : BCMM_BETA_SETTING key=arrestOxygenFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.816 SCRIPT       : BCMM_BETA_SETTING key=unconsciousOxygenFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.844 SCRIPT       : BCMM_BETA_SETTING key=arrestOnsetSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.874 SCRIPT       : BCMM_BETA_SETTING key=cprPerfusionFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.903 SCRIPT       : BCMM_BETA_SETTING key=roscStabilitySeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.931 SCRIPT       : BCMM_BETA_SETTING key=hypoxicDebtLimitSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.961 SCRIPT       : BCMM_BETA_SETTING key=baggingDurationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:36.994 SCRIPT       : BCMM_BETA_SETTING key=baggingRangeMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.022 SCRIPT       : BCMM_BETA_SETTING key=treatmentRangeMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.051 SCRIPT       : BCMM_BETA_SETTING key=examinationDurationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.081 SCRIPT       : BCMM_BETA_SETTING key=cprLeaseSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.110 SCRIPT       : BCMM_BETA_SETTING key=bagDragMaxSpeedMetresPerSecond attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.141 SCRIPT       : BCMM_BETA_SETTING key=bagDragResponsiveness attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.170 SCRIPT       : BCMM_BETA_SETTING key=manualBagDragMaxSpeedMetresPerSecond attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.200 SCRIPT       : BCMM_BETA_SETTING key=deathEquipmentRecoveryRangeMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.229 SCRIPT       : BCMM_BETA_SETTING key=splintApplicationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.258 SCRIPT       : BCMM_BETA_SETTING key=treatmentMovementToleranceMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.287 SCRIPT       : BCMM_BETA_SETTING key=surgeryDurationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.316 SCRIPT       : BCMM_BETA_SETTING key=sutureDurationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.346 SCRIPT       : BCMM_BETA_SETTING key=medicalFacilityRangeMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.376 SCRIPT       : BCMM_BETA_SETTING key=bandageApplicationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.406 SCRIPT       : BCMM_BETA_SETTING key=painWoundUnits attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.437 SCRIPT       : BCMM_BETA_SETTING key=painDressedMultiplier attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.466 SCRIPT       : BCMM_BETA_SETTING key=painSuturedMultiplier attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.496 SCRIPT       : BCMM_BETA_SETTING key=painFractureUnits attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.526 SCRIPT       : BCMM_BETA_SETTING key=painSplintMultiplier attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.556 SCRIPT       : BCMM_BETA_SETTING key=painInternalUnits attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.585 SCRIPT       : BCMM_BETA_SETTING key=medicationApplicationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.615 SCRIPT       : BCMM_BETA_SETTING key=medicationRepeatSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.644 SCRIPT       : BCMM_BETA_SETTING key=medicationMaxActiveDoses attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.674 SCRIPT       : BCMM_BETA_SETTING key=morphineOnsetSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.704 SCRIPT       : BCMM_BETA_SETTING key=morphineDurationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.734 SCRIPT       : BCMM_BETA_SETTING key=morphinePainReliefUnits attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.764 SCRIPT       : BCMM_BETA_SETTING key=morphineRespiratoryDepression attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.794 SCRIPT       : BCMM_BETA_SETTING key=morphinePressureDepression attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.824 SCRIPT       : BCMM_BETA_SETTING key=naloxoneOnsetSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.854 SCRIPT       : BCMM_BETA_SETTING key=naloxoneDurationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.885 SCRIPT       : BCMM_BETA_SETTING key=naloxoneReversalFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.915 SCRIPT       : BCMM_BETA_SETTING key=epinephrineOnsetSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.946 SCRIPT       : BCMM_BETA_SETTING key=epinephrineDurationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:37.976 SCRIPT       : BCMM_BETA_SETTING key=epinephrineHeartRateBoost attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.006 SCRIPT       : BCMM_BETA_SETTING key=epinephrinePressureBoost attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.036 SCRIPT       : BCMM_BETA_SETTING key=painAimingPenalty attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.066 SCRIPT       : BCMM_BETA_SETTING key=chestSealApplicationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.096 SCRIPT       : BCMM_BETA_SETTING key=decompressionSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.126 SCRIPT       : BCMM_BETA_SETTING key=airwayInsertionSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.159 SCRIPT       : BCMM_BETA_SETTING key=suctionSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.192 SCRIPT       : BCMM_BETA_SETTING key=ventilationCycleSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.233 SCRIPT       : BCMM_BETA_SETTING key=ventilationSupportSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.267 SCRIPT       : BCMM_BETA_SETTING key=chestDrainInsertionSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.302 SCRIPT       : BCMM_BETA_SETTING key=chestDrainMlPerSecond attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.336 SCRIPT       : BCMM_BETA_SETTING key=lungReinflationPerSecond attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.370 SCRIPT       : BCMM_BETA_SETTING key=aedPadApplicationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.405 SCRIPT       : BCMM_BETA_SETTING key=aedAnalysisSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.440 SCRIPT       : BCMM_BETA_SETTING key=aedShockSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.475 SCRIPT       : BCMM_BETA_SETTING key=aedAnalysisValiditySeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.506 SCRIPT       : BCMM_BETA_SETTING key=aedShocksPerDevice attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.537 SCRIPT       : BCMM_BETA_SETTING key=monitorCheckSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.567 SCRIPT       : BCMM_BETA_SETTING key=ivAccessSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.598 SCRIPT       : BCMM_BETA_SETTING key=fluidInfusionSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.629 SCRIPT       : BCMM_BETA_SETTING key=fluidBagVolumeMl attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.660 SCRIPT       : BCMM_BETA_SETTING key=penetratingChestInjuryChance attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.691 SCRIPT       : BCMM_BETA_SETTING key=initialTensionChance attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.722 SCRIPT       : BCMM_BETA_SETTING key=initialLungCollapseFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.754 SCRIPT       : BCMM_BETA_SETTING key=penetratingInternalBleedChance attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.785 SCRIPT       : BCMM_BETA_SETTING key=internalBleedMaxMlPerSecond attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.816 SCRIPT       : BCMM_BETA_SETTING key=headAirwayOcclusionChance attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.846 SCRIPT       : BCMM_BETA_SETTING key=automaticUnconsciousAirwayObstruction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.878 SCRIPT       : BCMM_BETA_SETTING key=procedurePreparationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.910 SCRIPT       : BCMM_BETA_SETTING key=procedureCompletionGraceSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.941 SCRIPT       : BCMM_BETA_SETTING key=medicTimeReductionPercent attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:38.972 SCRIPT       : BCMM_BETA_SETTING key=medicOnlySurgery attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.005 SCRIPT       : BCMM_BETA_SETTING key=medicOnlyAED attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.037 SCRIPT       : BCMM_BETA_SETTING key=medicOnlyFluids attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.068 SCRIPT       : BCMM_BETA_SETTING key=medicOnlyAdvancedAirway attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.100 SCRIPT       : BCMM_BETA_SETTING key=medicOnlyMedication attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.130 SCRIPT       : BCMM_BETA_SETTING key=pulseOximeterApplicationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.162 SCRIPT       : BCMM_BETA_SETTING key=pulseOximeterRangeMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.194 SCRIPT       : BCMM_BETA_SETTING key=pulseOximeterAudibleMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.226 SCRIPT       : BCMM_BETA_SETTING key=pulseOximeterSoundEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.259 SCRIPT       : BCMM_BETA_SETTING key=txaApplicationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.290 SCRIPT       : BCMM_BETA_SETTING key=txaOnsetSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.321 SCRIPT       : BCMM_BETA_SETTING key=txaDurationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.353 SCRIPT       : BCMM_BETA_SETTING key=txaClotWearReduction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.384 SCRIPT       : BCMM_BETA_SETTING key=txaRepeatSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.416 SCRIPT       : BCMM_BETA_SETTING key=txaMaxActiveDoses attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.447 SCRIPT       : BCMM_BETA_SETTING key=txaRequiresVascularAccess attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.480 SCRIPT       : BCMM_BETA_SETTING key=txaMedicOnly attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.511 SCRIPT       : BCMM_BETA_SETTING key=stretcherCarryEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.542 SCRIPT       : BCMM_BETA_SETTING key=stretcherJoinRangeMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.574 SCRIPT       : BCMM_BETA_SETTING key=stretcherPairTimeoutSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.606 SCRIPT       : BCMM_BETA_SETTING key=stretcherMinimumSpanMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.637 SCRIPT       : BCMM_BETA_SETTING key=stretcherMaximumSpanMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.669 SCRIPT       : BCMM_BETA_SETTING key=stretcherMaximumSpeedMetresPerSecond attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.701 SCRIPT       : BCMM_BETA_SETTING key=stretcherCarrySpeedFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.733 SCRIPT       : BCMM_BETA_SETTING key=stretcherCarryHeightMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.766 SCRIPT       : BCMM_BETA_SETTING key=stretcherMaximumHeightDifferenceMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.798 SCRIPT       : BCMM_BETA_SETTING key=stretcherStabilityEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.831 SCRIPT       : BCMM_BETA_SETTING key=stretcherDressingWearReduction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.864 SCRIPT       : BCMM_BETA_SETTING key=stretcherHandleOffsetMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.897 SCRIPT       : BCMM_BETA_SETTING key=stretcherMaximumTurnDegreesPerSecond attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.930 SCRIPT       : BCMM_BETA_SETTING key=stretcherGripAnimationEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.962 SCRIPT       : BCMM_BETA_SETTING key=stretcherGripBlendSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:39.995 SCRIPT       : BCMM_BETA_SETTING key=equipmentVisualsEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.028 SCRIPT       : BCMM_BETA_SETTING key=equipmentVisualRangeMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.061 SCRIPT       : BCMM_BETA_SETTING key=equipmentVisualSplintsEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.094 SCRIPT       : BCMM_BETA_SETTING key=equipmentVisualChestDevicesEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.127 SCRIPT       : BCMM_BETA_SETTING key=equipmentVisualIVEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.160 SCRIPT       : BCMM_BETA_SETTING key=equipmentVisualTourniquetsEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.192 SCRIPT       : BCMM_BETA_SETTING key=medicationVitalChecksEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.225 SCRIPT       : BCMM_BETA_SETTING key=morphineMinimumHeartRate attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.258 SCRIPT       : BCMM_BETA_SETTING key=morphineMinimumSystolicPressure attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.293 SCRIPT       : BCMM_BETA_SETTING key=morphineMinimumRespiratoryRate attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.328 SCRIPT       : BCMM_BETA_SETTING key=morphineMinimumOxygenFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.360 SCRIPT       : BCMM_BETA_SETTING key=epinephrineMaximumHeartRate attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.394 SCRIPT       : BCMM_BETA_SETTING key=epinephrineMaximumSystolicPressure attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.427 SCRIPT       : BCMM_BETA_SETTING key=epinephrineWithPulseEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.460 SCRIPT       : BCMM_BETA_SETTING key=naloxoneRequiresOpioid attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.493 SCRIPT       : BCMM_BETA_SETTING key=fluidSafetyChecksEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.527 SCRIPT       : BCMM_BETA_SETTING key=fluidMaximumSystolicPressure attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.560 SCRIPT       : BCMM_BETA_SETTING key=fluidMinimumDeficitMl attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.593 SCRIPT       : BCMM_BETA_SETTING key=adequateRespiratoryRate attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.627 SCRIPT       : BCMM_BETA_SETTING key=compensatoryHeartRateBoost attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.660 SCRIPT       : BCMM_BETA_SETTING key=painHeartRateBoost attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.693 SCRIPT       : BCMM_BETA_SETTING key=shockDecompensationBloodFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.728 SCRIPT       : BCMM_BETA_SETTING key=minimumEfficientHeartRate attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.761 SCRIPT       : BCMM_BETA_SETTING key=maximumEfficientHeartRate attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.794 SCRIPT       : BCMM_BETA_SETTING key=criticalBradycardiaRate attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.828 SCRIPT       : BCMM_BETA_SETTING key=criticalTachycardiaRate attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.862 SCRIPT       : BCMM_BETA_SETTING key=criticalSystolicPressure attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.896 SCRIPT       : BCMM_BETA_SETTING key=criticalRatePressureCeiling attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.931 SCRIPT       : BCMM_BETA_SETTING key=criticalVitalExposureSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.964 SCRIPT       : BCMM_BETA_SETTING key=txaInternalBleedReduction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:40.998 SCRIPT       : BCMM_BETA_SETTING key=naturalBloodRegenerationEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.032 SCRIPT       : BCMM_BETA_SETTING key=fluidCompositionEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.066 SCRIPT       : BCMM_BETA_SETTING key=salineRetainedFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.102 SCRIPT       : BCMM_BETA_SETTING key=plasmaRetainedFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.137 SCRIPT       : BCMM_BETA_SETTING key=fluidRedistributionSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.171 SCRIPT       : BCMM_BETA_SETTING key=fluidDilutionBleedMultiplier attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.204 SCRIPT       : BCMM_BETA_SETTING key=fluidDilutionWearMultiplier attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.240 SCRIPT       : BCMM_BETA_SETTING key=criticalOxygenDeliveryFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.273 SCRIPT       : BCMM_BETA_SETTING key=recoveryOxygenDeliveryFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.307 SCRIPT       : BCMM_BETA_SETTING key=oxygenEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.342 SCRIPT       : BCMM_BETA_SETTING key=oxygenApplicationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.380 SCRIPT       : BCMM_BETA_SETTING key=oxygenRemovalSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.415 SCRIPT       : BCMM_BETA_SETTING key=oxygenCapacityLitres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.449 SCRIPT       : BCMM_BETA_SETTING key=oxygenFlowLitresPerMinute attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.483 SCRIPT       : BCMM_BETA_SETTING key=oxygenRangeMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.518 SCRIPT       : BCMM_BETA_SETTING key=oxygenLungCompensation attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.551 SCRIPT       : BCMM_BETA_SETTING key=oxygenMinimumLungFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.586 SCRIPT       : BCMM_BETA_SETTING key=medicOnlyOxygen attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.620 SCRIPT       : BCMM_BETA_SETTING key=equipmentVisualOxygenEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.655 SCRIPT       : BCMM_BETA_SETTING key=paracetamolApplicationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.689 SCRIPT       : BCMM_BETA_SETTING key=paracetamolOnsetSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.724 SCRIPT       : BCMM_BETA_SETTING key=paracetamolDurationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.759 SCRIPT       : BCMM_BETA_SETTING key=paracetamolRepeatSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.794 SCRIPT       : BCMM_BETA_SETTING key=paracetamolMaxActiveDoses attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.829 SCRIPT       : BCMM_BETA_SETTING key=paracetamolPainReliefUnits attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.862 SCRIPT       : BCMM_BETA_SETTING key=oralMinimumRespiratoryRate attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.898 SCRIPT       : BCMM_BETA_SETTING key=fentanylApplicationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.934 SCRIPT       : BCMM_BETA_SETTING key=fentanylOnsetSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:41.970 SCRIPT       : BCMM_BETA_SETTING key=fentanylDurationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.005 SCRIPT       : BCMM_BETA_SETTING key=fentanylRespiratoryOnsetSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.040 SCRIPT       : BCMM_BETA_SETTING key=fentanylRespiratoryDurationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.076 SCRIPT       : BCMM_BETA_SETTING key=fentanylRepeatSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.110 SCRIPT       : BCMM_BETA_SETTING key=fentanylMaxActiveDoses attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.146 SCRIPT       : BCMM_BETA_SETTING key=fentanylPainReliefUnits attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.183 SCRIPT       : BCMM_BETA_SETTING key=fentanylRespiratoryDepression attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.218 SCRIPT       : BCMM_BETA_SETTING key=fentanylPressureDepression attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.253 SCRIPT       : BCMM_BETA_SETTING key=fentanylMinimumSystolicPressure attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.288 SCRIPT       : BCMM_BETA_SETTING key=fentanylMinimumHeartRate attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.325 SCRIPT       : BCMM_BETA_SETTING key=fentanylMinimumRespiratoryRate attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.361 SCRIPT       : BCMM_BETA_SETTING key=fentanylMinimumOxygenFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.401 SCRIPT       : BCMM_BETA_SETTING key=fentanylRequiresVascularAccess attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.438 SCRIPT       : BCMM_BETA_SETTING key=fentanylMedicOnly attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.472 SCRIPT       : BCMM_BETA_SETTING key=arsenalUSEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.508 SCRIPT       : BCMM_BETA_SETTING key=arsenalUSSREnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.542 SCRIPT       : BCMM_BETA_SETTING key=arsenalFIAEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.579 SCRIPT       : BCMM_BETA_SETTING key=arsenalRefundFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.614 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostTourniquet attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.649 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostBandage attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.684 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostAED attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.720 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostAEDPads attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.756 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostAirwayAdjunct attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.791 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostBVM attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.826 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostChestDrain attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.861 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostChestSeal attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.898 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostDragRope attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.934 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostEmptyBodyBag attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:42.970 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostEpinephrine attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.008 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostFentanyl attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.044 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostFluidBag attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.080 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostMonitor attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.117 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostMorphine attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.152 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostNaloxone attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.187 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostNCD attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.225 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostOxygen attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.260 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostParacetamol attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.296 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostPlasma attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.331 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostPulseOximeter attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.368 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostSaline attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.404 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostSplint attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.441 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostSuction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.478 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostSurgeryKit attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.516 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostSutureKit attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.552 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostTXA attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.589 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostVascularAccess attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.625 SCRIPT       : BCMM_BETA_SETTING key=maskOffsetRight attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.661 SCRIPT       : BCMM_BETA_SETTING key=maskOffsetUp attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.698 SCRIPT       : BCMM_BETA_SETTING key=maskOffsetForward attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.734 SCRIPT       : BCMM_BETA_SETTING key=maskScale attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.772 SCRIPT       : BCMM_BETA_SETTING key=maskYawDegrees attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.809 SCRIPT       : BCMM_BETA_SETTING key=maskPitchDegrees attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.847 SCRIPT       : BCMM_BETA_SETTING key=maskRollDegrees attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.884 SCRIPT       : BCMM_BETA_SETTING key=tabletAnimationEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.921 SCRIPT       : BCMM_BETA_SETTING key=burialEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.958 SCRIPT       : BCMM_BETA_SETTING key=burialDurationSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:43.996 SCRIPT       : BCMM_BETA_SETTING key=burialRangeMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.034 SCRIPT       : BCMM_BETA_SETTING key=sendHomeEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.071 SCRIPT       : BCMM_BETA_SETTING key=componentRecoveryEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.108 SCRIPT       : BCMM_BETA_SETTING key=redCellRecoverySeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.145 SCRIPT       : BCMM_BETA_SETTING key=clottingRecoverySeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.184 SCRIPT       : BCMM_BETA_SETTING key=componentRecoveryMinimumBloodFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.225 SCRIPT       : BCMM_BETA_SETTING key=componentRecoveryRequiresFacility attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.266 SCRIPT       : BCMM_BETA_SETTING key=componentRecoveryMinimumSystolicPressure attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.309 SCRIPT       : BCMM_BETA_SETTING key=continuousFluidLinesEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.353 SCRIPT       : BCMM_BETA_SETTING key=fluidLineConnectionSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.404 SCRIPT       : BCMM_BETA_SETTING key=fluidLineRemovalSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.447 SCRIPT       : BCMM_BETA_SETTING key=fluidOverloadEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.494 SCRIPT       : BCMM_BETA_SETTING key=fluidOverloadThresholdFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.540 SCRIPT       : BCMM_BETA_SETTING key=fluidOverloadSevereFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.578 SCRIPT       : BCMM_BETA_SETTING key=fluidOverloadClearanceSeconds attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.616 SCRIPT       : BCMM_BETA_SETTING key=fluidOverloadMinimumLungFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.653 SCRIPT       : BCMM_BETA_SETTING key=fluidOverloadStopAdditionalWater attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.692 SCRIPT       : BCMM_BETA_SETTING key=fluidOverloadStopSeverity attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.730 SCRIPT       : BCMM_BETA_SETTING key=fieldProcedureProgressOnly attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.767 SCRIPT       : BCMM_BETA_SETTING key=weaponRetentionPolicy attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.805 SCRIPT       : BCMM_BETA_SETTING key=arsenalCostWeaponSling attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.842 SCRIPT       : BCMM_BETA_SETTING key=casualtyCarryEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.880 SCRIPT       : BCMM_BETA_SETTING key=casualtyDragEnabled attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.921 SCRIPT       : BCMM_BETA_SETTING key=casualtyTransportRangeMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.959 SCRIPT       : BCMM_BETA_SETTING key=casualtyCarrySpeedFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:44.997 SCRIPT       : BCMM_BETA_SETTING key=casualtyDragSpeedFraction attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:45.036 SCRIPT       : BCMM_BETA_SETTING key=casualtyTransportMaxStepMetres attempts=200 stateAssertions=800 gameplayCycles=0
+08:54:46.262 SCRIPT       : BCMM_FLUID_RECOVERY pulse=128.913 red=0.326083 delivery=0.319561 terminal=0
+08:54:46.998 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=US count=29 ordinary=187
+08:54:47.000 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=USSR count=29 ordinary=166
+08:54:47.001 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=FIA count=29 ordinary=105
+08:54:48.261 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=1
+08:54:48.277 SCRIPT       : BCMM settings read path=$profile:BCMM_InvalidSettings/settings-a.json parsed=1 valid=0 generation=999
+08:54:48.278 SCRIPT    (E): BCMM settings invalid: files preserved; edits locked until repaired.
+08:54:48.304 SCRIPT       : BCMM_ROLE_LIST count=38 roles=2 native=1
+08:54:48.308 SCRIPT       : BCMM_CATALOGUE_REGISTRIES medical=1 nativeEntries=41
+08:54:48.573 SCRIPT       : BCMM_CHECK COMPLETE checks=223880 failures=0 run=683c00e070c74791984b6cd3daf7041d

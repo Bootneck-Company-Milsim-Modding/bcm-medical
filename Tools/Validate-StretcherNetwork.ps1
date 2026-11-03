@@ -1,4 +1,4 @@
-param([string]$ServerDirectory='',[switch]$Carry,[switch]$Safety,[switch]$PatientOwner,[switch]$Presentation,[switch]$AppliedEquipment,[switch]$Review)
+param([string]$ServerDirectory='',[switch]$Carry,[switch]$Safety,[switch]$PatientOwner,[switch]$Presentation,[switch]$AppliedEquipment,[switch]$Review,[switch]$StationaryPatientOwner)
 $ErrorActionPreference='Stop'
 if($Safety -or $PatientOwner -or $Presentation -or $AppliedEquipment){$Carry=$true}
 $root=Split-Path $PSScriptRoot -Parent
@@ -8,6 +8,7 @@ $run=Join-Path $root ('.checks\stretcher-network-'+(Get-Date -Format 'yyyyMMdd-H
 $token=[Guid]::NewGuid().ToString('N');$port=Get-Random -Minimum 24000 -Maximum 30000
 $dirs=$root+','+(Join-Path $root 'Tests\Runtime')+','+(Join-Path $game 'addons')
 $common='-gproj "'+(Join-Path $root 'Tests\Runtime\addon.gproj')+'" -addons B6C4ED1CA1260002 -addonsDir "'+$dirs+'" -noBackend -disableCrashReporter -noSound -noThrow -noFocus -forceUpdate -maxFPS 30 '
+if($StationaryPatientOwner){$common+=' -bcmmStationaryPatientOwner 1 '}
 if($Presentation){$common+=' -bcmmGripPresentationCheck 1 '}
 if($AppliedEquipment){$common+=' -bcmmAppliedEquipmentCheck 1 '}
 if($Review){$common+=' -bcmmStretcherReview 1 '}
@@ -31,6 +32,7 @@ try{
   $logs=@('observer-a','observer-b','late-join')|ForEach-Object{Read-Log $_}
   if(($server+($logs -join "`n")) -match 'BCMM_CHECK FAILED|Can.t compile.*script|Virtual Machine Exception|ReplicationError|RplLayoutError|RplLoadError'){throw 'Stretcher network check failed; inspect logs.'}
   $observed=$late
+  if($StationaryPatientOwner -and ($logs -join "`n") -notmatch 'BCMM_STATIONARY_PATIENT_OWNER_ANCHORED'){$observed=$false}
   if($Safety){foreach($settingsLog in $logs){if($settingsLog -notmatch "BCMM_CARRY_SETTINGS_MIRROR_PASSED"){$observed=$false}}}
   if($PatientOwner -and ($logs -join "`n") -notmatch "BCMM_CARRY_PATIENT_OWNER_ANCHORED"){$observed=$false}
   $phases=@(2,4);if($Carry){$phases=@(6,8,10)}
@@ -48,4 +50,3 @@ try{
 foreach($role in @('server','observer-a','observer-b','late-join')){Write-Output $role;(Read-Log $role) -split "`n"|Where-Object{$_ -match 'BCMM_STRETCHER_|BCMM_CARRY_|BCMM_CHECK COMPLETE|BCMM_CHECK FAILED'}|Select-Object -Last 8}
 Write-Output ('Run directory: '+$run)
 if(!$passed){throw 'Stretcher owner/proxy/late-join checks did not all pass.'}
-

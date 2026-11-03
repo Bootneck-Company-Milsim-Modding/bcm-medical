@@ -34,7 +34,14 @@ class BCMM_BodyBagComponent : ScriptComponent
   Replication.BumpMe();
  }
  [RplProp()] protected RplId m_DraggingActor = RplId.Invalid();
- [RplProp()] protected BCMM_TransportMode m_DragMode;
+ [RplProp(onRplName:"ApplyDragCollision")] protected BCMM_TransportMode m_DragMode;
+ protected ref BCMM_TransportCollision m_DragCollision=new BCMM_TransportCollision();
+ protected void ApplyDragCollision()
+ {
+  if(m_DragMode==BCMM_TransportMode.BODY_BAG_MANUAL_DRAG || m_DragMode==BCMM_TransportMode.BODY_BAG_ROPE_DRAG)
+   m_DragCollision.Apply(GetOwner(),EPhysicsLayerPresets.ItemFireView);
+  else m_DragCollision.Restore(GetOwner());
+ }
  RplId DraggingActor() { return m_DraggingActor; }
  BCMM_TransportMode DragMode() { return m_DragMode; }
  void SetDragging(RplId actor, BCMM_TransportMode mode)
@@ -42,6 +49,7 @@ class BCMM_BodyBagComponent : ScriptComponent
   if (!Replication.IsServer()) return;
   m_DraggingActor = actor;
   m_DragMode = mode;
+  ApplyDragCollision();
   m_Revision++;
   Replication.BumpMe();
  }
@@ -58,10 +66,11 @@ class BCMM_BodyBagComponent : ScriptComponent
   super.OnPostInit(owner);
   Instances.Insert(this);
   BCMM_RemainsProtection.ProtectBag(owner);
-  if (Replication.IsServer()) SetEventMask(owner, EntityEvent.FRAME);
+  SetEventMask(owner, EntityEvent.FRAME);
  }
  override protected void EOnFrame(IEntity owner, float timeSlice)
  {
+  ApplyDragCollision();
   if (m_State == BCMM_BagCargoState.VEHICLE_LOST) return;
   if (!Replication.IsServer() || m_State == BCMM_BagCargoState.LOADING || m_State == BCMM_BagCargoState.UNLOADING) return;
   m_ReconcileTimer += timeSlice;
@@ -116,6 +125,7 @@ class BCMM_BodyBagComponent : ScriptComponent
  }
  override void OnDelete(IEntity owner)
  {
+  m_DragCollision.Restore(owner);
   if(GetGame()) GetGame().GetCallqueue().Remove(DeleteLostRemains);
   if (Replication.IsServer())
   {
@@ -375,7 +385,7 @@ class BCMM_CargoOperation : ScriptedInventoryOperationCallback
    if (gear) item = InventoryItemComponent.Cast(gear.FindComponent(InventoryItemComponent));
    if (!item || !item.GetParentSlot() || !item.GetParentSlot().GetStorage()) continue;
    if (item.GetParentSlot().GetStorage().GetOwner() != m_Bag) continue;
-   bool duplicate;
+   bool duplicate = false;
    foreach (BCMM_BagTransferEntry existing : m_Gear) if (existing.Item == gear) duplicate = true;
    if (duplicate) continue;
    BCMM_BagTransferEntry entry = new BCMM_BagTransferEntry();
@@ -398,26 +408,30 @@ class BCMM_CargoOperation : ScriptedInventoryOperationCallback
   IEntity gear = m_Gear[m_GearIndex].Item;
   BaseInventoryStorageComponent storage;
   if (gear && gear.GetPrefabData()) storage = m_Inventory.FindStorageForResource(gear.GetPrefabData().GetPrefabName(), EStoragePurpose.PURPOSE_DEPOSIT);
+  PrintFormat("BCMM_CARGO_GEAR index=%1/%2 item=%3 destination=%4", m_GearIndex, m_Gear.Count(), gear, storage);
   if (!storage || !m_BagInventory || !m_BagInventory.TryMoveItemToStorage(gear, storage, -1, this))
    if (!m_Complete && m_Phase == 1) Rollback();
  }
  override protected void OnComplete()
  {
   if (m_Complete) return;
-  if (m_Phase == 1) { m_GearIndex++; MoveNextGear(); return; }
-  if (m_Phase == 2) { m_RestoreIndex--; RestoreNext(); return; }
+  // Native inventory may complete synchronously. Yield between items so a
+  // fully loaded casualty cannot exhaust the script stack in one callback.
+  if (m_Phase == 1) { m_GearIndex++; GetGame().GetCallqueue().CallLater(MoveNextGear, 1); return; }
+  if (m_Phase == 2) { m_RestoreIndex--; GetGame().GetCallqueue().CallLater(RestoreNext, 1); return; }
   bool contained = m_Inventory && m_Bag && m_Inventory.Contains(m_Bag);
   if (m_Loading && !contained) { Rollback(); return; }
   CompleteBag();
  }
  override protected void OnFailed()
  {
+  PrintFormat("BCMM_CARGO_CALLBACK_FAILED phase=%1 index=%2", m_Phase, m_GearIndex);
   if (m_Complete) return;
   if (m_Phase == 2)
   {
    m_RestoreFailed = true;
    m_RestoreIndex--;
-   RestoreNext();
+   GetGame().GetCallqueue().CallLater(RestoreNext, 1);
    return;
   }
   if (m_Loading) Rollback();
@@ -425,6 +439,7 @@ class BCMM_CargoOperation : ScriptedInventoryOperationCallback
  }
  protected void Rollback()
  {
+  PrintFormat("BCMM_CARGO_ROLLBACK phase=%1 index=%2", m_Phase, m_GearIndex);
   if (m_Complete || m_Phase == 2) return;
   m_Phase = 2;
   if (m_BagStorage) m_BagStorage.SetTransferring(true);
@@ -446,13 +461,13 @@ class BCMM_CargoOperation : ScriptedInventoryOperationCallback
   if (item && item.GetParentSlot() && item.GetParentSlot().GetStorage() == entry.Storage)
   {
    m_RestoreIndex--;
-   RestoreNext();
+   GetGame().GetCallqueue().CallLater(RestoreNext, 1);
    return;
   }
   if (!entry.Item || !m_Inventory || !m_Inventory.Contains(entry.Item))
   {
    m_RestoreIndex--;
-   RestoreNext();
+   GetGame().GetCallqueue().CallLater(RestoreNext, 1);
    return;
   }
   if (!entry.Storage || !m_Inventory.TryMoveItemToStorage(entry.Item, entry.Storage, entry.Slot, this))

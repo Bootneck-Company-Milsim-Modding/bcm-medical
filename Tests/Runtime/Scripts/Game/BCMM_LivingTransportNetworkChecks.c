@@ -15,6 +15,14 @@ modded class SCR_BaseGameMode
  [RplProp()] protected RplId m_BCMMLivingTestPatient=RplId.Invalid();
  [RplProp()] protected RplId m_BCMMLivingTestWeapon=RplId.Invalid();
  [RplProp()] protected int m_BCMMLivingCancelledOffer;
+ protected ref array<int> m_BCMMLivingObservationAcks={};
+ void BCMM_LivingObservationAck(int playerId,int phase)
+ {
+  int key=phase*10+playerId;
+  if(Replication.IsServer() && playerId>0 && playerId<=3 && phase==m_BCMMLivingTestPhase && !m_BCMMLivingObservationAcks.Contains(key))m_BCMMLivingObservationAcks.Insert(key);
+ }
+ bool BCMM_LivingObservedBy(int playerId,int phase){return m_BCMMLivingObservationAcks.Contains(phase*10+playerId);}
+ bool BCMM_LivingObservedByAll(int phase){return BCMM_LivingObservedBy(1,phase) && BCMM_LivingObservedBy(2,phase) && BCMM_LivingObservedBy(3,phase);}
  void BCMM_PublishCancelledOffer(int token){m_BCMMLivingCancelledOffer=token;Replication.BumpMe();}
  int BCMM_LivingCancelledOffer(){return m_BCMMLivingCancelledOffer;}
  void BCMM_PublishLivingTest(int phase,IEntity actor,IEntity patient)
@@ -27,6 +35,12 @@ modded class SCR_BaseGameMode
  RplId BCMM_LivingTestPatient(){return m_BCMMLivingTestPatient;}
  RplId BCMM_LivingTestWeapon(){return m_BCMMLivingTestWeapon;}
  void BCMM_PublishLivingWeapon(IEntity weapon){m_BCMMLivingTestWeapon=BCMM_BodyBagComponent.Id(weapon);Replication.BumpMe();}
+}
+modded class SCR_PlayerController
+{
+ void BCMM_LivingObservationAck(int phase){Rpc(BCMM_LivingObservationAckServer,phase);}
+ [RplRpc(RplChannel.Reliable,RplRcver.Server)]
+ protected void BCMM_LivingObservationAckServer(int phase){SCR_BaseGameMode.Cast(GetGame().GetGameMode()).BCMM_LivingObservationAck(GetPlayerId(),phase);}
 }
 class BCMM_LivingTransportNetworkChecks : BCMM_SplintRuntimeChecks
 {
@@ -43,6 +57,8 @@ class BCMM_LivingTransportNetworkChecks : BCMM_SplintRuntimeChecks
  protected float m_WalkHeadingDot=1;
  protected IEntity m_CarryHolder;
  protected IEntity m_DragHolder;
+ protected float m_ReleaseObservedAt;
+ protected float m_NextFinalTrace;
  override protected void Prepare()
  {
   SCR_EntityHelper.DeleteEntityAndChildren(m_Floor);
@@ -67,7 +83,7 @@ class BCMM_LivingTransportNetworkChecks : BCMM_SplintRuntimeChecks
  }
  protected void Publish(int phase)
  {
-  m_Phase=phase;m_PhaseAt=GetGame().GetWorld().GetWorldTime();m_HadOffer=false;
+  m_Phase=phase;m_PhaseAt=GetGame().GetWorld().GetWorldTime();m_HadOffer=false;m_ReleaseObservedAt=0;
   if(phase==17)m_OfferBaseline=BCMM_LivingTransport.TestLastOfferToken();
   if(phase==4 || phase==7){m_WalkStart=m_Actor.GetOrigin();vector frame[4];m_Actor.GetWorldTransform(frame);m_WalkForward=frame[2];m_WalkDistance=0;m_WalkHeadingDot=1;}
   SCR_BaseGameMode.Cast(GetGame().GetGameMode()).BCMM_PublishLivingTest(phase,m_Actor,m_Target);
@@ -77,6 +93,13 @@ class BCMM_LivingTransportNetworkChecks : BCMM_SplintRuntimeChecks
   float elapsed=(GetGame().GetWorld().GetWorldTime()-m_PhaseAt)*0.001;
   if(elapsed>25){FailNetwork("Transport network phase timed out "+m_Phase);return;}
   int mode=m_Medical.BCMM_TransportMode();int token=BCMM_LivingTransport.TestOfferToken();
+  SCR_BaseGameMode observations=SCR_BaseGameMode.Cast(GetGame().GetGameMode());
+  if(m_Phase==17 && elapsed>=m_NextFinalTrace)
+  {
+   m_NextFinalTrace=elapsed+1;
+   PrintFormat("BCMM_LIVING_FINAL_TRACE elapsed=%1 offer=%2 latest=%3 baseline=%4 eligible=%5 distance=%6",elapsed,token,BCMM_LivingTransport.TestLastOfferToken(),m_OfferBaseline,BCMM_LivingTransport.Eligible(m_Actor,m_Target,1),vector.Distance(m_Actor.GetOrigin(),m_Target.GetOrigin()));
+  }
+  if((m_Phase==5 || m_Phase==8) && mode==0 && m_ReleaseObservedAt==0)m_ReleaseObservedAt=GetGame().GetWorld().GetWorldTime();
   if(m_Phase==4 || m_Phase==7){vector walkingFrame[4];m_Actor.GetWorldTransform(walkingFrame);m_WalkDistance=Math.Max(m_WalkDistance,vector.Distance(m_WalkStart,m_Actor.GetOrigin()));m_WalkHeadingDot=Math.Min(m_WalkHeadingDot,vector.Dot(m_WalkForward,walkingFrame[2]));}
   if(m_Phase==6 && elapsed>3 && elapsed<3.3)PrintFormat("BCMM_LIVING_DIAG mode=%1 offer=%2 eligible=%3 actor=%4 patient=%5 acfall=%6 pcfall=%7",mode,token,BCMM_LivingTransport.Eligible(m_Actor,m_Target,2),m_Actor.GetOrigin(),m_Target.GetOrigin(),BCMM_LivingTransport.Controller(m_Actor).IsFalling(),BCMM_LivingTransport.Controller(m_Target).IsFalling());
   if(m_Phase==6 && elapsed>3 && elapsed<3.3)PrintFormat("BCMM_LIVING_EXIT_DIAG vehicle=%1 parent=%2 slot=%3 actorItem=%4 patientItem=%5 busy=%6 actorVehicle=%7",ChimeraCharacter.Cast(m_Target).IsInVehicle(),m_Target.GetParent(),ChimeraCharacter.Cast(m_Target).GetCompartmentAccessComponent().GetVehicleCompartmentManagerOwner(),BCMM_LivingTransport.Controller(m_Actor).IsUsingItem(),BCMM_LivingTransport.Controller(m_Target).IsUsingItem(),BCMM_SplintTreatment.IsBusy(m_Actor,m_Target),ChimeraCharacter.Cast(m_Actor).IsInVehicle());
@@ -92,7 +115,7 @@ class BCMM_LivingTransportNetworkChecks : BCMM_SplintRuntimeChecks
   {
    m_Suite.Record(!ChimeraCharacter.Cast(m_Target).GetCharacterController().IsUnconscious() && m_Medical.BCMM_GetPatient().LeftLeg.Broken,"Conscious broken-leg owner accepts carry without manufactured unconsciousness or healing");Publish(4);return;
   }
-  if(m_Phase==4 && elapsed>10)
+  if(m_Phase==4 && elapsed>10 && observations.BCMM_LivingObservedByAll(4))
   {
    vector carryFrame[4];m_Actor.GetWorldTransform(carryFrame);
    PrintFormat("BCMM_NATIVE_WALK mode=1 distance=%1 headingDot=%2",m_WalkDistance,m_WalkHeadingDot);
@@ -102,11 +125,15 @@ class BCMM_LivingTransportNetworkChecks : BCMM_SplintRuntimeChecks
   }
   if(m_Phase==5 && mode==0 && elapsed>2 && vector.Distance(m_Actor.GetOrigin(),m_Target.GetOrigin())<1.8)
   {
+   // Cleanup intentionally waits 500 ms, then up to 20 native exit retries.
+   // Measure from observed authority release, not from the earlier phase RPC.
+   if(m_CarryHolder && GetGame().GetWorld().GetWorldTime()-m_ReleaseObservedAt<7000)return;
+   PrintFormat("BCMM_LIVING_RELEASE_CLEANUP phase=5 milliseconds=%1",GetGame().GetWorld().GetWorldTime()-m_ReleaseObservedAt);
    m_Suite.Record(!m_CarryHolder,"Dedicated release removes the empty carried-pose holder");
    m_Suite.Record(!BCMM_LivingTransport.ForParticipant(m_Target),"Carried patient can release via their own medical menu");Publish(6);return;
   }
   if(m_Phase==6 && mode==2){Publish(7);return;}
-  if(m_Phase==7 && elapsed>8)
+  if(m_Phase==7 && elapsed>8 && observations.BCMM_LivingObservedByAll(7))
   {
    vector dragFrame[4];m_Actor.GetWorldTransform(dragFrame);
    PrintFormat("BCMM_NATIVE_WALK mode=2 distance=%1 headingDot=%2",m_WalkDistance,m_WalkHeadingDot);
@@ -116,6 +143,8 @@ class BCMM_LivingTransportNetworkChecks : BCMM_SplintRuntimeChecks
   }
   if(m_Phase==8 && mode==0 && elapsed>2 && vector.Distance(m_Actor.GetOrigin(),m_Target.GetOrigin())<1.8)
   {
+   if(m_DragHolder && GetGame().GetWorld().GetWorldTime()-m_ReleaseObservedAt<7000)return;
+   PrintFormat("BCMM_LIVING_RELEASE_CLEANUP phase=8 milliseconds=%1",GetGame().GetWorld().GetWorldTime()-m_ReleaseObservedAt);
    m_Suite.Record(!m_DragHolder,"Dedicated release removes the empty dragged-pose holder");
    m_Suite.Record(!BCMM_LivingTransport.ForParticipant(m_Actor),"Carrier can release through their medical menu");
    SCR_BaseGameMode.Cast(GetGame().GetGameMode()).BCMM_TestRoleSetting("carryConsentTimeoutSeconds",3);Publish(9);return;
@@ -128,7 +157,7 @@ class BCMM_LivingTransportNetworkChecks : BCMM_SplintRuntimeChecks
     m_Suite.Record(mode==0,"Unanswered conscious-player consent expires without pickup");Publish(10);return;
    }
   }
-  if(m_Phase==10 && elapsed>6)
+  if(m_Phase==10 && elapsed>6 && observations.BCMM_LivingObservedByAll(10))
   {
    m_Suite.Record(!ChimeraCharacter.Cast(m_Target).GetCharacterController().IsUnconscious() && m_Medical.BCMM_GetPatient().LeftLeg.Broken,"Transport lifecycle preserves original patient injury and consciousness");
    InventoryStorageManagerComponent inventory=InventoryStorageManagerComponent.Cast(m_Target.FindComponent(InventoryStorageManagerComponent));
@@ -153,7 +182,7 @@ class BCMM_LivingTransportNetworkChecks : BCMM_SplintRuntimeChecks
    m_Suite.Record(BCMM_LivingTransport.Controller(m_Target).IsUnconscious() && inventory.Contains(m_NetworkWeapon) && inventory.Contains(m_NetworkSling),"Dedicated authority retains the same original rifle and non-consumed sling through real owner unconsciousness");
    Publish(13);return;
   }
-  if(m_Phase==13 && elapsed>6)
+  if(m_Phase==13 && elapsed>6 && observations.BCMM_LivingObservedBy(2,13))
   {
    Publish(14);return;
   }
@@ -161,13 +190,13 @@ class BCMM_LivingTransportNetworkChecks : BCMM_SplintRuntimeChecks
   {
    m_Suite.Record(token==0 && BCMM_LivingTransport.Controller(m_Target).IsUnconscious(),"Actual unconscious player is carried immediately without a consent offer");Publish(15);return;
   }
-  if(m_Phase==15 && elapsed>3)
+  if(m_Phase==15 && elapsed>3 && observations.BCMM_LivingObservedByAll(15))
   {
    // A deliberate fixture heal tests the native waking transition. Transport
    // itself must never manufacture consciousness or clinical recovery.
    m_Medical.FullHeal();Publish(16);return;
   }
-  if(m_Phase==16 && elapsed>2 && mode==0 && !ChimeraCharacter.Cast(m_Target).GetCompartmentAccessComponent().IsInCompartment())
+  if(m_Phase==16 && elapsed>2 && mode==0 && !ChimeraCharacter.Cast(m_Target).GetCompartmentAccessComponent().IsInCompartment() && observations.BCMM_LivingObservedBy(2,16))
   {
    m_Suite.Record(!BCMM_LivingTransport.Controller(m_Target).IsUnconscious(),"Waking a previously unconscious carried player automatically releases them for fresh consent");
    Publish(17);return;
@@ -177,7 +206,7 @@ class BCMM_LivingTransportNetworkChecks : BCMM_SplintRuntimeChecks
    if(BCMM_LivingTransport.TestLastOfferToken()>m_OfferBaseline)m_HadOffer=true;
    if(m_HadOffer && token==0 && elapsed>1){m_Suite.Record(mode==0,"Requesting owner cancels conscious carry through the compact medical menu");SCR_BaseGameMode.Cast(GetGame().GetGameMode()).BCMM_PublishCancelledOffer(BCMM_LivingTransport.TestLastOfferToken());Publish(18);return;}
   }
-  if(m_Phase==18 && elapsed>2)
+  if(m_Phase==18 && elapsed>2 && observations.BCMM_LivingObservedBy(2,18))
   {
    m_Suite.Record(mode==0 && token==0,"Accepting a cancelled transport token cannot move the original player");
    GetGame().GetCallqueue().Remove(TickNetwork);m_Suite.Complete();
@@ -198,6 +227,8 @@ modded class ArmaReforgerScripted
  protected int m_BCMMLivingCancelledToken;
  protected int m_BCMMLivingObserved;
  protected int m_BCMMLivingSent;
+ protected int m_BCMMLivingAnsweredOffer;
+ protected int m_BCMMLivingStaleWaitPhase;
  protected float m_BCMMLivingNext;
  protected SCR_ManualCamera m_BCMMLivingReviewCamera;
  override void OnUpdate(BaseWorld world,float timeslice)
@@ -231,6 +262,12 @@ modded class ArmaReforgerScripted
   else if(id==1 && (phase==1 || phase==3 || phase==6 || phase==9 || phase==14 || phase==17) && m_BCMMLivingSent!=phase && !(phase==17 && m_BCMMLivingSent==117) && owner.BCMM_TransportOfferToken()==0)
   {
    int action=1;if(phase==6)action=2;
+   // The final case starts a NEW conscious request after waking/release.
+   // Phase replication can precede the patient's exit and transport state.
+   // A real menu still offers release until those updates arrive; do not
+   // bypass that lifecycle by firing a one-shot request from the phase alone.
+   if(phase==17 && (state.BCMM_TransportMode()!=0 || BCMM_LivingTransport.Controller(patient).IsUnconscious() || !BCMM_LivingTransport.Eligible(actor,patient,action)))return;
+   PrintFormat("BCMM_LIVING_OWNER_REQUEST phase=%1 eligible=%2 distance=%3 mode=%4",phase,BCMM_LivingTransport.Eligible(actor,patient,action),vector.Distance(actor.GetOrigin(),patient.GetOrigin()),state.BCMM_TransportMode());
    owner.BCMM_RequestLivingTransport(patient,action);m_BCMMLivingSent=phase;
   }
   if(phase==17 && owner.BCMM_TransportOfferToken()>0)
@@ -243,13 +280,21 @@ modded class ArmaReforgerScripted
     if(cancel){cancel.m_OnClicked.Invoke(cancel);m_BCMMLivingSent=117;}
    }
   }
-  if(id==2 && phase==18 && m_BCMMLivingSent!=18 && game.BCMM_LivingCancelledOffer()>0){owner.BCMM_RequestLivingTransport(null,3,game.BCMM_LivingCancelledOffer());m_BCMMLivingSent=18;PrintFormat("BCMM_LIVING_REPLAY_CANCELLED player=2 token=%1",game.BCMM_LivingCancelledOffer());}
-  if(id==2 && ((phase==2 || phase==3 || phase==6) && owner.BCMM_TransportIncoming() || phase==5 && state.BCMM_TransportMode()>0) && m_BCMMLivingSent!=phase)
+  if(id==2 && phase==18 && m_BCMMLivingSent!=18 && game.BCMM_LivingCancelledOffer()>0){owner.BCMM_RequestLivingTransport(null,3,game.BCMM_LivingCancelledOffer());m_BCMMLivingSent=18;PrintFormat("BCMM_LIVING_REPLAY_CANCELLED player=2 token=%1",game.BCMM_LivingCancelledOffer());owner.BCMM_LivingObservationAck(18);}
+  bool responsePhase=phase==2 || phase==3 || phase==6;
+  int incomingToken=owner.BCMM_TransportOfferToken();
+  if(id==2 && responsePhase && owner.BCMM_TransportIncoming() && incomingToken==m_BCMMLivingAnsweredOffer && m_BCMMLivingStaleWaitPhase!=phase)
+  {
+   m_BCMMLivingStaleWaitPhase=phase;PrintFormat("BCMM_LIVING_STALE_OFFER_WAIT phase=%1 token=%2",phase,incomingToken);
+  }
+  // Phase replication may precede the reliable clear/new-offer notifications.
+  // Do not mistake an already answered token for the next consent request.
+  if(id==2 && (responsePhase && owner.BCMM_TransportIncoming() && incomingToken!=m_BCMMLivingAnsweredOffer || phase==5 && state.BCMM_TransportMode()>0) && m_BCMMLivingSent!=phase)
   {
    if(!BCMM_MedicalMenu.Current()){BCMM_MedicalMenu.Open(owner.GetControlledEntity());return;}
    Widget root=BCMM_MedicalMenu.Current().GetRootWidget();string name="TransportCarry";if(phase==2)name="TransportDrag";
    SCR_ButtonTextComponent button=SCR_ButtonTextComponent.GetButtonText(name,root);
-   if(button){button.m_OnClicked.Invoke(button);m_BCMMLivingSent=phase;System.MakeScreenshot("$profile:transport-menu-phase-"+phase);}
+   if(button){if(responsePhase)m_BCMMLivingAnsweredOffer=incomingToken;PrintFormat("BCMM_LIVING_MENU_RESPONSE phase=%1 token=%2",phase,incomingToken);button.m_OnClicked.Invoke(button);m_BCMMLivingSent=phase;System.MakeScreenshot("$profile:transport-menu-phase-"+phase);}
   }
   if(id==1 && phase==8 && m_BCMMLivingSent!=phase)
   {
@@ -260,13 +305,13 @@ modded class ArmaReforgerScripted
   int expected=0;if(phase==4)expected=1;if(phase==7)expected=2;
   if(phase==15)expected=1;
   if(id==2 && phase==16 && phase!=m_BCMMLivingObserved && !BCMM_LivingTransport.Controller(patient).IsUnconscious() && state.BCMM_TransportMode()==0 && !ChimeraCharacter.Cast(patient).GetCompartmentAccessComponent().IsInCompartment() && !BCMM_LivingTransport.Controller(patient).GetDisableMovementControls() && !BCMM_LivingTransport.Controller(patient).GetDisableWeaponControls())
-  {Print("BCMM_LIVING_NET_OBSERVED phase=16 player=2 controlsRestored=1");m_BCMMLivingObserved=16;}
+  {Print("BCMM_LIVING_NET_OBSERVED phase=16 player=2 controlsRestored=1");m_BCMMLivingObserved=16;owner.BCMM_LivingObservationAck(16);}
   if(phase==13 && phase!=m_BCMMLivingObserved && testWeapon)
   {
    InventoryStorageManagerComponent inventory=InventoryStorageManagerComponent.Cast(patient.FindComponent(InventoryStorageManagerComponent));
    if(inventory && inventory.Contains(testWeapon) && BCMM_WeaponRetention.FindSling(inventory) && BCMM_LivingTransport.Controller(patient).IsUnconscious())
    {
-    PrintFormat("BCMM_LIVING_NET_OBSERVED phase=13 player=%1 originalWeapon=%2 sling=1",id,game.BCMM_LivingTestWeapon());m_BCMMLivingObserved=13;
+    PrintFormat("BCMM_LIVING_NET_OBSERVED phase=13 player=%1 originalWeapon=%2 sling=1",id,game.BCMM_LivingTestWeapon());m_BCMMLivingObserved=13;owner.BCMM_LivingObservationAck(13);
    }
   }
   if((phase==4 || phase==7 || phase==10 || phase==15) && phase!=m_BCMMLivingObserved && state.BCMM_TransportMode()==expected)
@@ -280,10 +325,16 @@ modded class ArmaReforgerScripted
     if(expected==2 && (poseHips[3][1]<0.15 || poseHips[3][1]>0.45))return;
    }
    else if(ChimeraCharacter.Cast(patient).GetCompartmentAccessComponent().IsInCompartment())return;
+   Physics transportBody=patient.GetPhysics();
+   if(!transportBody)return;
+   bool collisionSuppressed=transportBody.GetInteractionLayer()==EPhysicsLayerPresets.FireGeo;
+   if(collisionSuppressed!=(expected>0)){Print("BCMM_CHECK FAILED: Living transport peer collision policy");return;}
+   PrintFormat("BCMM_LIVING_NET_COLLISION phase=%1 player=%2 mask=%3",phase,id,transportBody.GetInteractionLayer());
    float separation=vector.Distance(patient.GetOrigin(),actor.GetOrigin());
    if(expected>0 && separation>2.5)return;
    PrintFormat("BCMM_LIVING_NET_OBSERVED phase=%1 player=%2 mode=%3 separation=%4 owner=%5",phase,id,expected,separation,ChimeraCharacter.Cast(patient).GetRplComponent().IsOwner());
    m_BCMMLivingObserved=phase;
+   owner.BCMM_LivingObservationAck(phase);
    if(id==3 && expected>0 && GetGame().GetCameraManager())
    {
     vector centre=actor.GetOrigin()+"0 0.85 0";vector origin=centre+"2.8 0.9 2.1";

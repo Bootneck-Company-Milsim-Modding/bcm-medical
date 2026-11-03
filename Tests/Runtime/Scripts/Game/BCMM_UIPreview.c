@@ -6,6 +6,7 @@ class BCMM_UIPreview
  protected ref BCMM_DomainChecks m_FluidUISuite;
  protected IEntity m_PreviewFluid;
  protected int m_FluidUIAttempts;
+ protected int m_CheckCompletionPolls;
  static void Start()
  {
   s_Preview = new BCMM_UIPreview();
@@ -28,6 +29,17 @@ class BCMM_UIPreview
   if (inventory && pack) inventory.TryInsertItem(pack, EStoragePurpose.PURPOSE_ANY);
   if (inventory && dressing) inventory.TryInsertItem(dressing, EStoragePurpose.PURPOSE_ANY);
   Print("BCMM_UI_PREVIEW_READY press H");
+  string iconBoard;
+  if (System.GetCLIParam("bcmmBeta01IconBoard", iconBoard)) { BCMM_Beta01IconBoard.Start(); return; }
+  string progressReview;
+  if (System.GetCLIParam("bcmmBeta01Progress", progressReview)) { BCMM_Beta01ProgressReview.Start(actor); return; }
+  string knowledgeReview;
+  if (System.GetCLIParam("bcmmBeta01Knowledge", knowledgeReview)) { BCMM_Beta01KnowledgeReview.Start(actor); return; }
+  string bagReview;
+  if (System.GetCLIParam("bcmmBeta01BagVisual", bagReview)) { BCMM_Beta01BagVisual.Start(); return; }
+  string holdReview;
+  if (System.GetCLIParam("bcmmBeta01HoldReview", holdReview)) { BCMM_Beta01HoldReview.Start(actor); return; }
+  if (BCMM_Beta01ItemReview.Requested()) { BCMM_Beta01ItemReview.Start(actor); return; }
   string fluidUI;
   if(System.GetCLIParam("bcmmFluidUI",fluidUI))
   {
@@ -120,6 +132,12 @@ class BCMM_UIPreview
   suite.Record(menu != null, "Native local medical panel opens");
   if (!menu) { suite.Complete(); return; }
   Widget root = menu.GetRootWidget();
+  TextWidget rosterStatus=TextWidget.Cast(root.FindAnyWidget("RosterStatus"));
+  float rosterWidth,rosterHeight,rosterTextWidth,rosterTextHeight;
+  rosterStatus.GetScreenSize(rosterWidth,rosterHeight);rosterStatus.GetTextSize(rosterTextWidth,rosterTextHeight);
+  rosterTextWidth=GetGame().GetWorkspace().DPIScale(rosterTextWidth);rosterTextHeight=GetGame().GetWorkspace().DPIScale(rosterTextHeight);
+  PrintFormat("BCMM_UI_ROSTER_BOUNDS box=%1,%2 text=%3,%4 lines=%5",rosterWidth,rosterHeight,rosterTextWidth,rosterTextHeight,rosterStatus.GetNumLines());
+  suite.Record(rosterTextWidth<=rosterWidth+1 && rosterTextHeight<=rosterHeight+1,"Complete native patient-list guidance fits its rendered text area");
   IEntity actor = GetGame().GetPlayerController().GetControlledEntity();
   SCR_CharacterDamageManagerComponent medical = SCR_CharacterDamageManagerComponent.Cast(actor.FindComponent(SCR_CharacterDamageManagerComponent));
   suite.Record(!BCMM_MedicRole.IsMedic(actor) && BCMM_MedicRole.Duration(actor, 15) == 15, "Normal character keeps configured treatment time");
@@ -205,7 +223,16 @@ class BCMM_UIPreview
   BCMM_MedicalMenu menu = BCMM_MedicalMenu.Current();
   if (!menu) { suite.Record(false, "Panel remains open after checking"); suite.Complete(); return; }
   Widget root = menu.GetRootWidget();
+  menu.BCMM_LogCheckTiming();
+  // The check starts on its authority acknowledgement, not on the UI click.
+  // Bound the wait by that acknowledged world-time deadline and a finite
+  // polling limit; a missing result still fails instead of waiting forever.
+  if(root.FindAnyWidget("CheckProgressFill").IsVisible() && menu.BCMM_CheckWithinDeadline() && m_CheckCompletionPolls++<20)
+  {
+   GetGame().GetCallqueue().CallLater(CheckTreatmentState,100,false,suite);return;
+  }
   suite.Record(!root.FindAnyWidget("CheckProgressFill").IsVisible(), "Examination progress clears after the authoritative result");
+  suite.Record(menu.BCMM_HasCheckResult(),"Authoritative examination supplies its finding before completion assertions");
   string bandageLabel = TextWidget.Cast(root.FindAnyWidget("Action1").FindAnyWidget("Text")).GetText();
   suite.Record(bandageLabel.Contains("Bandage /") && !bandageLabel.Contains("/ 0 remaining"), "Healthy-leg check has real available bandages");
   suite.Record(!root.FindAnyWidget("Action1").IsEnabled(), "Healthy checked leg disables unnecessary bandaging");
@@ -239,4 +266,13 @@ modded class SCR_BaseGameMode
   return true;
  }
 
+}
+modded class BCMM_MedicalMenu
+{
+ bool BCMM_CheckWithinDeadline(){return GetGame().GetWorld().GetWorldTime()*0.001-m_CheckStart<m_CheckSeconds+1;}
+ bool BCMM_HasCheckResult(){int region=BCMM_BodyRegion.LEFT_LEG;int check=BCMM_ClinicalCheck.BLEEDING;return !m_CheckActive && m_Findings.Contains(region.ToString()+":"+check.ToString());}
+ void BCMM_LogCheckTiming()
+ {
+  PrintFormat("BCMM_UI_CHECK_TIMING active=%1 elapsed=%2 duration=%3 fill=%4 findings=%5",m_CheckActive,GetGame().GetWorld().GetWorldTime()*0.001-m_CheckStart,m_CheckSeconds,GetRootWidget().FindAnyWidget("CheckProgressFill").IsVisible(),m_Findings.Count());
+ }
 }

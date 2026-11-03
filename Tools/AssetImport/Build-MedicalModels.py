@@ -18,6 +18,7 @@ for item in manifest:
  else:bpy.ops.import_scene.gltf(filepath=str(file))
  meshes=[o for o in bpy.context.scene.objects if o.type=="MESH" and not any(s in o.name for s in ("_LOD1","_LOD2"))]
  if "include_objects" in item:meshes=[o for o in meshes if o.name in item["include_objects"]]
+ if "exclude_objects_prefix" in item:meshes=[o for o in meshes if not any(o.name.startswith(prefix) for prefix in item["exclude_objects_prefix"])]
  if not meshes:raise RuntimeError("No selected meshes for "+name)
  for o in meshes:
   if not o.data.materials:o.data.materials.append(bpy.data.materials.get(item["materials"][0]["source"]) or bpy.data.materials.new(item["materials"][0]["source"]))
@@ -31,10 +32,20 @@ for item in manifest:
  bpy.ops.object.transform_apply(location=True,rotation=True,scale=True)
  if len(meshes)>1:bpy.ops.object.join()
  obj=bpy.context.object;obj.name="BCMM_"+name
+ obj.rotation_mode="XYZ"
  if item.get("decimate_ratio",1)<1:
   modifier=obj.modifiers.new("BCMM_RuntimeReduction","DECIMATE");modifier.ratio=item["decimate_ratio"];bpy.ops.object.modifier_apply(modifier=modifier.name)
  # Bring the horizontal morphine injector onto the same long axis as the other injectors.
  if name=="Morphine":obj.rotation_euler[1]=math.pi/2;bpy.ops.object.transform_apply(location=False,rotation=True,scale=False)
+ if item.get("rotation_euler_degrees"):
+  obj.rotation_euler=[math.radians(v) for v in item["rotation_euler_degrees"]]
+  bpy.ops.object.transform_apply(location=False,rotation=True,scale=False)
+ if item.get("align_long_axis")=="Y":
+  longest_axis=max(range(3),key=lambda axis:max(v.co[axis] for v in obj.data.vertices)-min(v.co[axis] for v in obj.data.vertices))
+  if longest_axis==2:obj.rotation_euler[0]=math.pi/2
+  elif longest_axis==0:obj.rotation_euler[2]=math.pi/2
+  bpy.ops.object.transform_apply(location=False,rotation=True,scale=False)
+  bpy.context.view_layer.update()
  points=[obj.matrix_world@Vector(v) for v in obj.bound_box]
  low=Vector([min(v[k] for v in points) for k in range(3)]);high=Vector([max(v[k] for v in points) for k in range(3)]);centre=(low+high)*.5
  scale=item["desired_longest_metres"]/max(high-low)
@@ -64,10 +75,17 @@ for item in manifest:
   obj.data.materials.append(accent);accent_index=len(obj.data.materials)-1
   painted=0
   for polygon in obj.data.polygons:
-   z=sum(obj.data.vertices[index].co.z for index in polygon.vertices)/len(polygon.vertices)
+   accent_axis=1 if item.get("align_long_axis")=="Y" else 2
+   z=sum(obj.data.vertices[index].co[accent_axis] for index in polygon.vertices)/len(polygon.vertices)
    if z>.055 or z<-.0325:polygon.material_index=accent_index;painted+=1
   if painted==0:raise RuntimeError("No end-piece faces found for "+name)
   print("BCMM_CAP_VARIANT",name,"faces",painted,flush=True)
+ # Preserve the grip offset while turning the injection end upward. Apply after
+ # material selection so coloured plunger/cap faces retain their identities.
+ if item.get('reverse_long_axis',False):
+  reverse=Matrix.Rotation(math.pi,4,'X')
+  for vertex in obj.data.vertices:vertex.co=reverse@(vertex.co-offset)+offset
+  obj.data.update()
  bpy.context.view_layer.update()
  dimensions=obj.dimensions.copy()
  bpy.ops.mesh.primitive_cube_add(size=1,location=offset);collision=bpy.context.object;collision.name="UBX_BCMM_"+name;collision.dimensions=dimensions+Vector((.002,.002,.002));bpy.ops.object.transform_apply(location=False,rotation=False,scale=True)

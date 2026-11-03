@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "completion": "BCMM_CHECK COMPLETE checks=702 failures=0 run=f8a3b25079d54ee9b1bbb7f2a05738cf",
+  "packedSha256": "444399AAEC5125D714129001061BE2CA7434BCB355E11CBA2B1EA4C9338D96AF",
+  "ownerWalkMetres": 2.06,
+  "bagFollowMetres": 2.08848,
+  "ownerDisconnected": true,
+  "peers": [
+    {
+      "role": "server",
+      "observedPhases": [],
+      "consoleSha256": "D64FB54DB3FB5D653727CDE8CC11769024B32212D7FBF4D347187D9D295FAD39",
+      "packedMounted": true,
+      "looseProductionMounted": false
+    },
+    {
+      "role": "observer-a",
+      "observedPhases": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "consoleSha256": "10893FB7F7FD9C7E442EDB29A30EA61D605B54B85113CD2F45B40E0286E22596",
+      "packedMounted": true,
+      "looseProductionMounted": false
+    },
+    {
+      "role": "observer-b",
+      "observedPhases": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "consoleSha256": "6B985D26DBD7A8ABB99837A9BB7C39FC6A0341420FA3F13EF84346C8A73B751E",
+      "packedMounted": true,
+      "looseProductionMounted": false
+    },
+    {
+      "role": "late-join",
+      "observedPhases": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "consoleSha256": "C89B793F8F233094791156DD505623786944F9235D4B8D32BDF9D159147D90E0",
+      "packedMounted": true,
+      "looseProductionMounted": false
+    }
+  ],
+  "scope": "Native owner input, three clients including late joiner, final packed production addon"
+}

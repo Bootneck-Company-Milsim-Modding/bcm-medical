@@ -2,7 +2,7 @@ GenericEntity : "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/Field
  ID "6AB4B3F3FD217023"
  components {
   MeshObject "{51F66EC3C5BC700D}" { Object "{3D8461E4034652C3}Assets/Medical/Suction/BCMM_Suction.xob" }
-  SCR_ConsumableItemComponent "{5943631460899505}" { m_ConsumableEffect BCMM_ProcedurePresentationEffect "{594363147CC4C6BE}" { m_bDeleteOnUse 0 } }
+  SCR_ConsumableItemComponent "{5943631460899505}" { m_bAlternativeModelOnAction 0 m_ConsumableEffect BCMM_ProcedurePresentationEffect "{594363147CC4C6BE}" { m_bDeleteOnUse 0 } }
   BCMM_EquipmentItemComponent "{6AB4B3F3FD218323}" { Kind 3 }
   InventoryItemComponent "{5222EB4D0C73006B}" {
    Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
@@ -11,11 +11,13 @@ GenericEntity : "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/Field
      Description "Reusable device for clearing a foreign-material airway obstruction."
     }
     ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     DimensionScaler 1
      Weight 0.4
      SizeSetupStrategy Manual
      ItemDimensions 20 10 5
      ItemVolume 1000
     }
+    CustomAttributes { PreviewRenderAttributes "{6098B9508619B4D0}" { CameraPreset Front CameraDistanceToItem 0.419 CameraOffset 0 0 0 ItemRenderRotation 180 0 0 FOV 35 AspectRatio 1 } }
     CommonItemType "EQUIPMENT"
    }
   }

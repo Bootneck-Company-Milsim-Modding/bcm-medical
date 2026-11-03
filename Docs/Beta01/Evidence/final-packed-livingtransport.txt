@@ -1,0 +1,493 @@
+---------------------------------------------
+Log C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-130428-281\acceptance-LivingTransport-20261102-130719-143\profile\logs\logs_2026-11-02_13-07-19\console.log started at 2026-11-02 13:07:19 (2026-11-02 13:07:19 UTC)
+
+13:07:19.396 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-130428-281\acceptance-LivingTransport-20261102-130719-143\profile\logs\logs_2026-11-02_13-07-19' to filesystem under name logs
+13:07:19.396 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-130428-281\acceptance-LivingTransport-20261102-130719-143\profile\profile' to filesystem under name profile
+13:07:19.396 ENGINE       : FileSystem: Current working directory: 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\'
+13:07:19.397 ENGINE       : Initializing engine, version 192142
+13:07:19.397 ENGINE       : CLI Params: -gproj C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-130428-281\acceptance-LivingTransport-20261102-130719-143\diagnostic/addon.gproj -addons B6C4ED1CA1260002 -addonsDir C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-130428-281\acceptance-LivingTransport-20261102-130719-143\diagnostic,C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-130428-281\packed,C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons -profile C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-130428-281\acceptance-LivingTransport-20261102-130719-143/profile -world worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent -noBackend -disableCrashReporter -noSound -noThrow -noFocus -forceUpdate -window -screenWidth 1280 -screenHeight 720 -posX -2000 -posY -2000 -maxFPS 30 -bcmmRunToken 3adb554bf61e4eed8bdc254d861a0481 -bcmmLivingTransportRuntime 1
+13:07:19.402 ENGINE       : Addon dirs:
+13:07:19.402  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-130428-281/acceptance-LivingTransport-20261102-130719-143/diagnostic/'
+13:07:19.402  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-130428-281/acceptance-LivingTransport-20261102-130719-143/diagnostic'
+13:07:19.402  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-130428-281/packed'
+13:07:19.402  ENGINE       : dir: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons'
+13:07:19.402  ENGINE       : dir: './addons'
+13:07:19.402  ENGINE       : dir: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-130428-281/acceptance-LivingTransport-20261102-130719-143/profile/addons'
+13:07:19.402 ENGINE       : Available addons:
+13:07:19.402  ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-130428-281/acceptance-LivingTransport-20261102-130719-143/diagnostic/addon.gproj' guid: 'B6C4ED1CA1260002'
+13:07:19.402  ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-130428-281/packed/addon.gproj' guid: '6AB4B3F3FD215919' (packed)
+13:07:19.402  ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/core.gproj' guid: '5614BBCCBB55ED1C' (packed)
+13:07:19.402  ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/ArmaReforger.gproj' guid: '58D0FB3206B6F859' (packed)
+13:07:19.402 ENGINE       : FileSystem: Adding relative directory 'C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-130428-281\acceptance-LivingTransport-20261102-130719-143\diagnostic' to filesystem under name BCM_Medical_DomainChecks
+13:07:19.408 ENGINE       : FileSystem: Adding package 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-130428-281/packed/' (pak count: 1) to filesystem under name MCBMedical
+13:07:19.504 ENGINE       : FileSystem: Adding package 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/' (pak count: 14) to filesystem under name ArmaReforger
+13:07:19.508 ENGINE       : FileSystem: Adding package 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/' (pak count: 2) to filesystem under name core
+13:07:19.508 ENGINE       : CPU vendor         : GenuineIntel
+13:07:19.508 ENGINE       : CPU type           : 1
+13:07:19.508 ENGINE       : CPU name           : 12th Gen Intel(R) Core(TM) i7-12700K
+13:07:19.508 ENGINE       : CPU cache info     : L1 [Inst 64KB, Data 48KB], L2 [Unif 2048KB], L3 [Unif 25600KB]
+13:07:19.508 ENGINE       : CPU count logical  : 20
+13:07:19.508 ENGINE       : CPU count physical : 12
+13:07:19.508 ENGINE       : CPU features       : mmx sse sse2 sse3 ssse3 sse4_1 sse4_2 popcnt aesni pclmulqdq osxsave avx sha avx2
+13:07:19.508 RESOURCES    : ResourceDB: loading cache (id=0 name=BCM_Medical_DomainChecks path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-130428-281\acceptance-LivingTransport-20261102-130719-143\diagnostic/resourceDatabase.rdb)
+13:07:19.510 RESOURCES    : ResourceDB: loading cache (id=1 name=MCBMedical path=C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-130428-281/packed/resourceDatabase.rdb)
+13:07:19.511 RESOURCES    : ResourceDB: loading cache (id=2 name=ArmaReforger path=C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/resourceDatabase.rdb)
+13:07:19.623 RESOURCES    : ResourceDB: loading cache (id=3 name=core path=C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/resourceDatabase.rdb)
+13:07:19.623 RESOURCES    : ResourceDB: loading cache (id=4 name=profile path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-130428-281\acceptance-LivingTransport-20261102-130719-143\profile\profile/resourceDatabase.rdb)
+13:07:19.623 RESOURCES    : ResourceDB: loading cache (id=5 name=logs path=C:\Users\ruanb\Documents\My Games\ArmaReforgerWorkbench\addons\MCB Medical\.checks\beta01-packed-20261102-130428-281\acceptance-LivingTransport-20261102-130719-143\profile\logs\logs_2026-11-02_13-07-19/resourceDatabase.rdb)
+13:07:19.737 ENGINE       : GameProject load
+13:07:19.737  ENGINE       : Loaded addons:
+13:07:19.737   ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/core/core.gproj' guid: '5614BBCCBB55ED1C'
+13:07:19.737   ENGINE       : gproj: 'C:/Program Files (x86)/Steam/steamapps/common/Arma Reforger/addons/data/ArmaReforger.gproj' guid: '58D0FB3206B6F859'
+13:07:19.737   ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-130428-281/packed/addon.gproj' guid: '6AB4B3F3FD215919'
+13:07:19.737   ENGINE       : gproj: 'C:/Users/ruanb/Documents/My Games/ArmaReforgerWorkbench/addons/MCB Medical/.checks/beta01-packed-20261102-130428-281/acceptance-LivingTransport-20261102-130719-143/diagnostic/addon.gproj' guid: 'B6C4ED1CA1260002'
+13:07:19.739 ENGINE       : Loading custom engine user config '$profile:.save/app1874880_user76561198093323465/settings/ReforgerEngineSettings.conf'
+13:07:19.739 ENGINE       : No Enfusion settings file loaded. Continuing with defaults
+13:07:19.739 ENGINE       : Locale info: system en-GB (English), user en-GB (English)
+13:07:19.932 RENDER       : (OK) Adapter 'NVIDIA GeForce RTX 5070 Ti' supports feature level 12_0
+13:07:19.995 RENDER       : (OK) Adapter 'Intel(R) UHD Graphics 770' supports feature level 12_0
+13:07:19.999 RENDER       : Adapter 1 (Intel(R) UHD Graphics 770) failed to provide some output
+13:07:19.999 RENDER       : Basic screen setup:
+13:07:19.999 RENDER       :   Back buffer width x height: 1280x720
+13:07:19.999 RENDER       :   Back buffer format	       : TEXFMT_R8G8B8A8_SRGB (29)
+13:07:19.999 RENDER       :   MSAA                      : none
+13:07:20.013 RENDER       : Driver for NVIDIA GeForce RTX 5070 Ti is from 22.7.2026 (3 months, 14 days old)
+13:07:20.013 RENDER       : GPU_NVIDIA (0x10DE) (NVIDIA GeForce RTX 5070 Ti) with 1 GPU detected, VRAM 15995MB (fast 0MB), shared 16274MB, driver version 610.88
+13:07:20.013 RENDER       : Detected output devices:
+13:07:20.013 RENDER       :  * 2 device/s connected to NVIDIA GeForce RTX 5070 Ti:
+13:07:20.013 RENDER       :    Generic PnP Monitor (\\.\DISPLAY1), 3840x2160 (offset 0x0), 60Hz
+13:07:20.013 RENDER       :    Generic PnP Monitor (\\.\DISPLAY2), 1920x1080 (offset 1065x-1080), 144Hz
+13:07:20.013 RENDER       :  * no output device connected to Intel(R) UHD Graphics 770
+13:07:20.013 RENDER       :   Concurrent frames limit 2
+13:07:20.210 RENDER       : Graphics device features
+13:07:20.211 RENDER       :  Needed:
+13:07:20.211 RENDER       :  * Highest supported shader model: 6.8 (6.0 needed)
+13:07:20.211 RENDER       :  Optional:
+13:07:20.211 RENDER       :  * Allow tearing (VSYNC) : 1
+13:07:20.211 RENDER       :  * 16 bits : 1
+13:07:20.211 RENDER       :  * Resource heap tier : 3
+13:07:20.211 RENDER       :  * Persistent heaps (DRED) : 1
+13:07:20.211 RENDER       :  * DRED 1.2 is supported by compiler
+13:07:20.255 RENDER       : Main RT format setup.
+13:07:20.255 RENDER       :   Main RT format for quality 0	: TEXFMT_R11G11B10_FLOAT (26)
+13:07:20.255 RENDER       :   Main RT format for quality 1	: TEXFMT_R16G16B16A16_FLOAT (10)
+13:07:20.266 ENGINE       : Job system settings: coreCount=20, shortJobContextCount=16, shortJobThreadCount=15, longJobThreadCount=7
+13:07:20.314 PROFILING    : Settings changed took: 18.893500 ms
+13:07:20.320 INPUT        : NPClient: interface -- initialize OK.
+13:07:20.320 INPUT        : NPClient: Window handle registration successful.
+13:07:20.320 INPUT        : NPClient: NaturalPoint software version is 5.0
+13:07:20.320 INPUT        : NPClient: Cursor stopped
+13:07:20.320 INPUT        : NPClient: Data transmission started
+13:07:20.320  RENDER       : RENDER       : Reload shaders
+13:07:20.320  RENDER       : Enfusion shader version 13
+13:07:20.320   INIT         : INIT         : ShaderListReload
+13:07:20.320  PROFILING    : ShaderListReload took: 0.000300 ms
+13:07:20.585  RENDER       : Loaded 3752 newer shader binaries
+13:07:20.586 PROFILING    : Reload shaders took: 266.068200 ms
+13:07:20.597 ENGINE       : Initializing inputs.
+13:07:20.605 NETWORK      : Initializing networking.
+13:07:20.605 NETWORK      : Using new GameRplScheduler.
+13:07:20.605  SCRIPT       : SCRIPT       : Initializing scripts
+13:07:20.605   SCRIPT       : SCRIPT       : ScriptProjectManager init
+13:07:20.605  PROFILING    : ScriptProjectManager init took: 0.010200 ms
+13:07:20.623 PROFILING    : Initializing scripts took: 18.406600 ms
+13:07:20.624 BACKEND      : Backend Services are disabled.
+13:07:20.624 ENGINE       : Enfusion engine successfully created.
+13:07:20.665 DEFAULT   (W): LogiLED: Cannot initialize! (service not running or no compatible device detected)
+13:07:20.682 GUI          : Using default language (en_us)
+13:07:20.682 GUI          : Loading 'en_us' localization file.
+13:07:20.682  INIT         : INIT         : Loading StringTable
+13:07:20.703 PROFILING    : Loading StringTable took: 20.345300 ms
+13:07:20.703  SCRIPT       : SCRIPT       : Compiling GameLib scripts
+13:07:20.733  SCRIPT       : Module: GameLib; loaded 465x files; 607x classes; used 775K of static memory; defines: "ENF_WB,PLATFORM_WINDOWS,ENABLE_DIAG,ENF_ENABLE_VHC_OVERRIDE,ENF_ENABLE_RPLCOMPONENT_IN_GAMECODE"; CRC32: 4507af04
+13:07:20.734 PROFILING    : Compiling GameLib scripts took: 31.236300 ms
+13:07:20.734 RESOURCES    : GetResourceObject @"{1C71B463B3B66BAB}UI/layouts/Menus/MainMenu/IntroSplashScreen.layout"
+13:07:20.734  GUI          : Layout load @"{1C71B463B3B66BAB}UI/layouts/Menus/MainMenu/IntroSplashScreen.layout"
+13:07:20.735   GUI       (E): Unknown class 'SCR_WidgetExportRuleRoot' at offset 282(0x11a)
+13:07:20.897  SCRIPT       : SCRIPT       : Compiling Game scripts
+13:07:21.920 SCRIPT       : Compiling Game scripts
+13:07:21.920  SCRIPT    (W): @"Scripts/Game/Editor/Components/EditableEntity/SCR_EditableEntityComponent.c,785": 'GetPlayerPlatformKind' is obsolete
+13:07:21.920  SCRIPT    (W): @"Scripts/Game/Editor/Components/EditableEntity/SCR_EditableEntityComponent.c,786": 'GetPlayerPlatformId' is obsolete
+13:07:22.193  SCRIPT    (W): @"Scripts/Game/Workshop/SCR_AddonManager.c,876": 'GetRefCount' is obsolete: Will be removed
+13:07:22.223  SCRIPT    (W): @"Scripts/Game/Campaign/SCR_PlayerProfileManagerComponent.c,142": 'PlayerData' is obsolete
+13:07:22.330  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,159": 'GetDSSession' is obsolete
+13:07:22.330  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,162": 'RoomID' is obsolete
+13:07:22.330  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,197": 'GetDSSession' is obsolete
+13:07:22.330  SCRIPT    (W): @"Scripts/Game/UI/Backend/CareerBackend.c,201": 'RoomID' is obsolete
+13:07:22.457  SCRIPT    (W): @"Scripts/Game/DataCollection/SCR_DataCollectorComponent.c,481": 'GetStorage' is obsolete
+13:07:22.457  SCRIPT    (W): @"Scripts/Game/DataCollection/SCR_DataCollectorComponent.c,483": 'GetOnlineWritePrivilege' is obsolete
+13:07:22.460  SCRIPT    (W): @"Scripts/Game/Utilities/SCR_PlayerIdentityUtils.c,20": 'GetPlayerIdentityId' is obsolete
+13:07:22.511  SCRIPT    (W): @"Scripts/Game/UI/Menu/MainMenuUI.c,643": 'GetNotifyCount' is obsolete: Will be substitued by Notification Api.
+13:07:22.511  SCRIPT    (W): @"Scripts/Game/UI/Menu/MainMenuUI.c,645": 'GetNotifyItem' is obsolete: Will be substitued by Notification Api.
+13:07:22.569  SCRIPT    (W): @"Scripts/Game/DataCollection/PlayerData/SCR_PlayerData.c,210": 'PlayerData' is obsolete
+13:07:22.698  SCRIPT       : Module: Game; loaded 5845x files; 11917x classes; used 33595K of static memory; defines: "ENF_WB,PLATFORM_WINDOWS,ENABLE_DIAG,ENF_ENABLE_VHC_OVERRIDE,ENF_ENABLE_RPLCOMPONENT_IN_GAMECODE,ENABLE_BASE_DESTRUCTION,BUDGET_OPTIMIZATION_CHECKS,DEBUG,RESPAWN_TIMER_COMPONENT_DEBUG,GAME_MODE_DEBUG,DEBUG_CONFIGURABLE_DIALOGS,DISABLE_WEAPON_SWITCHING,SCRIPTED_AIM_MODIFIER_DEBUG"; CRC32: 9875ae13
+13:07:22.753 PROFILING    : Compiling Game scripts took: 1856.443900 ms
+13:07:22.753 INIT         : Creating game instance(ArmaReforgerScripted), version 1.8.0.13 built 2026-08-21 14:30:18 UTC.
+13:07:22.784 ENGINE       : Game successfully created.
+13:07:22.860 PLATFORM     : Save data from container 'settings' have been loaded
+13:07:22.960 PLATFORM     : Save data from container 'sessions' have been loaded
+13:07:23.461 PLATFORM     : System language differs from the saved one - using new language {new: 'en_us'; old: ''}
+13:07:23.462 PLATFORM     : Save data transaction to 'settings' started.
+13:07:23.561 DEFAULT      : [SaveGameManager] Starting new playthrough nr.0 '' for mission 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'.
+13:07:23.562  WORLD        : WORLD        : Entities load 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'
+13:07:23.567 WORLD        : Entities load 'worlds/Tests/TestFramework/Autotest_GameMode_Plain.ent'
+13:07:23.567  RESOURCES (E): Wrong GUID/name for resource @"{0000000000000000}(null)" in property "m_sLoadingLayout"
+13:07:23.573 PROFILING    : Entities load took: 10.788200 ms
+13:07:23.574  WORLD        : WORLD        : Game::LoadEntities
+13:07:23.574   WORLD        : WORLD        : Initializing world systems
+13:07:23.575   NETWORK      : Enabled lag compensation, 29 frames with 100 FPS and 280 ms rewind limits.
+13:07:23.575   WORLD        : WORLD        : CreateEntities
+13:07:23.575    WORLD        : WORLD        : CreateEntities
+13:07:23.575     WORLD        : WORLD        : NotifyBeforeEntitiesCreated
+13:07:23.577     RESOURCES    : Loaded mission headers from 4 addon(s)!
+13:07:23.577    PROFILING    : NotifyBeforeEntitiesCreated took: 2.651100 ms
+13:07:23.577     WORLD        : WORLD        : Wait for preloading data
+13:07:23.577    PROFILING    : Wait for preloading data took: 0.000500 ms
+13:07:23.593    ENTITY       : Create entity @"ENTITY:2" ('MPTestTerrain', GenericTerrainEntity) at <0.000000 1.000000 0.000000>
+13:07:23.593      PROFILING    : PROFILING    : Terrain load
+13:07:23.608     PROFILING    : Terrain load took: 14.460500 ms
+13:07:23.623 WORLD        : Game::LoadEntities
+13:07:23.623  WORLD        : CreateEntities
+13:07:23.623   WORLD        : CreateEntities
+13:07:23.623    ENTITY       : Create entity @"ENTITY:4611686018427387905" ('SCR_AIWorld') at <107.915001 1.000000 159.473999> @"{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et"
+13:07:23.623     PATHFINDING   : Navmesh Init 'Soldiers'
+13:07:23.623      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+13:07:23.623     PATHFINDING   : Navmesh Init 'BTRlike'
+13:07:23.623      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+13:07:23.623     PATHFINDING   : Navmesh Init 'LowRes'
+13:07:23.623      PATHFINDING(W): No navmesh file specified! Will initialize empty navmesh world.
+13:07:23.912     WORLD        : WORLD        : NotifyBeforeEntitiesInitialized
+13:07:23.912    PROFILING    : NotifyBeforeEntitiesInitialized took: 0.032600 ms
+13:07:23.916    WORLD        : InitEntities 'world'
+13:07:23.916     ENTITY       : Init entity @"ENTITY:4611686018427387906" ('GameMode_Plain1', SCR_BaseGameMode) at <123.265999 1.000000 136.613998>
+13:07:23.916      SCRIPT    (W): SCR_PerceivedFactionManagerComponent trying to set fall back faction 'CIV' but this faction could not be found so it is null instead.
+13:07:23.917     WORLD        : WORLD        : NotifyEntitiesInitialized
+13:07:23.917      TERRAIN      : TERRAIN      : Initializing road networks...
+13:07:23.917     PROFILING    : Initializing road networks... took: 0.000500 ms
+13:07:23.917      DEFAULT      : DEFAULT      : WorldVolumesCollection
+13:07:23.917     PROFILING    : WorldVolumesCollection took: 0.006500 ms
+13:07:23.917    PROFILING    : NotifyEntitiesInitialized took: 0.071200 ms
+13:07:23.917   PROFILING    : CreateEntities took: 342.394700 ms
+13:07:23.917  PROFILING    : CreateEntities took: 342.408400 ms
+13:07:23.917   WORLD        : WORLD        : EOnActivate
+13:07:23.917  PROFILING    : EOnActivate took: 0.096400 ms
+13:07:23.917 PROFILING    : Game::LoadEntities took: 343.877200 ms
+13:07:23.917 PROFILING    : * LoadEntities: 343.899700 ms
+13:07:24.112 DEFAULT      : Entered offline game state.
+13:07:24.224 PROFILING    : Settings changed took: 11.579500 ms
+13:07:24.226 NETWORK      : Player connected: connectionID=2147483646
+13:07:24.226 NETWORK      : ### Connecting player: connectionID=2147483646, Name=
+13:07:24.226 NETWORK      : ### Creating player: PlayerId=1, Name=TacticalBootneck
+13:07:24.234 ENTITY       : SpawnEntityPrefab @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+13:07:24.234  ENTITY       : Create entity @"ENTITY:6917529027641081863" ('SCR_PlayerController') at <0.000000 0.000000 0.000000>
+13:07:24.234   ENTITY       : EntityPrefabUse @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+13:07:24.234    SCRIPT    (W): Notification data in 'SCR_NotificationsLogDisplay' has duplicate notification info key: 'EDITOR_PERCEIVED_FACTION_PUNISHMENT_KILLING_SET'. There should only be one of each key!
+13:07:24.234    SCRIPT    (W): Notification data in 'SCR_NotificationsLogDisplay' has duplicate notification info key: 'EDITOR_PERCEIVED_FACTION_TYPE_DISABLED'. There should only be one of each key!
+13:07:24.236   SCRIPT    (W): Can't open config file ""
+13:07:24.236   SCRIPT    (W): Cannot update game blocklist. Backend is offline.
+13:07:24.236  WORLD        : InitEntities 'world'
+13:07:24.236   ENTITY       : Init entity @"ENTITY:6917529027641081863" ('SCR_PlayerController') at <0.000000 0.000000 0.000000> @"{225E51284CC95CFA}Prefabs/Characters/Core/DefaultPlayerControllerMP.et"
+13:07:24.236    DEFAULT   (W): Chat not available - missing ChatEntity. Only printing this message once. There're possibly more nodes with this requirement.
+13:07:24.261    GUI          : WidgetManager: CrateWidgets @"{3C9DCDD76AB83157}UI/layouts/HUD/HUDLayouts/HUDManager_Root.layout"
+13:07:24.261     SCRIPT    (W): Slot_WeaponInfo Has no Content!
+13:07:24.261     SCRIPT    (W): Slot_Chat Has no Content!
+13:07:24.261     SCRIPT    (W): Slot_VON Has no Content!
+13:07:24.261     SCRIPT    (W): Slot_AvailableActions Has no Content!
+13:07:24.261     SCRIPT    (W): Slot_Vehicle Has no Content!
+13:07:24.262     SCRIPT    (W): Slot_GameVersion Has no Content!
+13:07:24.262     SCRIPT    (W): Slot_Notifications Has no Content!
+13:07:24.262     SCRIPT    (W): Slot_Hints Has no Content!
+13:07:24.262 ENTITY       : SpawnEntityPrefab @"{788933FFDC706A68}Prefabs/Editor/EditorManager.et"
+13:07:24.262  ENTITY       : Create entity @"ENTITY:6917529027641081864" ('SCR_EditorManagerEntity') at <0.000000 0.000000 0.000000> @"{788933FFDC706A68}Prefabs/Editor/EditorManager.et"
+13:07:24.262   ENTITY       : CreateComponent 'BaseRadioComponent'
+13:07:24.262    DEFAULT   (W): World doesn't contain RadioManagerEntity to support any BaseRadioComponent.
+13:07:24.276 NETWORK      : ### Updating player: PlayerId=1, Name=TacticalBootneck, rplIdentity=0xFFFFFFFE, IdentityId=00000000-0000-0000-0000-000000000000
+13:07:24.276 SCRIPT    (W): Ban Settings could not be loaded from BE Storage: Relying on default config
+13:07:24.276 NETWORK      : Players connecting: 0
+13:07:24.276 NETWORK      : Players connected: 1 / 1
+13:07:24.293 WORLD        : Frame start
+13:07:24.293  SCRIPT       : ScenarioFramework: Available tasks are empty, no new tasks will be generated.
+13:07:24.295 WORLD        : UpdateEntities
+13:07:24.295  WORLD        : Frame
+13:07:24.295   SCRIPT       : SCR_BaseGameMode::OnGameStateChanged = GAME
+13:07:24.370 WORLD        : UpdateEntities
+13:07:24.370  WORLD        : PostFrame
+13:07:24.370   GUI          : WidgetManager: CrateWidgets @"{D89BBA18F99053D6}UI/layouts/HUD/Chat/ChatHud.layout"
+13:07:24.370    SCRIPT    (W): EditBoxFilterComponent used on invalid widget type.
+13:07:24.431   RESOURCES    : GetResourceObject @"{20A6917D2114E29A}UI/layouts/HUD/Hint/HintInfoDisplay.layout"
+13:07:24.431    GUI          : Layout load @"{20A6917D2114E29A}UI/layouts/HUD/Hint/HintInfoDisplay.layout"
+13:07:24.431     GUI          : Widget prefab @"{EA1CC57D868E94F9}UI/layouts/HUD/Hint/Hint.layout"
+13:07:24.431      GUI       (W): Overridden prefab member (GUID: '{661AB14E0F471C66}' type: ButtonWidgetClass) no longer exists in prefab
+13:07:24.563  RENDER       : RENDER       : ObjectsHeightMap::Build
+13:07:24.563   RENDER       : RENDER       : MeshOccupancyGridManager::GenerateAllForWorld
+13:07:24.563  PROFILING    : MeshOccupancyGridManager::GenerateAllForWorld took: 0.004800 ms
+13:07:24.569 PROFILING    : ObjectsHeightMap::Build took: 5.901300 ms
+13:07:24.629 SCRIPT       : BCMM_BETA_GEOMETRY item={A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et low=<-0.0345764,-0.00198102,-0.041445> high=<0.0322266,0.024261,0.042839> dimensions=<0.066803,0.026242,0.084284>
+13:07:24.630 SCRIPT       : BCMM_BETA_GEOMETRY item={0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et low=<-0.00631714,-0.00109887,-0.048049> high=<0.00631714,0.0108988,0.04829> dimensions=<0.0126343,0.0119977,0.096339>
+13:07:24.631 SCRIPT       : BCMM_BETA_GEOMETRY item={6AB4B3F3FD216014}Prefabs/Items/BCMM_Epinephrine.et low=<-0.00997925,-0.00496697,-0.071> high=<0.00997925,0.014967,0.071> dimensions=<0.0199585,0.0199339,0.142>
+13:07:26.259 SCRIPT       : BCMM_FLUID_RECOVERY pulse=128.913 red=0.326083 delivery=0.319561 terminal=0
+13:07:27.107 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=US count=29 ordinary=187
+13:07:27.110 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=USSR count=29 ordinary=166
+13:07:27.113 SCRIPT       : BCMM_ARSENAL_CATALOG_OK faction=FIA count=29 ordinary=105
+13:07:28.526 SCRIPT       : BCMM settings read path=$profile:BCMM_SettingsChecks/settings-b.json parsed=1 valid=1 generation=1
+13:07:28.543 SCRIPT       : BCMM settings read path=$profile:BCMM_InvalidSettings/settings-a.json parsed=1 valid=0 generation=999
+13:07:28.543 SCRIPT    (E): BCMM settings invalid: files preserved; edits locked until repaired.
+13:07:28.569 SCRIPT       : BCMM_ROLE_LIST count=38 roles=2 native=1
+13:07:28.573 SCRIPT       : BCMM_CATALOGUE_REGISTRIES medical=1 nativeEntries=41
+13:07:30.155 SCRIPT       : BCMM_NET_BODY player=1 assigned=1
+13:07:32.246 SCRIPT       : BCMM_COLLISION_IDENTITY_PROBE unconscious=1 beforeBody=540672 afterBody=16384
+13:07:34.844 SCRIPT       : BCMM_CASUALTY_COLLISION before=16384 during=16384 body=16384
+13:07:34.844 SCRIPT       : BCMM_POSE_NATIVE mode=1 conscious=0 root=<100,1,0> hips=<-0.274291,1.55057,-0.249698> anchor={8BE8AAB5BD594ADB}Prefabs/Medical/Transport/BCMM_CarriedAnchor.et
+13:07:34.844 SCRIPT       : BCMM_POSE_BONES mode=1 head=<0.3863,1.37562,-0.250245> hand=<0.231299,0.983664,-0.0638933> up=<0,1,0> forward=<0,0,1>
+13:07:35.196 ENGINE       : Screenshot successfully saved into $profile:living-transport-mode-1-conscious-0 (1280x720)
+13:07:35.546 ENGINE       : Screenshot successfully saved into $profile:living-transport-carry-rear-conscious-0 (1280x720)
+13:07:35.550 SCRIPT       : BCMM_COLLISION_RESTORE savedBody=540672 geoms=18 sameBody=1
+13:07:35.550 SCRIPT       : BCMM_COLLISION_GEOM index=0 saved=16384
+13:07:35.550 SCRIPT       : BCMM_COLLISION_GEOM index=1 saved=16384
+13:07:35.550 SCRIPT       : BCMM_COLLISION_GEOM index=2 saved=16384
+13:07:35.550 SCRIPT       : BCMM_COLLISION_GEOM index=3 saved=16384
+13:07:35.550 SCRIPT       : BCMM_COLLISION_GEOM index=4 saved=16384
+13:07:35.550 SCRIPT       : BCMM_COLLISION_GEOM index=5 saved=16384
+13:07:35.550 SCRIPT       : BCMM_COLLISION_GEOM index=6 saved=16384
+13:07:35.550 SCRIPT       : BCMM_COLLISION_GEOM index=7 saved=16384
+13:07:35.550 SCRIPT       : BCMM_COLLISION_GEOM index=8 saved=16384
+13:07:35.550 SCRIPT       : BCMM_COLLISION_GEOM index=9 saved=16384
+13:07:35.550 SCRIPT       : BCMM_COLLISION_GEOM index=10 saved=16384
+13:07:35.550 SCRIPT       : BCMM_COLLISION_GEOM index=11 saved=16384
+13:07:35.550 SCRIPT       : BCMM_COLLISION_GEOM index=12 saved=16384
+13:07:35.550 SCRIPT       : BCMM_COLLISION_GEOM index=13 saved=16384
+13:07:35.550 SCRIPT       : BCMM_COLLISION_GEOM index=14 saved=16384
+13:07:35.550 SCRIPT       : BCMM_COLLISION_GEOM index=15 saved=16384
+13:07:35.550 SCRIPT       : BCMM_COLLISION_GEOM index=16 saved=16384
+13:07:35.550 SCRIPT       : BCMM_COLLISION_GEOM index=17 saved=0
+13:07:36.583 SCRIPT       : BCMM_COLLISION_RELEASE expectedBody=16384 actualBody=16384 expectedGeom=16384 actualGeom=16384 count=18
+13:07:36.584 SCRIPT       : BCMM_COLLISION_RESTORE savedBody=16384 geoms=18 sameBody=1
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=0 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=1 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=2 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=3 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=4 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=5 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=6 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=7 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=8 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=9 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=10 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=11 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=12 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=13 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=14 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=15 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=16 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=17 saved=0
+13:07:36.584 SCRIPT       : BCMM_COLLISION_RESTORE savedBody=16384 geoms=18 sameBody=1
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=0 saved=8192
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=1 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=2 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=3 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=4 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=5 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=6 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=7 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=8 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=9 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=10 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=11 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=12 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=13 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=14 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=15 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=16 saved=16384
+13:07:36.584 SCRIPT       : BCMM_COLLISION_GEOM index=17 saved=0
+13:07:39.931 SCRIPT       : BCMM_COLLISION_IDENTITY_PROBE unconscious=1 beforeBody=540672 afterBody=16384
+13:07:42.435 SCRIPT       : BCMM_CASUALTY_COLLISION before=16384 during=16384 body=16384
+13:07:42.435 SCRIPT       : BCMM_POSE_NATIVE mode=2 conscious=0 root=<100,1,-1.05> hips=<8.53606e-07,0.286843,0.0210621> anchor={5F3E8CA2F93A4D06}Prefabs/Medical/Transport/BCMM_DraggedAnchor.et
+13:07:42.435 SCRIPT       : BCMM_POSE_BONES mode=2 head=<0.00274817,0.518622,-0.618756> hand=<-0.249719,0.179951,-0.120836> up=<0,1,0> forward=<0,0,-1>
+13:07:42.773 ENGINE       : Screenshot successfully saved into $profile:living-transport-mode-2-conscious-0 (1280x720)
+13:07:43.188 SCRIPT       : BCMM_COLLISION_RESTORE savedBody=540672 geoms=18 sameBody=1
+13:07:43.188 SCRIPT       : BCMM_COLLISION_GEOM index=0 saved=16384
+13:07:43.188 SCRIPT       : BCMM_COLLISION_GEOM index=1 saved=16384
+13:07:43.188 SCRIPT       : BCMM_COLLISION_GEOM index=2 saved=16384
+13:07:43.188 SCRIPT       : BCMM_COLLISION_GEOM index=3 saved=16384
+13:07:43.188 SCRIPT       : BCMM_COLLISION_GEOM index=4 saved=16384
+13:07:43.188 SCRIPT       : BCMM_COLLISION_GEOM index=5 saved=16384
+13:07:43.188 SCRIPT       : BCMM_COLLISION_GEOM index=6 saved=16384
+13:07:43.188 SCRIPT       : BCMM_COLLISION_GEOM index=7 saved=16384
+13:07:43.188 SCRIPT       : BCMM_COLLISION_GEOM index=8 saved=16384
+13:07:43.188 SCRIPT       : BCMM_COLLISION_GEOM index=9 saved=16384
+13:07:43.188 SCRIPT       : BCMM_COLLISION_GEOM index=10 saved=16384
+13:07:43.188 SCRIPT       : BCMM_COLLISION_GEOM index=11 saved=16384
+13:07:43.188 SCRIPT       : BCMM_COLLISION_GEOM index=12 saved=16384
+13:07:43.188 SCRIPT       : BCMM_COLLISION_GEOM index=13 saved=16384
+13:07:43.188 SCRIPT       : BCMM_COLLISION_GEOM index=14 saved=16384
+13:07:43.188 SCRIPT       : BCMM_COLLISION_GEOM index=15 saved=16384
+13:07:43.188 SCRIPT       : BCMM_COLLISION_GEOM index=16 saved=16384
+13:07:43.188 SCRIPT       : BCMM_COLLISION_GEOM index=17 saved=0
+13:07:44.131 SCRIPT       : BCMM_COLLISION_RELEASE expectedBody=16384 actualBody=16384 expectedGeom=16384 actualGeom=16384 count=18
+13:07:44.131 SCRIPT       : BCMM_COLLISION_RESTORE savedBody=16384 geoms=18 sameBody=1
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=0 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=1 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=2 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=3 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=4 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=5 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=6 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=7 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=8 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=9 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=10 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=11 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=12 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=13 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=14 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=15 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=16 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=17 saved=0
+13:07:44.131 SCRIPT       : BCMM_COLLISION_RESTORE savedBody=16384 geoms=18 sameBody=1
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=0 saved=8192
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=1 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=2 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=3 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=4 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=5 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=6 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=7 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=8 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=9 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=10 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=11 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=12 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=13 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=14 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=15 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=16 saved=16384
+13:07:44.131 SCRIPT       : BCMM_COLLISION_GEOM index=17 saved=0
+13:07:47.406 SCRIPT       : BCMM_COLLISION_IDENTITY_PROBE unconscious=1 beforeBody=540672 afterBody=16384
+13:07:49.939 SCRIPT       : BCMM_CASUALTY_COLLISION before=16384 during=16384 body=16384
+13:07:49.939 SCRIPT       : BCMM_POSE_NATIVE mode=1 conscious=1 root=<100,1,0> hips=<-0.274637,1.55237,-0.25> anchor={8BE8AAB5BD594ADB}Prefabs/Medical/Transport/BCMM_CarriedAnchor.et
+13:07:49.939 SCRIPT       : BCMM_POSE_BONES mode=1 head=<0.38545,1.37555,-0.249999> hand=<0.230121,0.984627,-0.063332> up=<0,1,0> forward=<0,0,1>
+13:07:50.244 ENGINE       : Screenshot successfully saved into $profile:living-transport-mode-1-conscious-1 (1280x720)
+13:07:50.515 ENGINE       : Screenshot successfully saved into $profile:living-transport-carry-rear-conscious-1 (1280x720)
+13:07:50.689 SCRIPT       : BCMM_COLLISION_RESTORE savedBody=540672 geoms=18 sameBody=1
+13:07:50.689 SCRIPT       : BCMM_COLLISION_GEOM index=0 saved=16384
+13:07:50.689 SCRIPT       : BCMM_COLLISION_GEOM index=1 saved=16384
+13:07:50.689 SCRIPT       : BCMM_COLLISION_GEOM index=2 saved=16384
+13:07:50.689 SCRIPT       : BCMM_COLLISION_GEOM index=3 saved=16384
+13:07:50.689 SCRIPT       : BCMM_COLLISION_GEOM index=4 saved=16384
+13:07:50.689 SCRIPT       : BCMM_COLLISION_GEOM index=5 saved=16384
+13:07:50.689 SCRIPT       : BCMM_COLLISION_GEOM index=6 saved=16384
+13:07:50.689 SCRIPT       : BCMM_COLLISION_GEOM index=7 saved=16384
+13:07:50.689 SCRIPT       : BCMM_COLLISION_GEOM index=8 saved=16384
+13:07:50.689 SCRIPT       : BCMM_COLLISION_GEOM index=9 saved=16384
+13:07:50.689 SCRIPT       : BCMM_COLLISION_GEOM index=10 saved=16384
+13:07:50.689 SCRIPT       : BCMM_COLLISION_GEOM index=11 saved=16384
+13:07:50.689 SCRIPT       : BCMM_COLLISION_GEOM index=12 saved=16384
+13:07:50.689 SCRIPT       : BCMM_COLLISION_GEOM index=13 saved=16384
+13:07:50.689 SCRIPT       : BCMM_COLLISION_GEOM index=14 saved=16384
+13:07:50.689 SCRIPT       : BCMM_COLLISION_GEOM index=15 saved=16384
+13:07:50.689 SCRIPT       : BCMM_COLLISION_GEOM index=16 saved=16384
+13:07:50.689 SCRIPT       : BCMM_COLLISION_GEOM index=17 saved=524288
+13:07:51.584 SCRIPT       : BCMM_COLLISION_RELEASE expectedBody=540672 actualBody=540672 expectedGeom=16384 actualGeom=16384 count=18
+13:07:51.584 SCRIPT       : BCMM_COLLISION_RESTORE savedBody=540672 geoms=18 sameBody=1
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=0 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=1 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=2 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=3 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=4 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=5 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=6 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=7 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=8 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=9 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=10 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=11 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=12 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=13 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=14 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=15 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=16 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=17 saved=524288
+13:07:51.584 SCRIPT       : BCMM_COLLISION_RESTORE savedBody=540672 geoms=18 sameBody=1
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=0 saved=8192
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=1 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=2 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=3 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=4 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=5 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=6 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=7 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=8 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=9 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=10 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=11 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=12 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=13 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=14 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=15 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=16 saved=16384
+13:07:51.584 SCRIPT       : BCMM_COLLISION_GEOM index=17 saved=524288
+13:07:55.001 SCRIPT       : BCMM_COLLISION_IDENTITY_PROBE unconscious=1 beforeBody=540672 afterBody=16384
+13:07:57.526 SCRIPT       : BCMM_CASUALTY_COLLISION before=16384 during=16384 body=16384
+13:07:57.526 SCRIPT       : BCMM_POSE_NATIVE mode=2 conscious=1 root=<100,1,-1.05> hips=<0,0.287061,0.0211129> anchor={5F3E8CA2F93A4D06}Prefabs/Medical/Transport/BCMM_DraggedAnchor.et
+13:07:57.526 SCRIPT       : BCMM_POSE_BONES mode=2 head=<4.24286e-06,0.518694,-0.618759> hand=<-0.250014,0.179968,-0.119986> up=<0,1,0> forward=<0,0,-1>
+13:07:57.895 ENGINE       : Screenshot successfully saved into $profile:living-transport-mode-2-conscious-1 (1280x720)
+13:07:58.216 SCRIPT       : BCMM_COLLISION_RESTORE savedBody=540672 geoms=18 sameBody=1
+13:07:58.216 SCRIPT       : BCMM_COLLISION_GEOM index=0 saved=16384
+13:07:58.216 SCRIPT       : BCMM_COLLISION_GEOM index=1 saved=16384
+13:07:58.216 SCRIPT       : BCMM_COLLISION_GEOM index=2 saved=16384
+13:07:58.216 SCRIPT       : BCMM_COLLISION_GEOM index=3 saved=16384
+13:07:58.216 SCRIPT       : BCMM_COLLISION_GEOM index=4 saved=16384
+13:07:58.216 SCRIPT       : BCMM_COLLISION_GEOM index=5 saved=16384
+13:07:58.216 SCRIPT       : BCMM_COLLISION_GEOM index=6 saved=16384
+13:07:58.216 SCRIPT       : BCMM_COLLISION_GEOM index=7 saved=16384
+13:07:58.216 SCRIPT       : BCMM_COLLISION_GEOM index=8 saved=16384
+13:07:58.216 SCRIPT       : BCMM_COLLISION_GEOM index=9 saved=16384
+13:07:58.216 SCRIPT       : BCMM_COLLISION_GEOM index=10 saved=16384
+13:07:58.216 SCRIPT       : BCMM_COLLISION_GEOM index=11 saved=16384
+13:07:58.216 SCRIPT       : BCMM_COLLISION_GEOM index=12 saved=16384
+13:07:58.216 SCRIPT       : BCMM_COLLISION_GEOM index=13 saved=16384
+13:07:58.216 SCRIPT       : BCMM_COLLISION_GEOM index=14 saved=16384
+13:07:58.216 SCRIPT       : BCMM_COLLISION_GEOM index=15 saved=16384
+13:07:58.216 SCRIPT       : BCMM_COLLISION_GEOM index=16 saved=16384
+13:07:58.216 SCRIPT       : BCMM_COLLISION_GEOM index=17 saved=524288
+13:07:59.160 SCRIPT       : BCMM_COLLISION_RELEASE expectedBody=540672 actualBody=540672 expectedGeom=16384 actualGeom=16384 count=18
+13:07:59.160 SCRIPT       : BCMM_COLLISION_RESTORE savedBody=540672 geoms=18 sameBody=1
+13:07:59.160 SCRIPT       : BCMM_COLLISION_GEOM index=0 saved=16384
+13:07:59.160 SCRIPT       : BCMM_COLLISION_GEOM index=1 saved=16384
+13:07:59.160 SCRIPT       : BCMM_COLLISION_GEOM index=2 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=3 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=4 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=5 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=6 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=7 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=8 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=9 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=10 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=11 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=12 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=13 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=14 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=15 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=16 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=17 saved=524288
+13:07:59.161 SCRIPT       : BCMM_COLLISION_RESTORE savedBody=540672 geoms=18 sameBody=1
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=0 saved=8192
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=1 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=2 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=3 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=4 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=5 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=6 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=7 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=8 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=9 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=10 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=11 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=12 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=13 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=14 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=15 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=16 saved=16384
+13:07:59.161 SCRIPT       : BCMM_COLLISION_GEOM index=17 saved=524288
+13:07:59.162 SCRIPT       : BCMM_CHECK COMPLETE checks=840 failures=0 run=3adb554bf61e4eed8bdc254d861a0481
+13:07:59.253 SCRIPT    (W): Maybe a problem: DataProgression is not ready but the analytics event was requested

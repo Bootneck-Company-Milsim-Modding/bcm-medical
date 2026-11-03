@@ -312,10 +312,18 @@ modded class SCR_CharacterControllerComponent
   SCR_CharacterDamageManagerComponent medical=SCR_CharacterDamageManagerComponent.Cast(owner.FindComponent(SCR_CharacterDamageManagerComponent));
   float cap=1; if (medical) cap=medical.BCMM_MovementCap();
   if (BCMM_StretcherComponent.Carrying(owner)) cap=Math.Min(cap,BCMM_TreatmentAccess.Setting("stretcherCarrySpeedFraction"));
+  if (BCMM_NativeBagDrag.ManualDragging(owner))
+  {
+   // Native input uses a fraction of maximum gait speed, while authority
+   // separately checks actual metres/second. Leave headroom for acceleration.
+   cap=Math.Min(cap,BCMM_TreatmentAccess.Setting("manualBagDragMaxSpeedMetresPerSecond")/8.0);
+   ForceStance(ECharacterStance.CROUCH);
+  }
   OverrideMaxSpeed(cap);
  }
  override bool CanJumpClimb()
  {
+  if (BCMM_NativeBagDrag.ManualDragging(GetCharacter())) return false;
   if (BCMM_StretcherComponent.Carrying(GetCharacter())) return false;
   return super.CanJumpClimb();
  }

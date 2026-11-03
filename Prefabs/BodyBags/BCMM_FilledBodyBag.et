@@ -9,6 +9,7 @@ GenericEntity {
   }
   MeshObject "{6AB4B3F3FD218002}" { Object "{98555BDCD0BE490A}Assets/BodyBags/BCM_FilledBodyBag/BCM_FilledBodyBag_Collision.xob" }
   RigidBody "{6AB4B3F3FD218003}" { Mass 85 LinearDamping 0.75 AngularDamping 0.85 ModelGeometry 1 }
+  NwkPhysicsMovementComponent "{6AB4B3F3FD21800F}" {}
   Hierarchy "{6AB4B3F3FD218004}" {}
   BCMM_BagStorageComponent "{6AB4B3F3FD218005}" {
    Attributes SCR_ItemAttributeCollection {
@@ -23,7 +24,7 @@ GenericEntity {
   }
   InventoryStorageManagerComponent "{6AB4B3F3FD218006}" {}
   ActionsManagerComponent "{6AB4B3F3FD218007}" {
-   ActionContexts { UserActionContext { ContextName "bcmm_bag" Position PointInfo {} Radius 2 Omnidirectional 1 } }
+   ActionContexts { UserActionContext { ContextName "bcmm_bag" Position PointInfo { Offset -0.49 0.15 -0.19 } Radius 2 Omnidirectional 1 } }
    additionalActions {
     BCMM_SendHomeAction "{6AB4B3F3FD218305}" { ParentContextList { "bcmm_bag" } UIInfo SCR_ActionUIInfo { Name "Send body home" } VisibilityRange 4 }
     BCMM_BuryBagAction "{6AB4B3F3FD218304}" { ParentContextList { "bcmm_bag" } UIInfo SCR_ActionUIInfo { Name "Bury body bag" } VisibilityRange 4 }

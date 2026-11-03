@@ -26,6 +26,8 @@ modded class ArmaReforgerScripted
  protected float m_BCMMMirrorLogAt;
  protected float m_BCMMGripCheckStarted;
  protected float m_BCMMCarryInputLogAt;
+ protected float m_BCMMJoinLogAt;
+ protected bool m_BCMMStationaryOwnerVerified;
  override void OnUpdate(BaseWorld world,float timeslice)
  {
   super.OnUpdate(world,timeslice);string observer;
@@ -35,6 +37,13 @@ modded class ArmaReforgerScripted
   BCMM_StretcherComponent stretcher=BCMM_StretcherComponent.Cast(entity.FindComponent(BCMM_StretcherComponent));if(!stretcher)return;
   SCR_PlayerController player=SCR_PlayerController.Cast(GetPlayerController());int phase=mode.BCMM_StretcherPhase();
   string review;
+  string stationaryOwner;
+  if(System.GetCLIParam("bcmmStationaryPatientOwner",stationaryOwner) && phase==2 && player && player.GetPlayerId()==3 && !m_BCMMStationaryOwnerVerified)
+  {
+   ChimeraCharacter ownedPatient=ChimeraCharacter.Cast(patient);
+   if(player.GetControlledEntity()!=patient || !ownedPatient.GetRplComponent().IsOwner() || !ownedPatient.GetCharacterController().IsUnconscious() || vector.Distance(patient.GetOrigin(),entity.GetOrigin()+"0 0.43 0")>0.2)return;
+   m_BCMMStationaryOwnerVerified=true;Print("BCMM_STATIONARY_PATIENT_OWNER_ANCHORED");
+  }
   if(System.GetCLIParam("bcmmStretcherReview",review) && phase>=6 && player && player.GetPlayerId()==3) { BCMM_StretcherReview.Update(entity); }
   if (player && player.GetPlayerId()<=2)
   {
@@ -51,6 +60,11 @@ modded class ArmaReforgerScripted
     int grip=1;if(player.GetPlayerId()==1)grip=0;
     player.BCMM_RequestStretcherGrip(entity,grip);m_BCMMGripSent=true;
     PrintFormat("BCMM_CARRY_GRIP_SENT player=%1",player.GetPlayerId());
+   }
+   if ((phase==5 || phase==11 || phase==15) && !m_BCMMGripSent && world.GetWorldTime()>=m_BCMMJoinLogAt)
+   {
+    m_BCMMJoinLogAt=world.GetWorldTime()+1000;
+    stretcher.BCMM_LogJoinBlock(player.GetControlledEntity(),player.GetPlayerId()==1);
    }
    if (phase==7)
    {
@@ -200,5 +214,17 @@ class BCMM_StretcherReview
    Camera.SetInputEnabled(false);Camera.SetVerticalFOV(45);
   }
   Camera.SetWorldTransform(transform);GetGame().GetCameraManager().SetCamera(Camera);Camera.ApplyTransform(0);
+ }
+}
+
+modded class BCMM_StretcherComponent
+{
+ void BCMM_LogJoinBlock(IEntity actor,bool front)
+ {
+  if(!actor)return;
+  int id=GetGame().GetPlayerManager().GetPlayerIdFromControlledEntity(actor);
+  CharacterControllerComponent c=ChimeraCharacter.Cast(actor).GetCharacterController();
+  PrintFormat("BCMM_JOIN_GATE player=%1 enabled=%2 use=%3 valid=%4 busy=%5 has=%6 handleDistance=%7",id,BCMM_TreatmentAccess.Setting("stretcherCarryEnabled"),ActorCanUse(actor),CarrierValid(actor,id),BCMM_SplintTreatment.IsBusy(actor,Patient()),HasCarrier(actor),vector.Distance(actor.GetOrigin(),Handle(front)));
+  PrintFormat("BCMM_JOIN_STATE player=%1 fall=%2 swim=%3 sprint=%4 raised=%5 using=%6 unconscious=%7",id,c.IsFalling(),c.IsSwimming(),c.IsSprinting(),c.IsWeaponRaised(),c.IsUsingItem(),c.IsUnconscious());
  }
 }

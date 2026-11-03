@@ -1,5 +1,5 @@
 # Reproducible acceptance of the same unchanged standalone clinical build.
-param([switch]$FullProcedures,[string]$ServerDirectory='')
+param([switch]$FullProcedures,[string]$ServerDirectory='', [string]$StartAt='', [string]$LegacySourceProfile='')
 $ErrorActionPreference='Stop'
 $projectRoot=Split-Path $PSScriptRoot -Parent
 $reportDirectory=Join-Path $projectRoot ('.checks/clinical-acceptance-'+(Get-Date -Format 'yyyyMMdd-HHmmss-fff'))
@@ -11,9 +11,18 @@ function Get-SourceSnapshot {
 }
 $before=Get-SourceSnapshot
 $before | Set-Content -LiteralPath (Join-Path $reportDirectory 'source-before.txt')
-$report=[ordered]@{started=(Get-Date -Format o);project=$projectRoot;fullProcedures=[bool]$FullProcedures;status='running';steps=@();sourceUnchanged=$false}
-function Save-Report { $report | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath (Join-Path $reportDirectory 'report.json') }
+$report=[ordered]@{started=(Get-Date -Format o);project=$projectRoot;fullProcedures=[bool]$FullProcedures;startAt=$StartAt;skipped=@();status='running';steps=@();sourceUnchanged=$false}
+$script:stepEnabled = !$StartAt
+function Save-Report {
+ $pending=Join-Path $reportDirectory 'report.pending.json'
+ $report | ConvertTo-Json -Depth 8 | Set-Content -LiteralPath $pending
+ Move-Item -LiteralPath $pending -Destination (Join-Path $reportDirectory 'report.json') -Force
+}
 function Invoke-ClinicalCheck([string]$label,[string]$scriptName,[hashtable]$arguments) {
+ if(!$script:stepEnabled){
+  if($label -eq $StartAt){$script:stepEnabled=$true}
+  else{$report.skipped+=,$label;Save-Report;return}
+ }
  $step=[ordered]@{name=$label;started=(Get-Date -Format o);status='running';log=$label+'.txt'}
  $report.steps+=,$step;Save-Report
  try {
@@ -60,7 +69,7 @@ try {
  Invoke-ClinicalCheck 'unavailable-fluid-source-restart' 'Validate-MissingFluidLine.ps1' @{ServerDirectory=$ServerDirectory}
  Invoke-ClinicalCheck 'fluid-burden-active-world-restart' 'Validate-FluidBurden.ps1' @{ServerDirectory=$ServerDirectory}
  Invoke-ClinicalCheck 'fluid-burden-owner-network' 'Validate-FluidBurdenNetwork.ps1' @{ServerDirectory=$ServerDirectory}
- Invoke-ClinicalCheck 'pre-burden-world-compatibility' 'Validate-FluidBurdenLegacyWorld.ps1' @{ServerDirectory=$ServerDirectory}
+ Invoke-ClinicalCheck 'pre-burden-world-compatibility' 'Validate-FluidBurdenLegacyWorld.ps1' @{ServerDirectory=$ServerDirectory;SourceProfile=$LegacySourceProfile}
  Invoke-ClinicalCheck 'applied-equipment-network' 'Validate-AppliedEquipmentNetwork.ps1' @{ServerDirectory=$ServerDirectory}
  Invoke-ClinicalCheck 'native-bleeding' 'Validate.ps1' @{MedicalRuntime=$true}
  Invoke-ClinicalCheck 'limited-lives-authority' 'Validate.ps1' @{LifeRuntime=$true}
@@ -80,6 +89,7 @@ try {
   Invoke-ClinicalCheck 'native-medication' 'Validate.ps1' @{MedicationRuntime=$true}
   Invoke-ClinicalCheck 'native-txa' 'Validate.ps1' @{TXARuntime=$true}
  }
+ if(!$script:stepEnabled){throw ('Unknown acceptance step: '+$StartAt)}
  $after=Get-SourceSnapshot;$after | Set-Content -LiteralPath (Join-Path $reportDirectory 'source-after.txt')
  if(@(Compare-Object -ReferenceObject $before -DifferenceObject $after).Count) { throw 'Source changed during clinical acceptance; results cannot be combined as one build.' }
  $report.sourceUnchanged=$true;$report.status='passed';$report.completed=Get-Date -Format o;Save-Report

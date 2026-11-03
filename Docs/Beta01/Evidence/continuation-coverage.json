@@ -1,0 +1,997 @@
+{
+  "package": ".checks\\beta01-packed-20261102-162550-552\\packed\\data.pak",
+  "sha256": "bedda0f29e13af1009581140adaafef8a4c543940c75e35ab41badcd0d078edf",
+  "activeAIFactions": {
+    "US": {
+      "result": ".checks\\beta01-packed-20261102-162550-552\\acceptance-LivingTransport-20261102-173353-314\\result.json",
+      "completion": "BCMM_CHECK COMPLETE checks=946 failures=0 run=31bcfb54b8e14495a668f284a1e35edf",
+      "manifests": [
+        {
+          "boundary": "BEFORE",
+          "mode": 1,
+          "conscious": false,
+          "count": 24
+        },
+        {
+          "boundary": "AFTER",
+          "mode": 1,
+          "conscious": false,
+          "count": 24
+        },
+        {
+          "boundary": "BEFORE",
+          "mode": 2,
+          "conscious": false,
+          "count": 24
+        },
+        {
+          "boundary": "AFTER",
+          "mode": 2,
+          "conscious": false,
+          "count": 24
+        },
+        {
+          "boundary": "BEFORE",
+          "mode": 1,
+          "conscious": true,
+          "count": 22
+        },
+        {
+          "boundary": "AFTER",
+          "mode": 1,
+          "conscious": true,
+          "count": 22
+        },
+        {
+          "boundary": "BEFORE",
+          "mode": 2,
+          "conscious": true,
+          "count": 22
+        },
+        {
+          "boundary": "AFTER",
+          "mode": 2,
+          "conscious": true,
+          "count": 22
+        }
+      ],
+      "scope": "Four native conscious/unconscious carry/drag cases with active idle AI and exact original inventory identity checks; not autonomous medical care or combat navigation."
+    },
+    "USSR": {
+      "result": ".checks\\beta01-packed-20261102-162550-552\\acceptance-LivingTransport-20261102-173539-519\\result.json",
+      "completion": "BCMM_CHECK COMPLETE checks=942 failures=0 run=0a9e664988164635827bf31633bfb1b6",
+      "manifests": [
+        {
+          "boundary": "BEFORE",
+          "mode": 1,
+          "conscious": false,
+          "count": 22
+        },
+        {
+          "boundary": "AFTER",
+          "mode": 1,
+          "conscious": false,
+          "count": 22
+        },
+        {
+          "boundary": "BEFORE",
+          "mode": 2,
+          "conscious": false,
+          "count": 22
+        },
+        {
+          "boundary": "AFTER",
+          "mode": 2,
+          "conscious": false,
+          "count": 22
+        },
+        {
+          "boundary": "BEFORE",
+          "mode": 1,
+          "conscious": true,
+          "count": 22
+        },
+        {
+          "boundary": "AFTER",
+          "mode": 1,
+          "conscious": true,
+          "count": 22
+        },
+        {
+          "boundary": "BEFORE",
+          "mode": 2,
+          "conscious": true,
+          "count": 22
+        },
+        {
+          "boundary": "AFTER",
+          "mode": 2,
+          "conscious": true,
+          "count": 22
+        }
+      ],
+      "scope": "Four native conscious/unconscious carry/drag cases with active idle AI and exact original inventory identity checks; not autonomous medical care or combat navigation."
+    },
+    "FIA": {
+      "result": ".checks\\beta01-packed-20261102-162550-552\\acceptance-LivingTransport-20261102-173618-877\\result.json",
+      "completion": "BCMM_CHECK COMPLETE checks=930 failures=0 run=47587503821f4d2faf8c22f498591175",
+      "manifests": [
+        {
+          "boundary": "BEFORE",
+          "mode": 1,
+          "conscious": false,
+          "count": 19
+        },
+        {
+          "boundary": "AFTER",
+          "mode": 1,
+          "conscious": false,
+          "count": 19
+        },
+        {
+          "boundary": "BEFORE",
+          "mode": 2,
+          "conscious": false,
+          "count": 19
+        },
+        {
+          "boundary": "AFTER",
+          "mode": 2,
+          "conscious": false,
+          "count": 19
+        },
+        {
+          "boundary": "BEFORE",
+          "mode": 1,
+          "conscious": true,
+          "count": 19
+        },
+        {
+          "boundary": "AFTER",
+          "mode": 1,
+          "conscious": true,
+          "count": 19
+        },
+        {
+          "boundary": "BEFORE",
+          "mode": 2,
+          "conscious": true,
+          "count": 19
+        },
+        {
+          "boundary": "AFTER",
+          "mode": 2,
+          "conscious": true,
+          "count": 19
+        }
+      ],
+      "scope": "Four native conscious/unconscious carry/drag cases with active idle AI and exact original inventory identity checks; not autonomous medical care or combat navigation."
+    }
+  },
+  "worldDistances": [
+    {
+      "result": ".checks\\beta01-packed-20261102-162550-552\\acceptance-WorldReview-20261102-165832-262\\result.json",
+      "passed": true,
+      "completion": "BCMM_CHECK COMPLETE checks=739 failures=0 run=d4ccbe6626ab4959b26a0ce9edd6fdd8",
+      "distancesMetres": [
+        0.75,
+        3,
+        12
+      ]
+    }
+  ],
+  "clinicalCampaigns": [
+    {
+      "result": ".checks\\beta01-packed-20261102-162550-552\\acceptance-ClinicalSafety-20261102-165356-535\\result.json",
+      "passed": true,
+      "requested": 200,
+      "completion": "BCMM_CHECK COMPLETE checks=142800 failures=0 run=40284d391dc74ea49fdded7b1de3f3c9",
+      "lastIteration": [
+        "200",
+        "200",
+        "714",
+        "0"
+      ],
+      "resources": {
+        "samples": 501,
+        "elapsedSeconds": 5089.432939,
+        "peakPrivateMiB": 2344.59375,
+        "firstAfterWarmup": {
+          "utc": "2026-11-02T16:54:57.6119656Z",
+          "privateBytes": 2442948608,
+          "workingSetBytes": 1006661632,
+          "handles": 1247
+        },
+        "last": {
+          "utc": "2026-11-02T18:18:46.1198522Z",
+          "privateBytes": 2454962176,
+          "workingSetBytes": 1024499712,
+          "handles": 1233
+        },
+        "scope": "One native local client and diagnostic repetition; not dedicated multiplayer soak."
+      },
+      "isolatedPackedMount": true,
+      "logs": [
+        {
+          "path": ".checks\\beta01-packed-20261102-162550-552\\acceptance-ClinicalSafety-20261102-165356-535\\profile\\logs\\logs_2026-11-02_16-53-56\\console.log",
+          "sha256": "e8d82764dd3c6ad9df90527ed2c08dc08a9431c98128b23daea0e5cb86406279"
+        }
+      ]
+    }
+  ],
+  "toggleCampaigns": [
+    {
+      "result": ".checks\\beta01-packed-20261102-162550-552\\acceptance-Hint-20261102-174448-141\\result.json",
+      "passed": true,
+      "nativeAction": true,
+      "cycles": 200,
+      "completion": "BCMM_CHECK COMPLETE checks=1085 failures=0 run=713ab92ccd3040e38d74e02576622d01"
+    }
+  ],
+  "impairment": [
+    {
+      "result": ".checks\\impaired-Drag-20261102-173757-454\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\drag-network-20261102-173757-513",
+      "passed": true,
+      "case": "Drag",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-Drag-20261102-173757-454",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "84BB70AA9D42C9C82C6BF3C8BDA414E9E6F01275278CE1612402699010F6E598",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 150.0,
+        "jitterMs": 40.0,
+        "lossProbability": 0.03,
+        "seed": 101,
+        "received": 23723,
+        "forwarded": 22957,
+        "dropped": 725,
+        "peers": 3,
+        "connectionResets": 449,
+        "errors": [],
+        "elapsedSeconds": 67.0
+      }
+    },
+    {
+      "result": ".checks\\impaired-Drag-20261102-174146-032\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\drag-network-20261102-174146-076",
+      "passed": true,
+      "case": "Drag",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-Drag-20261102-174146-032",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "84BB70AA9D42C9C82C6BF3C8BDA414E9E6F01275278CE1612402699010F6E598",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 202,
+        "received": 26011,
+        "forwarded": 24646,
+        "dropped": 1332,
+        "peers": 3,
+        "connectionResets": 459,
+        "errors": [],
+        "elapsedSeconds": 68.016
+      }
+    },
+    {
+      "result": ".checks\\impaired-Drag-20261102-180129-573\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\drag-network-20261102-180129-623",
+      "passed": false,
+      "case": "Drag",
+      "failure": "Drag replication checks did not all complete successfully. Drag network fixture failed; inspect logs.",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-Drag-20261102-180129-573",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "84BB70AA9D42C9C82C6BF3C8BDA414E9E6F01275278CE1612402699010F6E598",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 303,
+        "received": 20381,
+        "forwarded": 19274,
+        "dropped": 1001,
+        "peers": 3,
+        "connectionResets": 0,
+        "errors": [],
+        "elapsedSeconds": 52.016
+      }
+    },
+    {
+      "result": ".checks\\impaired-Drag-20261102-180456-923\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\drag-network-20261102-180456-965",
+      "passed": true,
+      "case": "Drag",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-Drag-20261102-180456-923",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "84BB70AA9D42C9C82C6BF3C8BDA414E9E6F01275278CE1612402699010F6E598",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 303,
+        "received": 25775,
+        "forwarded": 24412,
+        "dropped": 1289,
+        "peers": 3,
+        "connectionResets": 440,
+        "errors": [],
+        "elapsedSeconds": 67.015
+      }
+    },
+    {
+      "result": ".checks\\impaired-Drag-20261102-180623-818\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\drag-network-20261102-180623-867",
+      "passed": true,
+      "case": "Drag",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-Drag-20261102-180623-818",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "84BB70AA9D42C9C82C6BF3C8BDA414E9E6F01275278CE1612402699010F6E598",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 303,
+        "received": 27015,
+        "forwarded": 25581,
+        "dropped": 1356,
+        "peers": 3,
+        "connectionResets": 433,
+        "errors": [],
+        "elapsedSeconds": 70.0
+      }
+    },
+    {
+      "result": ".checks\\impaired-Drag-20261102-180734-647\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\drag-network-20261102-180734-662",
+      "passed": false,
+      "case": "Drag",
+      "failure": "Drag replication checks did not all complete successfully. Drag network fixture failed; inspect logs.",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-Drag-20261102-180734-647",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "84BB70AA9D42C9C82C6BF3C8BDA414E9E6F01275278CE1612402699010F6E598",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 404,
+        "received": 17158,
+        "forwarded": 16231,
+        "dropped": 807,
+        "peers": 3,
+        "connectionResets": 0,
+        "errors": [],
+        "elapsedSeconds": 47.016
+      }
+    },
+    {
+      "result": ".checks\\impaired-Drag-20261102-180909-003\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\drag-network-20261102-180909-049",
+      "passed": false,
+      "case": "Drag",
+      "failure": "Drag replication checks did not all complete successfully. Drag network fixture failed; inspect logs.",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-Drag-20261102-180909-003",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "84BB70AA9D42C9C82C6BF3C8BDA414E9E6F01275278CE1612402699010F6E598",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 404,
+        "received": 17774,
+        "forwarded": 16810,
+        "dropped": 838,
+        "peers": 3,
+        "connectionResets": 0,
+        "errors": [],
+        "elapsedSeconds": 47.0
+      }
+    },
+    {
+      "result": ".checks\\impaired-Drag-20261102-181051-657\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\drag-network-20261102-181051-703",
+      "passed": true,
+      "case": "Drag",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-Drag-20261102-181051-657",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "84BB70AA9D42C9C82C6BF3C8BDA414E9E6F01275278CE1612402699010F6E598",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 404,
+        "received": 27514,
+        "forwarded": 26149,
+        "dropped": 1318,
+        "peers": 3,
+        "connectionResets": 448,
+        "errors": [],
+        "elapsedSeconds": 71.016
+      }
+    },
+    {
+      "result": ".checks\\impaired-Drag-20261102-181203-080\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\drag-network-20261102-181203-102",
+      "passed": true,
+      "case": "Drag",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-Drag-20261102-181203-080",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "84BB70AA9D42C9C82C6BF3C8BDA414E9E6F01275278CE1612402699010F6E598",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 505,
+        "received": 27556,
+        "forwarded": 26104,
+        "dropped": 1398,
+        "peers": 3,
+        "connectionResets": 469,
+        "errors": [],
+        "elapsedSeconds": 71.0
+      }
+    },
+    {
+      "result": ".checks\\impaired-Drag-20261102-181314-532\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\drag-network-20261102-181314-547",
+      "passed": true,
+      "case": "Drag",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-Drag-20261102-181314-532",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "84BB70AA9D42C9C82C6BF3C8BDA414E9E6F01275278CE1612402699010F6E598",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 606,
+        "received": 27936,
+        "forwarded": 26533,
+        "dropped": 1382,
+        "peers": 3,
+        "connectionResets": 486,
+        "errors": [],
+        "elapsedSeconds": 71.016
+      }
+    },
+    {
+      "result": ".checks\\impaired-Drag-20261102-181425-786\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\drag-network-20261102-181425-800",
+      "passed": true,
+      "case": "Drag",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-Drag-20261102-181425-786",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "84BB70AA9D42C9C82C6BF3C8BDA414E9E6F01275278CE1612402699010F6E598",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 707,
+        "received": 27586,
+        "forwarded": 26154,
+        "dropped": 1379,
+        "peers": 3,
+        "connectionResets": 424,
+        "errors": [],
+        "elapsedSeconds": 71.0
+      }
+    },
+    {
+      "result": ".checks\\impaired-Drag-20261102-181549-469\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\drag-network-20261102-181549-512",
+      "passed": true,
+      "case": "Drag",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-Drag-20261102-181549-469",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "84BB70AA9D42C9C82C6BF3C8BDA414E9E6F01275278CE1612402699010F6E598",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 303,
+        "received": 27946,
+        "forwarded": 26483,
+        "dropped": 1413,
+        "peers": 3,
+        "connectionResets": 432,
+        "errors": [],
+        "elapsedSeconds": 72.0
+      }
+    },
+    {
+      "result": ".checks\\impaired-Drag-20261102-181701-901\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\drag-network-20261102-181701-914",
+      "passed": true,
+      "case": "Drag",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-Drag-20261102-181701-901",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "84BB70AA9D42C9C82C6BF3C8BDA414E9E6F01275278CE1612402699010F6E598",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 303,
+        "received": 27188,
+        "forwarded": 25761,
+        "dropped": 1367,
+        "peers": 3,
+        "connectionResets": 433,
+        "errors": [],
+        "elapsedSeconds": 71.016
+      }
+    },
+    {
+      "result": ".checks\\impaired-Drag-20261102-181813-737\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\drag-network-20261102-181813-753",
+      "passed": true,
+      "case": "Drag",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-Drag-20261102-181813-737",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "84BB70AA9D42C9C82C6BF3C8BDA414E9E6F01275278CE1612402699010F6E598",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 303,
+        "received": 27381,
+        "forwarded": 25934,
+        "dropped": 1379,
+        "peers": 3,
+        "connectionResets": 441,
+        "errors": [],
+        "elapsedSeconds": 70.0
+      }
+    },
+    {
+      "result": ".checks\\impaired-FluidLine-20261102-175123-340\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\fluid-line-network-20261102-175123-389",
+      "passed": true,
+      "case": "FluidLine",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-FluidLine-20261102-175123-340",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "8AAD4DB7471C9BAAEEBE030BCE4A496EA46C181B31922D44735D348510A12FFB",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 202,
+        "received": 17718,
+        "forwarded": 16674,
+        "dropped": 921,
+        "peers": 3,
+        "connectionResets": 0,
+        "errors": [],
+        "elapsedSeconds": 52.0
+      }
+    },
+    {
+      "result": ".checks\\impaired-FluidLine-20261102-182402-557\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\fluid-line-network-20261102-182402-602",
+      "passed": true,
+      "case": "FluidLine",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-FluidLine-20261102-182402-557",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "8AAD4DB7471C9BAAEEBE030BCE4A496EA46C181B31922D44735D348510A12FFB",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 303,
+        "received": 19272,
+        "forwarded": 18207,
+        "dropped": 954,
+        "peers": 3,
+        "connectionResets": 0,
+        "errors": [],
+        "elapsedSeconds": 58.0
+      }
+    },
+    {
+      "result": ".checks\\impaired-FluidLine-20261102-182501-367\\result.json",
+      "nativeRun": null,
+      "passed": false,
+      "case": "FluidLine",
+      "failure": "Independent-line diagnostic server exited before acceptance.",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-FluidLine-20261102-182501-367",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "8AAD4DB7471C9BAAEEBE030BCE4A496EA46C181B31922D44735D348510A12FFB",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 404,
+        "received": 18012,
+        "forwarded": 17073,
+        "dropped": 851,
+        "peers": 3,
+        "connectionResets": 0,
+        "errors": [],
+        "elapsedSeconds": 53.0
+      }
+    },
+    {
+      "result": ".checks\\impaired-FluidLine-20261102-182746-970\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\fluid-line-network-20261102-182747-011",
+      "passed": true,
+      "case": "FluidLine",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-FluidLine-20261102-182746-970",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "8AAD4DB7471C9BAAEEBE030BCE4A496EA46C181B31922D44735D348510A12FFB",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 404,
+        "received": 14827,
+        "forwarded": 14016,
+        "dropped": 696,
+        "peers": 3,
+        "connectionResets": 0,
+        "errors": [],
+        "elapsedSeconds": 47.0
+      }
+    },
+    {
+      "result": ".checks\\impaired-LivingTransport-20261102-173905-249\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\living-transport-network-20261102-173905-293",
+      "passed": true,
+      "case": "LivingTransport",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-LivingTransport-20261102-173905-249",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "B19F0036001B82880786258274A3FBA8D57A0F77E279B7F7EB7FFAF178963CF0",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 150.0,
+        "jitterMs": 40.0,
+        "lossProbability": 0.03,
+        "seed": 101,
+        "received": 27287,
+        "forwarded": 26374,
+        "dropped": 837,
+        "peers": 3,
+        "connectionResets": 0,
+        "errors": [],
+        "elapsedSeconds": 72.016
+      }
+    },
+    {
+      "result": ".checks\\impaired-LivingTransport-20261102-174254-326\\result.json",
+      "nativeRun": null,
+      "passed": false,
+      "case": "LivingTransport",
+      "failure": "Living transport network fixture failed; inspect saved logs.",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-LivingTransport-20261102-174254-326",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "B19F0036001B82880786258274A3FBA8D57A0F77E279B7F7EB7FFAF178963CF0",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 202,
+        "received": 10327,
+        "forwarded": 9748,
+        "dropped": 539,
+        "peers": 2,
+        "connectionResets": 2,
+        "errors": [],
+        "elapsedSeconds": 45.016
+      }
+    },
+    {
+      "result": ".checks\\impaired-LivingTransport-20261102-174704-646\\result.json",
+      "nativeRun": null,
+      "passed": false,
+      "case": "LivingTransport",
+      "failure": "Living transport network fixture failed; inspect saved logs.",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-LivingTransport-20261102-174704-646",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "B19F0036001B82880786258274A3FBA8D57A0F77E279B7F7EB7FFAF178963CF0",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 202,
+        "received": 14888,
+        "forwarded": 13992,
+        "dropped": 788,
+        "peers": 3,
+        "connectionResets": 0,
+        "errors": [],
+        "elapsedSeconds": 48.0
+      }
+    },
+    {
+      "result": ".checks\\impaired-LivingTransport-20261102-175003-018\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\living-transport-network-20261102-175003-060",
+      "passed": true,
+      "case": "LivingTransport",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-LivingTransport-20261102-175003-018",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "B19F0036001B82880786258274A3FBA8D57A0F77E279B7F7EB7FFAF178963CF0",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 202,
+        "received": 31340,
+        "forwarded": 29671,
+        "dropped": 1609,
+        "peers": 3,
+        "connectionResets": 54,
+        "errors": [],
+        "elapsedSeconds": 80.016
+      }
+    },
+    {
+      "result": ".checks\\impaired-LivingTransport-20261102-181924-357\\result.json",
+      "nativeRun": null,
+      "passed": false,
+      "case": "LivingTransport",
+      "failure": "Living transport network fixture failed; inspect saved logs.",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-LivingTransport-20261102-181924-357",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "B19F0036001B82880786258274A3FBA8D57A0F77E279B7F7EB7FFAF178963CF0",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 303,
+        "received": 41526,
+        "forwarded": 39338,
+        "dropped": 2112,
+        "peers": 3,
+        "connectionResets": 0,
+        "errors": [],
+        "elapsedSeconds": 99.0
+      }
+    },
+    {
+      "result": ".checks\\impaired-LivingTransport-20261102-182228-104\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\living-transport-network-20261102-182228-146",
+      "passed": true,
+      "case": "LivingTransport",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-LivingTransport-20261102-182228-104",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "B19F0036001B82880786258274A3FBA8D57A0F77E279B7F7EB7FFAF178963CF0",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 303,
+        "received": 29737,
+        "forwarded": 28114,
+        "dropped": 1494,
+        "peers": 3,
+        "connectionResets": 0,
+        "errors": [],
+        "elapsedSeconds": 76.016
+      }
+    },
+    {
+      "result": ".checks\\impaired-LivingTransport-20261102-182834-517\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\living-transport-network-20261102-182834-545",
+      "passed": false,
+      "case": "LivingTransport",
+      "failure": "Living transport owner/patient/late-join acceptance did not pass unchanged.",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-LivingTransport-20261102-182834-517",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "B19F0036001B82880786258274A3FBA8D57A0F77E279B7F7EB7FFAF178963CF0",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 303,
+        "received": 30866,
+        "forwarded": 29305,
+        "dropped": 1561,
+        "peers": 3,
+        "connectionResets": 509,
+        "errors": [],
+        "elapsedSeconds": 180.015
+      }
+    },
+    {
+      "result": ".checks\\impaired-LivingTransport-20261102-183202-346\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\living-transport-network-20261102-183202-575",
+      "passed": true,
+      "case": "LivingTransport",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-LivingTransport-20261102-183202-346",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "B19F0036001B82880786258274A3FBA8D57A0F77E279B7F7EB7FFAF178963CF0",
+      "diagnosticManifestSha256": "698840F1D1B6A5E370143623A68B15308C694797E18096566F4532662B5D8741",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 303,
+        "received": 30938,
+        "forwarded": 29331,
+        "dropped": 1567,
+        "peers": 3,
+        "connectionResets": 30,
+        "errors": [],
+        "elapsedSeconds": 77.016
+      }
+    },
+    {
+      "result": ".checks\\impaired-LivingTransport-20261102-183319-823\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\living-transport-network-20261102-183320-089",
+      "passed": true,
+      "case": "LivingTransport",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-LivingTransport-20261102-183319-823",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "B19F0036001B82880786258274A3FBA8D57A0F77E279B7F7EB7FFAF178963CF0",
+      "diagnosticManifestSha256": "698840F1D1B6A5E370143623A68B15308C694797E18096566F4532662B5D8741",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 404,
+        "received": 31671,
+        "forwarded": 30001,
+        "dropped": 1545,
+        "peers": 3,
+        "connectionResets": 0,
+        "errors": [],
+        "elapsedSeconds": 80.0
+      }
+    },
+    {
+      "result": ".checks\\impaired-LivingTransport-20261102-183441-162\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\living-transport-network-20261102-183441-418",
+      "passed": true,
+      "case": "LivingTransport",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-LivingTransport-20261102-183441-162",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "B19F0036001B82880786258274A3FBA8D57A0F77E279B7F7EB7FFAF178963CF0",
+      "diagnosticManifestSha256": "698840F1D1B6A5E370143623A68B15308C694797E18096566F4532662B5D8741",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 505,
+        "received": 35587,
+        "forwarded": 33694,
+        "dropped": 1819,
+        "peers": 3,
+        "connectionResets": 3,
+        "errors": [],
+        "elapsedSeconds": 88.0
+      }
+    },
+    {
+      "result": ".checks\\impaired-LivingTransport-20261102-183609-661\\result.json",
+      "nativeRun": ".checks\\network-final-snapshot-20261102-164108-050\\.checks\\living-transport-network-20261102-183609-926",
+      "passed": true,
+      "case": "LivingTransport",
+      "failure": "",
+      "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\impaired-LivingTransport-20261102-183609-661",
+      "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+      "driverSha256": "B19F0036001B82880786258274A3FBA8D57A0F77E279B7F7EB7FFAF178963CF0",
+      "diagnosticManifestSha256": "698840F1D1B6A5E370143623A68B15308C694797E18096566F4532662B5D8741",
+      "proxySha256": "F9D7BDC246EB7A18EA26FA724CD0D98A0DAAA8A795EEE66D0BD5977C6E456988",
+      "traffic": {
+        "listenPort": 23001,
+        "serverPort": 2001,
+        "delayMs": 250.0,
+        "jitterMs": 75.0,
+        "lossProbability": 0.05,
+        "seed": 606,
+        "received": 31171,
+        "forwarded": 29546,
+        "dropped": 1548,
+        "peers": 3,
+        "connectionResets": 12,
+        "errors": [],
+        "elapsedSeconds": 79.0
+      }
+    }
+  ],
+  "limits": [
+    "A completed native assertion suite does not establish visual perfection or all graphics configurations.",
+    "Proxy results describe tested synthetic loopback impairment, not public Internet or console acceptance.",
+    "Shelved two-player stretcher and grip prototype failures are retained in the network index; production defaults are unchanged.",
+    "Failed and incomplete runs are not added to successful instance counts."
+  ]
+}

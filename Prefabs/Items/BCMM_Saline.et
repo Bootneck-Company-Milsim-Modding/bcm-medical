@@ -1,21 +1,23 @@
 GenericEntity : "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" {
  ID "85C53BBFE25A2484"
  components {
-  MeshObject "{51F66EC3C5BC700D}" { Object "{1B49817205B37B1C}Assets/Medical/FluidBag/BCMM_FluidBag.xob" }
+  MeshObject "{51F66EC3C5BC700D}" { Object "{E6E83E5ED49B9DE5}Assets/Items/Medicine/SalineBag_01/SalineBag_US_01/SalineBag_US_01.xob" }
   SCR_ConsumableItemComponent "{5943631460899505}" { m_ConsumableEffect BCMM_ProcedurePresentationEffect "{594363147CC4C6BE}" { m_bDeleteOnUse 0 } m_bAlternativeModelOnAction 0 }
   BCMM_EquipmentItemComponent "{6AB4B3F3FD218329}" { Kind 12 }
   InventoryItemComponent "{5222EB4D0C73006B}" {
    Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
     ItemDisplayName SCR_InventoryUIInfo "{5222EB4D07D865FA}" {
      Name "Saline bag"
-     Description "Finite saline supply. Establish vascular access and reassess pressure; this fluid does not replace lost red cells. Shared bag mesh is temporary."
+     Description "Finite saline supply. Establish vascular access and reassess pressure; this fluid does not replace lost red cells. Uses the native saline bag model."
     }
     ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     DimensionScaler 1
      Weight 0.4
      SizeSetupStrategy Manual
      ItemDimensions 20 10 5
      ItemVolume 1000
     }
+    CustomAttributes { PreviewRenderAttributes "{6098B9508619B4D0}" { CameraPreset Front CameraDistanceToItem 0.457 CameraOffset 0 0 0 ItemRenderRotation 90 0 0 FOV 35 AspectRatio 1 } }
     CommonItemType "EQUIPMENT"
    }
   }

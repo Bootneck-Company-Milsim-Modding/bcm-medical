@@ -22,7 +22,7 @@ class BCMM_OxygenMedicationRuntimeChecks : BCMM_SplintRuntimeChecks
   m_Suite.Record(BCMM_EquipmentTreatment.BeginEquipment(m_Actor,m_Target,18,BCMM_BodyRegion.HEAD),"Default ten-second oxygen connection starts with actual device");
   GetGame().GetCallqueue().CallLater(CheckOxygenMid,5000);GetGame().GetCallqueue().CallLater(CheckConnected,18000);
  }
- protected void CheckOxygenMid() { m_Suite.Record(m_Oxygen && Gas()==10 && !m_Medical.BCMM_GetPatient().Equipment.OxygenActive && ChimeraCharacter.Cast(m_Actor).GetCharacterController().IsUsingItem(),"Connecting oxygen animates before supply or depletion begins"); }
+ protected void CheckOxygenMid() { m_Suite.Record(m_Oxygen && Gas()==10 && !m_Medical.BCMM_GetPatient().Equipment.OxygenActive && BCMM_SplintTreatment.IsBusy(m_Actor,m_Target),"Connecting oxygen holds its authority lease before connection or gas depletion begins"); }
  protected void CheckConnected()
  {
   PrintFormat("BCMM_OXYGEN_NATIVE gas=%1 active=%2 flags=%3 inventory=%4",Gas(),m_Medical.BCMM_GetPatient().Equipment.OxygenActive,m_Medical.BCMM_AppliedEquipment(),m_Inventory.Contains(m_Oxygen));

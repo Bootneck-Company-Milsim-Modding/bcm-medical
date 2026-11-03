@@ -181,11 +181,99 @@ class BCMM_ClinicalCheckSession
   BCMM_MedicationTreatment.AppendSupplies(Actor, counts);
   BCMM_EquipmentTreatment.AppendSupplies(Actor, counts);
   if (completed && (Check == BCMM_ClinicalCheck.BLEEDING || Check == BCMM_ClinicalCheck.INJURY)) counts.Insert(BCMM_ClinicalTreatmentFlags.ForPatient(Actor, Patient, Region));
+  if (completed && Check != BCMM_ClinicalCheck.SUPPLIES) Player.BCMM_RememberCheck(Actor, Patient, Region, Check, result);
   Player.BCMM_SendClinicalCheck(BCMM_BodyBagComponent.Id(Patient), View, Region, Check, completed, result, counts);
+ }
+}
+// Per-controller knowledge, bound to both exact characters and the patient
+// model for this life. Revalidation reveals no new unexamined findings.
+class BCMM_ClinicalKnowledge
+{
+ IEntity Actor;
+ IEntity Patient;
+ ref BCMM_Patient Life;
+ int Region;
+ int Check;
+ string Signature;
+ string Finding;
+ bool Matches(IEntity actor, IEntity patient, BCMM_Patient life)
+ {
+  return Actor == actor && Patient == patient && Life == life && life && !life.Terminal && Signature == State(life, Region, Check);
+ }
+ static string State(BCMM_Patient life, int region, int check)
+ {
+  string signature = BCMM_ClinicalChecks.Report(life, region, check);
+  if (check == BCMM_ClinicalCheck.AIRWAY) signature += ":" + life.Airway.ToString() + ":" + life.Equipment.AirwayAdjunct.ToString();
+  if (check == BCMM_ClinicalCheck.BREATHING) signature += ":" + life.Equipment.OxygenActive.ToString();
+  if (check == BCMM_ClinicalCheck.BLEEDING || check == BCMM_ClinicalCheck.INJURY)
+  {
+   for (int i = 0; i < life.WoundCount(); i++)
+   {
+    BCMM_Wound wound = life.WoundAt(i);
+    if (wound && wound.BodyZone == region)
+     signature += string.Format(":%1/%2/%3/%4/%5", wound.Id, wound.RetainedProjectile, wound.Bandaged, wound.Sutured, wound.Reopened);
+   }
+   for (int n = 0; n < life.InternalBleedCount(); n++)
+   {
+    BCMM_InternalBleeding bleed = life.InternalBleedAt(n);
+    if (bleed && bleed.Region == region) signature += string.Format(":internal/%1/%2/%3", bleed.Id, bleed.Compartment, bleed.Repaired);
+   }
+  }
+  return signature;
  }
 }
 modded class SCR_PlayerController
 {
+ protected ref array<ref BCMM_ClinicalKnowledge> m_BCMMKnowledge = {};
+ void BCMM_RememberCheck(IEntity actor, IEntity patient, int region, int check, string finding)
+ {
+  if (!Replication.IsServer() || !actor || !patient) return;
+  SCR_CharacterDamageManagerComponent medical = SCR_CharacterDamageManagerComponent.Cast(patient.FindComponent(SCR_CharacterDamageManagerComponent));
+  if (!medical || medical.IsDestroyed()) return;
+  for (int i = m_BCMMKnowledge.Count() - 1; i >= 0; i--)
+  {
+   BCMM_ClinicalKnowledge old = m_BCMMKnowledge[i];
+   if (!old.Actor || !old.Patient || old.Actor != actor || (old.Patient == patient && old.Region == region && old.Check == check)) m_BCMMKnowledge.Remove(i);
+  }
+  // Bound memory even on a long session with many different casualties.
+  if (m_BCMMKnowledge.Count() >= 512) m_BCMMKnowledge.Remove(0);
+  BCMM_ClinicalKnowledge known = new BCMM_ClinicalKnowledge();
+  known.Actor = actor; known.Patient = patient; known.Life = medical.BCMM_GetPatient();
+  known.Region = region; known.Check = check; known.Finding = finding;
+  known.Signature = BCMM_ClinicalKnowledge.State(known.Life, region, check);
+  m_BCMMKnowledge.Insert(known);
+ }
+ void BCMM_RequestKnownChecks(IEntity patient, int view)
+ {
+  if (GetGame().GetPlayerController() == this && patient) Rpc(BCMM_KnownChecksRequest, BCMM_BodyBagComponent.Id(patient), view);
+ }
+ [RplRpc(RplChannel.Reliable, RplRcver.Server)]
+ protected void BCMM_KnownChecksRequest(RplId target, int view)
+ {
+  IEntity actor = GetControlledEntity();
+  IEntity patient = BCMM_BodyBagComponent.Resolve(target);
+  if (!BCMM_TreatmentAccess.CanExamine(actor, patient)) return;
+  SCR_CharacterDamageManagerComponent medical = SCR_CharacterDamageManagerComponent.Cast(patient.FindComponent(SCR_CharacterDamageManagerComponent));
+  if (!medical || medical.IsDestroyed()) return;
+  for (int i = m_BCMMKnowledge.Count() - 1; i >= 0; i--)
+  {
+   BCMM_ClinicalKnowledge known = m_BCMMKnowledge[i];
+   if (!known.Actor || !known.Patient || known.Actor != actor) { m_BCMMKnowledge.Remove(i); continue; }
+   if (known.Patient != patient) continue;
+   if (!known.Matches(actor, patient, medical.BCMM_GetPatient()))
+   { m_BCMMKnowledge.Remove(i); continue; }
+   int bandages, splints, surgery, sutures;
+   BCMM_ClinicalChecks.Supplies(actor, bandages, splints, surgery, sutures);
+   array<int> counts = {bandages, splints, surgery, sutures};
+   BCMM_MedicationTreatment.AppendSupplies(actor, counts);
+   BCMM_EquipmentTreatment.AppendSupplies(actor, counts);
+   if (known.Check == BCMM_ClinicalCheck.BLEEDING || known.Check == BCMM_ClinicalCheck.INJURY)
+   {
+    counts.Insert(BCMM_ClinicalTreatmentFlags.ForPatient(actor, patient, known.Region));
+   }
+   BCMM_SendClinicalCheck(target, view, known.Region, known.Check, true, known.Finding, counts);
+  }
+ }
  void BCMM_SendCheckProgress(RplId patient, int view, int region, int check, float seconds)
  {
   if (!Replication.IsServer()) return;

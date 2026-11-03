@@ -111,6 +111,8 @@ class BCMM_MedicalMenu : ChimeraMenuBase
   BindAll();
   TextWidget anatomyHint = TextWidget.Cast(GetRootWidget().FindAnyWidget("AnatomyHint"));
   if (anatomyHint) { anatomyHint.SetTextWrapping(true); anatomyHint.SetMinFontSize(10); anatomyHint.SetDesiredFontSize(12); }
+  TextWidget rosterStatus = TextWidget.Cast(GetRootWidget().FindAnyWidget("RosterStatus"));
+  if (rosterStatus) { rosterStatus.SetTextWrapping(true); rosterStatus.SetMinFontSize(11); rosterStatus.SetDesiredFontSize(13); }
   GetGame().GetInputManager().AddActionListener("MenuBack", EActionTrigger.DOWN, ClosePanel);
   TextWidget assessmentText = TextWidget.Cast(GetRootWidget().FindAnyWidget("Assessment"));
   if (assessmentText) { assessmentText.SetMinFontSize(12); assessmentText.SetDesiredFontSize(16); assessmentText.SetTextWrapping(true); }
@@ -125,6 +127,7 @@ class BCMM_MedicalMenu : ChimeraMenuBase
   }
   FillPatients();
   RefreshActions();
+  if (Player() && Target()) Player().BCMM_RequestKnownChecks(Target(), m_View);
  }
  override void OnMenuClose()
  {
@@ -137,6 +140,7 @@ class BCMM_MedicalMenu : ChimeraMenuBase
  override void OnMenuUpdate(float tDelta)
  {
   super.OnMenuUpdate(tDelta);
+  // The menu preset owns a context containing the rebindable medical toggle.
   if (GetGame().GetWorld().GetWorldTime() >= m_PatientRefreshAt)
   {
    FillPatients();
@@ -163,7 +167,7 @@ class BCMM_MedicalMenu : ChimeraMenuBase
    {
     float width, height;
     panel.GetScreenSize(width, height);
-    FrameSlot.SetSize(fill, GetGame().GetWorkspace().DPIUnscale(width * 0.665 * Player().BCMM_ProcedureProgress()), 2);
+    FrameSlot.SetSize(fill, GetGame().GetWorkspace().DPIUnscale(width * 0.665 * Player().BCMM_ProcedureProgress()), 8);
    }
   }
   for (int row = 0; row < 6; row++)
@@ -702,6 +706,7 @@ class BCMM_MedicalMenu : ChimeraMenuBase
   if (patient != Player().GetControlledEntity()) m_SwapTarget = m_Target;
   m_View = ++s_NextView; m_Region = -1; m_ActionPage = 0; m_CheckActive = false;
   m_Findings.Clear(); m_TreatmentFlags.Clear();
+  Player().BCMM_RequestKnownChecks(patient, m_View);
   SetText("Assessment", ""); SetText("RegionLabel", "Select body region");
   for (int i = 0; i < 7; i++)
   {

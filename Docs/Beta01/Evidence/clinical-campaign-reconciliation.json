@@ -1,0 +1,383 @@
+{
+  "build": ".checks\\full-beta01-snapshot-20261102-113742-957",
+  "sameSourceManifestAcrossSegments": true,
+  "resumedSourceUnchanged": true,
+  "originalInterruption": "Disk full truncated the original status report; successful step output files retained.",
+  "expectedSteps": 51,
+  "recordedSteps": 51,
+  "missingSteps": [],
+  "steps": [
+    {
+      "name": "resources",
+      "status": "step-output-preserved",
+      "sha256": "C18C175AB5507609FB53AA1E46BA8C7EEF1BB61CCD139A24724142D41E3946B3",
+      "bytes": 3788,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\resources.txt"
+    },
+    {
+      "name": "native-faction-arsenals",
+      "status": "step-output-preserved",
+      "sha256": "C7DB509A05BCBADD1BD61E9942482FEFAA5A7F85DB464CD40E304B897D86B6AB",
+      "bytes": 3808,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\native-faction-arsenals.txt"
+    },
+    {
+      "name": "arsenal-owner-network",
+      "status": "step-output-preserved",
+      "sha256": "9E5C5A216FD4102F6480797DE0694331B317420471E10B6D2D56C6ADDDCCF3F9",
+      "bytes": 1782,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\arsenal-owner-network.txt"
+    },
+    {
+      "name": "clinical-safety",
+      "status": "step-output-preserved",
+      "sha256": "58BD34486408B797CF3F5ECE2AB1CDB6624522021D4E4AB0A35F2163D7FA466D",
+      "bytes": 3808,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\clinical-safety.txt"
+    },
+    {
+      "name": "inventory-sling-retention",
+      "status": "step-output-preserved",
+      "sha256": "23E4F09EA30BC54FC1E8EBCC49E5E1BCCC69BA62D027957A41DF3CA7E0208308",
+      "bytes": 3808,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\inventory-sling-retention.txt"
+    },
+    {
+      "name": "living-casualty-transport",
+      "status": "step-output-preserved",
+      "sha256": "69BAD6CC07B089A245060E04351737818EB6450C0F6BD00C5A70CD9D12F934FD",
+      "bytes": 3808,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\living-casualty-transport.txt"
+    },
+    {
+      "name": "living-transport-owner-and-late-join",
+      "status": "step-output-preserved",
+      "sha256": "ADDEBCF04FA87680C124584A4391BCBE921CF6A8AE891CB70E03DC9E55808147",
+      "bytes": 2408,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\living-transport-owner-and-late-join.txt"
+    },
+    {
+      "name": "native-stock-consumable-commit",
+      "status": "step-output-preserved",
+      "sha256": "71290A4F20AEBA768FEA6614B26A5EC43FCC6D498BDEC842212FD6BF568D8167",
+      "bytes": 3808,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\native-stock-consumable-commit.txt"
+    },
+    {
+      "name": "native-stock-saline-access-loss",
+      "status": "step-output-preserved",
+      "sha256": "26B41DE67B80038ECC13B73E9A3A9B3B73DB8086CE398D9F845E98C4C4AE4E05",
+      "bytes": 3808,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\native-stock-saline-access-loss.txt"
+    },
+    {
+      "name": "native-stock-saline-source-movement",
+      "status": "step-output-preserved",
+      "sha256": "FC60395CF0D7AEF96C5D5BA017D71A00A17D24B449992BDE5918E631BC81267F",
+      "bytes": 3808,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\native-stock-saline-source-movement.txt"
+    },
+    {
+      "name": "native-stock-saline-full-heal",
+      "status": "step-output-preserved",
+      "sha256": "BE062A7D2F0EC9208FC1B4D27B766534ECEC8B8151A9432525BDB292B5F49BA9",
+      "bytes": 3808,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\native-stock-saline-full-heal.txt"
+    },
+    {
+      "name": "native-stock-saline-world-expiry",
+      "status": "step-output-preserved",
+      "sha256": "481E8A06C200C8B9ED94FDB3AD8E752870AC411F79BC54987B0A05BA342F09B3",
+      "bytes": 7939,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\native-stock-saline-world-expiry.txt"
+    },
+    {
+      "name": "native-stock-saline-inactive-world-expiry",
+      "status": "step-output-preserved",
+      "sha256": "BF758AB4AD106FD76DF17EE2E6BC5A9E40C21A1FD1404691DAC2C77A64293F95",
+      "bytes": 7939,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\native-stock-saline-inactive-world-expiry.txt"
+    },
+    {
+      "name": "native-stock-saline-deferred-reference",
+      "status": "step-output-preserved",
+      "sha256": "B7E2771DF532608A748ADA30ADE47079151C78747BBDAA225BC8B49B622BC664",
+      "bytes": 3808,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\native-stock-saline-deferred-reference.txt"
+    },
+    {
+      "name": "native-stock-saline-same-source-full-heal",
+      "status": "step-output-preserved",
+      "sha256": "BB0DA25837F858E30B1E5844293E8AA9EBDD3FDD286C1CB08625E28137A025F9",
+      "bytes": 3808,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\native-stock-saline-same-source-full-heal.txt"
+    },
+    {
+      "name": "native-stock-saline-retrieved-expiry",
+      "status": "step-output-preserved",
+      "sha256": "656BC65528CABF896CCACF49EB00C873B71ED87EA33734088359EA3A0189666B",
+      "bytes": 7960,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\native-stock-saline-retrieved-expiry.txt"
+    },
+    {
+      "name": "native-stock-saline-retrieved-full-heal",
+      "status": "step-output-preserved",
+      "sha256": "A36D09ADC3F33744C82FC2FFB19C4710E49DCF48540BF197B592798EFDAED020",
+      "bytes": 7960,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\native-stock-saline-retrieved-full-heal.txt"
+    },
+    {
+      "name": "invalid-saved-native-saline-object",
+      "status": "step-output-preserved",
+      "sha256": "96DCA33469698EC206315CA2BD39B811B00E7926208535F6483E4011488E845C",
+      "bytes": 7971,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\invalid-saved-native-saline-object.txt"
+    },
+    {
+      "name": "invalid-saved-fluid-line-object",
+      "status": "step-output-preserved",
+      "sha256": "9F2D47C9B474B77518207B794FFC62A2D78366D2090E132876274D02A1899E4E",
+      "bytes": 7971,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\invalid-saved-fluid-line-object.txt"
+    },
+    {
+      "name": "invalid-saved-fluid-burden-object",
+      "status": "step-output-preserved",
+      "sha256": "0608B1743C51F69F075405AB02A2AFBD2C84D1F99B267215389B32FDE15EF3EA",
+      "bytes": 7971,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\invalid-saved-fluid-burden-object.txt"
+    },
+    {
+      "name": "native-stock-consumable-owner-network",
+      "status": "step-output-preserved",
+      "sha256": "928B18F3FE211A3F1B70327F24267961F479A9F6506539D4789278CAB51C1206",
+      "bytes": 1564,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\native-stock-consumable-owner-network.txt"
+    },
+    {
+      "name": "oxygen-removal-without-supply",
+      "status": "step-output-preserved",
+      "sha256": "81A5C9E90BF578DACBABCFAAB5212EF764D4536B654DD28D5ED23211255243B2",
+      "bytes": 3808,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\oxygen-removal-without-supply.txt"
+    },
+    {
+      "name": "oxygen-removal-owner-network",
+      "status": "step-output-preserved",
+      "sha256": "B27E816D868A470A0739A84DF95BE80576B290CC5450209BA6FF711EB2E9817E",
+      "bytes": 1127,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\oxygen-removal-owner-network.txt"
+    },
+    {
+      "name": "oxygen-medication-network",
+      "status": "step-output-preserved",
+      "sha256": "DFA02A90301E5BB37A7FF39331BCA76EBDBB839DFA7D86860040AE3276B45FE9",
+      "bytes": 2379,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\oxygen-medication-network.txt"
+    },
+    {
+      "name": "typed-fluid-network",
+      "status": "step-output-preserved",
+      "sha256": "F61BBBAF1FBC9CBE2B3C28CDBF46A49F6255BBE0B29F8A8A3B34AEE5FAC698DD",
+      "bytes": 2303,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\typed-fluid-network.txt"
+    },
+    {
+      "name": "independent-fluid-lines",
+      "status": "step-output-preserved",
+      "sha256": "517FB4623575769505E641D32B2AF8CCBB238542156B8DDD24687550052E36B4",
+      "bytes": 3808,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\independent-fluid-lines.txt"
+    },
+    {
+      "name": "independent-fluid-line-boundaries",
+      "status": "step-output-preserved",
+      "sha256": "3DE60BEA7513194BB5388EB157276D65A41936F86999C26F92E458961E759F6A",
+      "bytes": 3808,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\independent-fluid-line-boundaries.txt"
+    },
+    {
+      "name": "independent-fluid-line-owner-network",
+      "status": "step-output-preserved",
+      "sha256": "129165523A241CD7D70E05F18577ED934C9F0828FD9F487151E01E04426EFE12",
+      "bytes": 1167,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\independent-fluid-line-owner-network.txt"
+    },
+    {
+      "name": "independent-fluid-line-restart",
+      "status": "step-output-preserved",
+      "sha256": "79DBE724A8F8E47B591E7FB66DC0866F8A541C424DFBE0859E2BCEA960F94D94",
+      "bytes": 7879,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\independent-fluid-line-restart.txt"
+    },
+    {
+      "name": "transport-fluid-line-restart",
+      "status": "step-output-preserved",
+      "sha256": "C7BD3F2703E8D6C0703F248C7E60CB3152437AAD129FB223F28C046E0DA68FCA",
+      "bytes": 7949,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\transport-fluid-line-restart.txt"
+    },
+    {
+      "name": "unavailable-fluid-source-restart",
+      "status": "step-output-preserved",
+      "sha256": "655DC33D9A909C9AE250283775C9C6ECF0F0E59178AA8A98CFBB842D26DE09E7",
+      "bytes": 7935,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\unavailable-fluid-source-restart.txt"
+    },
+    {
+      "name": "fluid-burden-active-world-restart",
+      "status": "step-output-preserved",
+      "sha256": "620B7A88465103F65A6D1DDFFAADB315338682AF23E9E37394DFD51D4D34D57C",
+      "bytes": 7883,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\fluid-burden-active-world-restart.txt"
+    },
+    {
+      "name": "fluid-burden-owner-network",
+      "status": "step-output-preserved",
+      "sha256": "4530546BB330CBC497D1B9C8930D1129C0427869CBC36159C626C55E58E74DBE",
+      "bytes": 2437,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\fluid-burden-owner-network.txt"
+    },
+    {
+      "name": "pre-burden-world-compatibility",
+      "status": "step-output-preserved",
+      "sha256": "FF5F2C66B9E2606AAEB0F6E71F895354245C11E5257011ABAA1392C2A2CB0A3E",
+      "bytes": 4101,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\pre-burden-world-compatibility.txt"
+    },
+    {
+      "name": "applied-equipment-network",
+      "status": "step-output-preserved",
+      "sha256": "0D0C9A3C002FB0D3746954DF116F4E4D45E413BE643E1248CF5FE4E5F6577AE9",
+      "bytes": 1408,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\applied-equipment-network.txt"
+    },
+    {
+      "name": "native-bleeding",
+      "status": "step-output-preserved",
+      "sha256": "470C0A04D9A90B97E58EE0D74B8699561825719D1D30DE0DF5E0ECA7793258D1",
+      "bytes": 3808,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\native-bleeding.txt"
+    },
+    {
+      "name": "limited-lives-authority",
+      "status": "step-output-preserved",
+      "sha256": "57472A46E28FF825B1754820697E9CC46831AD64824F1057FDE6D306D2B7CCAC",
+      "bytes": 3808,
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-113802-069\\limited-lives-authority.txt"
+    },
+    {
+      "name": "gm-allowance-owner-and-restart",
+      "started": "2026-11-02T12:21:06.5976167+00:00",
+      "status": "passed",
+      "log": "gm-allowance-owner-and-restart.txt",
+      "completed": "2026-11-02T12:22:19.5712457+00:00",
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-122106-239\\gm-allowance-owner-and-restart.txt"
+    },
+    {
+      "name": "gm-stationary-catalogue-and-restart",
+      "started": "2026-11-02T12:22:19.5739851+00:00",
+      "status": "passed",
+      "log": "gm-stationary-catalogue-and-restart.txt",
+      "completed": "2026-11-02T12:23:35.4990467+00:00",
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-122106-239\\gm-stationary-catalogue-and-restart.txt"
+    },
+    {
+      "name": "component-recovery-and-restart",
+      "started": "2026-11-02T12:23:35.5006360+00:00",
+      "status": "passed",
+      "log": "component-recovery-and-restart.txt",
+      "completed": "2026-11-02T12:24:14.3254676+00:00",
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-122106-239\\component-recovery-and-restart.txt"
+    },
+    {
+      "name": "inventory-and-lives-world-restart",
+      "started": "2026-11-02T12:24:14.3274647+00:00",
+      "status": "passed",
+      "log": "inventory-and-lives-world-restart.txt",
+      "completed": "2026-11-02T12:24:50.1375260+00:00",
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-122106-239\\inventory-and-lives-world-restart.txt"
+    },
+    {
+      "name": "saved-world-owner-network",
+      "started": "2026-11-02T12:24:50.1387259+00:00",
+      "status": "passed",
+      "log": "saved-world-owner-network.txt",
+      "completed": "2026-11-02T12:25:54.5495456+00:00",
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-122106-239\\saved-world-owner-network.txt"
+    },
+    {
+      "name": "unavailable-physical-world-restart",
+      "started": "2026-11-02T12:25:54.5517905+00:00",
+      "status": "passed",
+      "log": "unavailable-physical-world-restart.txt",
+      "completed": "2026-11-02T12:26:57.8835870+00:00",
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-122106-239\\unavailable-physical-world-restart.txt"
+    },
+    {
+      "name": "server-restart",
+      "started": "2026-11-02T12:26:57.8857346+00:00",
+      "status": "passed",
+      "log": "server-restart.txt",
+      "completed": "2026-11-02T12:27:12.9094494+00:00",
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-122106-239\\server-restart.txt"
+    },
+    {
+      "name": "medical-ui",
+      "started": "2026-11-02T12:27:12.9104212+00:00",
+      "status": "passed",
+      "log": "medical-ui.txt",
+      "completed": "2026-11-02T12:27:22.9770346+00:00",
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-122106-239\\medical-ui.txt"
+    },
+    {
+      "name": "full-oxygen-medication",
+      "started": "2026-11-02T12:27:22.9789621+00:00",
+      "status": "passed",
+      "log": "full-oxygen-medication.txt",
+      "completed": "2026-11-02T12:30:10.7277906+00:00",
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-122106-239\\full-oxygen-medication.txt"
+    },
+    {
+      "name": "full-typed-fluids",
+      "started": "2026-11-02T12:30:10.7297767+00:00",
+      "status": "passed",
+      "log": "full-typed-fluids.txt",
+      "completed": "2026-11-02T12:35:13.3466123+00:00",
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-122106-239\\full-typed-fluids.txt"
+    },
+    {
+      "name": "full-field-procedures",
+      "started": "2026-11-02T12:35:13.3484813+00:00",
+      "status": "passed",
+      "log": "full-field-procedures.txt",
+      "completed": "2026-11-02T12:38:25.4456062+00:00",
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-122106-239\\full-field-procedures.txt"
+    },
+    {
+      "name": "full-equipment",
+      "started": "2026-11-02T12:38:25.4475624+00:00",
+      "status": "passed",
+      "log": "full-equipment.txt",
+      "completed": "2026-11-02T12:43:49.0454090+00:00",
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-122106-239\\full-equipment.txt"
+    },
+    {
+      "name": "native-medication",
+      "started": "2026-11-02T12:43:49.0467240+00:00",
+      "status": "passed",
+      "log": "native-medication.txt",
+      "completed": "2026-11-02T12:44:40.8382492+00:00",
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-122106-239\\native-medication.txt"
+    },
+    {
+      "name": "native-txa",
+      "started": "2026-11-02T12:44:40.8399405+00:00",
+      "status": "passed",
+      "log": "native-txa.txt",
+      "completed": "2026-11-02T12:45:49.9629379+00:00",
+      "evidence": ".checks\\full-beta01-snapshot-20261102-113742-957\\.checks\\clinical-acceptance-20261102-122106-239\\native-txa.txt"
+    }
+  ],
+  "scope": "Frozen pre-collision clinical build; subsequent changes need separate regression evidence."
+}

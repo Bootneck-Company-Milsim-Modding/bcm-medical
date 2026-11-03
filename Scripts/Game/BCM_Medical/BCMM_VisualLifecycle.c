@@ -12,6 +12,7 @@ modded class SCR_BaseGameMode
   BCMM_BandageAnimationSession.Reset();
   BCMM_ProcedureAnimation.Reset();
   BCMM_NativeBagDrag.Reset();
+  BCMM_BagRopeVisual.Reset();
   BCMM_LivingTransport.Reset();
   BCMM_WeaponRetention.Reset();
  }

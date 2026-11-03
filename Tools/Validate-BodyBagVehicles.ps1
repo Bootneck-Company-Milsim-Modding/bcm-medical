@@ -2,6 +2,8 @@ param(
  [Parameter(Mandatory)][string]$ServerDirectory,
  [string]$VehiclePrefab = '{2D74C39A650A3030}Prefabs/Vehicles/Wheeled/M923A1/M923A1_engineer.et',
  [string[]]$ExtraAddons = @(),
+ [string]$ProductionDirectory = '',
+ [string[]]$AdditionalAddonDirectories = @(),
  [switch]$Pilot,
  [switch]$ExternalMove,
  [switch]$SessionSafety,
@@ -34,8 +36,30 @@ $dependencies = (@('6AB4B3F3FD215919') + $ExtraAddons | Select-Object -Unique | 
 [IO.File]::WriteAllText((Join-Path $addon 'addon.gproj'), ('GameProject { ID "BCMMVehicleChecks" GUID "'+$guid+'" TITLE "BCM Medical vehicle checks" Dependencies { '+$dependencies+' } }'), [Text.UTF8Encoding]::new($false))
 $game = 'C:\Program Files (x86)\Steam\steamapps\common\Arma Reforger'
 $workshop = Join-Path ([Environment]::GetFolderPath('MyDocuments')) 'My Games\ArmaReforger\addons'
-$dirs = $addon+','+$root+','+(Join-Path $game 'addons')
-if ($ExtraAddons.Count) { $dirs += ','+$workshop }
+if (!$ProductionDirectory) { $ProductionDirectory = $root }
+$dirs = $addon+','+$ProductionDirectory+','+(Join-Path $game 'addons')
+if ($ExtraAddons.Count) {
+ $workshopRoots = @($workshop) + $AdditionalAddonDirectories
+ $dirs += ','+($workshopRoots -join ',')
+ # Missing dependencies make the engine silently omit the diagnostic addon.
+ # Fail before launch, with the exact unavailable resource instead of timing out.
+ $available=@{}
+ foreach($base in (@((Join-Path $game 'addons')) + $workshopRoots)) {
+  foreach($projectFile in Get-ChildItem -LiteralPath $base -Recurse -Filter '*.gproj' -File) {
+   $projectText=Get-Content -LiteralPath $projectFile.FullName -Raw
+   if($projectText -match 'GUID\s+"([0-9A-Fa-f]{16})"'){$available[$Matches[1]]=$projectText}
+  }
+ }
+ $pending=[Collections.Generic.Queue[string]]::new();foreach($id in $ExtraAddons){$pending.Enqueue($id)}
+ $seen=@{}
+ while($pending.Count){
+  $id=$pending.Dequeue();if($seen.ContainsKey($id)){continue};$seen[$id]=$true
+  if(!$available.ContainsKey($id)){throw ('Missing installed vehicle dependency: '+$id)}
+  if($available[$id] -match 'Dependencies\s*\{([^}]+)\}'){
+   foreach($dependency in [regex]::Matches($Matches[1],'"([0-9A-Fa-f]{16})"')){$pending.Enqueue($dependency.Groups[1].Value)}
+  }
+ }
+}
 $common = '-gproj "'+$addon+'\addon.gproj" -addons '+$guid+' -addonsDir "'+$dirs+'" -noBackend -disableCrashReporter -noThrow -maxFPS 30 -bcmmVehiclePrefab "'+$VehiclePrefab+'"'
 if ($Pilot) { $common += ' -bcmmPilotedVehicle 1' }
 if ($Disconnect) { $common += ' -bcmmSessionDisconnect 1' }
@@ -51,7 +75,7 @@ $owned = [Collections.Generic.List[Diagnostics.Process]]::new()
 function Read-VehicleLog([string]$role) { $file=Get-ChildItem (Join-Path $run $role) -Recurse -Filter console.log -ErrorAction SilentlyContinue | Select-Object -First 1; if($file){return Get-Content $file.FullName -Raw}; return '' }
 function Start-VehicleClient([string]$role) {
  $arguments=$common+' -client 127.0.0.1 -port 2001 -profile "'+(Join-Path $run $role)+'" -noSound -noFocus -forceUpdate -window -screenWidth 640 -screenHeight 480 -posX -2000 -posY -2000'
- $process=Start-Process -FilePath (Join-Path $game 'ArmaReforgerSteamDiag.exe') -ArgumentList $arguments -WindowStyle Hidden -PassThru
+ $process=Start-Process -WorkingDirectory $game -FilePath (Join-Path $game 'ArmaReforgerSteamDiag.exe') -ArgumentList $arguments -WindowStyle Hidden -PassThru
  $owned.Add($process); Write-Output "Medical vehicle client role=$role PID=$($process.Id)"
 }
 $passed=$false; $owner=$false; $pilotOwner=$false; $clients=$false; $late=$false; $lastProgress=''

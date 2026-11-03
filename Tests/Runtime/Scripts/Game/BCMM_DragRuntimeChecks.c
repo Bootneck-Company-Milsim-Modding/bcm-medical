@@ -85,7 +85,7 @@ class BCMM_DragRuntimeChecks
   if (m_Network)
   {
    SCR_BaseGameMode.Cast(GetGame().GetGameMode()).BCMM_PublishDragTest(2, m_Actor, m_Bag);
-   GetGame().GetCallqueue().CallLater(PrepareOwnerDrag, 1500);
+   GetGame().GetCallqueue().CallLater(PrepareOwnerDrag, 5000);
   }
   else Finish();
  }
@@ -100,6 +100,7 @@ class BCMM_DragRuntimeChecks
    return;
   }
   player.GetControlledEntity().SetOrigin(m_Bag.GetOrigin() + "1.2 0 0");
+  SCR_BaseGameMode.Cast(GetGame().GetGameMode()).BCMM_AllowDragAcquire();
   m_OwnerWait = 0;
   GetGame().GetCallqueue().CallLater(CheckOwnerDrag, 500);
  }
@@ -129,7 +130,50 @@ class BCMM_DragRuntimeChecks
   m_Suite.Record(state.DragMode() == BCMM_TransportMode.NONE && !BCMM_NativeBagDrag.FindBag(m_Bag), "Authenticated player RPC releases native drag reservation");
   SCR_PlayerController player = SCR_PlayerController.Cast(GetGame().GetPlayerManager().GetPlayerController(1));
   SCR_BaseGameMode.Cast(GetGame().GetGameMode()).BCMM_PublishDragTest(4, player.GetControlledEntity(), m_Bag);
-  GetGame().GetCallqueue().CallLater(Finish, 7000);
+  GetGame().GetCallqueue().CallLater(PrepareOwnerWalk, 4000);
+ }
+ protected vector m_OwnerWalkStart;
+ protected vector m_WalkBagStart;
+ protected void PrepareOwnerWalk()
+ {
+  SCR_PlayerController player = SCR_PlayerController.Cast(GetGame().GetPlayerManager().GetPlayerController(1));
+  if (!player || !player.GetControlledEntity()) { m_Suite.Record(false, "Owner available for movement test"); Finish(); return; }
+  if (m_Actor) SCR_EntityHelper.DeleteEntityAndChildren(m_Actor);
+  m_Actor = player.GetControlledEntity();
+  m_Actor.SetOrigin(m_Bag.GetOrigin() + "0 0.2 1.2");
+  SCR_BaseGameMode.Cast(GetGame().GetGameMode()).BCMM_PublishDragTest(5, m_Actor, m_Bag);
+  GetGame().GetCallqueue().CallLater(AllowOwnerReacquire, 2000);
+  m_OwnerWait = 0;
+  GetGame().GetCallqueue().CallLater(StartOwnerWalk, 500);
+ }
+ protected void StartOwnerWalk()
+ {
+  BCMM_BodyBagComponent state = BCMM_BodyBagComponent.Cast(m_Bag.FindComponent(BCMM_BodyBagComponent));
+  if (state.DraggingActor() != BCMM_BodyBagComponent.Id(m_Actor) && m_OwnerWait++ < 40) { GetGame().GetCallqueue().CallLater(StartOwnerWalk, 250); return; }
+  m_Suite.Record(state.DragMode() == BCMM_TransportMode.BODY_BAG_MANUAL_DRAG, "Owner reacquires bag through authenticated action");
+  m_OwnerWalkStart = m_Actor.GetOrigin(); m_WalkBagStart = m_Bag.GetOrigin();
+  SCR_BaseGameMode.Cast(GetGame().GetGameMode()).BCMM_PublishDragTest(6, m_Actor, m_Bag);
+  GetGame().GetCallqueue().CallLater(CheckOwnerWalk, 4000);
+ }
+ protected void AllowOwnerReacquire() { SCR_BaseGameMode.Cast(GetGame().GetGameMode()).BCMM_AllowDragAcquire(); }
+ protected void CheckOwnerWalk()
+ {
+  BCMM_BodyBagComponent state = BCMM_BodyBagComponent.Cast(m_Bag.FindComponent(BCMM_BodyBagComponent));
+  PrintFormat("BCMM_DRAG_OWNER_WALK actorDistance=%1 bagDistance=%2 mode=%3", vector.Distance(m_Actor.GetOrigin(), m_OwnerWalkStart), vector.Distance(m_Bag.GetOrigin(), m_WalkBagStart), state.DragMode());
+  m_Suite.Record(vector.Distance(m_Actor.GetOrigin(), m_OwnerWalkStart) > 0.3, "Native owning-client movement reaches dedicated authority");
+  m_Suite.Record(vector.Distance(m_Bag.GetOrigin(), m_WalkBagStart) > 0.3 && state.DragMode() == BCMM_TransportMode.BODY_BAG_MANUAL_DRAG, "Manual bag follows actual owning-client movement without cancellation");
+  SCR_BaseGameMode.Cast(GetGame().GetGameMode()).BCMM_PublishDragTest(7, m_Actor, m_Bag);
+  m_OwnerWait = 0;
+  GetGame().GetCallqueue().CallLater(CheckOwnerDisconnect, 500);
+ }
+ protected void CheckOwnerDisconnect()
+ {
+  BCMM_BodyBagComponent state = BCMM_BodyBagComponent.Cast(m_Bag.FindComponent(BCMM_BodyBagComponent));
+  if ((GetGame().GetPlayerManager().GetPlayerControlledEntity(1) || state.DragMode() != BCMM_TransportMode.NONE) && m_OwnerWait++ < 80) { GetGame().GetCallqueue().CallLater(CheckOwnerDisconnect, 250); return; }
+  m_Suite.Record(!GetGame().GetPlayerManager().GetPlayerControlledEntity(1), "Actual drag owner disconnects");
+  m_Suite.Record(state.DragMode() == BCMM_TransportMode.NONE && !BCMM_NativeBagDrag.FindBag(m_Bag), "Owner disconnect releases manual drag on authority");
+  SCR_BaseGameMode.Cast(GetGame().GetGameMode()).BCMM_PublishDragTest(8, null, m_Bag);
+  GetGame().GetCallqueue().CallLater(Finish, 5000);
  }
  protected void Finish()
  {

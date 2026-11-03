@@ -81,7 +81,7 @@ parts.extend([
  text('TransportStatus',(.72,.825,.975,.885),'',11,'0.62 0.71 0.70 1'),
  image('FooterRule',(.025,.942,.975,.944),'1 1 1 0.09'),
  text('TreatmentStatus',(.025,.957,.69,.991),'Ready',14,'0.62 0.71 0.70 1'),
- btn('CancelProcedure',(.72,.953,.975,.992)),image('ProcedureTrack',(.025,.938,.69,.941),'1 1 1 0.07'),
+ btn('CancelProcedure',(.72,.953,.975,.992)),image('ProcedureTrack',(.025,.938,.69,.950),'1 1 1 0.15'),
  image('ProcedureFill',(.025,.938,.025,.938),'0.76 0.63 0.3 1'),
  '} } } }'])
 (folder/'MedicalPanel.layout').write_text('\n'.join(parts)+'\n',encoding='utf-8')

@@ -9,3 +9,8 @@ __pycache__/
 # Keep editable .blend files and intentionally named source revisions in Git.
 *.blend[0-9]
 *.blend[0-9][0-9]
+
+# Local QA archive pointer and distributable build artifacts.
+QA-ARCHIVE-LOCATION.txt
+*.pak
+*.zip

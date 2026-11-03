@@ -79,7 +79,14 @@
         "base_preview": "Assets\\Medical\\Epinephrine\\Data\\Epinephrine_0_BCR.png"
       }
     ],
-    "model": "{888767258EA25BEE}Assets/Medical/Epinephrine/BCMM_Epinephrine.xob"
+    "model": "{888767258EA25BEE}Assets/Medical/Epinephrine/BCMM_Epinephrine.xob",
+    "origin_offset": [
+      0,
+      0,
+      0.005
+    ],
+    "align_long_axis": "Y",
+    "reverse_long_axis": true
   },
   {
     "name": "Injector",
@@ -161,7 +168,14 @@
         "base_preview": "Assets\\Medical\\Injector\\Data\\Injector_0_BCR.png"
       }
     ],
-    "model": "{9A127E6131BAF3AE}Assets/Medical/Injector/BCMM_Injector.xob"
+    "model": "{9A127E6131BAF3AE}Assets/Medical/Injector/BCMM_Injector.xob",
+    "origin_offset": [
+      0,
+      0,
+      0.005
+    ],
+    "align_long_axis": "Y",
+    "reverse_long_axis": true
   },
   {
     "name": "Morphine",
@@ -226,7 +240,14 @@
         "base_preview": "Assets\\Medical\\Morphine\\Data\\Morphine_0_BCR.png"
       }
     ],
-    "model": "{BE81C3A855ACE465}Assets/Medical/Morphine/BCMM_Morphine.xob"
+    "model": "{BE81C3A855ACE465}Assets/Medical/Morphine/BCMM_Morphine.xob",
+    "origin_offset": [
+      0,
+      0,
+      0.005
+    ],
+    "align_long_axis": "Y",
+    "reverse_long_axis": true
   },
   {
     "name": "PulseOximeter",
@@ -601,7 +622,14 @@
         "base_preview": "Assets\\Medical\\GenericInjector\\Data\\GenericInjector_0_BCR.png"
       }
     ],
-    "model": "{4C8B77F13639E02C}Assets/Medical/GenericInjector/BCMM_GenericInjector.xob"
+    "model": "{4C8B77F13639E02C}Assets/Medical/GenericInjector/BCMM_GenericInjector.xob",
+    "origin_offset": [
+      0,
+      0,
+      0.005
+    ],
+    "align_long_axis": "Y",
+    "reverse_long_axis": true
   },
   {
     "name": "FluidBag",
@@ -647,8 +675,8 @@
     "materials": [
       {
         "source": "Default OBJ.001",
-        "material": "{118722C39E94A971}Assets/Medical/FluidBag/Data/FluidBag_0.emat",
-        "base_preview": "Assets\\Medical\\FluidBag\\Data\\FluidBag_0_BCR.png"
+        "material": "{E0C417D61451A2A6}Assets/Medical/FluidBag/Data/BloodBody.emat",
+        "base_preview": "Assets/Medical/FluidBag/Data/BloodBody_BCR.png"
       },
       {
         "source": "Material.001",
@@ -715,7 +743,14 @@
       }
     ],
     "model": "{A8EE7E511CCFBB0A}Assets/Medical/Naloxone/BCMM_Naloxone.xob",
-    "accent_albedo": true
+    "accent_albedo": true,
+    "origin_offset": [
+      0,
+      0,
+      0.005
+    ],
+    "align_long_axis": "Y",
+    "reverse_long_axis": true
   },
   {
     "name": "NCD",
@@ -769,7 +804,14 @@
       }
     ],
     "model": "{AA23AFD2A759EF96}Assets/Medical/NCD/BCMM_NCD.xob",
-    "accent_albedo": true
+    "accent_albedo": true,
+    "origin_offset": [
+      0,
+      0,
+      0.005
+    ],
+    "align_long_axis": "Y",
+    "reverse_long_axis": true
   },
   {
     "name": "TXA",
@@ -823,13 +865,20 @@
       }
     ],
     "model": "{C7F742C0DF1497BF}Assets/Medical/TXA/BCMM_TXA.xob",
-    "accent_albedo": true
+    "accent_albedo": true,
+    "origin_offset": [
+      0,
+      0,
+      0.005
+    ],
+    "align_long_axis": "Y",
+    "reverse_long_axis": true
   },
   {
     "name": "Splint",
     "source": "Splint/SM_MedicalSplinter.fbx",
     "source_root": ".checks/vendor-medical-wave2",
-    "desired_longest_metres": 0.22,
+    "desired_longest_metres": 0.105,
     "materials": [
       {
         "source": "Mat_UVChecker",
@@ -843,7 +892,7 @@
     "name": "SurgeryKit",
     "source": "SurgeryKit/Medical_SurvivalKit/SM_SurvivalKit.fbx",
     "source_root": ".checks/vendor-medical-wave2",
-    "desired_longest_metres": 0.35,
+    "desired_longest_metres": 0.16,
     "materials": [
       {
         "source": "Mat_UVChecker",
@@ -857,7 +906,7 @@
     "name": "SutureKit",
     "source": "Suture Kit/Medical_MilitaryHealthPouch/SM_Medical_MilitaryHealthPouch.fbx",
     "source_root": ".checks/vendor-medical-wave2",
-    "desired_longest_metres": 0.18,
+    "desired_longest_metres": 0.12,
     "materials": [
       {
         "source": "Mat_UVChecker",
@@ -907,7 +956,7 @@
   {
     "name": "BVM",
     "source": "BVM/Ambu+bag.fbx",
-    "desired_longest_metres": 0.4,
+    "desired_longest_metres": 0.32,
     "materials": [
       {
         "source": "Plastic",
@@ -921,7 +970,15 @@
       }
     ],
     "source_root": ".checks/vendor-medical-wave2",
-    "model": "{CD0AD96E3DB44DC9}Assets/Medical/BVM/BCMM_BVM.xob"
+    "model": "{CD0AD96E3DB44DC9}Assets/Medical/BVM/BCMM_BVM.xob",
+    "include_objects": [
+      "sweep1",
+      "polySurface2",
+      "polySurface8",
+      "pCylinder7",
+      "pCylinder6",
+      "pCylinder9"
+    ]
   },
   {
     "name": "Monitor",
@@ -976,7 +1033,7 @@
     "name": "Suction",
     "source": "Suction/VAC+Device+model.fbx",
     "source_root": ".checks/vendor-medical-wave2",
-    "desired_longest_metres": 0.35,
+    "desired_longest_metres": 0.22,
     "decimate_ratio": 0.35,
     "materials": [
       {
@@ -1060,7 +1117,10 @@
         "base_preview": "Assets/Medical/Suction/Data/Suction_15_BCR.png"
       }
     ],
-    "model": "{3D8461E4034652C3}Assets/Medical/Suction/BCMM_Suction.xob"
+    "model": "{3D8461E4034652C3}Assets/Medical/Suction/BCMM_Suction.xob",
+    "exclude_objects_prefix": [
+      "VAC_Device_Model_Silc_Cup"
+    ]
   },
   {
     "name": "Laryngoscope",
@@ -1200,5 +1260,65 @@
       }
     ],
     "model": "{ED3A0287659108BC}Assets/Medical/AppliedTourniquet/BCMM_AppliedTourniquet.xob"
+  },
+  {
+    "name": "PlasmaBag",
+    "source": "blood+_bag.fbx",
+    "triangles": 5486,
+    "bounds_min": [
+      2.1414802074432373,
+      0.25119662284851074,
+      -0.7148464322090149
+    ],
+    "bounds_max": [
+      2.966813325881958,
+      2.460559606552124,
+      4.248627662658691
+    ],
+    "dimensions": [
+      0.8253331184387207,
+      2.2093629837036133,
+      4.963474273681641
+    ],
+    "objects": [
+      {
+        "object": "low",
+        "materials": [
+          "Default OBJ.001",
+          "Material.001",
+          "Material.002"
+        ],
+        "vertices": 2771,
+        "bounds_min": [
+          2.1414802074432373,
+          0.25119662284851074,
+          -0.7148464322090149
+        ],
+        "bounds_max": [
+          2.966813325881958,
+          2.460559606552124,
+          4.248627662658691
+        ]
+      }
+    ],
+    "desired_longest_metres": 0.24,
+    "materials": [
+      {
+        "source": "Default OBJ.001",
+        "material": "{6456AAB4914B8EB7}Assets/Medical/FluidBag/Data/PlasmaBody.emat",
+        "base_preview": "Assets/Medical/FluidBag/Data/PlasmaBody_BCR.png"
+      },
+      {
+        "source": "Material.001",
+        "material": "{1959A3E12CB3C062}Assets/Medical/FluidBag/Data/FluidBag_1.emat",
+        "base_preview": "Assets\\Medical\\FluidBag\\Data\\FluidBag_1_BCR.png"
+      },
+      {
+        "source": "Material.002",
+        "material": "{E32465F4C99C5A55}Assets/Medical/FluidBag/Data/FluidBag_2.emat",
+        "base_preview": "Assets\\Medical\\FluidBag\\Data\\FluidBag_2_BCR.png"
+      }
+    ],
+    "model": "{71146B51886435C6}Assets/Medical/PlasmaBag/BCMM_PlasmaBag.xob"
   }
 ]

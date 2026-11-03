@@ -39,10 +39,14 @@ class BCMM_BaggingOperation : ScriptedInventoryOperationCallback
  protected InventoryStorageManagerComponent m_BagManager;
  protected BCMM_BodyBagComponent m_Identity;
  protected ref array<ref BCMM_BagTransferEntry> m_Items = {};
+ protected ref array<IEntity> m_Manifest = {};
  protected int m_Index;
  protected int m_RestoreIndex;
  protected BCMM_BagTransferPhase m_Phase;
  protected bool m_RestoreFailed;
+ protected bool m_RequiresHold;
+ protected float m_HoldDeadline;
+ protected float m_HoldDuration;
  static bool IsBusy(IEntity corpse)
  {
   foreach (BCMM_BaggingOperation operation : s_Active)
@@ -67,23 +71,31 @@ class BCMM_BaggingOperation : ScriptedInventoryOperationCallback
    if (item && item.FindComponent(BCMM_EmptyBagComponent)) return item;
   return null;
  }
- static bool CanBegin(IEntity actor, IEntity corpse)
+ static bool CanBegin(IEntity actor, IEntity corpse, bool checkBusy = true)
  {
-  if (!actor || !corpse || actor == corpse || IsBusy(corpse)) return false;
+  if (!actor || !corpse || actor == corpse || (checkBusy && IsBusy(corpse))) return false;
   ChimeraCharacter user = ChimeraCharacter.Cast(actor);
   ChimeraCharacter dead = ChimeraCharacter.Cast(corpse);
   if (!user || !dead || !user.GetCharacterController() || !dead.GetCharacterController()) return false;
   if (user.GetCharacterController().GetLifeState() != ECharacterLifeState.ALIVE || user.GetCharacterController().IsUnconscious() || SCR_CompartmentAccessComponent.GetVehicleIn(user)) return false;
   if (dead.GetCharacterController().GetLifeState() != ECharacterLifeState.DEAD || SCR_CompartmentAccessComponent.GetVehicleIn(dead) || corpse.GetParent()) return false;
-  return vector.Distance(actor.GetOrigin(), corpse.GetOrigin()) <= Setting("baggingRangeMetres") && FindEmpty(actor);
+  IEntity folded = FindEmpty(actor);
+  if (!folded || vector.Distance(actor.GetOrigin(), corpse.GetOrigin()) > Setting("baggingRangeMetres")) return false;
+  if (checkBusy)
+   foreach (BCMM_BaggingOperation operation : s_Active)
+    if (operation.m_Actor == actor || operation.m_Empty == folded) return false;
+  return true;
  }
- static bool Begin(IEntity actor, IEntity corpse)
+ static bool Begin(IEntity actor, IEntity corpse, bool requireHold = false)
  {
   if (!Replication.IsServer() || !CanBegin(actor, corpse)) return false;
   BCMM_BaggingOperation operation = new BCMM_BaggingOperation();
   operation.m_Actor = actor;
   operation.m_Corpse = corpse;
   operation.m_Empty = FindEmpty(actor);
+  operation.m_RequiresHold = requireHold;
+  operation.m_HoldDuration = Setting("baggingDurationSeconds");
+  operation.m_HoldDeadline = GetGame().GetWorld().GetWorldTime() * 0.001 + operation.m_HoldDuration;
   operation.m_PlayerId = GetGame().GetPlayerManager().GetPlayerIdFromControlledEntity(actor);
   if (operation.m_PlayerId > 0)
   {
@@ -97,8 +109,28 @@ class BCMM_BaggingOperation : ScriptedInventoryOperationCallback
   BCMM_RemainsProtection.ObserveCorpse(corpse);
   SCR_GarbageSystem garbage = SCR_GarbageSystem.GetByEntityWorld(corpse);
   if (garbage) garbage.UpdateBlacklist(corpse, true);
-  GetGame().GetCallqueue().CallLater(operation.StartTransfer, Setting("baggingDurationSeconds") * 1000);
+  if (requireHold) GetGame().GetCallqueue().CallLater(operation.CheckHold, 100);
+  else GetGame().GetCallqueue().CallLater(operation.StartTransfer, operation.m_HoldDuration * 1000);
   return true;
+ }
+ protected void CheckHold()
+ {
+  if (m_Phase != BCMM_BagTransferPhase.WAITING) return;
+  if (!StillValid() || GetGame().GetWorld().GetWorldTime() * 0.001 > m_HoldDeadline + 5) { Release(); return; }
+  GetGame().GetCallqueue().CallLater(CheckHold, 100);
+ }
+ static void HoldResponse(IEntity actor, IEntity corpse, bool complete)
+ {
+  if (!Replication.IsServer()) return;
+  foreach (BCMM_BaggingOperation operation : s_Active)
+  {
+   if (operation.m_Actor != actor || operation.m_Corpse != corpse || !operation.m_RequiresHold || operation.m_Phase != BCMM_BagTransferPhase.WAITING) continue;
+   if (!complete) { operation.Release(); return; }
+   // The native fill circle is presentation. Authority owns the elapsed time.
+   if (GetGame().GetWorld().GetWorldTime() * 0.001 < operation.m_HoldDeadline - 0.1 || !operation.StillValid()) { operation.Release(); return; }
+   operation.StartTransfer();
+   return;
+  }
  }
  protected bool StillValid()
  {
@@ -125,7 +157,7 @@ class BCMM_BaggingOperation : ScriptedInventoryOperationCallback
   }
   EntitySpawnParams spawn = new EntitySpawnParams();
   spawn.TransformMode = ETransformMode.WORLD;
-  m_Corpse.GetWorldTransform(spawn.Transform);
+  Math3D.AnglesToMatrix(Vector(m_Corpse.GetYawPitchRoll()[0], 0, 0), spawn.Transform);
   spawn.Transform[3] = m_Corpse.GetOrigin() + "0 0.15 0";
   m_Bag = GetGame().SpawnEntityPrefab(Resource.Load("{6AB4B3F3FD216001}Prefabs/BodyBags/BCMM_FilledBodyBag.et"), GetGame().GetWorld(), spawn);
   if (!m_Bag) { Release(); return; }
@@ -153,17 +185,32 @@ class BCMM_BaggingOperation : ScriptedInventoryOperationCallback
  {
   array<IEntity> items = {};
   m_Source.GetItems(items, EStoragePurpose.PURPOSE_ANY);
+  // GetItems alone omits equipped clothing and some loadout slots. Walk the
+  // actual hierarchy as well, retaining exact entity references for the audit.
+  CollectEquipment(m_Corpse, items);
+  foreach (IEntity candidate : items)
+   if (candidate && !m_Manifest.Contains(candidate)) m_Manifest.Insert(candidate);
   foreach (IEntity item : items)
   {
    if (!item) continue;
-   bool duplicate;
+   bool duplicate = false;
    foreach (BCMM_BagTransferEntry prior : m_Items) if (prior.Item == item) duplicate = true;
    if (duplicate) continue;
    InventoryItemComponent component = InventoryItemComponent.Cast(item.FindComponent(InventoryItemComponent));
    if (!component || !component.GetParentSlot() || !component.GetParentSlot().GetStorage()) continue;
    BaseInventoryStorageComponent storage = component.GetParentSlot().GetStorage();
-   // Preserve sights, magazines and special weapon slots on their root weapon.
-   if (storage.GetOwner() != m_Corpse && !SCR_UniversalInventoryStorageComponent.Cast(storage)) continue;
+   // Move outer containers/weapons intact, including their original contents
+   // and attachments. Do not strip nested gear or depend on storage subclass.
+   bool nested = false;
+   IEntity ancestor = storage.GetOwner();
+   for (int parentGuard = 0; ancestor && ancestor != m_Corpse && parentGuard < 64; parentGuard++)
+   {
+    if (m_Manifest.Contains(ancestor)) { nested = true; break; }
+    InventoryItemComponent parentItem = InventoryItemComponent.Cast(ancestor.FindComponent(InventoryItemComponent));
+    if (parentItem && parentItem.GetParentSlot() && parentItem.GetParentSlot().GetStorage()) ancestor = parentItem.GetParentSlot().GetStorage().GetOwner();
+    else ancestor = ancestor.GetParent();
+   }
+   if (nested) continue;
    BCMM_BagTransferEntry entry = new BCMM_BagTransferEntry();
    entry.Item = item;
    entry.Storage = storage;
@@ -187,7 +234,7 @@ class BCMM_BaggingOperation : ScriptedInventoryOperationCallback
   foreach (IEntity dropped : recorded)
   {
    if (!dropped) continue;
-   bool queued;
+   bool queued = false;
    foreach (BCMM_BagTransferEntry previous : m_Items) if (previous.Item == dropped) queued = true;
    if (queued) continue;
    InventoryItemComponent component = InventoryItemComponent.Cast(dropped.FindComponent(InventoryItemComponent));
@@ -199,6 +246,7 @@ class BCMM_BaggingOperation : ScriptedInventoryOperationCallback
    entry.WorldPosition = dropped.GetOrigin();
    entry.WorldAngles = dropped.GetAngles();
    m_Items.Insert(entry);
+   if (!m_Manifest.Contains(dropped)) m_Manifest.Insert(dropped);
   }
   for (int i = 0; i < m_Items.Count(); i++)
    for (int j = i + 1; j < m_Items.Count(); j++)
@@ -209,17 +257,64 @@ class BCMM_BaggingOperation : ScriptedInventoryOperationCallback
      m_Items[j] = swap;
     }
  }
+ static void CollectEquipment(IEntity root, notnull array<IEntity> items)
+ {
+  if (!root) return;
+  array<IEntity> pending = {root};
+  while (!pending.IsEmpty())
+  {
+   IEntity current = pending[pending.Count() - 1];
+   pending.Remove(pending.Count() - 1);
+   if (!current) continue;
+   if (current != root && current.FindComponent(InventoryItemComponent) && !items.Contains(current)) items.Insert(current);
+   for (IEntity child = current.GetChildren(); child; child = child.GetSibling()) pending.Insert(child);
+  }
+ }
+ protected bool ReconcileEquipment()
+ {
+  foreach (IEntity original : m_Manifest)
+  {
+   if (!original) return false;
+   IEntity parent = original;
+   bool captured = false;
+   for (int guard = 0; parent && guard < 64; guard++)
+   {
+    if (parent == m_Bag) { captured = true; break; }
+    parent = parent.GetParent();
+   }
+   if (!captured && (!m_BagManager || !m_BagManager.Contains(original)))
+   {
+    // A recorded world drop taken by somebody else is deliberately excluded.
+    bool transferredElsewhere = false;
+    foreach (BCMM_BagTransferEntry entry : m_Items)
+     if (entry.Item == original && entry.FromWorld && original.GetParent()) transferredElsewhere = true;
+    if (!transferredElsewhere) return false;
+   }
+  }
+  array<IEntity> remaining = {};
+  CollectEquipment(m_Corpse, remaining);
+  if (!remaining.IsEmpty()) return false;
+  PrintFormat("BCMM_BAG_MANIFEST reconciled originalEntities=%1 movedRoots=%2", m_Manifest.Count(), m_Items.Count());
+  return true;
+ }
  protected void MoveNext()
  {
   if (!StillValid() || !m_Bag || !m_Target) { Rollback(); return; }
   if (m_Index >= m_Items.Count())
   {
+   if (!ReconcileEquipment())
+   {
+    Print("BCMM bagging aborted: equipment reconciliation failed; corpse and kit retained", LogLevel.ERROR);
+    Rollback();
+    return;
+   }
    m_Target.SetTransferring(false);
    m_Phase = BCMM_BagTransferPhase.CONSUME;
    if (!m_ActorInventory.TryDeleteItem(m_Empty, this) && m_Phase == BCMM_BagTransferPhase.CONSUME) Rollback();
    return;
   }
   BCMM_BagTransferEntry entry = m_Items[m_Index];
+  PrintFormat("BCMM_BAG_MOVE index=%1/%2 item=%3 world=%4", m_Index, m_Items.Count(), entry.Item, entry.FromWorld);
   bool accepted;
   if (entry.FromWorld)
   {
@@ -263,11 +358,15 @@ class BCMM_BaggingOperation : ScriptedInventoryOperationCallback
   }
   if (m_Identity) m_Identity.SetReady(true);
   if (m_Corpse) SCR_EntityHelper.DeleteEntityAndChildren(m_Corpse);
+  // A newly spawned root rigid body can remain asleep at the ragdoll's
+  // elevated pivot. Wake it only after the corpse has been removed.
+  if (m_Bag && m_Bag.GetPhysics()) m_Bag.GetPhysics().SetActive(ActiveState.ACTIVE);
   Print("BCMM bagging corpse removal complete");
   Release();
  }
  override protected void OnFailed()
  {
+  PrintFormat("BCMM_BAG_MOVE_FAILED phase=%1 index=%2 restore=%3", m_Phase, m_Index, m_RestoreIndex);
   if (m_Phase == BCMM_BagTransferPhase.FINISHED) return;
   if (m_Phase == BCMM_BagTransferPhase.ROLLBACK)
   {
@@ -310,7 +409,7 @@ class BCMM_BaggingOperation : ScriptedInventoryOperationCallback
   }
   bool accepted;
   if (entry.FromWorld) accepted = m_BagManager.TryRemoveItemFromStorage(entry.Item, m_Target, this);
-  else if (m_Source && entry.Storage) accepted = m_Source.TryMoveItemToStorage(entry.Item, entry.Storage, entry.Slot, this);
+  else if (m_BagManager && entry.Storage) accepted = m_BagManager.TryMoveItemToStorage(entry.Item, entry.Storage, entry.Slot, this);
   if (!accepted && m_Phase == BCMM_BagTransferPhase.ROLLBACK) OnFailed();
  }
  protected void FinishRestoreStep()
@@ -339,23 +438,42 @@ class BCMM_BaggingOperation : ScriptedInventoryOperationCallback
 }
 modded class SCR_PlayerController
 {
- void BCMM_RequestBagging(IEntity corpse)
+ void BCMM_RequestBagging(IEntity corpse, int phase = 0)
  {
-  if (GetGame().GetPlayerController() == this && corpse) Rpc(BCMM_BaggingRequest, BCMM_BodyBagComponent.Id(corpse));
+  if (GetGame().GetPlayerController() == this && corpse) Rpc(BCMM_BaggingRequest, BCMM_BodyBagComponent.Id(corpse), phase);
  }
  [RplRpc(RplChannel.Reliable, RplRcver.Server)]
- protected void BCMM_BaggingRequest(RplId corpse)
+ protected void BCMM_BaggingRequest(RplId corpse, int phase)
  {
-  BCMM_BaggingOperation.Begin(GetControlledEntity(), BCMM_BodyBagComponent.Resolve(corpse));
+  IEntity target = BCMM_BodyBagComponent.Resolve(corpse);
+  if (phase == 0) BCMM_BaggingOperation.Begin(GetControlledEntity(), target, true);
+  else if (phase == 1 || phase == 2) BCMM_BaggingOperation.HoldResponse(GetControlledEntity(), target, phase == 1);
  }
 }
 class BCMM_BagCorpseAction : ScriptedUserAction
 {
- override bool CanBeShownScript(IEntity user) { return BCMM_BaggingOperation.CanBegin(user, GetOwner()); }
+ protected IEntity m_HoldingActor;
+ protected float m_HoldSeconds = 12;
+ override bool CanBeShownScript(IEntity user) { return BCMM_BaggingOperation.CanBegin(user, GetOwner(), m_HoldingActor != user); }
+ override void OnActionStart(IEntity pUserEntity)
+ {
+  m_HoldingActor = pUserEntity;
+  m_HoldSeconds = Math.Max(1, BCMM_BaggingOperation.Setting("baggingDurationSeconds"));
+  SCR_PlayerController player = SCR_PlayerController.Cast(GetGame().GetPlayerController());
+  if (player && player.GetControlledEntity() == pUserEntity) player.BCMM_RequestBagging(GetOwner());
+ }
+ override float GetActionProgressScript(float fProgress, float timeSlice) { return fProgress + timeSlice * GetActionDuration() / m_HoldSeconds; }
+ override void OnActionCanceled(IEntity pOwnerEntity, IEntity pUserEntity)
+ {
+  m_HoldingActor = null;
+  SCR_PlayerController player = SCR_PlayerController.Cast(GetGame().GetPlayerController());
+  if (player && player.GetControlledEntity() == pUserEntity) player.BCMM_RequestBagging(pOwnerEntity, 2);
+ }
  override void PerformAction(IEntity pOwnerEntity, IEntity pUserEntity)
  {
   SCR_PlayerController player = SCR_PlayerController.Cast(GetGame().GetPlayerController());
-  if (player) player.BCMM_RequestBagging(pOwnerEntity);
+  m_HoldingActor = null;
+  if (player) player.BCMM_RequestBagging(pOwnerEntity, 1);
  }
  override bool HasLocalEffectOnlyScript() { return true; }
 }

@@ -1,0 +1,39 @@
+MetaFileClass {
+ Name "{096D352E628C46F0}Assets/Medical/CompactDragRope/BCMM_CompactDragRope.xob"
+ Configurations {
+  FBXResourceClass PC {
+   MaterialAssigns {
+    MaterialAssignClass "{6AC49B53F7432864}" {
+     SourceMaterial "BCMM_RopeCoil"
+     AssignedMaterial "{18B9EDB72DDE81DB}Assets/Medical/CompactDragRope/RopeCoil.emat"
+    }
+   }
+   MeshParams {
+    MeshParam BCMM_CompactDragRope {
+    }
+   }
+   GeometryParams {
+    GeometryParam UBX_BCMM_CompactDragRope {
+     SurfaceProperties {
+      "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+     }
+     Mass 0
+     Margin 0
+    }
+   }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "4.5.9 LTS"
+  }
+  FBXResourceClass HEADLESS : PC {
+  }
+  FBXResourceClass XBOX_ONE : PC {
+  }
+  FBXResourceClass XBOX_SERIES : PC {
+  }
+  FBXResourceClass PS4 : PC {
+  }
+  FBXResourceClass PS5 : PC {
+  }
+ }
+}

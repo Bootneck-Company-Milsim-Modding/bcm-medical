@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "case": "UI",
+  "width": 3440,
+  "height": 1440,
+  "repeatInstances": 1,
+  "processSamples": [
+    {
+      "utc": "2026-11-02T16:27:02.6016004Z",
+      "privateBytes": 22372352,
+      "workingSetBytes": 18972672,
+      "handles": 193
+    }
+  ],
+  "nativeToggleAction": false,
+  "toggleCycles": 1,
+  "failure": "",
+  "run": "C:\\Users\\ruanb\\Documents\\My Games\\ArmaReforgerWorkbench\\addons\\MCB Medical\\.checks\\beta01-packed-20261102-162550-552\\acceptance-UI-20261102-162702-438",
+  "packedSha256": "BEDDA0F29E13AF1009581140ADAAFEF8A4C543940C75E35AB41BADCD0D078EDF",
+  "completion": "BCMM_CHECK COMPLETE checks=30 failures=0 run=76ba6831684c46f783277f47d351e528",
+  "scope": "Packed production addon plus separate unpublished diagnostic addon; loose production source excluded from addonsDir"
+}
